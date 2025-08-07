@@ -378,6 +378,17 @@ function fill_search_info(bl_obj){
 	const dv_info = document.getElementById(id_info);
 	dv_info.innerHTML = "";
 
+	const ocu_kks = Object.keys(bl_obj.all_ocu);
+	const no_ocu = (ocu_kks.length == 0);
+	const no_sco = (bl_obj.all_scods.length == 0);
+	if(no_ocu && no_sco){
+		return;
+	}
+	
+	const dv_igrid = document.createElement("div");
+	dv_igrid.classList.add("grid_search_info");
+	dv_info.appendChild(dv_igrid);
+
 	const oldt = gvar.biblang.curr_OT;
 	const newt = gvar.biblang.curr_NT;
 	const loc_bib = gvar.biblang.curr_LOC;
@@ -391,13 +402,23 @@ function fill_search_info(bl_obj){
 	if(rxi_val == "NT"){
 		rx_in = gvar.biblang.curr_NT;
 	}
-	const info = `
-	<span class="ot_info">${oldt}</span> 
-	<span class="nt_info">${newt}</span> -> 
-	<span class="loc_info">${loc_bib}</span> 
-	<span class="rx_in_info">${gvar.all_msg.text_search} ${rxi_val} (<span class="rx_in_info_bib">${rx_in}</span>)</span> 
-	<span class="ranges_info">${gvar.all_msg.ranges_search} ${rng_str}</span>`;// rx_in_info_bib
-	dv_info.innerHTML = info;
+
+	let dv_itm = null;
+	dv_itm = document.createElement("div");
+	dv_itm.classList.add("search_item");
+	dv_itm.innerHTML = `<span class="ot_info">${oldt}</span> <span class="nt_info">${newt}</span> -> <span class="loc_info">${loc_bib}</span>`;
+	dv_igrid.appendChild(dv_itm);
+
+	dv_itm = document.createElement("div");
+	dv_itm.classList.add("search_item");
+	dv_itm.innerHTML = `<span class="rx_in_info">${gvar.all_msg.text_search} ${rxi_val} (<span class="rx_in_info_bib">${rx_in}</span>)</span>`;
+	dv_igrid.appendChild(dv_itm);
+	
+	dv_itm = document.createElement("div");
+	dv_itm.classList.add("search_item");
+	dv_itm.innerHTML = `<span class="intervals_info">${gvar.all_msg.ranges_search} ${rng_str}</span>`;
+	dv_igrid.appendChild(dv_itm);
+	
 }
 
 /*

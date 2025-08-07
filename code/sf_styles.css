@@ -453,8 +453,8 @@ a.exam_ref:hover {
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 	grid-row: auto;
-	grid-column-start = 1;
-	grid-column-end = -1;
+	grid-column-start: 1;
+	grid-column-end: -1;
 }
 
 .txt_optional_item {
@@ -543,35 +543,49 @@ a.exam_ref:hover {
 	font-size: 1.5em;
 }
 
+.grid_search_info {
+	display: grid;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 100%;
+	grid-template-columns: 30fr;
+	grid-template-rows: auto;
+	font-size:1em;
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+	.grid_search_info {
+		grid-template-columns: 20fr 20fr 20fr;
+	}
+}
+
+
+.search_item {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	grid-row: auto;
+}
+
 .ot_info{
-	padding: 0em 0.3em 0em 0.3em;
+	padding: 0em 0.1em 0em 0.1em;
 	border: 2px solid #00ff00;
 	color: #00ff00;
 	font-size: 1.8em;
 }
 
 .nt_info{
-	padding: 0em 0.3em 0em 0.3em;
+	padding: 0em 0.1em 0em 0.1em;
 	border: 2px solid #00ff00;
 	color: #00ff00;
 	font-size: 1.8em;
 }
 
 .loc_info{
-	padding: 0em 0.2em 0em 0.2em;
-	font-size: 1em;
-}
-
-.ranges_info{
-	margin-left: 2em;
-	margin-right: 2em;
-	padding: 0em 0.2em 0em 0.2em;
+	padding: 0em 0.1em 0em 0.1em;
 	font-size: 1em;
 }
 
 .rx_in_info{
-	margin-left: 2em;
-	margin-right: 2em;
 	padding: 0em 0.2em 0em 0.2em;
 	font-size: 1em;
 }
@@ -580,6 +594,12 @@ a.exam_ref:hover {
 	background-color: #3665d3;
 	font-size: 1.3em;
 }
+
+.intervals_info{
+	padding: 0em 0.1em 0em 0.1em;
+	font-size: 1em;
+}
+
 /*
 	align-content: center center;
 	align-items: stretch;

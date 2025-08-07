@@ -10,7 +10,7 @@ const msg_es = {
 	finding: "Encontrando",
 	scod_search: "Codigos Strong en:",
 	text_search: "Texto:",
-	ranges_search: "En los rangos:",
+	ranges_search: "En los intervalos:",
 	no_verses: "No hay vertsiculos con la configuracion dada",
 };
 
@@ -20,7 +20,7 @@ const msg_en = {
 	finding: "Finding",
 	scod_search: "Strong Codes in:",
 	text_search: "Text:",
-	ranges_search: "In the ranges:",
+	ranges_search: "In the intervals:",
 	no_verses: "There are no verses with the configuration given",
 };
 
