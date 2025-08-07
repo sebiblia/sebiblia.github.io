@@ -10,7 +10,7 @@ const msg_es = {
 	finding: "Encontrando",
 	scod_search: "Codigos Strong en:",
 	text_search: "Texto:",
-	ranges_search: "En los intervalos:",
+	intervals_search: "En los intervalos:",
 	no_verses: "No hay vertsiculos con la configuracion dada",
 };
 
@@ -20,7 +20,7 @@ const msg_en = {
 	finding: "Finding",
 	scod_search: "Strong Codes in:",
 	text_search: "Text:",
-	ranges_search: "In the intervals:",
+	intervals_search: "In the intervals:",
 	no_verses: "There are no verses with the configuration given",
 };
 
@@ -243,38 +243,38 @@ export const num2abbr = {
 };
 
 const old_crit_txt_en = {
-	"1": "W. Leningrad Codex (WLC)",
-	"2": "Aleppo (ALE)",
-	"3": "Tanakh (TKH)",
-	"4": "Septuagint (LXX)",
+	WLC: "W. Leningrad Codex (WLC)",
+	ALE: "Aleppo (ALE)",
+	TKH: "Tanakh (TKH)",
+	LXX: "Septuagint (LXX)",
 };
 
 const old_crit_txt_es = {
-	"1": "Codex Leningrado W. (WLC)",
-	"2": "Aleppo (ALE)",
-	"3": "Tanakh (TKH)",
-	"4": "Septuaginta (LXX)",
+	WLC: "Codex Leningrado W. (WLC)",
+	ALE: "Aleppo (ALE)",
+	TKH: "Tanakh (TKH)",
+	LXX: "Septuaginta (LXX)",
 };
 
 const new_crit_txt_en = {
-	"1": "Byzantine Text (BYZ)",
-	"2": "Textus Receptus (TR)",
-	"3": "Wescott and Hort Text (WH)",
-	"4": "Nestle 1904 Text (NES)",
+	BYZ: "Byzantine Text (BYZ)",
+	TR: "Textus Receptus (TR)",
+	WH: "Wescott and Hort Text (WH)",
+	NES: "Nestle 1904 Text (NES)",
 };
 
 const new_crit_txt_es = {
-	"1": "Texto Bisantino (BYZ)",
-	"2": "Textus Receptus (TR)",
-	"3": "Texto Wescott and Hort (WH)",
-	"4": "Texto Nestle 1904 (NES)",
+	BYZ: "Texto Bisantino (BYZ)",
+	TR: "Textus Receptus (TR)",
+	WH: "Texto Wescott and Hort (WH)",
+	NES: "Texto Nestle 1904 (NES)",
 };
 
 const loc_bible_en = {
-	"1": "Reina-Valera 1909 (RVA)",
-	"2": "King James Bible (KJV)",
-	"3": "Sagrada Biblia Libre para el Mundo (SBLM)",
-	"4": "World Estandard Bible (WEB)",
+	RVA: "Reina-Valera 1909 (RVA)",
+	KJV: "King James Bible (KJV)",
+	SBLM: "Sagrada Biblia Libre para el Mundo (SBLM)",
+	WEB: "World Estandard Bible (WEB)",
 };
 
 const tgt_rx_en = {

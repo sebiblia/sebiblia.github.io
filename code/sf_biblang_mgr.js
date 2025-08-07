@@ -65,21 +65,21 @@ const conf2mini = {
 
 const mini2conf = {};
 
-const OT_nams = {
+export const OT_nams = {
 	"WLC":1,
 	"ALE":1,
 	"TKH":1,
 	"LXX":1,		// CAREFUL. if you change this, then also file "LXX" occurences.
 };
 
-const NT_nams = {
+export const NT_nams = {
 	"BYZ":1,
 	"TR":1,
 	"WH":1,
 	"NES":1,
 };
 
-const LOC_nams = {
+export const LOC_nams = {
 	"RVA":1,
 	"SBLM":1,
 	"KJV":1,

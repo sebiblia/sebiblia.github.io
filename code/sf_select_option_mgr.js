@@ -1,19 +1,28 @@
 
 // CODE_FOR SELECT FROM ARRAY OF OPTIONS (for example several verses)
 
+const DEBUG_SEL_OPTIONS = false;
+const DEBUG_SCROLL = false;
+
 export function get_new_dv_under(dv_header, id_dv, toggle_op){
+	//if(DEBUG_SEL_OPTIONS){ console.log("get_new_dv_under " + dv_header.id); }
 	let dv_options = document.getElementById(id_dv);
 	if(dv_options != null){
 		var was_mine = (dv_header.nextSibling == dv_options);
 		if(toggle_op != "keep"){
+			if(DEBUG_SEL_OPTIONS){ console.log("REMOVING dv_options"); }
 			dv_options.remove();
 		} else {
+			if(DEBUG_SEL_OPTIONS){ console.log("option keep. returnion old dv_options"); }
 			return dv_options;
 		}
 		if(was_mine || (toggle_op == "force")){
+			if(DEBUG_SEL_OPTIONS){ console.log("was_mine returning NULL"); }
 			return null;
 		}
 	}
+	if(DEBUG_SEL_OPTIONS){ console.log("creating NEW dv_options under " + dv_header.id); }
+	
 	dv_options = document.createElement("div");
 	dv_header.after(dv_options);
 	
@@ -85,10 +94,14 @@ function add_option(dv_parent, id_option, label, handler, item_cls_arr){
 	return dv_opt; 
 }
 
-export function scroll_to_top(dv_elem) {
+export function scroll_to_top(dv_elem, dv_ref) {
+	if(DEBUG_SCROLL){ console.log("scroll_to_top " + dv_elem.id); }
 	if(dv_elem == null){ return; }
 	const rect = dv_elem.getBoundingClientRect();
-	const dv_content = document.getElementById("id_tool_content");
+	let dv_content = dv_ref;
+	if(dv_content == null){
+		dv_content = document.getElementById("id_tool_content");
+	}
 	if(dv_content == null){
 		console.error("dv_content == null");
 		return;

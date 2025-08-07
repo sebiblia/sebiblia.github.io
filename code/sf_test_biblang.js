@@ -226,8 +226,8 @@ async function main_test_matches(){
 
 
 
-main_selector();
-//main_diff_bib();
+//main_selector();
+main_diff_bib();
 //main_distance();
 //main_test_scode_next_and_prev();
 //main_test_matches();

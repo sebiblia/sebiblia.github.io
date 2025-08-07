@@ -8,7 +8,7 @@ import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analy
 
 import { init_lang, } from './sf_lang_mgr.js';
 import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, 
-	conf_to_mini, mini_to_conf, encode_mini, decode_mini, 	
+	conf_to_mini, mini_to_conf, encode_mini, decode_mini, OT_nams, NT_nams, LOC_nams, 
 } from './sf_biblang_mgr.js'
 
 //import { keyb_handler, 
@@ -22,6 +22,8 @@ id_select
 id_find
 
 */
+const DEBUG_SELECTOR = false;
+const DEBUG_SCODS = false;
 
 
 export let gvar = {};
@@ -30,10 +32,11 @@ export let gvar = {};
 const GET_var_expr = "biblang";
 const GET_var_conf = "conf";
 
-const PERSISTANT_STATE = true;
+const PERSISTANT_STATE = true;		// DO NOT CHANGE. ONLY FOR DEBUGGING CHANGE TO false.
 const STORAGE_STATE_ID = "STORAGE_STATE_ID";
 
 const SUF_SCOD_DEF = "_scod_def";
+const SUF_VERSE_TXT = "_verse_txt";
 
 const id_grid_text_analysis = "id_grid_text_analysis";
 const id_pop_menu_sele = "id_pop_menu_sele";
@@ -43,12 +46,11 @@ const id_history = "id_history";
 const id_menu_tok = "id_menu_tok";
 const id_header = "id_header";
 const id_info = "id_info";
+const id_scodes = "id_scodes";
 const id_del_expr = "id_del_expr";
 const id_menu_scod_def = "id_menu_scod_def";
 const id_menu_mutus = "id_menu_mutus";
-
-const DEBUG_SELECTOR = true;
-const DEBUG_SCODS = true;
+const id_search_href = "id_search_href";
 
 const GREEK_PREFIX = "G";
 
@@ -76,10 +78,30 @@ function get_crit_cod(val_sel){
 	return null;
 }
 
+function set_ui_rx_in(dv_rx_in, cod){
+	if(cod == "OT"){
+		dv_rx_in.classList.add("is_match_ot");
+		dv_rx_in.classList.remove("is_match_nt");
+		dv_rx_in.classList.remove("is_match_loc");
+	}
+	if(cod == "NT"){
+		dv_rx_in.classList.remove("is_match_ot");
+		dv_rx_in.classList.add("is_match_nt");
+		dv_rx_in.classList.remove("is_match_loc");
+	}
+	if(cod == "LOC"){
+		dv_rx_in.classList.remove("is_match_ot");
+		dv_rx_in.classList.remove("is_match_nt");
+		dv_rx_in.classList.add("is_match_loc");
+	}
+}
+
 function set_selec(dv_ret, val_sel){
 	const cod = get_crit_cod(val_sel);
 	if(cod != null){
 		dv_ret.innerHTML = cod;
+		set_ui_rx_in(dv_ret, cod);
+		// an ungly hack
 	}
 }
 
@@ -110,13 +132,17 @@ function get_tgt_rx_options(all_ops){
 function init_menus(){
 	
 	const dv_old_tes = document.getElementById("id_old_test");
+	dv_old_tes.classList.add("is_match_ot");
 	add_menu(dv_old_tes, gvar.old_crit_txt);
 	const dv_new_tes = document.getElementById("id_new_test");
+	dv_new_tes.classList.add("is_match_nt");
 	add_menu(dv_new_tes, gvar.new_crit_txt);
 	const dv_loc_bib = document.getElementById("id_loc_bib");
+	dv_loc_bib.classList.add("is_match_loc");
 	add_menu(dv_loc_bib, gvar.loc_bible);
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
 	add_menu(dv_rx_tgt, gvar.tgt_rx, get_tgt_rx_options);
+	set_ui_rx_in(dv_rx_tgt, dv_rx_tgt.innerHTML.trim());
 	const dv_out_txt = document.getElementById("id_out_txt");
 	add_menu(dv_out_txt, gvar.out_txt);
 
@@ -152,18 +178,6 @@ function init_menus(){
 		return;
 	});
 	
-	const dv_header = document.createElement("div");
-	dv_header.id = id_header;
-	dv_header.classList.add("search_header");
-	dv_header.innerHTML = "";
-	dv_select.after(dv_header);
-
-	const dv_info = document.createElement("div");
-	dv_info.id = id_info;
-	dv_info.classList.add("search_info");
-	dv_info.innerHTML = "";
-	dv_select.after(dv_info);
-
 	let dv_button = null;
 	let clk_hdlr = null;
 	
@@ -218,6 +232,7 @@ function set_ui_conf(conf){
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
 	if(conf.regex_input != null){
 		dv_rx_tgt.innerHTML = conf.regex_input.toUpperCase();
+		set_ui_rx_in(dv_rx_tgt, dv_rx_tgt.innerHTML.trim());
 	}
 	const dv_out_txt = document.getElementById("id_out_txt");
 	if(conf.output != null){
@@ -337,18 +352,38 @@ function verse_cod2obj(vrs_cod){
 }
 
 async function fill_sdefs(bl_obj){
+	const dv_select = document.getElementById(id_select);
+	let dv_scodes = document.getElementById(id_scodes);
+	if(dv_scodes == null){
+		dv_scodes = document.createElement("div");
+		dv_scodes.id = id_scodes;
+		dv_scodes.classList.add("search_scodes");
+		dv_select.after(dv_scodes);
+	}
+	
 	const lang = gvar.lang;
 	
-	const dv_header = document.getElementById(id_header);
+	const no_sco = ((bl_obj.all_scods == null) || (bl_obj.all_scods.length == 0));
+	const no_vrs = ((bl_obj.lverses == null) || (bl_obj.lverses.length == 0));
+	if(! no_vrs){
+		if(no_sco){
+			dv_scodes.remove();
+			return;
+		}
+	}
+	
 	const all_scods = bl_obj.all_scods;
-	dv_header.innerHTML = "";
+	dv_scodes.innerHTML = "";
 	
 	let ii = 0;
 	for(ii = 0; ii < all_scods.length; ii++){
 		const scod = all_scods[ii];
+		let cls = "is_match_ot";
+		
 		let conv_fn_nt = verse_to_hebrew;
 		const is_gre = scod.startsWith(GREEK_PREFIX);
 		if(is_gre){
+			cls = "is_match_nt";
 			conv_fn_nt = verse_to_min_greek;
 		}
 		
@@ -361,9 +396,9 @@ async function fill_sdefs(bl_obj){
 		const sco_txt = conv_fn_nt(sdef.asc);
 		//const href_sco = make_strong_ref(scod);
 		//const htm = `<a class="exam_ref big_font" href="${href_sco}" target="_blank">${scod}</a> <span>${sco_txt}</span>: ${sdef.def}`;
-		const htm = `<span class="scode_info">${scod}</span> <span>${sco_txt}</span>: ${sdef.def}`;
+		const htm = `<span class="scode_info ${cls} is_match_scod">${scod}</span> <span>${sco_txt}</span>: ${sdef.def}`;
 		dv_def.innerHTML = htm;
-		dv_header.appendChild(dv_def);
+		dv_scodes.appendChild(dv_def);
 		
 		dv_def.addEventListener('click', function() {
 			toggle_scod_actions(dv_def, scod);
@@ -373,18 +408,29 @@ async function fill_sdefs(bl_obj){
 }
 
 function fill_search_info(bl_obj){
-	const lang = gvar.lang;
-	
-	const dv_info = document.getElementById(id_info);
-	dv_info.innerHTML = "";
-
-	const ocu_kks = Object.keys(bl_obj.all_ocu);
-	const no_ocu = (ocu_kks.length == 0);
-	const no_sco = (bl_obj.all_scods.length == 0);
-	if(no_ocu && no_sco){
-		return;
+	const dv_select = document.getElementById(id_select);
+	let dv_info = document.getElementById(id_info);
+	if(dv_info == null){
+		dv_info = document.createElement("div");
+		dv_info.id = id_info;
+		dv_info.classList.add("search_info");
+		dv_select.after(dv_info);
 	}
 	
+	const lang = gvar.lang;
+	
+	const has_ocu = ((bl_obj.all_ocu != null) && (Object.keys(bl_obj.all_ocu).length > 0));
+	const has_sco = ((bl_obj.all_scods != null) && (bl_obj.all_scods.length > 0));
+	const has_vrs = ((bl_obj.lverses != null) && (bl_obj.lverses.length > 0));
+	/*if(has_vrs){
+		if(! has_ocu && ! has_sco){
+			dv_info.remove();
+			return;
+		}
+	}*/
+	
+	dv_info.innerHTML = "";
+
 	const dv_igrid = document.createElement("div");
 	dv_igrid.classList.add("grid_search_info");
 	dv_info.appendChild(dv_igrid);
@@ -392,51 +438,55 @@ function fill_search_info(bl_obj){
 	const oldt = gvar.biblang.curr_OT;
 	const newt = gvar.biblang.curr_NT;
 	const loc_bib = gvar.biblang.curr_LOC;
-	const rng_tit = gvar.all_msg.ranges_search;
-	const rng_str = bl_obj.intervals.map(rr => rr.join("-")).join(" ");
+	const itv_str = bl_obj.intervals.map(rr => ("[" + rr.join("-") + "]")).join(" ");
 	const rxi_val = gvar.biblang.regex_input.toUpperCase();
-	let rx_in = gvar.biblang.curr_LOC;
+	let rx_in = loc_bib;
+	let cls_rx_in = "is_match_loc";
 	if(rxi_val == "OT"){
-		rx_in = gvar.biblang.curr_OT;
+		rx_in = oldt;
+		cls_rx_in = "is_match_ot";
 	}
 	if(rxi_val == "NT"){
-		rx_in = gvar.biblang.curr_NT;
+		rx_in = newt;
+		cls_rx_in = "is_match_nt";
 	}
 
 	let dv_itm = null;
-	dv_itm = document.createElement("div");
-	dv_itm.classList.add("search_item");
-	dv_itm.innerHTML = `<span class="ot_info">${oldt}</span> <span class="nt_info">${newt}</span> -> <span class="loc_info">${loc_bib}</span>`;
-	dv_igrid.appendChild(dv_itm);
-
-	dv_itm = document.createElement("div");
-	dv_itm.classList.add("search_item");
-	dv_itm.innerHTML = `<span class="rx_in_info">${gvar.all_msg.text_search} ${rxi_val} (<span class="rx_in_info_bib">${rx_in}</span>)</span>`;
-	dv_igrid.appendChild(dv_itm);
 	
-	dv_itm = document.createElement("div");
-	dv_itm.classList.add("search_item");
-	dv_itm.innerHTML = `<span class="intervals_info">${gvar.all_msg.ranges_search} ${rng_str}</span>`;
-	dv_igrid.appendChild(dv_itm);
+	let htm = "";
+	if(has_sco || ! has_vrs){
+		htm += `<span class="ot_info is_match_ot">${oldt}</span> <span class="nt_info is_match_nt">${newt}</span> -> `;
+	}
+	if(rx_in == loc_bib){
+		htm += `<span class="loc_info is_match_loc">${loc_bib}</span>`;
+	}
+	if(rx_in == oldt){
+		htm += `<span class="loc_info"><span class="is_match_ot">OT:${oldt}</span>, <span class="is_match_loc">NT:${loc_bib}</span></span>`;
+	}
+	if(rx_in == newt){
+		htm += `<span class="loc_info"><span class="is_match_loc">OT:${loc_bib}</span>, <span class="is_match_nt">NT:${newt}</span></span>`;
+	}
+	if(htm.length > 0){
+		dv_itm = document.createElement("div");
+		dv_itm.classList.add("search_item");
+		dv_itm.innerHTML = htm;
+		dv_igrid.appendChild(dv_itm);
+	}
+
+	if(has_ocu || ! has_vrs){
+		dv_itm = document.createElement("div");
+		dv_itm.classList.add("search_item");
+		dv_itm.innerHTML = 
+			`<span class="rx_in_info">${gvar.all_msg.text_search} ${rxi_val} (<span class="rx_in_info_bib ${cls_rx_in}">${rx_in}</span>)</span>`;
+		dv_igrid.appendChild(dv_itm);
+		
+		dv_itm = document.createElement("div");
+		dv_itm.classList.add("search_item");
+		dv_itm.innerHTML = `<span class="intervals_info">${gvar.all_msg.intervals_search} ${itv_str}</span>`;
+		dv_igrid.appendChild(dv_itm);		
+	}
 	
 }
-
-/*
-/*
-function get_conv_fn(bib, book, op){
-	let conv_fn = verse_to_hebrew;
-	let is_greek = (book > 39);
-	if(bib == "LXX"){
-		is_greek = true;
-	}
-	if(is_greek){
-		conv_fn = verse_to_min_greek;
-		if(op == "MAY"){
-			conv_fn = verse_to_may_greek;
-		}
-	}
-	return conv_fn;
-}*/
 
 async function fill_verses(bl_obj){
 	const all_vrs = bl_obj.lverses;
@@ -567,9 +617,14 @@ function pop_menu_handler(){
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = "SHOW WEB LINK";
 	op.addEventListener('click', () => {
+		const dv_select = document.getElementById(id_select);
+		var dv_href = get_new_dv_under(dv_select, id_search_href);
+		if(dv_href == null){
+			return;
+		}
+		dv_href.classList.add("search_info");
 		const hrf = get_search_href();
-		const dv_info = document.getElementById(id_info);
-		dv_info.innerHTML = hrf;
+		dv_href.innerHTML = hrf;
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -658,8 +713,13 @@ async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
 		return;
 	}
 	dv_ana.classList.add("grid_txt_analysis", "grid_txt_columns");
+	let cls = "is_match_ot";
+	if(bibobj.book >= 40){
+		cls = "is_match_nt";
+	}
+	dv_ana.classList.add(cls);
 	
-	scroll_to_top(dv_txt);
+	//scroll_to_top(dv_txt);
 	
 	gvar.curr_dv_ver_id = bibobj.id_dv_ver;		// UGLY. It is to show the loding image under the right verse. 
 	const full_ana = await get_text_analysis(bibobj.cri_txt, bibobj.book_name, bibobj.chapter, bibobj.verse, bl_obj);
@@ -697,6 +757,7 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 	const t3 = add_tok_item(dv_ana, "auto", tok.sco, is_added, marked, false, tok.sel_scod);
 	const t4 = add_tok_item(dv_ana, "auto", bib_cri, is_added, marked, true);
 	const t5 = add_tok_item(dv_ana, "auto", tok.tra, is_added, marked);
+	if(is_added){ t5.classList.add("txt_added_right"); }
 	
 	t1.addEventListener('click', function() {
 		toggle_asc_id_menu(t5, bibobj, tok);
@@ -729,12 +790,19 @@ function add_tok_item(dv_ana, col, htm, is_added, marked, is_optional, sel_itm){
 	dv_itm.classList.add("txt_ana_item");
 	if(is_added){
 		dv_itm.classList.add("txt_ana_added_item");
+		if(col == 1){
+			dv_itm.classList.add("txt_added_left");
+		}
 	}
 	if(marked){
-		dv_itm.classList.add("txt_ana_marked_item");
+		dv_itm.classList.add("txt_ana_deleted_item");
 	}
 	if(sel_itm){
-		dv_itm.classList.add("txt_ana_selected_item");
+		let cls = "is_match_ot";
+		if(htm.startsWith(GREEK_PREFIX)){
+			cls = "is_match_nt";
+		}
+		dv_itm.classList.add("is_match_scod");
 	}
 	if(is_optional){
 		dv_itm.classList.add("txt_optional_item");
@@ -853,6 +921,15 @@ function set_css_matches(vs_txt, bibobj, bl_obj){
 	if(bl_obj.all_ocu == null){	return vs_txt; }
 	if(bibobj.bible == null){ return vs_txt; }
 	let bib = bibobj.bible;
+	
+	let cls = "is_match_loc";
+	if(OT_nams[bib] != null){
+		cls = "is_match_ot";
+	}
+	if(NT_nams[bib] != null){
+		cls = "is_match_nt";
+	}
+	
 	if(bl_obj.all_ocu[bib] == null){ 
 		bib += "i";
 		if(bl_obj.all_ocu[bib] == null){ return vs_txt; }
@@ -865,7 +942,7 @@ function set_css_matches(vs_txt, bibobj, bl_obj){
 	
 	const socu = vs_ocu.sort(cmp_ocurrence);
 
-	const ini_tag = `<span class="txt_matched">`;
+	const ini_tag = `<span class="${cls}">`;
 	const end_tag = `</span>`;
 	
 	let htm = { txt: vs_txt, disp: 0, lpos: 0, };
@@ -1030,14 +1107,17 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	
 	const dv_txt = document.createElement("div");
 	dv_txt.innerHTML = vtxt;
+	dv_txt.id = dv_ver.id + SUF_VERSE_TXT;	
 	if(conv_fn == verse_to_hebrew){
 		dv_txt.classList.add("in_right");
 	}
+	dv_ver.appendChild(dv_txt);	
 	dv_txt.addEventListener('click', async function() {
 		await toggle_text_analysis(dv_txt, bibobj, bl_obj);
-		scroll_to_top(dv_ver);
+		const dv_verses = document.getElementById("id_verses");
+		scroll_to_top(dv_txt, dv_verses);
+		scroll_to_top(dv_verses);
 	});		
-	dv_ver.appendChild(dv_txt);	
 }
 
 function get_search_href(){

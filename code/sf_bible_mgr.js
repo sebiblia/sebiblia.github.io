@@ -7,8 +7,9 @@ import { add_dbg_log, } from './sf_biblang_mgr.js';
 import { scroll_to_top, } from './sf_select_option_mgr.js';
 
 
-const DEBUG_BIBLE_MGR = true;
-const DEBUG_ANALYSIS = true;
+const DEBUG_BIBLE_MGR = false;
+const DEBUG_ANALYSIS = false;
+const DEBUG_NOT_COMMON = false;
 
 const GREEK_PREFIX = "G";
 const MAX_HEBREW_SCOD = 8675;
@@ -406,8 +407,11 @@ function add_not_common(ana2, prv2, idx2, s1, prv1, idx1){
 	const fst1 = prv1 + 1;
 	let ii1 = fst1;
 	const not_comm1 = s1.slice(fst1, idx1);
-	//console.log("not_comm1 [" + fst1 + "," + idx1 + ")");
-	//console.log(not_comm1);
+	if(DEBUG_NOT_COMMON){
+		console.log("not_comm1 [" + fst1 + "," + idx1 + ")");
+		console.log(not_comm1);
+		console.log(prv2);
+	}
 	let ii2 = prv2;
 	while(not_comm1.length > 0){
 		const fst2 = ii2 + 1;
@@ -416,8 +420,10 @@ function add_not_common(ana2, prv2, idx2, s1, prv1, idx1){
 		}
 		const wd1 = not_comm1.shift();
 		const not_comm2 = ana2.slice(fst2, idx2).map(oo => oo.id);
-		//console.log("not_comm2");
-		//console.log(not_comm2);
+		if(DEBUG_NOT_COMMON){
+			console.log("not_comm2");
+			console.log(not_comm2);
+		}
 		const wd2 = closest(wd1, not_comm2);
 		const iwd2 = not_comm2.findIndex(ee => (ee === wd2));
 		const aii2 = fst2 + iwd2;
@@ -435,9 +441,21 @@ function add_not_common(ana2, prv2, idx2, s1, prv1, idx1){
 		ii1++;
 	}
 	if(not_comm1.length > 0){
-		//console.log("ENTRA=======================================");
-		//console.log(not_comm1);
-		const obj2 = ana2[ii2];
+		if(DEBUG_NOT_COMMON){
+			console.log("ENTRA=======================================");
+			console.log(not_comm1);
+			console.log(ana2);
+			console.log(ii2);
+		}
+		let obj2 = ana2[ii2];
+		if(obj2 == null){
+			if(ii2 < 0){
+				obj2 = ana2[0];
+			}
+			if(ii2 >= ana2.length){
+				obj2 = ana2[ana2.length - 1];
+			}
+		}
 		if(obj2.added == null){ obj2.added = []; };
 		while(not_comm1.length > 0){
 			const wd1 = not_comm1.shift();
