@@ -490,7 +490,16 @@ function fill_search_info(bl_obj){
 		dv_itm = document.createElement("div");
 		dv_itm.classList.add("search_item");
 		dv_itm.innerHTML = `<span class="intervals_info">${gvar.all_msg.intervals_search} ${itv_str}</span>`;
-		dv_igrid.appendChild(dv_itm);		
+		dv_igrid.appendChild(dv_itm);
+		
+		const all_vrs = bl_obj.lverses;
+		if(all_vrs != null){
+			const tot = "" + bl_obj.lverses.length;
+			dv_itm = document.createElement("div");
+			dv_itm.classList.add("search_item");
+			dv_itm.innerHTML = `${gvar.all_msg.tot_versees}: ${tot}`;
+			dv_igrid.appendChild(dv_itm);
+		}
 	}
 	
 }
@@ -1231,6 +1240,9 @@ function start_biblang_command(){
 		return;
 	}
 	
+	if(gvar.biblang.prog_bar == null){ gvar.biblang.prog_bar = {}; }
+	gvar.biblang.prog_bar.start_time = performance.now();
+	
 	const tag_ev_tit = `${gvar.all_msg.evaluating} <span id=${id_evaluating_name}"></span><br>`;
 	const tag_img = `<progress id="${id_evaluating_bar}" class="download_bar" value="0" max="1"></progress>`;
 	
@@ -1271,12 +1283,14 @@ export function update_evaluating_bar(name, val){
 }
 
 function update_ev_bar(num_verse, tot_verses){
-	if((num_verse % 1000) == 0){
+	if((num_verse % 100) == 0){
 		const tmn = performance.now();
 		if((tmn - gvar.biblang.prog_bar.start_time) > 1000){
 			gvar.biblang.prog_bar.start_time = tmn;
 			const val = num_verse / tot_verses;
-			update_evaluating_bar(gvar.biblang.prog_bar.part_name, val);
+			requestAnimationFrame(() => {
+				update_evaluating_bar(gvar.biblang.prog_bar.part_name, val);
+			});
 			gvar.biblang.prog_bar.tot_updates++;
 		}
 	}

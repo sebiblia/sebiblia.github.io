@@ -20,6 +20,7 @@ const msg_es = {
 	copy_link: "COPIAR ENLACE WEB",
 	show_link: "MOSTRAR ENLACE WEB",
 	debug: "DEPURAR",
+	tot_versees: "Total de vesiculos encontrados ",
 };
 
 const msg_en = {
@@ -38,6 +39,7 @@ const msg_en = {
 	copy_link: "COPY WEB LINK",
 	show_link: "SHOW WEB LINK",
 	debug: "DEBUG",
+	tot_versees: "Total of verses found ",
 };
 
 export const BIBLANG_EXAMPLES_ES = [
