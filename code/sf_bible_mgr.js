@@ -1026,7 +1026,7 @@ async function start_loading(file_nam, fl_id, use_pbar){
 		const img_elem = document.getElementById(id_ui_loading);
 		await img_renderized(img_elem);
 	} else {
-		download_file(file_nam);
+		await download_file(file_nam);
 	}
 	
 	//scroll_to_top(dv_to_scroll);

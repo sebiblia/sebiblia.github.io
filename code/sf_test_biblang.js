@@ -224,10 +224,15 @@ async function main_test_matches(){
 	console.log(mm);
 }
 
+function test_reduce(){
+	const all_chap = [1, 2, 3, 4, 5];
+	const bk_sz = all_chap.reduce((tot, sz) => tot + sz, 0);
+	console.log(bk_sz);
+}
 
-
-//main_selector();
-main_diff_bib();
+//test_reduce();
+main_selector();
+//main_diff_bib();
 //main_distance();
 //main_test_scode_next_and_prev();
 //main_test_matches();

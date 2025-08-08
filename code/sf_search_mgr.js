@@ -51,6 +51,9 @@ const id_del_expr = "id_del_expr";
 const id_menu_scod_def = "id_menu_scod_def";
 const id_menu_mutus = "id_menu_mutus";
 const id_search_href = "id_search_href";
+const id_dv_evaluating = "id_dv_evaluating";
+const id_evaluating_bar = "id_evaluating_bar";
+const id_evaluating_name = "id_evaluating_name";
 
 const GREEK_PREFIX = "G";
 
@@ -278,10 +281,13 @@ async function do_select(prv_conf){
 		conf.output = txtout;
 	}
 	//let comm = `.${oldt} ; .${newt} ; .${loc_bib} ; :${rxin} ; .${txtout} ; ${expr}`;
-		
+	//start_biblang_command();		
 	const bl_obj = await eval_biblang_command(expr, conf);
+	
 	fill_search_info(bl_obj);
 	await fill_verses(bl_obj);
+
+	//end_biblang_command();
 	
 	if(dv_dbg_log != null){
 		toggle_dbg_info("keep");
@@ -549,9 +555,14 @@ async function fill_verses(bl_obj){
 	}
 	
 	scroll_to_top(dv_verses);
+
+	gvar.biblang.prog_bar.part_name = gvar.all_msg.adding_verses;
+	const tot_verses = all_vrs.length;
+	//update_ev_bar(0, tot_verses);
 			
 	let ii = 0;
 	for(ii = 0; ii < all_vrs.length; ii++){
+		//update_ev_bar(ii, tot_verses);
 		const bibobj = verse_cod2obj(all_vrs[ii]);
 		const dv_ver = document.createElement("div");
 		dv_ver.id = bibobj.id_dv_ver;
@@ -1189,4 +1200,59 @@ async function get_href(){
 	}
 }
 
+function start_biblang_command(){
+	let dv_evaluating = document.getElementById(id_dv_evaluating);
+	if(dv_evaluating != null){
+		return;
+	}
+	
+	const tag_ev_tit = `${gvar.all_msg.evaluating} <span id=${id_evaluating_name}"></span><br>`;
+	const tag_img = `<progress id="${id_evaluating_bar}" class="download_bar" value="0" max="1"></progress>`;
+	
+	const dv_verses = document.getElementById("id_verses");
+	dv_evaluating = document.createElement("div");
+	dv_evaluating.id = id_dv_evaluating;
+	dv_evaluating.innerHTML = tag_ev_tit + tag_img;
+	
+	dv_verses.prepend(dv_evaluating);
+	
+}
 
+function end_biblang_command(){
+	let dv_evaluating = document.getElementById(id_dv_evaluating);
+	if(dv_evaluating != null){
+		dv_evaluating.remove();
+	}
+}
+
+function in_nodejs(){
+	return (typeof window === 'undefined');
+}
+
+export function update_evaluating_bar(name, val){
+	if(in_nodejs()){	// working from node
+		return;
+	}
+	const nam = document.getElementById(id_evaluating_name);
+	if(nam == null){ 
+		return;
+	}
+	nam.innerHTML = name;
+	const pbar = document.getElementById(id_evaluating_bar);
+	if(pbar == null){ 
+		return;
+	}
+	pbar.value = val;
+}
+
+function update_ev_bar(num_verse, tot_verses){
+	if((num_verse % 1000) == 0){
+		const tmn = performance.now();
+		if((tmn - gvar.biblang.prog_bar.start_time) > 1000){
+			gvar.biblang.prog_bar.start_time = tmn;
+			const val = num_verse / tot_verses;
+			update_evaluating_bar(gvar.biblang.prog_bar.part_name, val);
+			gvar.biblang.prog_bar.tot_updates++;
+		}
+	}
+}

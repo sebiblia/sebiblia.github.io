@@ -1,12 +1,14 @@
 
 
 import { isArgumentsArray, ExpressionParser } from './sf_expression_parser.js'
-import { gvar, } from './sf_search_mgr.js';
+import { gvar, update_evaluating_bar, } from './sf_search_mgr.js';
 import { bib_chapter_sizes, } from './sf_bib_chapter_sizes.js';
 import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, } from './sf_bible_mgr.js';
 
 const DEBUG_MATCHES = false;
 const DEBUG_GET_RANGE = true;
+
+const NUM_OCU_UPDATE_BAR = 10000;
 
 const GREEK_PREFIX = "G";
 const GET_TOK = "GET_TOK";
@@ -124,6 +126,19 @@ const range_nams = {
 	"pa":[45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57],	// paul or pablo
 	"ev":[40, 41, 42, 43],	// evangelios or evangelio (gospel)
 };
+
+const book_sizes = [];
+
+function init_book_sizes(){
+	const cha_sz = bib_chapter_sizes;
+	book_sizes.push(0);
+	let ii = 1;
+	for(; ii <= 66; ii++){
+		const all_chap = Object.values(cha_sz[ii]);
+		const bk_sz = all_chap.reduce((tot, sz) => tot + sz, 0);
+		book_sizes.push(bk_sz);
+	}
+}
 
 function init_ranges(){
 	range_nams.all = [];
@@ -256,6 +271,7 @@ export function init_biblang(lng){
 	
 	gvar.biblang.parser = new ExpressionParser(biblang_def);
 	
+	init_book_sizes();
 	init_ranges();
 	init_biblang_conf();
 	init_history();
@@ -1088,6 +1104,9 @@ export function get_txt_matches(vtxt, rxo){
 	let prv = null;
 	let rr = null;
 	while((rr = rxo.exec(vtxt)) !== null){
+		gvar.biblang.prog_bar.tot_ocu++;
+		//update_prog_bar();
+		
 		let ocu = {
 			idx: rr.index,
 			lng: rr[0].length,
@@ -1153,6 +1172,8 @@ async function find_regex(bib, num, rx, prev){
 	if(gvar.biblang.all_ocu == null){ gvar.biblang.all_ocu = {}; }
 	const comm_ocu = gvar.biblang.all_ocu;
 	
+	gvar.biblang.prog_bar.part_name = rx;
+	
 	if(gvar.biblang.regex_insensitive){
 		rxo = new RegExp(rx, "ig");
 		rxbib = to_insenitive_bib(bib);;
@@ -1174,9 +1195,11 @@ async function find_regex(bib, num, rx, prev){
 			add_dbg_log("find_regex PREV");
 			add_dbg_log(prev.op);
 		}
+		gvar.biblang.prog_bar.tot_verses_part = prv_verses.length;
 		let ii = 0;
 		const all_mm = [];
 		for(ii = 0; ii < prv_verses.length; ii++){
+			gvar.biblang.prog_bar.num_verses_part = ii;
 			const vr = prv_verses[ii];
 			const vii = vr.split(":");
 			const all_ocu = await verse_matches(rxbib, vii, rxo);
@@ -1194,6 +1217,8 @@ async function find_regex(bib, num, rx, prev){
 	const found = [];
 	const fst_book = first_book_in_range();
 
+	gvar.biblang.prog_bar.tot_verses_part = calc_range_tot_verses();
+	
 	if(gvar.dbg_biblang){
 		add_dbg_log("find_regex");
 		add_dbg_log(rx);
@@ -1218,6 +1243,7 @@ async function find_regex(bib, num, rx, prev){
 			}
 			
 			vii = inc_verse(vii);		
+			gvar.biblang.prog_bar.num_verses_part++;
 		}
 	}
 	if(gvar.dbg_biblang){
@@ -1377,6 +1403,10 @@ export async function eval_biblang_command(command, config){
 	if(config != null){
 		set_biblang_conf(config);
 	}
+	gvar.biblang.prog_bar = {};
+	gvar.biblang.prog_bar.start_time = performance.now();
+	gvar.biblang.prog_bar.tot_updates = 0;
+	gvar.biblang.prog_bar.tot_ocu = 0;
 	gvar.biblang.dbg_log = [];
 	
 	gvar.biblang.all_scods = [];
@@ -1433,10 +1463,12 @@ export async function eval_biblang_command(command, config){
 		add_dbg_log("FINAL_RESULT");
 		add_dbg_log(robj.op);
 		add_dbg_log("FINAL_NUM_VERSES=" + robj.lverses.length);
-		add_dbg_log("_____________________________");
 		console.log(robj.lverses);
 		add_dbg_log("FINAL_CONF");
 		add_dbg_log(get_biblang_conf());
+		add_dbg_log("TOT_UPDATES");
+		add_dbg_log(gvar.biblang.prog_bar.tot_updates);
+		add_dbg_log("_____________________________");
 	}
 	return robj;
 }
@@ -1456,5 +1488,23 @@ export function add_dbg_log(obj){
 	
 	log.push(msg);
 	console.log(obj);
+}
+
+function calc_range_tot_verses(){
+	const rng = gvar.biblang.curr_range;
+	const ror_vrs = rng.reduce((tot, ii) => tot + book_sizes[ii], 0);
+	return ror_vrs;
+}
+
+function update_prog_bar(){
+	if((gvar.biblang.prog_bar.tot_ocu % NUM_OCU_UPDATE_BAR) == 0){
+		const tmn = performance.now();
+		if((tmn - gvar.biblang.prog_bar.start_time) > 1000){
+			gvar.biblang.prog_bar.start_time = tmn;
+			const val = gvar.biblang.prog_bar.num_verses_part / gvar.biblang.prog_bar.tot_verses_part;
+			update_evaluating_bar(gvar.biblang.prog_bar.part_name, val);
+			gvar.biblang.prog_bar.tot_updates++;
+		}
+	}
 }
 

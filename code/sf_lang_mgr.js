@@ -12,6 +12,8 @@ const msg_es = {
 	text_search: "Texto:",
 	intervals_search: "En los intervalos:",
 	no_verses: "No hay vertsiculos con la configuracion dada",
+	evaluating: "Calculando expresion ",
+	adding_verses: "Adicionando versiculos ",
 };
 
 const msg_en = {
@@ -22,6 +24,8 @@ const msg_en = {
 	text_search: "Text:",
 	intervals_search: "In the intervals:",
 	no_verses: "There are no verses with the configuration given",
+	evaluating: "Calculating expression ",
+	adding_verses: "Adding verses ",
 };
 
 const tok_ops_asc_id_es = ["exacto", "parcial", "adicionar"];
