@@ -229,8 +229,27 @@ const ascii_to_may_greek = {
 'w':'Ω',
 };
 
-
 export async function get_text_analysis(bib, book, chapter, verse, bl_obj){
+	let full_ana = null;
+	try{	
+		full_ana = await calc_text_analysis(bib, book, chapter, verse, bl_obj);
+	} catch(err){
+		add_dbg_log("ERROR in get_text_analysis");
+		add_dbg_log("" + `.${bib};${book}.${chapter}:${verse}`);
+		add_dbg_log(err);
+		add_dbg_log("_____________________________");
+		console.error("get_text_analysis error", err);
+		full_ana = {
+			tasc: "calc_text_analysis error. CHECK DEBUG INFO",
+			tsco: "calc_text_analysis error. CHECK DEBUG INFO",
+			tloc: "calc_text_analysis error. CHECK DEBUG INFO",
+			ana: [ { id: "BAD_id", sco: "BAD_sco", tra: "BAD_tra", idtra: "BAD_idtra", } ],
+		};
+	}
+	return full_ana;
+}
+
+async function calc_text_analysis(bib, book, chapter, verse, bl_obj){
 	const asc = await get_bible_verse(bib, book, chapter, verse);
 	const sbib = bib + "_S";
 	const sco = await get_bible_verse(sbib, book, chapter, verse);

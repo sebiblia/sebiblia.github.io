@@ -8,7 +8,7 @@ import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analy
 
 import { init_lang, } from './sf_lang_mgr.js';
 import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, 
-	conf_to_mini, mini_to_conf, encode_mini, decode_mini, OT_nams, NT_nams, LOC_nams, 
+	conf_to_mini, mini_to_conf, encode_mini, decode_mini, OT_nams, NT_nams, LOC_nams, add_dbg_log, 
 } from './sf_biblang_mgr.js'
 
 //import { keyb_handler, 
@@ -719,16 +719,18 @@ async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
 	}
 	dv_ana.classList.add(cls);
 	
-	//scroll_to_top(dv_txt);
-	
 	gvar.curr_dv_ver_id = bibobj.id_dv_ver;		// UGLY. It is to show the loding image under the right verse. 
 	const full_ana = await get_text_analysis(bibobj.cri_txt, bibobj.book_name, bibobj.chapter, bibobj.verse, bl_obj);
 	gvar.curr_dv_ver_id = null;
+		
 	
 	if(DEBUG_SELECTOR){
 		console.log("TEXT_ANALYSIS_OF " + dv_txt.id);
 		console.log(bibobj);
 		console.log(full_ana);
+	}
+	if(gvar.dbg_biblang){
+		toggle_dbg_info("keep");
 	}
 	
 	const toks = full_ana.ana;

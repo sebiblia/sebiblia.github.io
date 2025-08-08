@@ -1249,87 +1249,6 @@ async function calc_base_term(term, prev){
 	return calc_word(term, prev);
 }
 
-export async function eval_biblang_command(command, config){
-	const par = gvar.biblang.parser;
-	if(par == null){
-		console.error(eval_biblang_term);
-	}
-	reset_curr_range();
-
-	if(config != null){
-		set_biblang_conf(config);
-	}
-	gvar.biblang.dbg_log = [];
-	
-	gvar.biblang.all_scods = [];
-	gvar.biblang.all_ocu = {};
-	
-	dbg_log_all_loaded_files();
-	
-	if(gvar.biblang.size_output.his != null){
-		const hsz = Number(gvar.biblang.size_output.his);
-		if(gvar.biblang.history == null){ gvar.biblang.history = []; }
-		const his = gvar.biblang.history;
-		while((his.length > 0) && (his.length >= hsz)){ his.shift(); }
-		let sv_conf = config;
-		if(sv_conf == null){
-			sv_conf = get_biblang_conf();
-		}
-		his.push({conf: sv_conf, expr: command});
-	}
-	
-	if(gvar.dbg_biblang){
-		add_dbg_log("INITIAL_CONF");
-		add_dbg_log(get_biblang_conf());
-		const toks = par.tokenize(command);
-		add_dbg_log("TOKENS");
-		add_dbg_log(toks);
-	}
-
-	const robj = await par.expressionToValue(command);
-	const all_vss = robj.lverses;
-	robj.lverses = all_vss.sort(cmp_verses);;
-	
-	robj.all_scods = gvar.biblang.all_scods;
-	robj.all_ocu = gvar.biblang.all_ocu;
-
-	if(gvar.biblang.all_user_vars == null){ gvar.biblang.all_user_vars = {}; }
-	gvar.biblang.all_user_vars["$last"] = robj;
-	
-	gvar.biblang.all_scods = [];
-	gvar.biblang.all_ocu = {};
-
-	robj.intervals = range_to_intervals(gvar.biblang.curr_range);
-	
-	if(gvar.dbg_biblang){
-		add_dbg_log("FINAL_RESULT");
-		add_dbg_log(robj.op);
-		add_dbg_log("FINAL_NUM_VERSES=" + robj.lverses.length);
-		add_dbg_log("_____________________________");
-		console.log(robj.lverses);
-		add_dbg_log("FINAL_CONF");
-		add_dbg_log(get_biblang_conf());
-	}
-	return robj;
-}
-
-export function add_dbg_log(obj){
-	if(! gvar.dbg_biblang){
-		return;
-	}
-	if(gvar.biblang.dbg_log == null){
-		gvar.biblang.dbg_log = [];
-	}
-	
-	const log = gvar.biblang.dbg_log;
-	const dbgsz = Number(gvar.biblang.size_output.dbg);
-	while((log.length > 0) && (log.length >= dbgsz)){ log.shift(); }
-	const msg = JSON.stringify(obj, null, " ");
-	
-	log.push(msg);
-	console.log(obj);
-}
-
 export function range_to_intervals(range){
 	let rng = range;
 	if(rng == null){
@@ -1446,5 +1365,96 @@ export function decode_mini(emini){
 	}
 	decoded.r = fix_bool(decoded.r);
 	return decoded;
+}
+
+export async function eval_biblang_command(command, config){
+	const par = gvar.biblang.parser;
+	if(par == null){
+		console.error(eval_biblang_term);
+	}
+	reset_curr_range();
+
+	if(config != null){
+		set_biblang_conf(config);
+	}
+	gvar.biblang.dbg_log = [];
+	
+	gvar.biblang.all_scods = [];
+	gvar.biblang.all_ocu = {};
+	
+	dbg_log_all_loaded_files();
+	
+	if(gvar.biblang.size_output.his != null){
+		const hsz = Number(gvar.biblang.size_output.his);
+		if(gvar.biblang.history == null){ gvar.biblang.history = []; }
+		const his = gvar.biblang.history;
+		while((his.length > 0) && (his.length >= hsz)){ his.shift(); }
+		let sv_conf = config;
+		if(sv_conf == null){
+			sv_conf = get_biblang_conf();
+		}
+		his.push({conf: sv_conf, expr: command});
+	}
+	
+	if(gvar.dbg_biblang){
+		add_dbg_log("INITIAL_CONF");
+		add_dbg_log(get_biblang_conf());
+		const toks = par.tokenize(command);
+		add_dbg_log("TOKENS");
+		add_dbg_log(toks);
+	}
+
+	let robj = null;
+	try{
+		robj = await par.expressionToValue(command);
+	} catch(err){
+		add_dbg_log("ERROR in eval_biblang_command");
+		add_dbg_log(err);
+		console.error("expressionToValue error", err);
+		add_dbg_log("_____________________________");
+		robj = { op: "expressionToValue error. CHECK DEBUG INFO.", lverses: [], lscods: [] };
+	}
+	
+	const all_vss = robj.lverses;
+	robj.lverses = all_vss.sort(cmp_verses);;
+	
+	robj.all_scods = gvar.biblang.all_scods;
+	robj.all_ocu = gvar.biblang.all_ocu;
+
+	if(gvar.biblang.all_user_vars == null){ gvar.biblang.all_user_vars = {}; }
+	gvar.biblang.all_user_vars["$last"] = robj;
+	
+	gvar.biblang.all_scods = [];
+	gvar.biblang.all_ocu = {};
+
+	robj.intervals = range_to_intervals(gvar.biblang.curr_range);
+	
+	if(gvar.dbg_biblang){
+		add_dbg_log("FINAL_RESULT");
+		add_dbg_log(robj.op);
+		add_dbg_log("FINAL_NUM_VERSES=" + robj.lverses.length);
+		add_dbg_log("_____________________________");
+		console.log(robj.lverses);
+		add_dbg_log("FINAL_CONF");
+		add_dbg_log(get_biblang_conf());
+	}
+	return robj;
+}
+
+export function add_dbg_log(obj){
+	if(! gvar.dbg_biblang){
+		return;
+	}
+	if(gvar.biblang.dbg_log == null){
+		gvar.biblang.dbg_log = [];
+	}
+	
+	const log = gvar.biblang.dbg_log;
+	const dbgsz = Number(gvar.biblang.size_output.dbg);
+	while((log.length > 0) && (log.length >= dbgsz)){ log.shift(); }
+	const msg = JSON.stringify(obj, null, " ");
+	
+	log.push(msg);
+	console.log(obj);
 }
 
