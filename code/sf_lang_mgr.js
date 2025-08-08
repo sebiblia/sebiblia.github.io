@@ -14,6 +14,12 @@ const msg_es = {
 	no_verses: "No hay vertsiculos con la configuracion dada",
 	evaluating: "Calculando expresion ",
 	adding_verses: "Adicionando versiculos ",
+	history: "HISTORIA DE COMANDOS",
+	examples: "EJEMPLOS",
+	books: "LIBROS",
+	copy_link: "COPIAR ENLACE WEB",
+	show_link: "MOSTRAR ENLACE WEB",
+	debug: "DEPURAR",
 };
 
 const msg_en = {
@@ -26,7 +32,64 @@ const msg_en = {
 	no_verses: "There are no verses with the configuration given",
 	evaluating: "Calculating expression ",
 	adding_verses: "Adding verses ",
+	history: "COMMAND HISTORY",
+	examples: "EXAMPLES",
+	books: "BOOKS",
+	copy_link: "COPY WEB LINK",
+	show_link: "SHOW WEB LINK",
+	debug: "DEBUG",
 };
+
+export const BIBLANG_EXAMPLES_ES = [
+	`muerte ../busca 'muerte'/`,
+	`eterna ../busca versiculos con 'eterna'/`,
+	`g2288 ../busca el cod Strong G2288/`,
+	`g166 ../busca el cod Strong G166/`,
+	`g2288 & g166 ../versiculos con ambos codigos, G2288 y G166/`,
+	`g2288 | g166 ../alguno de los codigos G2288 o G166/`,
+	`g2288 ! g166 ../con G2288 pero sin G166/`,
+	`mat_1 ../capitulo 1 de mateo/`,
+	`mat.1 ../capitulo 1 de mateo/`,
+	`mat-1 ../capitulo 1 de mateo/`,
+	`mat.1:5 ../mateo 1:5/`,
+	`mat.1 :: mat_3 ../tres primeros capitulos/`,
+	`mat_1:5-9 ../mateo 1:5-9/`,
+	`mat_1:5-9 ; luk.3 ../versiculos en 'mateo 1:5-9' o en 'lukas 3'/`,
+	`mat_1:5-9 & luk.3 ../versiculos en 'mateo 1:5-9' y en 'lukas 3'/`,
+	`mat_1 ! y ../versiculos en 'mateo 1' sin la palabra 'y'/`,
+	`/^desp/ ../comienzan por 'desp'/`,
+	`/dijo$/ ../terminan por 'dijo'/`,
+	`/m.jo/ ../busca esa expr. regular javascript/`,
+	`=nt ; jos ../fija el rango al nuevo test, luego busca 'jos'/`,
+	`=nt ; +heb; jos ../rango a nt mas hebreos, luego busca 'jos'/`,
+	`=nt ; -mat; jos ../rango a nt menos mateo, luego busca 'jos'/`,
+];
+
+export const BIBLANG_EXAMPLES_EN = [
+	`death ../finds 'death'/`,
+	`eterna ../finds verses with 'eterna'/`,
+	`g2288 ../finds Strong cod G2288/`,
+	`g166 ../finds Strong cod G166/`,
+	`g2288 & g166 ../verses with both codes, G2288 and G166/`,
+	`g2288 | g166 ../any of the codes G2288 or G166/`,
+	`g2288 ! g166 ../with G2288 but without G166/`,
+	`mat_1 ../matthew chapter 1/`,
+	`mat.1 ../matthew chapter 1/`,
+	`mat-1 ../matthew chapter 1/`,
+	`mat.1:5 ../matthew 1:5/`,
+	`mat.1 :: mat_3 ../first three chapters/`,
+	`mat_1:5-9 ../matthew 1:5-9/`,
+	`mat_1:5-9 ; luk.3 ../verses in 'matthew 1:5-9' or in 'luke 3'/`,
+	`mat_1:5-9 & luk.3 ../verses in 'matthew 1:5-9' and in 'luke 3'/`,
+	`mat_1 ! y ../in 'matthew 1' without the word 'y'/`,
+	`/^desp/ ../start with 'desp'/`,
+	`/dijo$/ ../end with 'dijo'/`,
+	`/m.jo/ ../finds that javascript reg. expr/`,
+	`=nt ; jos ../sets range to new testament, then finds 'jos'/`,
+	`=nt ; +heb; jos ../range to nt plus hebrews, luego busca 'jos'/`,
+	`=nt ; -mat; jos ../range to nt minus matthew, luego busca 'jos'/`,
+];
+
 
 const tok_ops_asc_id_es = ["exacto", "parcial", "adicionar"];
 const tok_ops_asc_id_en = ["exact", "partial", "add"];
@@ -373,6 +436,8 @@ function init_es(){
 	gvar.tok_ops_asc_id = tok_ops_asc_id_es;
 	gvar.tok_ops_scod = tok_ops_scod_es;
 	gvar.ops_def_scod = ops_def_scod_es;
+
+	gvar.examples = BIBLANG_EXAMPLES_ES;
 }
 
 function init_en(){
@@ -394,5 +459,7 @@ function init_en(){
 	gvar.tok_ops_asc_id = tok_ops_asc_id_en;
 	gvar.tok_ops_scod = tok_ops_scod_en;
 	gvar.ops_def_scod = ops_def_scod_en;
+
+	gvar.examples = BIBLANG_EXAMPLES_EN;
 }
 

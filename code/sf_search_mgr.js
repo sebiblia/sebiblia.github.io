@@ -54,6 +54,7 @@ const id_search_href = "id_search_href";
 const id_dv_evaluating = "id_dv_evaluating";
 const id_evaluating_bar = "id_evaluating_bar";
 const id_evaluating_name = "id_evaluating_name";
+const id_examples = "id_examples";
 
 const GREEK_PREFIX = "G";
 
@@ -600,25 +601,31 @@ function pop_menu_handler(){
 	
 	let op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = "HISTORY";
+	op.innerHTML = gvar.all_msg.history;
 	op.addEventListener('click', toggle_history_info);
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = "BOOKS";
+	op.innerHTML = gvar.all_msg.books;
 	op.addEventListener('click', toggle_books_info);
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = "DEBUG";
+	op.innerHTML = gvar.all_msg.examples;
+	op.addEventListener('click', toggle_examples);
+	dv_pop_men.appendChild(op);
+	
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.debug;
 	op.addEventListener('click', toggle_dbg_info);
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = "GET WEB LINK";
+	op.innerHTML = gvar.all_msg.copy_link;
 	op.addEventListener('click', async () => {
 		await get_href();
 	});
@@ -626,7 +633,7 @@ function pop_menu_handler(){
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = "SHOW WEB LINK";
+	op.innerHTML = gvar.all_msg.show_link;
 	op.addEventListener('click', () => {
 		const dv_select = document.getElementById(id_select);
 		var dv_href = get_new_dv_under(dv_select, id_search_href);
@@ -661,6 +668,24 @@ function toggle_history_info(toggle_op){
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
 	toggle_select_option(dv_select, id_history, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+}
+
+function toggle_examples(toggle_op){
+	const dv_expr = document.getElementById(id_expression);
+	let his_vals = gvar.examples;
+	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		dv_expr.value = val_sel;
+		await do_select();
+	}
+	if(his_vals.length == 0){
+		his_vals = ["NO DATA TO SHOW. Do a search first."];
+		clk_fn = null;
+	}
+	const cls_men = ["aux_item", "has_border"];
+	const cls_itm = [];
+	const dv_select = document.getElementById(id_select);
+	const dv_to_scroll = null;
+	toggle_select_option(dv_select, id_examples, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 }
 
 function toggle_books_info(){

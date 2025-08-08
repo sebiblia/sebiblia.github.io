@@ -386,6 +386,7 @@ a.exam_ref:hover {
 .input_item {
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
+	overflow-x: scroll;
 	font-size:1em;
 	grid-column-start: 1;
 	grid-column-end: -1;
