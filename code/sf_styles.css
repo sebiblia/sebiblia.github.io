@@ -179,6 +179,27 @@ body {
 	grid-row: 1;	
 }
 
+/*
+	display:flex;
+	align-items: center;
+
+*/
+
+.tool_content {
+	display: block;
+	float: none;
+	top: 10vh;
+	height: 90vh;
+	overflow-y: scroll;
+	position: fixed;
+	width: 100%;
+	z-index: 50;
+}
+
+.begin_of_content {
+	height: 5vh;
+}
+
 .end_of_content {
 	height: 50vh;
 }
@@ -194,17 +215,6 @@ body {
 
 .exam,h1 {
 	font-size:1.1em;
-}
-
-.tool_content {
-	display: block;
-	float: none;
-	top: 10vh;
-	height: 90vh;
-	overflow-y: scroll;
-	position: fixed;
-	width: 100%;
-	z-index: 50;
 }
 
 .exam_ref {
@@ -336,6 +346,13 @@ a.exam_ref:hover {
 	width: 5%;
 }
 
+.top_menu_font{
+	display:flex;
+	align-items: center;
+	margin-left: 0.2em;
+	font-size: 2em;
+}
+
 .big_font{
 	font-size: 1.5em;
 }
@@ -349,6 +366,7 @@ a.exam_ref:hover {
 
 .grid_tool {
 	display: grid;
+	margin-top: 10%;
 	margin-left: 10%;
 	margin-right: 10%;
 	grid-template-columns: 15fr 15fr 15fr 15fr 15fr;
