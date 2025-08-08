@@ -1103,6 +1103,11 @@ async function select_disp(bibobj, num){
 	const dv_expr = document.getElementById(id_expression);
 	dv_expr.value = expr;
 	await do_select();
+	
+	const dv_verses = document.getElementById("id_verses");
+	const dv_vr = document.getElementById(bibobj.id_dv_ver);
+	scroll_to_top(dv_vr, dv_verses);
+	scroll_to_top(dv_verses);
 }
 
 function add_ui_disp(dv_ver, bibobj, disp, htm, butt_classes){
