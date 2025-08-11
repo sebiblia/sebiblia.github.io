@@ -87,6 +87,31 @@ const local_text_files = {
 	GRE_ES : loc_dir + "GRE_ES.js",
 };
 
+const bh_lang = {
+	"Ben": "en",
+	"B2es": "es",
+};
+
+const stg_lang = {
+	"Sen": "en",
+	"Ses": "es",
+};
+
+const stg_dict = {
+	"en": "Sen",
+	"es": "Ses",
+};
+
+
+/*
+const dict_files = {
+	"Ben": { heb
+	"B2es": 
+	"Sen": 
+	"Ses": 
+};
+*/
+
 const hebrew_chars = {
 ALEF:'\u05D0',
 BET:'\u05D1',
@@ -229,10 +254,10 @@ const ascii_to_may_greek = {
 'w':'Ω',
 };
 
-export async function get_text_analysis(bib, book, chapter, verse, bl_obj){
+export async function get_text_analysis(bibobj, bl_obj){
 	let full_ana = null;
-	try{	
-		full_ana = await calc_text_analysis(bib, book, chapter, verse, bl_obj);
+	try{
+		full_ana = await calc_text_analysis(bibobj, bl_obj);
 	} catch(err){
 		add_dbg_log("ERROR in get_text_analysis");
 		add_dbg_log("" + `.${bib};${book}.${chapter}:${verse}`);
@@ -249,7 +274,33 @@ export async function get_text_analysis(bib, book, chapter, verse, bl_obj){
 	return full_ana;
 }
 
-async function calc_text_analysis(bib, book, chapter, verse, bl_obj){
+function fill_bibobj_tra_info(bibobj){
+	const book = bibobj.book_name;
+	const num_book = gvar.book2num_en[book];
+	let lpref = "HEB";
+	if(num_book > 39){
+		lpref = "GRE";
+	}
+	const lbib = lpref + "_LOC";
+	
+	bibobj.lang = bh_lang[bibobj.dict];
+	
+	let ltra = null;
+	if(bibobj.lang != null){
+		ltra = lpref + "_" + bibobj.lang.toUpperCase();
+	}
+	
+	bibobj.loc_bib = lbib;
+	bibobj.loc_tra = ltra;
+	
+}
+
+async function calc_text_analysis(bibobj, bl_obj){
+	const bib = bibobj.cri_txt;
+	const book = bibobj.book_name;
+	const chapter = bibobj.chapter;
+	const verse = bibobj.verse;
+	
 	const asc = await get_bible_verse(bib, book, chapter, verse);
 	const sbib = bib + "_S";
 	const sco = await get_bible_verse(sbib, book, chapter, verse);
@@ -258,23 +309,14 @@ async function calc_text_analysis(bib, book, chapter, verse, bl_obj){
 	let ana = null;
 	
 	if(bib != "LXX"){
-		let lpref = "HEB";
-		const num_book = gvar.book2num_en[book];
-		if(num_book > 39){
-			lpref = "GRE";
-		}
-		const lbib = lpref + "_LOC";
-		if(DEBUG_BIBLE_MGR){ console.log("" + lbib + " " + book + "_" + chapter + ":" + verse);	}
-		loc = await get_bible_verse(lbib, book, chapter, verse);
+		fill_bibobj_tra_info(bibobj);
+		if(DEBUG_BIBLE_MGR){ console.log("" + bibobj.loc_bib + " " + book + "_" + chapter + ":" + verse);	}
+		loc = await get_bible_verse(bibobj.loc_bib, book, chapter, verse);
 
-		ana = get_obj_analysis(asc, sco, loc, bl_obj);
+		ana = get_obj_analysis(asc, sco, loc, bl_obj);		
+		ana.dict = bibobj.dict;
 		
-		let ltra = lpref + "_" + gvar.lang.toUpperCase();
-		if((bl_obj != null) && (bl_obj.lang != null)){
-			ltra = lpref + "_" + bl_obj.lang.toUpperCase();
-		}
-		
-		await fill_translation(ltra, ana);
+		await fill_translation(bibobj.loc_tra, ana);
 		
 	} else {
 		const vasc = asc.split(" ");
@@ -282,6 +324,7 @@ async function calc_text_analysis(bib, book, chapter, verse, bl_obj){
 		ana = vasc.map((tok, idx) => { 
 			return { id: tok, sco: vsco[idx], };
 		});		
+		ana.dict = bibobj.dict;
 	}
 	
 	await fill_scod_translation(ana, bl_obj);
@@ -372,10 +415,11 @@ function fill_added_scodes(added, vsco, vasc, bl_obj){
 }
 
 async function fill_scod_translation(ana, bl_obj){
-	let lang = gvar.lang;
-	if((bl_obj != null) && (bl_obj.lang != null)){
-		lang = bl_obj.lang;
+	let lang = stg_lang[ana.dict];
+	if(lang == null){
+		lang = gvar.lang;
 	}
+	
 	let ii = 0;
 	for(; ii < ana.length; ii++){
 		const obj = ana[ii];
@@ -383,6 +427,7 @@ async function fill_scod_translation(ana, bl_obj){
 			const def_obj = await get_scode_def(obj.sco, lang);
 			obj.tra = def_obj.def;
 			obj.sel_scod = is_selected_scode(bl_obj, obj.sco);
+			obj.dict = stg_dict[lang];
 		} 
 		if(obj.added != null){
 			await fill_added_scod_stranslation(obj.added, bl_obj, lang);
@@ -399,6 +444,7 @@ async function fill_added_scod_stranslation(added, bl_obj, lang){
 			const def_obj = await get_scode_def(obj.sco, lang);
 			obj.tra = def_obj.def;
 			obj.sel_scod = is_selected_scode(bl_obj, obj.sco);
+			obj.dict = stg_dict[lang];
 		} 
 	}
 }
@@ -508,11 +554,15 @@ export function find_ana(s1, s2, ana2){
 }
 
 async function fill_translation(ltra, ana){
+	if(ltra == null){
+		return;
+	}
 	let ii = 0;
 	for(; ii < ana.length; ii++){
 		const obj = ana[ii];
 		const tra = await get_local_text(ltra, obj.idtra);
 		obj.tra = tra;
+		obj.dict = ana.dict;
 	}
 }
 

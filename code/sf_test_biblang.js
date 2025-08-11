@@ -124,9 +124,17 @@ async function main_diff_bib(){
 	}
 	const lbib = lpref + "_LOC";
 	
+	const bibobj = {};
+	bibobj.cri_txt = bib;
+	bibobj.book_name = n2b[book];
+	bibobj.book = book;
+	bibobj.chapter = chapter;
+	bibobj.verse = verse;
+	
+	
 	console.log("" + bib + ":" + lbib + ":" + book + ":" + chapter + ":" + verse);
 	
-	const ana = await get_text_analysis(bib, n2b[book], chapter, verse);
+	const ana = await get_text_analysis(bibobj);
 	
 	console.log(JSON.stringify(ana, null, " "));
 	

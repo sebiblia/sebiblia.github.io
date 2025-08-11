@@ -369,7 +369,7 @@ a.exam_ref:hover {
 	margin-top: 10%;
 	margin-left: 10%;
 	margin-right: 10%;
-	grid-template-columns: 15fr 15fr 15fr 15fr 15fr;
+	grid-template-columns: 15fr 15fr 15fr 15fr 15fr 15fr;
 	grid-template-rows: auto;
 	font-size:1em;
 }
@@ -521,6 +521,22 @@ a.exam_ref:hover {
 
 .is_match_nt {
 	background-color: #55007f;
+}
+
+.is_bh_en_tra {
+	background-color: #005500;
+}
+
+.is_bh_en2es_tra {
+	background-color: #aa0000;
+}
+
+.is_stg_en_tra {
+	background-color: #4a4a00;
+}
+
+.is_stg_es_tra {
+	background-color: #00007f;
 }
 
 .is_verse_oper {

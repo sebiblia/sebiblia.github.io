@@ -55,8 +55,16 @@ const id_dv_evaluating = "id_dv_evaluating";
 const id_evaluating_bar = "id_evaluating_bar";
 const id_evaluating_name = "id_evaluating_name";
 const id_examples = "id_examples";
+const id_tra_txt = "id_tra_txt";
 
 const GREEK_PREFIX = "G";
+
+const tra_class = {
+	"Ben": "is_bh_en_tra",
+	"B2es": "is_bh_en2es_tra",
+	"Sen": "is_stg_en_tra",
+	"Ses": "is_stg_es_tra",
+};
 
 const simbol_chars = {
 UP:'\u2191',
@@ -69,7 +77,7 @@ const tab_txt = "TAB";
 const id_crit_sele = "id_crit_sele";
 const id_expression = "id_expression";
 
-const crit_regex = /[^(]*\((\w+)\).*/;
+const crit_regex = /[^(]*\(([^)]+)\).*/;
 
 function get_crit_cod(val_sel){
 	const matches = val_sel.match(crit_regex);
@@ -82,21 +90,53 @@ function get_crit_cod(val_sel){
 	return null;
 }
 
+function set_ui_rx_cls(dv_butt, cls){
+	dv_butt.classList.remove("is_match_ot");
+	dv_butt.classList.remove("is_match_nt");
+	dv_butt.classList.remove("is_match_loc");
+	dv_butt.classList.add(cls);
+}
+
 function set_ui_rx_in(dv_rx_in, cod){
+	const dv_out_txt = document.getElementById("id_out_txt");
 	if(cod == "OT"){
-		dv_rx_in.classList.add("is_match_ot");
-		dv_rx_in.classList.remove("is_match_nt");
-		dv_rx_in.classList.remove("is_match_loc");
+		set_ui_rx_cls(dv_rx_in, "is_match_ot");
+		set_ui_rx_cls(dv_out_txt, "is_match_ot");
 	}
 	if(cod == "NT"){
-		dv_rx_in.classList.remove("is_match_ot");
-		dv_rx_in.classList.add("is_match_nt");
-		dv_rx_in.classList.remove("is_match_loc");
+		set_ui_rx_cls(dv_rx_in, "is_match_nt");
+		set_ui_rx_cls(dv_out_txt, "is_match_nt");
 	}
 	if(cod == "LOC"){
-		dv_rx_in.classList.remove("is_match_ot");
-		dv_rx_in.classList.remove("is_match_nt");
-		dv_rx_in.classList.add("is_match_loc");
+		set_ui_rx_cls(dv_rx_in, "is_match_loc");
+		set_ui_rx_cls(dv_out_txt, "is_match_loc");
+	}
+}
+
+function set_ui_tra(dv_tra, cod){
+	if(cod == "Ben"){
+		dv_tra.classList.add("is_bh_en_tra");
+		dv_tra.classList.remove("is_bh_en2es_tra");
+		dv_tra.classList.remove("is_stg_en_tra");
+		dv_tra.classList.remove("is_stg_es_tra");
+	}
+	if(cod == "B2es"){
+		dv_tra.classList.remove("is_bh_en_tra");
+		dv_tra.classList.add("is_bh_en2es_tra");
+		dv_tra.classList.remove("is_stg_en_tra");
+		dv_tra.classList.remove("is_stg_es_tra");
+	}
+	if(cod == "Sen"){
+		dv_tra.classList.remove("is_bh_en_tra");
+		dv_tra.classList.remove("is_bh_en2es_tra");
+		dv_tra.classList.add("is_stg_en_tra");
+		dv_tra.classList.remove("is_stg_es_tra");
+	}
+	if(cod == "Ses"){
+		dv_tra.classList.remove("is_bh_en_tra");
+		dv_tra.classList.remove("is_bh_en2es_tra");
+		dv_tra.classList.remove("is_stg_en_tra");
+		dv_tra.classList.add("is_stg_es_tra");
 	}
 }
 
@@ -104,21 +144,26 @@ function set_selec(dv_ret, val_sel){
 	const cod = get_crit_cod(val_sel);
 	if(cod != null){
 		dv_ret.innerHTML = cod;
-		set_ui_rx_in(dv_ret, cod);
-		// an ungly hack
+		if(dv_ret.update_ui_fn != null){
+			dv_ret.update_ui_fn(dv_ret, cod);
+		}
 	}
 }
 
 function add_menu(dv_menu, ops_menu, update_fn){
 	dv_menu.addEventListener('click', function() {
 		const all_ops = Object.values(ops_menu);
-		if(update_fn != null){
-			update_fn(all_ops);
+		if(dv_menu.get_options_fn != null){
+			dv_menu.get_options_fn(all_ops);
+		}
+		let cls_itm = null;
+		if(dv_menu.set_cls_itm_fn != null){
+			cls_itm = dv_menu.set_cls_itm_fn;
 		}
 		toggle_select_option(dv_menu, id_crit_sele, all_ops, function(dv_ret, dv_ops, val_sel, idx_sel){
 			set_selec(dv_ret, val_sel);
 			dv_ops.remove();
-		});
+		}, null, cls_itm);
 		return;
 	});
 }
@@ -133,6 +178,30 @@ function get_tgt_rx_options(all_ops){
 	return all_ops;
 }
 
+function set_rxtgt_cls_itm_ui(id_itm){
+	const dv_itm = document.getElementById(id_itm);
+	if(dv_itm == null){
+		return;
+	}
+	const cod = get_crit_cod(dv_itm.innerHTML.trim());
+	if(cod != null){
+		set_ui_rx_in(dv_itm, cod);
+		dv_itm.classList.add("is_option");
+	}
+}
+
+function set_tra_cls_itm_ui(id_itm){
+	const dv_itm = document.getElementById(id_itm);
+	if(dv_itm == null){
+		return;
+	}
+	const cod = get_crit_cod(dv_itm.innerHTML.trim());
+	if(cod != null){
+		set_ui_tra(dv_itm, cod);
+		dv_itm.classList.add("is_option");
+	}
+}
+
 function init_menus(){
 	
 	const dv_old_tes = document.getElementById("id_old_test");
@@ -145,10 +214,24 @@ function init_menus(){
 	dv_loc_bib.classList.add("is_match_loc");
 	add_menu(dv_loc_bib, gvar.loc_bible);
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
+	dv_rx_tgt.get_options_fn = get_tgt_rx_options;
+	dv_rx_tgt.update_ui_fn = set_ui_rx_in;
+	dv_rx_tgt.set_cls_itm_fn = set_rxtgt_cls_itm_ui;
 	add_menu(dv_rx_tgt, gvar.tgt_rx, get_tgt_rx_options);
 	set_ui_rx_in(dv_rx_tgt, dv_rx_tgt.innerHTML.trim());
 	const dv_out_txt = document.getElementById("id_out_txt");
 	add_menu(dv_out_txt, gvar.out_txt);
+	
+	const dv_tra_txt = document.createElement("div");
+	dv_out_txt.after(dv_tra_txt);
+	
+	dv_tra_txt.id = id_tra_txt;
+	dv_tra_txt.classList.add("bib_item", "is_option");
+	dv_tra_txt.innerHTML = "Ben";
+	dv_tra_txt.update_ui_fn = set_ui_tra;
+	dv_tra_txt.set_cls_itm_fn = set_tra_cls_itm_ui;
+	add_menu(dv_tra_txt, gvar.tra_txt);
+	set_ui_tra(dv_tra_txt, dv_tra_txt.innerHTML.trim());
 
 	//dv_out_txt.insertAdjacentElement('afterend', dv_tab);
 	
@@ -753,6 +836,7 @@ function write_storage_state(){
 }
 
 async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
+	
 	var dv_ana = get_new_dv_under(dv_txt, id_grid_text_analysis);
 	if(dv_ana == null){
 		return;
@@ -764,8 +848,11 @@ async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
 	}
 	dv_ana.classList.add(cls);
 	
+	const dv_tra_txt = document.getElementById(id_tra_txt);
+	bibobj.dict = dv_tra_txt.innerHTML.trim();
+	
 	gvar.curr_dv_ver_id = bibobj.id_dv_ver;		// UGLY. It is to show the loding image under the right verse. 
-	const full_ana = await get_text_analysis(bibobj.cri_txt, bibobj.book_name, bibobj.chapter, bibobj.verse, bl_obj);
+	const full_ana = await get_text_analysis(bibobj, bl_obj);
 	gvar.curr_dv_ver_id = null;
 		
 	
@@ -793,18 +880,19 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 		cri = bibobj.conv_fn(tok.id);
 	}
 	let bib_cri = bibobj.cri_txt;
-	let marked = false;
+	let is_deleted = false;
 	if(! tok.comm && ! is_added && (bib_cri != "LXX")){
 		bib_cri = "BH";
-		marked = true;
+		is_deleted = true;
 	}
 	
-	const t1 = add_tok_item(dv_ana, 1, cri, is_added, marked);
-	const t2 = add_tok_item(dv_ana, "auto", tok.id, is_added, marked, true);
-	const t3 = add_tok_item(dv_ana, "auto", tok.sco, is_added, marked, false, tok.sel_scod);
-	const t4 = add_tok_item(dv_ana, "auto", bib_cri, is_added, marked, true);
-	const t5 = add_tok_item(dv_ana, "auto", tok.tra, is_added, marked);
-	if(is_added){ t5.classList.add("txt_added_right"); }
+	const t1 = add_tok_item(dv_ana, 1, cri, is_added, is_deleted);
+	const t2 = add_tok_item(dv_ana, "auto", tok.id, is_added, is_deleted, true);
+	const t3 = add_tok_item(dv_ana, "auto", tok.sco, is_added, is_deleted, false, tok.sel_scod);
+	const t4 = add_tok_item(dv_ana, "auto", bib_cri, is_added, is_deleted, true);
+	if(is_added){ t4.classList.add("txt_added_right"); }
+	
+	const t5 = add_tok_tra(dv_ana, tok);
 	
 	t1.addEventListener('click', function() {
 		toggle_asc_id_menu(t5, bibobj, tok);
@@ -832,7 +920,7 @@ function add_all_added(dv_ana, bibobj, tok){
 	}
 }
 
-function add_tok_item(dv_ana, col, htm, is_added, marked, is_optional, sel_itm){
+function add_tok_item(dv_ana, col, htm, is_added, is_deleted, is_optional, sel_itm){
 	const dv_itm = document.createElement("div");
 	dv_itm.classList.add("txt_ana_item");
 	if(is_added){
@@ -841,14 +929,10 @@ function add_tok_item(dv_ana, col, htm, is_added, marked, is_optional, sel_itm){
 			dv_itm.classList.add("txt_added_left");
 		}
 	}
-	if(marked){
+	if(is_deleted){
 		dv_itm.classList.add("txt_ana_deleted_item");
 	}
 	if(sel_itm){
-		let cls = "is_match_ot";
-		if(htm.startsWith(GREEK_PREFIX)){
-			cls = "is_match_nt";
-		}
 		dv_itm.classList.add("is_match_scod");
 	}
 	if(is_optional){
@@ -859,6 +943,25 @@ function add_tok_item(dv_ana, col, htm, is_added, marked, is_optional, sel_itm){
 	dv_itm.innerHTML = "";
 	if(htm != null){
 		dv_itm.innerHTML = htm;
+	}
+	dv_ana.appendChild(dv_itm);
+	return dv_itm;
+}
+
+function add_tok_tra(dv_ana, tok){
+	const dv_itm = document.createElement("div");
+	dv_itm.classList.add("txt_ana_item");
+	if(tok.dict != null){
+		const cls = tra_class[tok.dict];
+		if(cls != null){
+			dv_itm.classList.add(cls);
+		}
+	}
+	dv_itm.style.gridColumnStart = "auto";
+	dv_itm.style.gridColumnEnd = "auto";
+	dv_itm.innerHTML = "";
+	if(tok.tra != null){
+		dv_itm.innerHTML = tok.tra;
 	}
 	dv_ana.appendChild(dv_itm);
 	return dv_itm;

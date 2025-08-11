@@ -370,6 +370,13 @@ const out_txt_es = {
 	"3": "Muestre en ASCII (ASC)",
 };
 
+const tra_txt = {
+	"1": "BH English (Ben)",
+	"2": "BH Inglés -> Español (B2es)",
+	"3": "English Strong code def (Sen)",
+	"4": "Def. Español del Código Strong (Ses)",
+};
+
 
 export function init_lang(nm_lang){
 	if(nm_lang == "es"){
@@ -434,6 +441,7 @@ function init_es(){
 	gvar.loc_bible = loc_bible_en;
 	gvar.tgt_rx = tgt_rx_es;
 	gvar.out_txt = out_txt_es;
+	gvar.tra_txt = tra_txt;
 	
 	gvar.tok_ops_asc_id = tok_ops_asc_id_es;
 	gvar.tok_ops_scod = tok_ops_scod_es;

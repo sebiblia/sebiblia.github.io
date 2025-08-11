@@ -40,7 +40,11 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 	dv_options.innerHTML = "";
 	
 	if(menu_cls_arr != null){
-		dv_options.classList.add(...menu_cls_arr);
+		if(typeof item_cls_arr === "function"){
+			menu_cls_arr(id_selec_men);
+		} else {
+			dv_options.classList.add(...menu_cls_arr);
+		}
 	} else {
 		dv_options.classList.add("exam");
 		dv_options.classList.add("is_block");
@@ -78,16 +82,20 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 
 function add_option(dv_parent, id_option, label, handler, item_cls_arr){
 	const dv_opt = dv_parent.appendChild(document.createElement("div"));
+	dv_opt.innerHTML = label;
 	if(id_option != null){
 		dv_opt.id = id_option;
 	}
 	if(item_cls_arr != null){
-		dv_opt.classList.add(...item_cls_arr);
+		if(typeof item_cls_arr === "function"){
+			item_cls_arr(id_option);
+		} else {
+			dv_opt.classList.add(...item_cls_arr);
+		}
 	} else {
 		dv_opt.classList.add("exam");
 		dv_opt.classList.add("is_option");
 	}
-	dv_opt.innerHTML = label;
 	if(handler != null){
 		dv_opt.addEventListener('click', handler);
 	}
