@@ -486,7 +486,7 @@ async function fill_sdefs(bl_obj){
 		const sco_txt = conv_fn_nt(sdef.asc);
 		//const href_sco = make_strong_ref(scod);
 		//const htm = `<a class="exam_ref big_font" href="${href_sco}" target="_blank">${scod}</a> <span>${sco_txt}</span>: ${sdef.def}`;
-		const htm = `<span class="scode_info ${cls} is_match_scod">${scod}</span> <span>${sco_txt}</span>: ${sdef.def}`;
+		const htm = `<span class="scode_info ${cls} is_match_scod">${scod}</span> <span>${sco_txt} (${sdef.asc})</span>: ${sdef.def}`;
 		dv_def.innerHTML = htm;
 		dv_scodes.appendChild(dv_def);
 		
@@ -573,16 +573,16 @@ function fill_search_info(bl_obj){
 		dv_itm = document.createElement("div");
 		dv_itm.classList.add("search_item");
 		dv_itm.innerHTML = `<span class="intervals_info">${gvar.all_msg.intervals_search} ${itv_str}</span>`;
+		dv_igrid.appendChild(dv_itm);		
+	}
+	
+	const all_vrs = bl_obj.lverses;
+	if(all_vrs != null){
+		const tot = "" + bl_obj.lverses.length;
+		dv_itm = document.createElement("div");
+		dv_itm.classList.add("search_item");
+		dv_itm.innerHTML = `${gvar.all_msg.tot_versees}: ${tot}`;
 		dv_igrid.appendChild(dv_itm);
-		
-		const all_vrs = bl_obj.lverses;
-		if(all_vrs != null){
-			const tot = "" + bl_obj.lverses.length;
-			dv_itm = document.createElement("div");
-			dv_itm.classList.add("search_item");
-			dv_itm.innerHTML = `${gvar.all_msg.tot_versees}: ${tot}`;
-			dv_igrid.appendChild(dv_itm);
-		}
 	}
 	
 }
@@ -1061,7 +1061,8 @@ function insert_tag(htm, pos, tag){
 	if((idx < 0) || (idx > htm.txt.length)){
 		return;
 	}
-	htm.txt = htm.txt.slice(0, idx) + tag + htm.txt.slice(idx);
+	//htm.txt = htm.txt.slice(0, idx) + tag + htm.txt.slice(idx);
+	htm.txt = htm.txt.substring(0, idx) + tag + htm.txt.substring(idx);
 	htm.disp += tag.length;
 	htm.lpos = pos;
 }
