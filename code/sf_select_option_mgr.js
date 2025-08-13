@@ -11,6 +11,9 @@ export function get_new_dv_under(dv_header, id_dv, toggle_op){
 		var was_mine = (dv_header.nextSibling == dv_options);
 		if(toggle_op != "keep"){
 			if(DEBUG_SEL_OPTIONS){ console.log("REMOVING dv_options"); }
+			if(dv_options.when_remove_fn != null){
+				dv_options.when_remove_fn();
+			}
 			dv_options.remove();
 		} else {
 			if(DEBUG_SEL_OPTIONS){ console.log("option keep. returnion old dv_options"); }
@@ -33,9 +36,9 @@ export function get_new_dv_under(dv_header, id_dv, toggle_op){
 export function 
 toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu_cls_arr, item_cls_arr, dv_to_scroll, toggle_op){
 	
-	var dv_options = get_new_dv_under(dv_return, id_selec_men, toggle_op); // old id_dv_sel_option
+	let dv_options = get_new_dv_under(dv_return, id_selec_men, toggle_op); // old id_dv_sel_option
 	if(dv_options == null){
-		return;
+		return null;
 	}
 	dv_options.innerHTML = "";
 	
@@ -78,6 +81,8 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 	if(dv_to_scroll != null){
 		scroll_to_top(dv_to_scroll);
 	}
+	
+	return dv_options;
 }
 
 function add_option(dv_parent, id_option, label, handler, item_cls_arr){
