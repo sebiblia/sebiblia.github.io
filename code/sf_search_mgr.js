@@ -22,9 +22,10 @@ id_select
 id_find
 
 */
-const DEBUG_SELECTOR = false;
+const DEBUG_FILL_VERSES = false;
+const DEBUG_TEXT_ANA = false;
 const DEBUG_SCODS = false;
-
+const DEBUG_POP_MENU = false;
 
 export let gvar = {};
 
@@ -614,6 +615,7 @@ async function fill_verses(bl_obj){
 	
 	let bib_ot = gvar.biblang.curr_LOC;
 	let bib_nt = gvar.biblang.curr_LOC;
+	
 	let conv_fn_ot = null;
 	let conv_fn_nt = null;
 	if(rxi_val == "OT"){
@@ -652,7 +654,12 @@ async function fill_verses(bl_obj){
 	gvar.biblang.prog_bar.part_name = gvar.all_msg.adding_verses;
 	const tot_verses = all_vrs.length;
 	//update_ev_bar(0, tot_verses);
-			
+
+	if(DEBUG_FILL_VERSES){
+		console.log("fill_verses. bib_ot=" + bib_ot);
+		console.log("fill_verses. bib_nt=" + bib_nt);
+	}	
+	
 	let ii = 0;
 	for(ii = 0; ii < all_vrs.length; ii++){
 		//update_ev_bar(ii, tot_verses);
@@ -856,7 +863,7 @@ async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
 	gvar.curr_dv_ver_id = null;
 		
 	
-	if(DEBUG_SELECTOR){
+	if(DEBUG_TEXT_ANA){
 		console.log("TEXT_ANALYSIS_OF " + dv_txt.id);
 		console.log(bibobj);
 		console.log(full_ana);
@@ -1245,8 +1252,8 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	
 	dv_ver.innerHTML = "";
 	
-	add_ui_disp(dv_ver, bibobj, 5, vcit, ["is_verse_cit"]);
-	add_ui_disp(dv_ver, bibobj, 10, "(10)", butt_classes);
+	add_ui_disp(dv_ver, bibobj, 10, vcit, ["is_verse_cit"]);
+	//add_ui_disp(dv_ver, bibobj, 10, "(10)", butt_classes);
 	add_ui_disp(dv_ver, bibobj, 20, "(20)", butt_classes);
 	add_ui_disp(dv_ver, bibobj, 40, "(40)", butt_classes);
 

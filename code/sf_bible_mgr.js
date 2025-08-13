@@ -10,6 +10,7 @@ import { scroll_to_top, } from './sf_select_option_mgr.js';
 const DEBUG_BIBLE_MGR = false;
 const DEBUG_ANALYSIS = false;
 const DEBUG_NOT_COMMON = false;
+const DEBUG_FILL_BIBOBJ = false;
 
 const GREEK_PREFIX = "G";
 const MAX_HEBREW_SCOD = 8675;
@@ -61,10 +62,13 @@ const local_bible_files = {
 	
 	WEB : bibles_dir + "WEB_BIB.js",
 	KJV : bibles_dir + "KJV_BIB.js",
+	KJVs : bibles_dir + "KJVs_BIB.js",
 	SBLM : bibles_dir + "SBLM_BIB.js",
 	SBLMi : bibles_dir + "SBLMi_BIB.js",
 	RVA : bibles_dir + "RVA_BIB.js",
 	RVAi : bibles_dir + "RVAi_BIB.js",
+	RVAs : bibles_dir + "RVAs_BIB.js",
+	RVAsi : bibles_dir + "RVAsi_BIB.js",
 	
 	WLC_S : strongs_dir + "WLC_SBIB.js",
 	ALE_S : strongs_dir + "ALE_SBIB.js",
@@ -637,7 +641,7 @@ export async function fill_bibobj_vtxt(bibobj){
 	const vhref = make_bible_ref(cit_obj);
 	
 	bibobj.href_bh = vhref;
-
+	
 	if((bibobj.book != null) && (bibobj.chapter != null) && (bibobj.verse != null)){ 
 		let vcit = get_loc_book_nam(bibobj.book) + "." + bibobj.chapter + ":" + bibobj.verse;
 		let vtxt = await get_bible_verse(bibobj.bible, num2book_en[bibobj.book], bibobj.chapter, bibobj.verse);
@@ -647,6 +651,11 @@ export async function fill_bibobj_vtxt(bibobj){
 		bibobj.vtxt = vtxt;
 		bibobj.vcit = vcit;
 	}
+	
+	if(DEBUG_FILL_BIBOBJ){
+		console.log("fill_bibobj_vtxt");
+		console.log(bibobj);
+	}	
 }
 
 const regex_scode = /^([HGhg])(\d+)$/;

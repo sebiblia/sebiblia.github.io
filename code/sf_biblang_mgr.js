@@ -84,8 +84,10 @@ export const NT_nams = {
 
 export const LOC_nams = {
 	"RVA":1,
+	"RVAs":1,
 	"SBLM":1,
 	"KJV":1,
+	"KJVs":1,
 	"WEB":1,
 };
 

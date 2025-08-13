@@ -341,7 +341,9 @@ const new_crit_txt_es = {
 
 const loc_bible_en = {
 	RVA: "Reina-Valera 1909 (RVA)",
+	RVAs: "RVA con codigos Strong (RVAs)",
 	KJV: "King James Bible (KJV)",
+	KJVs: "KJV with Strong Codes (KJVs)",
 	SBLM: "Sagrada Biblia Libre para el Mundo (SBLM)",
 	WEB: "World Estandard Bible (WEB)",
 };
