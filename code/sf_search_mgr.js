@@ -1000,17 +1000,13 @@ function add_tok_tra(dv_ana, tok){
 function toggle_asc_id_menu(dv_up, bibobj, tok){
 	const dv_expr = document.getElementById(id_expression);
 	const ops = gvar.tok_ops_asc_id; // ["exact", "partial", "add"];
-	if(ops.length != 3){
-		console.error("ops.length != 3");
-		return null;
-	}
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = null;
 		let out = ":ot";
 		if(bibobj.book >= 40){
 			out = ":nt";
 		}
-	if(idx_sel == 0){
+		if(idx_sel == 0){
 			the_expr = `${out} ; /(^|\\s)${tok.id}(\\s|$)/`;
 		}
 		if(idx_sel == 1){
@@ -1025,6 +1021,8 @@ function toggle_asc_id_menu(dv_up, bibobj, tok){
 				await do_select();
 			}
 		}
+		
+		if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
 		dv_ops.remove();
 		scroll_to_top(dv_expr);
 	}
@@ -1041,11 +1039,7 @@ function toggle_scod_menu(dv_up, bibobj, tok){
 		return null;
 	}
 	const dv_expr = document.getElementById(id_expression);
-	const ops = gvar.tok_ops_scod; // ["select", "add", "bibhub"];
-	if(ops.length != 3){
-		console.error("ops.length != 3");
-		return null;
-	}
+	const ops = gvar.tok_ops_scod; // ["select", "add", "biblehub"];
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = null;
 		if(idx_sel == 0){
@@ -1056,10 +1050,12 @@ function toggle_scod_menu(dv_up, bibobj, tok){
 			add_to_expr(tok.sco);
 		}
 		if(idx_sel == 2){
-			// go to bibhub
+			// go to biblehub
 			const href_sco = make_strong_ref(tok.sco);
 			window.open(href_sco, '_blank');
 		}
+		
+		if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
 		dv_ops.remove();
 		scroll_to_top(dv_expr);
 	}
@@ -1166,11 +1162,7 @@ function set_css_matches(vs_txt, bibobj, bl_obj){
 function toggle_scod_actions(dv_def, scod){
 	const id_menu = id_menu_scod_def;
 		
-	const ops = gvar.ops_def_scod; // ["prv", "nxt", "roots", "mutual", "bibhub"];
-	if(ops.length != 5){
-		console.error("ops.length != 5");
-		return;
-	}
+	const ops = gvar.ops_def_scod; // ["prv", "nxt", "roots", "mutual", "encuentra", "adicionar", "bh"]
 	const dv_expr = document.getElementById(id_expression);
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = null;
@@ -1209,8 +1201,17 @@ function toggle_scod_actions(dv_def, scod){
 			toggle_scod_subops(dv_ops, scod, id_menu, idx_sel, subops);
 		}
 		if(idx_sel == 4){
+			dv_expr.value = scod;
+			await do_select();
+		}
+		if(idx_sel == 5){
+			add_to_expr(scod);
+		}
+		if(idx_sel == 6){
 			const href_sco = make_strong_ref(scod);
 			window.open(href_sco, '_blank');
+			
+			if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
 			dv_ops.remove();
 		}
 	}
@@ -1229,6 +1230,8 @@ function toggle_scod_subops(dv_parent_ops, scod, id_menu, idx_sel, sub_ops){
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		dv_expr.value = val_sel;
 		await do_select();
+		
+		if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
 		dv_ops.remove();
 		dv_parent_ops.remove();
 	}
@@ -1243,7 +1246,7 @@ function add_to_expr(cad){
 	const dv_expr = document.getElementById(id_expression);
 	//const has_foc = (document.activeElement === dv_expr);
 	const pos = dv_expr.selectionStart;
-	if(pos > 0){
+	if(pos >= 0){
 		const txt = dv_expr.value;
 		dv_expr.value = txt.substring(0, pos) + cad + txt.substring(pos);
 		dv_expr.focus();
@@ -1308,7 +1311,7 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	let dv_itm = null;
 	dv_itm = document.createElement("div");
 	dv_itm.classList.add(...butt_classes);
-	dv_itm.innerHTML = "bibhub";
+	dv_itm.innerHTML = gvar.biblehub_butt;
 	dv_itm.addEventListener('click', function() {
 		window.open(vhref, '_blank');
 	});		
