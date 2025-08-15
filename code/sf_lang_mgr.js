@@ -377,6 +377,7 @@ const tra_txt = {
 	"2": "BH Inglés -> Español (B2es)",
 	"3": "English Strong code def (Sen)",
 	"4": "Def. Español del Código Strong (Ses)",
+	"5": "Def. Local Strong code (LOC)",
 };
 
 

@@ -3,7 +3,7 @@ import { get_new_dv_under, scroll_to_top, toggle_select_option, get_opt_id,
 } from './sf_select_option_mgr.js';
 
 import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analysis, make_strong_ref, get_scode_def, 
-	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, 
+	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, local_scod_bibles, 
 } from './sf_bible_mgr.js';
 
 import { init_lang, } from './sf_lang_mgr.js';
@@ -26,6 +26,7 @@ const DEBUG_FILL_VERSES = false;
 const DEBUG_TEXT_ANA = false;
 const DEBUG_SCODS = false;
 const DEBUG_POP_MENU = false;
+const DEBUG_FILL_SPARTS = false;
 
 export let gvar = {};
 
@@ -59,12 +60,15 @@ const id_examples = "id_examples";
 const id_tra_txt = "id_tra_txt";
 
 const GREEK_PREFIX = "G";
+const SCOD_PREFIX = "[";
+const SCOD_SUFIX = "]";
 
 const tra_class = {
 	"Ben": "is_bh_en_tra",
 	"B2es": "is_bh_en2es_tra",
 	"Sen": "is_stg_en_tra",
 	"Ses": "is_stg_es_tra",
+	"LOC": "is_stg_loc_tra",
 };
 
 const simbol_chars = {
@@ -84,7 +88,7 @@ function get_crit_cod(val_sel){
 	const matches = val_sel.match(crit_regex);
 	
 	if(matches){
-		console.log(matches);
+		if(DEBUG_POP_MENU){ console.log(matches); }
 		let cod = matches[1].trim();
 		return cod;
 	}
@@ -115,29 +119,11 @@ function set_ui_rx_in(dv_rx_in, cod){
 }
 
 function set_ui_tra(dv_tra, cod){
-	if(cod == "Ben"){
-		dv_tra.classList.add("is_bh_en_tra");
-		dv_tra.classList.remove("is_bh_en2es_tra");
-		dv_tra.classList.remove("is_stg_en_tra");
-		dv_tra.classList.remove("is_stg_es_tra");
-	}
-	if(cod == "B2es"){
-		dv_tra.classList.remove("is_bh_en_tra");
-		dv_tra.classList.add("is_bh_en2es_tra");
-		dv_tra.classList.remove("is_stg_en_tra");
-		dv_tra.classList.remove("is_stg_es_tra");
-	}
-	if(cod == "Sen"){
-		dv_tra.classList.remove("is_bh_en_tra");
-		dv_tra.classList.remove("is_bh_en2es_tra");
-		dv_tra.classList.add("is_stg_en_tra");
-		dv_tra.classList.remove("is_stg_es_tra");
-	}
-	if(cod == "Ses"){
-		dv_tra.classList.remove("is_bh_en_tra");
-		dv_tra.classList.remove("is_bh_en2es_tra");
-		dv_tra.classList.remove("is_stg_en_tra");
-		dv_tra.classList.add("is_stg_es_tra");
+	
+	const all_rem = Object.values(tra_class);
+	dv_tra.classList.remove(...all_rem);
+	if(tra_class[cod] != null){
+		dv_tra.classList.add(tra_class[cod]);
 	}
 }
 
@@ -229,7 +215,10 @@ function init_menus(){
 	dv_tra_txt.id = id_tra_txt;
 	dv_tra_txt.classList.add("bib_item", "is_option");
 	dv_tra_txt.innerHTML = "Ben";
-	dv_tra_txt.update_ui_fn = set_ui_tra;
+	dv_tra_txt.update_ui_fn = (dv_ret, cod) => {
+		set_ui_tra(dv_ret, cod);
+		refresh_text_analysis();
+	};
 	dv_tra_txt.set_cls_itm_fn = set_tra_cls_itm_ui;
 	add_menu(dv_tra_txt, gvar.tra_txt);
 	set_ui_tra(dv_tra_txt, dv_tra_txt.innerHTML.trim());
@@ -842,6 +831,43 @@ function write_storage_state(){
 	window.localStorage.setItem(STORAGE_STATE_ID, JSON.stringify(stat));
 }
 
+function refresh_text_analysis(){
+	const dv_ana = document.getElementById(id_grid_text_analysis);
+	if(dv_ana == null){
+		return;
+	}
+	const dv_txt = dv_ana.dv_txt;
+	const bibobj = dv_ana.bibobj;
+	const bl_obj = dv_ana.bl_obj;
+
+	const dv_tra_txt = document.getElementById(id_tra_txt);
+	bibobj.dict = dv_tra_txt.innerHTML.trim();
+	
+	fill_strong_parts(bibobj);
+	
+	//const full_ana = await get_text_analysis(bibobj, bl_obj);		
+	get_text_analysis(bibobj, bl_obj).then((full_ana) => {
+		dv_ana.innerHTML = "";
+		
+		if(DEBUG_TEXT_ANA){
+			console.log("TEXT_ANALYSIS_OF " + dv_txt.id);
+			console.log(bibobj);
+			console.log(full_ana);
+		}
+		if(gvar.dbg_biblang){
+			toggle_dbg_info("keep");
+		}
+		
+		const toks = full_ana.ana;
+		let ii = 0;
+		for(; ii < toks.length; ii++){
+			const tok = toks[ii];
+			add_text_analysis_word(dv_ana, bibobj, tok);
+			add_all_added(dv_ana, bibobj, tok);
+		}
+	});
+}
+
 async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
 	
 	var dv_ana = get_new_dv_under(dv_txt, id_grid_text_analysis);
@@ -857,31 +883,11 @@ async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
 		cls = "is_match_nt";
 	}
 	dv_ana.classList.add(cls);
+	dv_ana.dv_txt = dv_txt;
+	dv_ana.bibobj = bibobj;
+	dv_ana.bl_obj = bl_obj;
 	
-	const dv_tra_txt = document.getElementById(id_tra_txt);
-	bibobj.dict = dv_tra_txt.innerHTML.trim();
-	
-	gvar.curr_dv_ver_id = bibobj.id_dv_ver;		// UGLY. It is to show the loding image under the right verse. 
-	const full_ana = await get_text_analysis(bibobj, bl_obj);
-	gvar.curr_dv_ver_id = null;
-		
-	
-	if(DEBUG_TEXT_ANA){
-		console.log("TEXT_ANALYSIS_OF " + dv_txt.id);
-		console.log(bibobj);
-		console.log(full_ana);
-	}
-	if(gvar.dbg_biblang){
-		toggle_dbg_info("keep");
-	}
-	
-	const toks = full_ana.ana;
-	let ii = 0;
-	for(; ii < toks.length; ii++){
-		const tok = toks[ii];
-		add_text_analysis_word(dv_ana, bibobj, tok);
-		add_all_added(dv_ana, bibobj, tok);
-	}
+	refresh_text_analysis();
 }
 
 function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
@@ -1470,7 +1476,17 @@ function set_orig_txt(bibobj){
 	dv_txt.innerHTML = dv_txt.orig_txt;	
 }
 
+function has_local_scod_bible(bibobj){
+	if(local_scod_bibles[bibobj.bible] == 1){
+		return true;
+	}
+	return false;
+}
+
 function turn_on_scod(bibobj, tok){
+	if(! has_local_scod_bible(bibobj)){
+		return;
+	}
 	const txt_id = bibobj.id_dv_ver + SUF_VERSE_TXT;
 	const dv_txt = document.getElementById(txt_id);
 	const vs_txt = dv_txt.orig_txt;
@@ -1479,3 +1495,72 @@ function turn_on_scod(bibobj, tok){
 	const htm = insert_all_tags(vs_txt, vs_ocu, "is_sel_scod");
 	dv_txt.innerHTML = htm.txt;
 }
+
+function fill_strong_parts(bibobj){
+	if(bibobj.dict != "LOC"){
+		bibobj.sparts = null;
+		return;
+	}
+	if(! has_local_scod_bible(bibobj)){
+		return;
+	}
+	const vtxt = bibobj.vtxt;
+	if(vtxt == null){
+		console.error("vtxt == null");
+		return;
+	}
+	bibobj.sparts = get_verse_parts(vtxt);
+}
+
+const regex_scode = /\[([HGhg])(\d+)\]/g;
+
+function get_verse_parts(vtxt){
+	const rxo = regex_scode;
+	let all_ocu = [];
+	let sparts = {};
+	let rr = null;
+	let lstx = "";
+	let lstx_beg = 0;
+	let lstx_lng = 0;
+	while((rr = rxo.exec(vtxt)) !== null){
+		const kk = rr[1].trim().toUpperCase();
+		const nn = "" + Number(rr[2]);
+		const scod = `${kk}${nn}`;
+		
+		const txt_end = rr.index;
+		let txt_beg = 0;
+		if(all_ocu.length > 0){
+			const prv = all_ocu[all_ocu.length - 1];
+			txt_beg = prv.idx + prv.lng;
+		} 
+		const stx = vtxt.substring(txt_beg, txt_end).trim();
+		if(stx.length > 0){
+			lstx = stx;
+			lstx_beg = txt_beg;
+			lstx_lng = txt_end - txt_beg;
+			if(DEBUG_FILL_SPARTS){
+				console.log(`get_verse_parts. PART= ${lstx} ${lstx_beg} ${lstx_lng}`);
+			}
+		}
+
+		let ocu = {
+			idx: rr.index,
+			lng: rr[0].length,
+			stx: lstx,
+			sidx: lstx_beg,
+			slng: lstx_lng,
+		};		
+
+		if(DEBUG_FILL_SPARTS){
+			console.log(`get_verse_parts. SCOD= ${scod} ${lstx} ${lstx_beg} ${lstx_lng}`);
+		}
+		
+		if(sparts[scod] == null){ sparts[scod] = [] };
+		sparts[scod].push(ocu);
+					
+		all_ocu.push(ocu);		
+	}
+	
+	return sparts;
+}
+

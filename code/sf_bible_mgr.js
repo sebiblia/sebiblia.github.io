@@ -49,6 +49,12 @@ const local_scods_files = {
 	WH_sv : scodes_dir + "WH_SVERSES.js",	
 };
 
+export const local_scod_bibles = {
+	KJVs : 1,
+	RVAs : 1,
+	RVAsi : 1,
+};
+
 const local_bible_files = {
 	WLC : bibles_dir + "WLC_BIB.js",
 	ALE : bibles_dir + "ALE_BIB.js",
@@ -94,6 +100,11 @@ const local_text_files = {
 const bh_lang = {
 	"Ben": "en",
 	"B2es": "es",
+};
+
+const bh_dict = {
+	"en": "Ben",
+	"es": "B2es",
 };
 
 const stg_lang = {
@@ -261,7 +272,9 @@ const ascii_to_may_greek = {
 export async function get_text_analysis(bibobj, bl_obj){
 	let full_ana = null;
 	try{
+		gvar.curr_dv_ver_id = bibobj.id_dv_ver;		// UGLY. It is to show the loding image under the right verse. 
 		full_ana = await calc_text_analysis(bibobj, bl_obj);
+		gvar.curr_dv_ver_id = null;
 	} catch(err){
 		add_dbg_log("ERROR in get_text_analysis");
 		add_dbg_log("" + `.${bib};${book}.${chapter}:${verse}`);
@@ -286,17 +299,20 @@ function fill_bibobj_tra_info(bibobj){
 		lpref = "GRE";
 	}
 	const lbib = lpref + "_LOC";
+
+	bibobj.ltra_dict = null;
+	bibobj.loc_tra = null;
+	bibobj.loc_bib = null;
 	
-	bibobj.lang = bh_lang[bibobj.dict];
+	const blang = bh_lang[bibobj.dict];
 	
 	let ltra = null;
-	if(bibobj.lang != null){
-		ltra = lpref + "_" + bibobj.lang.toUpperCase();
+	if(blang != null){
+		bibobj.ltra_dict = bh_dict[blang];
+		bibobj.loc_tra = lpref + "_" + blang.toUpperCase();
 	}
 	
-	bibobj.loc_bib = lbib;
-	bibobj.loc_tra = ltra;
-	
+	bibobj.loc_bib = lbib;	
 }
 
 async function calc_text_analysis(bibobj, bl_obj){
@@ -308,6 +324,13 @@ async function calc_text_analysis(bibobj, bl_obj){
 	const asc = await get_bible_verse(bib, book, chapter, verse);
 	const sbib = bib + "_S";
 	const sco = await get_bible_verse(sbib, book, chapter, verse);
+
+	const fullana = {
+		tasc: asc,
+		tsco: sco,
+		tloc: "",
+		ana: {},
+	};	
 	
 	let loc = "";
 	let ana = null;
@@ -316,11 +339,14 @@ async function calc_text_analysis(bibobj, bl_obj){
 		fill_bibobj_tra_info(bibobj);
 		if(DEBUG_BIBLE_MGR){ console.log("" + bibobj.loc_bib + " " + book + "_" + chapter + ":" + verse);	}
 		loc = await get_bible_verse(bibobj.loc_bib, book, chapter, verse);
+		
+		fullana.tloc = loc;
 
 		ana = get_obj_analysis(asc, sco, loc, bl_obj);		
 		ana.dict = bibobj.dict;
+		fullana.ana = ana;
 		
-		await fill_translation(bibobj.loc_tra, ana);
+		await fill_translation(bibobj, fullana);
 		
 	} else {
 		const vasc = asc.split(" ");
@@ -329,18 +355,12 @@ async function calc_text_analysis(bibobj, bl_obj){
 			return { id: tok, sco: vsco[idx], };
 		});		
 		ana.dict = bibobj.dict;
+		fullana.ana = ana;
 	}
 	
 	await fill_scod_translation(ana, bl_obj);
 	
-	const txt_ana = {
-		tasc: asc,
-		tsco: sco,
-		tloc: loc,
-		ana: ana,
-	};
-	
-	return txt_ana;
+	return fullana;
 }
 
 function get_obj_analysis(asc, sco, loc, bl_obj){
@@ -557,16 +577,63 @@ export function find_ana(s1, s2, ana2){
 	return rr;
 }
 
-async function fill_translation(ltra, ana){
-	if(ltra == null){
-		return;
+function get_spart(sparts, obj){
+	if(sparts == null){ return null; }
+	if(obj == null){ return null; }
+	const scod = obj.sco;
+	if(scod == null){ return null; }
+	if(DEBUG_ANALYSIS){ console.log(`get_spart. SCOD=${scod}`); }
+	const pp = sparts[scod];
+	if(pp == null){ return null; }
+	if(pp.length == 0){ return null; }
+	const ocu = pp.shift();
+	if(ocu == null){ return null; }
+	if(DEBUG_ANALYSIS){ console.log(`get_spart. STX=${ocu.stx}`); }
+	return ocu.stx;
+}
+
+async function get_obj_translation(obj, sparts, bibobj){
+	let tra = get_spart(sparts, obj);
+	if(tra != null){
+		obj.is_stra = true;
+	}
+	
+	const ltra = bibobj.loc_tra;
+	if((tra == null) && (ltra != null)){
+		tra = await get_local_text(ltra, obj.idtra);
+		if(sparts != null){
+			obj.dict = bibobj.ltra_dict;
+		}
+	}
+	return tra;
+}
+
+async function fill_translation(bibobj, fullana){
+	const ana = fullana.ana;
+	let sparts = null;
+	if(bibobj.sparts != null){
+		sparts = JSON.parse(JSON.stringify(bibobj.sparts));
 	}
 	let ii = 0;
 	for(; ii < ana.length; ii++){
-		const obj = ana[ii];
-		const tra = await get_local_text(ltra, obj.idtra);
-		obj.tra = tra;
-		obj.dict = ana.dict;
+		const obj = ana[ii];		
+		obj.dict = bibobj.dict;
+		obj.tra = await get_obj_translation(obj, sparts, bibobj);
+		if(obj.added != null){
+			fill_added_obj_translation(obj, sparts, bibobj);
+		}
+	}
+}
+
+async function fill_added_obj_translation(pnt, sparts, bibobj){
+	const added = pnt.added;
+	let ii = 0;
+	for(; ii < added.length; ii++){
+		const obj = added[ii];
+		if((obj.sco != null) && (obj.tra == null)){
+			obj.dict = bibobj.dict;
+			obj.tra = await get_obj_translation(obj, sparts, bibobj);
+		} 
 	}
 }
 

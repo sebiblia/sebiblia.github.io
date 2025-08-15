@@ -544,6 +544,10 @@ a.exam_ref:hover {
 	background-color: #00007f;
 }
 
+.is_stg_loc_tra {
+	background-color: #13234c;
+}
+
 .is_verse_oper {
 	display: inline-block;
 	margin: 0.5vw;
@@ -650,6 +654,7 @@ a.exam_ref:hover {
 	align-items: stretch;
 	aspect-ratio: 1;
 	aspect-ratio: 1;
+	background-color: #aa007f;
 	border: 1px solid red;
 	border: 1px solid white;
 	border: 1px solid white;
