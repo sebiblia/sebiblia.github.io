@@ -23,6 +23,8 @@ const loc_dir = "../data/js_loc/";
 const scodes_dir = "../data/js_scods/";
 const scod_defs_dir = "../data/js_scod_defs/";
 
+const vrefs_dir = "../data/js_refs/";
+
 const loading_img = "../img/loading_icon.gif";
 
 const local_smutus_file = "../data/js_mutu/MUT_SCOD_REF.js";
@@ -30,6 +32,10 @@ const local_sroots_file = "../data/js_roots/ROOTS_SCOD.js";
 
 const id_dv_loading = "id_dv_loading";
 const id_ui_loading = "id_ui_loading";
+
+const local_vrefs_files = {
+	REFS1: vrefs_dir + "VERSE_REFS.js",
+};
 
 const local_sdefs_files = {
 	en: scod_defs_dir + "EN_SCOD_DEFS.js",
@@ -402,10 +408,10 @@ function fill_scodes(ana, vsco, vasc, bl_obj){
 		if(obj.idx1 != null){
 			const idx1 = obj.idx1;
 			if(! obj.comm){
-				console.err("FALSE idx1");
+				console.error("FALSE idx1");
 			}
 			if(vasc[idx1] != obj.id){
-				console.err("FALSE idx1 (case 2)");
+				console.error("FALSE idx1 (case 2)");
 			}
 			const scode = vsco[idx1];
 			obj.sco = scode;
@@ -429,7 +435,7 @@ function fill_added_scodes(added, vsco, vasc, bl_obj){
 		if(obj.idx1 != null){
 			const idx1 = obj.idx1;
 			if(vasc[idx1] != obj.id){
-				console.err("FALSE idx1 (case 2)");
+				console.error("FALSE idx1 (case 2)");
 			}
 			const scode = vsco[idx1];
 			obj.sco = scode;
@@ -488,10 +494,10 @@ function mark_common(ana2, nc, idx2, idx1){
 
 function add_not_common(ana2, prv2, idx2, s1, prv1, idx1){
 	if(prv2 >= idx2){
-		console.err("FALSE INDEX");
+		console.error("FALSE INDEX");
 	}
 	if(prv1 >= idx1){
-		console.err("FALSE INDEX");
+		console.error("FALSE INDEX");
 	}
 	const fst1 = prv1 + 1;
 	let ii1 = fst1;
@@ -519,11 +525,11 @@ function add_not_common(ana2, prv2, idx2, s1, prv1, idx1){
 		
 		const obj2 = ana2[aii2];
 		if(obj2.id != wd2){
-			console.err("FALSE FIND");
+			console.error("FALSE FIND");
 		}
 		if(obj2.added == null){ obj2.added = []; };
 		if(s1[ii1] != wd1){
-			console.err("FALSE ii1");
+			console.error("FALSE ii1");
 		}
 		obj2.added.push({id: wd1, idx1: ii1});
 		ii2 = aii2;
@@ -549,7 +555,7 @@ function add_not_common(ana2, prv2, idx2, s1, prv1, idx1){
 		while(not_comm1.length > 0){
 			const wd1 = not_comm1.shift();
 			if(s1[ii1] != wd1){
-				console.err("FALSE ii1 (case 2)");
+				console.error("FALSE ii1 (case 2)");
 			}			
 			obj2.added.push({id: wd1, idx1: ii1});
 			ii1++;
@@ -637,12 +643,41 @@ async function fill_added_obj_translation(pnt, sparts, bibobj){
 	}
 }
 
+export async function get_verse_refs(verse_id){
+	const locid = "REFS1";
+	try{
+		await import_local_vrefs(locid);
+		
+		return gvar.full_vrefs[locid][verse_id];
+	} catch {
+		console.error("FAILED get_vrefs " + locid + " " + verse_id);
+		return null;
+	}
+}
+
+async function import_local_vrefs(locid){
+	if(local_vrefs_files[locid] == null){
+		return;
+	}
+	if(gvar.full_vrefs == null){
+		gvar.full_vrefs = {};
+	} 
+	if(gvar.full_vrefs[locid] != null){
+		return;
+	}
+	const loc_fl = local_vrefs_files[locid];
+	const md_loc = await import_file(loc_fl, locid);
+	
+	gvar.full_vrefs[locid] = md_loc.verse_refs;
+}
+
 export async function get_local_text(locid, idtxt){
 	try{
 		await import_local_text(locid);
 		
 		return gvar.full_local_text[locid][idtxt];
 	} catch {
+		console.error("FAILED get_local_text " + locid + " " + idtxt);
 		return null;
 	}
 }
@@ -669,7 +704,7 @@ export async function get_bible_verse(bib_cod, book, chapter, verse){
 	
 		return gvar.full_bible[bib_cod][book][chapter][verse];
 	} catch (err) {
-		console.err("FAILED get_bible_verse " + bib_cod + " " + book + ":" + chapter + ":" + verse);
+		console.error("FAILED get_bible_verse " + bib_cod + " " + book + ":" + chapter + ":" + verse);
 		return null;
 	}
 }
@@ -701,6 +736,11 @@ async function import_bible(bib_cod){
 	gvar.full_bible[bib_cod] = md_bib.bib_verses;	
 }
 
+export function get_citation(bibobj){
+	let vcit = get_loc_book_nam(bibobj.book) + "." + bibobj.chapter + ":" + bibobj.verse;
+	return vcit;
+}
+
 export async function fill_bibobj_vtxt(bibobj){
 	const cit_obj = JSON.parse(JSON.stringify(bibobj));
 	cit_obj.bib_ver = "text";
@@ -710,7 +750,7 @@ export async function fill_bibobj_vtxt(bibobj){
 	bibobj.href_bh = vhref;
 	
 	if((bibobj.book != null) && (bibobj.chapter != null) && (bibobj.verse != null)){ 
-		let vcit = get_loc_book_nam(bibobj.book) + "." + bibobj.chapter + ":" + bibobj.verse;
+		let vcit = get_citation(bibobj);
 		let vtxt = await get_bible_verse(bibobj.bible, num2book_en[bibobj.book], bibobj.chapter, bibobj.verse);
 		
 		if((bibobj.last_verse != null) && (bibobj.last_verse != "")){ vcit = vcit + "-" + bibobj.last_verse; }
@@ -850,7 +890,7 @@ export async function get_scode_verses(bib_cod, scode){
 		}
 		return resp;
 	} catch {
-		console.err("FAILED get_scode_verses " + bib_cod + " " + scode);
+		console.error("FAILED get_scode_verses " + bib_cod + " " + scode);
 		return null;
 	}
 }
@@ -881,7 +921,7 @@ export async function get_scode_mutus(scode){
 		}
 		return resp;
 	} catch {
-		console.err("FAILED get_scode_mutus " + scode);
+		console.error("FAILED get_scode_mutus " + scode);
 		return null;
 	}
 }
@@ -905,7 +945,7 @@ export async function get_scode_roots(scode){
 		}
 		return resp;
 	} catch {
-		console.err("FAILED get_scode_roots " + scode);
+		console.error("FAILED get_scode_roots " + scode);
 		return null;
 	}
 }
@@ -954,7 +994,7 @@ export async function get_sdefs(){
 		await import_sdefs("SDEFS");		
 		return gvar.full_sdefs.SDEFS;
 	} catch {
-		console.err("cannot get_sdefs");
+		console.error("cannot get_sdefs");
 		return null;
 	}
 }
@@ -982,7 +1022,7 @@ export async function get_scode_def(scode, lang){
 		}
 		return { asc: scod_asc, def: scod_def, };
 	} catch {
-		console.err("FAILED get_scode_def(" + scode + ", " + lang + ")");
+		console.error("FAILED get_scode_def(" + scode + ", " + lang + ")");
 		return bad;
 	}
 }

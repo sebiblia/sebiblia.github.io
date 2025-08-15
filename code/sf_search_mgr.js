@@ -2,8 +2,8 @@
 import { get_new_dv_under, scroll_to_top, toggle_select_option, get_opt_id, 
 } from './sf_select_option_mgr.js';
 
-import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analysis, make_strong_ref, get_scode_def, 
-	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, local_scod_bibles, 
+import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analysis, make_strong_ref, get_scode_def, get_citation, 
+	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, local_scod_bibles, get_verse_refs, 
 } from './sf_bible_mgr.js';
 
 import { init_lang, } from './sf_lang_mgr.js';
@@ -27,6 +27,7 @@ const DEBUG_TEXT_ANA = false;
 const DEBUG_SCODS = false;
 const DEBUG_POP_MENU = false;
 const DEBUG_FILL_SPARTS = false;
+const DEBUG_VERSE_REFS = true;
 
 export let gvar = {};
 
@@ -58,6 +59,7 @@ const id_evaluating_bar = "id_evaluating_bar";
 const id_evaluating_name = "id_evaluating_name";
 const id_examples = "id_examples";
 const id_tra_txt = "id_tra_txt";
+const id_verse_refs = "id_verse_refs";
 
 const GREEK_PREFIX = "G";
 const SCOD_PREFIX = "[";
@@ -1315,6 +1317,15 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	add_ui_disp(dv_ver, bibobj, 40, "(40)", butt_classes);
 
 	let dv_itm = null;
+	
+	dv_itm = document.createElement("div");
+	dv_itm.classList.add(...butt_classes);
+	dv_itm.innerHTML = "refs";
+	dv_itm.addEventListener('click', function() {
+		toggle_refs_menu(dv_itm, bibobj);
+	});		
+	dv_ver.appendChild(dv_itm);
+	
 	dv_itm = document.createElement("div");
 	dv_itm.classList.add(...butt_classes);
 	dv_itm.innerHTML = gvar.biblehub_butt;
@@ -1564,3 +1575,36 @@ function get_verse_parts(vtxt){
 	return sparts;
 }
 
+function get_vid_citacion(vid){
+	const vvs = vid.split(":");
+	const book = Number(vvs[0]);
+	const chapter = Number(vvs[1]);
+	const verse = Number(vvs[2]);
+	const cit = gvar.num2abbr[book] + "." + chapter + ":" + verse;
+	return cit;
+}
+
+async function toggle_refs_menu(dv_itm, bibobj){
+	const dv_expr = document.getElementById(id_expression);
+	const vid = bibobj.id_dv_ver.split("_").join(":");
+	if(DEBUG_VERSE_REFS){ console.log("toggle_refs_menu " + vid); }
+	const refs = await get_verse_refs(vid);
+	const ops = refs.split(" ").map((vid) => get_vid_citacion(vid));
+	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		let the_expr = val_sel;
+		if(the_expr != null){
+			dv_expr.value = the_expr;
+			await do_select();
+		}
+		
+		if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
+		dv_ops.remove();
+		scroll_to_top(dv_expr);
+	}
+	const cls_men = ["aux_item"];
+	const cls_itm = ["is_option"];
+	const dv_to_scroll = null;
+	const toggle_op = null;
+	const dv_togg = toggle_select_option(dv_itm, id_verse_refs, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	return dv_togg;
+}
