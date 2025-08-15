@@ -1588,11 +1588,16 @@ async function toggle_refs_menu(dv_itm, bibobj){
 	const dv_expr = document.getElementById(id_expression);
 	const vid = bibobj.id_dv_ver.split("_").join(":");
 	if(DEBUG_VERSE_REFS){ console.log("toggle_refs_menu " + vid); }
+	
+	let ops = [gvar.all_msg.no_refs];	
 	const refs = await get_verse_refs(vid);
-	const ops = refs.split(" ").map((vid) => get_vid_citacion(vid));
+	if(refs != null){
+		ops = refs.split(" ").map((vid) => get_vid_citacion(vid));
+	}
+	
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = val_sel;
-		if(the_expr != null){
+		if((the_expr != null) && (the_expr != gvar.all_msg.no_refs)){
 			dv_expr.value = the_expr;
 			await do_select();
 		}

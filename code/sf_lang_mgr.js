@@ -21,6 +21,7 @@ const msg_es = {
 	show_link: "MOSTRAR ENLACE WEB",
 	debug: "DEPURAR",
 	tot_versees: "Total de vesiculos encontrados ",
+	no_refs: "No tiene refs",
 };
 
 const msg_en = {
@@ -40,6 +41,7 @@ const msg_en = {
 	show_link: "SHOW WEB LINK",
 	debug: "DEBUG",
 	tot_versees: "Total of verses found ",
+	no_refs: "It has no refs",
 };
 
 export const BIBLANG_EXAMPLES_ES = [
