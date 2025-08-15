@@ -197,6 +197,10 @@ export function reset_curr_range(){
 	gvar.biblang.curr_range = JSON.parse(JSON.stringify(range_nams.all));
 }
 
+function reset_curr_rx_insensitive(){
+	gvar.biblang.regex_insensitive = true;
+}
+
 function init_history(){
 	if(gvar.biblang == null){ gvar.biblang = {}; }
 	gvar.biblang.history = [];
@@ -920,6 +924,7 @@ async function calc_bibvar(bvar){
 	}
 	const robj = { op: rop, lverses: [], lscods: [] };
 	if(nam == 'all'){
+		reset_curr_rx_insensitive();
 		reset_curr_range();
 		size_outputs_to_all();
 		return robj;
@@ -1435,6 +1440,7 @@ export async function eval_biblang_command(command, config){
 	if(par == null){
 		console.error(eval_biblang_term);
 	}
+	reset_curr_rx_insensitive();
 	reset_curr_range();
 
 	if(config != null){

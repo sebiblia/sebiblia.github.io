@@ -170,6 +170,7 @@ function get_tgt_rx_options(all_ops){
 function set_rxtgt_cls_itm_ui(id_itm){
 	const dv_itm = document.getElementById(id_itm);
 	if(dv_itm == null){
+		console.error("dv_itm == null");
 		return;
 	}
 	const cod = get_crit_cod(dv_itm.innerHTML.trim());
@@ -603,6 +604,7 @@ async function fill_verses(bl_obj){
 	
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
 	dv_rx_tgt.innerHTML = rxi_val;
+	set_ui_rx_in(dv_rx_tgt, dv_rx_tgt.innerHTML.trim());
 	
 	let bib_ot = gvar.biblang.curr_LOC;
 	let bib_nt = gvar.biblang.curr_LOC;
@@ -1008,17 +1010,18 @@ function add_tok_tra(dv_ana, tok){
 function toggle_asc_id_menu(dv_up, bibobj, tok){
 	const dv_expr = document.getElementById(id_expression);
 	const ops = gvar.tok_ops_asc_id; // ["exact", "partial", "add"];
+	ops[0] = tok.id;
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = null;
-		let out = ":ot";
+		let out = "ot";
 		if(bibobj.book >= 40){
-			out = ":nt";
+			out = "nt";
 		}
 		if(idx_sel == 0){
-			the_expr = `${out} ; /(^|\\s)${tok.id}(\\s|$)/`;
+			the_expr = `=${out} ; :${out} ; /(^|\\s)${tok.id}(\\s|$)/`;
 		}
 		if(idx_sel == 1){
-			the_expr = `${out} ; /${tok.id}/`;
+			the_expr = `=${out} ; :${out} ; /${tok.id}/`;
 		}
 		if(idx_sel == 2){
 			add_to_expr(tok.id);
@@ -1613,3 +1616,4 @@ async function toggle_refs_menu(dv_itm, bibobj){
 	const dv_togg = toggle_select_option(dv_itm, id_verse_refs, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 	return dv_togg;
 }
+
