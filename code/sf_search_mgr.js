@@ -27,7 +27,8 @@ const DEBUG_TEXT_ANA = false;
 const DEBUG_SCODS = false;
 const DEBUG_POP_MENU = false;
 const DEBUG_FILL_SPARTS = false;
-const DEBUG_VERSE_REFS = true;
+const DEBUG_VERSE_REFS = false;
+const DEBUG_HREFS = false;
 
 export let gvar = {};
 
@@ -1367,6 +1368,11 @@ function get_search_href(){
 		return qr_href;
 	}
 	const last = his[his.length - 1];
+	if(DEBUG_HREFS){ 
+		console.log("get_search_href"); 
+		console.log(JSON.stringify(last.conf)); 		
+	}
+	
 	const mm = conf_to_mini(last.conf);
 	const mm2 = encode_mini(mm);
 	const enc_conf = encodeURIComponent(mm2);

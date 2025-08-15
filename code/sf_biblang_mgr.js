@@ -1463,10 +1463,7 @@ export async function eval_biblang_command(command, config){
 		if(gvar.biblang.history == null){ gvar.biblang.history = []; }
 		const his = gvar.biblang.history;
 		while((his.length > 0) && (his.length >= hsz)){ his.shift(); }
-		let sv_conf = config;
-		if(sv_conf == null){
-			sv_conf = get_biblang_conf();
-		}
+		let sv_conf = get_biblang_conf();
 		his.push({conf: sv_conf, expr: command});
 	}
 	
