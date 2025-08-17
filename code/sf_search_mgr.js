@@ -382,6 +382,25 @@ function init_handlers(){
 	dv_verses.addEventListener('wheel', function(ev) {
 		ev.stopPropagation();
 	});
+	
+	window.addEventListener('popstate', pop_history_handler);
+}
+
+async function pop_history_handler(ev){
+	const dv_expr = document.getElementById(id_expression);
+	if(ev.state){
+		const his = gvar.biblang.history;
+		const idx = ev.state;
+		if((idx >= 0) && (idx < his.length)){
+			const hobj = his[idx];
+			dv_expr.value = hobj.expr;
+			const conf = hobj.conf;
+			
+			gvar.biblang.recovering_his = true;
+			gvar.biblang.his_idx_pop = idx;
+			await do_select(conf);
+		}
+	}
 }
 
 export async function start_srch_mgr(curr_lang){

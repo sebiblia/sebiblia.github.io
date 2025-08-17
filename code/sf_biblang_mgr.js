@@ -1459,12 +1459,26 @@ export async function eval_biblang_command(command, config){
 	dbg_log_all_loaded_files();
 	
 	if(gvar.biblang.size_output.his != null){
-		const hsz = Number(gvar.biblang.size_output.his);
-		if(gvar.biblang.history == null){ gvar.biblang.history = []; }
-		const his = gvar.biblang.history;
-		while((his.length > 0) && (his.length >= hsz)){ his.shift(); }
-		let sv_conf = get_biblang_conf();
-		his.push({conf: sv_conf, expr: command});
+		if(! gvar.biblang.recovering_his){
+			const hsz = Number(gvar.biblang.size_output.his);
+			if(gvar.biblang.history == null){ gvar.biblang.history = []; }
+			const his = gvar.biblang.history;
+			
+			if(gvar.biblang.his_idx_pop != null){
+				const idx = gvar.biblang.his_idx_pop;
+				his.splice(idx + 1);
+				gvar.biblang.his_idx_pop = null;
+			}
+			
+			while((his.length > 0) && (his.length >= hsz)){ his.shift(); }
+			let sv_conf = get_biblang_conf();
+			his.push({conf: sv_conf, expr: command});
+			
+			const lpos = his.length - 1;
+			history.pushState(lpos, '');
+		} else {
+			gvar.biblang.recovering_his = null;
+		}
 	}
 	
 	if(gvar.dbg_biblang){

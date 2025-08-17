@@ -238,8 +238,16 @@ function test_reduce(){
 	console.log(bk_sz);
 }
 
+function test_splice(){
+	const all_chap = [0, 1, 2, 3, 4, 5];
+	all_chap.splice(all_chap.length);
+	all_chap.splice(4);
+	console.log(all_chap);
+}
+
+test_splice();
 //test_reduce();
-main_selector();
+//main_selector();
 //main_diff_bib();
 //main_distance();
 //main_test_scode_next_and_prev();
