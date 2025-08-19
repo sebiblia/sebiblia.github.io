@@ -928,6 +928,7 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 	
 	const t1 = add_tok_item(dv_ana, 1, cri, is_added, is_deleted);
 	const t2 = add_tok_item(dv_ana, "auto", tok.id, is_added, is_deleted, true);
+	//const sscod = tok.sco.split('+').join(' '); // COULD BE NES CASE
 	const t3 = add_tok_item(dv_ana, "auto", tok.sco, is_added, is_deleted, false, tok.sel_scod);
 	const t4 = add_tok_item(dv_ana, "auto", bib_cri, is_added, is_deleted, true);
 	if(is_added){ t4.classList.add("txt_added_right"); }
