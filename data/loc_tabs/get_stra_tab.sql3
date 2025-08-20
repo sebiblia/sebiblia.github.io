@@ -1,0 +1,66 @@
+
+
+.system echo "IMPORTING FILES"
+
+CREATE TABLE IF NOT EXISTS bib (
+	b INT NOT NULL,
+	c INT NOT NULL,
+	v INT NOT NULL,
+	w INT NOT NULL,
+	ta_id TEXT NOT NULL,
+	cid TEXT	
+);
+
+.import in.tab bib
+
+CREATE TABLE IF NOT EXISTS tra (
+	b INT NOT NULL,
+	c INT NOT NULL,
+	v INT NOT NULL,
+	cid TEXT NOT NULL,
+	i INT NOT NULL,
+	txt TEXT	
+);
+
+.import tra.tab tra
+
+.system echo "CREATING stra_cnt"
+
+create table stra_cnt as select t0.cid, t0.ta_id, t1.txt, count(*) as cnt
+	from bib as t0, tra as t1 
+	where ((t0.b = t1.b) and (t0.c = t1.c) and (t0.v = t1.v) and (t0.cid = t1.cid))
+	GROUP BY t0.cid, t0.ta_id, t1.txt;
+	
+create table smx as select cid, ta_id, max(cnt) as mx from stra_cnt group by cid, ta_id;
+
+.system echo "CREATING stra_mx"
+
+create table stra_mx as select t1.* from stra_cnt as t1, smx as t2 
+	where ((t1.cid = t2.cid) and (t1.ta_id = t2.ta_id) and (t1.cnt = t2.mx))
+;
+
+create table smi as select cid, ta_id, min(length(txt)) as mi from stra_mx group by cid, ta_id;
+
+.system echo "CREATING stra"
+
+create table stra as select t1.cid, t1.ta_id, t1.txt, count(*) as cnt from stra_mx as t1, smi as t2 
+	where ((t1.cid = t2.cid) and (t1.ta_id = t2.ta_id) and (length(t1.txt) = t2.mi))
+	GROUP BY t1.cid, t1.ta_id, t1.txt;
+;
+
+.output out1.tab
+select * from stra;
+.output
+
+
+.system echo "CREATING socu"
+
+create table socu as select t0.cid, t1.txt, count(*) as cnt
+	from bib as t0, tra as t1 
+	where ((t0.b = t1.b) and (t0.c = t1.c) and (t0.v = t1.v) and (t0.cid = t1.cid))
+	GROUP BY t0.cid, t1.txt;	
+
+.output out2.tab
+select * from socu;
+.output
+

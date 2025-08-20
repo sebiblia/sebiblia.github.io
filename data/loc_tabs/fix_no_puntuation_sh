@@ -1,0 +1,35 @@
+
+ORIG=$1
+ARCH=$ORIG.fix
+
+cp $ORIG $ARCH
+
+sed -i 's/^\([0-9]\+\):\([0-9]\+\):\([0-9]\+\)|/\1|\2|\3|/' $ARCH
+
+sed -i 's/!//g' $ARCH
+sed -i 's/"//g' $ARCH
+sed -i 's/#//g' $ARCH
+sed -i 's/\$//g' $ARCH
+sed -i 's/%//g' $ARCH
+sed -i 's/&//g' $ARCH
+sed -i 's/(//g' $ARCH
+sed -i 's/)//g' $ARCH
+sed -i 's/=//g' $ARCH
+sed -i 's/?//g' $ARCH
+sed -i 's/¡//g' $ARCH
+sed -i 's/¿//g' $ARCH
+sed -i 's/+//g' $ARCH
+sed -i 's/\*//g' $ARCH
+sed -i 's/{//g' $ARCH
+sed -i 's/}//g' $ARCH
+# sed -i 's/\[//g' $ARCH
+# sed -i 's/\]//g' $ARCH
+sed -i 's/;//g' $ARCH
+sed -i 's/://g' $ARCH
+sed -i 's/\.//g' $ARCH
+sed -i 's/,//g' $ARCH
+sed -i 's/_//g' $ARCH
+
+sed -i 's/-/ /g' $ARCH
+
+

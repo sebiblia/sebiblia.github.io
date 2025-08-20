@@ -1,0 +1,28 @@
+#!/bin/bash
+
+IN_DIR="../txt_tabs"
+OUT_DIR="."
+SLQ_FILE="./get_stra_tab.sql3"
+
+fin1=${IN_DIR}/${1}_txt.tab
+fin2=./sql3_${2}.tab
+fout1=${OUT_DIR}/stra_${1}_${2}.tab
+fout2=${OUT_DIR}/socu_${1}_${2}.tab
+
+echo "Generating "${fout1}" and "${fout2}" from "${fin1}" and "${fin2}
+
+cp ${fin1} in.tab
+cp ${fin2} tra.tab
+
+sed -i 's/^\([0-9]\+\):\([0-9]\+\):\([0-9]\+\)|/\1|\2|\3|/' in.tab
+
+rm ${fout1}
+rm ${fout2}
+rm out1.tab
+rm out2.tab
+sqlite3 < ${SLQ_FILE}
+mv out1.tab ${fout1}
+mv out2.tab ${fout2}
+rm in.tab
+rm tra.tab
+

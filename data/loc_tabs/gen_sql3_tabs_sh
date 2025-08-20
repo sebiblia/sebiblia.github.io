@@ -1,0 +1,18 @@
+#!/bin/bash
+
+BIB=KJVs
+
+ARCH=${BIB}_bib.tab
+bash fix_no_puntuation_sh $ARCH
+node print_scods_tab.js $ARCH.fix > sql3_${BIB}.tab
+
+BIB=RVAs
+
+ARCH=${BIB}_bib.tab
+bash fix_no_puntuation_sh $ARCH
+node print_scods_tab.js $ARCH.fix > sql3_${BIB}.tab
+
+
+
+
+
