@@ -1045,7 +1045,8 @@ function get_range(min, max){
 	return rng;
 }
 
-function get_name_range(nam){
+function get_name_range(rnam){
+	const nam = rnam.toLowerCase();
 	const is_big_rng = (range_nams[nam] != null);
 	if(is_big_rng){
 		return range_nams[nam];
