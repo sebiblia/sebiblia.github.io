@@ -285,7 +285,7 @@ export function init_biblang(lng){
 	init_dbg_conf();
 }
 
-function cmp_verses(vv1, vv2){
+export function cmp_verses(vv1, vv2){
 	const v1 = vv1.split(":");
 	const v2 = vv2.split(":");
 	let cv = (v1[0] - v2[0]);

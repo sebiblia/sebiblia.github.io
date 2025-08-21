@@ -3,11 +3,11 @@ import { get_new_dv_under, scroll_to_top, toggle_select_option, get_opt_id,
 } from './sf_select_option_mgr.js';
 
 import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analysis, make_strong_ref, get_scode_def, get_citation, 
-	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, local_scod_bibles, get_verse_refs, 
+	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, local_scod_bibles, get_verse_refs, get_socu_text, 
 } from './sf_bible_mgr.js';
 
 import { init_lang, } from './sf_lang_mgr.js';
-import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, get_txt_matches, 
+import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, get_txt_matches, cmp_verses, 
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, OT_nams, NT_nams, LOC_nams, add_dbg_log, 
 } from './sf_biblang_mgr.js'
 
@@ -53,7 +53,7 @@ const id_info = "id_info";
 const id_scodes = "id_scodes";
 const id_del_expr = "id_del_expr";
 const id_menu_scod_def = "id_menu_scod_def";
-const id_menu_mutus = "id_menu_mutus";
+const id_submenu_scods = "id_submenu_scods";
 const id_search_href = "id_search_href";
 const id_dv_evaluating = "id_dv_evaluating";
 const id_evaluating_bar = "id_evaluating_bar";
@@ -80,6 +80,20 @@ const tra_class = {
 const simbol_chars = {
 UP:'\u2191',
 DOWN:'\u2193',
+};
+
+const bib_lang = {
+	RVA: "es",
+	RVAs: "es",
+	KJV: "en",
+	KJVs: "en",
+	SBLM: "es",
+	WEB: "en",
+};
+
+const lang_occus = {
+	en: "oKJV",
+	es: "oRVA",
 };
 
 const id_dv_tab = "id_dv_tab";
@@ -1173,31 +1187,13 @@ function set_css_matches(vs_txt, bibobj, bl_obj){
 	const vs_ocu = bl_obj.all_ocu[bib][vs_id];
 	
 	const htm = insert_all_tags(vs_txt, vs_ocu, cls);
-	return htm.txt;
-	
-	/*
-	const socu = vs_ocu.sort(cmp_ocurrence);
-
-	const ini_tag = `<span class="${cls}">`;
-	const end_tag = `</span>`;
-	
-	let htm = { txt: vs_txt, disp: 0, lpos: 0, };
-	let ii = 0;
-	for(; ii < vs_ocu.length; ii++){
-		const ocu = vs_ocu[ii];
-		insert_tag(htm, ocu.idx, ini_tag);
-		const end_pos = ocu.idx + ocu.lng;
-		insert_tag(htm, end_pos, end_tag);
-	}
-	
-	return htm.txt;
-	*/
+	return htm.txt;	
 }
 
 function toggle_scod_actions(dv_def, scod){
 	const id_menu = id_menu_scod_def;
 		
-	const ops = gvar.ops_def_scod; // ["prv", "nxt", "roots", "mutual", "encuentra", "adicionar", "bh"]
+	const ops = gvar.ops_def_scod; // ["prv", "nxt", "roots", "mutual", "occurrences", "find", "add", biblehub_butt]
 	const dv_expr = document.getElementById(id_expression);
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = null;
@@ -1236,13 +1232,19 @@ function toggle_scod_actions(dv_def, scod){
 			toggle_scod_subops(dv_ops, scod, id_menu, idx_sel, subops);
 		}
 		if(idx_sel == 4){
+			const opt_id = get_opt_id(id_menu, idx_sel);
+			const dv_opt = document.getElementById(opt_id);
+			
+			await toggle_occurs(dv_ops, dv_opt, scod);
+		}
+		if(idx_sel == 5){
 			dv_expr.value = scod;
 			await do_select();
 		}
-		if(idx_sel == 5){
+		if(idx_sel == 6){
 			add_to_expr(scod);
 		}
-		if(idx_sel == 6){
+		if(idx_sel == 7){
 			const href_sco = make_strong_ref(scod);
 			window.open(href_sco, '_blank');
 			
@@ -1257,8 +1259,8 @@ function toggle_scod_actions(dv_def, scod){
 	toggle_select_option(dv_def, id_menu, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 }
 
-function toggle_scod_subops(dv_parent_ops, scod, id_menu, idx_sel, sub_ops){
-	const opt_id = get_opt_id(id_menu, idx_sel);
+function toggle_scod_subops(dv_parent_ops, scod, id_menu, idx_selec, sub_ops){
+	const opt_id = get_opt_id(id_menu, idx_selec);
 	const dv_opt = document.getElementById(opt_id);
 	
 	const dv_expr = document.getElementById(id_expression);
@@ -1274,7 +1276,54 @@ function toggle_scod_subops(dv_parent_ops, scod, id_menu, idx_sel, sub_ops){
 	const cls_itm = ["is_option"];
 	const dv_to_scroll = null;
 	const toggle_op = null;
-	toggle_select_option(dv_opt, id_menu_mutus, sub_ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	toggle_select_option(dv_opt, id_submenu_scods, sub_ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+}
+
+function get_ocu_options(all_ocus){
+	const ops = [];
+	const ocu_ents = Object.entries(all_ocus);
+	const sor_ocu = ocu_ents.sort((aa, bb) => (bb[1] - aa[1]));
+	const tot = ocu_ents.reduce((acum, subarr) => acum + subarr[1], 0);
+	
+	let ii = 0;
+	for(; ii < sor_ocu.length; ii++) {		
+		const ent = sor_ocu[ii];
+		const pct = (ent[1] / tot) * 100;
+		const fpct = pct.toFixed(2);
+		
+		const ocu = "'" + ent[0] + "' " + ent[1] + " (" + fpct + " %)";
+		ops.push(ocu);
+	}
+	return ops;
+}
+
+async function toggle_occurs(dv_parent_ops, dv_opt, scod){
+	const loc_bib = gvar.biblang.curr_LOC;
+	const lang = bib_lang[loc_bib];
+	const socuid = lang_occus[lang];
+	const all_ocus = await get_socu_text(socuid, scod);
+	const sub_ops = get_ocu_options(all_ocus);
+	
+	const dv_expr = document.getElementById(id_expression);
+	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		const mm = val_sel.match(/'([^']*)'/);
+		let txt = "";
+		if(mm){
+			txt = " & (:loc ; /" + mm[1].trim() + "/)";
+		}
+		
+		dv_expr.value = scod + txt;
+		await do_select();
+		
+		if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
+		dv_ops.remove();
+		dv_parent_ops.remove();
+	}
+	const cls_men = ["aux_item", "has_border"];
+	const cls_itm = [];
+	const dv_to_scroll = null;
+	const toggle_op = null;
+	toggle_select_option(dv_opt, id_submenu_scods, sub_ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 }
 
 function add_to_expr(cad){
@@ -1338,7 +1387,7 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	
 	dv_ver.innerHTML = "";
 	
-	add_ui_disp(dv_ver, bibobj, 10, vcit, ["is_verse_cit"]);
+	add_ui_disp(dv_ver, bibobj, 0, vcit, ["is_verse_cit"]);
 	//add_ui_disp(dv_ver, bibobj, 10, "(10)", butt_classes);
 	add_ui_disp(dv_ver, bibobj, 20, "(20)", butt_classes);
 	add_ui_disp(dv_ver, bibobj, 40, "(40)", butt_classes);
@@ -1624,7 +1673,8 @@ async function toggle_refs_menu(dv_itm, bibobj){
 	let ops = [gvar.all_msg.no_refs];	
 	const refs = await get_verse_refs(vid);
 	if(refs != null){
-		ops = refs.split(" ").map((vid) => get_vid_citacion(vid));
+		const vrefs = refs.split(" ").sort(cmp_verses);
+		ops = vrefs.map((vid) => get_vid_citacion(vid));
 	}
 	
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
