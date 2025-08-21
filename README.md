@@ -7,8 +7,9 @@ La aplicación [SeBiblia.github.io](https://SeBiblia.github.io) esta diseñada p
 Un ciclo normal de trabajo es:
 
 1. Buscar en ingles o español un versículo con la [palabra](#palabra) en ingles o español. Ejemplo [muerte](https://sebiblia.github.io/es/tool.html?biblang=%3Dmat%20%3B%20muerte&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev).
-2. Abrir el o los versiculos encontrados (haciendole click al TEXTO) para identificar el código Strong de la palabra.
-3. Buscar el codigo Strong. Ejemplo [G2288](https://sebiblia.github.io/es/tool.html?biblang=G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+2. Abrir algun versiculo encontrado de mi interes (haciendole click al TEXTO del versiculo).
+3. Identificar el código Strong para la palabra. Para la palabra 'muerte' una opcion es el codigo Strong G2288.
+4. Buscar el codigo Strong. Ejemplo [G2288](https://sebiblia.github.io/es/tool.html?biblang=G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 ## Interfaz
 

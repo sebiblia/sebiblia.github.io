@@ -487,6 +487,10 @@ async function fill_added_stra_stranslation(added, bl_obj, straid){
 async function fill_scod_translation(ana, bl_obj){
 	let lang = stg_lang[ana.dict];
 	if(lang == null){
+		const loc_bib = gvar.biblang.curr_LOC;
+		lang = gvar.bib_lang[loc_bib];
+	}
+	if(lang == null){
 		lang = gvar.lang;
 	}
 	

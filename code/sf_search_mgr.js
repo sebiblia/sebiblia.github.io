@@ -66,34 +66,9 @@ const GREEK_PREFIX = "G";
 const SCOD_PREFIX = "[";
 const SCOD_SUFIX = "]";
 
-const tra_class = {
-	"uKJV": "is_uKJV_tra",
-	"uRVA": "is_uRVA_tra",
-	"B2es": "is_bh_en2es_tra",
-	"Ben": "is_bh_en_tra",
-	"B2es": "is_bh_en2es_tra",
-	"Sen": "is_stg_en_tra",
-	"Ses": "is_stg_es_tra",
-	"SBIB": "is_stg_loc_tra",
-};
-
 const simbol_chars = {
 UP:'\u2191',
 DOWN:'\u2193',
-};
-
-const bib_lang = {
-	RVA: "es",
-	RVAs: "es",
-	KJV: "en",
-	KJVs: "en",
-	SBLM: "es",
-	WEB: "en",
-};
-
-const lang_occus = {
-	en: "oKJV",
-	es: "oRVA",
 };
 
 const id_dv_tab = "id_dv_tab";
@@ -140,10 +115,10 @@ function set_ui_rx_in(dv_rx_in, cod){
 
 function set_ui_tra(dv_tra, cod){
 	
-	const all_rem = Object.values(tra_class);
+	const all_rem = Object.values(gvar.tra_class);
 	dv_tra.classList.remove(...all_rem);
-	if(tra_class[cod] != null){
-		dv_tra.classList.add(tra_class[cod]);
+	if(gvar.tra_class[cod] != null){
+		dv_tra.classList.add(gvar.tra_class[cod]);
 	}
 }
 
@@ -233,9 +208,11 @@ function init_menus(){
 	const dv_tra_txt = document.createElement("div");
 	dv_out_txt.after(dv_tra_txt);
 	
+	const straid = gvar.lang_utra[gvar.lang];
+	
 	dv_tra_txt.id = id_tra_txt;
 	dv_tra_txt.classList.add("bib_item", "is_option");
-	dv_tra_txt.innerHTML = "Ben";
+	dv_tra_txt.innerHTML = straid;
 	dv_tra_txt.update_ui_fn = (dv_ret, cod) => {
 		set_ui_tra(dv_ret, cod);
 		refresh_text_analysis();
@@ -1030,7 +1007,7 @@ function add_tok_tra(dv_ana, tok){
 	const dv_itm = document.createElement("div");
 	dv_itm.classList.add("txt_ana_item");
 	if(tok.dict != null){
-		const cls = tra_class[tok.dict];
+		const cls = gvar.tra_class[tok.dict];
 		if(cls != null){
 			dv_itm.classList.add(cls);
 		}
@@ -1299,8 +1276,8 @@ function get_ocu_options(all_ocus){
 
 async function toggle_occurs(dv_parent_ops, dv_opt, scod){
 	const loc_bib = gvar.biblang.curr_LOC;
-	const lang = bib_lang[loc_bib];
-	const socuid = lang_occus[lang];
+	const lang = gvar.bib_lang[loc_bib];
+	const socuid = gvar.lang_occus[lang];
 	const all_ocus = await get_socu_text(socuid, scod);
 	const sub_ops = get_ocu_options(all_ocus);
 	

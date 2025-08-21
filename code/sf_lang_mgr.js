@@ -384,6 +384,36 @@ const tra_txt = {
 	"7": "Bib tra. only for KJVs and RVAs (SBIB)",
 };
 
+const bib_lang = {
+	RVA: "es",
+	RVAs: "es",
+	KJV: "en",
+	KJVs: "en",
+	SBLM: "es",
+	WEB: "en",
+};
+
+const tra_class = {
+	"uKJV": "is_uKJV_tra",
+	"uRVA": "is_uRVA_tra",
+	"B2es": "is_bh_en2es_tra",
+	"Ben": "is_bh_en_tra",
+	"B2es": "is_bh_en2es_tra",
+	"Sen": "is_stg_en_tra",
+	"Ses": "is_stg_es_tra",
+	"SBIB": "is_stg_loc_tra",
+};
+
+const lang_occus = {
+	en: "oKJV",
+	es: "oRVA",
+};
+
+const lang_utra = {
+	en: "uKJV",
+	es: "uRVA",
+};
+
 
 export function init_lang(nm_lang){
 	if(nm_lang == "es"){
@@ -432,6 +462,10 @@ function init_common(){
 	gvar.book2num_en = book2num_en;
 	gvar.inbook2num_en = book2num_en;
 	gvar.biblehub_butt = biblehub_butt;
+	gvar.bib_lang = bib_lang;
+	gvar.tra_class = tra_class;
+	gvar.lang_occus = lang_occus;
+	gvar.lang_utra = lang_utra;
 }
 
 function init_es(){
