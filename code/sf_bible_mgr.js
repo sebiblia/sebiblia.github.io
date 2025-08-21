@@ -19,6 +19,7 @@ const MAX_GREEK_SCOD = 5624;
 const bibles_dir = "../data/js_bib/";
 const strongs_dir = "../data/js_sbib/";
 const loc_dir = "../data/js_loc/";
+const sloc_dir = "../data/js_sloc/";
 
 const scodes_dir = "../data/js_scods/";
 const scod_defs_dir = "../data/js_scod_defs/";
@@ -103,6 +104,16 @@ const local_text_files = {
 	GRE_ES : loc_dir + "GRE_ES.js",
 };
 
+const stra_text_files = {
+	uKJV : sloc_dir + "STRA_KJV.js",
+	uRVA : sloc_dir + "STRA_RVA.js",
+};
+
+const socu_text_files = {
+	oKJV : sloc_dir + "SOCU_KJV.js",
+	oRVA : sloc_dir + "SOCU_RVA.js",
+};
+
 const bh_lang = {
 	"Ben": "en",
 	"B2es": "es",
@@ -123,15 +134,6 @@ const stg_dict = {
 	"es": "Ses",
 };
 
-
-/*
-const dict_files = {
-	"Ben": { heb
-	"B2es": 
-	"Sen": 
-	"Ses": 
-};
-*/
 
 const hebrew_chars = {
 ALEF:'\u05D0',
@@ -364,6 +366,8 @@ async function calc_text_analysis(bibobj, bl_obj){
 		fullana.ana = ana;
 	}
 	
+	await fill_stra_translation(ana, bl_obj);
+	
 	await fill_scod_translation(ana, bl_obj);
 	
 	return fullana;
@@ -440,6 +444,42 @@ function fill_added_scodes(added, vsco, vasc, bl_obj){
 			const scode = vsco[idx1];
 			obj.sco = scode;
 			obj.sel_scod = is_selected_scode(bl_obj, scode);
+		} 
+	}
+}
+
+async function fill_stra_translation(ana, bl_obj){
+	const straid = ana.dict;
+	let f_nm = stra_text_files[straid];
+	if(f_nm == null){
+		return;
+	}
+	
+	let ii = 0;
+	for(; ii < ana.length; ii++){
+		const obj = ana[ii];
+		if((obj.sco != null) && (obj.tra == null)){
+			const stxt = await get_stra_text(straid, obj.sco, obj.id);
+			obj.tra = stxt;
+			obj.sel_scod = is_selected_scode(bl_obj, obj.sco);
+			obj.dict = straid;
+		} 
+		if(obj.added != null){
+			await fill_added_stra_stranslation(obj.added, bl_obj, straid);
+		}
+		//obj.sco = vsco[]:;
+	}
+}
+
+async function fill_added_stra_stranslation(added, bl_obj, straid){
+	let ii = 0;
+	for(; ii < added.length; ii++){
+		const obj = added[ii];
+		if((obj.sco != null) && (obj.tra == null)){
+			const stxt = await get_stra_text(straid, obj.sco, obj.id);
+			obj.tra = stxt;
+			obj.sel_scod = is_selected_scode(bl_obj, obj.sco);
+			obj.dict = straid;
 		} 
 	}
 }
@@ -1236,6 +1276,63 @@ export function calc_prev_scode(scode){
 	}
 	return (scode.slice(0, 1) + num);
 }
+
+export async function get_stra_text(straid, scod, ascid){
+	try{
+		await import_stra_text(straid);
+		
+		if(gvar.full_stra_text[straid][scod] == null){ return null; }
+		return gvar.full_stra_text[straid][scod][ascid];
+	} catch {
+		console.error("FAILED get_local_text " + straid + " " + scod + " " + ascid);
+		return null;
+	}
+}
+
+async function import_stra_text(straid){
+	if(stra_text_files[straid] == null){
+		return;
+	}
+	if(gvar.full_stra_text == null){
+		gvar.full_stra_text = {};
+	} 
+	if(gvar.full_stra_text[straid] != null){
+		return;
+	}
+	const loc_fl = stra_text_files[straid];
+	const md_loc = await import_file(loc_fl, straid);
+	
+	gvar.full_stra_text[straid] = md_loc.all_stra;
+}
+
+export async function get_socu_text(socuid, scod){
+	try{
+		await import_socu_text(socuid);
+		
+		if(gvar.full_socu_text[socuid][scod] == null){ return null; }
+		return gvar.full_socu_text[socuid][scod];
+	} catch {
+		console.error("FAILED get_local_text " + socuid + " " + scod);
+		return null;
+	}
+}
+
+async function import_socu_text(socuid){
+	if(socu_text_files[socuid] == null){
+		return;
+	}
+	if(gvar.full_socu_text == null){
+		gvar.full_socu_text = {};
+	} 
+	if(gvar.full_socu_text[socuid] != null){
+		return;
+	}
+	const loc_fl = socu_text_files[socuid];
+	const md_loc = await import_file(loc_fl, socuid);
+	
+	gvar.full_socu_text[socuid] = md_loc.all_socu;
+}
+
 
 /*
 

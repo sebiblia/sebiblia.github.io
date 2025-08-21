@@ -90,8 +90,8 @@ export const BIBLANG_EXAMPLES_EN = [
 	`/dijo$/ ../end with 'dijo'/`,
 	`/m.jo/ ../finds that javascript reg. expr/`,
 	`=nt ; jos ../sets range to new testament, then finds 'jos'/`,
-	`=nt ; +heb; jos ../range to nt plus hebrews, luego busca 'jos'/`,
-	`=nt ; -mat; jos ../range to nt minus matthew, luego busca 'jos'/`,
+	`=nt ; +heb; jos ../range to nt plus hebrews, then finds 'jos'/`,
+	`=nt ; -mat; jos ../range to nt minus matthew, then finds 'jos'/`,
 ];
 
 export const biblehub_butt = "bhub";
@@ -375,11 +375,13 @@ const out_txt_es = {
 };
 
 const tra_txt = {
-	"1": "BH English (Ben)",
-	"2": "BH Inglés -> Español (B2es)",
-	"3": "English Strong code def (Sen)",
-	"4": "Def. Español del Código Strong (Ses)",
-	"5": "Def. Local Strong code (LOC)",
+	"1": "Unified from KJVs (uKJV)",
+	"2": "Unificada de la RVAs (uRVA)",
+	"3": "BH English (Ben)",
+	"4": "BH Inglés -> Español (B2es)",
+	"5": "English Strong code def (Sen)",
+	"6": "Def. Español del Código Strong (Ses)",
+	"7": "Bib tra. only for KJVs and RVAs (SBIB)",
 };
 
 

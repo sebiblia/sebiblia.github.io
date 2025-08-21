@@ -67,11 +67,14 @@ const SCOD_PREFIX = "[";
 const SCOD_SUFIX = "]";
 
 const tra_class = {
+	"uKJV": "is_uKJV_tra",
+	"uRVA": "is_uRVA_tra",
+	"B2es": "is_bh_en2es_tra",
 	"Ben": "is_bh_en_tra",
 	"B2es": "is_bh_en2es_tra",
 	"Sen": "is_stg_en_tra",
 	"Ses": "is_stg_es_tra",
-	"LOC": "is_stg_loc_tra",
+	"SBIB": "is_stg_loc_tra",
 };
 
 const simbol_chars = {
@@ -1537,7 +1540,7 @@ function turn_on_scod(bibobj, tok){
 }
 
 function fill_strong_parts(bibobj){
-	if(bibobj.dict != "LOC"){
+	if(bibobj.dict != "SBIB"){
 		bibobj.sparts = null;
 		return;
 	}

@@ -528,6 +528,14 @@ a.exam_ref:hover {
 	background-color: #55007f;
 }
 
+.is_uKJV_tra {
+	background-color: #007a59;
+}
+
+.is_uRVA_tra {
+	background-color: #700000;
+}
+
 .is_bh_en_tra {
 	background-color: #005500;
 }
