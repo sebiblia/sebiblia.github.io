@@ -1564,3 +1564,14 @@ function update_prog_bar(){
 	}
 }
 
+export function save_file(nam, obj){
+	const data = [];
+	const the_str = JSON.stringify(obj, null, "  ");
+	data.push(the_str);
+	
+	const file = new File(data, nam, {type: 'application/octet-stream'});
+	var url = URL.createObjectURL(file);
+	window.open(url);
+	URL.revokeObjectURL(url); // This seems to work here.
+}
+

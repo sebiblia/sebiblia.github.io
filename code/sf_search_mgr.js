@@ -7,7 +7,7 @@ import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analy
 } from './sf_bible_mgr.js';
 
 import { init_lang, } from './sf_lang_mgr.js';
-import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, get_txt_matches, cmp_verses, 
+import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, get_txt_matches, cmp_verses, save_file, 
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, OT_nams, NT_nams, LOC_nams, add_dbg_log, 
 } from './sf_biblang_mgr.js'
 
@@ -749,6 +749,14 @@ function pop_menu_handler(){
 		dv_href.classList.add("search_info");
 		const hrf = get_search_href();
 		dv_href.innerHTML = hrf;
+	});
+	dv_pop_men.appendChild(op);
+
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = "SAVE_HISTORY";
+	op.addEventListener('click', () => {
+		save_file("DONLOADED_SEBIBLIA_HISTORY.txt", gvar.biblang.history);
 	});
 	dv_pop_men.appendChild(op);
 	

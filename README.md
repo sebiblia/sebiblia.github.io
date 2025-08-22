@@ -34,15 +34,96 @@ Incluso para el usuario que domina la lectura en los idiomas originales hebreo y
 
 ###  Palabra
 
-EN el campo de busqueda tambien se escribir palabras que se encuentren en el idioma del [texto de busqueda]()
+En el campo de busqueda tambien se pueden escribir palabras que se encuentren en el idioma del texto [donde se van a buscar palabras y expresiones reculares](#interfaz-básica). Este se selecciona con el cuarto boton, y puede ser cualquiera de:
+
+1. El texto hebreo (OT)
+2. El texto griego (NT)
+3. El texto en Español o Inglés (LOC)
+
+Ejemplo: [muerte](https://sebiblia.github.io/es/tool.html?biblang=%3Dmat%20%3B%20muerte&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev).
+
+Lo mas normal es buscar palabras en Español o Inglés luego este cuarto botón normalmente estará en la opción "LOC".
+
+###  Versiculos
 
 ###  Operaciones binarias
+
+En la [condición de busqueda](#interfaz-básica) también se pueden poner operaciones binarias.
+
+1. [G2288 & G166](https://sebiblia.github.io/es/tool.html?biblang=G2288%20%26%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan ambos codigos Strong. Operacion "AND" o "y". Esta operacion tambien se puede pensar como la INTERSECCION de dos conjuntos: el de versiculos que tienen el primer código Strong con el de versiculos que tienen el segundo código Strong.
+
+2. [G2288 | G166](https://sebiblia.github.io/es/tool.html?biblang=G2288%20%7C%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan al menos uno de los dos codigos Strong. Operacion "OR" u "o". Esta operacion tambien se puede pensar como la UNION de dos conjuntos: el de versiculos que tienen el primer código Strong con el de versiculos que tienen el segundo código Strong.
+
+3. [G166 ! G2288](https://sebiblia.github.io/es/tool.html?biblang=G166%20!%20G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan el primero pero NO el segundo de los dos codigos Strong. Operacion "and NOT" u "y NO".
+
+4. [G2288 ; G166](https://sebiblia.github.io/es/tool.html?biblang=G166%20%3B%20G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) es matematicamente quivalente a "G2288 | G166". Buscará los versiculos que tengan al menos uno de los dos codigos Strong. Operacion "OR" u "o". Esta operación tambien se puede pensar como una instruccion seguida de otra: busca el primer codigo Strong y a ese conjunto de versículos le añade el conjunto de versiculos que encuentre del segundo codigo Strong.
+
+Estas operaciones se explicarán con mas detalle en la sección para usuarios avanzados, cuando se de la especificación del lenguaje de expresiones biblicas que se diseño para esta aplicación y que da una gran flexibilidad de procesamiento usando el campo de [condición de busqueda](#interfaz-básica).
+
 ###  Expresion regular
+
+La [condición de busqueda](#interfaz-básica) también permite [expresiones regulares de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions). Este tipo de busqueda es para usuarios programadores, pero el principiante puede hacerse una idea de las posibilidades que permiten este tipo de busquedas mirando los ejemplos en el [menu principal](#interfaz-básica)
+
+Ejemplo: [/dijo.$/](https://sebiblia.github.io/es/tool.html?biblang=%2Fdijo.%24%2F&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+
 ###  Comando
+
+- [.WLC]
+- [.ALE]
+- [.TKH]
+- [.LXX]
+
+- [.BYZ]
+- [.TR]
+- [.WH]
+- [.NES]
+
+- [.RVA]
+- [.RVAs]
+- [.KJV]
+- [.KJVs]
+- [.SBLM]
+- [.WEB]
+
+- [:loc]
+- [:ot]
+- [:nt]
+- [:sco]
+
+- [.asc]
+- [.min]
+- [.may]
+
+- [.all]
+- [$last]
+
+- [.rx:i]
+- [.rx:ni]
+
+- [.dbg]
+- [.nodbg]
+- [.rhis]
+
+- [=all]
+- [=ot]
+- [=nt]
+- [=pa]
+- [=ev]
+
+- [+ot]
+- [+nt]
+- [+pa]
+- [+ev]
+
+- [+mat]
+- [-mat]
+- [+heb]
+- [-heb]
+
 
 ## Interfaz básica.
 
-![Interfaz basica](https://SeBiblia.github.io/doc/ui1.jpg)
+![Interfaz inicial](https://SeBiblia.github.io/img/ui1.jpg)
 
 
 ## Menus de configuración
