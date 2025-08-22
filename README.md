@@ -11,11 +11,12 @@ Un ciclo normal de trabajo es:
 3. Identificar el código Strong para la palabra. Para la palabra 'muerte' una opcion es el codigo Strong G2288.
 4. Buscar el codigo Strong. Ejemplo: [G2288](https://sebiblia.github.io/es/tool.html?biblang=G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
+
 ## Condición de busqueda.
 
 ###  Codigo Strong
 
-El centro de esta aplicación son los [codigos Strong](#explicación-sobre-códigos-strong) asi que simplemente escribiendo un codigo Strong en el campo de busqueda y dando Enter o haciendo click en "ENCUENTRA" se busca en TODA la biblia dicho codigo Strong.
+El centro de esta aplicación son los [codigos Strong](#explicación-sobre-códigos-strong) asi que simplemente escribiendo un [codigo Strong](#explicación-sobre-códigos-strong) en el campo de busqueda y dando Enter o haciendo click en "ENCUENTRA" se busca en TODA la biblia dicho codigo Strong.
 
 Ejemplo: [G2288](https://sebiblia.github.io/es/tool.html?biblang=G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
@@ -32,10 +33,22 @@ Con ésta aplicación, única a la fecha dentro de las aplicaciones de codigo ab
 Incluso para el usuario que domina la lectura en los idiomas originales hebreo y griego es muy importante leer TODOS los versiculos que contienen el vocablo original en hebreo o griego para no quedarse con una interpretacion local de dicho vocablo. Este ejercicio cambia la perspectiva incluso para usuarios con dominio de los idiomas hebreo y griego porque da una visión global del uso del vocablo. Y esta visión es MUY importante desde el punto de vista teológico.
 
 ###  Palabra
+
+EN el campo de busqueda tambien se escribir palabras que se encuentren en el idioma del [texto de busqueda]()
+
 ###  Operaciones binarias
 ###  Expresion regular
 ###  Comando
 
+## Interfaz básica.
+
+![Interfaz basica](https://SeBiblia.github.io/doc/ui1.jpg)
+
+
 ## Menus de configuración
+
+###  Antiguo testamento
+
+
 
 
