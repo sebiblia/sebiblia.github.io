@@ -245,11 +245,13 @@ function test_splice(){
 	console.log(all_chap);
 }
 
-test_splice();
+//test_splice();
 //test_reduce();
 //main_selector();
 //main_diff_bib();
-//main_distance();
+main_distance();
 //main_test_scode_next_and_prev();
 //main_test_matches();
 //main_test_inc_dec();
+
+

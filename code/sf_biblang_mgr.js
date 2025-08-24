@@ -4,6 +4,7 @@ import { isArgumentsArray, ExpressionParser } from './sf_expression_parser.js'
 import { gvar, update_evaluating_bar, } from './sf_search_mgr.js';
 import { bib_chapter_sizes, } from './sf_bib_chapter_sizes.js';
 import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, } from './sf_bible_mgr.js';
+import { distance, closest,  } from './sf_word_dist.js';
 
 const DEBUG_MATCHES = false;
 const DEBUG_GET_RANGE = true;
@@ -18,6 +19,7 @@ const SCOD_VERSES_SUFIX = "_sv";
 const MIN_VERSE = [1, 1, 1];
 const MAX_VERSE = [66, 22, 21];
 
+let ALL_BOOK_NAMES = [];
 
 const biblang_def = {
 	INFIX_OPS: {
@@ -278,11 +280,21 @@ export function init_biblang(lng){
 	
 	gvar.biblang.parser = new ExpressionParser(biblang_def);
 	
+	init_book_names();
 	init_book_sizes();
 	init_ranges();
 	init_biblang_conf();
 	init_history();
 	init_dbg_conf();
+}
+
+function init_book_names(){
+	const n1 = Object.keys(gvar.abbr2num);
+	const n2 = Object.keys(gvar.book2num_es);
+	const n3 = Object.keys(gvar.book2num_en);
+	const n4 = Object.keys(gvar.inbook2num_es);
+	
+	ALL_BOOK_NAMES  = [...new Set([...n1, ...n2, ...n3, ...n4])];
 }
 
 export function cmp_verses(vv1, vv2){
@@ -733,8 +745,7 @@ function is_bib_regex(tm){
 	return false;
 }
 
-function is_book_name(nam){
-	const nm = nam.toLowerCase();
+function get_book_num(nm){
 	let num = gvar.abbr2num[nm];
 	if(num != null){ return num; }
 	num = gvar.book2num_es[nm];
@@ -742,7 +753,23 @@ function is_book_name(nam){
 	num = gvar.book2num_en[nm];
 	if(num != null){ return num; }
 	num = gvar.inbook2num_es[nm];
+	return num;
+}
+
+function is_book_name(nam){
+	const nm = nam.toLowerCase();
+	let num = get_book_num(nm);
 	if(num != null){ return num; }
+
+	if(nm.length > 3){
+		const cc = closest(nm, ALL_BOOK_NAMES);
+		const dd = distance(nm, cc);
+		if(dd <= 2){
+			num = get_book_num(cc);
+			if(num != null){ return num; }
+		}
+	}
+	
 	return false;
 }
 
@@ -795,7 +822,7 @@ function is_bib_verse_cit(tm, citobj){
 	return false;	
 }
 
-const regex_citation = /^([^_.-]+)[_.-](\d+)(.*)/;
+const regex_citation = /^([^.-]+)[.-](\d+)(.*)/;
 
 function is_bib_citation(tm){
 	const cha_sz = bib_chapter_sizes;
