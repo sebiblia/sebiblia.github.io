@@ -60,7 +60,7 @@ En la [condición de busqueda](#interfaz-básica) también se pueden poner opera
 
 Estas operaciones se explicarán con mas detalle en la sección para usuarios avanzados, cuando se de la especificación del lenguaje de expresiones biblicas que se diseño para esta aplicación y que da una gran flexibilidad de procesamiento usando el campo de [condición de busqueda](#interfaz-básica).
 
-###  Expresion regular
+###  Expresión regular
 
 La [condición de busqueda](#interfaz-básica) también permite [expresiones regulares de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions). Este tipo de busqueda es para usuarios programadores, pero el principiante puede hacerse una idea de las posibilidades que permiten este tipo de busquedas mirando los ejemplos en el [menu principal](#interfaz-básica)
 
@@ -68,18 +68,18 @@ Ejemplo: [/dijo.$/](https://sebiblia.github.io/es/tool.html?biblang=%2Fdijo.%24%
 
 ###  Comando
 
-- [.WLC]
-- [.ALE]
-- [.TKH]
-- [.LXX]
+- [.WLC](https://sebiblia.github.io/es/tool.html?biblang=.WLC&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en hebreo](#interfaz-básica) a West Minister Leningrad Codex (WLC).
+- [.ALE](https://sebiblia.github.io/es/tool.html?biblang=.ALE&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en hebreo](#interfaz-básica) a Aleppo Codex (ALE).
+- [.TKH](https://sebiblia.github.io/es/tool.html?biblang=.TKH&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en hebreo](#interfaz-básica) a la Tanakh (TKH).
+- [.LXX](https://sebiblia.github.io/es/tool.html?biblang=.LXX&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el texto del campo OT, por sus siglas en Inglés (Old Testament), y mostrado en la [interfáz básica](#interfaz-básica) como "texto en hebreo" por simplicidad, al texto de la Septuaginta (LXX), que en realidad es un texto en griego.
 
-- [.BYZ]
-- [.TR]
-- [.WH]
-- [.NES]
+- [.BYZ](https://sebiblia.github.io/es/tool.html?biblang=.BYZ&conf=O%24LXX%7CN%24WH%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto Bizantino (BYZ).
+- [.TR](https://sebiblia.github.io/es/tool.html?biblang=.TR&conf=O%24LXX%7CN%24NES%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto critico conocido como Textus Receptus (TR).
+- [.WH](https://sebiblia.github.io/es/tool.html?biblang=.WH&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto critico de Wescott and Hort (WH).
+- [.NES](https://sebiblia.github.io/es/tool.html?biblang=.NES&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto critico de Nestle 1904 (NES).
 
-- [.RVA]
-- [.RVAs]
+- [.RVA](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en Español o Inglés](#interfaz-básica) a la versión Resina-Valera 1909 (RVA).
+- [.RVAs](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en Español o Inglés](#interfaz-básica) a la versión Resina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong SON los que corresponden al texto de la RVA una vez traducidos al griego y NO los del texto en griego que son los que nos interesa buscar. La mayoría corresponden, pero justamente las diferencias son las que nos interesan. Para hacer una busqueda en los códigos Strong de ésta versión Reina-Valera (una vez traducidos al griego) es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
 - [.KJV]
 - [.KJVs]
 - [.SBLM]

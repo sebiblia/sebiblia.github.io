@@ -689,6 +689,14 @@ function set_bib(inbib){
 		}
 		return true;
 	}
+	if(LOC_nams[inbib] != null){
+		gvar.biblang.curr_LOC = inbib;
+		if(gvar.dbg_biblang){
+			add_dbg_log("set_bib LOC");
+			add_dbg_log(inbib);
+		}
+		return true;
+	}
 	
 	return false;
 }
