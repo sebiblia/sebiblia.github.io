@@ -221,6 +221,7 @@ Observe que TODOS los campos afectan el resultado.
 
 ### Trans-deletreo
 
+```
 HEBREW
 
 ALEF    -> e 
@@ -287,6 +288,7 @@ GREEK
 χ -> c 
 ψ -> y 
 ω -> w 
+```
 
 
 Un ciclo normal de trabajo es:
