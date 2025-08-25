@@ -86,7 +86,14 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 	});
 	
 	if(dv_to_scroll != null){
-		scroll_to_top(dv_to_scroll);
+		if(dv_to_scroll == "relative"){
+			const pnt = dv_options.parentElement;
+			if(pnt != null){
+				scroll_to_top(dv_options, pnt);
+			}
+		} else {
+			scroll_to_top(dv_to_scroll);
+		}
 	}
 	
 	return dv_options;

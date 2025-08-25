@@ -401,6 +401,30 @@ a.exam_ref:hover {
 	width: 5%;
 }
 
+.search_area {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: auto;
+}
+
+.search_area_grid {
+	display: grid;
+	grid-template-columns: 10fr 80fr 10fr;
+	grid-template-rows: auto;
+}
+
+.search_area_button {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	text-align: center;  
+	grid-column: auto;
+	grid-row: auto;
+	font-size:1.5em;
+	border: 0.2vw solid #00ff00;
+}
+
 .search_button_item {
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;

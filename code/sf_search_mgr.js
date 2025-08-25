@@ -44,6 +44,9 @@ const SUF_VERSE_TXT = "_verse_txt";
 
 const id_grid_text_analysis = "id_grid_text_analysis";
 const id_pop_menu_sele = "id_pop_menu_sele";
+const id_search_butt = "id_search_butt";
+const id_back_butt = "id_back_butt";
+const id_forward_butt = "id_forward_butt";
 const id_select = "id_select";
 const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
@@ -241,9 +244,21 @@ function init_menus(){
 	});		
 	dv_search.appendChild(dv_del_expr);
 	
-	const dv_select = document.getElementById(id_select);
-	dv_select.addEventListener('click', async function() {
+	const dv_search_butt = document.getElementById(id_search_butt);
+	dv_search_butt.addEventListener('click', async function() {
 		await do_select();
+		return;
+	});
+
+	const dv_back_butt = document.getElementById(id_back_butt);
+	dv_back_butt.addEventListener('click', async function() {
+		window.history.back();
+		return;
+	});
+
+	const dv_forward_butt = document.getElementById(id_forward_butt);
+	dv_forward_butt.addEventListener('click', async function() {
+		window.history.forward();
 		return;
 	});
 
@@ -806,8 +821,8 @@ function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
 	}
 	const cls_men = ["aux_item"];
 	const cls_itm = ["is_option"];
-	const dv_to_scroll = null;
-	toggle_select_option(pnt_dv_opt, id_his_opers, his_opers, clk_fn, cls_men, cls_itm);
+	const dv_to_scroll = "relative";
+	toggle_select_option(pnt_dv_opt, id_his_opers, his_opers, clk_fn, cls_men, cls_itm, dv_to_scroll);
 }
 
 function toggle_examples(toggle_op){
