@@ -96,14 +96,20 @@ export const BIBLANG_EXAMPLES_EN = [
 	`=nt ; -mat; jos ../range to nt minus matthew, then finds 'jos'/`,
 ];
 
-export const biblehub_butt = "bhub";
+const biblehub_abbr = "bhub";
+const add_abbr_en = "add";
+const add_abbr_es = "adi";
+
+const history_ops_es = ["adicionar", "eliminar"];
+const history_ops_en = ["add", "delete"];
+
 const tok_ops_asc_id_es = ["exacto", "parcial", "adicionar"];
 const tok_ops_asc_id_en = ["exact", "partial", "add"];
-const tok_ops_scod_es = ["encuentra", "adicionar", biblehub_butt];
-const tok_ops_scod_en = ["find", "add", biblehub_butt];
+const tok_ops_scod_es = ["encuentra", "adicionar", biblehub_abbr];
+const tok_ops_scod_en = ["find", "add", biblehub_abbr];
 
-const ops_def_scod_es = ["ant", "sig", "raices", "mutuos", "ocurrencias", "encuentra", "adicionar", biblehub_butt];
-const ops_def_scod_en = ["prv", "nxt", "roots", "mutual", "occurrences", "find", "add", biblehub_butt];
+const ops_def_scod_es = ["ant", "sig", "raices", "mutuos", "ocurrencias", "encuentra", "adicionar", biblehub_abbr];
+const ops_def_scod_en = ["prv", "nxt", "roots", "mutual", "occurrences", "find", "add", biblehub_abbr];
 
 export const num2book_en = {
 	"-1":DEFAULT_BOOK_NAME,
@@ -463,7 +469,7 @@ function init_common(){
 	gvar.num2book_en = num2book_en;
 	gvar.book2num_en = book2num_en;
 	gvar.inbook2num_en = book2num_en;
-	gvar.biblehub_butt = biblehub_butt;
+	gvar.biblehub_abbr = biblehub_abbr;
 	gvar.bib_lang = bib_lang;
 	gvar.tra_class = tra_class;
 	gvar.lang_occus = lang_occus;
@@ -487,11 +493,14 @@ function init_es(){
 	gvar.out_txt = out_txt_es;
 	gvar.tra_txt = tra_txt;
 	
+	gvar.history_ops = history_ops_es;
+	
 	gvar.tok_ops_asc_id = tok_ops_asc_id_es;
 	gvar.tok_ops_scod = tok_ops_scod_es;
 	gvar.ops_def_scod = ops_def_scod_es;
 
 	gvar.examples = BIBLANG_EXAMPLES_ES;
+	gvar.add_abbr = add_abbr_es;
 }
 
 function init_en(){
@@ -510,10 +519,13 @@ function init_en(){
 	gvar.tgt_rx = tgt_rx_en;
 	gvar.out_txt = out_txt_en;
 
+	gvar.history_ops = history_ops_en;
+	
 	gvar.tok_ops_asc_id = tok_ops_asc_id_en;
 	gvar.tok_ops_scod = tok_ops_scod_en;
 	gvar.ops_def_scod = ops_def_scod_en;
 
 	gvar.examples = BIBLANG_EXAMPLES_EN;
+	gvar.add_abbr = add_abbr_en;
 }
 

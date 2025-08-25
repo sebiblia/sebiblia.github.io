@@ -568,6 +568,7 @@ a.exam_ref:hover {
 .is_verse_cit {
 	display: inline-block;
 	margin: 0.5vw;
+	font-weight: bold;
 	background-color: #254795;
 	color: yellow;
 }

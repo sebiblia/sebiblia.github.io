@@ -47,6 +47,7 @@ const id_pop_menu_sele = "id_pop_menu_sele";
 const id_select = "id_select";
 const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
+const id_his_opers = "id_his_opers";
 const id_menu_tok = "id_menu_tok";
 const id_header = "id_header";
 const id_info = "id_info";
@@ -773,6 +774,12 @@ function toggle_history_info(toggle_op){
 		await do_select(conf);
 		//dv_ops.remove();
 	}
+	let right_clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		const opt_id = get_opt_id(id_history, idx_sel);
+		const dv_opt = document.getElementById(opt_id);
+		
+		await toggle_history_opers(dv_ops, dv_opt, idx_sel); // id_his_opers
+	}
 	if(his_vals.length == 0){
 		his_vals = ["NO DATA TO SHOW. Do a search first."];
 		clk_fn = null;
@@ -781,7 +788,26 @@ function toggle_history_info(toggle_op){
 	const cls_itm = [];
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_history, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	toggle_select_option(dv_select, id_history, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op, right_clk_fn);
+}
+
+function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
+	const his_opers = gvar.history_ops; // ["add", "delete"];
+	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		if(idx_sel == 0){
+			const expr = gvar.biblang.history[pnt_idx_sel].expr;
+			add_to_expr(expr);
+		}
+		else if(idx_sel == 1){
+			gvar.biblang.history.splice(pnt_idx_sel, 1);
+			toggle_history_info("keep");
+		}
+		dv_ops.remove();
+	}
+	const cls_men = ["aux_item"];
+	const cls_itm = ["is_option"];
+	const dv_to_scroll = null;
+	toggle_select_option(pnt_dv_opt, id_his_opers, his_opers, clk_fn, cls_men, cls_itm);
 }
 
 function toggle_examples(toggle_op){
@@ -1178,7 +1204,7 @@ function set_css_matches(vs_txt, bibobj, bl_obj){
 function toggle_scod_actions(dv_def, scod){
 	const id_menu = id_menu_scod_def;
 		
-	const ops = gvar.ops_def_scod; // ["prv", "nxt", "roots", "mutual", "occurrences", "find", "add", biblehub_butt]
+	const ops = gvar.ops_def_scod; // ["prv", "nxt", "roots", "mutual", "occurrences", "find", "add", biblehub_abbr]
 	const dv_expr = document.getElementById(id_expression);
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = null;
@@ -1357,7 +1383,7 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	const vhref = bibobj.href_bh;
 	let vcit = "INVALID_BIBLE_CITATION";
 	if(bibobj.vcit != null){
-		vcit = `<b>${bibobj.vcit}</b>`;
+		vcit = `${bibobj.vcit}`;
 	}
 	let vtxt = "INVALID_BIBLE_TEXT";
 	if(bibobj.vtxt != null){
@@ -1371,13 +1397,30 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	const butt_classes = ["is_verse_oper"];
 	
 	dv_ver.innerHTML = "";
+	let dv_itm = null;
 	
-	add_ui_disp(dv_ver, bibobj, 0, vcit, ["is_verse_cit"]);
+	dv_itm = document.createElement("div");
+	dv_itm.classList.add("is_verse_cit");
+	dv_itm.innerHTML = vcit;
+	dv_itm.addEventListener('click', async function() {
+		const dv_expr = document.getElementById(id_expression);
+		dv_expr.value = vcit;
+		await do_select();
+	});		
+	dv_ver.appendChild(dv_itm);	
+	
+	//add_ui_disp(dv_ver, bibobj, 0, vcit, ["is_verse_cit"]);
 	//add_ui_disp(dv_ver, bibobj, 10, "(10)", butt_classes);
 	add_ui_disp(dv_ver, bibobj, 20, "(20)", butt_classes);
 	add_ui_disp(dv_ver, bibobj, 40, "(40)", butt_classes);
 
-	let dv_itm = null;
+	dv_itm = document.createElement("div");
+	dv_itm.classList.add(...butt_classes);
+	dv_itm.innerHTML = gvar.add_abbr;
+	dv_itm.addEventListener('click', function() {
+		add_to_expr(vcit);
+	});		
+	dv_ver.appendChild(dv_itm);	
 	
 	dv_itm = document.createElement("div");
 	dv_itm.classList.add(...butt_classes);
@@ -1389,7 +1432,7 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	
 	dv_itm = document.createElement("div");
 	dv_itm.classList.add(...butt_classes);
-	dv_itm.innerHTML = gvar.biblehub_butt;
+	dv_itm.innerHTML = gvar.biblehub_abbr;
 	dv_itm.addEventListener('click', function() {
 		window.open(vhref, '_blank');
 	});		

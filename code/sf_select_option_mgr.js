@@ -34,7 +34,7 @@ export function get_new_dv_under(dv_header, id_dv, toggle_op){
 }
 
 export function 
-toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu_cls_arr, item_cls_arr, dv_to_scroll, toggle_op){
+toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu_cls_arr, item_cls_arr, dv_to_scroll, toggle_op, on_rclick_fn){
 	
 	let dv_options = get_new_dv_under(dv_return, id_selec_men, toggle_op); // old id_dv_sel_option
 	if(dv_options == null){
@@ -76,6 +76,13 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 				dv_options.remove();
 			}
 		});
+		if(on_rclick_fn != null){
+			dv_opt.addEventListener('contextmenu', (ev1) => {
+				ev1.preventDefault();
+				on_rclick_fn(dv_return, dv_options, value, opt_idx);
+				return false;
+			});
+		}
 	});
 	
 	if(dv_to_scroll != null){

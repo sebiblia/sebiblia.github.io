@@ -2,7 +2,9 @@
 
 # Manual de [SeBiblia.github.io](https://SeBiblia.github.io)
 
-La aplicación [SeBiblia.github.io](https://SeBiblia.github.io) permite el **ESTUDIO** de la **BIBLIA** según sus **IDIOMAS ORIGINALES** (hebreo y griego) **SIN NECESIDAD de HABLARLOS** porque esta diseñada, por medio de un lenguaje propio y multiples menús expandibles haciendo clicks sobre texto, para facilitar la BUSQUEDA y NAVEGACION de los textos en los idiomas ORIGINALES (hebreo y griego) pero LEYENDO en el idioma TRADUCIDO, usando fundamentalmente [codigos Strong](#codigo-strong) sobre los textos escritos en hebreo y griego para la busqueda y navegación y mostrando los resultados en el idioma traducido de preferencia. 
+La aplicación [SeBiblia.github.io](https://SeBiblia.github.io) permite el **ESTUDIO** de la **BIBLIA** en sus **IDIOMAS ORIGINALES** (hebreo y griego) **SIN NECESIDAD de HABLARLOS** porque esta diseñada para facilitar la **BUSQUEDA y NAVEGACION** de los textos en los idiomas ORIGINALES (hebreo y griego) pero **LEYENDO en el idioma TRADUCIDO** (Español o Inglés), usando fundamentalmente **[codigos Strong](#codigo-strong)** que con solo **HACER CLICK** y **sin memorizarlos** pueden hacer busquedas sobre los textos escritos en hebreo y griego para luego LEER los resultados de la busqueda en el idioma traducido de preferencia. 
+
+Las condiciones de busqueda son muy flexibles y configurables. Esto se logra mediante un pequeño lenguaje computacional sobre conjuntos de versiculos que se puede **APRENDER sobre la MARCHA** siguiendo los **EJEMPLOS** de busqueda. Y la navegación se logra con varios **menus desplegables** que se activan haciendo click sobre los textos de respuesta y que abren diferentes opciones de busquedas automaticas con solo hacer un click.
 
 ## Interfaz básica.
 
