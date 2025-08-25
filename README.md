@@ -67,19 +67,19 @@ Las citas NO pueden tener espacios. Deben ir SIN espacios. Con uno de los siguie
 
 - nombre_libro.capítulo
 
-Ejemplo: [Mat.1]()
+Ejemplo: [1_Tesalonisenses.1](https://sebiblia.github.io/es/tool.html?biblang=1_Tesalonisenses.1&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 - nombre_libro-capítulo
 
-Ejemplo: [MaTeo-1]()
+Ejemplo: [2CoRintios-1](https://sebiblia.github.io/es/tool.html?biblang=2CoRintios-1&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 - nombre_libro.capítulo:versiculo
 
-Ejemplo: [MAT.1:5]()
+Ejemplo: [MAT.1:5](https://sebiblia.github.io/es/tool.html?biblang=MAT.1%3A5&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 - nombre_libro.capítulo:versiculo_inicio-versiculo_final
 
-Ejemplo: [marteo.1:5-9]()
+Ejemplo: [marteo.1:5-9](https://sebiblia.github.io/es/tool.html?biblang=marteo.1%3A5-9&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 
 ###  Operaciones binarias
@@ -104,41 +104,66 @@ Ejemplo: [/dijo.$/](https://sebiblia.github.io/es/tool.html?biblang=%2Fdijo.%24%
 
 ###  Comando
 
-- [.WLC](https://sebiblia.github.io/es/tool.html?biblang=.WLC&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en hebreo](#interfaz-básica) a West Minister Leningrad Codex (WLC).
-- [.ALE](https://sebiblia.github.io/es/tool.html?biblang=.ALE&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en hebreo](#interfaz-básica) a Aleppo Codex (ALE).
-- [.TKH](https://sebiblia.github.io/es/tool.html?biblang=.TKH&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en hebreo](#interfaz-básica) a la Tanakh (TKH).
-- [.LXX](https://sebiblia.github.io/es/tool.html?biblang=.LXX&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el texto del campo OT, por sus siglas en Inglés (Old Testament), y mostrado en la [interfáz básica](#interfaz-básica) como texto en hebreo por simplicidad, al texto de la Septuaginta (LXX), que en realidad es un texto en griego.
+Los comandos retornan cero versiculos, así que cuando se usan dentro de una formula binaria no afectan el resultado de la operación binaria. SIn embargo si afectan el resultado porque alteran los parametros de configuración.
 
-- [.BYZ](https://sebiblia.github.io/es/tool.html?biblang=.BYZ&conf=O%24LXX%7CN%24WH%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto Bizantino (BYZ).
-- [.TR](https://sebiblia.github.io/es/tool.html?biblang=.TR&conf=O%24LXX%7CN%24NES%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto critico conocido como Textus Receptus (TR).
-- [.WH](https://sebiblia.github.io/es/tool.html?biblang=.WH&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto critico de Wescott and Hort (WH).
-- [.NES](https://sebiblia.github.io/es/tool.html?biblang=.NES&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en griego](#interfaz-básica) al texto critico de Nestle 1904 (NES).
 
-- [.RVA](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en Español o Inglés](#interfaz-básica) a la versión Resina-Valera 1909 (RVA).
-- [.RVAs](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Este comando retorna cero versiculos y modifica el [texto en Español o Inglés](#interfaz-básica) a la versión Resina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong SON los que corresponden al texto de la RVA una vez traducidos al griego y NO los del texto en griego que son los que nos interesa buscar. La mayoría corresponden, pero justamente las diferencias son las que nos interesan. Para hacer una busqueda en los códigos Strong de ésta versión Reina-Valera (una vez traducidos al griego) es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
-- [.KJV]
-- [.KJVs]
-- [.SBLM]
-- [.WEB]
+####  Códigos hebreos (OT)
 
-- [:loc]
-- [:ot]
-- [:nt]
-- [:sco]
+Estos comandos cambian la configuración para que los códigos Strong HEBREOS se busquen en el respectivo texto critico del Antiguo Testamento.
+
+Los siguientes comandos son equivalentes a modificar el campo OT, por sus siglas en Inglés de: Old Testament, y que en el [gráfico](#interfaz-básica) se denominó [códigos hebreos](#interfaz-básica) para que sea mas comprensible para el principiante o la persona que no habla Inglés. La excepción es la Septuaginta (LXX) puesto que fue escrita en griego. Y por supuesto las busquedas de códigos Strong en LXX deben ser códigos Strong del griego.
+
+- [.WLC](https://sebiblia.github.io/es/tool.html?biblang=.WLC&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en West Minister Leningrad Codex (WLC).
+- [.ALE](https://sebiblia.github.io/es/tool.html?biblang=.ALE&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en Aleppo Codex (ALE).
+- [.TKH](https://sebiblia.github.io/es/tool.html?biblang=.TKH&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en la Tanakh (TKH).
+- [.LXX](https://sebiblia.github.io/es/tool.html?biblang=.LXX&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong GRIEGOS en la Septuaginta (LXX).
+
+Ejemplo: [(.WLC ; H1) ! (.ALE ; H1)](https://sebiblia.github.io/es/tool.html?biblang=(.WLC%20%3B%20H1)%20!%20(.ALE%20%3B%20H1)&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Busca los versiculos que en la WLC tienen el código H1 pero en la ALE NO tienen dicho código.
+
+
+####  Códigos griegos (NT)
+
+Estos comandos cambian la configuración para que los códigos Strong GRIEGOS se busquen en el respectivo texto critico del Nuevo Testamento.
+
+Son equivalentes a modificar el campo NT, por sus siglas en Inglés de: New Testament, y que en el [gráfico](#interfaz-básica) se denominó [Códigos griegos](#interfaz-básica) para que sea mas comprensible para el principiante o la persona que no habla Inglés.
+
+- [.BYZ](https://sebiblia.github.io/es/tool.html?biblang=.BYZ&conf=O%24LXX%7CN%24WH%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto Bizantino (BYZ).
+- [.TR](https://sebiblia.github.io/es/tool.html?biblang=.TR&conf=O%24LXX%7CN%24NES%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el Textus Receptus (TR).
+- [.WH](https://sebiblia.github.io/es/tool.html?biblang=.WH&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto critico de Wescott and Hort (WH).
+- [.NES](https://sebiblia.github.io/es/tool.html?biblang=.NES&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto critico de Nestle 1904 (NES).
+
+####  Texto traducido (LOC)
+
+Estos comandos cambian la configuración para que los versículos traducidos que se muestran del resultado de la busqueda sean de la versión respectiva.
+
+Son equivalentes a modificar el campo LOC, por referirse a un texto local, y que en el [gráfico](#interfaz-básica) se denominó [Texto traducido](#interfaz-básica) para que sea mas comprensible.
+
+
+- [.RVA](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 (RVA).
+- [.RVAs](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la RVA (y que corresponden al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la RVAs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
+- [.KJV](https://sebiblia.github.io/es/tool.html?biblang=.KJV&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version (KJV).
+- [.KJVs](https://sebiblia.github.io/es/tool.html?biblang=.KJVs&conf=O%24ALE%7CN%24BYZ%7CL%24KJV%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version con códigos Strong (KJVs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la KJV (una vez traducidos al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la KJVs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
+- [.SBLM](https://sebiblia.github.io/es/tool.html?biblang=.SBLM&conf=O%24ALE%7CN%24BYZ%7CL%24KJVs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Sagrada Biblia Libre para el Mundo (SBLM).
+- [.WEB](https://sebiblia.github.io/es/tool.html?biblang=.WEB&conf=O%24ALE%7CN%24BYZ%7CL%24SBLM%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión World English Bible (WEB).
+
+####  Dónde busca palabras y expresiones regulares (RX)
+
+Estos comandos cambian la configuración para que el texto de busqueda para palabras y expresiones regulares sea el texto respectivo.
+
+Son equivalentes a modificar el campo RX, una abreviatura de Regular eXpresion, que se refiere a expresiones regulares, y que en el [gráfico](#interfaz-básica) se denominó [texto traducido](#interfaz-básica) para que sea mas comprensible para el principiante.
+
+- [:loc](https://sebiblia.github.io/es/tool.html?biblang=%3Aloc&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo LOC.
+- [:ot](https://sebiblia.github.io/es/tool.html?biblang=%3Aot&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo OT. Las palabras y expresiones regulares se escriben en ASCCI siguiendo el [trans-deletreo](#trans-deletreo) del Unicode griego a ASCCI dado por la tabla de [trans-deletreo](#trans-deletreo)
+- [:nt](https://sebiblia.github.io/es/tool.html?biblang=%3Ant&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo NT. Las palabras y expresiones regulares se escriben en ASCCI siguiendo el [trans-deletreo](#trans-deletreo) del Unicode griego a ASCCI dado por la tabla de [trans-deletreo](#trans-deletreo)
+- :sco . Reservado. Sin implementar.
+
+#### Presentación de versiculos resultado (P)
 
 - [.asc]
 - [.min]
 - [.may]
 
-- [.all]
-- [$last]
-
-- [.rx:i]
-- [.rx:ni]
-
-- [.dbg]
-- [.nodbg]
-- [.rhis]
+#### Intervalos de busqueda
 
 - [=all]
 - [=ot]
@@ -156,6 +181,18 @@ Ejemplo: [/dijo.$/](https://sebiblia.github.io/es/tool.html?biblang=%2Fdijo.%24%
 - [+heb]
 - [-heb]
 
+#### Otros comandos
+
+- [.all]
+- [$last]
+
+- [.rx:i]
+- [.rx:ni]
+
+- [.dbg]
+- [.nodbg]
+- [.rhis]
+
 
 ## Interfaz básica.
 
@@ -167,5 +204,73 @@ Ejemplo: [/dijo.$/](https://sebiblia.github.io/es/tool.html?biblang=%2Fdijo.%24%
 ###  Antiguo testamento
 
 
+### Trans-deletreo
+
+HEBREW
+
+ALEF    -> e
+BET     -> b
+GIMEL   -> g
+DALET   -> d
+HE      -> h
+VAV     -> v
+ZAYIN   -> x
+HET     -> k
+TET     -> p
+YOD     -> i
+F_KAF   -> c
+KAF     -> c
+LAMED   -> l
+F_MEM   -> m
+MEM     -> m
+F_NUN   -> n
+NUN     -> n
+SAMEKH  -> s
+AYIN    -> a
+F_PE    -> f
+PE      -> f
+F_TSADI -> z
+TSADI   -> z
+KUF     -> q
+RESH    -> r
+SHIN    -> w
+TAV     -> t
+
+GREEK
+
+α -> a
+β -> b
+γ -> g
+δ -> d
+ε -> e
+ϝ -> F
+ͷ -> N
+ϛ -> S
+ζ -> z
+ͱ -> H
+η -> h
+θ -> q
+ι -> i
+ϳ -> j
+κ -> k
+λ -> l
+μ -> m
+ν -> n
+ξ -> x
+ο -> o
+π -> p
+ϻ -> M
+ϟ -> K
+ϙ -> Q
+ρ -> r
+ς -> s
+σ -> s
+ͼ -> Z
+τ -> t
+υ -> u
+φ -> f
+χ -> c
+ψ -> y
+ω -> w
 
 
