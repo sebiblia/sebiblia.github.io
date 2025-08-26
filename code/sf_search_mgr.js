@@ -29,6 +29,7 @@ const DEBUG_POP_MENU = false;
 const DEBUG_FILL_SPARTS = false;
 const DEBUG_VERSE_REFS = false;
 const DEBUG_HREFS = false;
+const WITH_SAVE_HISTORY = false;
 
 export let gvar = {};
 
@@ -782,13 +783,15 @@ function pop_menu_handler(){
 	});
 	dv_pop_men.appendChild(op);
 
-	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = "SAVE_HISTORY";
-	op.addEventListener('click', () => {
-		save_file("DONLOADED_SEBIBLIA_HISTORY.txt", gvar.biblang.history);
-	});
-	dv_pop_men.appendChild(op);
+	if(WITH_SAVE_HISTORY){
+		op = document.createElement("div");
+		op.classList.add("exam", "is_block", "big_item");
+		op.innerHTML = "SAVE_HISTORY";
+		op.addEventListener('click', () => {
+			save_file("DONLOADED_SEBIBLIA_HISTORY.txt", gvar.biblang.history);
+		});
+		dv_pop_men.appendChild(op);
+	}
 	
 	scroll_to_top(dv_pop_men);
 }
@@ -1736,9 +1739,9 @@ async function toggle_refs_menu(dv_itm, bibobj){
 }
 
 function get_example_htm(itm){
-	let htm = itm.expr;
+	let htm = `<span class="is_example_expr">${itm.expr}</span>`;
 	if(itm.title != null){
-		htm += "<br>" + itm.title;
+		htm += ` <span class="is_example_title">${itm.title}</span>`;
 	}
 	return htm;
 }
@@ -1757,23 +1760,4 @@ function toggle_lang_examples(examples){
 	const dv_to_scroll = null;
 	toggle_select_option(dv_select, id_examples, exam_vals, clk_fn, cls_men, cls_itm, dv_to_scroll);
 }
-
-/*
-function toggle_examples(toggle_op){
-	const dv_expr = document.getElementById(id_expression);
-	let his_vals = gvar.examples;
-	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
-		dv_expr.value = val_sel;
-		await do_select();
-	}
-	if(his_vals.length == 0){
-		his_vals = ["NO DATA TO SHOW. Do a search first."];
-		clk_fn = null;
-	}
-	const cls_men = ["aux_item", "has_border"];
-	const cls_itm = [];
-	const dv_select = document.getElementById(id_select);
-	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_examples, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
-}*/
 

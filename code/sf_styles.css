@@ -602,6 +602,17 @@ a.exam_ref:hover {
 	background-color: white;
 }
 
+.is_example_expr {
+	margin-top: 0.4em;
+	margin-left: 0.4em;
+	font-weight: bold;
+	color: yellow;
+}
+
+.is_example_title {
+	margin-left: 0.2em;
+}
+
 .download_bar {
   width: 100%; 
   height: 20px; 
