@@ -418,6 +418,7 @@ export async function start_srch_mgr(curr_lang){
 	init_biblang(curr_lang);
 	init_menus();
 	if(PERSISTANT_STATE){ read_storage_state(); }
+	init_nav_history();
 	init_handlers();
 	
 	if(PERSISTANT_STATE){ window.addEventListener('beforeunload', write_storage_state); }
@@ -425,6 +426,17 @@ export async function start_srch_mgr(curr_lang){
 	const conf = set_search_from_url();
 	if(conf != null){
 		await do_select(conf);
+	}
+}
+
+function init_nav_history(){
+	if(gvar.biblang.history == null){
+		return;
+	}
+	const his = gvar.biblang.history;
+	let ii = 0;
+	for(; ii < his.length; ii++){
+		history.pushState(ii, '');
 	}
 }
 
@@ -736,7 +748,9 @@ function pop_menu_handler(){
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.examples;
-	op.addEventListener('click', toggle_examples);
+	op.addEventListener('click', () => {
+		toggle_lang_examples(gvar.examples_es);
+	});
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
@@ -823,24 +837,6 @@ function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
 	const cls_itm = ["is_option"];
 	const dv_to_scroll = "relative";
 	toggle_select_option(pnt_dv_opt, id_his_opers, his_opers, clk_fn, cls_men, cls_itm, dv_to_scroll);
-}
-
-function toggle_examples(toggle_op){
-	const dv_expr = document.getElementById(id_expression);
-	let his_vals = gvar.examples;
-	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
-		dv_expr.value = val_sel;
-		await do_select();
-	}
-	if(his_vals.length == 0){
-		his_vals = ["NO DATA TO SHOW. Do a search first."];
-		clk_fn = null;
-	}
-	const cls_men = ["aux_item", "has_border"];
-	const cls_itm = [];
-	const dv_select = document.getElementById(id_select);
-	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_examples, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 }
 
 function toggle_books_info(){
@@ -1738,4 +1734,46 @@ async function toggle_refs_menu(dv_itm, bibobj){
 	const dv_togg = toggle_select_option(dv_itm, id_verse_refs, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 	return dv_togg;
 }
+
+function get_example_htm(itm){
+	let htm = itm.expr;
+	if(itm.title != null){
+		htm += "<br>" + itm.title;
+	}
+	return htm;
+}
+
+function toggle_lang_examples(examples){
+	const dv_expr = document.getElementById(id_expression);
+	let exam_vals = examples.map((itm) => get_example_htm(itm));
+	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		dv_expr.value = examples[idx_sel].expr;
+		const conf = examples[idx_sel].conf;
+		await do_select(conf);
+	}
+	const cls_men = ["aux_item", "has_border"];
+	const cls_itm = [];
+	const dv_select = document.getElementById(id_select);
+	const dv_to_scroll = null;
+	toggle_select_option(dv_select, id_examples, exam_vals, clk_fn, cls_men, cls_itm, dv_to_scroll);
+}
+
+/*
+function toggle_examples(toggle_op){
+	const dv_expr = document.getElementById(id_expression);
+	let his_vals = gvar.examples;
+	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		dv_expr.value = val_sel;
+		await do_select();
+	}
+	if(his_vals.length == 0){
+		his_vals = ["NO DATA TO SHOW. Do a search first."];
+		clk_fn = null;
+	}
+	const cls_men = ["aux_item", "has_border"];
+	const cls_itm = [];
+	const dv_select = document.getElementById(id_select);
+	const dv_to_scroll = null;
+	toggle_select_option(dv_select, id_examples, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+}*/
 

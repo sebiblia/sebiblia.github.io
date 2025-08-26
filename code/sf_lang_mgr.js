@@ -1,4 +1,7 @@
 
+import * as MOD_EX_ES from '../data/js_examples/examples_es.js';
+import * as MOD_TIT_ES from '../data/js_examples/titles_es.js';
+
 import { gvar, } from './sf_search_mgr.js';
 
 const DEFAULT_BOOK_NAME = "INVALID_BOOK_NAME";
@@ -456,7 +459,32 @@ const book2num_es = {};
 const inbook2num_es = {};
 const abbr2num = {};
 
+function set_titles(ex_arr, tit_arr){
+	if(ex_arr == null){
+		return;
+	}
+	if(tit_arr == null){
+		return;
+	}
+	
+	let ii = 0;
+	for(; ii < ex_arr.length; ii++){
+		if(ii >= tit_arr.length){
+			break;
+		}
+		const obj = ex_arr[ii];
+		obj.title = tit_arr[ii];
+	}
+}
+
+function init_example_titles(){
+	const es_ex = MOD_EX_ES.biblang_examples_es;
+	const es_tit = MOD_TIT_ES.biblang_titles_es;
+	set_titles(es_ex, es_tit);
+}
+
 function init_common(){
+	init_example_titles();
 	fill_reversed_object(num2abbr, abbr2num);
 	fill_reversed_object(num2book_es, book2num_es);
 	fill_reversed_object(num2book_en, book2num_en);
@@ -474,6 +502,7 @@ function init_common(){
 	gvar.tra_class = tra_class;
 	gvar.lang_occus = lang_occus;
 	gvar.lang_utra = lang_utra;
+	gvar.examples_es = MOD_EX_ES.biblang_examples_es;
 }
 
 function init_es(){
@@ -499,8 +528,8 @@ function init_es(){
 	gvar.tok_ops_scod = tok_ops_scod_es;
 	gvar.ops_def_scod = ops_def_scod_es;
 
-	gvar.examples = BIBLANG_EXAMPLES_ES;
 	gvar.add_abbr = add_abbr_es;
+	gvar.examples = BIBLANG_EXAMPLES_ES;
 }
 
 function init_en(){
@@ -525,7 +554,7 @@ function init_en(){
 	gvar.tok_ops_scod = tok_ops_scod_en;
 	gvar.ops_def_scod = ops_def_scod_en;
 
-	gvar.examples = BIBLANG_EXAMPLES_EN;
 	gvar.add_abbr = add_abbr_en;
+	gvar.examples = BIBLANG_EXAMPLES_EN;
 }
 
