@@ -61,7 +61,7 @@ const conf2mini = {
 	curr_OT: 'O',
 	curr_NT: 'N',
 	curr_LOC: 'L',
-	output: 'o',
+	presentation: 'P',
 	regex_input: 'i',
 	size_output: 's',
 	regex_insensitive: 'r',
@@ -199,6 +199,10 @@ export function reset_curr_range(){
 	gvar.biblang.curr_range = JSON.parse(JSON.stringify(range_nams.all));
 }
 
+function reset_presentation(){
+	gvar.biblang.presentation = "asc";
+}
+
 function reset_curr_rx_insensitive(){
 	gvar.biblang.regex_insensitive = true;
 }
@@ -219,7 +223,7 @@ function init_biblang_conf(){
 	gvar.biblang.curr_NT = "BYZ";
 	gvar.biblang.curr_LOC = gvar.biblang.default_LOC;
 	
-	gvar.biblang.output = "loc";
+	gvar.biblang.presentation = "asc";
 	gvar.biblang.regex_input = "loc";
 	
 	size_outputs_to_all();
@@ -235,7 +239,7 @@ function get_biblang_conf(){
 	conf.curr_NT = gvar.biblang.curr_NT;
 	conf.curr_LOC = gvar.biblang.curr_LOC;
 
-	conf.output = gvar.biblang.output;
+	conf.presentation = gvar.biblang.presentation;
 	conf.regex_input = gvar.biblang.regex_input;
 	conf.size_output = JSON.parse(JSON.stringify(gvar.biblang.size_output));
 	
@@ -252,7 +256,7 @@ export function set_biblang_conf(conf){
 	if(conf.curr_NT != null){ gvar.biblang.curr_NT = conf.curr_NT; }
 	if(conf.curr_LOC != null){ gvar.biblang.curr_LOC = conf.curr_LOC; }
 
-	if(conf.output != null){ gvar.biblang.output = conf.output; }
+	if(conf.presentation != null){ gvar.biblang.presentation = conf.presentation; }
 	if(conf.regex_input != null){ gvar.biblang.regex_input = conf.regex_input; }
 	update_size_outputs_from(conf.size_output);
 	
@@ -959,6 +963,7 @@ async function calc_bibvar(bvar){
 	}
 	const robj = { op: rop, lverses: [], lscods: [] };
 	if(nam == 'all'){
+		reset_presentation();
 		reset_curr_rx_insensitive();
 		reset_curr_range();
 		size_outputs_to_all();
@@ -978,8 +983,8 @@ async function calc_bibvar(bvar){
 		}
 		const vr = nam.toLowerCase();
 		if(out_nams[vr] != null){
-			gvar.biblang.output = vr;
-			if(gvar.dbg_biblang){ add_dbg_log("output=" + vr); }
+			gvar.biblang.presentation = vr;
+			if(gvar.dbg_biblang){ add_dbg_log("presentation=" + vr); }
 		}
 		if(vr == rx_insen){
 			gvar.biblang.regex_insensitive = true;
@@ -1421,19 +1426,23 @@ export function conf_to_mini(conf){
 	for(; ii < kks.length; ii++){
 		const kk = kks[ii];
 		const kk2 = mini2conf[kk];
-		mini[kk] = conf[kk2];
+		if(kk2 != null){
+			mini[kk] = conf[kk2];
+		}
 	}
 	return mini;
 }
 
 export function mini_to_conf(mini){
-	const conf = {};
+	const conf = get_biblang_conf();
 	const kks = Object.keys(conf2mini);
 	let ii = 0;
 	for(; ii < kks.length; ii++){
 		const kk = kks[ii];
 		const kk2 = conf2mini[kk];
-		conf[kk] = mini[kk2];
+		if(kk2 != null){
+			conf[kk] = mini[kk2];
+		}
 	}
 	conf.curr_range = intervals_to_range(conf.intervals);
 	//conf.size_output
@@ -1476,6 +1485,7 @@ export async function eval_biblang_command(command, config){
 	if(par == null){
 		console.error(eval_biblang_term);
 	}
+	reset_presentation();
 	reset_curr_rx_insensitive();
 	reset_curr_range();
 
