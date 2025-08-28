@@ -109,4 +109,45 @@ export const biblang_titles_es = [
 	
 	`Cambia la conf. para buscar texto en la conf. del campo NT (en este caso la WH) ; luego busca el texto trans-deletreado "adhs" y muestra los versiculos de WH  con letras griegas mayusculas.`,
 	
+	`Cambia la conf. para fijar el intervalo de busqueda al libro de Mateo de la RVA ; luego busca el texto "infier" en ese rango.`,
+	
+	`Cambia la conf. para fijar el intervalo de busqueda al libro de Marcos de la RVA ; luego busca el texto "infier" en ese rango.`,
+
+	`Cambia la conf. para fijar el intervalo de busqueda a los libros del Nuevo Testamento de la RVA ; luego busca el texto "infier" en ese rango.`,
+
+	`Busca G1067 en BYZ y los muestra en RVA`,
+
+	`Busca en el Nuevo Testamento (=nt), pero sin Mateo (-mat), el texto "infier"`,
+
+	`Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), y sin Revelacion (-rev), el texto "infier"`,
+
+	`Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), sin Revelacion (-rev), y sin Lucas (-luk), el texto "infier"`,
+
+	`Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), sin Revelacion (-rev), sin Lucas (-luk), y sin Hechos de los Apost. (-act), el texto "infier"`,
+	
+	`Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), sin Revelacion (-rev), sin Lucas (-luk), sin Hechos de los Apost. (-act), y sin Santiago (-jas), el texto "infier"`,
+
+	`Busca en Mateo (=mat), y con Revelacion (+rev), el texto "infier"`,
+
+	`Busca en Mateo (=mat), con Revelacion (+rev), y con Lucas (+luk), el texto "infier"`,
+
+	`Busca en los evangelios (=ev), el texto "infier"`,
+
+	`Busca en los libros de Pablo (=pa), el texto "infier"`,
+
+	`Busca en los libros de Pablo (=pa), el texto "fuego"`,
+
+	`Los mismos resultados de la ULTIMA busqueda los muestra en la version KJV`,
+
+	`Los mismos resultados de la ULTIMA busqueda los muestra en la version SBLM`,
+
+	`Los mismos resultados de la ULTIMA busqueda los muestra en la version WEB`,
+
+	`Los mismos resultados de la ULTIMA busqueda los muestra en la version RVA`,
+
+	`Busca los versiculos de la cita biblica "mateo.1:1-5" que tienen la Expresion Regular Javascript /(\s+)á(\s+)/ en la Reina-Valera 1909 (RVA)`,
+	
+	`Configura para buscedas SENSITIVAS y busca los versiculos de la cita biblica "mateo.1:1-5" que tienen la Expresion Regular Javascript /(\s+)á(\s+)/ en la Reina-Valera 1909 (RVA)`,
+	
+
 ];
