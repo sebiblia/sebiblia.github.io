@@ -800,7 +800,7 @@ function pop_menu_handler(){
 	op.innerHTML = gvar.all_msg.show_link;
 	op.addEventListener('click', () => {
 		const dv_select = document.getElementById(id_select);
-		var dv_href = get_new_dv_under(dv_select, id_search_href);
+		var dv_href = get_new_dv_under(dv_select, id_search_href, "force");
 		if(dv_href == null){
 			return;
 		}

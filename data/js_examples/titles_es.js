@@ -149,5 +149,27 @@ export const biblang_titles_es = [
 	
 	`Configura para buscedas SENSITIVAS y busca los versiculos de la cita biblica "mateo.1:1-5" que tienen la Expresion Regular Javascript /(\s+)á(\s+)/ en la Reina-Valera 1909 (RVA)`,
 	
+	`Le asigna a la variable 'var1' el resultado de buscar el texto 'jose' ; y luego retorna los versiculos en 'var1'`,
 
+	`Retorna los versiculos en 'var1' que tienen el texto 'hijo'`,
+
+	`Le asigna a la variable 'var2' el ULTIMO resultado ; y luego los versiculos en 'var2' que tienen el texto 'nombre'`,
+
+	`Le asigna a la variable 'var3' el ULTIMO resultado ; y luego retorna los versiculos en 'var3'`,
+
+	`Retorna los versiculos en 'var3'`,
+
+	`Retorna los versiculos en 'var2'`,
+
+	`Retorna los versiculos en 'var1'`,
+
+	`Retorna los versiculos en 'var1' que tienen el codigo Strong H1121 en la WLC`,
+
+	`Retorna los versiculos en 'var1' que NO tienen el codigo Strong H1121 en la WLC`,
+
+	`Retorna los versiculos en 'var1' que tienen el codigo Strong G5207 en la BYZ`,
+
+	`Retorna los versiculos en 'var1' que tienen los codigos Strong G5207 y G3475 en la BYZ`,
+
+	`Retorna los versiculos en 'var1' que tienen el codigo Strong G5207 pero NO el G3475 en la BYZ`,
 ];
