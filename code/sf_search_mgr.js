@@ -52,6 +52,7 @@ const id_select = "id_select";
 const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
 const id_his_opers = "id_his_opers";
+const id_variables = "id_variables";
 const id_menu_tok = "id_menu_tok";
 const id_header = "id_header";
 const id_info = "id_info";
@@ -740,13 +741,17 @@ function pop_menu_handler(){
 	let op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.history;
-	op.addEventListener('click', toggle_history_info);
+	op.addEventListener('click', () => {
+		toggle_history_info();
+	});
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.books;
-	op.addEventListener('click', toggle_books_info);
+	op.addEventListener('click', () => {
+		toggle_books_info();
+	});
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
@@ -768,8 +773,18 @@ function pop_menu_handler(){
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.variables;
+	op.addEventListener('click', () => {
+		toggle_variables_info();
+	});
+	dv_pop_men.appendChild(op);
+	
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.debug;
-	op.addEventListener('click', toggle_dbg_info);
+	op.addEventListener('click', () => {
+		toggle_dbg_info();
+	});
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
@@ -809,6 +824,7 @@ function pop_menu_handler(){
 }
 
 function toggle_history_info(toggle_op){
+	if(toggle_op == null){ toggle_op = "force"; }
 	const dv_expr = document.getElementById(id_expression);
 	let his_vals = gvar.biblang.history.map((itm) => itm.expr);
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
@@ -854,7 +870,29 @@ function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
 	toggle_select_option(pnt_dv_opt, id_his_opers, his_opers, clk_fn, cls_men, cls_itm, dv_to_scroll);
 }
 
-function toggle_books_info(){
+function toggle_variables_info(toggle_op){
+	if(toggle_op == null){ toggle_op = "force"; }
+	const dv_expr = document.getElementById(id_expression);
+	let vars = gvar.biblang.all_user_vars;
+	let all_op = null;
+	if(vars != null){
+		all_op = Object.keys(vars);
+	}
+	if(all_op == null){
+		all_op = ["THERE_ARE_NO_CALCULATED_VARIABLES"];
+	}
+	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		add_to_expr(val_sel);
+	}
+	const cls_men = ["aux_item", "has_border"];
+	const cls_itm = ["is_option"];
+	const dv_select = document.getElementById(id_select);
+	const dv_to_scroll = null;
+	toggle_select_option(dv_select, "id_variables", all_op, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+}
+
+function toggle_books_info(toggle_op){
+	if(toggle_op == null){ toggle_op = "force"; }
 	const dv_expr = document.getElementById(id_expression);
 	let abbr = Object.keys(gvar.abbr2num);
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
@@ -863,10 +901,11 @@ function toggle_books_info(){
 	const cls_men = ["aux_item", "has_border"];
 	const cls_itm = ["is_option"];
 	const dv_select = document.getElementById(id_select);
-	toggle_select_option(dv_select, "id_books", abbr, clk_fn, cls_men, cls_itm);
+	toggle_select_option(dv_select, "id_books", abbr, clk_fn, cls_men, cls_itm, null, toggle_op);
 }
 
 function toggle_dbg_info(toggle_op){
+	if(toggle_op == null){ toggle_op = "force"; }
 	let log = gvar.biblang.dbg_log;
 	let clk_fn = null;
 	if(log.length == 0){
@@ -1774,6 +1813,7 @@ function get_example_htm(itm){
 }
 
 function toggle_lang_examples(examples){
+	let toggle_op = "force";
 	const dv_expr = document.getElementById(id_expression);
 	let exam_vals = examples.map((itm) => get_example_htm(itm));
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
@@ -1785,7 +1825,7 @@ function toggle_lang_examples(examples){
 	const cls_itm = [];
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_examples, exam_vals, clk_fn, cls_men, cls_itm, dv_to_scroll);
+	toggle_select_option(dv_select, id_examples, exam_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 }
 
 function set_vtxt_next_presentation(dv_pre, bibobj, bl_obj){
