@@ -759,6 +759,15 @@ function pop_menu_handler(){
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.manual;
+	op.addEventListener('click', () => {
+		const m_href = `https://github.com/sebiblia/sebiblia.github.io?tab=readme-ov-file#manual-de-sebibliagithubio`;
+		window.open(m_href, '_blank');
+	});
+	dv_pop_men.appendChild(op);
+	
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.debug;
 	op.addEventListener('click', toggle_dbg_info);
 	dv_pop_men.appendChild(op);
