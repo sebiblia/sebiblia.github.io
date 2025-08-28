@@ -1808,6 +1808,10 @@ function set_vtxt_next_presentation(dv_pre, bibobj, bl_obj){
 				conv_fn = verse_to_hebrew;
 				nxt_pre = "ASC";
 			}
+			else if(nxt_pre == "MIN"){
+				conv_fn = verse_to_hebrew;
+				nxt_pre = "ASC";
+			}
 		}
 	}
 	let vtxt = "INVALID_BIBLE_TEXT";
