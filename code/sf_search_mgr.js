@@ -699,9 +699,15 @@ async function fill_verses(bl_obj){
 	
 	let ii = 0;
 	for(ii = 0; ii < all_vrs.length; ii++){
-		//update_ev_bar(ii, tot_verses);
 		const bibobj = verse_cod2obj(all_vrs[ii]);
-		const dv_ver = document.createElement("div");
+		
+		let dv_ver = document.getElementById(bibobj.id_dv_ver);
+		if(dv_ver != null){
+			console.error("dv_ver != null");
+			continue;
+		}
+		//update_ev_bar(ii, tot_verses);
+		dv_ver = document.createElement("div");
 		dv_ver.id = bibobj.id_dv_ver;
 		dv_ver.innerHTML = bibobj.id_dv_ver;
 		dv_verses.appendChild(dv_ver);

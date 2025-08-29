@@ -871,7 +871,8 @@ async function calc_scode(scode){
 	const vss = await get_scode_verses(bib, scod);
 	//console.log(vss);
 	if(vss.length > 0){
-		arr_vrs = vss.split(' ');
+		const all_vrs = vss.split(' ');
+		arr_vrs = [...new Set([...all_vrs])];
 	}
 	
 	const rop = scode;
