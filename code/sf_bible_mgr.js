@@ -320,7 +320,59 @@ function fill_bibobj_tra_info(bibobj){
 		bibobj.loc_tra = lpref + "_" + blang.toUpperCase();
 	}
 	
-	bibobj.loc_bib = lbib;	
+	bibobj.loc_bib = lbib;
+}
+
+export async function fill_loc_asc(bibobj){
+	const loc_bib = gvar.biblang.curr_LOC;
+	if(bibobj.bible == loc_bib){
+		bibobj.loc_asc = bibobj.vtxt;
+	}
+	if(bibobj.loc_asc != null){
+		return;
+	}
+	const book = bibobj.book_name;
+	const chapter = bibobj.chapter;
+	const verse = bibobj.verse;
+	
+	bibobj.loc_asc = await get_bible_verse(loc_bib, book, chapter, verse);
+	if(bibobj.bible == loc_bib){
+		bibobj.vtxt = bibobj.loc_asc;
+	}
+}
+
+export async function fill_cri_asc(bibobj){
+	let cri_bib = gvar.biblang.curr_OT;
+	if(bibobj.book > 39){
+		cri_bib = gvar.biblang.curr_NT;
+	}
+	if(bibobj.bible == cri_bib){
+		bibobj.cri_asc = bibobj.vtxt;
+	}
+	if(bibobj.cri_asc != null){
+		return;
+	}
+	const book = bibobj.book_name;
+	const chapter = bibobj.chapter;
+	const verse = bibobj.verse;
+	
+	bibobj.cri_asc = await get_bible_verse(cri_bib, book, chapter, verse);
+	if(bibobj.bible == cri_bib){
+		bibobj.vtxt = bibobj.cri_asc;
+	}
+}
+
+async function fill_cri_sco(bibobj){
+	if(bibobj.cri_sco != null){
+		return;
+	}
+	const bib = bibobj.cri_txt;
+	const book = bibobj.book_name;
+	const chapter = bibobj.chapter;
+	const verse = bibobj.verse;
+	
+	const sbib = bib + "_S";
+	bibobj.cri_sco = await get_bible_verse(sbib, book, chapter, verse);
 }
 
 async function calc_text_analysis(bibobj, bl_obj){
@@ -329,9 +381,11 @@ async function calc_text_analysis(bibobj, bl_obj){
 	const chapter = bibobj.chapter;
 	const verse = bibobj.verse;
 	
-	const asc = await get_bible_verse(bib, book, chapter, verse);
-	const sbib = bib + "_S";
-	const sco = await get_bible_verse(sbib, book, chapter, verse);
+	await fill_cri_asc(bibobj);
+	await fill_cri_sco(bibobj);
+	
+	const asc = bibobj.cri_asc;
+	const sco = bibobj.cri_sco;
 
 	const fullana = {
 		tasc: asc,
@@ -781,28 +835,28 @@ async function import_bible(bib_cod){
 }
 
 export function get_citation(bibobj){
-	let vcit = get_loc_book_nam(bibobj.book) + "." + bibobj.chapter + ":" + bibobj.verse;
+	let vcit = "INVALID_CITATION";
+	if((bibobj.book != null) && (bibobj.chapter != null) && (bibobj.verse != null)){ 
+		vcit = get_loc_book_nam(bibobj.book) + "." + bibobj.chapter + ":" + bibobj.verse;
+		if((bibobj.last_verse != null) && (bibobj.last_verse != "")){ vcit = vcit + "-" + bibobj.last_verse; }
+	}
 	return vcit;
 }
 
-export async function fill_bibobj_vtxt(bibobj){
+export function fill_bibobj_cit_and_ref(bibobj){
 	const cit_obj = JSON.parse(JSON.stringify(bibobj));
 	cit_obj.bib_ver = "text";
 	cit_obj.site = "biblehub";
-	const vhref = make_bible_ref(cit_obj);
 	
-	bibobj.href_bh = vhref;
-	
+	bibobj.href_bh = make_bible_ref(cit_obj);
+	bibobj.vcit = get_citation(bibobj);
+}
+
+export async function fill_bibobj_vtxt(bibobj){
 	if((bibobj.book != null) && (bibobj.chapter != null) && (bibobj.verse != null)){ 
-		let vcit = get_citation(bibobj);
-		let vtxt = await get_bible_verse(bibobj.bible, num2book_en[bibobj.book], bibobj.chapter, bibobj.verse);
-		
-		if((bibobj.last_verse != null) && (bibobj.last_verse != "")){ vcit = vcit + "-" + bibobj.last_verse; }
-		
+		let vtxt = await get_bible_verse(bibobj.bible, num2book_en[bibobj.book], bibobj.chapter, bibobj.verse);		
 		bibobj.vtxt = vtxt;
-		bibobj.vcit = vcit;
-	}
-	
+	}	
 	if(DEBUG_FILL_BIBOBJ){
 		console.log("fill_bibobj_vtxt");
 		console.log(bibobj);
