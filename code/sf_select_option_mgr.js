@@ -43,7 +43,7 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 	dv_options.innerHTML = "";
 	
 	if(menu_cls_arr != null){
-		if(typeof item_cls_arr === "function"){
+		if(typeof menu_cls_arr === "function"){
 			menu_cls_arr(id_selec_men);
 		} else {
 			dv_options.classList.add(...menu_cls_arr);

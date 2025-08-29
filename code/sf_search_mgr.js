@@ -155,7 +155,7 @@ function set_selec(dv_ret, val_sel){
 	}
 }
 
-function add_menu(dv_menu, ops_menu, update_fn){
+function add_menu(dv_menus, dv_menu, ops_menu, update_fn){
 	dv_menu.addEventListener('click', function() {
 		const all_ops = Object.values(ops_menu);
 		if(dv_menu.get_options_fn != null){
@@ -165,10 +165,12 @@ function add_menu(dv_menu, ops_menu, update_fn){
 		if(dv_menu.set_cls_itm_fn != null){
 			cls_itm = dv_menu.set_cls_itm_fn;
 		}
-		toggle_select_option(dv_menu, id_crit_sele, all_ops, function(dv_ret, dv_ops, val_sel, idx_sel){
-			set_selec(dv_ret, val_sel);
+		//const cls_men = ["exam", "is_block", "grid_item_all_col"];
+		const cls_men = ["is_block", "grid_menus_back", "grid_item_all_col"];
+		toggle_select_option(dv_menus, id_crit_sele, all_ops, function(dv_ret, dv_ops, val_sel, idx_sel){
+			set_selec(dv_menu, val_sel);
 			dv_ops.remove();
-		}, null, cls_itm);
+		}, cls_men, cls_itm);
 		return;
 	});
 }
@@ -208,17 +210,42 @@ function set_tra_cls_itm_ui(id_itm){
 	}
 }
 
+function update_ot_ui(dv_ret, cod){
+	const dv_rx_tgt = document.getElementById("id_rx_tgt");
+	if(dv_rx_tgt.rx_in_cod == "OT"){
+		set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
+	}
+}
+
+function update_nt_ui(dv_ret, cod){
+	const dv_rx_tgt = document.getElementById("id_rx_tgt");
+	if(dv_rx_tgt.rx_in_cod == "NT"){
+		set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
+	}
+}
+
+function update_loc_ui(dv_ret, cod){
+	const dv_rx_tgt = document.getElementById("id_rx_tgt");
+	dv_rx_tgt.rx_in_cod = "LOC";
+	set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
+}
+
+
 function init_menus(){
+	const dv_menus = document.getElementById("id_menus");
 	
 	const dv_old_tes = document.getElementById("id_old_test");
 	dv_old_tes.classList.add("is_match_ot");
-	add_menu(dv_old_tes, gvar.old_crit_txt);
+	dv_old_tes.update_ui_fn = update_ot_ui;
+	add_menu(dv_menus, dv_old_tes, gvar.old_crit_txt);
 	const dv_new_tes = document.getElementById("id_new_test");
 	dv_new_tes.classList.add("is_match_nt");
-	add_menu(dv_new_tes, gvar.new_crit_txt);
+	dv_new_tes.update_ui_fn = update_nt_ui;
+	add_menu(dv_menus, dv_new_tes, gvar.new_crit_txt);
 	const dv_loc_bib = document.getElementById("id_loc_bib");
 	dv_loc_bib.classList.add("is_match_loc");
-	add_menu(dv_loc_bib, gvar.loc_bible);
+	dv_loc_bib.update_ui_fn = update_loc_ui;
+	add_menu(dv_menus, dv_loc_bib, gvar.loc_bible);
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
 	dv_rx_tgt.get_options_fn = get_tgt_rx_options;
 	dv_rx_tgt.update_ui_fn = set_htm_rx_in;
@@ -226,9 +253,9 @@ function init_menus(){
 	dv_rx_tgt.set_cls_itm_fn = set_rxtgt_cls_itm_ui;
 	//dv_rx_tgt.classList.add("is_match_rx");
 	dv_rx_tgt.classList.add("in_center");
-	add_menu(dv_rx_tgt, gvar.tgt_rx, get_tgt_rx_options);
+	add_menu(dv_menus, dv_rx_tgt, gvar.tgt_rx, get_tgt_rx_options);
 	set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
-	
+
 	const dv_tra_txt = document.createElement("div");
 	dv_rx_tgt.after(dv_tra_txt);
 	
@@ -242,7 +269,7 @@ function init_menus(){
 		refresh_text_analysis();
 	};
 	dv_tra_txt.set_cls_itm_fn = set_tra_cls_itm_ui;
-	add_menu(dv_tra_txt, gvar.tra_txt);
+	add_menu(dv_menus, dv_tra_txt, gvar.tra_txt);
 	set_ui_tra(dv_tra_txt, dv_tra_txt.innerHTML.trim());
 	
 	const dv_search = document.getElementById("id_search");
@@ -1472,10 +1499,8 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	});		
 	dv_ver.appendChild(dv_itm);	
 	
-	//add_ui_disp(dv_ver, bibobj, 0, vcit, ["is_verse_cit"]);
-	//add_ui_disp(dv_ver, bibobj, 10, "(10)", butt_classes);
-	add_ui_disp(dv_ver, bibobj, 20, "(20)", butt_classes);
-	add_ui_disp(dv_ver, bibobj, 40, "(40)", butt_classes);
+	add_ui_disp(dv_ver, bibobj, 20, "20", butt_classes);
+	add_ui_disp(dv_ver, bibobj, 40, "40", butt_classes);
 
 	dv_itm = document.createElement("div");
 	dv_itm.classList.add(...butt_classes);

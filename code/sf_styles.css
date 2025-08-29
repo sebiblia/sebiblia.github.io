@@ -209,7 +209,6 @@ body {
 	font-size:1em;
 	display: block;
 	background-color: #254795;
-	/*background-color: red;*/
 	color: white;
 }
 
@@ -315,7 +314,8 @@ a.exam_ref:hover {
 
 .is_option {
 	display: inline-block;
-	margin: 0.5vw;
+	margin: 0.2em;
+	//margin: 0.5vw;
 	border: 0.2vw solid white;
 	border-radius: 0.3em;
 }
@@ -329,11 +329,6 @@ a.exam_ref:hover {
 	background-color: #ddd;
 	color: black;
 }
-
-/*
-.big_font {
-	font-size: 150%;
-}*/
 
 .bold_font {
 	font-weight: bold;
@@ -374,10 +369,20 @@ a.exam_ref:hover {
 	margin-top: 10%;
 	margin-left: 10%;
 	margin-right: 10%;
-	//grid-template-columns: 15fr 15fr 15fr 15fr 15fr 15fr;
-	grid-template-columns: 15fr 15fr 15fr 15fr 15fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	font-size:1em;
+}
+
+.grid_menus_back {
+	background-color: #3a6be8;
+}
+
+.grid_menus {
+	display: grid;
+	grid-template-columns: 15fr 15fr 15fr 15fr 15fr;
+	grid-template-rows: auto;
+	background-color: #3a6be8;
 }
 
 .select_item {

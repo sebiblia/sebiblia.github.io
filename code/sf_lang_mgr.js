@@ -103,7 +103,7 @@ export const BIBLANG_EXAMPLES_EN = [
 	`=nt ; -mat; jos ../range to nt minus matthew, then finds 'jos'/`,
 ];
 
-const biblehub_abbr = "bhub";
+const biblehub_abbr = "bh";
 const add_abbr_en = "add";
 const add_abbr_es = "adi";
 
