@@ -387,12 +387,12 @@ async function do_select(prv_conf){
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
 	//const rxtgt = dv_rx_tgt.innerHTML.trim();
 	const rxtgt = dv_rx_tgt.rx_in_cod;
-	const otxt = gvar.biblang.presentation;
+	//const otxt = gvar.biblang.presentation;
 	const dv_expr = document.getElementById(id_expression);
 	const expr = dv_expr.value.trim();
 	
 	const rxin = rxtgt.toLowerCase();
-	const txtout = otxt.toLowerCase();
+	//const txtout = otxt.toLowerCase();
 	
 	const dv_dbg_log = document.getElementById(id_dbg_data);
 	if(dv_dbg_log != null){
@@ -408,7 +408,7 @@ async function do_select(prv_conf){
 		conf.curr_NT = newt;
 		conf.curr_LOC = loc_bib;
 		conf.regex_input = rxin;
-		conf.presentation = txtout;
+		//conf.presentation = txtout;
 	}
 	
 	//start_biblang_command();		
@@ -748,12 +748,13 @@ async function fill_verses(bl_obj){
 		}
 		if(conv_fn != null){
 			bibobj.conv_fn = conv_fn;
+			bibobj.pre_conv_fn = conv_fn;
 		}
 		
 		fill_bibobj_cit_and_ref(bibobj);
 		await fill_bibobj_vtxt(bibobj);
 		
-		add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj)		
+		add_ui_bibobj(bibobj, dv_ver, bl_obj)		
 		calc_vtxt_next_presentation(bibobj, bl_obj);
 	}
 	
@@ -1276,15 +1277,7 @@ function set_css_matches(vs_txt, bibobj, bl_obj){
 	if(bibobj.bible == null){ return vs_txt; }
 	let bib = bibobj.bible;
 	
-	let cls = "is_match_rx";
-	/*
-	if(OT_nams[bib] != null){
-		cls = "is_match_ot";
-	}
-	if(NT_nams[bib] != null){
-		cls = "is_match_nt";
-	}*/
-	
+	let cls = "is_match_rx";	
 	if(bl_obj.all_ocu[bib] == null){ 
 		bib += "i";
 		if(bl_obj.all_ocu[bib] == null){ return vs_txt; }
@@ -1476,7 +1469,7 @@ function add_ui_disp(dv_ver, bibobj, disp, htm, butt_classes){
 	dv_ver.appendChild(dv_itm);
 }
 
-function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
+function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	
 	const vhref = bibobj.href_bh;
 	let vcit = "INVALID_BIBLE_CITATION";
@@ -1526,13 +1519,11 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	});		
 	dv_ver.appendChild(dv_itm);
 
-	//let dv_pre = null;
 	const dv_pre = document.createElement("div");
 	dv_pre.id = dv_ver.id + SUF_VERSE_PRE;
 	dv_pre.classList.add(...butt_classes);
 	dv_pre.innerHTML = "";
 	dv_pre.addEventListener('click', async function() {
-		//set_vtxt_next_presentation(dv_pre, bibobj, bl_obj);
 		calc_vtxt_next_presentation(bibobj, bl_obj);
 	});		
 	dv_ver.appendChild(dv_pre);	
@@ -1540,9 +1531,6 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 	const dv_txt = document.createElement("div");
 	dv_txt.classList.add("bold_font");
 	dv_txt.id = dv_ver.id + SUF_VERSE_TXT;
-	if(conv_fn == verse_to_hebrew){
-		dv_txt.classList.add("in_right");
-	}
 	dv_ver.appendChild(dv_txt);	
 	dv_txt.addEventListener('click', async function() {
 		await toggle_text_analysis(dv_txt, bibobj, bl_obj);
@@ -1550,8 +1538,6 @@ function add_ui_bibobj(bibobj, dv_ver, conv_fn, bl_obj){
 		scroll_to_top(dv_txt, dv_verses);
 		scroll_to_top(dv_verses);
 	});
-	
-	//set_vtxt_next_presentation(dv_pre, bibobj, bl_obj);
 }
 
 function get_search_href(){
@@ -1846,66 +1832,6 @@ function toggle_lang_examples(examples){
 	toggle_select_option(dv_select, id_examples, exam_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 }
 
-/*
-function set_vtxt_next_presentation(dv_pre, bibobj, bl_obj){
-	const txt_id = bibobj.id_dv_ver + SUF_VERSE_TXT;
-	const dv_txt = document.getElementById(txt_id);
-	//const bibobj.id_dv_ver
-	let nxt_pre = "ASC";
-	let conv_fn = null;
-	if(dv_pre != null){
-		nxt_pre = dv_pre.innerHTML;
-		if(nxt_pre == ""){
-			nxt_pre = gvar.biblang.presentation.toUpperCase();
-		}
-		if((bibobj.bible == gvar.biblang.curr_NT) || (bibobj.bible == "LXX")){
-			if(nxt_pre == "ASC"){
-				nxt_pre = "MAY";
-			}
-			else if(nxt_pre == "MAY"){
-				conv_fn = verse_to_may_greek;
-				nxt_pre = "MIN";
-			}
-			else if(nxt_pre == "MIN"){
-				conv_fn = verse_to_min_greek;
-				nxt_pre = "ASC";
-			}
-		} 
-		if(bibobj.bible == gvar.biblang.curr_OT){
-			if(nxt_pre == "ASC"){
-				nxt_pre = "MAY";
-			}
-			else if(nxt_pre == "MAY"){
-				conv_fn = verse_to_hebrew;
-				nxt_pre = "ASC";
-			}
-			else if(nxt_pre == "MIN"){
-				conv_fn = verse_to_hebrew;
-				nxt_pre = "ASC";
-			}
-		}
-	}
-	let vtxt = "INVALID_BIBLE_TEXT";
-	if(bibobj.vtxt != null){
-		vtxt = bibobj.vtxt;
-		if(conv_fn != null){
-			vtxt = conv_fn(vtxt);
-		}
-		vtxt = set_css_matches(vtxt, bibobj, bl_obj);
-	}
-	if(conv_fn == verse_to_hebrew){
-		dv_txt.classList.add("in_right");
-	} else {
-		dv_txt.classList.remove("in_right");
-	}
-	dv_txt.innerHTML = vtxt;
-	dv_txt.orig_txt = vtxt;
-	if(dv_pre != null){
-		dv_pre.innerHTML = nxt_pre;
-	}
-}
-*/
-
 function upper_first(cad){
 	if(cad.length === 0){
 		return cad;
@@ -1919,7 +1845,7 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	const pre_id = bibobj.id_dv_ver + SUF_VERSE_PRE;
 	const dv_pre = document.getElementById(pre_id);
 	const pLOC = gvar.biblang.curr_LOC;
-	//const bibobj.id_dv_ver
+
 	let was_loc = false;
 	let nxt_pre = dv_pre.innerHTML;
 	let curr_cls = "";
@@ -1928,6 +1854,18 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	let orig_pre = bibobj.bible;
 	if(orig_pre != pLOC){
 		orig_pre = upper_first(bibobj.bible.toLowerCase());
+		if(bibobj.pre_conv_fn != null){
+			const conv_fn = bibobj.pre_conv_fn;
+			if(conv_fn == verse_to_hebrew){
+				orig_pre = bibobj.bible.toUpperCase();
+			}
+			if(conv_fn == verse_to_min_greek){
+				orig_pre = bibobj.bible.toLowerCase();
+			}
+			if(conv_fn == verse_to_may_greek){
+				orig_pre = bibobj.bible.toUpperCase();
+			}			
+		}
 	}
 
 	if(nxt_pre == ""){
