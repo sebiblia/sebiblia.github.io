@@ -545,7 +545,7 @@ a.exam_ref:hover {
 
 .is_sel_scod {
 	font-weight: bold;
-	color: #ffff00;
+	color: #00ff00;
 }
 
 .is_match_scod {
@@ -569,31 +569,38 @@ a.exam_ref:hover {
 }
 
 .is_uKJV_tra {
-	background-color: #007a59;
+	color: #ffff00;
+	background-color: #0000e3;
 }
 
 .is_uRVA_tra {
-	background-color: #700000;
+	color: #ffff00;
+	background-color: #0000bf;
 }
 
 .is_bh_en_tra {
-	background-color: #005500;
+	color: #ffff00;
+	background-color: #0000b8;
 }
 
 .is_bh_en2es_tra {
-	background-color: #aa0000;
+	color: #ffff00;
+	background-color: #00009e;
 }
 
 .is_stg_en_tra {
-	background-color: #4a4a00;
+	//color: #ffff00;
+	background-color: #254b70;
 }
 
 .is_stg_es_tra {
-	background-color: #00007f;
+	//color: #ffff00;
+	background-color: #254b70;
 }
 
 .is_stg_loc_tra {
-	background-color: #4a457f;
+	//color: #ffff00;
+	background-color: #b60000;
 }
 
 .is_verse_oper {

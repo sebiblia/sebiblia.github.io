@@ -69,6 +69,7 @@ const id_evaluating_name = "id_evaluating_name";
 const id_examples = "id_examples";
 const id_tra_txt = "id_tra_txt";
 const id_verse_refs = "id_verse_refs";
+const id_menu_scod_tok = "id_menu_scod_tok";
 
 const GREEK_PREFIX = "G";
 const SCOD_PREFIX = "[";
@@ -1192,36 +1193,73 @@ function toggle_asc_id_menu(dv_up, bibobj, tok){
 	return dv_togg;
 }
 
+function end_tok_menu(dv_ops, dv_expr){
+	if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
+	dv_ops.remove();
+	scroll_to_top(dv_expr);
+}
+
 function toggle_scod_menu(dv_up, bibobj, tok){
-	if(tok.sco.length == 0){
+	const scod = tok.sco;
+	if(scod.length == 0){
 		return null;
 	}
+	const id_tggl_menu = id_menu_tok;
 	const dv_expr = document.getElementById(id_expression);
 	const ops = gvar.tok_ops_scod; // ["select", "add", "biblehub"];
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		let the_expr = null;
 		if(idx_sel == 0){
-			dv_expr.value = tok.sco;
+			dv_expr.value = scod;
 			await do_select();
+			end_tok_menu(dv_ops, dv_expr);
 		}
 		if(idx_sel == 1){
-			add_to_expr(tok.sco);
+			add_to_expr(scod);
+			end_tok_menu(dv_ops, dv_expr);
 		}
 		if(idx_sel == 2){
 			// go to biblehub
-			const href_sco = make_strong_ref(tok.sco);
+			const href_sco = make_strong_ref(scod);
 			window.open(href_sco, '_blank');
+			end_tok_menu(dv_ops, dv_expr);
 		}
-		
-		if(dv_ops.when_remove_fn != null){ dv_ops.when_remove_fn(); }
-		dv_ops.remove();
-		scroll_to_top(dv_expr);
+		if(idx_sel == 3){
+			const roots = await get_scode_roots(scod);
+			if(DEBUG_SCODS){
+				console.log("get_scode_roots");
+				console.log(roots);
+			}
+			let subops = ["HAS NO ROOT"];
+			if((roots != null) && (roots.length > 0)){
+				subops = roots.split(" ");
+			}
+			toggle_scod_subops(dv_ops, scod, id_tggl_menu, idx_sel, subops);
+		}
+		if(idx_sel == 4){
+			const mutus = await get_scode_mutus(scod);
+			if(DEBUG_SCODS){
+				console.log("get_scode_mutus");
+				console.log(mutus);
+			}
+			let subops = ["HAS NO MUTUAL"];
+			if((mutus != null) && (mutus.length > 0)){
+				subops = mutus.split(" ");
+			}
+			toggle_scod_subops(dv_ops, scod, id_tggl_menu, idx_sel, subops);
+		}
+		if(idx_sel == 5){
+			const opt_id = get_opt_id(id_tggl_menu, idx_sel);
+			const dv_opt = document.getElementById(opt_id);
+			
+			await toggle_occurs(dv_ops, dv_opt, scod);
+		}		
 	}
 	const cls_men = ["aux_item"];
 	const cls_itm = ["is_option"];
 	const dv_to_scroll = null;
 	const toggle_op = null;
-	const dv_togg = toggle_select_option(dv_up, id_menu_tok, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	const dv_togg = toggle_select_option(dv_up, id_tggl_menu, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 	return dv_togg;
 }
 

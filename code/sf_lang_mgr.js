@@ -112,8 +112,8 @@ const history_ops_en = ["add", "delete"];
 
 const tok_ops_asc_id_es = ["exacto", "parcial", "adicionar"];
 const tok_ops_asc_id_en = ["exact", "partial", "add"];
-const tok_ops_scod_es = ["encuentra", "adicionar", biblehub_abbr];
-const tok_ops_scod_en = ["find", "add", biblehub_abbr];
+const tok_ops_scod_es = ["encuentra", "adi", biblehub_abbr, "rai", "mut", "ocu"];
+const tok_ops_scod_en = ["find", "add", biblehub_abbr, "roo", "mut", "ocu"];
 
 const ops_def_scod_es = ["ant", "sig", "raices", "mutuos", "ocurrencias", "encuentra", "adicionar", biblehub_abbr];
 const ops_def_scod_en = ["prv", "nxt", "roots", "mutual", "occurrences", "find", "add", biblehub_abbr];
