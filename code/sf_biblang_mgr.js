@@ -200,6 +200,7 @@ export function reset_curr_range(){
 }
 
 function reset_presentation(){
+	gvar.biblang.changed_presentation = false;
 	gvar.biblang.presentation = "asc";
 }
 
@@ -223,6 +224,7 @@ function init_biblang_conf(){
 	gvar.biblang.curr_NT = "BYZ";
 	gvar.biblang.curr_LOC = gvar.biblang.default_LOC;
 	
+	gvar.biblang.changed_presentation = false;
 	gvar.biblang.presentation = "asc";
 	gvar.biblang.regex_input = "loc";
 	
@@ -256,7 +258,7 @@ export function set_biblang_conf(conf){
 	if(conf.curr_NT != null){ gvar.biblang.curr_NT = conf.curr_NT; }
 	if(conf.curr_LOC != null){ gvar.biblang.curr_LOC = conf.curr_LOC; }
 
-	if(conf.presentation != null){ gvar.biblang.presentation = conf.presentation; }
+	//if(conf.presentation != null){ gvar.biblang.presentation = conf.presentation; }
 	if(conf.regex_input != null){ gvar.biblang.regex_input = conf.regex_input; }
 	update_size_outputs_from(conf.size_output);
 	
@@ -985,6 +987,8 @@ async function calc_bibvar(bvar){
 		const vr = nam.toLowerCase();
 		if(out_nams[vr] != null){
 			gvar.biblang.presentation = vr;
+			gvar.biblang.changed_presentation = true;
+
 			if(gvar.dbg_biblang){ add_dbg_log("presentation=" + vr); }
 		}
 		if(vr == rx_insen){
@@ -1552,6 +1556,10 @@ export async function eval_biblang_command(command, config){
 	
 	robj.all_scods = gvar.biblang.all_scods;
 	robj.all_ocu = gvar.biblang.all_ocu;
+	
+	if(! gvar.biblang.changed_presentation && (Object.keys(robj.all_ocu).length == 0) && (gvar.biblang.regex_input != "loc")){
+		gvar.biblang.presentation = "min";
+	}
 
 	if(gvar.biblang.all_user_vars == null){ gvar.biblang.all_user_vars = {}; }
 	gvar.biblang.all_user_vars["$last"] = robj;

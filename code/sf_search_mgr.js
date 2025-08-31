@@ -69,7 +69,6 @@ const id_evaluating_name = "id_evaluating_name";
 const id_examples = "id_examples";
 const id_tra_txt = "id_tra_txt";
 const id_verse_refs = "id_verse_refs";
-const id_menu_scod_tok = "id_menu_scod_tok";
 
 const GREEK_PREFIX = "G";
 const SCOD_PREFIX = "[";
@@ -368,7 +367,6 @@ function set_ui_conf(conf){
 	}
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
 	if(conf.regex_input != null){
-		//dv_rx_tgt.innerHTML = conf.regex_input.toUpperCase();
 		dv_rx_tgt.rx_in_cod = conf.regex_input.toUpperCase();
 		set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
 	}
@@ -386,14 +384,11 @@ async function do_select(prv_conf){
 	const dv_loc_bib = document.getElementById("id_loc_bib");
 	const loc_bib = dv_loc_bib.innerHTML.trim();
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
-	//const rxtgt = dv_rx_tgt.innerHTML.trim();
-	const rxtgt = dv_rx_tgt.rx_in_cod;
-	//const otxt = gvar.biblang.presentation;
 	const dv_expr = document.getElementById(id_expression);
 	const expr = dv_expr.value.trim();
 	
+	const rxtgt = dv_rx_tgt.rx_in_cod;
 	const rxin = rxtgt.toLowerCase();
-	//const txtout = otxt.toLowerCase();
 	
 	const dv_dbg_log = document.getElementById(id_dbg_data);
 	if(dv_dbg_log != null){
@@ -409,7 +404,6 @@ async function do_select(prv_conf){
 		conf.curr_NT = newt;
 		conf.curr_LOC = loc_bib;
 		conf.regex_input = rxin;
-		//conf.presentation = txtout;
 	}
 	
 	//start_biblang_command();		
