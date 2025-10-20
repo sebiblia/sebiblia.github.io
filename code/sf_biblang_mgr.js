@@ -1,7 +1,7 @@
 
 
 import { isArgumentsArray, ExpressionParser } from './sf_expression_parser.js'
-import { gvar, update_evaluating_bar, } from './sf_search_mgr.js';
+import { gvar, update_evaluating_bar, write_storage_history_state, } from './sf_search_mgr.js';
 import { bib_chapter_sizes, } from './sf_bib_chapter_sizes.js';
 import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, } from './sf_bible_mgr.js';
 import { distance, closest,  } from './sf_word_dist.js';
@@ -1527,6 +1527,8 @@ export async function eval_biblang_command(command, config){
 			
 			const lpos = his.length - 1;
 			history.pushState(lpos, '');
+			
+			write_storage_history_state();
 		} else {
 			gvar.biblang.recovering_his = null;
 		}

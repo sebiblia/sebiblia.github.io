@@ -40,6 +40,8 @@ const GET_var_conf = "conf";
 
 const PERSISTANT_STATE = true;		// DO NOT CHANGE. ONLY FOR DEBUGGING CHANGE TO false.
 const STORAGE_STATE_ID = "STORAGE_STATE_ID";
+const STORAGE_UI_STATE = "STORAGE_UI_STATE";
+const STORAGE_HISTORY_STATE = "STORAGE_HISTORY_STATE";
 
 const SUF_SCOD_DEF = "_scod_def";
 const SUF_VERSE_TXT = "_verse_txt";
@@ -854,11 +856,13 @@ function pop_menu_handler(){
 function toggle_history_info(toggle_op){
 	if(toggle_op == null){ toggle_op = "force"; }
 	const dv_expr = document.getElementById(id_expression);
-	let his_vals = gvar.biblang.history.map((itm) => itm.expr);
+	//const disp_his = gvar.biblang.history.reverse();
+	const disp_his = gvar.biblang.history;
+	let his_vals = disp_his.map((itm) => itm.expr);
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		dv_expr.value = val_sel;
 		//const idx_conf = dv_ops
-		const conf = gvar.biblang.history[idx_sel].conf;
+		const conf = disp_his[idx_sel].conf;
 		await do_select(conf);
 		//dv_ops.remove();
 	}
@@ -951,29 +955,49 @@ function close_pop_menu() {
 	if(dv_pop_men != null){ dv_pop_men.remove(); }
 }
 
-function read_storage_state(){
-	let state_str = window.localStorage.getItem(STORAGE_STATE_ID);
-	let stat = {};
+function read_storage_ui_state(){
+	let state_str = window.localStorage.getItem(STORAGE_UI_STATE);
 	if(state_str != null){
-		stat = JSON.parse(state_str);
-		if(stat.ui_conf != null){
-			set_ui_conf(stat.ui_conf);
-			set_biblang_conf(stat.ui_conf);
-		}
-		if(stat.hist != null){
-			if(gvar.biblang == null){ gvar.biblang = {}; } 
-			gvar.biblang.history = stat.hist;
+		const stat = JSON.parse(state_str);
+		if(stat != null){
+			set_ui_conf(stat);
+			set_biblang_conf(stat);
 		}
 	}
 }
 
-function write_storage_state(){
+function read_storage_history_state(){
+	let state_str = window.localStorage.getItem(STORAGE_HISTORY_STATE);
+	if(state_str != null){
+		const stat = JSON.parse(state_str);
+		if(stat != null){
+			if(gvar.biblang == null){ gvar.biblang = {}; } 
+			gvar.biblang.history = stat;
+		}
+	}
+}
+
+function read_storage_state(){
+	read_storage_ui_state();
+	read_storage_history_state();
+}
+
+function write_storage_ui_state(){
+	let stat = get_ui_conf();
+	window.localStorage.setItem(STORAGE_UI_STATE, JSON.stringify(stat));
+}
+
+export function write_storage_history_state(){
 	let stat = {};
 	if(gvar.biblang.history != null){
-		stat.hist = gvar.biblang.history;
+		stat = gvar.biblang.history;
 	}
-	stat.ui_conf = get_ui_conf();
-	window.localStorage.setItem(STORAGE_STATE_ID, JSON.stringify(stat));
+	window.localStorage.setItem(STORAGE_HISTORY_STATE, JSON.stringify(stat));
+}
+
+function write_storage_state(){
+	write_storage_ui_state();
+	write_storage_history_state();
 }
 
 function refresh_text_analysis(){
