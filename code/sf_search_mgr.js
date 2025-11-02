@@ -1060,8 +1060,16 @@ async function toggle_text_analysis(dv_txt, bibobj, bl_obj){
 
 function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 	let cri = "";
+	let wd_id = tok.id;
+	const ocus_rx = get_matches_txta_rx(wd_id);
 	if(bibobj.conv_fn != null){
-		cri = bibobj.conv_fn(tok.id);
+		cri = bibobj.conv_fn(wd_id);
+	}
+	if(ocus_rx != null){
+		const tg1 = insert_all_tags(wd_id, ocus_rx, "is_match_txta");
+		const tg2 = insert_all_tags(cri, ocus_rx, "is_match_txta");
+		wd_id = tg1.txt;
+		cri = tg2.txt;
 	}
 	let bib_cri = bibobj.cri_txt;
 	let is_deleted = false;
@@ -1071,7 +1079,7 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 	}
 	
 	const t1 = add_tok_item(dv_ana, 1, cri, is_added, is_deleted);
-	const t2 = add_tok_item(dv_ana, "auto", tok.id, is_added, is_deleted, true);
+	const t2 = add_tok_item(dv_ana, "auto", wd_id, is_added, is_deleted, true);
 	//const sscod = tok.sco.split('+').join(' '); // COULD BE NES CASE
 	const t3 = add_tok_item(dv_ana, "auto", tok.sco, is_added, is_deleted, false, tok.sel_scod);
 	const t4 = add_tok_item(dv_ana, "auto", bib_cri, is_added, is_deleted, true);
@@ -2033,3 +2041,20 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	}
 	dv_pre.innerHTML = nxt_pre;
 }
+
+function get_matches_txta_rx(itm_txt){
+	const trx = gvar.biblang.txta_rx;
+	if(trx == null){
+		return null;
+	}
+	if(trx.length < 2){
+		return null;
+	}
+	const rx_str = trx.substring(1);
+	const rxo = new RegExp(rx_str, "g");
+	const vs_ocu = get_txt_matches(itm_txt, rxo);
+	return vs_ocu;
+	//const htm = insert_all_tags(vs_txt, vs_ocu, "is_sel_scod");
+	//dv_txt.innerHTML = htm.txt;
+}
+

@@ -556,6 +556,12 @@ a.exam_ref:hover {
 	background-color: #3665d3;
 }
 
+.is_match_txta {
+	font-weight: bold;
+	//font-size:120%;
+	color: #ffff00;
+}
+
 .is_match_loc {
 	background-color: #13234c;
 }
