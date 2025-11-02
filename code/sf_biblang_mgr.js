@@ -34,7 +34,7 @@ const biblang_def = {
 	PREFIX_OPS: {
 		// '.': (bib) => set_bib(bib),
 	},
-	PRECEDENCE: [['!'], ['|'], ['&'], ['='], ['::'], [';'], ['..']],
+	PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['='], [';'], ['..']],
 	LITERAL_OPEN: '/',
 	LITERAL_CLOSE: '/',
 	GROUP_OPEN: '(',
@@ -123,6 +123,7 @@ const rx_noisen = "rx:ni";
 const dbg_lang = "dbg";
 const nodbg_lang = "nodbg";
 const reset_history = "rhis";
+const open_text_analysis = "txta";
 
 const range_nams = {
 	"all":[],
@@ -197,6 +198,11 @@ function update_size_outputs_from(out_sizes){
 
 export function reset_curr_range(){
 	gvar.biblang.curr_range = JSON.parse(JSON.stringify(range_nams.all));
+}
+
+function reset_texta(){
+	gvar.biblang.txta_verse = null;
+	gvar.biblang.txta_rx = null;
 }
 
 function reset_presentation(){
@@ -339,15 +345,11 @@ async function calc_and(aa, bb){
 	
 	const vaa = oaa.lverses;
 	const vbb = obb.lverses;
-	//const vtmp1 = vaa.filter(ee => vbb.includes(ee));
-	const vtmp1 = arr_intersec(vaa, vbb);
-	const vand = vtmp1;
+	const vand = arr_intersec(vaa, vbb);
 	
 	const saa = oaa.lscods;
 	const sbb = obb.lscods;
-	//const stmp2 = saa.filter(ee => sbb.includes(ee));
-	const stmp2 = arr_intersec(saa, sbb);
-	const sand = stmp2;
+	const sand = arr_intersec(saa, sbb);
 	
 	if(gvar.dbg_biblang){
 		add_dbg_log("calc_and");
@@ -357,7 +359,11 @@ async function calc_and(aa, bb){
 		console.log(vand);
 		add_dbg_log("_____________________________");
 	}
-	return { op: rop, lverses: vand, lscods: sand };
+	const robj = { op: rop, lverses: vand, lscods: sand };
+	if((oaa.is_txta_oper || obb.is_txta_oper) && (vand.length > 0)){
+		gvar.biblang.txta_verse = vand[0];
+	}
+	return robj;
 }
  
 async function calc_or(aa, bb, symb){
@@ -368,15 +374,11 @@ async function calc_or(aa, bb, symb){
 	
 	const vaa = oaa.lverses;
 	const vbb = obb.lverses;
-	//const vtmp = [...new Set([...vaa, ...vbb])];
-	const vtmp = arr_union(vaa, vbb);
-	const vor = vtmp;
+	const vor = arr_union(vaa, vbb);
 	
 	const saa = oaa.lscods;
 	const sbb = obb.lscods;
-	//const stmp2 = [...new Set([...saa, ...sbb])];
-	const stmp2 = arr_union(saa, sbb);
-	const sor = stmp2;
+	const sor = arr_union(saa, sbb);
 	
 	if(gvar.dbg_biblang){
 		add_dbg_log("calc_or");
@@ -386,7 +388,11 @@ async function calc_or(aa, bb, symb){
 		console.log(vor);
 		add_dbg_log("_____________________________");
 	}
-	return { op: rop, lverses: vor, lscods: sor };
+	const robj = { op: rop, lverses: vor, lscods: sor };
+	if((oaa.is_txta_oper || obb.is_txta_oper) && (vor.length > 0)){
+		gvar.biblang.txta_verse = vor[0];
+	}
+	return robj;
 }
 
 async function calc_asig(aa, bb, symb){
@@ -451,7 +457,11 @@ async function calc_not(aa, bb){
 		console.log(vnot);
 		add_dbg_log("_____________________________");
 	}
-	return { op: rop, lverses: vnot, lscods: snot };
+	const robj = { op: rop, lverses: vnot, lscods: snot };
+	if((oaa.is_txta_oper || obb.is_txta_oper) && (vnot.length > 0)){
+		gvar.biblang.txta_verse = vnot[0];
+	}
+	return robj;
 }
 
 function next_book_in_range(book){
@@ -1011,6 +1021,10 @@ async function calc_bibvar(bvar){
 			add_dbg_log("reseting history");
 			gvar.biblang.history = [];
 		}
+		if(vr == open_text_analysis){
+			add_dbg_log("open_text_analysis");
+			robj.is_txta_oper = true;
+		}		
 	}
 	if(kk == '#'){
 		const fvr = nam.toLowerCase();
@@ -1159,6 +1173,10 @@ async function calc_bibregex(rx, prev){
 		return { op: rx, lverses: [], lscods: [], is_get_tok: true, }
 	}
 	const rop = "/" + rx + "/";
+	if((gvar.biblang.txta_verse != null) && (rx.length > 0) && (rx[0] == '=')){
+		gvar.biblang.txta_rx = rx;
+		return { op: rop, lverses: [], lscods: [], }
+	}
 	if(gvar.dbg_biblang){
 		add_dbg_log("calc_bibregex");
 		add_dbg_log(rop);
@@ -1493,6 +1511,7 @@ export async function eval_biblang_command(command, config){
 	reset_presentation();
 	reset_curr_rx_insensitive();
 	reset_curr_range();
+	reset_texta();
 
 	if(config != null){
 		set_biblang_conf(config);
