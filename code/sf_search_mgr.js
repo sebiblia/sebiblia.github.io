@@ -50,6 +50,7 @@ const SUF_VERSE_PRE = "_verse_pre";
 const id_grid_text_analysis = "id_grid_text_analysis";
 const id_pop_menu_sele = "id_pop_menu_sele";
 const id_search_butt = "id_search_butt";
+const id_repeat_butt = "id_repeat_butt";
 const id_back_butt = "id_back_butt";
 const id_forward_butt = "id_forward_butt";
 const id_select = "id_select";
@@ -294,26 +295,35 @@ function init_menus(){
 	const dv_search_butt = document.getElementById(id_search_butt);
 	dv_search_butt.addEventListener('click', async function() {
 		await do_select();
-		return;
+	});
+
+	const dv_repeat_butt = document.getElementById(id_repeat_butt);
+	dv_repeat_butt.addEventListener('click', async function() {
+		const his = gvar.biblang.history;
+		const dv_expr = document.getElementById(id_expression);
+		const idx = his.length - 2;
+		if((idx >= 0) && (idx < his.length)){
+			const hobj = his[idx];
+			dv_expr.value = hobj.expr;
+			const conf = hobj.conf;
+			await do_select(conf);
+		}
 	});
 
 	const dv_back_butt = document.getElementById(id_back_butt);
 	dv_back_butt.addEventListener('click', async function() {
 		window.history.back();
-		return;
 	});
 
 	const dv_forward_butt = document.getElementById(id_forward_butt);
 	dv_forward_butt.addEventListener('click', async function() {
 		window.history.forward();
-		return;
 	});
 
 	inp_box.addEventListener('keydown', async function(ev) {
 		if(ev.key === "Enter"){
 			await do_select();
 		}
-		return;
 	});
 	
 	let dv_button = null;

@@ -420,7 +420,7 @@ a.exam_ref:hover {
 
 .search_area_grid {
 	display: grid;
-	grid-template-columns: 10fr 80fr 10fr;
+	grid-template-columns: 10fr 10fr 80fr 10fr;
 	grid-template-rows: auto;
 }
 
