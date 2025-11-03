@@ -30,6 +30,8 @@ const DEBUG_POP_MENU = false;
 const DEBUG_FILL_SPARTS = false;
 const DEBUG_VERSE_REFS = false;
 const DEBUG_HREFS = false;
+const DEBUG_INSERT_TAGS = true;
+
 const WITH_SAVE_HISTORY = false;
 
 export let gvar = {};
@@ -1330,6 +1332,8 @@ function insert_all_tags(vs_txt, vs_ocu, cls){
 		const end_pos = ocu.idx + ocu.lng;
 		insert_tag(htm, end_pos, end_tag);
 	}
+	
+	if(DEBUG_INSERT_TAGS && (htm.txt != vs_txt)){ console.log("insert_all_tags. HTM="); console.log(htm); }
 	
 	return htm;
 }
