@@ -11,6 +11,7 @@ const DEBUG_BIBLE_MGR = false;
 const DEBUG_ANALYSIS = false;
 const DEBUG_NOT_COMMON = false;
 const DEBUG_FILL_BIBOBJ = false;
+const DEBUG_VSTXT = true;
 
 const GREEK_PREFIX = "G";
 const MAX_HEBREW_SCOD = 8675;
@@ -338,6 +339,7 @@ export async function fill_loc_asc(bibobj){
 	bibobj.loc_asc = await get_bible_verse(loc_bib, book, chapter, verse);
 	if(bibobj.bible == loc_bib){
 		bibobj.vtxt = bibobj.loc_asc;
+		calc_bibobj_vstxt(bibobj);
 	}
 }
 
@@ -852,10 +854,23 @@ export function fill_bibobj_cit_and_ref(bibobj){
 	bibobj.vcit = get_citation(bibobj);
 }
 
+function calc_bibobj_vstxt(bibobj){
+	let vtxt = bibobj.vtxt;
+	if((vtxt != null) && gvar.is_strong_bib[bibobj.bible]){
+		let vstxt = vtxt.replace(/\[/g, '<');
+		vstxt = vstxt.replace(/\]/g, '>');
+		bibobj.vstxt = vstxt;
+		if(DEBUG_VSTXT){
+			console.log(`fill_bibobj_vtxt. vstxt=${vstxt}`);
+		}
+	}
+}
+
 export async function fill_bibobj_vtxt(bibobj){
 	if((bibobj.book != null) && (bibobj.chapter != null) && (bibobj.verse != null)){ 
 		let vtxt = await get_bible_verse(bibobj.bible, num2book_en[bibobj.book], bibobj.chapter, bibobj.verse);		
 		bibobj.vtxt = vtxt;
+		calc_bibobj_vstxt(bibobj);
 	}	
 	if(DEBUG_FILL_BIBOBJ){
 		console.log("fill_bibobj_vtxt");

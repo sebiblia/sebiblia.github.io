@@ -356,13 +356,18 @@ const new_crit_txt_es = {
 	NES: "Texto Nestle 1904 (NES)",
 };
 
-const loc_bible_en = {
+const loc_bible_nams = {
 	RVA: "Reina-Valera 1909 (RVA)",
 	RVAs: "RVA con codigos Strong (RVAs)",
 	KJV: "King James Bible (KJV)",
 	KJVs: "KJV with Strong Codes (KJVs)",
 	SBLM: "Sagrada Biblia Libre para el Mundo (SBLM)",
 	WEB: "World Estandard Bible (WEB)",
+};
+
+const is_strong_bib = {
+	RVAs: true,
+	KJVs: true,
 };
 
 const tgt_rx_en = {
@@ -507,6 +512,8 @@ function init_common(){
 	gvar.lang_occus = lang_occus;
 	gvar.lang_utra = lang_utra;
 	gvar.examples_es = MOD_EX_ES.biblang_examples_es;
+	gvar.loc_bible = loc_bible_nams;
+	gvar.is_strong_bib = is_strong_bib;
 }
 
 function init_es(){
@@ -521,7 +528,6 @@ function init_es(){
 	
 	gvar.old_crit_txt = old_crit_txt_es;
 	gvar.new_crit_txt = new_crit_txt_es;
-	gvar.loc_bible = loc_bible_en;
 	gvar.tgt_rx = tgt_rx_es;
 	gvar.out_txt = out_txt_es;
 	gvar.tra_txt = tra_txt;
@@ -548,7 +554,6 @@ function init_en(){
 
 	gvar.old_crit_txt = old_crit_txt_en;
 	gvar.new_crit_txt = new_crit_txt_en;
-	gvar.loc_bible = loc_bible_en;
 	gvar.tgt_rx = tgt_rx_en;
 	gvar.out_txt = out_txt_en;
 

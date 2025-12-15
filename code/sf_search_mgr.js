@@ -31,6 +31,7 @@ const DEBUG_FILL_SPARTS = false;
 const DEBUG_VERSE_REFS = false;
 const DEBUG_HREFS = false;
 const DEBUG_INSERT_TAGS = true;
+const DEBUG_CALC_NXT_PRESENT = true;
 
 const WITH_SAVE_HISTORY = false;
 
@@ -1343,7 +1344,7 @@ function insert_all_tags(vs_txt, vs_ocu, cls){
 		insert_tag(htm, end_pos, end_tag);
 	}
 	
-	if(DEBUG_INSERT_TAGS && (htm.txt != vs_txt)){ console.log("insert_all_tags. HTM="); console.log(htm); }
+	if(DEBUG_INSERT_TAGS && (htm.txt != vs_txt)){ console.log("insert_all_tags. HTM="); console.log(htm); /*console.trace();*/ }
 	
 	return htm;
 }
@@ -1601,6 +1602,9 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	dv_pre.classList.add(...butt_classes);
 	dv_pre.innerHTML = "";
 	dv_pre.addEventListener('click', async function() {
+		if(DEBUG_CALC_NXT_PRESENT){
+			bibobj.dbg_calc_nxt_pre = true;
+		}
 		calc_vtxt_next_presentation(bibobj, bl_obj);
 	});		
 	dv_ver.appendChild(dv_pre);	
@@ -1922,13 +1926,23 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	const pre_id = bibobj.id_dv_ver + SUF_VERSE_PRE;
 	const dv_pre = document.getElementById(pre_id);
 	const pLOC = gvar.biblang.curr_LOC;
+	
+	let is_stg_bib = gvar.is_strong_bib[pLOC];
+	let pLOCx = "";
+	if(is_stg_bib){
+		pLOCx = pLOC.substring(0, pLOC.length - 1) + 'x';
+	}
 
-	let was_loc = false;
+	//let was_loc = false;
 	let nxt_pre = dv_pre.innerHTML;
 	let curr_cls = "";
 	let nxt_cls = "";
 	let conv_fn = null;
 	let orig_pre = bibobj.bible;
+	let is_LOC = false;
+	let is_LOCx = false;
+	let is_wstg = false;
+	
 	if(orig_pre != pLOC){
 		orig_pre = upper_first(bibobj.bible.toLowerCase());
 		if(bibobj.pre_conv_fn != null){
@@ -1948,80 +1962,109 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	if(nxt_pre == ""){
 		nxt_pre = orig_pre;
 	}
-	let is_LOC = false;
 	const is_orig_pre = (nxt_pre == orig_pre);
+	
+	if(bibobj.dbg_calc_nxt_pre){
+		console.log(`calc_vtxt_next_presentation. BEFORE. is_LOC=${is_LOC}. nxt_pre=${nxt_pre}. pLOC=${pLOC}. is_stg_bib=${is_stg_bib}.
+			orig_pre=${orig_pre}. is_orig_pre=(${nxt_pre} == ${orig_pre})=${is_orig_pre}`);
+	}
+	
 	if(bibobj.book > 39){
 		const pNT = gvar.biblang.curr_NT.toUpperCase();
 		const pnt = gvar.biblang.curr_NT.toLowerCase();
 		const pNt = upper_first(pnt);
-		const is_NT = (nxt_pre == pNT);
 		const is_nt = (nxt_pre == pnt);
+		const is_NT = (nxt_pre == pNT);
 		const is_Nt = (nxt_pre == pNt);
 		is_LOC = (nxt_pre == pLOC);
+		is_LOCx = (nxt_pre == pLOCx);
 		nxt_cls = "is_match_nt";
-		if(is_nt){
+		if(is_nt){ // is pnt
 			conv_fn = verse_to_min_greek;
 			nxt_pre = pNT;
 		}
-		if(is_NT){
+		if(is_NT){ // is pNT
 			conv_fn = verse_to_may_greek;
 			nxt_pre = pNt;
 		}
-		if(is_Nt){
+		if(is_Nt){ // is pNt
 			nxt_pre = pLOC;
 			nxt_cls = "is_match_loc";
 		}
-		if(is_LOC){
-			was_loc = true;
+		if(is_LOC){ // is pLOC
+			//was_loc = true;
+			nxt_pre = pnt;
+			if(is_stg_bib){ nxt_pre = pLOCx; }
+		}
+		if(is_LOCx){ // is pLOCx
 			nxt_pre = pnt;
 		}
 	} else {
 		const is_LXX = (gvar.biblang.curr_OT == "LXX");
+		const pot = gvar.biblang.curr_OT.toLowerCase();  // only if is_LXX
 		const pOT = gvar.biblang.curr_OT.toUpperCase();
-		const pot = gvar.biblang.curr_OT.toLowerCase();
 		const pOt = upper_first(pot);
+		const is_ot = (nxt_pre == pot); // only if is_LXX
 		const is_OT = (nxt_pre == pOT);
-		const is_ot = (nxt_pre == pot);
 		const is_Ot = (nxt_pre == pOt);
 		is_LOC = (nxt_pre == pLOC);
+		is_LOCx = (nxt_pre == pLOCx);
 		nxt_cls = "is_match_ot";
-		if(is_ot){
+		if(is_ot){ // is pot
 			conv_fn = verse_to_hebrew;
 			if(is_LXX){	conv_fn = verse_to_min_greek; }
 			nxt_pre = pOT;
 		}
-		if(is_OT){
+		if(is_OT){ // is pOT
 			conv_fn = verse_to_hebrew;
 			if(is_LXX){	conv_fn = verse_to_may_greek; }
 			nxt_pre = pOt;
 		}
-		if(is_Ot){
+		if(is_Ot){ // is pOt
 			nxt_pre = pLOC;
 			nxt_cls = "is_match_loc";
 		}
-		if(is_LOC){
-			was_loc = true;
+		if(is_LOC){ // is pLOC
+			//was_loc = true;
 			nxt_pre = pOT;
-			if(is_LXX){	nxt_pre = pot; }
+			if(is_stg_bib){ nxt_pre = pLOCx; }
+			else if(is_LXX){ nxt_pre = pot; }
+		}
+		if(is_LOCx){ // is pLOCx
+			nxt_pre = pOT;
+			if(is_LXX){ nxt_pre = pot; }
 		}
 	}
+	
+	if(bibobj.dbg_calc_nxt_pre){
+		console.log(`calc_vtxt_next_presentation. AFTER: is_LOC=${is_LOC}. nxt_pre=${nxt_pre}. pLOC=${pLOC}. orig_pre=${orig_pre}. `);
+	}
+	
 	let vtxt = "INVALID_BIBLE_TEXT";
 	if(bibobj.vtxt != null){
 		let is_orig = true;
 		vtxt = bibobj.vtxt;
-		if(! is_LOC){
+		if(is_stg_bib){ vtxt = bibobj.vstxt; }
+		if(! is_LOC && ! is_LOCx){
 			await fill_cri_asc(bibobj);
 			vtxt = bibobj.cri_asc;
 			is_orig = false;
 		} else {
 			await fill_loc_asc(bibobj);
 			vtxt = bibobj.loc_asc;
+			if(is_stg_bib && ! is_LOCx){ vtxt = bibobj.vstxt; }
 		}
 		if(conv_fn != null){
 			vtxt = conv_fn(vtxt);
 		}
-		const is_not_loc = ((orig_pre != pLOC) && (! is_LOC));
+		if(is_stg_bib && bibobj.dbg_calc_nxt_pre){
+			console.log(`calc_vtxt_next_presentation. \n\t bibobj.vstxt=${bibobj.vstxt} \n\t  vtxt=${vtxt} `);
+		}
+		const is_not_loc = ((orig_pre != pLOC) && (! is_LOC) && (! is_LOCx));
 		if(is_orig_pre || is_not_loc){
+			if(bibobj.dbg_calc_nxt_pre){
+				console.log(`calc_vtxt_next_presentation. doing set_css_matches in vtxt=${vtxt}`);
+			}
 			vtxt = set_css_matches(vtxt, bibobj, bl_obj);
 		}
 	}
@@ -2032,11 +2075,14 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	}
 	dv_txt.innerHTML = vtxt;
 	dv_txt.orig_txt = vtxt;
+	
+	is_LOC = is_LOC || is_LOCx;	
+	
 	if(is_LOC){
 		dv_pre.classList.remove("is_match_loc");
 		dv_pre.classList.add(nxt_cls);
 	} 
-	if(nxt_pre == pLOC){
+	if((nxt_pre == pLOC) || (nxt_pre == pLOCx)){
 		dv_pre.classList.remove("is_match_ot");
 		dv_pre.classList.remove("is_match_nt");
 		dv_pre.classList.add("is_match_loc");
