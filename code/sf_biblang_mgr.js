@@ -1189,7 +1189,7 @@ async function calc_bibregex(rx, prev){
 	return { op: rop, lverses: found, lscods: [] };
 }
 
-export function get_txt_matches(vtxt, rxo){
+export function get_txt_matches(vtxt, rxo, fix_ocu){
 	let all_ocu = [];
 	let prv = null;
 	let rr = null;
@@ -1201,6 +1201,10 @@ export function get_txt_matches(vtxt, rxo){
 			idx: rr.index,
 			lng: rr[0].length,
 		};
+		
+		if(fix_ocu != null){ 
+			fix_ocu(ocu);
+		}
 		
 		if(prv != null){
 			const prv_end = prv.idx + prv.lng;

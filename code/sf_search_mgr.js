@@ -522,7 +522,10 @@ function verse_cod2obj(vrs_cod){
 	if(bibobj.cri_txt == "LXX"){
 		bibobj.conv_fn = verse_to_min_greek;
 	}
-		
+	
+	const vs_id = "" + bibobj.book + ":" + bibobj.chapter + ":" + bibobj.verse;
+	bibobj.ocus_vs_id = vs_id;
+			
 	return bibobj;
 }
 
@@ -1329,17 +1332,28 @@ function insert_tag(htm, pos, tag){
 	htm.lpos = pos;
 }
 
-function insert_all_tags(vs_txt, vs_ocu, cls){
+function insert_all_tags(vs_txt, vs_ocu, cls, bk_num){
 	const socu = vs_ocu.sort(cmp_ocurrence);
 
 	const ini_tag = `<span class="${cls}">`;
+	const ini_ot = `<span class="is_match_ot">`;
+	const ini_nt = `<span class="is_match_nt">`;
 	const end_tag = `</span>`;
 	
 	let htm = { txt: vs_txt, disp: 0, lpos: 0, };
 	let ii = 0;
 	for(; ii < vs_ocu.length; ii++){
 		const ocu = vs_ocu[ii];
-		insert_tag(htm, ocu.idx, ini_tag);
+		if(ocu.lng < 1){ continue; }
+		let ini_tg = ini_tag;
+		if(ocu.is_stg){ 
+			if(bk_num > 39){
+				ini_tg = ini_nt;
+			} else {
+				ini_tg = ini_ot;
+			}			
+		}
+		insert_tag(htm, ocu.idx, ini_tg);
 		const end_pos = ocu.idx + ocu.lng;
 		insert_tag(htm, end_pos, end_tag);
 	}
@@ -1355,18 +1369,18 @@ function set_css_matches(vs_txt, bibobj, bl_obj){
 	if(bibobj.bible == null){ return vs_txt; }
 	let bib = bibobj.bible;
 	
-	let cls = "is_match_rx";	
+	const cls = "is_match_rx";
 	if(bl_obj.all_ocu[bib] == null){ 
 		bib += "i";
 		if(bl_obj.all_ocu[bib] == null){ return vs_txt; }
 	}
 	
-	const vs_id = "" + bibobj.book + ":" + bibobj.chapter + ":" + bibobj.verse;
+	const vs_id = bibobj.ocus_vs_id;
 	if(bl_obj.all_ocu[bib][vs_id] == null){ return vs_txt; }
 	
 	const vs_ocu = bl_obj.all_ocu[bib][vs_id];
 	
-	const htm = insert_all_tags(vs_txt, vs_ocu, cls);
+	const htm = insert_all_tags(vs_txt, vs_ocu, cls, bibobj.book);
 	return htm.txt;	
 }
 
@@ -1927,7 +1941,7 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	const dv_pre = document.getElementById(pre_id);
 	const pLOC = gvar.biblang.curr_LOC;
 	
-	let is_stg_bib = gvar.is_strong_bib[pLOC];
+	const is_stg_bib = gvar.is_strong_bib[pLOC];
 	let pLOCx = "";
 	if(is_stg_bib){
 		pLOCx = pLOC.substring(0, pLOC.length - 1) + 'x';
@@ -2065,6 +2079,7 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 			if(bibobj.dbg_calc_nxt_pre){
 				console.log(`calc_vtxt_next_presentation. doing set_css_matches in vtxt=${vtxt}`);
 			}
+			add_scods_matches(bibobj, bl_obj);
 			vtxt = set_css_matches(vtxt, bibobj, bl_obj);
 		}
 	}
@@ -2116,5 +2131,77 @@ function get_matches_txta_rx(itm_txt){
 	return vs_ocu;
 	//const htm = insert_all_tags(vs_txt, vs_ocu, "is_sel_scod");
 	//dv_txt.innerHTML = htm.txt;
+}
+
+function add_scods_matches(bibobj, bl_obj){
+	const vstxt = bibobj.vstxt;
+	if(vstxt == null){
+		return;
+	}
+	
+	const pLOC = gvar.biblang.curr_LOC;
+	const is_stg_bib = gvar.is_strong_bib[pLOC];
+	if(! is_stg_bib){
+		return;
+	}
+
+	if(bl_obj.scod_found == null){ bl_obj.scod_found = {}; }
+
+	const vs_id = bibobj.ocus_vs_id;
+	if(bl_obj.scod_found[vs_id]){
+		return;
+	}
+	
+	if(gvar.biblang.all_ocu == null){ gvar.biblang.all_ocu = {}; }
+	const comm_ocu = gvar.biblang.all_ocu;
+	
+	const all_scods = bl_obj.all_scods;
+	let ii = 0;
+	for(ii = 0; ii < all_scods.length; ii++){
+		const scod = all_scods[ii];
+		add_scod_ocus(scod, bibobj, bl_obj);
+	}	
+
+	bl_obj.scod_found[vs_id] = true;
+}
+
+function add_scod_ocus(scod, bibobj, bl_obj){
+	if(bibobj.bible == null){ return; }
+	const vstxt = bibobj.vstxt;
+	if(vstxt == null){ return; }
+	
+	const vs_id = bibobj.ocus_vs_id;
+	
+	//const rxstr = scod;
+	const rxstr = `(^|>)[^<]*<${scod}>`;
+	const rxo = new RegExp(rxstr, "g");
+	const all_mocu = get_txt_matches(vstxt, rxo, (ocu) => {
+		ocu.is_stg = true; 
+		if(vstxt[ocu.idx] == '>'){ 
+			ocu.idx++;
+			ocu.lng--;			
+		}
+	});
+	if(all_mocu.length == 0){
+		return;
+	}
+	
+	let bib = null;
+	if(bl_obj.all_ocu == null){	bl_obj.all_ocu = {}; }
+	const comm_ocu = bl_obj.all_ocu;
+	if(comm_ocu[bibobj.bible] != null){ 
+		bib = bibobj.bible;
+	}
+	const bibi = bibobj.bible + "i";
+	if((bib == null) && (comm_ocu[bibi] != null)){
+		bib = bibi;
+	}
+	if(bib == null){
+		bib = bibobj.bible;
+	}
+	if(comm_ocu[bib] == null){ comm_ocu[bib] = {}; }
+	
+	if(comm_ocu[bib][vs_id] == null){ comm_ocu[bib][vs_id] = []; }
+	comm_ocu[bib][vs_id].push(...all_mocu);	
 }
 
