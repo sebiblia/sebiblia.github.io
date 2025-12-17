@@ -12,17 +12,7 @@ import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, get_t
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, OT_nams, NT_nams, LOC_nams, add_dbg_log, 
 } from './sf_biblang_mgr.js'
 
-//import { keyb_handler, 
-//} from './sf_tokenizer.js';
-/*
-id_search
-id_old_test
-id_new_test
-id_loc_bib
-id_select
-id_find
 
-*/
 const DEBUG_FILL_VERSES = false;
 const DEBUG_TEXT_ANA = false;
 const DEBUG_SCODS = false;
@@ -169,7 +159,7 @@ function add_menu(dv_menus, dv_menu, ops_menu, update_fn){
 		if(dv_menu.set_cls_itm_fn != null){
 			cls_itm = dv_menu.set_cls_itm_fn;
 		}
-		//const cls_men = ["exam", "is_block", "grid_item_all_col"];
+
 		const cls_men = ["is_block", "grid_menus_back", "grid_item_all_col"];
 		toggle_select_option(dv_menus, id_crit_sele, all_ops, function(dv_ret, dv_ops, val_sel, idx_sel){
 			set_selec(dv_menu, val_sel);
@@ -255,7 +245,7 @@ function init_menus(){
 	dv_rx_tgt.update_ui_fn = set_htm_rx_in;
 	dv_rx_tgt.rx_in_cod = "LOC";
 	dv_rx_tgt.set_cls_itm_fn = set_rxtgt_cls_itm_ui;
-	//dv_rx_tgt.classList.add("is_match_rx");
+
 	dv_rx_tgt.classList.add("in_center");
 	add_menu(dv_menus, dv_rx_tgt, gvar.tgt_rx, get_tgt_rx_options);
 	set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
@@ -343,7 +333,7 @@ function get_ui_conf(){
 	const dv_loc_bib = document.getElementById("id_loc_bib");
 	const loc_bib = dv_loc_bib.innerHTML.trim();
 	const dv_rx_tgt = document.getElementById("id_rx_tgt");
-	//const rxtgt = dv_rx_tgt.innerHTML.trim();
+
 	const rxtgt = dv_rx_tgt.rx_in_cod;
 	const otxt = gvar.biblang.presentation;
 	const dv_expr = document.getElementById(id_expression);
@@ -730,7 +720,7 @@ async function fill_verses(bl_obj){
 
 	gvar.biblang.prog_bar.part_name = gvar.all_msg.adding_verses;
 	const tot_verses = all_vrs.length;
-	//update_ev_bar(0, tot_verses);
+	
 
 	if(DEBUG_FILL_VERSES){
 		console.log("fill_verses. bib_ot=" + bib_ot);
@@ -1029,7 +1019,6 @@ function refresh_text_analysis(){
 	
 	fill_strong_parts(bibobj);
 	
-	//const full_ana = await get_text_analysis(bibobj, bl_obj);		
 	get_text_analysis(bibobj, bl_obj).then((full_ana) => {
 		dv_ana.innerHTML = "";
 		
@@ -1096,7 +1085,6 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 	
 	const t1 = add_tok_item(dv_ana, 1, cri, is_added, is_deleted);
 	const t2 = add_tok_item(dv_ana, "auto", wd_id, is_added, is_deleted, true);
-	//const sscod = tok.sco.split('+').join(' '); // COULD BE NES CASE
 	const t3 = add_tok_item(dv_ana, "auto", tok.sco, is_added, is_deleted, false, tok.sel_scod);
 	const t4 = add_tok_item(dv_ana, "auto", bib_cri, is_added, is_deleted, true);
 	if(is_added){ t4.classList.add("txt_added_right"); }
@@ -2172,7 +2160,6 @@ function add_scod_ocus(scod, bibobj, bl_obj){
 	
 	const vs_id = bibobj.ocus_vs_id;
 	
-	//const rxstr = scod;
 	const rxstr = `(^|>)[^<]*<${scod}>`;
 	const rxo = new RegExp(rxstr, "g");
 	const all_mocu = get_txt_matches(vstxt, rxo, (ocu) => {
