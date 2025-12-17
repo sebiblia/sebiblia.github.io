@@ -1194,17 +1194,13 @@ export function get_txt_matches(vtxt, rxo, fix_ocu){
 	let prv = null;
 	let rr = null;
 	while((rr = rxo.exec(vtxt)) !== null){
-		gvar.biblang.prog_bar.tot_ocu++;
+		//gvar.biblang.prog_bar.tot_ocu++;
 		//update_prog_bar();
 		
 		let ocu = {
 			idx: rr.index,
 			lng: rr[0].length,
 		};
-		
-		if(fix_ocu != null){ 
-			fix_ocu(ocu);
-		}
 		
 		if(prv != null){
 			const prv_end = prv.idx + prv.lng;
@@ -1216,7 +1212,11 @@ export function get_txt_matches(vtxt, rxo, fix_ocu){
 				ocu = null;
 			}
 		}
+		
 		if(ocu != null){
+			if(fix_ocu != null){ 
+				fix_ocu(ocu, all_ocu);
+			}			
 			all_ocu.push(ocu);
 			prv = ocu;
 		}

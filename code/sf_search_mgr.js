@@ -2160,6 +2160,7 @@ function add_scod_ocus(scod, bibobj, bl_obj){
 	
 	const vs_id = bibobj.ocus_vs_id;
 	
+	/*
 	const rxstr = `(^|>)[^<]*<${scod}>`;
 	const rxo = new RegExp(rxstr, "g");
 	const all_mocu = get_txt_matches(vstxt, rxo, (ocu) => {
@@ -2169,9 +2170,49 @@ function add_scod_ocus(scod, bibobj, bl_obj){
 			ocu.lng--;			
 		}
 	});
+	*/
+	const tg_scod_str = `<${scod}>`;
+	const rxstr = `<(G|H)[0-9]*>`;
+	const rxo = new RegExp(rxstr, "g");
+	let prv_beg = 0;
+	const all_mocu = [];
+	get_txt_matches(vstxt, rxo, (ocu, all_ocu) => {
+		ocu.is_stg = true; 
+		let prv_end = 0;
+		let prv_ocu = null;
+		if(all_ocu.length > 0){
+			const lst = all_ocu.length - 1;
+			prv_ocu = all_ocu[lst];
+		}
+		if(prv_ocu != null){
+			prv_end = prv_ocu.idx + prv_ocu.lng;
+		}
+		const sub_vstxt = vstxt.substring(prv_end, ocu.idx);
+		const is_empty = sub_vstxt.match(/^\s*$/);
+		if(! is_empty){
+			prv_beg = prv_end;
+			ocu.beg = prv_beg;
+		} else {
+			if(prv_ocu != null){
+				ocu.beg = prv_ocu.beg;
+			} else {
+				ocu.beg = prv_beg;
+			}
+		}
+		ocu.tlng = (ocu.idx + ocu.lng) - ocu.beg;
+		const tok = vstxt.substring(ocu.beg, (ocu.idx + ocu.lng));
+		const scod_str = vstxt.substring(ocu.idx, ocu.idx + ocu.lng);
+		//console.log(`scod_str=${scod_str}`);
+		if(tg_scod_str == scod_str){
+			all_mocu.push(ocu);
+		}
+		//console.log(`tok='${tok}'`);
+	});
+	
 	if(all_mocu.length == 0){
 		return;
 	}
+	fix_all_mocus(all_mocu);
 	
 	let bib = null;
 	if(bl_obj.all_ocu == null){	bl_obj.all_ocu = {}; }
@@ -2192,3 +2233,11 @@ function add_scod_ocus(scod, bibobj, bl_obj){
 	comm_ocu[bib][vs_id].push(...all_mocu);	
 }
 
+function fix_all_mocus(all_mocu){
+	let ii = 0;
+	for(ii = 0; ii < all_mocu.length; ii++){
+		const ocu = all_mocu[ii];
+		ocu.idx = ocu.beg;
+		ocu.lng = ocu.tlng;
+	}
+}
