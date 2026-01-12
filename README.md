@@ -188,17 +188,15 @@ Ejemplos:
 
 Observe que TODOS los campos afectan el resultado. 
 
-#### Intervalos de busqueda
+#### Rangos de busqueda
 
-Sirven para determinar en que libros de la biblia se van a hacer busquedas de [Texto](#palabra) y de [Expresiones Regulares](#expresión-regular).  Asi, estos comandos deben usarse en conjunto con busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular).
+Sirven para determinar en que libros de la biblia se van a hacer busquedas de [códigos Strong](#codigo-strong), [Texto](#palabra) y de [Expresiones Regulares](#expresión-regular).  Asi, estos comandos deben usarse en conjunto con busquedas de [códigos Strong](#codigo-strong), [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular).
 
 Estos comandos NO pueden llevar espacios entre los simbolos (=, +, -) y las letras.
 
 Estos comandos pueden ir en mayusculas o minusculas.
 
-Estos comandos NO afectan la busqueda de [códigos Strong](#codigo-strong). Los codigos Strong SIEMPRE se buscan en TODA la biblia. Si son codigos griegos se buscan en el texto del Nuevo Testamento seleccionado en el campo NT o en la LXX si esta ha sido seleccionada en el campo OT. Y si son codigos Strong hebreos se buscan en el Antiguo Textamento seleccionado en el campo OT, con excepcion de la LXX puesto que esta escrita en griego.
-
-Estos comandos SOLO afectan la busqueda de [Texto](#palabra) y de [Expresiones Regulares](#expresión-regular).
+Estos comandos afectan el rango de busqueda para [códigos Strong](#codigo-strong), [Texto](#palabra) y [Expresiones Regulares](#expresión-regular).
 
 Estos comandos solo son ejecutables desde el campo de busqueda. No hay interfaz visible de usuario para ejecutar estos comandos. 
 

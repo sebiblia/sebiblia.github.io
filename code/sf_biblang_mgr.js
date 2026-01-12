@@ -338,8 +338,9 @@ function arr_intersec(aa, bb){
 }
 
 function arr_union(aa, bb){
-	if(aa == null){ return []; }
-	if(bb == null){ return []; }
+	if((aa == null) && (bb == null)){ return []; }
+	if(aa == null){ return bb; }
+	if(bb == null){ return aa; }
 	return [...new Set([...aa, ...bb])];
 }
 
@@ -928,7 +929,6 @@ async function calc_scode(scode){
 		add_dbg_log(msg);
 		add_dbg_log(rop);
 		console.log("get_scode_verses(" + bib + "," + scod + ")");
-		console.log(arr_vrs);
 	}
 	
 	const is_lxx = (gvar.biblang.curr_OT == "LXX");
@@ -953,13 +953,19 @@ async function calc_scode(scode){
 			add_dbg_log(rop);
 			console.log("get_scode_verses(" + bib + "," + scod + ")");
 			console.log(arr_vrs2);
-			console.log(arr_vrs);
 		}
 	}
+	
+	const in_rng_vrs = arr_vrs.filter(vr => verse_in_range(vr));
+	
 	if(gvar.dbg_biblang){
+		//console.log(arr_vrs);
+		console.log(in_rng_vrs);
 		add_dbg_log("_____________________________");
 	}
-	const robj = { op: rop, lverses: arr_vrs, };
+	
+	//const robj = { op: rop, lverses: arr_vrs, };
+	const robj = { op: rop, lverses: in_rng_vrs, };
 	if(add_s_cod != null){
 		robj.lscods = [scod];
 	}
@@ -1798,3 +1804,11 @@ function followed_by_any(svr, max, lscods){
 	}
 	return false;
 }
+
+function verse_in_range(vr){
+	const vii = vr.split(":");
+	const book = Number(vii[0]);
+	const in_rng = gvar.biblang.curr_range.includes(book);
+	return in_rng;
+}
+
