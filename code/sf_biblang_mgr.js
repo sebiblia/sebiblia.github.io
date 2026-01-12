@@ -73,6 +73,12 @@ const conf2mini = {
 
 const mini2conf = {};
 
+const ibibs = {
+	"RVA":"RVAi",
+	"RVAs":"RVAsi",
+	"SBLM":"SBLMi",
+};
+
 export const OT_nams = {
 	"WLC":1,
 	"ALE":1,
@@ -1231,6 +1237,9 @@ export function get_txt_matches(vtxt, rxo, fix_ocu){
 	let all_ocu = [];
 	let prv = null;
 	let rr = null;
+	if(DEBUG_MATCHES){
+		console.log(`get_txt_matches(${vtxt}, ${rxo}, ${fix_ocu})`);
+	}
 	while((rr = rxo.exec(vtxt)) !== null){
 		//gvar.biblang.prog_bar.tot_ocu++;
 		//update_prog_bar();
@@ -1252,6 +1261,10 @@ export function get_txt_matches(vtxt, rxo, fix_ocu){
 		}
 		
 		if(ocu != null){
+			if(DEBUG_MATCHES){
+				console.log(`FOUND ocu=`);
+				console.log(ocu);
+			}
 			if(fix_ocu != null){ 
 				fix_ocu(ocu, all_ocu);
 			}			
@@ -1289,12 +1302,19 @@ async function verse_matches(bib, vii, rxo){
 }
 
 function to_insenitive_bib(bib){
+	if(ibibs[bib] != null){
+		return ibibs[bib];
+	}
+	/*
 	if(bib == "RVA"){
 		return "RVAi";
 	}
+	if(bib == "RVAs"){
+		return "RVAsi";
+	}
 	if(bib == "SBLM"){
 		return "SBLMi";
-	}
+	}*/
 	return bib;
 }
 
@@ -1321,7 +1341,7 @@ async function find_regex(bib, num, rx, prev){
 	
 	if(gvar.biblang.regex_insensitive){
 		rxo = new RegExp(rx, "ig");
-		rxbib = to_insenitive_bib(bib);;
+		rxbib = to_insenitive_bib(bib);
 	} else {
 		rxo = new RegExp(rx, "g");
 	}
