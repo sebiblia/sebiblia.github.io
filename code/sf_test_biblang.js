@@ -40,7 +40,7 @@ function file_exists(nm_file){
 	});
 }
 
-async function main_selector(){
+async function main_biblang_command(){
 	if (process.argv.length < 3) {
 		console.log('Usage: node ' + process.argv[1] + ' <command>');
 		process.exit(1);
@@ -55,16 +55,15 @@ async function main_selector(){
 	
 	const robj = await eval_biblang_command(command);
 	
-	
+	/*
 	const his = gvar.biblang.history;
 	if((his != null) && (his.length > 0)){
 		console.log("LAST_HISTO");
 		const last = his[his.length - 1];
-		/*
-		const conf = JSON.stringify(last.conf);
-		console.log(conf);
-		console.log(last.expr);
-		*/
+		
+		//const conf = JSON.stringify(last.conf);
+		//console.log(conf);
+		//console.log(last.expr);
 		
 		console.log(last.conf);
 		const mm = conf_to_mini(last.conf);
@@ -83,6 +82,7 @@ async function main_selector(){
 		console.log(enc_expr);
 		
 	}
+	*/
 	
 	//console.log(robj.lverses);	
 }
@@ -247,9 +247,9 @@ function test_splice(){
 
 //test_splice();
 //test_reduce();
-//main_selector();
+main_biblang_command();
 //main_diff_bib();
-main_distance();
+//main_distance();
 //main_test_scode_next_and_prev();
 //main_test_matches();
 //main_test_inc_dec();
