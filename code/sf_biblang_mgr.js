@@ -25,7 +25,7 @@ let ALL_BOOK_NAMES = [];
 
 const biblang_def = {
 	INFIX_OPS: {
-		'+': (a, b) => calc_followed_by(a, b),
+		'%': (a, b) => calc_followed_by(a, b),
 		'&': (a, b) => calc_and(a, b),
 		'|': (a, b) => calc_or(a, b, '|'),
 		'!': (a, b) => calc_not(a, b),
@@ -37,12 +37,12 @@ const biblang_def = {
 	PREFIX_OPS: {
 		// '.': (bib) => set_bib(bib),
 	},
-	PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['+'], ['='], [';'], ['..']],
+	PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['='], [';'], ['..']],
 	LITERAL_OPEN: '/',
 	LITERAL_CLOSE: '/',
 	GROUP_OPEN: '(',
 	GROUP_CLOSE: ')',
-	SEPARATORS: [';', '!', '|', '&', '+'],
+	SEPARATORS: [';', '!', '|', '&', '%'],
 	WHITESPACE_CHARS: [' '],
 	SYMBOLS: ['(', ')', '/'],
 	AMBIGUOUS: {},

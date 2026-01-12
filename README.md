@@ -90,13 +90,15 @@ Ejemplo: [marteo.1:5-9](https://sebiblia.github.io/es/tool.html?biblang=marteo.1
 
 En la [condición de busqueda](#interfaz-básica) también se pueden poner operaciones binarias.
 
-1. [G2288 & G166](https://sebiblia.github.io/es/tool.html?biblang=G2288%20%26%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan ambos codigos Strong. Operacion AND o y. Esta operacion tambien se puede pensar como la INTERSECCION de dos conjuntos: el de versiculos que tienen el primer código Strong con el de versiculos que tienen el segundo código Strong.
+1. [G2288 & G166](https://sebiblia.github.io/es/tool.html?biblang=G2288%20%26%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan ambos codigos Strong. Operacion "AND" o la operacion "y". Esta operacion tambien se puede pensar como la INTERSECCION de dos conjuntos: el de versiculos que tienen el primer código Strong con el de versiculos que tienen el segundo código Strong.
 
-2. [G2288 | G166](https://sebiblia.github.io/es/tool.html?biblang=G2288%20%7C%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan al menos uno de los dos codigos Strong. Operacion OR u o. Esta operacion tambien se puede pensar como la UNION de dos conjuntos: el de versiculos que tienen el primer código Strong con el de versiculos que tienen el segundo código Strong.
+2. [G2288 | G166](https://sebiblia.github.io/es/tool.html?biblang=G2288%20%7C%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan al menos uno de los dos codigos Strong. Operacion "OR" o la operacion "o". Esta operacion tambien se puede pensar como la UNION de dos conjuntos: el de versiculos que tienen el primer código Strong con el de versiculos que tienen el segundo código Strong.
 
-3. [G166 ! G2288](https://sebiblia.github.io/es/tool.html?biblang=G166%20!%20G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan el primero pero NO el segundo de los dos codigos Strong. Operacion and NOT u y NO.
+3. [G166 ! G2288](https://sebiblia.github.io/es/tool.html?biblang=G166%20!%20G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan el primero pero NO el segundo de los dos codigos Strong. Operacion "and NOT" o la operacion "y NO".
 
 4. [G2288 ; G166](https://sebiblia.github.io/es/tool.html?biblang=G166%20%3B%20G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) es matematicamente quivalente a G2288 | G166. Buscará los versiculos que tengan al menos uno de los dos codigos Strong. Operacion OR u o. Esta operación tambien se puede pensar como una instruccion seguida de otra: busca el primer codigo Strong y a ese conjunto de versículos le añade el conjunto de versiculos que encuentre del segundo codigo Strong.
+
+5. [H3117 % H3068](https://sebiblia.github.io/es/tool.html?biblang=H3117%20%25%20H3068&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan el primero seguido del segundo codigo Strong. Esta operación tambien se puede pensar como una instruccion seguida de otra: busca el primer codigo Strong y con al conjunto de versículos encontrados busca los que tengan el segundo codigo Strong justo despues del primero.
 
 Estas operaciones se explicarán con mas detalle en la sección para usuarios avanzados, cuando se de la especificación del lenguaje de expresiones biblicas que se diseño para esta aplicación y que da una gran flexibilidad de procesamiento usando el campo de [condición de busqueda](#interfaz-básica).
 
@@ -142,8 +144,8 @@ Estos comandos cambian la configuración para determinar que versión de biblia 
 Son equivalentes a modificar [el campo LOC](#menu-o-campo-loc), por referirse a un texto local, y que en el [gráfico](#interfaz-básica) se denominó [Texto traducido](#interfaz-básica) para que sea mas comprensible.
 
 
-- [.RVA](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 (RVA).
-- [.RVAs](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la RVA (y que corresponden al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la RVAs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
+- [.RVA](https://sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 (RVA).
+- [.RVAs](https://sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la RVA (y que corresponden al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la RVAs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
 - [.KJV](https://sebiblia.github.io/es/tool.html?biblang=.KJV&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version (KJV).
 - [.KJVs](https://sebiblia.github.io/es/tool.html?biblang=.KJVs&conf=O%24ALE%7CN%24BYZ%7CL%24KJV%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version con códigos Strong (KJVs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la KJV (una vez traducidos al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la KJVs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
 - [.SBLM](https://sebiblia.github.io/es/tool.html?biblang=.SBLM&conf=O%24ALE%7CN%24BYZ%7CL%24KJVs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Sagrada Biblia Libre para el Mundo (SBLM).
@@ -235,27 +237,33 @@ Ejemplos de escritura:
 
 Ejemplos de uso:
 
-- [=ev ; infier](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=%3Dev%20%3B%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+- [=ev ; infier](https://sebiblia.github.io/es/tool.html?biblang=%3Dev%20%3B%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
-- [=pa ; fuego](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=%3Dpa%20%3B%20fuego&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+- [=pa ; fuego](https://sebiblia.github.io/es/tool.html?biblang=%3Dpa%20%3B%20fuego&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
-- [=nt ; -mat ; infier](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=%3Dnt%20%3B%20-mat%20%3B%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+- [=nt ; -mat ; infier](https://sebiblia.github.io/es/tool.html?biblang=%3Dnt%20%3B%20-mat%20%3B%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
-- [=nt ; -mat ; -rev;  -luk ; -act ;  infier](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=%3Dnt%20%3B%20-mat%20%3B%20-rev%3B%20%20-luk%20%3B%20-act%20%3B%20%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+- [=nt ; -mat ; -rev;  -luk ; -act ;  infier](https://sebiblia.github.io/es/tool.html?biblang=%3Dnt%20%3B%20-mat%20%3B%20-rev%3B%20%20-luk%20%3B%20-act%20%3B%20%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
-- [=mat ; +rev; +luk ; infier](http://localhost/JOSE/sebiblia.github.io/es/tool.html?biblang=%3Dmat%20%3B%20%2Brev%3B%20%2Bluk%20%3B%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+- [=mat ; +rev; +luk ; infier](https://sebiblia.github.io/es/tool.html?biblang=%3Dmat%20%3B%20%2Brev%3B%20%2Bluk%20%3B%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 #### Otros comandos
 
-- [.all] Fija todos los parametros de configuracion para trabajar con TODA la biblia. Este comando se ejecuta por defecto al comienzo de TODA busqueda. 
+- [.txta] Opens the "TEXT ANALYSIS" of the next or previous verse.
+
+Ejemplos:
+[.txta ; juan.6:39](https://sebiblia.github.io/es/tool.html??biblang=.txta%20%3B%20juan.6%3A39&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+[juan.6:39 ; .txta](https://sebiblia.github.io/es/tool.html?biblang=juan.6%3A39%20%3B%20.txta&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+
 - [$last] Retorna los versiculos de la ULTIMA busqueda.
+- [.rhis] RESETEA la historia de busquedas. Borra toda la informacion de busquedas anteriores.
 
 - [.rx:i] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) sean INSENSITIVAS a mayusculas, minusculas, o TILDES. Este comando se ejecuta por defecto al comienzo de TODA busqueda.
 - [.rx:ni] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) NO sean insensitivas a mayusculas, minusculas, o TILDES. Es decir que las busquedas se vuelven SENSITIVAS a mayusculas, minusculas, o TILDES.
 
 - [.dbg] Cambia la configuracion para empezar a guardar información de depurado. Permite saber como se ejecutó, cuales fueron los pasos, durante la ejecucion de una busqueda. Si desde el [menu principal](#interfaz-básica) se tiene abierto el campo de DEPURADO, este comando se ejecuta antes de la busqueda y al final de la busqueda toda la informacion de depurado se muestra en dicho campo de DEPURADO.
 - [.nodbg] Cambia la configuracion para dejar de guardar información de depurado. 
-- [.rhis] RESETEA la historia de busquedas. Borra toda la informacion de busquedas anteriores.
+- [.all] Fija todos los parametros de configuracion para trabajar con TODA la biblia. Este comando se ejecuta por defecto al comienzo de TODA busqueda. 
 
 
 ## Menus o campos de configuración
