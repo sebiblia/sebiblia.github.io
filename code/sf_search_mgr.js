@@ -4,7 +4,7 @@ import { get_new_dv_under, scroll_to_top, toggle_select_option, get_opt_id,
 
 import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analysis, make_strong_ref, get_scode_def, get_citation, 
 	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, fill_bibobj_cit_and_ref, local_scod_bibles, 
-	get_verse_refs, get_socu_text, fill_cri_asc, fill_loc_asc, 
+	get_verse_refs, get_socu_text, fill_cri_asc, fill_loc_asc, CLOSING_STRONG, 
 } from './sf_bible_mgr.js';
 
 import { init_lang, } from './sf_lang_mgr.js';
@@ -520,6 +520,10 @@ function verse_cod2obj(vrs_cod){
 }
 
 async function fill_sdefs(bl_obj){
+	if(in_nodejs()){
+		return;
+	}
+	
 	const dv_select = document.getElementById(id_select);
 	let dv_scodes = document.getElementById(id_scodes);
 	if(dv_scodes == null){
@@ -656,29 +660,34 @@ function fill_search_info(bl_obj){
 	
 }
 
-async function fill_verses(bl_obj){
+export async function fill_verses(bl_obj){
+	const is_node_call = in_nodejs();
+	let all_bibobj = null
+	if(is_node_call){
+		all_bibobj = [];
+	}
+	
 	const all_vrs = bl_obj.lverses;
 	const oldt = gvar.biblang.curr_OT;
 	const newt = gvar.biblang.curr_NT;
 	const loc_bib = gvar.biblang.curr_LOC;
 	let otxt = gvar.biblang.presentation.toUpperCase();
-	const dv_old_tes = document.getElementById("id_old_test");
-	dv_old_tes.innerHTML = oldt;
-	const dv_new_tes = document.getElementById("id_new_test");
-	dv_new_tes.innerHTML = newt;
-	const dv_loc_bib = document.getElementById("id_loc_bib");
-	dv_loc_bib.innerHTML = loc_bib;
-	
 	const rxi_val = gvar.biblang.regex_input.toUpperCase();
-
 	if(rxi_val == "LOC"){
 		otxt = "ASC";
 	}
-	
-	const dv_rx_tgt = document.getElementById("id_rx_tgt");
-	//dv_rx_tgt.innerHTML = rxi_val;
-	dv_rx_tgt.rx_in_cod = rxi_val;
-	set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
+		
+	if(! is_node_call){
+		const dv_old_tes = document.getElementById("id_old_test");
+		dv_old_tes.innerHTML = oldt;
+		const dv_new_tes = document.getElementById("id_new_test");
+		dv_new_tes.innerHTML = newt;
+		const dv_loc_bib = document.getElementById("id_loc_bib");
+		dv_loc_bib.innerHTML = loc_bib;	
+		const dv_rx_tgt = document.getElementById("id_rx_tgt");
+		dv_rx_tgt.rx_in_cod = rxi_val;
+		set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
+	}
 	
 	let bib_ot = gvar.biblang.curr_LOC;
 	let bib_nt = gvar.biblang.curr_LOC;
@@ -709,14 +718,17 @@ async function fill_verses(bl_obj){
 		}
 	}
 	
-	const dv_verses = document.getElementById("id_verses");
-	dv_verses.innerHTML = "";
+	let dv_verses = null;
+	if(! is_node_call){
+		dv_verses = document.getElementById("id_verses");
+		dv_verses.innerHTML = "";
 
-	if(all_vrs.length == 0){
-		dv_verses.innerHTML = gvar.all_msg.no_verses;
+		if(all_vrs.length == 0){
+			dv_verses.innerHTML = gvar.all_msg.no_verses;
+		}
+		
+		scroll_to_top(dv_verses);
 	}
-	
-	scroll_to_top(dv_verses);
 
 	gvar.biblang.prog_bar.part_name = gvar.all_msg.adding_verses;
 	const tot_verses = all_vrs.length;
@@ -733,17 +745,22 @@ async function fill_verses(bl_obj){
 	for(ii = 0; ii < all_vrs.length; ii++){
 		const cod_vr = all_vrs[ii];
 		const bibobj = verse_cod2obj(cod_vr);
-		
-		let dv_ver = document.getElementById(bibobj.id_dv_ver);
-		if(dv_ver != null){
-			console.error("dv_ver != null");
-			continue;
+		if(is_node_call){
+			all_bibobj.push(bibobj);
 		}
-		//update_ev_bar(ii, tot_verses);
-		dv_ver = document.createElement("div");
-		dv_ver.id = bibobj.id_dv_ver;
-		dv_ver.innerHTML = bibobj.id_dv_ver;
-		dv_verses.appendChild(dv_ver);
+		
+		let dv_ver = null;
+		if(! is_node_call){
+			dv_ver = document.getElementById(bibobj.id_dv_ver);
+			if(dv_ver != null){
+				console.error("dv_ver != null");
+				continue;
+			}
+			dv_ver = document.createElement("div");
+			dv_ver.id = bibobj.id_dv_ver;
+			dv_ver.innerHTML = bibobj.id_dv_ver;
+			dv_verses.appendChild(dv_ver);
+		}
 		
 		bibobj.ui_idx = ii;
 		bibobj.bible = bib_ot;
@@ -761,7 +778,7 @@ async function fill_verses(bl_obj){
 		await fill_bibobj_vtxt(bibobj);
 		
 		add_ui_bibobj(bibobj, dv_ver, bl_obj)		
-		calc_vtxt_next_presentation(bibobj, bl_obj);
+		await calc_vtxt_next_presentation(bibobj, bl_obj);
 		
 		if(gvar.biblang.txta_verse == cod_vr){
 			txta_bobj = bibobj;
@@ -770,9 +787,14 @@ async function fill_verses(bl_obj){
 	
 	await fill_sdefs(bl_obj);
 	await open_txta_verse(txta_bobj, bl_obj);
+	
+	return all_bibobj;
 }
 
 async function open_txta_verse(bibobj, bl_obj){
+	if(in_nodejs()){
+		return;
+	}
 	if(bibobj == null){
 		return;
 	}
@@ -1550,6 +1572,12 @@ function add_ui_disp(dv_ver, bibobj, disp, htm, butt_classes){
 }
 
 function add_ui_bibobj(bibobj, dv_ver, bl_obj){
+	if(in_nodejs()){
+		return;
+	}
+	if(dv_ver == null){
+		return;
+	}
 	
 	const vhref = bibobj.href_bh;
 	let vcit = "INVALID_BIBLE_CITATION";
@@ -1607,7 +1635,7 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 		if(DEBUG_CALC_NXT_PRESENT){
 			bibobj.dbg_calc_nxt_pre = true;
 		}
-		calc_vtxt_next_presentation(bibobj, bl_obj);
+		await calc_vtxt_next_presentation(bibobj, bl_obj);
 	});		
 	dv_ver.appendChild(dv_pre);	
 
@@ -1924,9 +1952,18 @@ function upper_first(cad){
 
 async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	const txt_id = bibobj.id_dv_ver + SUF_VERSE_TXT;
-	const dv_txt = document.getElementById(txt_id);
 	const pre_id = bibobj.id_dv_ver + SUF_VERSE_PRE;
-	const dv_pre = document.getElementById(pre_id);
+	
+	let dv_txt = null;
+	let dv_pre = null;
+	let nxt_pre = "";
+	
+	if(! in_nodejs()){
+		dv_txt = document.getElementById(txt_id);
+		dv_pre = document.getElementById(pre_id);
+		nxt_pre = dv_pre.innerHTML;
+	}
+	
 	const pLOC = gvar.biblang.curr_LOC;
 	
 	const is_stg_bib = gvar.is_strong_bib[pLOC];
@@ -1935,8 +1972,6 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 		pLOCx = pLOC.substring(0, pLOC.length - 1) + 'x';
 	}
 
-	//let was_loc = false;
-	let nxt_pre = dv_pre.innerHTML;
 	let curr_cls = "";
 	let nxt_cls = "";
 	let conv_fn = null;
@@ -2071,6 +2106,12 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 			vtxt = set_css_matches(vtxt, bibobj, bl_obj);
 		}
 	}
+	bibobj.curr_htm = vtxt;
+
+	if(in_nodejs()){
+		return;
+	}
+	
 	if(conv_fn == verse_to_hebrew){
 		dv_txt.classList.add("in_right");
 	} else {
@@ -2103,6 +2144,7 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 		}
 	}
 	dv_pre.innerHTML = nxt_pre;
+	
 }
 
 function get_matches_txta_rx(itm_txt){
@@ -2160,19 +2202,8 @@ function add_scod_ocus(scod, bibobj, bl_obj){
 	
 	const vs_id = bibobj.ocus_vs_id;
 	
-	/*
-	const rxstr = `(^|>)[^<]*<${scod}>`;
-	const rxo = new RegExp(rxstr, "g");
-	const all_mocu = get_txt_matches(vstxt, rxo, (ocu) => {
-		ocu.is_stg = true; 
-		if(vstxt[ocu.idx] == '>'){ 
-			ocu.idx++;
-			ocu.lng--;			
-		}
-	});
-	*/
-	const tg_scod_str = `<${scod}>`;
-	const rxstr = `<(G|H)[0-9]*>`;
+	const tg_scod_str = `<${scod}${CLOSING_STRONG}`;
+	const rxstr = `<(G|H)[0-9]*${CLOSING_STRONG}`;
 	const rxo = new RegExp(rxstr, "g");
 	let prv_beg = 0;
 	const all_mocu = [];

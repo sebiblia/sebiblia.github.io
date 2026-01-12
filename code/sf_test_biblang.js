@@ -4,7 +4,7 @@ import * as filesys from "fs";
 import { init_biblang, eval_biblang_command, get_txt_matches, verse_disp, range_to_intervals, 
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, 
 } from './sf_biblang_mgr.js'
-import { gvar, } from './sf_search_mgr.js';
+import { gvar, fill_verses, } from './sf_search_mgr.js';
 import { init_lang, num2book_en, } from './sf_lang_mgr.js';
 import { diffSequence } from './sf_diff_sequence.js';
 import { distance, closest,  } from './sf_word_dist.js';
@@ -53,7 +53,10 @@ async function main_biblang_command(){
 	init_lang('es');
 	init_biblang('es');
 	
-	const robj = await eval_biblang_command(command);
+	const bl_obj = await eval_biblang_command(command);
+	const all_bibobj = await fill_verses(bl_obj);
+	
+	console.log(all_bibobj);
 	
 	/*
 	const his = gvar.biblang.history;
@@ -84,7 +87,7 @@ async function main_biblang_command(){
 	}
 	*/
 	
-	//console.log(robj.lverses);	
+	//console.log(bl_obj.lverses);	
 }
 
 async function main_diff_bib(){

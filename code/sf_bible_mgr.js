@@ -13,6 +13,8 @@ const DEBUG_NOT_COMMON = false;
 const DEBUG_FILL_BIBOBJ = false;
 const DEBUG_VSTXT = true;
 
+export const CLOSING_STRONG = '_>'; 	// to avoid html conflicts H1 ... H6 headers
+
 const GREEK_PREFIX = "G";
 const MAX_HEBREW_SCOD = 8675;
 const MAX_GREEK_SCOD = 5624;
@@ -858,7 +860,7 @@ function calc_bibobj_vstxt(bibobj){
 	let vtxt = bibobj.vtxt;
 	if((vtxt != null) && gvar.is_strong_bib[bibobj.bible]){
 		let vstxt = vtxt.replace(/\[/g, '<');
-		vstxt = vstxt.replace(/\]/g, '>');
+		vstxt = vstxt.replace(/\]/g, CLOSING_STRONG);
 		bibobj.vstxt = vstxt;
 		if(DEBUG_VSTXT){
 			console.log(`fill_bibobj_vtxt. vstxt=${vstxt}`);
