@@ -3,7 +3,7 @@
 import { isArgumentsArray, ExpressionParser } from './sf_expression_parser.js'
 import { gvar, update_evaluating_bar, } from './sf_search_mgr.js';
 import { bib_chapter_sizes, } from './sf_bib_chapter_sizes.js';
-import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, } from './sf_bible_mgr.js';
+import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, calc_vstxt, } from './sf_bible_mgr.js';
 import { distance, closest,  } from './sf_word_dist.js';
 
 const DEBUG_MATCHES = false;
@@ -1310,10 +1310,13 @@ async function verse_matches(bib, vii, rxo){
 	const verse = Number(vii[2]);
 
 	//console.log("TRYING get_bible_verse(" + bib + ", " + n2b[book] + ", " + chapter + ", " + verse + ")");
-	const vtxt = await get_bible_verse(bib, n2b[book], chapter, verse);
+	let vtxt = await get_bible_verse(bib, n2b[book], chapter, verse);
 	if(vtxt == null){
 		console.log("null verse for get_bible_verse(" + bib + ", " + n2b[book] + ", " + chapter + ", " + verse + ")");
 		return [];
+	}
+	if(gvar.is_strong_bib[bib]){
+		vtxt = calc_vstxt(vtxt);
 	}
 	//console.log(vtxt);
 	

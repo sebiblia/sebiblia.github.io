@@ -11,7 +11,7 @@ const DEBUG_BIBLE_MGR = false;
 const DEBUG_ANALYSIS = false;
 const DEBUG_NOT_COMMON = false;
 const DEBUG_FILL_BIBOBJ = false;
-const DEBUG_VSTXT = true;
+const DEBUG_VSTXT = false;
 
 export const CLOSING_STRONG = '_>'; 	// to avoid html conflicts H1 ... H6 headers
 
@@ -804,7 +804,8 @@ export async function get_bible_verse(bib_cod, book, chapter, verse){
 	try{
 		await import_bible(bib_cod);
 	
-		return gvar.full_bible[bib_cod][book][chapter][verse];
+		let vtxt = gvar.full_bible[bib_cod][book][chapter][verse];
+		return vtxt;
 	} catch (err) {
 		console.error("FAILED get_bible_verse " + bib_cod + " " + book + ":" + chapter + ":" + verse);
 		return null;
@@ -856,11 +857,16 @@ export function fill_bibobj_cit_and_ref(bibobj){
 	bibobj.vcit = get_citation(bibobj);
 }
 
+export function calc_vstxt(vtxt){
+	let vstxt = vtxt.replace(/\[/g, '<');
+	vstxt = vstxt.replace(/\]/g, CLOSING_STRONG);
+	return vstxt;
+}
+
 function calc_bibobj_vstxt(bibobj){
 	let vtxt = bibobj.vtxt;
 	if((vtxt != null) && gvar.is_strong_bib[bibobj.bible]){
-		let vstxt = vtxt.replace(/\[/g, '<');
-		vstxt = vstxt.replace(/\]/g, CLOSING_STRONG);
+		let vstxt = calc_vstxt(vtxt);
 		bibobj.vstxt = vstxt;
 		if(DEBUG_VSTXT){
 			console.log(`fill_bibobj_vtxt. vstxt=${vstxt}`);

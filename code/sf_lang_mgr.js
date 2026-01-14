@@ -367,6 +367,7 @@ const loc_bible_nams = {
 
 const is_strong_bib = {
 	RVAs: true,
+	RVAsi: true,
 	KJVs: true,
 };
 

@@ -20,8 +20,9 @@ const DEBUG_POP_MENU = false;
 const DEBUG_FILL_SPARTS = false;
 const DEBUG_VERSE_REFS = false;
 const DEBUG_HREFS = false;
-const DEBUG_INSERT_TAGS = true;
-const DEBUG_CALC_NXT_PRESENT = true;
+const DEBUG_INSERT_TAGS = false;
+const DEBUG_CALC_NXT_PRESENT = false;
+const DEBUG_ADD_SCOD_OCUS = false;
 
 const WITH_SAVE_HISTORY = false;
 
@@ -2237,7 +2238,9 @@ function add_scod_ocus(scod, bibobj, bl_obj){
 		if(tg_scod_str == scod_str){
 			all_mocu.push(ocu);
 		}
-		//console.log(`tok='${tok}'`);
+		if(DEBUG_ADD_SCOD_OCUS){
+			console.log(`tok='${tok}'`);
+		}
 	});
 	
 	if(all_mocu.length == 0){
