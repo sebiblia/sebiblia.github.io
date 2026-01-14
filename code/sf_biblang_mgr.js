@@ -7,8 +7,9 @@ import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, } from './
 import { distance, closest,  } from './sf_word_dist.js';
 
 const DEBUG_MATCHES = false;
-const DEBUG_GET_RANGE = true;
+const DEBUG_GET_RANGE = false;
 const DEBUG_SCOD_IDX = false;
+const DEBUG_FOLLOWED = false;
 
 const NUM_OCU_UPDATE_BAR = 10000;
 
@@ -334,17 +335,23 @@ export function cmp_verses(vv1, vv2){
 }
 
 function arr_intersec(aa, bb){
+	if((aa == null) && (bb == null)){ return null; }
+	if(aa == null){ return bb; }
+	if(bb == null){ return aa; }
 	return aa.filter(ee => bb.includes(ee));
 }
 
 function arr_union(aa, bb){
-	if((aa == null) && (bb == null)){ return []; }
+	if((aa == null) && (bb == null)){ return null; }
 	if(aa == null){ return bb; }
 	if(bb == null){ return aa; }
 	return [...new Set([...aa, ...bb])];
 }
 
 function arr_diff(aa, bb){
+	if((aa == null) && (bb == null)){ return null; }
+	if(aa == null){ return bb; }
+	if(bb == null){ return aa; }
 	return aa.filter(ee => ! bb.includes(ee));
 }
 
@@ -356,18 +363,25 @@ async function calc_followed_by(aa, bb){
 	const obb = await bb();
 	gvar.biblang.add_scod = false;
 	
-	const rop = "(" + oaa.op + " + " + obb.op + ")";
+	const rop = "(" + oaa.op + " % " + obb.op + ")";
 	
 	const vaa = oaa.lverses;
 	
+	let vfoll = null;
 	let all_idx = null;
-	if(oaa.all_idx != null){
-		all_idx = oaa.all_idx;
-	} else {
-		all_idx = await calc_scod_idx(vaa, oaa.lscods);
+	
+	if(oaa.lscods != null){
+		if(oaa.all_idx != null){
+			all_idx = oaa.all_idx;
+		} else {
+			all_idx = await calc_scod_idx(vaa, oaa.lscods);
+		}
+		calc_scod_idx_followed_by(all_idx, obb.lscods);
+		vfoll = Object.keys(all_idx);
 	}
-	calc_scod_idx_followed_by(all_idx, obb.lscods);
-	const vfoll = Object.keys(all_idx);
+	if(vfoll == null){
+		vfoll = arr_intersec(oaa.lverses, obb.lverses);
+	}
 	
 	const robj = { op: rop, lverses: vfoll, lscods: arr_union(oaa.lscods, obb.lscods), };
 	if((oaa.is_txta_oper || obb.is_txta_oper) && (vfoll.length > 0)){
@@ -1744,35 +1758,31 @@ async function calc_scod_idx(arr_vrs, lscods){
 			continue;
 		}
 		const svr = vtxt.split(' ');
-		const max_idx = get_max_scod_idx(svr, lscods);
-		if(max_idx != -1){
+		const vr_all_idx = get_all_scod_idx(svr, lscods);
+		if(vr_all_idx.length > 0){
 			all_idx[vr] = {};
 			all_idx[vr].svr = svr;
-			all_idx[vr].max = max_idx;
+			all_idx[vr].arr_idx = vr_all_idx;
 		}
 		if(DEBUG_SCOD_IDX){
-			console.log(`VERSE=${vtxt} \n lscods=${lscods.join(':')} max=${max_idx}`);
+			console.log(`sbib=${sbib} BOOK=${n2b[book]} VERSE=${vr} vtxt=${vtxt} \n 
+				lscods=${lscods.join(':')} vr_all_idx=${vr_all_idx.join(':')}`);
 		}
 	}
 	return all_idx;
 }
 
-function get_max_scod_idx(svr, lscods){
+function get_all_scod_idx(svr, lscods){
+	let all_idx = [];
 	let ii = 0;
-	let max = -1;
-	for(ii = 0; ii < lscods.length; ii++){
-		const scod = lscods[ii];
-		const idx = svr.lastIndexOf(scod);
-		if(idx == -1){
-			continue;
-		}
-		if(max == -1){
-			max = idx;
-		} else if(idx > max){
-			max = idx;
+	for(ii = 0; ii < svr.length; ii++){
+		const scod = svr[ii];
+		const in_scods = lscods.includes(scod);
+		if(in_scods){
+			all_idx.push(ii);
 		}
 	}
-	return max;
+	return all_idx;
 }
 
 function calc_scod_idx_followed_by(all_idx, lscods){
@@ -1781,28 +1791,32 @@ function calc_scod_idx_followed_by(all_idx, lscods){
 	for(ii = 0; ii < vrs.length; ii++){
 		const vr = vrs[ii];
 		const obj = all_idx[vr];
-		const keep = followed_by_any(obj.svr, obj.max, lscods);
-		if(keep){
-			obj.max++;
-		} else {
+		const keep = followed_by_any(obj.svr, obj.arr_idx, lscods);
+		if(! keep){
 			delete all_idx[vr];
 		}
 	}	
 }
 
-function followed_by_any(svr, max, lscods){
-	const nxt = max + 1;
-	if(nxt > svr.length){
-		return false;
-	}
+function followed_by_any(svr, arr_idx, lscods){
 	let ii = 0;
-	for(ii = 0; ii < lscods.length; ii++){
-		const scod = lscods[ii];
-		if(svr[nxt] == scod){
-			return true;
+	let updated = false;
+	for(ii = 0; ii < arr_idx.length; ii++){
+		const idx = arr_idx[ii];
+		const nxt = idx + 1;
+		if(nxt > svr.length){
+			continue;
+		}
+		
+		if(DEBUG_FOLLOWED){
+			console.log(`SVR=${svr} \n svr[${nxt}]=${svr[nxt]} lscods=${lscods.join(',')}`);
+		}
+		if(lscods.includes(svr[nxt])){
+			arr_idx[ii] = nxt;
+			updated = true;
 		}
 	}
-	return false;
+	return updated;
 }
 
 function verse_in_range(vr){
