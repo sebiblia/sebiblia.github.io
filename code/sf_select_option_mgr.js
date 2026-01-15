@@ -79,6 +79,7 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 		if(on_rclick_fn != null){
 			dv_opt.addEventListener('contextmenu', (ev1) => {
 				ev1.preventDefault();
+				//ev1.stopPropagation();
 				on_rclick_fn(dv_return, dv_options, value, opt_idx);
 				return false;
 			});

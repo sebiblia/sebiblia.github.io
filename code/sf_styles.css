@@ -315,7 +315,6 @@ a.exam_ref:hover {
 .is_option {
 	display: inline-block;
 	margin: 0.2em;
-	//margin: 0.5vw;
 	border: 0.2vw solid white;
 	border-radius: 0.3em;
 }
@@ -521,7 +520,6 @@ a.exam_ref:hover {
 		grid-template-columns: 10fr 10fr 10fr 10fr 15fr;
 	}
 	.txt_optional_item {
-		//display: grid;
 		display: block;
 	}
 }
@@ -596,17 +594,14 @@ a.exam_ref:hover {
 }
 
 .is_stg_en_tra {
-	//color: #ffff00;
 	background-color: #254b70;
 }
 
 .is_stg_es_tra {
-	//color: #ffff00;
 	background-color: #254b70;
 }
 
 .is_stg_loc_tra {
-	//color: #ffff00;
 	background-color: #b60000;
 }
 
@@ -754,6 +749,10 @@ a.exam_ref:hover {
 	font-size:1em;
 	align-items: center;  
 	align-content: center;
+}
+
+.contain_scroll {
+	overscroll-behavior: contain;
 }
 
 /*

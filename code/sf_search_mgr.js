@@ -48,15 +48,17 @@ const id_forward_butt = "id_forward_butt";
 const id_select = "id_select";
 const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
+const id_examples = "id_examples";
+const id_books = "id_books";
+const id_variables = "id_variables";
 const id_save_history = "id_save_history";
 const id_load_history = "id_load_history";
 const id_reset_history = "id_reset_history";
+const id_save_result = "id_save_result";
 const id_list_name = "id_list_name";
 const id_his_opers = "id_his_opers";
 const id_add_comment = "id_add_comment";
 const id_his_comment = "id_his_comment";
-const id_books = "id_books";
-const id_variables = "id_variables";
 const id_menu_tok = "id_menu_tok";
 const id_header = "id_header";
 const id_info = "id_info";
@@ -68,7 +70,6 @@ const id_search_href = "id_search_href";
 const id_dv_evaluating = "id_dv_evaluating";
 const id_evaluating_bar = "id_evaluating_bar";
 const id_evaluating_name = "id_evaluating_name";
-const id_examples = "id_examples";
 const id_tra_txt = "id_tra_txt";
 const id_verse_refs = "id_verse_refs";
 
@@ -321,6 +322,7 @@ function init_menus(){
 
 	inp_box.addEventListener('keydown', async function(ev) {
 		if(ev.key === "Enter"){
+			ev.stopPropagation();
 			await do_select();
 		}
 	});
@@ -443,9 +445,12 @@ async function do_select(prv_conf){
 
 function init_handlers(){
 	const dv_verses = document.getElementById("id_verses");
+	dv_verses.classList.add("contain_scroll");
+	/*
 	dv_verses.addEventListener('wheel', function(ev) {
 		ev.stopPropagation();
 	});
+	*/
 	
 	window.addEventListener('popstate', pop_history_handler);
 }
@@ -474,6 +479,7 @@ export async function start_srch_mgr(curr_lang){
 	if(PERSISTANT_STATE){ read_storage_state(); }
 	init_nav_history();
 	init_handlers();
+	init_shortcuts();
 	
 	if(PERSISTANT_STATE){ window.addEventListener('beforeunload', write_storage_state); }
 	
@@ -674,10 +680,8 @@ function fill_search_info(bl_obj){
 
 export async function fill_verses(bl_obj){
 	const is_node_call = in_nodejs();
-	let all_bibobj = null
-	if(is_node_call){
-		all_bibobj = [];
-	}
+	gvar.last_all_bibobj = [];
+	const all_bibobj = gvar.last_all_bibobj;
 	
 	const all_vrs = bl_obj.lverses;
 	const oldt = gvar.biblang.curr_OT;
@@ -757,9 +761,7 @@ export async function fill_verses(bl_obj){
 	for(ii = 0; ii < all_vrs.length; ii++){
 		const cod_vr = all_vrs[ii];
 		const bibobj = verse_cod2obj(cod_vr);
-		if(is_node_call){
-			all_bibobj.push(bibobj);
-		}
+		all_bibobj.push(bibobj);
 		
 		let dv_ver = null;
 		if(! is_node_call){
@@ -819,6 +821,19 @@ async function open_txta_verse(bibobj, bl_obj){
 	scroll_to_top(dv_verses);
 }
 
+function open_manual(){
+	const m_href = `https://github.com/sebiblia/sebiblia.github.io?tab=readme-ov-file#manual-de-sebibliagithubio`;
+	window.open(m_href, '_blank');
+}
+
+function init_history(){
+	gvar.biblang.history = [];
+	const dv_hist = document.getElementById(id_history);
+	if(dv_hist != null){
+		toggle_history_info("keep");
+	}
+}
+
 function pop_menu_handler(){
 	const dv_pop_sec = document.getElementById("id_pop_opt_sec");
 
@@ -860,8 +875,7 @@ function pop_menu_handler(){
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.manual;
 	op.addEventListener('click', () => {
-		const m_href = `https://github.com/sebiblia/sebiblia.github.io?tab=readme-ov-file#manual-de-sebibliagithubio`;
-		window.open(m_href, '_blank');
+		open_manual();
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -930,13 +944,18 @@ function pop_menu_handler(){
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.reset_history;
 	op.addEventListener('click', () => {
-		gvar.biblang.history = [];
-		const dv_hist = document.getElementById(id_history);
-		if(dv_hist != null){
-			toggle_history_info("keep");
-		}
+		init_history();
 	});
 	dv_pop_men.appendChild(op);
+
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.save_result;
+	op.addEventListener('click', () => {
+		save_result();
+	});
+	dv_pop_men.appendChild(op);
+	
 	
 	if(WITH_AUX_BUTTON){
 		op = document.createElement("div");
@@ -2483,5 +2502,75 @@ function save_file(nam, obj){
 	var url = URL.createObjectURL(file);
 	window.open(url);
 	URL.revokeObjectURL(url); // This seems to work here.
+}
+
+function init_shortcuts(){
+	window.addEventListener('keydown', async function(ev) {
+		if(gvar.all_key_down == null){
+			gvar.all_key_down = {};
+		}
+		const all_dwn = gvar.all_key_down;
+		all_dwn[ev.key.toLowerCase()] = true;
+		if((ev.ctrlKey || ev.metaKey) && all_dwn['a']){			
+			ev.preventDefault();
+			ev.stopPropagation();
+			if(all_dwn['h']){
+				toggle_history_info();
+				scroll_to_top(document.getElementById(id_history));
+			}
+			if(all_dwn['e']){
+				toggle_lang_examples(gvar.examples);
+				scroll_to_top(document.getElementById(id_examples));
+			}
+			if(all_dwn['m']){
+				open_manual();
+			}
+			if(all_dwn['b']){
+				toggle_books_info();
+				scroll_to_top(document.getElementById(id_books));
+			}
+			if(all_dwn['v']){
+				toggle_variables_info();
+				scroll_to_top(document.getElementById(id_variables));
+			}
+			if(all_dwn['l']){
+				await get_href();
+			}
+			if(all_dwn['d']){
+				toggle_dbg_info();
+				scroll_to_top(document.getElementById(id_dbg_data));
+			}
+			if(all_dwn['s']){
+				toggle_save_history();
+				scroll_to_top(document.getElementById(id_save_history));
+			}
+			if(all_dwn['r']){
+				toggle_load_history();
+				scroll_to_top(document.getElementById(id_load_history));
+			}
+			if(all_dwn['i']){
+				init_history();
+			}
+			if(all_dwn['u']){
+				save_result();
+			}
+		}
+	});
+	window.addEventListener('keyup', async function(ev) {
+		if(gvar.all_key_down == null){
+			gvar.all_key_down = {};
+		}
+		gvar.all_key_down[ev.key.toLowerCase()] = false;
+	});
+}
+
+function save_result(){
+	if(gvar.biblang.all_user_vars == null){
+		return;
+	}
+	const obj = gvar.last_all_bibobj;
+	if(obj != null){
+		save_file("sebiblia_results.json", obj);
+	}
 }
 
