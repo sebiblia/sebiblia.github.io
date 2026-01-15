@@ -91,7 +91,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "g2288"
+    "expr": "g2288",
+    "comment": "Busca versiculos con el código Strong G2288 en la Bizantina (BYZ) y los muestra en la traducción de la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -183,7 +184,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "g166"
+    "expr": "g166",
+    "comment": "Busca versiculos con el código Strong G166 en la Bizantina (BYZ) y los muestra en la traducción de la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -275,7 +277,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "H5769"
+    "expr": "H5769",
+    "comment": "Busca versiculos con el código Strong H5769 en el Codex de Leningrado Westminister (WLC) y los muestra en la traducción de la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -367,7 +370,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "H4194"
+    "expr": "H4194",
+    "comment": "Busca versiculos con el código Strong H4194 en el Codex de Leningrado Westminister (WLC) y los muestra en la traducción de la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -459,7 +463,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "sepul"
+    "expr": "sepul",
+    "comment": "Busca versiculos con el texto 'sepul' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -551,7 +556,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "subir"
+    "expr": "subir",
+    "comment": "Busca versiculos con el texto 'subir' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -643,7 +649,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "subir & sepul"
+    "expr": "subir & sepul",
+    "comment": "Busca versiculos con el texto 'subir' y el texto 'sepul' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -735,7 +742,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "1_Samuel.2"
+    "expr": "1_Samuel.2",
+    "comment": "Busca los versiculos de la cita biblica \"1_samuel.2\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -827,7 +835,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "1SAmueL.2:6"
+    "expr": "1SAmueL.2:6",
+    "comment": "Busca los versiculos de la cita biblica \"1_samuel.2:6\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -919,7 +928,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "SALMO.30:2-4"
+    "expr": "SALMO.30:2-4",
+    "comment": "Busca los versiculos de la cita biblica \"salmos.30:2-4\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1011,7 +1021,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "eze.37:12"
+    "expr": "eze.37:12",
+    "comment": "Busca los versiculos de la cita biblica \"ezequiel.37:12\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1103,7 +1114,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "muer & despe"
+    "expr": "muer & despe",
+    "comment": "Busca versiculos con el texto 'muer' y el texto 'despe' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1195,7 +1207,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "H2421 & H4191"
+    "expr": "H2421 & H4191",
+    "comment": "Busca versiculos con el código Strong H2421 y el código Strong H4191 en el Codex de Leningrado Westminister (WLC), y los muestra en la traducción de la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1287,7 +1300,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "deu.32:39 ; 1sa.2:6 ; psa.118:17 ; ISAIA.26:19 ; Esequiel.33:11"
+    "expr": "deu.32:39 ; 1sa.2:6 ; psa.118:17 ; ISAIA.26:19 ; Esequiel.33:11",
+    "comment": "Busca los versiculos de la cita biblica \"deuteronomio.32:39 ; 1_samuel.2:6 ; salmos.118:17 ; isaías.26:19 ; ezequiel.33:11\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1379,7 +1393,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "1_samuel.2:6"
+    "expr": "1_samuel.2:6",
+    "comment": "Busca los versiculos de la cita biblica \"1_samuel.2:6\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1471,7 +1486,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "ezequiel.37:12 | 1sa.2:6"
+    "expr": "ezequiel.37:12 | 1sa.2:6",
+    "comment": "Busca los versiculos de la cita biblica \"ezequiel.37:12 ; 1_samuel.2:6\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1563,7 +1579,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "ezequiel.37:12 | 1sa.2:6 | isa.26:19"
+    "expr": "ezequiel.37:12 | 1sa.2:6 | isa.26:19",
+    "comment": "Busca los versiculos de la cita biblica \"ezequiel.37:12 ; 1_samuel.2:6 ; isaías.26:19\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1655,7 +1672,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1 ! mat.1:3-9"
+    "expr": "mat.1 ! mat.1:3-9",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1\" sin los versiculos de la cita biblica \"mateo.1:3-9\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1747,7 +1765,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1 ! mat.1:15-20"
+    "expr": "mat.1 ! mat.1:15-20",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1\" sin los versiculos de la cita biblica \"mateo.1:15-20\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1839,7 +1858,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 ! mat.1:3"
+    "expr": "mat.1:1-5 ! mat.1:3",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" sin los versiculos de la cita biblica \"mateo.1:3\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -1931,7 +1951,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 ! mat.1:2"
+    "expr": "mat.1:1-5 ! mat.1:2",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" sin los versiculos de la cita biblica \"mateo.1:2\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2023,7 +2044,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 ! mat.1:4"
+    "expr": "mat.1:1-5 ! mat.1:4",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" sin los versiculos de la cita biblica \"mateo.1:4\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2115,7 +2137,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & Jacob"
+    "expr": "mat.1:1-5 & Jacob",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen el texto 'Jacob' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2207,7 +2230,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 ! Jacob"
+    "expr": "mat.1:1-5 ! Jacob",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que no tienen el texto 'Jacob' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2299,7 +2323,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & Aram"
+    "expr": "mat.1:1-5 & Aram",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen el texto 'Aram' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2391,7 +2416,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 ! Aram"
+    "expr": "mat.1:1-5 ! Aram",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que no tienen el texto 'Aram' en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2483,7 +2509,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5"
+    "expr": "mat.1:1-5",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2575,7 +2602,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /B..z/"
+    "expr": "mat.1:1-5 & /B..z/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /B..z/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2667,7 +2695,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /ss/"
+    "expr": "mat.1:1-5 & /ss/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /ss/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2759,7 +2788,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /(\\s+)J.s/"
+    "expr": "mat.1:1-5 & /(\\s+)J.s/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /(s+)J.s/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2851,7 +2881,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /a.i[^\\s]/"
+    "expr": "mat.1:1-5 & /a.i[^\\s]/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /a.i[^s]/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -2943,7 +2974,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /:$/"
+    "expr": "mat.1:1-5 & /:$/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /:$/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -3035,7 +3067,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /^Y/"
+    "expr": "mat.1:1-5 & /^Y/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /^Y/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -3127,7 +3160,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /(\\s+)á(\\s+)/"
+    "expr": "mat.1:1-5 & /(\\s+)á(\\s+)/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /(s+)á(s+)/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -3219,7 +3253,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /(\\s+).(\\s+)/"
+    "expr": "mat.1:1-5 & /(\\s+).(\\s+)/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /(s+).(s+)/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -3311,7 +3346,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /(\\s+)a(\\s+)/"
+    "expr": "mat.1:1-5 & /(\\s+)a(\\s+)/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /(s+)a(s+)/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -3403,7 +3439,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ".LXX ; g166"
+    "expr": ".LXX ; g166",
+    "comment": "Cambia la conf. para buscar códigos Strong del Antiguo Testamento (OT) en la Septuaginta (LXX) ; luego busca los versiculos con el código Strong G166 en la LXX ; y finalmente los muestra en la traducción de la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -3495,7 +3532,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ".WLC ; h2421 & H4191"
+    "expr": ".WLC ; h2421 & H4191",
+    "comment": "Cambia la conf. para buscar códigos Strong del Antiguo Testamento (OT) en el Codex de Leningrado Westminister (WLC) ; luego busca los versiculos con el código Strong H2421 y el código Strong H4191 en el WLC ; y finalmente los muestra en la traducción de la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -3587,7 +3625,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ".LXX ; $last"
+    "expr": ".LXX ; $last",
+    "comment": "Cambia la conf. para buscar códigos Strong del Antiguo Testamento (OT) en la Septuaginta (LXX) y luego muestra los versiculos de la última busqueda"
   },
   {
     "conf": {
@@ -3679,7 +3718,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "(.WLC ; h2421 & H4191) & (.LXX ; g599)"
+    "expr": "(.WLC ; h2421 & H4191) & (.LXX ; g599)",
+    "comment": "Cambia la conf. para buscar códigos Strong del Antiguo Testamento (OT) en el Codex de Leningrado Westminister (WLC) ; luego encuentra los que tienen el cod. Strong H2421 y el cod. H4191 en la WLC ; luego cambia a la LXX y busca el cód. Strong G599 en la LXX ; luego calcula la intersección de ambos conjuntos, es decir los versiculos que estan en ambos conjuntos ; y finalmente muestra los versiculos resultado en la traducción de la RVA"
   },
   {
     "conf": {
@@ -3771,99 +3811,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "(.WLC ; h2421 & H4191) ! (.LXX ; g599)"
-  },
-  {
-    "conf": {
-      "curr_OT": "LXX",
-      "curr_NT": "WH",
-      "curr_LOC": "RVA",
-      "output": "asc",
-      "regex_input": "loc",
-      "size_output": {
-        "sco": "all",
-        "rx": "all",
-        "wd": "all",
-        "his": 1000,
-        "dbg": 1000
-      },
-      "regex_insensitive": true,
-      "curr_range": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66
-      ],
-      "intervals": [
-        [
-          "gen",
-          "rev"
-        ]
-      ]
-    },
-    "expr": ".wh; mat.1:1-5"
+    "expr": "(.WLC ; h2421 & H4191) ! (.LXX ; g599)",
+    "comment": "Cambia la conf. para buscar códigos Strong del Antiguo Testamento (OT) en el Codex de Leningrado Westminister (WLC) ; luego encuentra los que tienen el cod. Strong H2421 y el cod. H4191 en la WLC ; luego cambia a la LXX y busca el cód. Strong G599 en la LXX ; luego calcula la diferencia de ambos conjuntos, es decir los versiculos que estan en el primer conjunto pero no en el segundo ; y finalmente muestra los versiculos resultado en la traducción de la RVA"
   },
   {
     "conf": {
@@ -3955,7 +3904,101 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ".byz; mat.1:1-5"
+    "expr": ".wh; mat.1:1-5",
+    "comment": "Cambia la conf. para buscar códigos Strong del Nuevo Testamento (NT) en el texto critico Wescott and Hort (WH) ; luego encuentra la cita biblica \"mateo.1:1-5\" ; y finalmente muestra los versiculos resultado en la traducción de la RVA. La diferencia con buscar esta misma cita en otro texto NT está en que el analisis textual que muestra la aplicación para los versiculos resultado es diferente para cada conf. de NT, cada analisis corresponde al texto escojido en NT. En este caso el analisis textual para cada versiculo resultado corresponde a el WH"
+  },
+  {
+    "conf": {
+      "curr_OT": "LXX",
+      "curr_NT": "WH",
+      "curr_LOC": "RVA",
+      "output": "asc",
+      "regex_input": "loc",
+      "size_output": {
+        "sco": "all",
+        "rx": "all",
+        "wd": "all",
+        "his": 1000,
+        "dbg": 1000
+      },
+      "regex_insensitive": true,
+      "curr_range": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "intervals": [
+        [
+          "gen",
+          "rev"
+        ]
+      ]
+    },
+    "expr": ".byz; mat.1:1-5",
+    "comment": "Cambia la conf. para buscar códigos Strong del Nuevo Testamento (NT) en la Bizantina (BYZ) ; luego encuentra la cita biblica \"mateo.1:1-5\" ; y finalmente muestra los versiculos resultado en la traducción de la RVA. La diferencia con buscar esta misma cita en otro texto NT está en que el analisis textual que muestra la aplicación para los versiculos resultado es diferente para cada conf. de NT, cada analisis corresponde al texto escojido en NT. En este caso el analisis textual para cada versiculo resultado corresponde a la BYZ"
   },
   {
     "conf": {
@@ -4047,7 +4090,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "(.byz; g1161) ! (.wh; g1161)"
+    "expr": "(.byz; g1161) ! (.wh; g1161)",
+    "comment": "Cambia la conf. para buscar códigos Strong del Nuevo Testamento (NT) en la Bizantina (BYZ) ; luego encuentra los que tienen el cod. Strong G1161 en la BYZ ; luego cambia a el WH y busca el cód. Strong G1161 en el WH ; luego calcula la diferencia de ambos conjuntos, es decir los versiculos que estan en el primer conjunto pero no en el segundo ; y finalmente muestra los versiculos resultado en la traducción de la RVA"
   },
   {
     "conf": {
@@ -4139,7 +4183,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ".rva; (muert & etern)"
+    "expr": ".rva; (muert & etern)",
+    "comment": "Cambia la conf. del texto traducido (LOC) a la RVA ; luego muestra los versiculos que tienen el texto 'muert' y el texto 'etern' en la RVA"
   },
   {
     "conf": {
@@ -4231,7 +4276,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "(.rva; (muert & etern)) ! (.kjv; death)"
+    "expr": "(.rva; (muert & etern)) ! (.kjv; death)",
+    "comment": "Cambia la conf. del texto traducido (LOC) a la RVA ; luego encuentra los versiculos que tienen el texto 'muert' y el texto 'etern' en la RVA ; luego cambia a la KJV y encuentra los versiculos que tienen el texto 'death' ; luego calcula la diferencia de ambos conjuntos ; y finalmente muestra los versiculos resultado en la traducción de la KJV"
   },
   {
     "conf": {
@@ -4323,7 +4369,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "h7585"
+    "expr": "h7585",
+    "comment": "Busca H7585 en WLC y los muestra RVA"
   },
   {
     "conf": {
@@ -4415,7 +4462,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ":ot ; wevl"
+    "expr": ":ot ; wevl",
+    "comment": "Cambia la conf. para buscar texto en la conf. del campo OT (en este caso la WLC) ; luego busca el texto trans-deletreado \"wevl\" y muestra los versiculos de la WLC trans-deletreados a ASCII"
   },
   {
     "conf": {
@@ -4507,7 +4555,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ":ot ; wevl ; .min"
+    "expr": ":ot ; wevl ; .min",
+    "comment": "Cambia la conf. para buscar texto en la conf. del campo OT (en este caso la WLC) ; luego busca el texto trans-deletreado \"wevl\" y muestra los versiculos de la WLC con letras hebreas. Para el hebreo tanto 'MIN' como 'MAY' muestran las mismas letras hebreas"
   },
   {
     "conf": {
@@ -4599,7 +4648,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "luk.16"
+    "expr": "luk.16",
+    "comment": "Busca \"lucas.16\" en RVA"
   },
   {
     "conf": {
@@ -4691,7 +4741,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "G86"
+    "expr": "G86",
+    "comment": "Busca G86 en WH y los muestra en RVA"
   },
   {
     "conf": {
@@ -4783,7 +4834,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ":nt; adhs"
+    "expr": ":nt; adhs",
+    "comment": "Cambia la conf. para buscar texto en la conf. del campo NT (en este caso la WH) ; luego busca el texto trans-deletreado \"adhs\" y muestra los versiculos de WH trans-deletreados a ASCII."
   },
   {
     "conf": {
@@ -4875,7 +4927,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ":nt; adh ; .min"
+    "expr": ":nt; adh ; .min",
+    "comment": "Cambia la conf. para buscar texto en la conf. del campo NT (en este caso la WH) ; luego busca el texto trans-deletreado \"adhs\" y muestra los versiculos de WH  con letras griegas minusculas."
   },
   {
     "conf": {
@@ -4967,7 +5020,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ":nt; adh ; .may"
+    "expr": ":nt; adh ; .may",
+    "comment": "Cambia la conf. para buscar texto en la conf. del campo NT (en este caso la WH) ; luego busca el texto trans-deletreado \"adhs\" y muestra los versiculos de WH  con letras griegas mayusculas."
   },
   {
     "conf": {
@@ -5059,7 +5113,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=mat ; infier"
+    "expr": "=mat ; infier",
+    "comment": "Cambia la conf. para fijar el intervalo de busqueda al libro de Mateo de la RVA ; luego busca el texto \"infier\" en ese rango."
   },
   {
     "conf": {
@@ -5151,7 +5206,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=mar ; infier"
+    "expr": "=mar ; infier",
+    "comment": "Cambia la conf. para fijar el intervalo de busqueda al libro de Marcos de la RVA ; luego busca el texto \"infier\" en ese rango."
   },
   {
     "conf": {
@@ -5243,7 +5299,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=nt ; infier"
+    "expr": "=nt ; infier",
+    "comment": "Cambia la conf. para fijar el intervalo de busqueda a los libros del Nuevo Testamento de la RVA ; luego busca el texto \"infier\" en ese rango."
   },
   {
     "conf": {
@@ -5335,7 +5392,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "g1067"
+    "expr": "g1067",
+    "comment": "Busca G1067 en BYZ y los muestra en RVA"
   },
   {
     "conf": {
@@ -5427,7 +5485,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=nt ; -mat ; infier"
+    "expr": "=nt ; -mat ; infier",
+    "comment": "Busca en el Nuevo Testamento (=nt), pero sin Mateo (-mat), el texto \"infier\""
   },
   {
     "conf": {
@@ -5519,7 +5578,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=nt ; -mat ; -rev;  infier"
+    "expr": "=nt ; -mat ; -rev;  infier",
+    "comment": "Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), y sin Revelacion (-rev), el texto \"infier\""
   },
   {
     "conf": {
@@ -5611,7 +5671,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=nt ; -mat ; -rev;  -luk ; infier"
+    "expr": "=nt ; -mat ; -rev;  -luk ; infier",
+    "comment": "Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), sin Revelacion (-rev), y sin Lucas (-luk), el texto \"infier\""
   },
   {
     "conf": {
@@ -5703,7 +5764,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=nt ; -mat ; -rev;  -luk ; -act ;  infier"
+    "expr": "=nt ; -mat ; -rev;  -luk ; -act ;  infier",
+    "comment": "Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), sin Revelacion (-rev), sin Lucas (-luk), y sin Hechos de los Apost. (-act), el texto \"infier\""
   },
   {
     "conf": {
@@ -5795,7 +5857,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=nt ; -mat ; -rev;  -luk ; -act ;  -jas ; infier"
+    "expr": "=nt ; -mat ; -rev;  -luk ; -act ;  -jas ; infier",
+    "comment": "Busca en el Nuevo Testamento (=nt), sin Mateo (-mat), sin Revelacion (-rev), sin Lucas (-luk), sin Hechos de los Apost. (-act), y sin Santiago (-jas), el texto \"infier\""
   },
   {
     "conf": {
@@ -5887,7 +5950,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=mat ; +rev; infier"
+    "expr": "=mat ; +rev; infier",
+    "comment": "Busca en Mateo (=mat), y con Revelacion (+rev), el texto \"infier\""
   },
   {
     "conf": {
@@ -5979,7 +6043,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=mat ; +rev; +luk ; infier"
+    "expr": "=mat ; +rev; +luk ; infier",
+    "comment": "Busca en Mateo (=mat), con Revelacion (+rev), y con Lucas (+luk), el texto \"infier\""
   },
   {
     "conf": {
@@ -6071,7 +6136,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=ev ; infier"
+    "expr": "=ev ; infier",
+    "comment": "Busca en los evangelios (=ev), el texto \"infier\""
   },
   {
     "conf": {
@@ -6163,7 +6229,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=pa ; infier"
+    "expr": "=pa ; infier",
+    "comment": "Busca en los libros de Pablo (=pa), el texto \"infier\""
   },
   {
     "conf": {
@@ -6255,7 +6322,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "=pa ; fuego"
+    "expr": "=pa ; fuego",
+    "comment": "Busca en los libros de Pablo (=pa), el texto \"fuego\""
   },
   {
     "conf": {
@@ -6347,7 +6415,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "$last ; .kjv"
+    "expr": "$last ; .kjv",
+    "comment": "Los mismos resultados de la ULTIMA busqueda los muestra en la version KJV"
   },
   {
     "conf": {
@@ -6439,7 +6508,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "$last ; .sblm"
+    "expr": "$last ; .sblm",
+    "comment": "Los mismos resultados de la ULTIMA busqueda los muestra en la version SBLM"
   },
   {
     "conf": {
@@ -6531,7 +6601,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "$last ; .web"
+    "expr": "$last ; .web",
+    "comment": "Los mismos resultados de la ULTIMA busqueda los muestra en la version WEB"
   },
   {
     "conf": {
@@ -6623,7 +6694,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "$last ; .rva"
+    "expr": "$last ; .rva",
+    "comment": "Los mismos resultados de la ULTIMA busqueda los muestra en la version RVA"
   },
   {
     "conf": {
@@ -6715,7 +6787,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "mat.1:1-5 & /(\\s+)á(\\s+)/"
+    "expr": "mat.1:1-5 & /(\\s+)á(\\s+)/",
+    "comment": "Busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /(s+)á(s+)/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -6807,7 +6880,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ".rx:ni ; mat.1:1-5 & /(\\s+)á(\\s+)/"
+    "expr": ".rx:ni ; mat.1:1-5 & /(\\s+)á(\\s+)/",
+    "comment": "Configura para buscedas SENSITIVAS y busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /(s+)á(s+)/ en la Reina-Valera 1909 (RVA)"
   },
   {
     "conf": {
@@ -6899,7 +6973,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "(var1 = jose) ; var1"
+    "expr": "(var1 = jose) ; var1",
+    "comment": "Le asigna a la variable 'var1' el resultado de buscar el texto 'jose' ; y luego retorna los versiculos en 'var1'"
   },
   {
     "conf": {
@@ -6991,7 +7066,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var1 & hijo"
+    "expr": "var1 & hijo",
+    "comment": "Retorna los versiculos en 'var1' que tienen el texto 'hijo'"
   },
   {
     "conf": {
@@ -7083,7 +7159,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var2 = $last ; var2 & nombre"
+    "expr": "var2 = $last ; var2 & nombre",
+    "comment": "Le asigna a la variable 'var2' el ULTIMO resultado ; y luego los versiculos en 'var2' que tienen el texto 'nombre'"
   },
   {
     "conf": {
@@ -7175,7 +7252,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var3 = $last ; var3"
+    "expr": "var3 = $last ; var3",
+    "comment": "Le asigna a la variable 'var3' el ULTIMO resultado ; y luego retorna los versiculos en 'var3'"
   },
   {
     "conf": {
@@ -7267,7 +7345,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var3"
+    "expr": "var3",
+    "comment": "Retorna los versiculos en 'var3'"
   },
   {
     "conf": {
@@ -7359,7 +7438,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var2"
+    "expr": "var2",
+    "comment": "Retorna los versiculos en 'var2'"
   },
   {
     "conf": {
@@ -7451,7 +7531,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var1"
+    "expr": "var1",
+    "comment": "Retorna los versiculos en 'var1'"
   },
   {
     "conf": {
@@ -7543,7 +7624,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var1 & H1121"
+    "expr": "var1 & H1121",
+    "comment": "Retorna los versiculos en 'var1' que tienen el codigo Strong H1121 en la WLC"
   },
   {
     "conf": {
@@ -7635,7 +7717,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var1 ! H1121"
+    "expr": "var1 ! H1121",
+    "comment": "Retorna los versiculos en 'var1' que NO tienen el codigo Strong H1121 en la WLC"
   },
   {
     "conf": {
@@ -7727,7 +7810,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var1 & g5207"
+    "expr": "var1 & g5207",
+    "comment": "Retorna los versiculos en 'var1' que tienen el codigo Strong G5207 en la BYZ"
   },
   {
     "conf": {
@@ -7819,7 +7903,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "var1 & g5207 & G3475"
+    "expr": "var1 & g5207 & G3475",
+    "comment": "Retorna los versiculos en 'var1' que tienen los codigos Strong G5207 y G3475 en la BYZ"
   },
   {
     "conf": {
@@ -7911,9 +7996,8 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": "(var1 & g5207) ! G3475"
+    "expr": "(var1 & g5207) ! G3475",
+    "comment": "Retorna los versiculos en 'var1' que tienen el codigo Strong G5207 pero NO el G3475 en la BYZ"
   }
 ];
-
-
 

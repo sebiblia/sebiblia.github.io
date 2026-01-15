@@ -1,6 +1,6 @@
 
 import * as MOD_EX_ES from '../data/js_examples/examples_es.js';
-import * as MOD_TIT_ES from '../data/js_examples/titles_es.js';
+import * as MOD_EX_EN from '../data/js_examples/examples_en.js';
 
 import { gvar, } from './sf_search_mgr.js';
 
@@ -26,8 +26,10 @@ const msg_es = {
 	show_link: "MOSTRAR ENLACE WEB",
 	save_history: "GUARDAR HISTORIA",
 	load_history: "RECUPERAR HISTORIA",
+	reset_history: "REINICIAR HISTORIA",
 	history_name: "NOMBRE:",
 	save_button: "GUARDAR",
+	load_button: "RECUPERAR",
 	debug: "DEPURAR",
 	tot_versees: "Total de vesiculos encontrados ",
 	no_refs: "No tiene refs",
@@ -52,64 +54,14 @@ const msg_en = {
 	show_link: "SHOW WEB LINK",
 	save_history: "SAVE HISTORY",
 	load_history: "LOAD HISTORY",
+	reset_history: "RESET HISTORY",
 	history_name: "NAME:",
 	save_button: "SAVE",
+	load_button: "LOAD",
 	debug: "DEBUG",
 	tot_versees: "Total of verses found ",
 	no_refs: "It has no refs",
 };
-
-export const BIBLANG_EXAMPLES_ES = [
-	`muerte ../busca 'muerte'/`,
-	`eterna ../busca versiculos con 'eterna'/`,
-	`g2288 ../busca el cod Strong G2288/`,
-	`g166 ../busca el cod Strong G166/`,
-	`g2288 & g166 ../versiculos con ambos codigos, G2288 y G166/`,
-	`g2288 | g166 ../alguno de los codigos G2288 o G166/`,
-	`g2288 ! g166 ../con G2288 pero sin G166/`,
-	`mat_1 ../capitulo 1 de mateo/`,
-	`mat.1 ../capitulo 1 de mateo/`,
-	`mat-1 ../capitulo 1 de mateo/`,
-	`mat.1:5 ../mateo 1:5/`,
-	`mat.1 :: mat_3 ../tres primeros capitulos/`,
-	`mat_1:5-9 ../mateo 1:5-9/`,
-	`mat_1:5-9 ; luk.3 ../versiculos en 'mateo 1:5-9' o en 'lukas 3'/`,
-	`mat_1:5-9 & luk.3 ../versiculos en 'mateo 1:5-9' y en 'lukas 3'/`,
-	`mat_1 ! y ../versiculos en 'mateo 1' sin la palabra 'y'/`,
-	`/^desp/ ../comienzan por 'desp'/`,
-	`/dijo$/ ../terminan por 'dijo'/`,
-	`/dijo.$/ ../terminan por 'dijo' y algún caracter/`,
-	`/m.jo/ ../busca esa expr. regular javascript/`,
-	`=nt ; jos ../fija el rango al nuevo test, luego busca 'jos'/`,
-	`=nt ; +heb; jos ../rango a nt mas hebreos, luego busca 'jos'/`,
-	`=nt ; -mat; jos ../rango a nt menos mateo, luego busca 'jos'/`,
-];
-
-export const BIBLANG_EXAMPLES_EN = [
-	`death ../finds 'death'/`,
-	`eterna ../finds verses with 'eterna'/`,
-	`g2288 ../finds Strong cod G2288/`,
-	`g166 ../finds Strong cod G166/`,
-	`g2288 & g166 ../verses with both codes, G2288 and G166/`,
-	`g2288 | g166 ../any of the codes G2288 or G166/`,
-	`g2288 ! g166 ../with G2288 but without G166/`,
-	`mat_1 ../matthew chapter 1/`,
-	`mat.1 ../matthew chapter 1/`,
-	`mat-1 ../matthew chapter 1/`,
-	`mat.1:5 ../matthew 1:5/`,
-	`mat.1 :: mat_3 ../first three chapters/`,
-	`mat_1:5-9 ../matthew 1:5-9/`,
-	`mat_1:5-9 ; luk.3 ../verses in 'matthew 1:5-9' or in 'luke 3'/`,
-	`mat_1:5-9 & luk.3 ../verses in 'matthew 1:5-9' and in 'luke 3'/`,
-	`mat_1 ! y ../in 'matthew 1' without the word 'y'/`,
-	`/^desp/ ../start with 'desp'/`,
-	`/dijo$/ ../ends with 'dijo'/`,
-	`/dijo.$/ ../ends with 'dijo' and some character/`,
-	`/m.jo/ ../finds that javascript reg. expr/`,
-	`=nt ; jos ../sets range to new testament, then finds 'jos'/`,
-	`=nt ; +heb; jos ../range to nt plus hebrews, then finds 'jos'/`,
-	`=nt ; -mat; jos ../range to nt minus matthew, then finds 'jos'/`,
-];
 
 const biblehub_abbr = "bh";
 const add_abbr_en = "add";
@@ -477,32 +429,7 @@ const book2num_es = {};
 const inbook2num_es = {};
 const abbr2num = {};
 
-function set_titles(ex_arr, tit_arr){
-	if(ex_arr == null){
-		return;
-	}
-	if(tit_arr == null){
-		return;
-	}
-	
-	let ii = 0;
-	for(; ii < ex_arr.length; ii++){
-		if(ii >= tit_arr.length){
-			break;
-		}
-		const obj = ex_arr[ii];
-		obj.title = tit_arr[ii];
-	}
-}
-
-function init_example_titles(){
-	const es_ex = MOD_EX_ES.biblang_examples_es;
-	const es_tit = MOD_TIT_ES.biblang_titles_es;
-	set_titles(es_ex, es_tit);
-}
-
 function init_common(){
-	init_example_titles();
 	fill_reversed_object(num2abbr, abbr2num);
 	fill_reversed_object(num2book_es, book2num_es);
 	fill_reversed_object(num2book_en, book2num_en);
@@ -520,7 +447,6 @@ function init_common(){
 	gvar.tra_class = tra_class;
 	gvar.lang_occus = lang_occus;
 	gvar.lang_utra = lang_utra;
-	gvar.examples_es = MOD_EX_ES.biblang_examples_es;
 	gvar.loc_bible = loc_bible_nams;
 	gvar.is_strong_bib = is_strong_bib;
 }
@@ -548,7 +474,7 @@ function init_es(){
 	gvar.ops_def_scod = ops_def_scod_es;
 
 	gvar.add_abbr = add_abbr_es;
-	gvar.examples = BIBLANG_EXAMPLES_ES;
+	gvar.examples = MOD_EX_ES.biblang_examples_es;
 }
 
 function init_en(){
@@ -573,6 +499,6 @@ function init_en(){
 	gvar.ops_def_scod = ops_def_scod_en;
 
 	gvar.add_abbr = add_abbr_en;
-	gvar.examples = BIBLANG_EXAMPLES_EN;
+	gvar.examples = MOD_EX_EN.biblang_examples_en;
 }
 

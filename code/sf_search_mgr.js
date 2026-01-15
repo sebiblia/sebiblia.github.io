@@ -8,7 +8,7 @@ import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analy
 } from './sf_bible_mgr.js';
 
 import { init_lang, } from './sf_lang_mgr.js';
-import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, get_txt_matches, cmp_verses, save_file, 
+import { init_biblang, eval_biblang_command, set_biblang_conf, verse_disp, get_txt_matches, cmp_verses,  
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, OT_nams, NT_nams, LOC_nams, add_dbg_log, 
 } from './sf_biblang_mgr.js'
 
@@ -24,7 +24,7 @@ const DEBUG_INSERT_TAGS = false;
 const DEBUG_CALC_NXT_PRESENT = false;
 const DEBUG_ADD_SCOD_OCUS = false;
 
-const WITH_SAVE_HISTORY = false;
+const WITH_AUX_BUTTON = false;
 
 export let gvar = {};
 
@@ -50,6 +50,7 @@ const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
 const id_save_history = "id_save_history";
 const id_load_history = "id_load_history";
+const id_reset_history = "id_reset_history";
 const id_list_name = "id_list_name";
 const id_his_opers = "id_his_opers";
 const id_add_comment = "id_add_comment";
@@ -433,6 +434,10 @@ async function do_select(prv_conf){
 	const dv_hist = document.getElementById(id_history);
 	if(dv_hist != null){
 		toggle_history_info("keep");
+	}
+	const dv_vars = document.getElementById(id_variables);
+	if(dv_vars != null){
+		toggle_variables_info("keep");
 	}
 }
 
@@ -846,7 +851,7 @@ function pop_menu_handler(){
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.examples;
 	op.addEventListener('click', () => {
-		toggle_lang_examples(gvar.examples_es);
+		toggle_lang_examples(gvar.examples);
 		scroll_to_top(document.getElementById(id_examples));
 	});
 	dv_pop_men.appendChild(op);
@@ -921,14 +926,28 @@ function pop_menu_handler(){
 	});
 	dv_pop_men.appendChild(op);
 	
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.reset_history;
+	op.addEventListener('click', () => {
+		gvar.biblang.history = [];
+		const dv_hist = document.getElementById(id_history);
+		if(dv_hist != null){
+			toggle_history_info("keep");
+		}
+	});
+	dv_pop_men.appendChild(op);
 	
-	
-	if(WITH_SAVE_HISTORY){
+	if(WITH_AUX_BUTTON){
 		op = document.createElement("div");
 		op.classList.add("exam", "is_block", "big_item");
-		op.innerHTML = "SAVE_HISTORY";
+		op.innerHTML = "EXAMPLES_TO_HISTORY";
 		op.addEventListener('click', () => {
-			save_file("DONLOADED_SEBIBLIA_HISTORY.txt", gvar.biblang.history);
+			gvar.biblang.history = gvar.examples;
+			const dv_hist = document.getElementById(id_history);
+			if(dv_hist != null){
+				toggle_history_info("keep");
+			}			
 		});
 		dv_pop_men.appendChild(op);
 	}
@@ -936,13 +955,20 @@ function pop_menu_handler(){
 	scroll_to_top(dv_pop_men);
 }
 
+function get_his_item_htm(itm){
+	if(itm.comment == null){
+		return itm.expr;
+	}
+	let htm = `<span class="is_example_expr">${itm.expr}</span><span class="is_example_title">${itm.comment}</span>`;
+	return htm;
+}
+
 function toggle_history_info(toggle_op){
 	if(toggle_op == null){ toggle_op = "force"; }
 	const dv_expr = document.getElementById(id_expression);
-	let his_vals = gvar.biblang.history.map((itm) => itm.expr);
+	let his_vals = gvar.biblang.history.map((itm) => get_his_item_htm(itm));
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
-		dv_expr.value = val_sel;
-		//const idx_conf = dv_ops
+		dv_expr.value = gvar.biblang.history[idx_sel].expr;
 		const conf = gvar.biblang.history[idx_sel].conf;
 		await do_select(conf);
 		//dv_ops.remove();
@@ -974,9 +1000,6 @@ function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
 		}
 		else if(idx_sel == 1){
 			gvar.biblang.history.splice(pnt_idx_sel, 1);
-			if(gvar.biblang.his_comments != null){
-				gvar.biblang.his_comments.splice(pnt_idx_sel, 1);
-			}
 			toggle_history_info("keep");
 			dv_ops.remove();
 		}
@@ -1962,8 +1985,8 @@ async function toggle_refs_menu(dv_itm, bibobj){
 
 function get_example_htm(itm){
 	let htm = `<span class="is_example_expr">${itm.expr}</span>`;
-	if(itm.title != null){
-		htm += ` <span class="is_example_title">${itm.title}</span>`;
+	if(itm.comment != null){
+		htm += ` <span class="is_example_title">${itm.comment}</span>`;
 	}
 	return htm;
 }
@@ -2316,6 +2339,52 @@ function fix_all_mocus(all_mocu){
 	}
 }
 
+function remove_add_comment(){
+	const dv_add = document.getElementById(id_add_comment);
+	if(dv_add != null){
+		dv_add.remove();
+	}
+}
+
+function toggle_add_comment(pnt_idx_sel){
+	const dv_his_opers = document.getElementById(id_his_opers);
+	let dv_add = get_new_dv_under(dv_his_opers, id_add_comment);
+	if(dv_add == null){
+		return null;
+	}
+	dv_add.classList.add("grid_add_his_comment");
+	dv_add.innerHTML = "";
+	
+	dv_his_opers.when_remove_fn = remove_add_comment;
+	
+	const inp_box = document.createElement("input");
+	inp_box.id = id_his_comment;
+	inp_box.value = "";
+	const comm = gvar.biblang.history[pnt_idx_sel].comment;
+	if(comm != null){
+		inp_box.value = comm;
+	}
+	inp_box.type = "text";
+	dv_add.appendChild(inp_box);
+
+	const dv_save = document.createElement("div");
+	dv_save.innerHTML = gvar.all_msg.save_button;
+	dv_save.classList.add("is_button");
+	dv_add.appendChild(dv_save);
+
+	dv_save.addEventListener('click', function() {
+		if(inp_box.value != ""){
+			gvar.biblang.history[pnt_idx_sel].comment = inp_box.value;
+			toggle_history_info("keep");
+		} else {
+			delete gvar.biblang.history[pnt_idx_sel].comment;
+			toggle_history_info("keep");
+		}
+		dv_his_opers.remove();
+	});
+	
+}
+
 function toggle_save_history(){
 	const dv_select = document.getElementById(id_select);
 	
@@ -2334,7 +2403,7 @@ function toggle_save_history(){
 	const inp_box = document.createElement("input");
 	inp_box.id = id_list_name;
 	inp_box.classList.add("width_95", "big_font");
-	inp_box.value = "un nombre";
+	inp_box.value = "SEBIBLIA_HISTORIA.json";
 	inp_box.type = "text";
 	dv_sv_his.appendChild(inp_box);
 
@@ -2343,43 +2412,76 @@ function toggle_save_history(){
 	dv_save.classList.add("is_block", "big_item", "is_button");
 	dv_sv_his.appendChild(dv_save);
 	
-}
-
-function toggle_add_comment(pnt_idx_sel){
-	const dv_his_opers = document.getElementById(id_his_opers);
-	let dv_add = get_new_dv_under(dv_his_opers, id_add_comment);
-	if(dv_add == null){
-		return null;
-	}
-	dv_add.classList.add("grid_add_his_comment");
-	dv_add.innerHTML = "";
-	
-	if(dv_his_opers.when_remove_fn != null){
-		console.error("dv_his_opers.when_remove_fn != null");
-	}
-	dv_his_opers.when_remove_fn = () => {
-		const dv_add = document.getElementById(id_add_comment);
-		if(dv_add != null){
-			dv_add.remove();
+	dv_save.addEventListener('click', function() {
+		const nm_fl = inp_box.value;
+		if(nm_fl != ""){
+			save_file(nm_fl, gvar.biblang.history);
 		}
-	};
-	
-	const inp_box = document.createElement("input");
-	inp_box.id = id_his_comment;
-	inp_box.value = "el commentario";
-	inp_box.type = "text";
-	dv_add.appendChild(inp_box);
-
-	const dv_save = document.createElement("div");
-	dv_save.innerHTML = gvar.all_msg.save_button;
-	dv_save.classList.add("is_button");
-	dv_add.appendChild(dv_save);
-	
-	if(gvar.biblang.his_comments == null){
-		gvar.biblang.his_comments = [];
-	}
+		dv_sv_his.remove();
+	});
 }
 
 function toggle_load_history(){
+	const dv_select = document.getElementById(id_select);
+	
+	let dv_ld_his = get_new_dv_under(dv_select, id_load_history);
+	if(dv_ld_his == null){
+		return null;
+	}
+	dv_ld_his.classList.add("grid_load_history");
+	dv_ld_his.innerHTML = "";
+
+	const inp_box = document.createElement("input");
+	inp_box.type = "file";
+	//inp_box.classList.add("width_95", "big_font");
+	//inp_box.value = "SEBIBLIA_HISTORIA.json";
+	dv_ld_his.appendChild(inp_box);
+
+	let to_load = null;
+	inp_box.addEventListener('change', function() {
+		if(this.files && this.files[0]){
+			to_load = this.files[0];
+		}
+	});
+	
+	const dv_load = document.createElement("div");
+	dv_load.innerHTML = gvar.all_msg.load_button;
+	dv_load.classList.add("is_block", "big_item", "is_button");
+	dv_ld_his.appendChild(dv_load);
+	
+	dv_load.addEventListener('click', function() {
+		if(to_load != ""){
+			console.log("RECUPERANDO=" + to_load.name);
+			const rdr = new FileReader();
+			rdr.onload = function(ev){
+				try {
+					const his = JSON.parse(ev.target.result);
+					//console.log(his);
+					gvar.biblang.history = his;
+					const dv_hist = document.getElementById(id_history);
+					if(dv_hist != null){
+						toggle_history_info("keep");
+					}
+					console.log("RECUPERAR " + to_load.name + " TERMINADO");
+				} catch (err){
+					console.error("NOT a JSON file." + err);
+				}
+			};
+			
+			rdr.readAsText(to_load);
+		}
+		dv_ld_his.remove();
+	});
+}
+
+function save_file(nam, obj){
+	const data = [];
+	const the_str = JSON.stringify(obj, null, "  ");
+	data.push(the_str);
+	
+	const file = new File(data, nam, {type: 'application/octet-stream'});
+	var url = URL.createObjectURL(file);
+	window.open(url);
+	URL.revokeObjectURL(url); // This seems to work here.
 }
 

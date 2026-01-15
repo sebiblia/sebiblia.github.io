@@ -734,6 +734,17 @@ a.exam_ref:hover {
 	align-content: center;
 }
 
+.grid_load_history {
+	display: grid;
+	margin-left: 3%;
+	margin-right: 3%;
+	grid-template-columns: 20fr 5fr;
+	grid-template-rows: auto;
+	font-size:1em;
+	align-items: center;  
+	align-content: center;
+}
+
 .grid_add_his_comment {
 	display: grid;
 	margin-left: 3%;
