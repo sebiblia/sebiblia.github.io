@@ -723,6 +723,28 @@ a.exam_ref:hover {
 	font-size: 1em;
 }
 
+.grid_save_history {
+	display: grid;
+	margin-left: 3%;
+	margin-right: 3%;
+	grid-template-columns: 10fr 20fr 10fr 5fr;
+	grid-template-rows: auto;
+	font-size:1em;
+	align-items: center;  
+	align-content: center;
+}
+
+.grid_add_his_comment {
+	display: grid;
+	margin-left: 3%;
+	margin-right: 3%;
+	grid-template-columns: 20fr 5fr;
+	grid-template-rows: auto;
+	font-size:1em;
+	align-items: center;  
+	align-content: center;
+}
+
 /*
 	align-content: center center;
 	align-items: stretch;

@@ -24,6 +24,10 @@ const msg_es = {
 	variables: "VARIABLES",
 	copy_link: "COPIAR ENLACE WEB",
 	show_link: "MOSTRAR ENLACE WEB",
+	save_history: "GUARDAR HISTORIA",
+	load_history: "RECUPERAR HISTORIA",
+	history_name: "NOMBRE:",
+	save_button: "GUARDAR",
 	debug: "DEPURAR",
 	tot_versees: "Total de vesiculos encontrados ",
 	no_refs: "No tiene refs",
@@ -46,6 +50,10 @@ const msg_en = {
 	variables: "VARIABLES",
 	copy_link: "COPY WEB LINK",
 	show_link: "SHOW WEB LINK",
+	save_history: "SAVE HISTORY",
+	load_history: "LOAD HISTORY",
+	history_name: "NAME:",
+	save_button: "SAVE",
 	debug: "DEBUG",
 	tot_versees: "Total of verses found ",
 	no_refs: "It has no refs",
@@ -107,8 +115,8 @@ const biblehub_abbr = "bh";
 const add_abbr_en = "add";
 const add_abbr_es = "adi";
 
-const history_ops_es = ["adicionar", "eliminar"];
-const history_ops_en = ["add", "delete"];
+const history_ops_es = ["adicionar", "eliminar", "comentar"];
+const history_ops_en = ["add", "delete", "comment"];
 
 const tok_ops_asc_id_es = ["exacto", "parcial", "adicionar"];
 const tok_ops_asc_id_en = ["exact", "partial", "add"];

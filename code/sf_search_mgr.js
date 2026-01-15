@@ -48,7 +48,13 @@ const id_forward_butt = "id_forward_butt";
 const id_select = "id_select";
 const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
+const id_save_history = "id_save_history";
+const id_load_history = "id_load_history";
+const id_list_name = "id_list_name";
 const id_his_opers = "id_his_opers";
+const id_add_comment = "id_add_comment";
+const id_his_comment = "id_his_comment";
+const id_books = "id_books";
 const id_variables = "id_variables";
 const id_menu_tok = "id_menu_tok";
 const id_header = "id_header";
@@ -807,7 +813,7 @@ async function open_txta_verse(bibobj, bl_obj){
 	scroll_to_top(dv_txt, dv_verses);
 	scroll_to_top(dv_verses);
 }
-	
+
 function pop_menu_handler(){
 	const dv_pop_sec = document.getElementById("id_pop_opt_sec");
 
@@ -823,6 +829,7 @@ function pop_menu_handler(){
 	op.innerHTML = gvar.all_msg.history;
 	op.addEventListener('click', () => {
 		toggle_history_info();
+		scroll_to_top(document.getElementById(id_history));
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -831,6 +838,7 @@ function pop_menu_handler(){
 	op.innerHTML = gvar.all_msg.books;
 	op.addEventListener('click', () => {
 		toggle_books_info();
+		scroll_to_top(document.getElementById(id_books));
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -839,6 +847,7 @@ function pop_menu_handler(){
 	op.innerHTML = gvar.all_msg.examples;
 	op.addEventListener('click', () => {
 		toggle_lang_examples(gvar.examples_es);
+		scroll_to_top(document.getElementById(id_examples));
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -856,6 +865,7 @@ function pop_menu_handler(){
 	op.innerHTML = gvar.all_msg.variables;
 	op.addEventListener('click', () => {
 		toggle_variables_info();
+		scroll_to_top(document.getElementById(id_variables));
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -864,6 +874,7 @@ function pop_menu_handler(){
 	op.innerHTML = gvar.all_msg.debug;
 	op.addEventListener('click', () => {
 		toggle_dbg_info();
+		scroll_to_top(document.getElementById(id_dbg_data));
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -875,6 +886,7 @@ function pop_menu_handler(){
 	});
 	dv_pop_men.appendChild(op);
 	
+	/*
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.show_link;
@@ -889,7 +901,28 @@ function pop_menu_handler(){
 		dv_href.innerHTML = hrf;
 	});
 	dv_pop_men.appendChild(op);
+	*/
 
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.save_history;
+	op.addEventListener('click', () => {
+		toggle_save_history();
+		scroll_to_top(document.getElementById(id_save_history));
+	});
+	dv_pop_men.appendChild(op);
+	
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.load_history;
+	op.addEventListener('click', () => {
+		toggle_load_history();
+		scroll_to_top(document.getElementById(id_load_history));
+	});
+	dv_pop_men.appendChild(op);
+	
+	
+	
 	if(WITH_SAVE_HISTORY){
 		op = document.createElement("div");
 		op.classList.add("exam", "is_block", "big_item");
@@ -937,12 +970,19 @@ function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
 		if(idx_sel == 0){
 			const expr = gvar.biblang.history[pnt_idx_sel].expr;
 			add_to_expr(expr);
+			dv_ops.remove();
 		}
 		else if(idx_sel == 1){
 			gvar.biblang.history.splice(pnt_idx_sel, 1);
+			if(gvar.biblang.his_comments != null){
+				gvar.biblang.his_comments.splice(pnt_idx_sel, 1);
+			}
 			toggle_history_info("keep");
+			dv_ops.remove();
 		}
-		dv_ops.remove();
+		else if(idx_sel == 2){
+			toggle_add_comment(pnt_idx_sel);
+		}
 	}
 	const cls_men = ["aux_item"];
 	const cls_itm = ["is_option"];
@@ -968,7 +1008,7 @@ function toggle_variables_info(toggle_op){
 	const cls_itm = ["is_option"];
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
-	toggle_select_option(dv_select, "id_variables", all_op, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	toggle_select_option(dv_select, id_variables, all_op, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
 }
 
 function toggle_books_info(toggle_op){
@@ -981,7 +1021,7 @@ function toggle_books_info(toggle_op){
 	const cls_men = ["aux_item", "has_border"];
 	const cls_itm = ["is_option"];
 	const dv_select = document.getElementById(id_select);
-	toggle_select_option(dv_select, "id_books", abbr, clk_fn, cls_men, cls_itm, null, toggle_op);
+	toggle_select_option(dv_select, id_books, abbr, clk_fn, cls_men, cls_itm, null, toggle_op);
 }
 
 function toggle_dbg_info(toggle_op){
@@ -2275,3 +2315,71 @@ function fix_all_mocus(all_mocu){
 		ocu.lng = ocu.tlng;
 	}
 }
+
+function toggle_save_history(){
+	const dv_select = document.getElementById(id_select);
+	
+	let dv_sv_his = get_new_dv_under(dv_select, id_save_history);
+	if(dv_sv_his == null){
+		return null;
+	}
+	dv_sv_his.classList.add("grid_save_history");
+	dv_sv_his.innerHTML = "";
+	
+	const dv_lavel = document.createElement("div");
+	dv_lavel.innerHTML = gvar.all_msg.history_name;
+	dv_lavel.classList.add("is_block", "big_item", "in_center");
+	dv_sv_his.appendChild(dv_lavel);
+	
+	const inp_box = document.createElement("input");
+	inp_box.id = id_list_name;
+	inp_box.classList.add("width_95", "big_font");
+	inp_box.value = "un nombre";
+	inp_box.type = "text";
+	dv_sv_his.appendChild(inp_box);
+
+	const dv_save = document.createElement("div");
+	dv_save.innerHTML = gvar.all_msg.save_button;
+	dv_save.classList.add("is_block", "big_item", "is_button");
+	dv_sv_his.appendChild(dv_save);
+	
+}
+
+function toggle_add_comment(pnt_idx_sel){
+	const dv_his_opers = document.getElementById(id_his_opers);
+	let dv_add = get_new_dv_under(dv_his_opers, id_add_comment);
+	if(dv_add == null){
+		return null;
+	}
+	dv_add.classList.add("grid_add_his_comment");
+	dv_add.innerHTML = "";
+	
+	if(dv_his_opers.when_remove_fn != null){
+		console.error("dv_his_opers.when_remove_fn != null");
+	}
+	dv_his_opers.when_remove_fn = () => {
+		const dv_add = document.getElementById(id_add_comment);
+		if(dv_add != null){
+			dv_add.remove();
+		}
+	};
+	
+	const inp_box = document.createElement("input");
+	inp_box.id = id_his_comment;
+	inp_box.value = "el commentario";
+	inp_box.type = "text";
+	dv_add.appendChild(inp_box);
+
+	const dv_save = document.createElement("div");
+	dv_save.innerHTML = gvar.all_msg.save_button;
+	dv_save.classList.add("is_button");
+	dv_add.appendChild(dv_save);
+	
+	if(gvar.biblang.his_comments == null){
+		gvar.biblang.his_comments = [];
+	}
+}
+
+function toggle_load_history(){
+}
+
