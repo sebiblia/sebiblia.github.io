@@ -311,13 +311,10 @@ export function init_biblang(lng){
 }
 
 function init_book_names(){
-	const n1 = Object.values(gvar.num2abbr_es);
-	const n2 = Object.values(gvar.num2abbr_en);
-	const n3 = Object.keys(gvar.book2num_es);
-	const n4 = Object.keys(gvar.book2num_en);
-	const n5 = Object.keys(gvar.inbook2num_es);
+	const n1 = Object.keys(gvar.abbr2num);
+	const n2 = Object.keys(gvar.book2num);
 	
-	ALL_BOOK_NAMES  = [...new Set([...n1, ...n2, ...n3, ...n4, ...n5])];
+	ALL_BOOK_NAMES  = [...new Set([...n1, ...n2])];
 }
 
 export function cmp_verses(vv1, vv2){
@@ -809,11 +806,7 @@ function is_bib_regex(tm){
 function get_book_num(nm){
 	let num = gvar.abbr2num[nm];
 	if(num != null){ return num; }
-	num = gvar.book2num_es[nm];
-	if(num != null){ return num; }
-	num = gvar.book2num_en[nm];
-	if(num != null){ return num; }
-	num = gvar.inbook2num_es[nm];
+	num = gvar.book2num[nm];
 	return num;
 }
 

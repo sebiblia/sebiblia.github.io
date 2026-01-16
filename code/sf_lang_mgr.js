@@ -487,10 +487,10 @@ function fill_reversed_object(orig, reverse){
 	}  
 }
 
-function fill_inbook2num(orig, inbook2num){
+function fill_insensitive(orig, bk2num){
 	for (const [num, book] of Object.entries(orig)) {
 		const inbook = book2inbook(book);
-		inbook2num[inbook] = num;
+		bk2num[inbook] = num;
 		//console.log(`${key} = ${value}`);
 	}  
 }
@@ -500,26 +500,23 @@ function book2inbook(bb){
 	return s1;
 }
 
-const book2num_en = {};
-const book2num_es = {};
-const inbook2num_es = {};
+const book2num = {};
 const abbr2num = {};
 
 function init_common(){
 	fill_reversed_object(num2abbr_es, abbr2num);
 	fill_reversed_object(num2abbr_en, abbr2num);
-	fill_reversed_object(num2book_es, book2num_es);
-	fill_reversed_object(num2book_en, book2num_en);
-	fill_inbook2num(num2book_es, inbook2num_es);
+	
+	fill_reversed_object(num2book_es, book2num);
+	fill_insensitive(num2book_es, book2num);
+	fill_reversed_object(num2book_en, book2num);
+	
 	gvar.num2abbr_es = num2abbr_es;
 	gvar.num2abbr_en = num2abbr_en;
 	gvar.abbr2num = abbr2num;
+	gvar.book2num = book2num;
 	gvar.num2book_es = num2book_es;
-	gvar.book2num_es = book2num_es;
-	gvar.inbook2num_es = inbook2num_es;
 	gvar.num2book_en = num2book_en;
-	gvar.book2num_en = book2num_en;
-	gvar.inbook2num_en = book2num_en;
 	gvar.biblehub_abbr = biblehub_abbr;
 	gvar.bib_lang = bib_lang;
 	gvar.tra_class = tra_class;
@@ -537,8 +534,6 @@ function init_es(){
 	gvar.book_names = num2book_es;
 	gvar.glb_all_books = num2book_es;
 	gvar.num2book = num2book_es;
-	gvar.book2num = book2num_es;
-	gvar.inbook2num = inbook2num_es;
 	gvar.all_msg = msg_es;
 	
 	gvar.old_crit_txt = old_crit_txt_es;
@@ -565,8 +560,6 @@ function init_en(){
 	gvar.book_names = num2book_en;
 	gvar.glb_all_books = num2book_en;
 	gvar.num2book = num2book_en;
-	gvar.book2num = book2num_en;
-	gvar.inbook2num = book2num_en;
 	gvar.all_msg = msg_en;
 
 	gvar.old_crit_txt = old_crit_txt_en;

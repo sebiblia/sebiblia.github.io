@@ -287,7 +287,7 @@ export async function get_text_analysis(bibobj, bl_obj){
 		gvar.curr_dv_ver_id = null;
 	} catch(err){
 		add_dbg_log("ERROR in get_text_analysis");
-		add_dbg_log("" + `.${bib};${book}.${chapter}:${verse}`);
+		add_dbg_log("" + `.${bibobj.cri_txt};${bibobj.book}.${bibobj.chapter}:${bibobj.verse}`);
 		add_dbg_log(err);
 		add_dbg_log("_____________________________");
 		console.error("get_text_analysis error", err);
@@ -402,7 +402,7 @@ async function calc_text_analysis(bibobj, bl_obj){
 	
 	if(bib != "LXX"){
 		fill_bibobj_tra_info(bibobj);
-		if(DEBUG_BIBLE_MGR){ console.log("" + bibobj.loc_bib + " " + book + "_" + chapter + ":" + verse);	}
+		if(DEBUG_BIBLE_MGR){ console.log("calc_text_analysis." + bibobj.loc_bib + " " + book + "." + chapter + ":" + verse);	}
 		loc = await get_bible_verse(bibobj.loc_bib, book, chapter, verse);
 		
 		fullana.tloc = loc;
@@ -806,7 +806,9 @@ export async function get_bible_verse(bib_cod, book, chapter, verse){
 		let vtxt = gvar.full_bible[bib_cod][book][chapter][verse];
 		return vtxt;
 	} catch (err) {
-		console.error("FAILED get_bible_verse " + bib_cod + " " + book + ":" + chapter + ":" + verse);
+		console.error("FAILED get_bible_verse " + bib_cod + " " + book + "." + chapter + ":" + verse);
+		console.trace();
+		console.error(err);
 		return null;
 	}
 }
@@ -1272,7 +1274,8 @@ async function is_cached(url) {
 			return false;
 		}
 	} catch (error) {
-		console.error(url + ' NOT CACHED. Fetch error.', error);
+		console.error(url + ' NOT CACHED. Fetch error.');
+		console.error(error);
 		return false;
 	}
 	return false;
