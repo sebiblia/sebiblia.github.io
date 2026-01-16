@@ -1,6 +1,6 @@
 
 const fs = require('fs');
-const readline = require('readline');
+const path = require('path');
 
 if (process.argv.length < 3) {
 	console.log('Usage: node ' + process.argv[1] + ' <file_name>');
@@ -10,43 +10,39 @@ if (process.argv.length < 3) {
 const file_nm = process.argv[2];
 const json_ext = ".json";
 
-async function read_file(f_nm){
-	try {
-		const data = await fs.readFile(f_nm, 'utf8');
-		const obj = JSON.parse(data);
-		console.log(obj);
-	} catch (err) {
-		console.error("Error leyendo archivo", err.message);
+const jobj = require(file_nm);
+
+function calc_lines(){
+	let all_lines = [];
+	if(Array.isArray(jobj) && (jobj.length > 0)){
+		if(jobj[0].expr != null){
+			all_lines = jobj.map(itm => `"${itm.expr}","${itm.comment}"`);
+		} else {
+			all_lines = jobj.map(itm => `"${itm.vcit}","${itm.vtxt}"`);
+		}
+	} 
+	return all_lines;
+}
+
+function write_file(){
+	const lines = calc_lines();
+	const f_nam = path.basename(file_nm, json_ext) + ".txt";
+	
+	const wrt = fs.createWriteStream(f_nam, { flags:'a' });
+	
+	let ii = 0;
+	for(ii = 0; ii < lines.length; ii++){
+		const line = lines[ii];
+		wrt.write(`${line}\n`);
 	}
-}
-
-function create_path(the_path) {
-	if (!fs.existsSync(the_path)){
-		fs.mkdirSync(the_path, { recursive: true });
-	}	
-}
-
-async function read_file_by_lines(file_nm) {
-	write_file(file_cnt, full_file);
-}
-
-function write_file(file_cnt, full_file){
-	const all_verses = JSON.stringify(full_file, null, "  ");
-	const pth = "./" + bib_version;
 	
-	create_path(pth);
-
-	const f_nam = pth + "/" + get_bibfile_name(file_cnt);
-	
-	const file_str = `
-	
-export const bib_verses = ${all_verses};
-
-`;
-
-	fs.writeFileSync(f_nam, file_str);
+	wrt.end();
 	console.log("WROTE FILE=" + f_nam);
 }
 
-read_file(file_nm);
+//read_file(file_nm);
+
+console.log(jobj);
+write_file();
+
 
