@@ -61,9 +61,15 @@ jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, matthew, m
 
 génesis, éxodo, levítico, números, deuteronomio, josué, jueces, rut, 1_samuel, 2_samuel, 1_reyes, 2_reyes, 1_crónicas, 2_crónicas, esdras, nehemías, ester, job, salmos, proverbios, eclesiastés, cantares, isaías, jeremías, lamentaciones, ezequiel, daniel, oseas, joel, amós, abdías, jonás, miqueas, nahúm, habacuc, sofonías, hageo, zacarías, malaquías, mateo, marcos, lucas, juan, hechos, romanos, 1_corintios, 2_corintios, gálatas, efesios, filipenses, colosenses, 1_tesalonicenses, 2_tesalonicenses, 1_timoteo, 2_timoteo, tito, filemón, hebreos, santiago, 1_pedro, 2_pedro, 1_juan, 2_juan, 3_juan, judas, apocalipsis,
 
-#### Abreviaturas en Inglés:
+#### Abreviaturas en ingles:
 
 gen, exo, lev, num, deu, jos, jdg, rth, 1sa, 2sa, 1ki, 2ki, 1ch, 2ch, ezr, neh, est, job, psa, pro, ecc, sng, isa, jer, lam, eze, dan, hos, joe, amo, oba, jon, mic, nah, hab, zep, hag, zec, mal, mat, mar, luk, jhn, act, rom, 1co, 2co, gal, eph, phl, col, 1th, 2th, 1ti, 2ti, tit, phm, heb, jas, 1pe, 2pe, 1jo, 2jo, 3jo, jde, rev,
+
+#### Abreviaturas en español:
+
+gen, exo, lev, num, deu, jos, jeu, rut, 1sa, 2sa, 1re, 2re, 1cr, 2cr, esd, neh, est, job, sal, pro, ecl, can, isa, jer, lam, eze, dan, ose, joe, amo, abd, jon, miq, nah, hab, sof, hag, zac, mal, mat, mar, luc, jua, hch, rom, 1co, 2co, gal, efe, fil, col, 1te, 2te, 1ti, 2ti, tit, flm, heb, stg, 1pe, 2pe, 1ju, 2ju, 3ju, jud, apo, 
+
+#### observaciones
 
 Los nombres completos con mas de tres letras, NO las abreviaturas, pueden tener hasta 2 letras mal y la aplicación aproximara al nombre mas cercano.
 
