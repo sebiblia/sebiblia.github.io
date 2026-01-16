@@ -85,7 +85,7 @@ const tok_ops_scod_en = ["find", "add", biblehub_abbr, "roo", "mut", "ocu"];
 const ops_def_scod_es = ["ant", "sig", "raices", "mutuos", "ocurrencias", "encuentra", "adicionar", biblehub_abbr];
 const ops_def_scod_en = ["prv", "nxt", "roots", "mutual", "occurrences", "find", "add", biblehub_abbr];
 
-export const num2book_en = {
+const num2book_en = {
 	"-1":DEFAULT_BOOK_NAME,
 	"1":"genesis",
 	"2":"exodus",
@@ -471,7 +471,6 @@ const lang_utra = {
 	en: "uKJV",
 	es: "uRVA",
 };
-
 
 export function init_lang(nm_lang){
 	if(nm_lang == "es"){

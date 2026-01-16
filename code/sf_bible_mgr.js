@@ -1,6 +1,5 @@
 
 import { gvar, } from './sf_search_mgr.js';
-import { num2book_en, } from './sf_lang_mgr.js';
 import { diffSequence } from './sf_diff_sequence.js';
 import { distance, closest,  } from './sf_word_dist.js';
 import { add_dbg_log, } from './sf_biblang_mgr.js';
@@ -304,7 +303,7 @@ export async function get_text_analysis(bibobj, bl_obj){
 
 function fill_bibobj_tra_info(bibobj){
 	const book = bibobj.book_name;
-	const num_book = gvar.book2num_en[book];
+	const num_book = gvar.book2num[book];
 	let lpref = "HEB";
 	if(num_book > 39){
 		lpref = "GRE";
@@ -842,7 +841,7 @@ async function import_bible(bib_cod){
 export function get_citation(bibobj){
 	let vcit = "INVALID_CITATION";
 	if((bibobj.book != null) && (bibobj.chapter != null) && (bibobj.verse != null)){ 
-		vcit = get_loc_book_nam(bibobj.book) + "." + bibobj.chapter + ":" + bibobj.verse;
+		vcit = get_loc_book_abbr(bibobj.book) + "." + bibobj.chapter + ":" + bibobj.verse;
 		if((bibobj.last_verse != null) && (bibobj.last_verse != "")){ vcit = vcit + "-" + bibobj.last_verse; }
 	}
 	return vcit;
@@ -876,7 +875,7 @@ function calc_bibobj_vstxt(bibobj){
 
 export async function fill_bibobj_vtxt(bibobj){
 	if((bibobj.book != null) && (bibobj.chapter != null) && (bibobj.verse != null)){ 
-		let vtxt = await get_bible_verse(bibobj.bible, num2book_en[bibobj.book], bibobj.chapter, bibobj.verse);		
+		let vtxt = await get_bible_verse(bibobj.bible, gvar.num2book_en[bibobj.book], bibobj.chapter, bibobj.verse);		
 		bibobj.vtxt = vtxt;
 		calc_bibobj_vstxt(bibobj);
 	}	
@@ -945,19 +944,31 @@ function get_book_nam(book){
 		book_nam = book;
 	} else { // normal references
 		let num = Number(book);
-		book_nam =  num2book_en[num];
+		book_nam =  gvar.num2book_en[num];
 	}
 	return book_nam;
 }
 
+/*
 function get_loc_book_nam(book){
 	let num = -1;
 	if(isNaN(book)){ // bibrefs references
-		num = book2num_en[book];
+		num = gvar.book2num[book];
 	} else { // normal references
 		num = Number(book);
 	}
-	let book_nam =  gvar.glb_all_books[num];  
+	let book_nam =  gvar.num2book[num];  
+	return book_nam;
+}*/
+
+function get_loc_book_abbr(book){
+	let num = -1;
+	if(isNaN(book)){ // bibrefs references
+		num = gvar.book2num[book];
+	} else { // normal references
+		num = Number(book);
+	}
+	let book_nam =  gvar.num2abbr[num];  
 	return book_nam;
 }
 
