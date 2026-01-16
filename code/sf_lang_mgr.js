@@ -27,7 +27,7 @@ const msg_es = {
 	manual: `MANUAL (CTRL+A+M)`,
 	books: `LIBROS (CTRL+A+B)`,
 	variables: `VARIABLES (CTRL+A+V)`,
-	copy_link: `COPIAR ENLACE WEB (CTRL+A+L)`,
+	copy_link: `COPIAR ENLACE WEB`,
 	show_link: `MOSTRAR ENLACE WEB (CTRL+A+W)`,
 	save_history: `SALVAR HISTORIA (CTRL+A+S)`,
 	load_history: `RECUPERAR HISTORIA (CTRL+A+R)`,
@@ -56,7 +56,7 @@ const msg_en = {
 	manual: `MANUAL (CTRL+A+M)`,
 	books: `BOOKS (CTRL+A+B)`,
 	variables: `VARIABLES (CTRL+A+V)`,
-	copy_link: `COPY WEB LINK (CTRL+A+L)`,
+	copy_link: `COPY WEB LINK`,
 	show_link: `SHOW WEB LINK (CTRL+A+W)`,
 	save_history: `SAVE HISTORY (CTRL+A+S)`,
 	load_history: `RECOVER HISTORY (CTRL+A+R)`,
@@ -225,7 +225,7 @@ const num2book_es = {
 	"66":"apocalipsis",
 };
 
-export const num2abbr = {
+const num2abbr_en = {
 	"-1":INVALID_BOOK_ABBR,
 	"1":"gen",
 	"2":"exo",
@@ -293,6 +293,76 @@ export const num2abbr = {
 	"64":"3jo",
 	"65":"jde",
 	"66":"rev",
+};
+
+const num2abbr_es = {
+	"-1":INVALID_BOOK_ABBR,
+	"1":"gen",
+	"2":"exo",
+	"3":"lev",
+	"4":"num",
+	"5":"deu",
+	"6":"jos",
+	"7":"jeu",
+	"8":"rut",
+	"9":"1sa",
+	"10":"2sa",
+	"11":"1re",
+	"12":"2re",
+	"13":"1cr",
+	"14":"2cr",
+	"15":"esd",
+	"16":"neh",
+	"17":"est",
+	"18":"job",
+	"19":"sal",
+	"20":"pro",
+	"21":"ecl",
+	"22":"can",
+	"23":"isa",
+	"24":"jer",
+	"25":"lam",
+	"26":"eze",
+	"27":"dan",
+	"28":"ose",
+	"29":"joe",
+	"30":"amo",
+	"31":"abd",
+	"32":"jon",
+	"33":"miq",
+	"34":"nah",
+	"35":"hab",
+	"36":"sof",
+	"37":"hag",
+	"38":"zac",
+	"39":"mal",
+	"40":"mat",
+	"41":"mar",
+	"42":"luc",
+	"43":"jua",
+	"44":"hch",
+	"45":"rom",
+	"46":"1co",
+	"47":"2co",
+	"48":"gal",
+	"49":"efe",
+	"50":"fil",
+	"51":"col",
+	"52":"1te",
+	"53":"2te",
+	"54":"1ti",
+	"55":"2ti",
+	"56":"tit",
+	"57":"flm",
+	"58":"heb",
+	"59":"stg",
+	"60":"1pe",
+	"61":"2pe",
+	"62":"1ju",
+	"63":"2ju",
+	"64":"3ju",
+	"65":"jud",
+	"66":"apo",
 };
 
 const old_crit_txt_en = {
@@ -437,11 +507,13 @@ const inbook2num_es = {};
 const abbr2num = {};
 
 function init_common(){
-	fill_reversed_object(num2abbr, abbr2num);
+	fill_reversed_object(num2abbr_es, abbr2num);
+	fill_reversed_object(num2abbr_en, abbr2num);
 	fill_reversed_object(num2book_es, book2num_es);
 	fill_reversed_object(num2book_en, book2num_en);
 	fill_inbook2num(num2book_es, inbook2num_es);
-	gvar.num2abbr = num2abbr;
+	gvar.num2abbr_es = num2abbr_es;
+	gvar.num2abbr_en = num2abbr_en;
 	gvar.abbr2num = abbr2num;
 	gvar.num2book_es = num2book_es;
 	gvar.book2num_es = book2num_es;
@@ -460,6 +532,8 @@ function init_common(){
 
 function init_es(){
 	init_common();
+	gvar.num2abbr = num2abbr_es;
+	
 	gvar.lang = 'es';
 	gvar.book_names = num2book_es;
 	gvar.glb_all_books = num2book_es;
@@ -486,6 +560,8 @@ function init_es(){
 
 function init_en(){
 	init_common();
+	gvar.num2abbr = num2abbr_en;
+	
 	gvar.lang = 'en';
 	gvar.book_names = num2book_en;
 	gvar.glb_all_books = num2book_en;

@@ -1,7 +1,7 @@
 
 import * as filesys from "fs";
 
-import { init_biblang, eval_biblang_command, get_txt_matches, verse_disp, range_to_intervals, 
+import { init_biblang, eval_biblang_command, get_txt_matches, verse_disp,  
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, 
 } from './sf_biblang_mgr.js'
 import { gvar, fill_verses, } from './sf_search_mgr.js';

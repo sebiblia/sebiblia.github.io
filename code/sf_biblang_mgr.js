@@ -311,12 +311,13 @@ export function init_biblang(lng){
 }
 
 function init_book_names(){
-	const n1 = Object.keys(gvar.abbr2num);
-	const n2 = Object.keys(gvar.book2num_es);
-	const n3 = Object.keys(gvar.book2num_en);
-	const n4 = Object.keys(gvar.inbook2num_es);
+	const n1 = Object.values(gvar.num2abbr_es);
+	const n2 = Object.values(gvar.num2abbr_en);
+	const n3 = Object.keys(gvar.book2num_es);
+	const n4 = Object.keys(gvar.book2num_en);
+	const n5 = Object.keys(gvar.inbook2num_es);
 	
-	ALL_BOOK_NAMES  = [...new Set([...n1, ...n2, ...n3, ...n4])];
+	ALL_BOOK_NAMES  = [...new Set([...n1, ...n2, ...n3, ...n4, ...n5])];
 }
 
 export function cmp_verses(vv1, vv2){
@@ -1466,7 +1467,7 @@ async function calc_base_term(term, prev){
 	return calc_word(term, prev);
 }
 
-export function range_to_intervals(range){
+function range_to_intervals(range){
 	let rng = range;
 	if(rng == null){
 		return [];

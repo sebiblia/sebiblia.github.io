@@ -901,7 +901,7 @@ function pop_menu_handler(){
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.copy_link;
 	op.addEventListener('click', async () => {
-		await get_href();
+		get_href();
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -1056,7 +1056,7 @@ function toggle_variables_info(toggle_op){
 function toggle_books_info(toggle_op){
 	if(toggle_op == null){ toggle_op = "force"; }
 	const dv_expr = document.getElementById(id_expression);
-	let abbr = Object.keys(gvar.abbr2num);
+	let abbr = Object.values(gvar.num2abbr);
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
 		add_to_expr(val_sel);
 	}
@@ -1795,11 +1795,11 @@ function set_search_from_url(){
 	return conf;
 }
 
-async function get_href(){
+function get_href(){
 	try{
 		const hrf = get_search_href();
 		if(hrf != null){
-			await navigator.clipboard.writeText(hrf);
+			navigator.clipboard.writeText(hrf);
 		}
 	} catch(err){
 		console.error("Cannot get_href", err);
@@ -2505,7 +2505,7 @@ function save_file(nam, obj){
 }
 
 function init_shortcuts(){
-	window.addEventListener('keydown', async function(ev) {
+	window.addEventListener('keydown', function(ev) {
 		if(gvar.all_key_down == null){
 			gvar.all_key_down = {};
 		}
@@ -2534,7 +2534,8 @@ function init_shortcuts(){
 				scroll_to_top(document.getElementById(id_variables));
 			}
 			if(all_dwn['l']){
-				await get_href();
+				const hrf = get_search_href();
+				if((hrf != null) && (gvar.save_link_href == null)){ gvar.save_link_href = hrf; }
 			}
 			if(all_dwn['d']){
 				toggle_dbg_info();
@@ -2560,7 +2561,8 @@ function init_shortcuts(){
 		if(gvar.all_key_down == null){
 			gvar.all_key_down = {};
 		}
-		gvar.all_key_down[ev.key.toLowerCase()] = false;
+		const kk = ev.key.toLowerCase();
+		gvar.all_key_down[kk] = false;
 	});
 }
 
