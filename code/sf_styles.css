@@ -762,8 +762,9 @@ a.exam_ref:hover {
 
 .grid_chap_nav {
 	display: grid;
+	width: 100%;
 	gap: 1em 1em;
-	grid-template-columns: 10fr 7fr 2fr 10fr 1fr;
+	grid-template-columns: 10fr 2fr 10fr 2fr;
 	grid-template-rows: auto;
 	font-size:1em;
 	align-items: center;  
