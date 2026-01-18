@@ -540,6 +540,7 @@ function init_common(){
 	gvar.biblehub_abbr = biblehub_abbr;
 	gvar.bib_lang = bib_lang;
 	gvar.tra_class = tra_class;
+	gvar.tra_txt = tra_txt;
 	gvar.lang_occus = lang_occus;
 	gvar.lang_utra = lang_utra;
 	gvar.loc_bible = loc_bible_nams;
@@ -560,7 +561,6 @@ function init_es(){
 	gvar.new_crit_txt = new_crit_txt_es;
 	gvar.tgt_rx = tgt_rx_es;
 	gvar.out_txt = out_txt_es;
-	gvar.tra_txt = tra_txt;
 	
 	gvar.history_ops = history_ops_es;
 	
