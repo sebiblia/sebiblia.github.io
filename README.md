@@ -383,7 +383,24 @@ GREEK
 ω -> w 
 ```
 
-## Ciclo corto
+## Menus principal
+
+Es el menu que se muestra en la [interfaz básica](#interfaz-básica) en la parte superior derecha.
+
+1. HISTORIA DE COMMANDOS. Muestra todos los comandos ejecutados desde el último reinicio de historia (commando .rhis o seleccion por menu principal). Atajo en compu: "CTRL+A+H".
+2. LIBROS. Muestra las abbreviaturas de los libros en el idioma actual. Atajo en compu: "CTRL+A+B".
+2. COPIAR ENLACE WEB. Copy un enlace web que permite compartir los resultados actuales. Atajo en compu: "CTRL+A+L".
+3. EJEMPLOS. Muestra ejemplos de commandos que se pueden ejecutar con solo hacer 'click' sobre el ejemplo. Atajo en compu: "CTRL+A+E".
+4. MANUAL. Abre esta pagina web del manual. Atajo en compu: "CTRL+A+M".
+5. VARIABLES. Muestra las variables que el usuario a creado en la sesion actual. Atajo en compu: "CTRL+A+V".
+6. DEPURAR. Activa la ventana de depurado para observar posibles errores en la formula actual. Atajo en compu: "CTRL+A+D".
+7. MOSTRAR ENLACE WEB. Muestra el enlace web que permite compartir los resultados actuales. Atajo en compu: "CTRL+A+K".
+8. SALVAR RESULTADO. Guarda en "Descargas" del navegador el resultado actual en formato JSON. Atajo en compu: "CTRL+A+U".
+9. SALVAR HISTORIA. Guarda en "Descargas" del navegador la historia de commandos actual en formato JSON. Atajo en compu: "CTRL+A+S".
+10. RECUPERAR HISTORIA. Permite recuperar una historia guardada en formato JSON. Atajo en compu: "CTRL+A+R".
+11. INICIAR HISTORIA. Ejecuta el commando ".rhis". Atajo en compu: "CTRL+A+I".
+
+## Ejemplo de un ciclo corto de trabajo
 
 Un ciclo corto normal de trabajo es:
 
@@ -392,11 +409,66 @@ Un ciclo corto normal de trabajo es:
 3. Identificar el código Strong para la palabra. Para la palabra 'muerte' una opcion es el codigo Strong G2288.
 4. Buscar el codigo Strong. Ejemplo: [G2288](https://sebiblia.github.io/es/tool.html?biblang=G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
-## Ciclo mas complejos
+## Ejemplo de ciclos mas complejos de trabajo
 
 Ver los videos [subidos a YouTube](https://www.youtube.com/watch?v=ULr0gb-iHlI&list=PLB1e7xsVodJX0xQcz36gQybgPpjjQL-ED) en el canal de JoseLuisQuirogaBeltran en la lista SeBiblia.github.io
 
 OBSERVACION: Algunos videos estan con la vieja interfaz que tenia un boton adicional para alterar la presentación. Se simplificó la interfaz para el caso normal en que se hacen busquedas sobre OT o NT. La funcionalidad se mantiene de dos maneras. COn un boton adicional por versiculo, si se esta buscando sobre OT o NT palabras o expresiones regulares. Y por supuesto con [los comandos para modificacion de la presentacion](#presentación-de-versiculos-resultado-p).
+
+## Gramatica basica de lenguaje "biblang" aceptado.
+
+En sintaxis de JavaScript y usando el programa disponible en npm conocido como Expression Parser:
+
+	const biblang_def = {
+		INFIX_OPS: {
+			'%': (a, b) => calc_followed_by(a, b),
+			'&': (a, b) => calc_and(a, b),
+			'|': (a, b) => calc_or(a, b, '|'),
+			'!': (a, b) => calc_not(a, b),
+			';': (a, b) => calc_or(a, b, ';'),
+			'=': (a, b) => calc_asig(a, b),
+			'::': (a, b) => calc_range(a, b),
+			'..': (a, b) => calc_comment(a, b),
+		},
+		PREFIX_OPS: {},
+		PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['='], [';'], ['..']],
+		LITERAL_OPEN: '/',
+		LITERAL_CLOSE: '/',
+		GROUP_OPEN: '(',
+		GROUP_CLOSE: ')',
+		SEPARATORS: [';', '!', '|', '&', '%'],
+		WHITESPACE_CHARS: [' '],
+		SYMBOLS: ['(', ')', '/'],
+		AMBIGUOUS: {},
+		
+		termDelegate: function(term, prev) {
+			return calc_base_term(term, prev);
+		},
+		descriptions: [],
+	};
+
+	function calc_base_term(term, prev){
+		if(is_verse(term)){		// const regex_verse = /^\d+:\d+:\d+$/;
+			return calc_verse(term);
+		}
+		if(is_scode(term)){		// const regex_scode = /^[HGhg]\d+$/;
+			return calc_scode(term);
+		}
+		const rx = is_bib_regex(term)	// const regex_bibrx = /^\/([^/]*)\/$/;
+		if(rx){
+			return calc_bibregex(rx, prev);
+		}
+		const bvar = is_bib_var(term)	// const regex_bibvar = /^([.#+=><:\-]+)([\w\d:_.]+)$/;
+		if(bvar){
+			return calc_bibvar(bvar);
+		}
+		const cit = is_bib_citation(term);	// starts with: const regex_citation = /^([^.-]+)[.-](\d+)(.*)/;
+		if(cit){
+			return calc_citation(cit);
+		}
+		return calc_word(term, prev); // every thing else is taken as a word to search for.
+	}
+
 
 
 

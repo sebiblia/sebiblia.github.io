@@ -48,9 +48,10 @@ const id_forward_butt = "id_forward_butt";
 const id_select = "id_select";
 const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
-const id_examples = "id_examples";
 const id_books = "id_books";
+const id_examples = "id_examples";
 const id_variables = "id_variables";
+const id_show_link = "id_show_link";
 const id_save_history = "id_save_history";
 const id_load_history = "id_load_history";
 const id_reset_history = "id_reset_history";
@@ -864,6 +865,14 @@ function pop_menu_handler(){
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.copy_link;
+	op.addEventListener('click', async () => {
+		get_href();
+	});
+	dv_pop_men.appendChild(op);
+	
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.examples;
 	op.addEventListener('click', () => {
 		toggle_lang_examples(gvar.examples);
@@ -899,35 +908,26 @@ function pop_menu_handler(){
 	
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = gvar.all_msg.copy_link;
-	op.addEventListener('click', async () => {
-		get_href();
+	op.innerHTML = gvar.all_msg.show_link;
+	op.addEventListener('click', () => {
+		toggle_show_link();
+		scroll_to_top(document.getElementById(id_show_link));
+	});
+	dv_pop_men.appendChild(op);
+
+	op = document.createElement("div");
+	op.classList.add("exam", "is_block", "big_item");
+	op.innerHTML = gvar.all_msg.save_result;
+	op.addEventListener('click', () => {
+		save_result();
 	});
 	dv_pop_men.appendChild(op);
 	
-	/*
-	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = gvar.all_msg.show_link;
-	op.addEventListener('click', () => {
-		const dv_select = document.getElementById(id_select);
-		var dv_href = get_new_dv_under(dv_select, id_search_href, "force");
-		if(dv_href == null){
-			return;
-		}
-		dv_href.classList.add("search_info");
-		const hrf = get_search_href();
-		dv_href.innerHTML = hrf;
-	});
-	dv_pop_men.appendChild(op);
-	*/
-
 	op = document.createElement("div");
 	op.classList.add("exam", "is_block", "big_item");
 	op.innerHTML = gvar.all_msg.save_history;
 	op.addEventListener('click', () => {
-		toggle_save_history();
-		scroll_to_top(document.getElementById(id_save_history));
+		save_history();
 	});
 	dv_pop_men.appendChild(op);
 	
@@ -948,14 +948,6 @@ function pop_menu_handler(){
 	});
 	dv_pop_men.appendChild(op);
 
-	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
-	op.innerHTML = gvar.all_msg.save_result;
-	op.addEventListener('click', () => {
-		save_result();
-	});
-	dv_pop_men.appendChild(op);
-	
 	
 	if(WITH_AUX_BUTTON){
 		op = document.createElement("div");
@@ -2404,42 +2396,6 @@ function toggle_add_comment(pnt_idx_sel){
 	
 }
 
-function toggle_save_history(){
-	const dv_select = document.getElementById(id_select);
-	
-	let dv_sv_his = get_new_dv_under(dv_select, id_save_history);
-	if(dv_sv_his == null){
-		return null;
-	}
-	dv_sv_his.classList.add("grid_save_history");
-	dv_sv_his.innerHTML = "";
-	
-	const dv_lavel = document.createElement("div");
-	dv_lavel.innerHTML = gvar.all_msg.history_name;
-	dv_lavel.classList.add("is_block", "big_item", "in_center");
-	dv_sv_his.appendChild(dv_lavel);
-	
-	const inp_box = document.createElement("input");
-	inp_box.id = id_list_name;
-	inp_box.classList.add("width_95", "big_font");
-	inp_box.value = "SEBIBLIA_HISTORIA.json";
-	inp_box.type = "text";
-	dv_sv_his.appendChild(inp_box);
-
-	const dv_save = document.createElement("div");
-	dv_save.innerHTML = gvar.all_msg.save_button;
-	dv_save.classList.add("is_block", "big_item", "is_button");
-	dv_sv_his.appendChild(dv_save);
-	
-	dv_save.addEventListener('click', function() {
-		const nm_fl = inp_box.value;
-		if(nm_fl != ""){
-			save_file(nm_fl, gvar.biblang.history);
-		}
-		dv_sv_his.remove();
-	});
-}
-
 function toggle_load_history(){
 	const dv_select = document.getElementById(id_select);
 	
@@ -2518,6 +2474,14 @@ function init_shortcuts(){
 				toggle_history_info();
 				scroll_to_top(document.getElementById(id_history));
 			}
+			if(all_dwn['b']){
+				toggle_books_info();
+				scroll_to_top(document.getElementById(id_books));
+			}
+			if(all_dwn['l']){
+				const hrf = get_search_href();
+				if((hrf != null) && (gvar.save_link_href == null)){ gvar.save_link_href = hrf; }
+			}
 			if(all_dwn['e']){
 				toggle_lang_examples(gvar.examples);
 				scroll_to_top(document.getElementById(id_examples));
@@ -2525,25 +2489,23 @@ function init_shortcuts(){
 			if(all_dwn['m']){
 				open_manual();
 			}
-			if(all_dwn['b']){
-				toggle_books_info();
-				scroll_to_top(document.getElementById(id_books));
-			}
 			if(all_dwn['v']){
 				toggle_variables_info();
 				scroll_to_top(document.getElementById(id_variables));
-			}
-			if(all_dwn['l']){
-				const hrf = get_search_href();
-				if((hrf != null) && (gvar.save_link_href == null)){ gvar.save_link_href = hrf; }
 			}
 			if(all_dwn['d']){
 				toggle_dbg_info();
 				scroll_to_top(document.getElementById(id_dbg_data));
 			}
+			if(all_dwn['k']){
+				toggle_show_link();
+				scroll_to_top(document.getElementById(id_show_link));
+			}
+			if(all_dwn['u']){
+				save_result();
+			}
 			if(all_dwn['s']){
-				toggle_save_history();
-				scroll_to_top(document.getElementById(id_save_history));
+				save_history();
 			}
 			if(all_dwn['r']){
 				toggle_load_history();
@@ -2551,9 +2513,6 @@ function init_shortcuts(){
 			}
 			if(all_dwn['i']){
 				init_history();
-			}
-			if(all_dwn['u']){
-				save_result();
 			}
 		}
 	});
@@ -2567,12 +2526,37 @@ function init_shortcuts(){
 }
 
 function save_result(){
-	if(gvar.biblang.all_user_vars == null){
-		return;
-	}
 	const obj = gvar.last_all_bibobj;
 	if(obj != null){
-		save_file("sebiblia_results.json", obj);
+		save_file(gvar.all_msg.results_fnam, obj);
 	}
 }
+
+function save_history(){
+	const obj = gvar.biblang.history;
+	if(obj != null){
+		save_file(gvar.all_msg.history_fnam, obj);
+	}
+}
+
+function toggle_show_link(){
+	const dv_select = document.getElementById(id_select);
+	var dv_href = get_new_dv_under(dv_select, id_show_link, "force");
+	if(dv_href == null){
+		return;
+	}
+	dv_href.classList.add("search_info");
+
+	dv_href.innerHTML = "";
+	
+	const hrf = get_search_href();
+	
+	const inp_box = document.createElement("input");
+	inp_box.classList.add("full_width");
+	inp_box.value = hrf;
+	inp_box.type = "text";
+	dv_href.appendChild(inp_box);
+	
+}
+
 
