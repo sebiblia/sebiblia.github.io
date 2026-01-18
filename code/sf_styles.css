@@ -201,7 +201,7 @@ body {
 }
 
 .end_of_content {
-	height: 50vh;
+	height: 10vh;
 }
 
 .exam {
@@ -753,6 +753,37 @@ a.exam_ref:hover {
 
 .contain_scroll {
 	overscroll-behavior: contain;
+}
+
+.chap_nav {
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.grid_chap_nav {
+	display: grid;
+	gap: 1em 1em;
+	grid-template-columns: 10fr 7fr 2fr 10fr 1fr;
+	grid-template-rows: auto;
+	font-size:1em;
+	align-items: center;  
+	align-content: center;
+}
+
+.end_of_verses {
+	height: 5em;
+}
+
+.copyright_item {
+	font-size: 0.3em;
+	overflow-y: auto;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: auto;
+	border: 0.2vw solid #550000;
+	background-color: #000000;
 }
 
 /*

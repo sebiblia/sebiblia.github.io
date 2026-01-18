@@ -1,4 +1,6 @@
 
+import { bib_chapter_sizes, } from './sf_bib_chapter_sizes.js';
+
 import { get_new_dv_under, scroll_to_top, toggle_select_option, get_opt_id, 
 } from './sf_select_option_mgr.js';
 
@@ -28,6 +30,7 @@ const WITH_AUX_BUTTON = false;
 
 export let gvar = {};
 
+const MIN_VERSES_FOR_IDX_NAV = 300;
 
 const GET_var_expr = "biblang";
 const GET_var_conf = "conf";
@@ -675,6 +678,59 @@ function fill_search_info(bl_obj){
 		dv_itm.classList.add("search_item");
 		dv_itm.innerHTML = `${gvar.all_msg.tot_versees}: ${tot}`;
 		dv_igrid.appendChild(dv_itm);
+		
+		const dv_cn_chp_nav = document.createElement("div");
+		dv_cn_chp_nav.classList.add("chap_nav");
+		dv_igrid.appendChild(dv_cn_chp_nav);
+
+		const dv_chp_nav = document.createElement("div");
+		dv_chp_nav.classList.add("grid_chap_nav");
+		dv_cn_chp_nav.appendChild(dv_chp_nav);
+		
+		const dv_prv_chp = document.createElement("div");
+		dv_prv_chp.classList.add("is_button");
+		dv_prv_chp.innerHTML = gvar.all_msg.prev_chapter;
+		dv_chp_nav.appendChild(dv_prv_chp);
+		dv_prv_chp.addEventListener('click', () => {
+			go_prev_chapter();
+		});
+		
+		if(all_vrs.length > MIN_VERSES_FOR_IDX_NAV){
+			const dv_num_vrs = document.createElement("input");
+			dv_num_vrs.value = 1;
+			dv_num_vrs.type = "number";
+			dv_chp_nav.appendChild(dv_num_vrs);
+			dv_num_vrs.addEventListener('keydown', async function(ev) {
+				if(ev.key === "Enter"){
+					ev.stopPropagation();
+					go_verse(dv_num_vrs.value);
+				}
+			});
+
+			const dv_go = document.createElement("div");
+			dv_go.classList.add("is_button");
+			dv_go.innerHTML = gvar.all_msg.got_to_num_verse;
+			dv_chp_nav.appendChild(dv_go);
+			dv_go.addEventListener('click', () => {
+				go_verse(dv_num_vrs.value);
+			});
+		} else {
+			let dv_empty = document.createElement("div");
+			dv_empty.innerHTML = "";
+			dv_chp_nav.appendChild(dv_empty);
+			
+			dv_empty = document.createElement("div");
+			dv_empty.innerHTML = "";
+			dv_chp_nav.appendChild(dv_empty);
+		}
+
+		const dv_nxt_chp = document.createElement("div");
+		dv_nxt_chp.classList.add("is_button");
+		dv_nxt_chp.innerHTML = gvar.all_msg.next_chapter;
+		dv_chp_nav.appendChild(dv_nxt_chp);
+		dv_nxt_chp.addEventListener('click', () => {
+			go_next_chapter();
+		});
 	}
 	
 }
@@ -799,6 +855,14 @@ export async function fill_verses(bl_obj){
 			txta_bobj = bibobj;
 		}		
 	}
+	
+	if(! is_node_call){
+		dv_verses.all_bibobj = all_bibobj;
+	}
+
+	const dv_end_vrs = document.createElement("div");
+	dv_end_vrs.classList.add("end_of_verses");
+	dv_verses.appendChild(dv_end_vrs);
 	
 	await fill_sdefs(bl_obj);
 	await open_txta_verse(txta_bobj, bl_obj);
@@ -2558,5 +2622,96 @@ function toggle_show_link(){
 	dv_href.appendChild(inp_box);
 	
 }
+
+function get_curr_chapter(){
+}
+
+async function go_prev_chapter(){
+	const dv_verses = document.getElementById("id_verses");
+	const all_bibobj = dv_verses.all_bibobj;
+	if(all_bibobj == null){
+		console.error("all_bibobj == null");
+		return;
+	}
+	if(all_bibobj.length == 0){
+		console.error("all_bibobj.length == null");
+		return;
+	}
+	const bibobj = all_bibobj[0];
+	let boo = bibobj.book;
+	let chp = bibobj.chapter - 1;
+	if(chp < 1){
+		if(boo > 1){
+			boo--;
+			const all_chp = Object.keys(bib_chapter_sizes[boo]);
+			chp = all_chp[all_chp.length - 1];
+		} else {
+			chp = bibobj.chapter;
+		}
+	}
+	let frm = gvar.num2abbr[boo] + "." + chp;
+	
+	const dv_expr = document.getElementById(id_expression);
+	dv_expr.value = frm;
+	await do_select();
+}
+
+async function go_next_chapter(){
+	const dv_verses = document.getElementById("id_verses");
+	const all_bibobj = dv_verses.all_bibobj;
+	if(all_bibobj == null){
+		console.error("all_bibobj == null");
+		return;
+	}
+	if(all_bibobj.length == 0){
+		console.error("all_bibobj.length == null");
+		return;
+	}
+	const bibobj = all_bibobj[all_bibobj.length - 1];
+	let boo = bibobj.book;
+	let chp = bibobj.chapter + 1;
+	const all_chp = Object.keys(bib_chapter_sizes[boo]);
+	const num_chp = all_chp[all_chp.length - 1];
+	if(chp > num_chp){
+		if(boo < 66){
+			boo++;
+			chp = 1;
+		} else {
+			chp = bibobj.chapter;
+		}
+	}
+	let frm = gvar.num2abbr[boo] + "." + chp;
+	
+	const dv_expr = document.getElementById(id_expression);
+	dv_expr.value = frm;
+	await do_select();
+}
+
+function go_verse(idx){
+	const dv_verses = document.getElementById("id_verses");
+	const all_bibobj = dv_verses.all_bibobj;
+	if(all_bibobj == null){
+		console.error("all_bibobj == null");
+		return;
+	}
+	if(all_bibobj.length == 0){
+		console.error("all_bibobj.length == null");
+		return;
+	}
+	if((all_bibobj.length - 1) < idx){
+		console.error("(all_bibobj.length - 1) < idx");
+		return;
+	}
+	const bibobj = all_bibobj[idx];
+	const dv_ver = document.getElementById(bibobj.id_dv_ver);
+	scroll_to_top(dv_ver, dv_verses);
+	scroll_to_top(dv_verses);
+}
+
+
+/*
+id_author_info
+*/
+
 
 

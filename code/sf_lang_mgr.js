@@ -51,6 +51,9 @@ const msg_es = {
 	no_refs: "No tiene refs",
 	results_fnam: "SeBiblia_resultados.json",
 	history_fnam: "SeBiblia_historia.json",
+	got_to_num_verse: "ir",
+	next_chapter: "SIG. CAPITULO",
+	prev_chapter: "ANT. CAPITULO",
 };
 
 const msg_en = {
@@ -82,6 +85,9 @@ const msg_en = {
 	no_refs: "It has no refs",
 	results_fnam: "SeBiblia_results.json",
 	history_fnam: "SeBiblia_history.json",
+	got_to_num_verse: "go",
+	next_chapter: "NEXT CHAPTER",
+	prev_chapter: "PREV CHAPTER",
 };
 
 const biblehub_abbr = "bh";
