@@ -389,6 +389,14 @@ async function calc_text_analysis(bibobj, bl_obj){
 	
 	const asc = bibobj.cri_asc;
 	const sco = bibobj.cri_sco;
+	if(asc == null){
+		console.error("asc == null. " + bibobj.vcit);
+		return;
+	}
+	if(sco == null){
+		console.error("sco == null. " + bibobj.vcit);
+		return;
+	}
 
 	const fullana = {
 		tasc: asc,
@@ -870,7 +878,7 @@ function calc_bibobj_vstxt(bibobj){
 		let vstxt = calc_vstxt(vtxt);
 		bibobj.vstxt = vstxt;
 		if(DEBUG_VSTXT){
-			console.log(`fill_bibobj_vtxt. vstxt=${vstxt}`);
+			console.log(`calc_bibobj_vstxt. vstxt=${vstxt}`);
 		}
 	}
 }

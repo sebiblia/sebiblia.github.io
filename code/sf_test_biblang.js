@@ -4,14 +4,41 @@ import * as filesys from "fs";
 import { init_biblang, eval_biblang_command, get_txt_matches, verse_disp,  
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, 
 } from './sf_biblang_mgr.js'
-import { gvar, fill_verses, } from './sf_search_mgr.js';
-import { init_lang, num2book_en, } from './sf_lang_mgr.js';
+import { gvar, fill_verses, verse_cod2obj, fill_strong_parts, } from './sf_search_mgr.js';
+import { init_lang, } from './sf_lang_mgr.js';
 import { diffSequence } from './sf_diff_sequence.js';
 import { distance, closest,  } from './sf_word_dist.js';
 
 import { get_bible_verse, find_ana, get_text_analysis, calc_prev_scode, calc_next_scode, 
-	get_next_scode, get_prev_scode, 
+	get_next_scode, get_prev_scode, fill_bibobj_vtxt, fill_bibobj_cit_and_ref, fill_cri_asc, 
 } from './sf_bible_mgr.js';
+
+
+/*
+
+	WEB : bibles_dir + "WEB_BIB.js",
+	KJV : bibles_dir + "KJV_BIB.js",
+	KJVs : bibles_dir + "KJVs_BIB.js",
+	SBLM : bibles_dir + "SBLM_BIB.js",
+	SBLMi : bibles_dir + "SBLMi_BIB.js",
+	RVA : bibles_dir + "RVA_BIB.js",
+	RVAi : bibles_dir + "RVAi_BIB.js",
+	RVAs : bibles_dir + "RVAs_BIB.js",
+	RVAsi : bibles_dir + "RVAsi_BIB.js",
+	
+	WLC_S : strongs_dir + "WLC_SBIB.js",
+	ALE_S : strongs_dir + "ALE_SBIB.js",
+	TKH_S : strongs_dir + "TKH_SBIB.js",
+	LXX_S : strongs_dir + "LXX_SBIB.js",
+	
+	NES_S : strongs_dir + "NES_SBIB.js",
+	BYZ_S : strongs_dir + "BYZ_SBIB.js",
+	TR_S : strongs_dir + "TR_SBIB.js",
+	WH_S : strongs_dir + "WH_SBIB.js",
+*/
+
+
+const DEBUG_CK_TXTA = false;
 
 
 const OT_bibs = {
@@ -248,13 +275,233 @@ function test_splice(){
 	console.log(all_chap);
 }
 
+async function fill_dat_bibobj(bibobj){
+	if(bibobj.book == null){ console.error("bibobj.book == null"); return; }
+	if(bibobj.chapter == null){ console.error("bibobj.chapter == null"); return; }
+	if(bibobj.verse == null){ console.error("bibobj.verse == null"); return; }
+	if(bibobj.cri_txt == null){ console.error("bibobj.cri_txt == null"); return; }
+	if(bibobj.bible == null){ console.error("bibobj.bible == null"); return; }
+	
+	fill_bibobj_cit_and_ref(bibobj);
+	await fill_bibobj_vtxt(bibobj);
+	await fill_cri_asc(bibobj);
+}
+
+function get_pct_strong(bibobj1, bibobj2){
+	const txt_bib = bibobj1.vtxt;
+	const txt_stg = bibobj2.vtxt;
+	if(txt_bib == null){
+		console.error("txt_bib == null");
+		console.log(bibobj1);
+		return;
+	}
+	if(txt_stg == null){
+		console.error("txt_stg == null");
+		console.log(bibobj2);
+		return;
+	}
+	/*
+	console.log(txt_bib);
+	console.log(txt_stg);
+	*/
+	
+	const all_stg = txt_stg.split(" ");
+	let num_find = 0;
+	let ii = 0;
+	for(ii = 0; ii < all_stg.length; ii++){
+		const stg = all_stg[ii];
+		const rxstr = `${stg}`;
+		const rxo = new RegExp(rxstr);
+		const mm = txt_bib.match(rxo);
+		if(mm){
+			num_find++;
+		}
+	}
+	//console.log(`${num_find}/${all_stg.length}`);
+	
+	const resp = (num_find / all_stg.length);
+	return resp;
+}
+
+async function get_pct_strong_txta(bibobj, bl_obj){
+	fill_strong_parts(bibobj);
+	
+	const txt_bib = bibobj.vtxt;
+	const full_ana = await get_text_analysis(bibobj, bl_obj);
+	
+	if(full_ana == null){
+		console.error("full_ana == null");
+		return;
+	}
+	const toks = full_ana.ana.map((itm) => itm.sco).filter(ee => ((ee != null) && (ee != "HUNK") && (ee != "GUNK")));
+	const all_scod = toks.join(" ");
+	bibobj.all_scod = all_scod;
+	if(DEBUG_CK_TXTA){
+		console.log(toks.length);
+		console.log(txt_bib);
+		console.log(all_scod);
+	}
+	
+
+	const rxstr1 = `\[(G|H)[0-9]*\]`;
+	const rxo1 = new RegExp(rxstr1, "g");
+	const toks2 = txt_bib.match(rxo1);
+	
+	if(toks2 == null){
+		console.error("toks2 == null. " + bibobj.vcit + "=" + txt_bib);
+		return;
+	}
+	
+	if(DEBUG_CK_TXTA){
+		console.log(toks);
+		console.log(toks2);
+	}
+	
+	let num_find2 = 0;
+	let ii = 0;
+	for(ii = 0; ii < toks2.length; ii++){
+		const tok = toks2[ii];
+		const stg = tok.substring(1, tok.length - 1);
+		if(toks.includes(stg)){
+			num_find2++;
+		} else {
+			if(DEBUG_CK_TXTA){
+				console.log("BAD=" + stg);
+			}
+		}
+	}
+	
+	let num_find1 = 0;
+	/*
+	for(ii = 0; ii < toks.length; ii++){		
+		const stg = toks[ii];
+		const rxstr = `\\[${stg}\\]`;
+		const rxo = new RegExp(rxstr);
+		const mm = txt_bib.match(rxo);
+		if(mm){
+			if(DEBUG_CK_TXTA){
+				console.log(rxstr);
+			}
+			
+			num_find1++;
+		}
+	}
+	*/
+
+	const resp1 = (num_find1 / toks.length);
+	const resp2 = (num_find2 / toks2.length);
+	if(DEBUG_CK_TXTA){
+		console.log(num_find1);
+		console.log(toks.length);
+		console.log(resp1);
+		console.log("---");
+		console.log(num_find2);
+		console.log(toks2.length);
+		console.log(resp2);
+	}
+	return resp2;
+}
+
+async function main_test_verses(){
+	if (process.argv.length < 3) {
+		console.log('Usage: node ' + process.argv[1] + ' <command>');
+		process.exit(1);
+	}
+	
+	const command = process.argv[2];
+	let bib_1 = "RVAs";
+	if (process.argv.length > 3) {
+		bib_1 = process.argv[3];
+	}
+	
+	gvar.dbg_biblang = false;
+
+	init_lang('es');
+	init_biblang('es');
+	
+	const bl_obj = await eval_biblang_command(command);
+	const all_vrs = bl_obj.lverses;
+	if(all_vrs == null){
+		console.error("all_vrs == null");
+		return;
+	}
+
+	const ot_s = "WLC_S";
+	const nt_s = "BYZ_S";
+	
+	const ck_con_bad = 3;
+	let num_con_bad = 0;
+	
+	let num_bad = 0;
+	let sum_bad = 0;
+	
+	let ii = 0;
+	for(ii = 0; ii < all_vrs.length; ii++){
+		const cod_vr = all_vrs[ii];
+		
+		const bibobj1 = verse_cod2obj(cod_vr);
+		bibobj1.bible = bib_1;
+		
+		await fill_dat_bibobj(bibobj1);
+		
+		const pct = await get_pct_strong_txta(bibobj1, bl_obj);
+		
+		/*
+		const bibobj2 = JSON.parse(JSON.stringify(bibobj1));		
+		bibobj2.bible = ot_s;
+		
+		if(bibobj2.book > 39){			
+			bibobj2.bible = nt_s;
+		}
+		
+		await fill_dat_bibobj(bibobj2);
+		
+		const pct = get_pct_strong(bibobj1, bibobj2);
+		*/
+		
+		const bad = (pct < 0.8);
+		if(bad){
+			num_con_bad++;
+		} else {
+			num_con_bad = 0;
+		}
+			
+		const too_bad = (num_con_bad >= ck_con_bad);
+		if(too_bad){
+			num_con_bad = 0;
+			
+			sum_bad += pct;
+			num_bad++;
+			console.log(bibobj1.vcit + " PCT=" + pct);
+			//console.log(bibobj1.vtxt);
+			//console.log(bibobj1.all_scod);
+			//	console.log(bibobj2.vtxt);
+			//console.log("========================================================");
+		}
+	}
+	
+	console.log("TOTAL_BAD=" + num_bad);
+	if(num_bad > 0){
+		const bad_avg = sum_bad / num_bad;
+		console.log("AVERAGE_BAD=" + bad_avg);
+	}
+	console.log(bib_1);
+	console.log(ot_s);
+	console.log(nt_s);
+	
+}
+
+
 //test_splice();
 //test_reduce();
-main_biblang_command();
 //main_diff_bib();
 //main_distance();
 //main_test_scode_next_and_prev();
 //main_test_matches();
 //main_test_inc_dec();
+main_test_verses();
 
+
+
+//main_biblang_command();
 

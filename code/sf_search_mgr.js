@@ -512,7 +512,7 @@ function get_conversion_func(){
 	}
 }
 
-function verse_cod2obj(vrs_cod){
+export function verse_cod2obj(vrs_cod){
 	const cod_ver = vrs_cod.split(':');
 	const id_ver = cod_ver.join('_');
 	const bibobj = {};
@@ -1947,7 +1947,7 @@ function turn_on_scod(bibobj, tok){
 	dv_txt.innerHTML = htm.txt;
 }
 
-function fill_strong_parts(bibobj){
+export function fill_strong_parts(bibobj){
 	if(bibobj.dict != "SBIB"){
 		bibobj.sparts = null;
 		return;
