@@ -413,11 +413,17 @@ async function main_test_verses(){
 	if (process.argv.length > 3) {
 		bib_1 = process.argv[3];
 	}
-	
-	gvar.dbg_biblang = false;
+		
+	gvar.dbg_biblang = false;	
 
 	init_lang('es');
 	init_biblang('es');
+	
+	gvar.biblang.curr_OT = "TKH";
+	gvar.biblang.curr_NT = "WH";
+	
+	const ot_s = gvar.biblang.curr_OT + "_S";
+	const nt_s = gvar.biblang.curr_NT + "_S";
 	
 	const bl_obj = await eval_biblang_command(command);
 	const all_vrs = bl_obj.lverses;
@@ -426,9 +432,6 @@ async function main_test_verses(){
 		return;
 	}
 
-	const ot_s = "WLC_S";
-	const nt_s = "BYZ_S";
-	
 	const ck_con_bad = 3;
 	let num_con_bad = 0;
 	
