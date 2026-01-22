@@ -6,11 +6,11 @@ La aplicación [SeBiblia.github.io](https://SeBiblia.github.io) permite el **EST
 
 Las condiciones de busqueda son muy flexibles y configurables. Esto se logra mediante un pequeño lenguaje computacional sobre conjuntos de versiculos que se puede **APRENDER sobre la MARCHA** siguiendo los **EJEMPLOS** de busqueda. Y la navegación se logra con varios **menus desplegables** que se activan haciendo click sobre los textos de respuesta y que abren diferentes opciones de busquedas automaticas con solo hacer un click.
 
-## Interfaz básica.
+## Interfaz básica
 
 ![Interfaz inicial](https://SeBiblia.github.io/img/ui1.jpg)
 
-## Condición de busqueda.
+## Condición de busqueda
 
 La condicion de busqueda es en realidad un pequeño lenguaje computacional sobre conjuntos de versiculos pero los criterios básicos de seleccion de conjuntos de versiculos son los siguientes:
 

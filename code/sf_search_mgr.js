@@ -497,10 +497,14 @@ function init_nav_history(){
 	if(gvar.biblang.history == null){
 		return;
 	}
-	const his = gvar.biblang.history;
-	let ii = 0;
-	for(; ii < his.length; ii++){
-		history.pushState(ii, '');
+	try{
+		const his = gvar.biblang.history;
+		let ii = 0;
+		for(; ii < his.length; ii++){
+			history.pushState(ii, '');
+		}
+	} catch(err){
+		console.error(err);
 	}
 }
 
