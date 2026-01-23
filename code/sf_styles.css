@@ -800,7 +800,8 @@ a.exam_ref:hover {
 
 
 @media print {
-	html div {
+	
+	html, body, .adapt_menu_bar, .grid_tool, .tool_content, .search_area_grid, .is_button, .search_area_button, .end_of_verses, .end_of_content, .begin_of_content, .aux_item, .download_bar, .copyright_item, .grid_menus {
 		height: auto !important;
 		width: auto !important;
 		overflow: visible !important;
@@ -814,13 +815,17 @@ a.exam_ref:hover {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		scroll-margin-top: 0 !important;
+		scroll-margin-top: 0px !important;
+	}
+
+	.is_button, .search_area_button, .end_of_verses, .begin_of_content, .end_of_content, .aux_item, .download_bar, .copyright_item, .grid_menus,  
+	.adapt_menu_pop {
+		display: none !important;
 	}
 	
-	/*
-	.is_button, .search_area_button, .end_of_verses, .end_of_content, .adapt_menu_bar, .adapt_item, .adapt_menu, .adapt_menu_pop, .begin_of_content, .aux_item, .download_bar, .copyright_item {
+	#id_pop_opt_sec {
 		display: none !important;
-	}*/
+	}
 
 	.results_item {
 		height: auto !important;
@@ -835,23 +840,16 @@ a.exam_ref:hover {
 		float: none !important;
 	}
 
+	/*
+
 	.results_item div {
-		height: auto !important;
-		width: auto !important;
-		overflow: visible !important;
-		overflow-x: visible !important;
-		overflow-y: visible !important;
-		display: block !important;
-		position: relative !important;
-		max-height: none !important;
-		min-height: none !important;
-		float: none !important;
+		page-break-inside: avoid;
+		break-inside: avoid;
 	}
 
-	/*
-	.results_item > div {
+	.results_item div {
 		height: auto !important;
-		display: block !important;
+		//display: block !important;
 		page-break-inside: avoid;
 		break-inside: avoid;
 		position: relative !important;
@@ -926,6 +924,8 @@ align-content: center center;
 	border: 0.2vw solid #ffff00;
 	background-color: #0b142c;
 }
+
+	.is_button, .search_area_button, .end_of_verses, .end_of_content, .adapt_menu_bar, .adapt_item, .adapt_menu, .adapt_menu_pop, .begin_of_content, .aux_item, .download_bar, .copyright_item {
 
 	html, body, .grid_tool, .tool_content, .search_area_grid, .is_button, .search_area_button, .end_of_verses, .end_of_content, .adapt_menu_bar, .adapt_item, .adapt_menu, .adapt_menu_pop, .begin_of_content, .aux_item, .download_bar, .copyright_item {
 		height: auto !important;
