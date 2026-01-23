@@ -223,7 +223,7 @@ body {
 }
 
 a.exam_ref {
-	color: yellow;
+	color: #ffff00;
 }
 
 a.exam_ref:hover {
@@ -240,7 +240,7 @@ a.exam_ref:hover {
 
 .exam a {
 	background-color: #254795;
-	color: yellow;
+	color: #ffff00;
 }
 
 .exam a:hover {
@@ -451,7 +451,6 @@ a.exam_ref:hover {
 .results_item {
 	max-height: 100vh;
 	overflow-y: scroll;
-	scrollbar-color: #ff0000;
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 	grid-column-start: 1;
@@ -569,30 +568,28 @@ a.exam_ref:hover {
 
 .is_match_ot {
 	background-color: #703800;
+	border: 2px solid #703800;
 }
 
 .is_match_nt {
 	background-color: #55007f;
+	border: 2px solid #55007f;
 }
 
 .is_uKJV_tra {
-	color: #ffff00;
-	background-color: #0000e3;
+	background-color: #767600;
 }
 
 .is_uRVA_tra {
-	color: #ffff00;
-	background-color: #0000bf;
+	background-color: #767600;
 }
 
 .is_bh_en_tra {
-	color: #ffff00;
-	background-color: #0000b8;
+	background-color: #754e75;
 }
 
 .is_bh_en2es_tra {
-	color: #ffff00;
-	background-color: #00009e;
+	background-color: #754e75;
 }
 
 .is_stg_en_tra {
@@ -618,10 +615,11 @@ a.exam_ref:hover {
 
 .is_verse_cit {
 	display: inline-block;
-	margin: 0.5vw;
+	margin-left: 2px;
+	padding: 0px 2px 0px 2px;
 	font-weight: bold;
-	background-color: #254795;
-	color: yellow;
+	border-radius: 0.3em;
+	border: 2px solid #ffff00;
 }
 
 .is_verse_cit:hover {
@@ -646,6 +644,7 @@ a.exam_ref:hover {
 }
 
 .search_info {
+	display: block;
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 	padding: 0.5em 0.2em 0.5em 0.2em;
@@ -677,7 +676,6 @@ a.exam_ref:hover {
 	display: grid;
 	margin-left: 1%;
 	margin-right: 1%;
-	width: 100%;
 	grid-template-columns: 30fr;
 	grid-template-rows: auto;
 	font-size:1em;
@@ -758,6 +756,7 @@ a.exam_ref:hover {
 }
 
 .chap_nav {
+	margin-top: 0.2em;
 	grid-column-start: 1;
 	grid-column-end: -1;
 }
@@ -766,11 +765,21 @@ a.exam_ref:hover {
 	display: grid;
 	width: 100%;
 	gap: 1em 1em;
-	grid-template-columns: 1fr 20fr 1fr 0.1fr;
+	grid-template-columns: 1fr 20fr 1fr 10fr 1fr;
 	grid-template-rows: auto;
 	font-size: 0.7em;
 	align-items: center;  
 	align-content: center;
+}
+
+.prev_chap {
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.next_chap {
+	grid-column-start: -1;
+	grid-column-end: -1;
 }
 
 .end_of_verses {
@@ -789,8 +798,71 @@ a.exam_ref:hover {
 	background-color: #000000;
 }
 
+
+@media print {
+	html div {
+		height: auto !important;
+		width: auto !important;
+		overflow: visible !important;
+		overflow-x: visible !important;
+		overflow-y: visible !important;
+		display: block !important;
+		position: relative !important;
+		max-height: none !important;
+		min-height: none !important;
+		float: none !important;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		scroll-margin-top: 0 !important;
+	}
+	
+	/*
+	.is_button, .search_area_button, .end_of_verses, .end_of_content, .adapt_menu_bar, .adapt_item, .adapt_menu, .adapt_menu_pop, .begin_of_content, .aux_item, .download_bar, .copyright_item {
+		display: none !important;
+	}*/
+
+	.results_item {
+		height: auto !important;
+		width: auto !important;
+		overflow: visible !important;
+		overflow-x: visible !important;
+		overflow-y: visible !important;
+		display: block !important;
+		position: relative !important;
+		max-height: none !important;
+		min-height: none !important;
+		float: none !important;
+	}
+
+	.results_item div {
+		height: auto !important;
+		width: auto !important;
+		overflow: visible !important;
+		overflow-x: visible !important;
+		overflow-y: visible !important;
+		display: block !important;
+		position: relative !important;
+		max-height: none !important;
+		min-height: none !important;
+		float: none !important;
+	}
+
+	/*
+	.results_item > div {
+		height: auto !important;
+		display: block !important;
+		page-break-inside: avoid;
+		break-inside: avoid;
+		position: relative !important;
+	}*/
+}
+
+
 /*
-	align-content: center center;
+
+
+align-content: center center;
 	align-items: stretch;
 	aspect-ratio: 1;
 	aspect-ratio: 1;
@@ -824,8 +896,46 @@ a.exam_ref:hover {
 	padding-left: 1vw;
 	position: relative;	
 
+	scrollbar-color: #ff0000;
+	
 @media (min-width: 600px) and (orientation:landscape) {
 }
 
+.results_item {
+	max-height: 100vh;
+	overflow-y: scroll;
+	scrollbar-color: #ff0000;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: auto;
+	border: 0.2vw solid #ffff00;
+	background-color: #0b142c;
+}
+
+.results_item {
+	display:block;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size:1em;
+
+	max-height: 100vh;
+	overflow-y: scroll;
+	border: 0.2vw solid #ffff00;
+	background-color: #0b142c;
+}
+
+	html, body, .grid_tool, .tool_content, .search_area_grid, .is_button, .search_area_button, .end_of_verses, .end_of_content, .adapt_menu_bar, .adapt_item, .adapt_menu, .adapt_menu_pop, .begin_of_content, .aux_item, .download_bar, .copyright_item {
+		height: auto !important;
+		overflow: visible !important;
+		overflow-x: visible !important;
+		overflow-y: visible !important;
+		display: block !important;
+		position: relative !important;
+		max-height: none !important;
+		min-height: none !important;
+	}
 
 */
