@@ -67,7 +67,7 @@ gen, exo, lev, num, deu, jos, jdg, rth, 1sa, 2sa, 1ki, 2ki, 1ch, 2ch, ezr, neh, 
 
 #### Abreviaturas en español:
 
-gen, exo, lev, num, deu, jos, jeu, rut, 1sa, 2sa, 1re, 2re, 1cr, 2cr, esd, neh, est, job, sal, pro, ecl, can, isa, jer, lam, eze, dan, ose, joe, amo, abd, jon, miq, nah, hab, sof, hag, zac, mal, mat, mar, luc, jua, hch, rom, 1co, 2co, gal, efe, fil, col, 1te, 2te, 1ti, 2ti, tit, flm, heb, stg, 1pe, 2pe, 1ju, 2ju, 3ju, jud, apo, 
+gen, exo, lev, num, deu, jos, jue, rut, 1sa, 2sa, 1re, 2re, 1cr, 2cr, esd, neh, est, job, sal, pro, ecl, can, isa, jer, lam, eze, dan, ose, joe, amo, abd, jon, miq, nah, hab, sof, hag, zac, mal, mat, mar, luc, jua, hch, rom, 1co, 2co, gal, efe, fil, col, 1te, 2te, 1ti, 2ti, tit, flm, heb, stg, 1pe, 2pe, 1ju, 2ju, 3ju, jud, apo, 
 
 #### observaciones
 

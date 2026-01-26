@@ -325,7 +325,7 @@ const num2abbr_es = {
 	"4":"num",
 	"5":"deu",
 	"6":"jos",
-	"7":"jeu",
+	"7":"jue",
 	"8":"rut",
 	"9":"1sa",
 	"10":"2sa",
