@@ -2798,6 +2798,7 @@ function toggle_show_message(msg){
 		dv_href.remove();
 	}, 3000);
 
-	scroll_to_top(dv_href);
+	dv_href.scrollIntoView({ behavior: 'smooth', block: 'center'});
+	//scroll_to_top(dv_href);
 }
 
