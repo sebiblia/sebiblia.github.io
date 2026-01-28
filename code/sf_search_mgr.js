@@ -76,6 +76,14 @@ const id_evaluating_bar = "id_evaluating_bar";
 const id_evaluating_name = "id_evaluating_name";
 const id_tra_txt = "id_tra_txt";
 const id_verse_refs = "id_verse_refs";
+const id_show_message = "id_show_message";
+
+const id_butt_history = "id_butt_history";
+const id_butt_books = "id_butt_books";
+const id_butt_examples = "id_butt_examples";
+const id_butt_variables = "id_butt_variables";
+const id_butt_debug = "id_butt_debug";
+const id_butt_show_link = "id_butt_show_link";
 
 const GREEK_PREFIX = "G";
 const SCOD_PREFIX = "[";
@@ -907,6 +915,31 @@ function init_history(){
 	if(dv_hist != null){
 		toggle_history_info("keep");
 	}
+	toggle_show_message(gvar.all_msg.history_inited);
+}
+
+function start_click(dv_tgt){
+	dv_tgt.addEventListener('mousedown', () => {
+		dv_tgt.classList.remove("is_top_button");
+		dv_tgt.classList.add("is_top_button_clicked");		
+		console.log("mousedown");
+	});
+	dv_tgt.addEventListener('touchstart', () => {
+		dv_tgt.classList.remove("is_top_button");
+		dv_tgt.classList.add("is_top_button_clicked");
+	});
+}
+
+function end_click(dv_tgt){
+	dv_tgt.addEventListener('mouseup', () => {
+		dv_tgt.classList.remove("is_top_button_clicked");
+		dv_tgt.classList.add("is_top_button");
+		console.log("mouseup");
+	});
+	dv_tgt.addEventListener('touchend', () => {
+		dv_tgt.classList.remove("is_top_button_clicked");
+		dv_tgt.classList.add("is_top_button");
+	});
 }
 
 function pop_menu_handler(){
@@ -919,8 +952,11 @@ function pop_menu_handler(){
 		return;
 	}
 	
+	const pop_butt_cls = ["exam", "is_block", "big_item", "is_top_button"];
+	
 	let op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.id = id_butt_history;
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.history;
 	op.addEventListener('click', () => {
 		toggle_history_info();
@@ -929,7 +965,8 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.id = id_butt_books;
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.books;
 	op.addEventListener('click', () => {
 		toggle_books_info();
@@ -938,15 +975,18 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.copy_link;
 	op.addEventListener('click', async () => {
 		get_href();
 	});
+	start_click(op);
+	end_click(op);
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.id = id_butt_examples;
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.examples;
 	op.addEventListener('click', () => {
 		toggle_lang_examples(gvar.examples);
@@ -955,7 +995,7 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.manual;
 	op.addEventListener('click', () => {
 		open_manual();
@@ -963,7 +1003,8 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.id = id_butt_variables;
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.variables;
 	op.addEventListener('click', () => {
 		toggle_variables_info();
@@ -972,7 +1013,8 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.id = id_butt_debug;
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.debug;
 	op.addEventListener('click', () => {
 		toggle_dbg_info();
@@ -981,7 +1023,8 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.id = id_butt_show_link;
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.show_link;
 	op.addEventListener('click', () => {
 		toggle_show_link();
@@ -990,23 +1033,27 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.save_result;
 	op.addEventListener('click', () => {
 		save_result();
 	});
+	start_click(op);
+	end_click(op);
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.save_history;
 	op.addEventListener('click', () => {
 		save_history();
 	});
+	start_click(op);
+	end_click(op);
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.load_history;
 	op.addEventListener('click', () => {
 		toggle_load_history();
@@ -1015,17 +1062,19 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
-	op.classList.add("exam", "is_block", "big_item");
+	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.reset_history;
 	op.addEventListener('click', () => {
 		init_history();
 	});
+	start_click(op);
+	end_click(op);
 	dv_pop_men.appendChild(op);
 
 	
 	if(WITH_AUX_BUTTON){
 		op = document.createElement("div");
-		op.classList.add("exam", "is_block", "big_item");
+		op.classList.add(...pop_butt_cls);
 		op.innerHTML = "EXAMPLES_TO_HISTORY";
 		op.addEventListener('click', () => {
 			gvar.biblang.history = gvar.examples;
@@ -1046,6 +1095,19 @@ function get_his_item_htm(itm){
 	}
 	let htm = `<span class="is_example_expr">${itm.expr}</span><span class="is_example_title">${itm.comment}</span>`;
 	return htm;
+}
+
+function toggle_button(dv_ope, id_butt){
+	const dv_butt = document.getElementById(id_butt);
+	if(dv_butt != null){
+		if(dv_ope == null){
+			dv_butt.classList.remove("is_top_button_on");
+			dv_butt.classList.add("is_top_button");
+		} else {
+			dv_butt.classList.remove("is_top_button");
+			dv_butt.classList.add("is_top_button_on");
+		}
+	}
 }
 
 function toggle_history_info(toggle_op){
@@ -1072,7 +1134,8 @@ function toggle_history_info(toggle_op){
 	const cls_itm = [];
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_history, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op, right_clk_fn);
+	const dv_ope = toggle_select_option(dv_select, id_history, his_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op, right_clk_fn);
+	toggle_button(dv_ope, id_butt_history);
 }
 
 function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
@@ -1116,7 +1179,8 @@ function toggle_variables_info(toggle_op){
 	const cls_itm = ["is_option"];
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_variables, all_op, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	const dv_ope = toggle_select_option(dv_select, id_variables, all_op, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	toggle_button(dv_ope, id_butt_variables);
 }
 
 function toggle_books_info(toggle_op){
@@ -1129,7 +1193,8 @@ function toggle_books_info(toggle_op){
 	const cls_men = ["aux_item", "has_border"];
 	const cls_itm = ["is_option"];
 	const dv_select = document.getElementById(id_select);
-	toggle_select_option(dv_select, id_books, abbr, clk_fn, cls_men, cls_itm, null, toggle_op);
+	const dv_ope = toggle_select_option(dv_select, id_books, abbr, clk_fn, cls_men, cls_itm, null, toggle_op);
+	toggle_button(dv_ope, id_butt_books);
 }
 
 function toggle_dbg_info(toggle_op){
@@ -1143,7 +1208,8 @@ function toggle_dbg_info(toggle_op){
 	const cls_itm = [];
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_dbg_data, log, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	const dv_ope = toggle_select_option(dv_select, id_dbg_data, log, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	toggle_button(dv_ope, id_butt_debug);
 }
 
 function close_pop_menu() {
@@ -2089,7 +2155,8 @@ function toggle_lang_examples(examples){
 	const cls_itm = [];
 	const dv_select = document.getElementById(id_select);
 	const dv_to_scroll = null;
-	toggle_select_option(dv_select, id_examples, exam_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	const dv_ope = toggle_select_option(dv_select, id_examples, exam_vals, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	toggle_button(dv_ope, id_butt_examples);
 }
 
 function upper_first(cad){
@@ -2617,8 +2684,10 @@ function toggle_show_link(){
 	const dv_select = document.getElementById(id_select);
 	var dv_href = get_new_dv_under(dv_select, id_show_link, "force");
 	if(dv_href == null){
+		toggle_button(dv_href, id_butt_show_link);
 		return;
 	}
+	toggle_button(dv_href, id_butt_show_link);
 	dv_href.classList.add("search_info");
 
 	dv_href.innerHTML = "";
@@ -2631,9 +2700,6 @@ function toggle_show_link(){
 	inp_box.type = "text";
 	dv_href.appendChild(inp_box);
 	
-}
-
-function get_curr_chapter(){
 }
 
 async function go_prev_chapter(){
@@ -2718,43 +2784,20 @@ function go_verse(idx){
 	scroll_to_top(dv_verses);
 }
 
-/*
-function show_num_verses(num, bl_obj){
-	const dv_verses = document.getElementById("id_verses");
-	if(dv_verses == null){ return; }
-	let num_show = num;
-	if(num_show < 3){
-		num_show = 3;
-	}
-	console.log("DATOS_DIV_VERSICULOS");
-	console.log("NUM_CHLD=" + dv_verses.children.length);
-	console.log("NUM_CHL2=" + dv_verses.childElementCount);
-	console.log("ALTURA_VISIBLE=" + dv_verses.offsetHeight);
-	console.log("ALTURA_SCROLL=" + dv_verses.scrollHeight);
-	
-	
-	const num_chd = dv_verses.childElementCount;
-	if(num_show > num_chd){
-		dv_verses.style.maxHeight = "none"; // resetea a infinito
+function toggle_show_message(msg){
+	const dv_select = document.getElementById(id_select);
+	const dv_href = get_new_dv_under(dv_select, id_show_message, "force");
+	if(dv_href == null){
 		return;
 	}
+	dv_href.classList.add("search_info");
+
+	dv_href.innerHTML = msg;
 	
-	const hvisi = dv_verses.offsetHeight;
-	const hscro = dv_verses.scrollHeight;
-	
-	const diff = Math.abs(hscro - hvisi);
-	
-	const all_chd = dv_verses.children;
-	let ii = 0;
-	for(ii = 0; ii < all_chd.length; ii++){
-	}
-	// 	max-height: 100vh;  // valor en css
-	// dv_verses.style.maxHeight = "none"; // resetea a infinito
-	
-	
+	setTimeout(() => {
+		dv_href.remove();
+	}, 3000);
+
+	scroll_to_top(dv_href);
 }
-
-*/
-
-
 

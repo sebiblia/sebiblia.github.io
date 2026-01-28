@@ -265,6 +265,27 @@ a.exam_ref:hover {
 	color: white;
 }
 
+.is_top_button {
+	border: 1px solid #ddd;
+	background-color: #1c396f;
+}
+
+.is_top_button:hover,.is_button:hover>* {
+	background-color: #ddd;
+	color: #1c396f;
+}
+
+.is_top_button_clicked {
+	border: 1px solid #ff0000;
+	background-color: #000000;
+}
+
+.is_top_button_on {
+	border: 1px solid #00ff00;
+	background-color: #006c00;
+}
+
+
 .msg {
 	display: inline-block;
 	flex-grow: 100;

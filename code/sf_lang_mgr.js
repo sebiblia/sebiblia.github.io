@@ -55,6 +55,7 @@ const msg_es = {
 	show_num_verses: `<i class="has_icons icon-side-menu"></i>`,
 	next_chapter: `<i class="has_icons icon-next-chap"></i>`,
 	prev_chapter: `<i class="has_icons icon-prev-chap"></i>`,
+	history_inited: "Historia reiniciada",
 };
 
 const msg_en = {
@@ -90,6 +91,7 @@ const msg_en = {
 	show_num_verses: `<i class="has_icons icon-side-menu"></i>`,
 	next_chapter: `<i class="has_icons icon-next-chap"></i>`,
 	prev_chapter: `<i class="has_icons icon-prev-chap"></i>`,
+	history_inited: "History re-inited",
 };
 
 const biblehub_abbr = "bh";
