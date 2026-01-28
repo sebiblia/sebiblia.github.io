@@ -84,6 +84,7 @@ const id_butt_examples = "id_butt_examples";
 const id_butt_variables = "id_butt_variables";
 const id_butt_debug = "id_butt_debug";
 const id_butt_show_link = "id_butt_show_link";
+const id_butt_load_history = "id_butt_load_history";
 
 const GREEK_PREFIX = "G";
 const SCOD_PREFIX = "[";
@@ -942,6 +943,9 @@ function end_click(dv_tgt){
 	});
 }
 
+function check_top_button(dv_tgt, id_ope){
+}
+
 function pop_menu_handler(){
 	const dv_pop_sec = document.getElementById("id_pop_opt_sec");
 
@@ -953,7 +957,7 @@ function pop_menu_handler(){
 	}
 	
 	const pop_butt_cls = ["exam", "is_block", "big_item", "is_top_button"];
-	
+
 	let op = document.createElement("div");
 	op.id = id_butt_history;
 	op.classList.add(...pop_butt_cls);
@@ -963,6 +967,7 @@ function pop_menu_handler(){
 		scroll_to_top(document.getElementById(id_history));
 	});
 	dv_pop_men.appendChild(op);
+	toggle_button(document.getElementById(id_history), id_butt_history);
 	
 	op = document.createElement("div");
 	op.id = id_butt_books;
@@ -973,6 +978,7 @@ function pop_menu_handler(){
 		scroll_to_top(document.getElementById(id_books));
 	});
 	dv_pop_men.appendChild(op);
+	toggle_button(document.getElementById(id_books), id_butt_books);
 	
 	op = document.createElement("div");
 	op.classList.add(...pop_butt_cls);
@@ -993,6 +999,7 @@ function pop_menu_handler(){
 		scroll_to_top(document.getElementById(id_examples));
 	});
 	dv_pop_men.appendChild(op);
+	toggle_button(document.getElementById(id_examples), id_butt_examples);
 	
 	op = document.createElement("div");
 	op.classList.add(...pop_butt_cls);
@@ -1011,6 +1018,7 @@ function pop_menu_handler(){
 		scroll_to_top(document.getElementById(id_variables));
 	});
 	dv_pop_men.appendChild(op);
+	toggle_button(document.getElementById(id_variables), id_butt_variables);
 	
 	op = document.createElement("div");
 	op.id = id_butt_debug;
@@ -1021,6 +1029,7 @@ function pop_menu_handler(){
 		scroll_to_top(document.getElementById(id_dbg_data));
 	});
 	dv_pop_men.appendChild(op);
+	toggle_button(document.getElementById(id_dbg_data), id_butt_debug);
 	
 	op = document.createElement("div");
 	op.id = id_butt_show_link;
@@ -1031,6 +1040,7 @@ function pop_menu_handler(){
 		scroll_to_top(document.getElementById(id_show_link));
 	});
 	dv_pop_men.appendChild(op);
+	toggle_button(document.getElementById(id_show_link), id_butt_show_link);
 
 	op = document.createElement("div");
 	op.classList.add(...pop_butt_cls);
@@ -1053,13 +1063,16 @@ function pop_menu_handler(){
 	dv_pop_men.appendChild(op);
 	
 	op = document.createElement("div");
+	op.id = id_butt_load_history;
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.load_history;
 	op.addEventListener('click', () => {
 		toggle_load_history();
-		scroll_to_top(document.getElementById(id_load_history));
+		const dv_ld = document.getElementById(id_load_history);
+		if(dv_ld != null){ dv_ld.scrollIntoView({ behavior: 'smooth', block: 'center'}); }
 	});
 	dv_pop_men.appendChild(op);
+	toggle_button(document.getElementById(id_load_history), id_butt_load_history);
 	
 	op = document.createElement("div");
 	op.classList.add(...pop_butt_cls);
@@ -2542,8 +2555,10 @@ function toggle_load_history(){
 	
 	let dv_ld_his = get_new_dv_under(dv_select, id_load_history);
 	if(dv_ld_his == null){
+		toggle_button(dv_ld_his, id_butt_load_history);
 		return null;
 	}
+	toggle_button(dv_ld_his, id_butt_load_history);
 	dv_ld_his.classList.add("grid_load_history");
 	dv_ld_his.innerHTML = "";
 
