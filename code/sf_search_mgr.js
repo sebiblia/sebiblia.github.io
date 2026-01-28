@@ -457,7 +457,7 @@ async function do_select(prv_conf){
 
 function init_handlers(){
 	const dv_verses = document.getElementById("id_verses");
-	dv_verses.classList.add("contain_scroll");
+	//dv_verses.classList.add("contain_scroll");
 	/*
 	dv_verses.addEventListener('wheel', function(ev) {
 		ev.stopPropagation();
