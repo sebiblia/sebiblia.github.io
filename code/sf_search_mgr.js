@@ -2511,6 +2511,16 @@ function remove_add_comment(){
 	}
 }
 
+function save_comment(inp_box, pnt_idx_sel){
+	if(inp_box.value != ""){
+		gvar.biblang.history[pnt_idx_sel].comment = inp_box.value;
+		toggle_history_info("keep");
+	} else {
+		delete gvar.biblang.history[pnt_idx_sel].comment;
+		toggle_history_info("keep");
+	}
+}
+
 function toggle_add_comment(pnt_idx_sel){
 	const dv_his_opers = document.getElementById(id_his_opers);
 	let dv_add = get_new_dv_under(dv_his_opers, id_add_comment);
@@ -2531,6 +2541,13 @@ function toggle_add_comment(pnt_idx_sel){
 	}
 	inp_box.type = "text";
 	dv_add.appendChild(inp_box);
+	
+	inp_box.addEventListener('keydown', async function(ev) {
+		if(ev.key === "Enter"){
+			ev.stopPropagation();
+			save_comment(inp_box, pnt_idx_sel);
+		}
+	});
 
 	const dv_save = document.createElement("div");
 	dv_save.innerHTML = gvar.all_msg.save_button;
@@ -2538,16 +2555,19 @@ function toggle_add_comment(pnt_idx_sel){
 	dv_add.appendChild(dv_save);
 
 	dv_save.addEventListener('click', function() {
+		save_comment(inp_box, pnt_idx_sel);
+		/*
 		if(inp_box.value != ""){
 			gvar.biblang.history[pnt_idx_sel].comment = inp_box.value;
 			toggle_history_info("keep");
 		} else {
 			delete gvar.biblang.history[pnt_idx_sel].comment;
 			toggle_history_info("keep");
-		}
+		}*/
 		dv_his_opers.remove();
 	});
 	
+	inp_box.scrollIntoView({ behavior: 'smooth'});
 }
 
 function toggle_load_history(){
