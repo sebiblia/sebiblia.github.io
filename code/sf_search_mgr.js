@@ -49,6 +49,7 @@ const id_repeat_butt = "id_repeat_butt";
 const id_back_butt = "id_back_butt";
 const id_forward_butt = "id_forward_butt";
 const id_select = "id_select";
+const id_search = "id_search";
 const id_dbg_data = "id_dbg_data";
 const id_history = "id_history";
 const id_books = "id_books";
@@ -70,7 +71,6 @@ const id_scodes = "id_scodes";
 const id_del_expr = "id_del_expr";
 const id_menu_scod_def = "id_menu_scod_def";
 const id_submenu_scods = "id_submenu_scods";
-const id_search_href = "id_search_href";
 const id_dv_evaluating = "id_dv_evaluating";
 const id_evaluating_bar = "id_evaluating_bar";
 const id_evaluating_name = "id_evaluating_name";
@@ -288,7 +288,7 @@ function init_menus(){
 	add_menu(dv_menus, dv_tra_txt, gvar.tra_txt);
 	set_ui_tra(dv_tra_txt, dv_tra_txt.innerHTML.trim());
 	
-	const dv_search = document.getElementById("id_search");
+	const dv_search = document.getElementById(id_search);
 	const inp_box = document.createElement("input");
 	inp_box.id = id_expression;
 	inp_box.classList.add("width_95", "big_font");
@@ -2541,6 +2541,7 @@ function toggle_add_comment(pnt_idx_sel){
 	}
 	inp_box.type = "text";
 	dv_add.appendChild(inp_box);
+	inp_box.focus();
 	
 	inp_box.addEventListener('keydown', async function(ev) {
 		if(ev.key === "Enter"){
@@ -2689,6 +2690,10 @@ function init_shortcuts(){
 			}
 			if(all_dwn['i']){
 				init_history();
+			}
+			if(all_dwn['f']){
+				const dv_expr = document.getElementById(id_expression);
+				dv_expr.focus();
 			}
 		}
 	});

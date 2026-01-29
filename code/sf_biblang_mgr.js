@@ -26,6 +26,7 @@ let ALL_BOOK_NAMES = [];
 
 const biblang_def = {
 	INFIX_OPS: {
+		'*': (a, b) => calc_before_any(a, b),
 		'%': (a, b) => calc_followed_by(a, b),
 		'&': (a, b) => calc_and(a, b),
 		'|': (a, b) => calc_or(a, b, '|'),
@@ -38,12 +39,12 @@ const biblang_def = {
 	PREFIX_OPS: {
 		// '.': (bib) => set_bib(bib),
 	},
-	PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['='], [';'], ['..']],
+	PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['*'], ['='], [';'], ['..']],
 	LITERAL_OPEN: '/',
 	LITERAL_CLOSE: '/',
 	GROUP_OPEN: '(',
 	GROUP_CLOSE: ')',
-	SEPARATORS: [';', '!', '|', '&', '%'],
+	SEPARATORS: [';', '!', '|', '&', '%', '*'],
 	WHITESPACE_CHARS: [' '],
 	SYMBOLS: ['(', ')', '/'],
 	AMBIGUOUS: {},
@@ -353,6 +354,50 @@ function arr_diff(aa, bb){
 	return aa.filter(ee => ! bb.includes(ee));
 }
 
+async function calc_before_any(aa, bb){
+	gvar.biblang.add_scod = true;
+	const oaa = await aa();
+	gvar.biblang.add_scod = false;
+	gvar.biblang.add_scod = true;
+	const obb = await bb();
+	gvar.biblang.add_scod = false;
+	
+	const rop = "(" + oaa.op + " % " + obb.op + ")";
+	
+	const vaa = oaa.lverses;
+	
+	let vfoll = null;
+	let all_idx = null;
+	
+	if(oaa.lscods != null){
+		if(oaa.all_idx != null){
+			all_idx = oaa.all_idx;
+		} else {
+			all_idx = await calc_scod_idx(vaa, oaa.lscods);
+		}
+		calc_scod_idx_before_any(all_idx, obb.lscods);
+		vfoll = Object.keys(all_idx);
+	}
+	if(vfoll == null){
+		vfoll = arr_intersec(oaa.lverses, obb.lverses);
+	}
+	
+	const robj = { op: rop, lverses: vfoll, lscods: arr_union(oaa.lscods, obb.lscods), };
+	if((oaa.is_txta_oper || obb.is_txta_oper) && (vfoll.length > 0)){
+		gvar.biblang.txta_verse = vfoll[0];
+	}
+	if(gvar.dbg_biblang){
+		add_dbg_log("calc_followed_by");
+		add_dbg_log(rop);
+		console.log(vaa);
+		console.log(oaa.lscods);
+		console.log(all_idx);		
+		console.log(obb.lscods);
+		add_dbg_log("_____________________________");
+	}
+	return robj;
+}
+ 
 async function calc_followed_by(aa, bb){
 	gvar.biblang.add_scod = true;
 	const oaa = await aa();
@@ -1803,6 +1848,29 @@ function followed_by_any(svr, arr_idx, lscods){
 		}
 	}
 	return updated;
+}
+
+function calc_scod_idx_before_any(all_idx, lscods){
+	const vrs = Object.keys(all_idx);
+	let ii = 0;
+	for(ii = 0; ii < vrs.length; ii++){
+		const vr = vrs[ii];
+		const obj = all_idx[vr];
+		const keep = first_before_any(obj.svr, obj.arr_idx, lscods);
+		if(! keep){
+			delete all_idx[vr];
+		}
+	}	
+}
+
+function first_before_any(svr, arr_idx, lscods){
+	if(arr_idx == null){ return false; }
+	if(svr == null){ return false; }
+	if(arr_idx.length == 0){ return false; }
+	const rest = svr.slice(arr_idx[0] + 1);
+	const bf_any = arr_intersec(rest, lscods);
+	const has_elem = (bf_any.length > 0);
+	return has_elem;
 }
 
 function verse_in_range(vr){

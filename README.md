@@ -6,7 +6,7 @@ La aplicación [SeBiblia.github.io](https://SeBiblia.github.io) permite el **EST
 
 Las condiciones de busqueda son muy flexibles y configurables. Esto se logra mediante un pequeño lenguaje computacional sobre conjuntos de versiculos que se puede **APRENDER sobre la MARCHA** siguiendo los **EJEMPLOS** de busqueda. Y la navegación se logra con varios **menus desplegables** que se activan haciendo click sobre los textos de respuesta y que abren diferentes opciones de busquedas automaticas con solo hacer un click.
 
-## Interfaz básica
+## Interfaz basica
 
 ![Interfaz inicial](https://SeBiblia.github.io/img/ui1.jpg)
 
@@ -16,29 +16,29 @@ La condicion de busqueda es en realidad un pequeño lenguaje computacional sobre
 
 ###  Codigo Strong
 
-El centro de esta aplicación son los [codigos Strong](#explicación-sobre-códigos-strong) asi que simplemente escribiendo un [codigo Strong](#explicación-sobre-códigos-strong) en el campo de busqueda y dando Enter o haciendo click en ENCUENTRA se busca en TODA la biblia dicho codigo Strong.
+El centro de esta aplicación son los [codigos Strong](#explicacion-sobre-codigos-strong) asi que simplemente escribiendo un [codigo Strong](#explicacion-sobre-codigos-strong) en el campo de busqueda y dando Enter o haciendo click en ENCUENTRA se busca en TODA la biblia dicho codigo Strong.
 
 Ejemplo: [G2288](https://sebiblia.github.io/es/tool.html?biblang=G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 Los codigos Strong SIEMPRE se buscan en TODA la biblia. Si son codigos griegos se buscan en el texto del Nuevo Testamento seleccionado en el campo NT o en la LXX si esta ha sido seleccionada en el campo OT. Y si son codigos Strong hebreos se buscan en el Antiguo Textamento seleccionado en el campo OT, con excepcion de la LXX puesto que esta escrita en griego.
 
-#### Explicación sobre Códigos Strong
+#### Explicacion sobre Codigos Strong
 
 Los codigos Strong son esencialmente un conjunto de números que el teólogo [James Strong](https://es.wikipedia.org/wiki/James_Strong_(te%C3%B3logo)) asignó a cada raiz de vocablo hebreo o griego correspondiente a cada palabra en inglés de la traduccion al inglés de la biblia conocida como [King James Version](https://en.wikipedia.org/wiki/King_James_Version) o KJV.
 
-Con ésta aplicación de estudio profundo de la biblia, usando los [códigos Strong](https://es.wikipedia.org/wiki/Concordancia_de_Strong), una persona que no sabe ni hebreo ni griego, puede buscar en los textos hebreos y griegos de la biblia de los manuscritos y textos criticos mas importantes, los versiculos con un determinado vocablo hebreo o griego, y tomar los versiculos encontrados, que ya sabe contienen el vocablo hebreo o griego, y leerlos comodamente en español o inglés en la traduccion de preferencia. 
+Con ésta aplicación de estudio profundo de la biblia, usando los [códigos Strong](https://es.wikipedia.org/wiki/Concordancia_de_Strong), una persona que no sabe ni hebreo ni griego, puede buscar en los textos hebreos y griegos de la biblia, de los manuscritos y textos criticos mas importantes, los versiculos con un determinado vocablo hebreo o griego, y luego tomar los versiculos encontrados, que ya sabe contienen el vocablo hebreo o griego, y leerlos comodamente en español o inglés en la traduccion de preferencia. 
 
 Las versiones de texto traducido incluyen la Reina Valera 1909 (RVA) y la Sagrada Biblia Libre para el Mundo (SBLM) por ser versiones que NO requieren permisos de derechos de autor y esta aplicación es para el estudio gratuito de la biblia en general, no solo de 500 versiculos.
 
 Con ésta aplicación de estudio profundo de la biblia, única a la fecha dentro de las aplicaciones de codigo abierto y de uso gratuito, y gracias a la computación y a esta clasificación del señor James Strong, un usuario, al leer en un idioma traducido los versiculos encotrados para un código Strong en los textos escritos en los idiomas originales, puede formarse un concepto mas claro de lo que significa el vocablo hebreo o griego correspondiente, sin necesidad de dominar el hebreo o el griego. 
 
-Es especialmente recomendada para personas que ya han leido la biblia en su totalidad y que tiene elgún conocimiento de las referencias cruzadas que tiene la biblia, así el usuario podrá usar el contexto que recuerde de cada versiculo en el resultado, y formarse una idea aún mejor del significado original del vocablo hebreo o griego, pero también es útil para el usuario principiante justamente porque, sin necesidad de hablar los idiomas originales, puede navegar e irse formando una idea de la multitud de interrelaciones que tiene la biblia. Navegandola en sus idiomas originales, de las multiples maneras que permite esta aplicación, pero leyendo comodamente en un idioma traducido.
+Es especialmente recomendada para personas que ya han leido la biblia en su totalidad y que tiene algún conocimiento de las referencias cruzadas que tiene la biblia, así el usuario podrá usar el contexto que recuerde de cada versiculo en el resultado, y formarse una idea aún mejor del significado original del vocablo hebreo o griego, pero también es útil para el usuario principiante justamente porque, sin necesidad de hablar los idiomas originales, puede navegar e irse formando una idea de la multitud de interrelaciones que tiene la biblia. Navegandola en sus idiomas originales, de las multiples maneras que permite esta aplicación, pero leyendo comodamente en un idioma traducido.
 
 Incluso el lector de los idiomas originales se verá beneficiado de este tipo de ejercicio hermeneutico, ya que normalmente se sigue la linea aprendida en la academia donde se aprendieron los idiomas originales. Este ejercicio cambia la perspectiva incluso para usuarios con dominio de los idiomas hebreo y griego porque une en un mismo ejercicio la visión global de un vocablo con la visión particular del vocable en un versiculo y el resultado puede no ser el que se tenia en mente. Este ejercicio hermeneutico es una buena base para una teología CONSISTENTE y COMPLETA, especialmente en las areas de la soteriología y la escatología, areas MUY afectadas por pequeños detalles en las interpretaciones y traducciones mas polulares en la academia. Al hacer este ejercicio se hace evidente la INCONSISTENCIA. 
 
 ###  Palabra
 
-En el campo de busqueda tambien se pueden escribir palabras que se encuentren en el idioma del texto [donde se van a buscar palabras y expresiones reculares](#interfaz-básica). Este se selecciona con el cuarto boton, y puede ser cualquiera de:
+En el campo de busqueda tambien se pueden escribir palabras que se encuentren en el idioma del texto [donde se van a buscar palabras y expresiones reculares](#interfaz-basica). Este se selecciona con el cuarto boton, y puede ser cualquiera de:
 
 1. El texto traducido. Español o Inglés. (LOC)
 2. El texto hebreo (OT)
@@ -94,7 +94,7 @@ Ejemplo: [marteo.1:5-9](https://sebiblia.github.io/es/tool.html?biblang=marteo.1
 
 ###  Operaciones binarias
 
-En la [condición de busqueda](#interfaz-básica) también se pueden poner operaciones binarias.
+En la [condición de busqueda](#interfaz-basica) también se pueden poner operaciones binarias.
 
 1. [G2288 & G166](https://sebiblia.github.io/es/tool.html?biblang=G2288%20%26%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan ambos codigos Strong. Operacion "AND" o la operacion "y". Esta operacion tambien se puede pensar como la INTERSECCION de dos conjuntos: el de versiculos que tienen el primer código Strong con el de versiculos que tienen el segundo código Strong.
 
@@ -104,13 +104,19 @@ En la [condición de busqueda](#interfaz-básica) también se pueden poner opera
 
 4. [G2288 ; G166](https://sebiblia.github.io/es/tool.html?biblang=G166%20%3B%20G2288&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) es matematicamente quivalente a G2288 | G166. Buscará los versiculos que tengan al menos uno de los dos codigos Strong. Operacion OR u o. Esta operación tambien se puede pensar como una instruccion seguida de otra: busca el primer codigo Strong y a ese conjunto de versículos le añade el conjunto de versiculos que encuentre del segundo codigo Strong.
 
-5. [H3117 % H3068](https://sebiblia.github.io/es/tool.html?biblang=H3117%20%25%20H3068&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan el primero seguido del segundo codigo Strong. Esta operación tambien se puede pensar como una instruccion seguida de otra: busca el primer codigo Strong y con al conjunto de versículos encontrados busca los que tengan el segundo codigo Strong justo despues del primero.
+5. [H3117 % H3068](https://sebiblia.github.io/es/tool.html?biblang=H3117%20%25%20H3068&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) buscará los versiculos que tengan el primero INMEDIATAMENTE seguido del segundo codigo Strong. Esta operación tambien se puede pensar como una instruccion seguida de otra: busca el primer codigo Strong y con al conjunto de versículos encontrados busca los que tengan el segundo codigo Strong justo despues del primero.
 
-Estas operaciones se explicarán con mas detalle en la sección para usuarios avanzados, cuando se de la especificación del lenguaje de expresiones biblicas que se diseño para esta aplicación y que da una gran flexibilidad de procesamiento usando el campo de [condición de busqueda](#interfaz-básica).
+5. [H3117 * H3068](https://sebiblia.github.io/es/tool.html?biblang=G4151%20*%20G4151&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Aapo) buscará los versiculos que tengan el primero seguido en cualquier posición del segundo codigo Strong. Esta operación tambien se puede pensar como una instruccion seguida de otra: busca el primer codigo Strong y con al conjunto de versículos encontrados busca los que tengan el segundo codigo Strong despues del primero en cualquier posición.
+
+Un a manera directa de ver varios ejemplos funcionando se encuentra en la opcion de "EJEMPLOS" del [menu principal](#interfaz-basica). Solo hay que darles 'click' para ver el resultado.
+
+Y para los usuarios avanzados, en la sección [Gramatica de BIBLANG](#gramatica-de-biblang), se de la especificación del lenguaje de expresiones biblicas que se diseño para esta aplicación y que da una gran flexibilidad de procesamiento usando el campo de [condición de busqueda](#interfaz-basica). 
+
+Mientras tanto estos ejemplos dan una idea de como usar dicho lenguaje.
 
 ###  Expresión regular
 
-La [condición de busqueda](#interfaz-básica) también permite [expresiones regulares de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions). Este tipo de busqueda es para usuarios programadores, pero el principiante puede hacerse una idea de las posibilidades que permiten este tipo de busquedas mirando los ejemplos en el [menu principal](#interfaz-básica)
+La [condición de busqueda](#interfaz-basica) también permite [expresiones regulares de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions). Este tipo de busqueda es para usuarios programadores, pero el principiante puede hacerse una idea de las posibilidades que permiten este tipo de busquedas mirando los ejemplos en el [menu principal](#interfaz-basica)
 
 Ejemplo: [/dijo.$/](https://sebiblia.github.io/es/tool.html?biblang=%2Fdijo.%24%2F&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
@@ -122,7 +128,7 @@ Los comandos retornan CERO (0) versiculos, así que cuando se usan dentro de una
 
 Estos comandos cambian la configuración para que los códigos Strong HEBREOS se busquen en el respectivo texto critico del Antiguo Testamento.
 
-Los siguientes comandos son equivalentes a modificar [el campo OT](#menu-o-campo-ot), por sus siglas en Inglés de: Old Testament, y que en el [gráfico](#interfaz-básica) se denominó [códigos hebreos](#interfaz-básica) para que sea mas comprensible para el principiante o la persona que no habla Inglés. La excepción es la Septuaginta (LXX) puesto que fue escrita en griego. Y por supuesto las busquedas de códigos Strong en LXX deben ser códigos Strong del griego.
+Los siguientes comandos son equivalentes a modificar [el campo OT](#menu-o-campo-ot), por sus siglas en Inglés de: Old Testament, y que en el [gráfico](#interfaz-basica) se denominó [códigos hebreos](#interfaz-basica) para que sea mas comprensible para el principiante o la persona que no habla Inglés. La excepción es la Septuaginta (LXX) puesto que fue escrita en griego. Y por supuesto las busquedas de códigos Strong en LXX deben ser códigos Strong del griego.
 
 - [.WLC](https://sebiblia.github.io/es/tool.html?biblang=.WLC&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en West Minister Leningrad Codex (WLC).
 - [.ALE](https://sebiblia.github.io/es/tool.html?biblang=.ALE&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en Aleppo Codex (ALE).
@@ -136,7 +142,7 @@ Ejemplo: [(.WLC ; H1) ! (.ALE ; H1)](https://sebiblia.github.io/es/tool.html?bib
 
 Estos comandos cambian la configuración para que los códigos Strong GRIEGOS se busquen en el respectivo texto critico del Nuevo Testamento.
 
-Son equivalentes a modificar [el campo NT](#menu-o-campo-nt), por sus siglas en Inglés de: New Testament, y que en el [gráfico](#interfaz-básica) se denominó [Códigos griegos](#interfaz-básica) para que sea mas comprensible para el principiante o la persona que no habla Inglés.
+Son equivalentes a modificar [el campo NT](#menu-o-campo-nt), por sus siglas en Inglés de: New Testament, y que en el [gráfico](#interfaz-basica) se denominó [Códigos griegos](#interfaz-basica) para que sea mas comprensible para el principiante o la persona que no habla Inglés.
 
 - [.BYZ](https://sebiblia.github.io/es/tool.html?biblang=.BYZ&conf=O%24LXX%7CN%24WH%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto Bizantino (BYZ).
 - [.TR](https://sebiblia.github.io/es/tool.html?biblang=.TR&conf=O%24LXX%7CN%24NES%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el Textus Receptus (TR).
@@ -147,13 +153,13 @@ Son equivalentes a modificar [el campo NT](#menu-o-campo-nt), por sus siglas en 
 
 Estos comandos cambian la configuración para determinar que versión de biblia TRADUCIDA se usará en la busqueda. Por defecto se usa para mostrar los versiculos resultado en la versión escogida y hacer busquedas de [Texto](#palabra) y [Expresiones Regulares](#expresión-regular) en la versión escogida, pero esto se puede modificar con [comandos o el campo RX](#dónde-busca-palabras-y-expresiones-regulares-rx).
 
-Son equivalentes a modificar [el campo LOC](#menu-o-campo-loc), por referirse a un texto local, y que en el [gráfico](#interfaz-básica) se denominó [Texto traducido](#interfaz-básica) para que sea mas comprensible.
+Son equivalentes a modificar [el campo LOC](#menu-o-campo-loc), por referirse a un texto local, y que en el [gráfico](#interfaz-basica) se denominó [Texto traducido](#interfaz-basica) para que sea mas comprensible.
 
 
 - [.RVA](https://sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 (RVA).
-- [.RVAs](https://sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la RVA (y que corresponden al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la RVAs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
+- [.RVAs](https://sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-basica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la RVA (y que corresponden al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la RVAs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
 - [.KJV](https://sebiblia.github.io/es/tool.html?biblang=.KJV&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version (KJV).
-- [.KJVs](https://sebiblia.github.io/es/tool.html?biblang=.KJVs&conf=O%24ALE%7CN%24BYZ%7CL%24KJV%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version con códigos Strong (KJVs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-básica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la KJV (una vez traducidos al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la KJVs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
+- [.KJVs](https://sebiblia.github.io/es/tool.html?biblang=.KJVs&conf=O%24ALE%7CN%24BYZ%7CL%24KJV%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version con códigos Strong (KJVs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-basica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la KJV (una vez traducidos al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la KJVs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
 - [.SBLM](https://sebiblia.github.io/es/tool.html?biblang=.SBLM&conf=O%24ALE%7CN%24BYZ%7CL%24KJVs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Sagrada Biblia Libre para el Mundo (SBLM).
 - [.WEB](https://sebiblia.github.io/es/tool.html?biblang=.WEB&conf=O%24ALE%7CN%24BYZ%7CL%24SBLM%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión World English Bible (WEB).
 
@@ -161,9 +167,9 @@ Son equivalentes a modificar [el campo LOC](#menu-o-campo-loc), por referirse a 
 
 Estos comandos cambian la configuración para determinar DONDE se buscan palabras y expresiones regulares. 
 
-Son equivalentes a modificar [el campo RX](#menu-o-campo-rx), una abreviatura de Regular eXpresion, que se refiere a expresiones regulares, y que en el [gráfico](#interfaz-básica) se denominó [texto traducido](#interfaz-básica) para que sea mas comprensible para el principiante.
+Son equivalentes a modificar [el campo RX](#menu-o-campo-rx), una abreviatura de Regular eXpresion, que se refiere a expresiones regulares, y que en el [gráfico](#interfaz-basica) se denominó [texto traducido](#interfaz-basica) para que sea mas comprensible para el principiante.
 
-Es importante anotar que los versiculos encontrados SIEMPRE se muestran en el idioma del campo (RX), el modificado por estos comandos. Es por eso que NORMALMENTE el campo RX está en LOC (en idioma traducido). Pero si se quiere ver el texto en el idioma original se puede cambiar justamente este campo (RX), ya sea usando estos comandos o con el menu en la [interfaza grafica](#interfaz-básica).
+Es importante anotar que los versiculos encontrados SIEMPRE se muestran en el idioma del campo (RX), el modificado por estos comandos. Es por eso que NORMALMENTE el campo RX está en LOC (en idioma traducido). Pero si se quiere ver el texto en el idioma original se puede cambiar justamente este campo (RX), ya sea usando estos comandos o con el menu en la [interfaza grafica](#interfaz-basica).
 
 - [:loc](https://sebiblia.github.io/es/tool.html?biblang=%3Aloc&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo LOC.
 - [:ot](https://sebiblia.github.io/es/tool.html?biblang=%3Aot&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo OT. Las palabras y expresiones regulares se escriben en ASCCI siguiendo el [trans-deletreo](#trans-deletreo) del Unicode griego a ASCCI dado por la tabla de [trans-deletreo](#trans-deletreo)
@@ -265,14 +271,14 @@ Ejemplos:
 - [.rx:i] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) sean INSENSITIVAS a mayusculas, minusculas, o TILDES. Este comando se ejecuta por defecto al comienzo de TODA busqueda.
 - [.rx:ni] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) NO sean insensitivas a mayusculas, minusculas, o TILDES. Es decir que las busquedas se vuelven SENSITIVAS a mayusculas, minusculas, o TILDES.
 
-- [.dbg] Cambia la configuracion para empezar a guardar información de depurado. Permite saber como se ejecutó, cuales fueron los pasos, durante la ejecucion de una busqueda. Si desde el [menu principal](#interfaz-básica) se tiene abierto el campo de DEPURADO, este comando se ejecuta antes de la busqueda y al final de la busqueda toda la informacion de depurado se muestra en dicho campo de DEPURADO.
+- [.dbg] Cambia la configuracion para empezar a guardar información de depurado. Permite saber como se ejecutó, cuales fueron los pasos, durante la ejecucion de una busqueda. Si desde el [menu principal](#interfaz-basica) se tiene abierto el campo de DEPURADO, este comando se ejecuta antes de la busqueda y al final de la busqueda toda la informacion de depurado se muestra en dicho campo de DEPURADO.
 - [.nodbg] Cambia la configuracion para dejar de guardar información de depurado. 
 - [.all] Fija todos los parametros de configuracion para trabajar con TODA la biblia. Este comando se ejecuta por defecto al comienzo de TODA busqueda. 
 
 
 ## Menus o campos de configuración
 
-Se muestran en la [interfaz básica](#interfaz-básica) encima del campo de busqueda.
+Se muestran en la [interfaz basica](#interfaz-basica) encima del campo de busqueda.
 
 ### Menu o campo OT
 
@@ -385,7 +391,7 @@ GREEK
 
 ## Menus principal
 
-Es el menu que se muestra en la [interfaz básica](#interfaz-básica) en la parte superior derecha.
+Es el menu que se muestra en la [interfaz basica](#interfaz-basica) en la parte superior derecha.
 
 1. HISTORIA DE COMMANDOS. Muestra todos los comandos ejecutados desde el último reinicio de historia (commando .rhis o seleccion por menu principal). Atajo en compu: "CTRL+A+H".
 2. LIBROS. Muestra las abbreviaturas de los libros en el idioma actual. Atajo en compu: "CTRL+A+B".
@@ -415,12 +421,15 @@ Ver los videos [subidos a YouTube](https://www.youtube.com/watch?v=ULr0gb-iHlI&l
 
 OBSERVACION: Algunos videos estan con la vieja interfaz que tenia un boton adicional para alterar la presentación. Se simplificó la interfaz para el caso normal en que se hacen busquedas sobre OT o NT. La funcionalidad se mantiene de dos maneras. COn un boton adicional por versiculo, si se esta buscando sobre OT o NT palabras o expresiones regulares. Y por supuesto con [los comandos para modificacion de la presentacion](#presentación-de-versiculos-resultado-p).
 
-## Gramatica basica de lenguaje "biblang" aceptado.
+## Gramatica de BIBLANG
+
+El lenguaje BIBLANG tiene una gramatica bastante simple basada en expresiones.
 
 En sintaxis de JavaScript y usando el programa disponible en npm conocido como Expression Parser:
 
 	const biblang_def = {
 		INFIX_OPS: {
+			'*': (a, b) => calc_before_any(a, b),
 			'%': (a, b) => calc_followed_by(a, b),
 			'&': (a, b) => calc_and(a, b),
 			'|': (a, b) => calc_or(a, b, '|'),
