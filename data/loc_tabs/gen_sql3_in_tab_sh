@@ -8,14 +8,15 @@ echo "GENERATING "${1}"_BIB.js using "${BASH_SOURCE[0]}" params="${1}" "${2}
 cd $SCRIPT_DIR
 
 DIR_IN=${2}
+BIB=${1}
 
-cp ${DIR_IN}/${1}_bib.tab in.bib
-sed -i 's/^\([0-9]\+\):\([0-9]\+\):\([0-9]\+\)|/\1|\2|\3|/' in.bib
-# sed -i 's/:/|/g' in.bib
-rm -rf ${1}
+cp ${DIR_IN}/${1}_bib.tab .
 
-node print_one_file_json_bib.js in.bib ${1}
-
-rm in.bib
+ARCH=${BIB}_bib.tab
+bash fix_no_puntuation_sh $ARCH
+node print_scods_tab.js $ARCH.fix > sql3_${BIB}.tab
 
 cd ${CURR_DIR}
+
+
+

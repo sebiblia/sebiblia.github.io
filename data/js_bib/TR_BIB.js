@@ -1,9 +1,6 @@
 
 	
 export const bib_verses = {
-  "genesis": {
-    "1": {}
-  },
   "matthew": {
     "1": {
       "1": "biblos genesews ihsou cristou uiou dabid uiou abraam",

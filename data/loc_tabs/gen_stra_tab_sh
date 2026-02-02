@@ -1,5 +1,13 @@
 #!/bin/bash
 
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "GENERATING STRA and SOCU bibs using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+
 IN_DIR="../txt_tabs"
 OUT_DIR="."
 SLQ_FILE="./get_stra_tab.sql3"
@@ -26,3 +34,4 @@ mv out2.tab ${fout2}
 rm in.tab
 rm tra.tab
 
+cd ${CURR_DIR}

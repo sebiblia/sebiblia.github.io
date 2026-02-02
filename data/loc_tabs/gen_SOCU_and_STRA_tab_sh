@@ -1,0 +1,30 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+OT=${1}
+NT=${2}
+LOC=${3}
+
+rm SOCU_${LOC}.tab
+rm STRA_${LOC}.tab
+
+fin_ot1=socu_${OT}_${LOC}s.tab
+fin_nt1=socu_${NT}_${LOC}s.tab
+
+fin_ot2=stra_${OT}_${LOC}s.tab
+fin_nt2=stra_${NT}_${LOC}s.tab
+
+echo "Generating SOCU_"${LOC}".tab and STRA_"${LOC}".tab"
+
+cat ${fin_ot1} ${fin_nt1} > SOCU_${LOC}.tab
+cat ${fin_ot2} ${fin_nt2} > STRA_${LOC}.tab
+
+
+cd ${CURR_DIR}
+

@@ -12,6 +12,10 @@ JSMUTU_DIR = $(BASE_DIR)/js_mutu
 JSREFS_DIR = $(BASE_DIR)/js_refs
 JSROOTS_DIR = $(BASE_DIR)/js_roots
 
+TRA_DIR = $(BASE_DIR)/tra_bib_tabs
+LOCTAB_DIR = $(BASE_DIR)/loc_tabs
+JSSLOC_DIR = $(BASE_DIR)/js_sloc
+
 BASH=bash
 
 CRI_BIB = \
@@ -46,16 +50,23 @@ $(JSSCODS_DIR)/TR_SVERSES.js \
 $(JSSCODS_DIR)/WH_SVERSES.js \
 $(JSSCODS_DIR)/WLC_SVERSES.js
 
+SLOCS = \
+$(JSSLOC_DIR)/SOCU_KJV.js \
+$(JSSLOC_DIR)/STRA_KJV.js \
+$(JSSLOC_DIR)/SOCU_RVA.js \
+$(JSSLOC_DIR)/STRA_RVA.js 
+
 
 OTHER = \
 $(JSMUTU_DIR)/MUT_SCOD_REF.js \
 $(JSREFS_DIR)/VERSE_REFS.js \
 $(JSROOTS_DIR)/ROOTS_SCOD.js
 
+
 # Suppresses display of executed commands
 # $(VERBOSE).SILENT:
 
-default_rule: $(CRI_BIB) $(CRI_SBIB) $(CRI_SCOD) $(OTHER)
+default_rule: $(CRI_BIB) $(CRI_SBIB) $(CRI_SCOD) $(SLOCS) $(OTHER) 
 	@echo "Finished building all critical js files."
 
 	
@@ -235,5 +246,45 @@ $(JSREFS_DIR)/VERSE_REFS.js: $(JSREFS_DIR)/VERSE_REFS.tab
 $(JSROOTS_DIR)/ROOTS_SCOD.js: $(JSROOTS_DIR)/ROOTS.table
 	$(BASH) $(JSROOTS_DIR)/gen_ROOTS_SCOD_sh
 	
+
+# LOC_TABS
+
+# KJVs
+$(LOCTAB_DIR)/sql3_KJVs.tab: $(TRA_DIR)/KJVs_bib.tab
+	$(BASH) $(LOCTAB_DIR)/gen_sql3_in_tab_sh KJVs $(TRA_DIR)
+	
+$(LOCTAB_DIR)/socu_BYZ_KJVs.tab $(LOCTAB_DIR)/stra_BYZ_KJVs.tab: $(TXT_DIR)/*_txt.tab $(LOCTAB_DIR)/sql3_KJVs.tab
+	$(BASH) $(LOCTAB_DIR)/gen_stra_tab_sh BYZ KJVs
+	
+$(LOCTAB_DIR)/socu_WLC_KJVs.tab $(LOCTAB_DIR)/stra_WLC_KJVs.tab: $(TXT_DIR)/*_txt.tab $(LOCTAB_DIR)/sql3_KJVs.tab
+	$(BASH) $(LOCTAB_DIR)/gen_stra_tab_sh WLC KJVs
+	
+$(LOCTAB_DIR)/SOCU_KJV.tab $(LOCTAB_DIR)/STRA_KJV.tab: \
+		$(LOCTAB_DIR)/socu_BYZ_KJVs.tab $(LOCTAB_DIR)/stra_BYZ_KJVs.tab \
+		$(LOCTAB_DIR)/socu_WLC_KJVs.tab $(LOCTAB_DIR)/stra_WLC_KJVs.tab
+	$(BASH) $(LOCTAB_DIR)/gen_SOCU_and_STRA_tab_sh WLC BYZ KJV
+
+$(JSSLOC_DIR)/SOCU_KJV.js $(JSSLOC_DIR)/STRA_KJV.js: $(LOCTAB_DIR)/SOCU_KJV.tab $(LOCTAB_DIR)/STRA_KJV.tab
+	$(BASH) $(JSSLOC_DIR)/gen_SOCU_and_STRA_js_sh KJV
+
+# RVAs
+$(LOCTAB_DIR)/sql3_RVAs.tab: $(TRA_DIR)/RVAs_bib.tab
+	$(BASH) $(LOCTAB_DIR)/gen_sql3_in_tab_sh RVAs $(TRA_DIR)
+	
+$(LOCTAB_DIR)/socu_BYZ_RVAs.tab $(LOCTAB_DIR)/stra_BYZ_RVAs.tab: $(TXT_DIR)/*_txt.tab $(LOCTAB_DIR)/sql3_RVAs.tab
+	$(BASH) $(LOCTAB_DIR)/gen_stra_tab_sh BYZ RVAs
+	
+$(LOCTAB_DIR)/socu_WLC_RVAs.tab $(LOCTAB_DIR)/stra_WLC_RVAs.tab: $(TXT_DIR)/*_txt.tab $(LOCTAB_DIR)/sql3_RVAs.tab
+	$(BASH) $(LOCTAB_DIR)/gen_stra_tab_sh WLC RVAs
+	
+$(LOCTAB_DIR)/SOCU_RVA.tab $(LOCTAB_DIR)/STRA_RVA.tab: \
+		$(LOCTAB_DIR)/socu_BYZ_RVAs.tab $(LOCTAB_DIR)/stra_BYZ_RVAs.tab \
+		$(LOCTAB_DIR)/socu_WLC_RVAs.tab $(LOCTAB_DIR)/stra_WLC_RVAs.tab
+	$(BASH) $(LOCTAB_DIR)/gen_SOCU_and_STRA_tab_sh WLC BYZ RVA
+	
+$(JSSLOC_DIR)/SOCU_RVA.js $(JSSLOC_DIR)/STRA_RVA.js: $(LOCTAB_DIR)/SOCU_RVA.tab $(LOCTAB_DIR)/STRA_RVA.tab
+	$(BASH) $(JSSLOC_DIR)/gen_SOCU_and_STRA_js_sh RVA
+
+
 
 

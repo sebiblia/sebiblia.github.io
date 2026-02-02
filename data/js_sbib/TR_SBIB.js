@@ -1,9 +1,6 @@
 
 	
 export const bib_verses = {
-  "genesis": {
-    "1": {}
-  },
   "matthew": {
     "1": {
       "1": "G976 G1078 G2424 G5547 G5207 G1138 G5207 G11",

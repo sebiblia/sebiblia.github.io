@@ -1,0 +1,21 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+LOC=${1}
+
+rm SOCU_${LOC}.js
+rm STRA_${LOC}.js
+
+echo "Generating SOCU_"${LOC}".js and STRA_"${LOC}".js"
+
+node print_js_socu.js ../loc_tabs/SOCU_${LOC}.tab
+node print_js_stra.js ../loc_tabs/STRA_${LOC}.tab
+
+cd ${CURR_DIR}
+
