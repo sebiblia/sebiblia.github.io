@@ -12,7 +12,6 @@ const shortcuts = {
 	books: ' (CTRL+A+B)',
 	copy_link: ' (CTRL+A+L)',
 	examples: ' (CTRL+A+E)',
-	manual: ' (CTRL+A+M)',
 	variables: ' (CTRL+A+V)',
 	debug: ' (CTRL+A+D)',
 	show_link: ' (CTRL+A+K)',
@@ -20,6 +19,9 @@ const shortcuts = {
 	save_history: ' (CTRL+A+S)',
 	load_history: ' (CTRL+A+R)',
 	reset_history: ' (CTRL+A+I)',
+	formula: ' (CTRL+A+F)',
+	clear: ' (CTRL+A+C)',
+	menu: ' (CTRL+A+M)',
 };
 
 const msg_es = {

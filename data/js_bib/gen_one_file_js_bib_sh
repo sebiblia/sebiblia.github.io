@@ -1,0 +1,21 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "GENERATING "${1}"_BIB.js using "${BASH_SOURCE[0]}" params="${1}" "${2}
+
+cd $SCRIPT_DIR
+
+DIR_IN=${2}
+
+cp ${DIR_IN}/${1}_bib.tab in.bib
+sed -i 's/^\([0-9]\+\):\([0-9]\+\):\([0-9]\+\)|/\1|\2|\3|/' in.bib
+# sed -i 's/:/|/g' in.bib
+rm -rf ${1}
+
+node print_one_file_json_bib.js in.bib ${1}
+
+rm in.bib
+
+

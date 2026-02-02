@@ -1,0 +1,20 @@
+
+CREATE TABLE IF NOT EXISTS bib (
+	b INT NOT NULL,
+	c INT NOT NULL,
+	v INT NOT NULL,
+	w INT NOT NULL,
+	ta_id TEXT NOT NULL,
+	cid TEXT
+);
+
+.import in.tab bib
+
+create table refs_codes as select DISTINCT cid, GROUP_CONCAT(b || ':' || c || ':' || v, ' ') as dat
+	from bib
+	group by cid
+;
+
+.output out.tab
+select * from refs_codes;
+.output

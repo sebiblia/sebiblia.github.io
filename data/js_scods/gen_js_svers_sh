@@ -3,17 +3,18 @@
 CURR_DIR=$(pwd)
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-echo "GENERATING _bib.tab file using "${BASH_SOURCE[0]}
+echo "GENERATING "${1}"_SVERSES.js using "${BASH_SOURCE[0]}
 
 cd $SCRIPT_DIR
 
 
 IN_DIR="../txt_tabs"
 OUT_DIR="."
-SLQ_FILE="./get_BIB_tab.sql3"
+SLQ_FILE="./get_SREF_tab.sql3"
 
 fin=${IN_DIR}/${1}_txt.tab
-fout=${OUT_DIR}/${1}_bib.tab
+fout=${OUT_DIR}/${1}_sref.tab
+js_out=${OUT_DIR}/${1}_SVERSES.js
 
 echo "Generating "${fout}" from "${fin}
 
@@ -26,4 +27,10 @@ sqlite3 < ${SLQ_FILE}
 mv out.tab ${fout}
 rm in.tab
 
+echo "Generating "${js_out}" from "${fout}
+
+node print_js_svers.js ${fout} ${1}
+
+
 cd ${CURR_DIR}
+

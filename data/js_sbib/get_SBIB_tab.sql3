@@ -1,0 +1,26 @@
+
+CREATE TABLE IF NOT EXISTS bib (
+	b INT NOT NULL,
+	c INT NOT NULL,
+	v INT NOT NULL,
+	w INT NOT NULL,
+	txta TEXT NOT NULL,
+	cid TEXT	
+);
+
+.import in.tab bib
+
+/* create table sbib as select b,c,v, GROUP_CONCAT(txta || ':' || cid, ' ') as dat */
+
+/*
+create table swds as select DISTINCT b,c,v,w, GROUP_CONCAT(cid, '+') as cid 
+	from bib GROUP BY b,c,v,w;
+*/
+	
+create table sbib as select DISTINCT b,c,v, GROUP_CONCAT(cid, ' ') as dat 
+	from bib GROUP BY b,c,v;
+
+.output out.tab
+select * from sbib;
+.output
+

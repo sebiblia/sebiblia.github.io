@@ -344,7 +344,7 @@ function init_menus(){
 	let clk_hdlr = null;
 	
 	dv_button = document.getElementById("id_pop_menu"); // this id must be the same to the id in the HTML page.
-	clk_hdlr = pop_menu_handler;
+	clk_hdlr = toggle_pop_menu;
 	if(dv_button != null){ dv_button.click_handler = clk_hdlr; dv_button.addEventListener('click', clk_hdlr); }
 }
 
@@ -946,7 +946,7 @@ function end_click(dv_tgt){
 function check_top_button(dv_tgt, id_ope){
 }
 
-function pop_menu_handler(){
+function toggle_pop_menu(){
 	const dv_pop_sec = document.getElementById("id_pop_opt_sec");
 
 	let dv_pop_men = null;
@@ -2663,9 +2663,6 @@ function init_shortcuts(){
 				toggle_lang_examples(gvar.examples);
 				scroll_to_top(document.getElementById(id_examples));
 			}
-			if(all_dwn['m']){
-				open_manual();
-			}
 			if(all_dwn['v']){
 				toggle_variables_info();
 				scroll_to_top(document.getElementById(id_variables));
@@ -2694,6 +2691,15 @@ function init_shortcuts(){
 			if(all_dwn['f']){
 				const dv_expr = document.getElementById(id_expression);
 				dv_expr.focus();
+			}
+			if(all_dwn['c']){
+				const dv_expr = document.getElementById(id_expression);
+				dv_expr.value = "";
+				dv_expr.focus();
+			}
+			if(all_dwn['m']){
+				toggle_pop_menu();
+				//open_manual();
 			}
 		}
 	});

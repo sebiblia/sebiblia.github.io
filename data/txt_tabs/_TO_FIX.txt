@@ -1,0 +1,11 @@
+THESE ERRORS WHERE FOUND USING 
+/home/jose/devel/my_repos/sebiblia.github.io/code/sf_test_biblang.js
+
+These chapters were wrong from source material
+
+1sa.21		WLC, ALE		COMPLETAR 1sa.20:42 con 1sa.21:1 correr 1sa.21:2 a 1sa:21:1 y el resto del capitulo		(9:21:1-9:21:15)
+1cr.12:6	WLC, ALE		COMPLETAR 1cr.12:4 con 1cr.12:5 y correr 1cr.12:6 a 1cr.12:5 y el resto del capitulo		(13:12:1-13:12:40)
+
+To fix using 'fix_bib_tab.js'
+
+Hay varios salmos mal en ALE. (Comparé ALE_bib.tab vs WLC_bib.tab)
