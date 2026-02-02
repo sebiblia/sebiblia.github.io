@@ -1,0 +1,17 @@
+
+CREATE TABLE IF NOT EXISTS mut (
+	cid1 INT NOT NULL,
+	num INT NOT NULL,
+	cid2 INT NOT NULL
+);
+
+.import MUTUAL_HEBREW_GREEK_TRANSLATIONS.table mut
+
+create table mut_ref as select cid1, GROUP_CONCAT(cid2, ' ') as dat
+	from mut
+	group by cid1
+;
+
+.output mut_ref.tab
+select * from mut_ref;
+.output

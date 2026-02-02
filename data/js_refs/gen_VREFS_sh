@@ -1,0 +1,22 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "GENERATING VERSE_REFS.js using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+rm FULL_VERSE_REFS.tab VERSE_REFS.js
+
+SLQ_FILE="./get_FULL_REFS.sql3"
+
+sqlite3 < ${SLQ_FILE}
+
+echo "Generating VERSE_REFS.js from VERSE_REFS.tab"
+
+node print_js_vrefs.js FULL_VERSE_REFS.tab VERSE_REFS.js
+
+
+cd ${CURR_DIR}
+

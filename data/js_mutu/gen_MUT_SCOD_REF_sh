@@ -1,0 +1,22 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "GENERATING MUT_SCOD_REF.js using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+rm mut_ref.tab MUT_SCOD_REF.js
+
+SLQ_FILE="./get_MUT_tab.sql3"
+
+sqlite3 < ${SLQ_FILE}
+
+echo "Generating MUT_SCOD_REF.js from mut_ref.tab"
+
+node print_js_mut.js mut_ref.tab MUT
+
+
+cd ${CURR_DIR}
+

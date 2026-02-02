@@ -1,0 +1,22 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "GENERATING ROOTS_SCOD.js using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+rm roots_ref.tab ROOTS_SCOD.js
+
+SLQ_FILE="./get_ROOTS_tab.sql3"
+
+sqlite3 < ${SLQ_FILE}
+
+echo "Generating ROOTS_SCOD.js from roots_ref.tab"
+
+node print_js_roots.js roots_ref.tab ROOTS
+
+
+cd ${CURR_DIR}
+

@@ -1,0 +1,24 @@
+
+CREATE TABLE IF NOT EXISTS refs (
+	v1 TEXT NOT NULL,
+	v2 TEXT NOT NULL
+);
+
+.import VERSE_REFS.tab refs
+
+create table all_refs as 
+select v1,v2 from refs
+union
+select v2,v1 from refs
+;
+
+create table cross_ref as select v1, GROUP_CONCAT(v2, ' ') as dat
+	from all_refs
+	group by v1
+;
+
+
+.output FULL_VERSE_REFS.tab
+select * from cross_ref;
+.output
+

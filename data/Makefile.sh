@@ -8,17 +8,11 @@ BIB_DIR = $(BASE_DIR)/bib_tabs
 JSBIB_DIR = $(BASE_DIR)/js_bib
 JSSBIB_DIR = $(BASE_DIR)/js_sbib
 JSSCODS_DIR = $(BASE_DIR)/js_scods
+JSMUTU_DIR = $(BASE_DIR)/js_mutu
+JSREFS_DIR = $(BASE_DIR)/js_refs
+JSROOTS_DIR = $(BASE_DIR)/js_roots
 
 BASH=bash
-
-CRI_BIB_1 = \
-$(JSBIB_DIR)/ALE_BIB.js 
-
-CRI_SBIB_1 = \
-$(JSSBIB_DIR)/ALE_SBIB.js 
-
-CRI_SCOD_1 = \
-$(JSSCODS_DIR)/ALE_SVERSES.js 
 
 CRI_BIB = \
 $(JSBIB_DIR)/ALE_BIB.js \
@@ -53,10 +47,15 @@ $(JSSCODS_DIR)/WH_SVERSES.js \
 $(JSSCODS_DIR)/WLC_SVERSES.js
 
 
+OTHER = \
+$(JSMUTU_DIR)/MUT_SCOD_REF.js \
+$(JSREFS_DIR)/VERSE_REFS.js \
+$(JSROOTS_DIR)/ROOTS_SCOD.js
+
 # Suppresses display of executed commands
 # $(VERBOSE).SILENT:
 
-default_rule: $(CRI_BIB) $(CRI_SBIB) $(CRI_SCOD) 
+default_rule: $(CRI_BIB) $(CRI_SBIB) $(CRI_SCOD) $(OTHER)
 	@echo "Finished building all critical js files."
 
 	
@@ -222,5 +221,19 @@ $(JSSBIB_DIR)/WLC_SBIB.js: $(TXT_DIR)/WLC_txt.tab
 $(JSSCODS_DIR)/WLC_SVERSES.js: $(TXT_DIR)/WLC_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh WLC
 
+
+# OTHER
+
+$(JSMUTU_DIR)/MUT_SCOD_REF.js: $(JSMUTU_DIR)/MUTUAL_HEBREW_GREEK_TRANSLATIONS.table
+	$(BASH) $(JSMUTU_DIR)/gen_MUT_SCOD_REF_sh
+	
+
+$(JSREFS_DIR)/VERSE_REFS.js: $(JSREFS_DIR)/VERSE_REFS.tab
+	$(BASH) $(JSREFS_DIR)/gen_VREFS_sh
+	
+
+$(JSROOTS_DIR)/ROOTS_SCOD.js: $(JSROOTS_DIR)/ROOTS.table
+	$(BASH) $(JSROOTS_DIR)/gen_ROOTS_SCOD_sh
+	
 
 
