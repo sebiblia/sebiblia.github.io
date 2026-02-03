@@ -15,8 +15,11 @@ JSROOTS_DIR = $(BASE_DIR)/js_roots
 TRA_DIR = $(BASE_DIR)/tra_bib_tabs
 LOCTAB_DIR = $(BASE_DIR)/loc_tabs
 JSSLOC_DIR = $(BASE_DIR)/js_sloc
+JSLOC_SRC = $(BASE_DIR)/js_loc/src
+JSLOC_DIR = $(BASE_DIR)/js_loc
 
 BASH=bash
+SQLITE=sqlite3
 
 CRI_BIB = \
 $(JSBIB_DIR)/ALE_BIB.js \
@@ -56,6 +59,13 @@ $(JSSLOC_DIR)/STRA_KJV.js \
 $(JSSLOC_DIR)/SOCU_RVA.js \
 $(JSSLOC_DIR)/STRA_RVA.js 
 
+LOCS = \
+$(JSLOC_DIR)/GRE_EN.js \
+$(JSLOC_DIR)/GRE_ES.js \
+$(JSLOC_DIR)/GRE_TRA.js \
+$(JSLOC_DIR)/HEB_EN.js \
+$(JSLOC_DIR)/HEB_ES.js \
+$(JSLOC_DIR)/HEB_TRA.js 
 
 OTHER = \
 $(JSMUTU_DIR)/MUT_SCOD_REF.js \
@@ -66,7 +76,7 @@ $(JSROOTS_DIR)/ROOTS_SCOD.js
 # Suppresses display of executed commands
 # $(VERBOSE).SILENT:
 
-default_rule: $(CRI_BIB) $(CRI_SBIB) $(CRI_SCOD) $(SLOCS) $(OTHER) 
+default_rule: $(CRI_BIB) $(CRI_SBIB) $(CRI_SCOD) $(SLOCS) $(LOCS) $(OTHER) 
 	@echo "Finished building all critical js files."
 
 	
@@ -89,6 +99,10 @@ default_rule: $(CRI_BIB) $(CRI_SBIB) $(CRI_SCOD) $(SLOCS) $(OTHER)
 # GENERATING RULES
 #
 
+#-----------------
+# ALL CRI	
+	
+#-----
 # ALE
 
 $(BIB_DIR)/ALE_bib.tab: $(TXT_DIR)/ALE_txt.tab
@@ -107,6 +121,7 @@ $(JSSCODS_DIR)/ALE_SVERSES.js: $(TXT_DIR)/ALE_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh ALE
 
 
+#-----
 # BYZ
 
 $(BIB_DIR)/BYZ_bib.tab: $(TXT_DIR)/BYZ_txt.tab
@@ -125,6 +140,7 @@ $(JSSCODS_DIR)/BYZ_SVERSES.js: $(TXT_DIR)/BYZ_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh BYZ
 
 
+#-----
 # LXX
 
 $(BIB_DIR)/LXX_bib.tab: $(TXT_DIR)/LXX_txt.tab
@@ -143,6 +159,7 @@ $(JSSCODS_DIR)/LXX_SVERSES.js: $(TXT_DIR)/LXX_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh LXX
 
 
+#-----
 # NES
 
 $(BIB_DIR)/NES_bib.tab: $(TXT_DIR)/NES_txt.tab
@@ -161,6 +178,7 @@ $(JSSCODS_DIR)/NES_SVERSES.js: $(TXT_DIR)/NES_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh NES
 
 
+#-----
 # TKH
 
 $(BIB_DIR)/TKH_bib.tab: $(TXT_DIR)/TKH_txt.tab
@@ -179,6 +197,7 @@ $(JSSCODS_DIR)/TKH_SVERSES.js: $(TXT_DIR)/TKH_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh TKH
 
 
+#-----
 # TR
 
 $(BIB_DIR)/TR_bib.tab: $(TXT_DIR)/TR_txt.tab
@@ -197,6 +216,7 @@ $(JSSCODS_DIR)/TR_SVERSES.js: $(TXT_DIR)/TR_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh TR
 
 
+#-----
 # WH
 
 $(BIB_DIR)/WH_bib.tab: $(TXT_DIR)/WH_txt.tab
@@ -215,6 +235,7 @@ $(JSSCODS_DIR)/WH_SVERSES.js: $(TXT_DIR)/WH_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh WH
 
 
+#-----
 # WLC
 
 $(BIB_DIR)/WLC_bib.tab: $(TXT_DIR)/WLC_txt.tab
@@ -233,6 +254,7 @@ $(JSSCODS_DIR)/WLC_SVERSES.js: $(TXT_DIR)/WLC_txt.tab
 	$(BASH) $(JSSCODS_DIR)/gen_js_svers_sh WLC
 
 
+#-----------------
 # OTHER
 
 $(JSMUTU_DIR)/MUT_SCOD_REF.js: $(JSMUTU_DIR)/MUTUAL_HEBREW_GREEK_TRANSLATIONS.table
@@ -247,9 +269,10 @@ $(JSROOTS_DIR)/ROOTS_SCOD.js: $(JSROOTS_DIR)/ROOTS.table
 	$(BASH) $(JSROOTS_DIR)/gen_ROOTS_SCOD_sh
 	
 
-# LOC_TABS
+#-----------------
+# LOC_TABS AND SLOCS
 
-# KJVs
+## KJVs
 $(LOCTAB_DIR)/sql3_KJVs.tab: $(TRA_DIR)/KJVs_bib.tab
 	$(BASH) $(LOCTAB_DIR)/gen_sql3_in_tab_sh KJVs $(TRA_DIR)
 	
@@ -267,7 +290,7 @@ $(LOCTAB_DIR)/SOCU_KJV.tab $(LOCTAB_DIR)/STRA_KJV.tab: \
 $(JSSLOC_DIR)/SOCU_KJV.js $(JSSLOC_DIR)/STRA_KJV.js: $(LOCTAB_DIR)/SOCU_KJV.tab $(LOCTAB_DIR)/STRA_KJV.tab
 	$(BASH) $(JSSLOC_DIR)/gen_SOCU_and_STRA_js_sh KJV
 
-# RVAs
+## RVAs
 $(LOCTAB_DIR)/sql3_RVAs.tab: $(TRA_DIR)/RVAs_bib.tab
 	$(BASH) $(LOCTAB_DIR)/gen_sql3_in_tab_sh RVAs $(TRA_DIR)
 	
@@ -286,5 +309,26 @@ $(JSSLOC_DIR)/SOCU_RVA.js $(JSSLOC_DIR)/STRA_RVA.js: $(LOCTAB_DIR)/SOCU_RVA.tab 
 	$(BASH) $(JSSLOC_DIR)/gen_SOCU_and_STRA_js_sh RVA
 
 
+#-----------------
+# LOCS
 
+$(JSLOC_DIR)/HEB_EN.js: $(JSLOC_SRC)/EN_TRA_HEB.OK
+	$(BASH) $(JSLOC_SRC)/gen_js_LOC_sh HEB EN $(JSLOC_DIR)
+	
+$(JSLOC_DIR)/HEB_ES.js: $(JSLOC_SRC)/ES_TRA_HEB.OK
+	$(BASH) $(JSLOC_SRC)/gen_js_LOC_sh HEB ES $(JSLOC_DIR)
+	
+$(JSLOC_DIR)/GRE_EN.js: $(JSLOC_SRC)/EN_TRA_GRE.OK
+	$(BASH) $(JSLOC_SRC)/gen_js_LOC_sh GRE EN $(JSLOC_DIR)
+	
+$(JSLOC_DIR)/GRE_ES.js: $(JSLOC_SRC)/ES_TRA_GRE.OK
+	$(BASH) $(JSLOC_SRC)/gen_js_LOC_sh GRE ES $(JSLOC_DIR)
+
+$(JSLOC_DIR)/HEB_TRA.js: $(JSLOC_SRC)/mini_HEB_strong_analysis.txt
+	$(BASH) $(JSLOC_SRC)/gen_js_TRA_sh HEB $(JSLOC_DIR)
+	
+$(JSLOC_DIR)/GRE_TRA.js: $(JSLOC_SRC)/mini_GRE_strong_analysis.txt
+	$(BASH) $(JSLOC_SRC)/gen_js_TRA_sh GRE $(JSLOC_DIR)
+	
+	
 

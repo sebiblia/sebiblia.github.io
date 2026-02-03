@@ -1,0 +1,19 @@
+
+
+CREATE TABLE IF NOT EXISTS bib0 (
+	b INT NOT NULL,
+	c INT NOT NULL,
+	v INT NOT NULL,
+	w INT NOT NULL,
+	ta_id TEXT NOT NULL,
+	tra TEXT NOT NULL
+);
+
+.import ./mini_GRE_strong_analysis.txt bib0
+
+create table sel as select DISTINCT b,c,v, GROUP_CONCAT(ta_id || ':' || tra, ' ') as wrd from bib0 GROUP BY b,c,v;
+
+.output GRE_tra_verse.tab
+select * from sel;
+.output
+

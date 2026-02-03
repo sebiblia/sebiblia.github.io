@@ -1,0 +1,24 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+ORI=${1}
+LOC=${2}
+ODIR=${3}
+
+rm ${ORI}_${LOC}.js
+
+echo "Generating "${ORI}"_"${LOC}".js"
+
+node print_LOC_js_tra.js ${LOC}_TRA_${ORI}.OK ${ORI}_${LOC}
+
+mv ${ORI}_${LOC}.js ${ODIR}
+
+cd ${CURR_DIR}
+
+
