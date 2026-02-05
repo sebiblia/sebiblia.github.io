@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+node sf_test_biblang.js 'mat.1:6-40'
+node sf_test_biblang.js 'mat.1:6'
+node sf_test_biblang.js 'mat.1:6-7'
+node sf_test_biblang.js 'mat.1:6,17'
+node sf_test_biblang.js 'mat.1:6-17'
+node sf_test_biblang.js 'mat.1:6,17-20'
+node sf_test_biblang.js 'mat.1:6,17-2:2'
+node sf_test_biblang.js 'mat.1:6,17-w:2'
+node sf_test_biblang.js 'mat.1:6,9,17-2:15'
+node sf_test_biblang.js 'mat.1:6,9,17-2:15,19'
+node sf_test_biblang.js 'mat.1:6-2:15,19'
+node sf_test_biblang.js 'mat.1:6-40'

@@ -8,6 +8,7 @@ import { gvar, fill_verses, verse_cod2obj, fill_strong_parts, } from './sf_searc
 import { init_lang, } from './sf_lang_mgr.js';
 import { diffSequence } from './sf_diff_sequence.js';
 import { distance, closest,  } from './sf_word_dist.js';
+import { is_bib_citation,  } from './sf_parse_cit.js';
 
 import { get_bible_verse, find_ana, get_text_analysis, calc_prev_scode, calc_next_scode, 
 	get_next_scode, get_prev_scode, fill_bibobj_vtxt, fill_bibobj_cit_and_ref, fill_cri_asc, 
@@ -494,6 +495,32 @@ async function main_test_verses(){
 	
 }
 
+async function main_test_parse_cit(){
+	if (process.argv.length < 3) {
+		console.log('Usage: node ' + process.argv[1] + ' <cit>');
+		process.exit(1);
+	}
+	
+	const cit = process.argv[2];
+		
+	gvar.dbg_biblang = false;
+
+	init_lang('es');
+	init_biblang('es');
+	
+	gvar.biblang.curr_OT = "WLC";
+	gvar.biblang.curr_NT = "BYZ";
+	
+	const ot_s = gvar.biblang.curr_OT + "_S";
+	const nt_s = gvar.biblang.curr_NT + "_S";
+
+	const is_cit = is_bib_citation(cit);
+
+	console.log("===========================================================");
+	console.log("cit=" + cit);
+	console.log(is_cit);
+}
+
 
 //test_splice();
 //test_reduce();
@@ -503,7 +530,7 @@ async function main_test_verses(){
 //main_test_matches();
 //main_test_inc_dec();
 //main_test_verses();
-
+//main_test_parse_cit();
 
 
 main_biblang_command();
