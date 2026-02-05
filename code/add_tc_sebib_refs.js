@@ -33,7 +33,7 @@ async function proc_file(){
 	//const wrt = filesys.createWriteStream(f_out_nm);
 	//	wrt.write(line + '\n');
 
-	const ph = cheerio.load(html, null, false);
+	const ph = cheerio.load(html, {decodeEntities:false, xmlMode:false, }, false);
 
 	//const REF = ph('a[href]').map((ii, el) => ph(el).attr('href')).get();
 
@@ -68,21 +68,30 @@ async function proc_file(){
 				} else {
 					//console.log(is_cit);
 					const bl_obj = await eval_biblang_command(brf);
-					const hrf = get_last_href("https://SeBiblia.github.io/es/tool.html");
+					const url_serv = "https://SeBiblia.github.io/es/tool.html";
+					//const url_serv = "http://localhost/JOSE/sebiblia.github.io/es/tool.html";
+					const hrf = get_last_href(url_serv);
 					//console.log(hrf);
 					if(hrf != null){
-						const nn = ` <a href="${hrf}">SeBiblia</a> `;
-						const pp = decodeURIComponent(hrf);
-						console.log(pp);
+						//const nn = ` <a href="${hrf}">SeBiblia</a> `;
+						console.log(hrf);
+						//console.log(nn);
+						const nn = ph('<a>SeBiblia</a>').attr('href', hrf);
 						ph(el).before(nn);
+						
+						const mod = ph(el).parent().html();
+						console.log(mod);
 					}
 					//console.log(is_cit);
 				}
 			}
 		}
 	}
+	
+	const out_htm = ph.html({decodeEntities:false});
+	//console.log(out_htm);
 
-	filesys.writeFileSync(f_out_nm, ph.html(), 'utf8');
+	filesys.writeFileSync(f_out_nm, out_htm, 'utf8');
 	//console.log(ph.html());
 }
 

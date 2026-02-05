@@ -1938,6 +1938,16 @@ function get_search_href(){
 function find_GET_parameter(prm_nm) {
 	let result = null,
 	tmp = [];
+	const ss = location.search.substr(1);
+	let sep = '&';
+	if(ss.includes('&amp;')){
+		sep = '&amp;';
+	}
+	ss.split(sep).forEach(function (item) {
+			tmp = item.split("=");
+			if(tmp[0] === prm_nm){ result = decodeURIComponent(tmp[1]); }
+	});
+	/*
 	location.search
 		.substr(1)
 		.split("&")
@@ -1945,6 +1955,7 @@ function find_GET_parameter(prm_nm) {
 			tmp = item.split("=");
 			if(tmp[0] === prm_nm){ result = decodeURIComponent(tmp[1]); }
 		});
+	*/
 	return result;
 }
 
