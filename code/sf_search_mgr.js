@@ -1879,8 +1879,35 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	});
 }
 
+export function get_last_href(url_server){
+	const his = gvar.biblang.history;
+	if(his == null){
+		const qr_href = url_server;
+		return qr_href;
+	}
+	if(his.length == 0){
+		const qr_href = url_server;
+		return qr_href;
+	}
+	const last = his[his.length - 1];
+	if(DEBUG_HREFS){ 
+		console.log("get_search_href"); 
+		console.log(JSON.stringify(last.conf)); 		
+	}
+	
+	const mm = conf_to_mini(last.conf);
+	const mm2 = encode_mini(mm);
+	const enc_conf = encodeURIComponent(mm2);
+	const enc_expr = encodeURIComponent(last.expr);
+	const qr_href = `${url_server}?${GET_var_expr}=${enc_expr}&${GET_var_conf}=${enc_conf}`;
+	return qr_href;
+}
+
 function get_search_href(){
 	const loc = document.location;
+	const url_serv = `${loc.origin}${loc.pathname}`;
+	const qr_href = get_last_href(url_serv);
+	/*
 	const his = gvar.biblang.history;
 	if(his == null){
 		const qr_href = `${loc.origin}${loc.pathname}`;
@@ -1901,6 +1928,7 @@ function get_search_href(){
 	const enc_conf = encodeURIComponent(mm2);
 	const enc_expr = encodeURIComponent(last.expr);
 	const qr_href = `${loc.origin}${loc.pathname}?${GET_var_expr}=${enc_expr}&${GET_var_conf}=${enc_conf}`;
+	*/
 	
 	console.log("get_search_href");
 	console.log(qr_href);

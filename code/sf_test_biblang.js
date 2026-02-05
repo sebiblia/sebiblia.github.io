@@ -1,5 +1,5 @@
 
-import * as filesys from "fs";
+import * as filesys from "node:fs";
 
 import { init_biblang, eval_biblang_command, get_txt_matches, verse_disp,  
 	conf_to_mini, mini_to_conf, encode_mini, decode_mini, 
@@ -8,7 +8,7 @@ import { gvar, fill_verses, verse_cod2obj, fill_strong_parts, } from './sf_searc
 import { init_lang, } from './sf_lang_mgr.js';
 import { diffSequence } from './sf_diff_sequence.js';
 import { distance, closest,  } from './sf_word_dist.js';
-import { is_bib_citation,  } from './sf_parse_cit.js';
+import { is_bib_citation,  } from './tmp_parse_cit.js';
 
 import { get_bible_verse, find_ana, get_text_analysis, calc_prev_scode, calc_next_scode, 
 	get_next_scode, get_prev_scode, fill_bibobj_vtxt, fill_bibobj_cit_and_ref, fill_cri_asc, 
@@ -530,8 +530,8 @@ async function main_test_parse_cit(){
 //main_test_matches();
 //main_test_inc_dec();
 //main_test_verses();
-//main_test_parse_cit();
+main_test_parse_cit();
 
 
-main_biblang_command();
+//main_biblang_command();
 
