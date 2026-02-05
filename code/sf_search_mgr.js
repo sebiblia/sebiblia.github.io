@@ -877,11 +877,11 @@ export async function fill_verses(bl_obj){
 	
 	if(! is_node_call){
 		dv_verses.all_bibobj = all_bibobj;
-	}
 
-	const dv_end_vrs = document.createElement("div");
-	dv_end_vrs.classList.add("end_of_verses");
-	dv_verses.appendChild(dv_end_vrs);
+		const dv_end_vrs = document.createElement("div");
+		dv_end_vrs.classList.add("end_of_verses");
+		dv_verses.appendChild(dv_end_vrs);
+	}
 	
 	await fill_sdefs(bl_obj);
 	await open_txta_verse(txta_bobj, bl_obj);

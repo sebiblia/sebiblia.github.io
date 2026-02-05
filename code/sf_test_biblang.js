@@ -414,7 +414,7 @@ async function main_test_verses(){
 		bib_1 = process.argv[3];
 	}
 		
-	gvar.dbg_biblang = false;	
+	gvar.dbg_biblang = false;
 
 	init_lang('es');
 	init_biblang('es');
@@ -502,9 +502,9 @@ async function main_test_verses(){
 //main_test_scode_next_and_prev();
 //main_test_matches();
 //main_test_inc_dec();
-main_test_verses();
+//main_test_verses();
 
 
 
-//main_biblang_command();
+main_biblang_command();
 
