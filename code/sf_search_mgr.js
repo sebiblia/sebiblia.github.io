@@ -25,6 +25,7 @@ const DEBUG_HREFS = false;
 const DEBUG_INSERT_TAGS = false;
 const DEBUG_CALC_NXT_PRESENT = false;
 const DEBUG_ADD_SCOD_OCUS = false;
+const DEBUG_PERSISTANCE = false;
 
 const WITH_AUX_BUTTON = false;
 
@@ -325,12 +326,12 @@ function init_menus(){
 
 	const dv_back_butt = document.getElementById(id_back_butt);
 	dv_back_butt.addEventListener('click', async function() {
-		window.history.back();
+		back_history();
 	});
 
 	const dv_forward_butt = document.getElementById(id_forward_butt);
 	dv_forward_butt.addEventListener('click', async function() {
-		window.history.forward();
+		forward_history();
 	});
 
 	inp_box.addEventListener('keydown', async function(ev) {
@@ -468,20 +469,55 @@ function init_handlers(){
 	window.addEventListener('popstate', pop_history_handler);
 }
 
-async function pop_history_handler(ev){
-	const dv_expr = document.getElementById(id_expression);
-	if(ev.state){
+async function forward_history(){
+	let idx = gvar.biblang.his_idx_pop;
+	if(idx == null){
+		return;
+	}
+	const fst = gvar.biblang.his_first_pushed;
+	if((fst != null) && (fst <= idx)){
+		window.history.forward();
+		return;
+	}
+	
+	await do_history_idx(idx + 1);
+}
+
+async function back_history(){
+	let idx = gvar.biblang.his_idx_pop;
+	if(idx == null){
 		const his = gvar.biblang.history;
+		idx = his.length - 1;
+	} else {
+		idx--;
+	}
+	const fst = gvar.biblang.his_first_pushed;
+	if((fst != null) && (fst <= idx)){
+		window.history.back();
+		return;
+	}
+	
+	await do_history_idx(idx);
+}
+
+async function do_history_idx(idx){
+	const his = gvar.biblang.history;
+	if((idx >= 0) && (idx < his.length)){
+		const dv_expr = document.getElementById(id_expression);
+		const hobj = his[idx];
+		dv_expr.value = hobj.expr;
+		const conf = hobj.conf;
+		
+		gvar.biblang.recovering_his = true;
+		gvar.biblang.his_idx_pop = idx;
+		await do_select(conf);
+	}
+}
+
+async function pop_history_handler(ev){
+	if(ev.state){
 		const idx = ev.state;
-		if((idx >= 0) && (idx < his.length)){
-			const hobj = his[idx];
-			dv_expr.value = hobj.expr;
-			const conf = hobj.conf;
-			
-			gvar.biblang.recovering_his = true;
-			gvar.biblang.his_idx_pop = idx;
-			await do_select(conf);
-		}
+		await do_history_idx(idx);
 	}
 }
 
@@ -489,38 +525,18 @@ export async function start_srch_mgr(curr_lang){
 	init_lang(curr_lang);
 	init_biblang(curr_lang);
 	init_menus();
-	if(PERSISTANT_STATE){ read_storage_state(); }
+	if(PERSISTANT_STATE){ 
+		read_storage_state(); 
+		window.addEventListener('beforeunload', write_storage_state);
+	}
 	init_handlers();
 	init_shortcuts();
-	
-	if(PERSISTANT_STATE){ window.addEventListener('beforeunload', write_storage_state); }
 	
 	const conf = set_search_from_url();
 	if(conf != null){
 		await do_select(conf);
 	}
 }
-
-/*
-function init_nav_history(){
-	if(gvar.biblang.history == null){
-		return;
-	}
-	if(gvar.biblang.inited_history != null){
-		return;
-	}
-	try{
-		const his = gvar.biblang.history;
-		let ii = 0;
-		for(; ii < his.length; ii++){
-			history.pushState(ii, '');
-		}
-	} catch(err){
-		console.error(err);
-	}
-	gvar.biblang.inited_history = true;
-}
-*/
 
 function get_conversion_func(){
 	let otxt = gvar.biblang.presentation.toUpperCase();
@@ -1161,6 +1177,12 @@ function toggle_history_opers(pnt_dv_ops, pnt_dv_opt, pnt_idx_sel){
 		}
 		else if(idx_sel == 1){
 			gvar.biblang.history.splice(pnt_idx_sel, 1);
+			if(pnt_idx_sel < gvar.biblang.his_idx_pop){
+				gvar.biblang.his_idx_pop--;
+			}
+			if((gvar.biblang.history.length - 1) < gvar.biblang.his_idx_pop){
+				gvar.biblang.his_idx_pop = null;
+			}
 			toggle_history_info("keep");
 			dv_ops.remove();
 		}
@@ -1235,6 +1257,10 @@ function read_storage_state(){
 	let stat = {};
 	if(state_str != null){
 		stat = JSON.parse(state_str);
+		if(DEBUG_PERSISTANCE){
+			console.log("READ_STATE");
+			console.log(stat);
+		}
 		if(stat.ui_conf != null){
 			set_ui_conf(stat.ui_conf);
 			set_biblang_conf(stat.ui_conf);
@@ -1252,6 +1278,10 @@ function write_storage_state(){
 		stat.hist = gvar.biblang.history;
 	}
 	stat.ui_conf = get_ui_conf();
+	if(DEBUG_PERSISTANCE){
+		console.log("WRITING_STATE");
+		console.log(stat);
+	}
 	window.localStorage.setItem(STORAGE_STATE_ID, JSON.stringify(stat));
 }
 

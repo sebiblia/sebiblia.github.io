@@ -11,6 +11,8 @@ const DEBUG_GET_RANGE = false;
 const DEBUG_SCOD_IDX = false;
 const DEBUG_FOLLOWED = false;
 
+const DEFAULT_HIS_MAX_SZ = 1000;
+
 const NUM_OCU_UPDATE_BAR = 10000;
 
 const GREEK_PREFIX = "G";
@@ -228,7 +230,15 @@ function reset_curr_rx_insensitive(){
 function init_history(){
 	if(gvar.biblang == null){ gvar.biblang = {}; }
 	gvar.biblang.history = [];
-	gvar.biblang.size_output.his = 1000;
+	gvar.biblang.size_output.his = DEFAULT_HIS_MAX_SZ;
+}
+
+function get_his_max_sz(){
+	if(gvar.biblang == null){ gvar.biblang = {}; }
+	if(gvar.biblang.size_output == null){ gvar.biblang.size_output = {}; }
+	if(gvar.biblang.size_output.his == null){ gvar.biblang.size_output.his = DEFAULT_HIS_MAX_SZ; }
+	const maxsz = Number(gvar.biblang.size_output.his);
+	return maxsz;
 }
 
 function init_dbg_conf(){
@@ -1764,6 +1774,30 @@ function in_nodejs(){
 	return (typeof window === 'undefined');
 }
 
+function update_history(command){
+	const maxsz = get_his_max_sz();
+	if(gvar.biblang.history == null){ gvar.biblang.history = []; }
+	const his = gvar.biblang.history;
+	
+	if(gvar.biblang.his_idx_pop != null){
+		const idx = gvar.biblang.his_idx_pop;
+		his.splice(idx + 1);
+		gvar.biblang.his_idx_pop = null;
+	}
+	
+	while((his.length > 0) && (his.length >= maxsz)){ his.shift(); }
+	const curr_conf = get_biblang_conf();
+	his.push({conf: curr_conf, expr: command});
+	
+	const lpos = his.length - 1;
+	if(! in_nodejs()){
+		if(gvar.biblang.his_first_pushed == null){
+			gvar.biblang.his_first_pushed = lpos;
+		}
+		window.history.pushState(lpos, '');
+	}
+}
+
 export async function eval_biblang_command(command, config){
 	const par = gvar.biblang.parser;
 	if(par == null){
@@ -1789,29 +1823,10 @@ export async function eval_biblang_command(command, config){
 	
 	dbg_log_all_loaded_files();
 	
-	if(gvar.biblang.size_output.his != null){
-		if(! gvar.biblang.recovering_his){
-			const hsz = Number(gvar.biblang.size_output.his);
-			if(gvar.biblang.history == null){ gvar.biblang.history = []; }
-			const his = gvar.biblang.history;
-			
-			if(gvar.biblang.his_idx_pop != null){
-				const idx = gvar.biblang.his_idx_pop;
-				his.splice(idx + 1);
-				gvar.biblang.his_idx_pop = null;
-			}
-			
-			while((his.length > 0) && (his.length >= hsz)){ his.shift(); }
-			let sv_conf = get_biblang_conf();
-			his.push({conf: sv_conf, expr: command});
-			
-			const lpos = his.length - 1;
-			if(! in_nodejs()){
-				history.pushState(lpos, '');
-			}
-		} else {
-			gvar.biblang.recovering_his = null;
-		}
+	if(! gvar.biblang.recovering_his){
+		update_history(command);
+	} else {
+		gvar.biblang.recovering_his = null;
 	}
 	
 	if(gvar.dbg_biblang){

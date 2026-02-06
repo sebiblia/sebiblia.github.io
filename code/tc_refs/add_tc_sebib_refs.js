@@ -6,10 +6,10 @@
 
 import * as cheerio from "cheerio";
 import * as filesys from "node:fs";
-import { gvar, get_last_href, fill_verses, verse_cod2obj, fill_strong_parts, } from './sf_search_mgr.js';
+import { gvar, get_last_href, fill_verses, verse_cod2obj, fill_strong_parts, } from '../sf_search_mgr.js';
 import { init_biblang, eval_biblang_command, parse_citation, 
-} from './sf_biblang_mgr.js'
-import { init_lang, } from './sf_lang_mgr.js';
+} from '../sf_biblang_mgr.js'
+import { init_lang, } from '../sf_lang_mgr.js';
 
 
 async function proc_file(){
@@ -133,6 +133,7 @@ async function proc_file(){
 	//console.log(out_htm);
 
 	filesys.writeFileSync(f_out_nm, out_htm, 'utf8');
+	console.log("WROTE FILE=" + f_out_nm);
 	//console.log(ph.html());
 }
 
