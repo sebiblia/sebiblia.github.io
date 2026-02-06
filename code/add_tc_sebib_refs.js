@@ -13,18 +13,28 @@ import { init_lang, } from './sf_lang_mgr.js';
 
 
 async function proc_file(){
-	if (process.argv.length < 4) {
-		console.log('Usage: node ' + process.argv[1] + ' <ifile_name> <ofilename>');
+	if (process.argv.length < 5) {
+		console.log('Usage: node ' + process.argv[1] + ' (es|en) <ifile_name> <ofilename>');
 		process.exit(1);
 	}
 
+	// https://biblehub.com/hebrew/8251.htm
+	const rx_bhebref = /biblehub.com\/hebrew\/([^.]*).htm/;
+	const rx_bgreref = /biblehub.com\/greek\/([^.]*).htm/;
+	const rx_btxtref = /biblehub.com\/text\/([^/]*)\/(\d+)-(\d+).htm/;
 	const rx_bref = /\?search=([^&]*)\&/;
 
-	const file_nm = process.argv[2];
-	const f_out_nm = process.argv[3];
+	const lngu = process.argv[2];
+	const file_nm = process.argv[3];
+	const f_out_nm = process.argv[4];
+	
+	if((lngu != 'es') && (lngu != 'en')){
+		console.log('Usage: node ' + process.argv[1] + ' (es|en) <ifile_name> <ofilename>');
+		process.exit(1);
+	}
 
-	init_lang('es');
-	init_biblang('es');
+	init_lang(lngu);
+	init_biblang(lngu);
 	
 	gvar.biblang.curr_OT = "WLC";
 	gvar.biblang.curr_NT = "BYZ";	
@@ -41,7 +51,10 @@ async function proc_file(){
 
 	let all_hrf = [];
 	ph('a[href]').each((ii, el) => {
-		all_hrf.push(el);
+		const oo = decodeURIComponent(ph(el).attr('href'));
+		if(! oo.startsWith("#")){			
+			all_hrf.push(el);
+		}
 	});
 	//console.log(all_hrf);
 	
@@ -49,43 +62,71 @@ async function proc_file(){
 	for(ii = 0; ii < all_hrf.length; ii++){	
 		const el = all_hrf[ii];
 		const oo = decodeURIComponent(ph(el).attr('href'));
-		if(! oo.startsWith("#")){			
-			//console.log(oo);
-			const matches = oo.match(rx_bref);
-			if(matches){
-				let brf = matches[1];
-				brf = brf.replaceAll("+", " ");
-				brf = brf.trim();
-				brf = brf.replaceAll(" ", ".");
-				if(brf.charAt(1) === '.'){
-					brf = brf.substring(0, 1) + brf.substring(2);
-				}
-				//console.log("FOUND_BIREF=" + brf);
-				const is_cit = parse_citation(brf);
-				if(! is_cit){
-					console.error(oo);
-					console.error("############################################################################ ERROR CON cit=" + brf);
-				} else {
-					//console.log(is_cit);
-					const bl_obj = await eval_biblang_command(brf);
-					const url_serv = "https://SeBiblia.github.io/es/tool.html";
-					//const url_serv = "http://localhost/JOSE/sebiblia.github.io/es/tool.html";
-					const hrf = get_last_href(url_serv);
-					//console.log(hrf);
-					if(hrf != null){
-						//const nn = ` <a href="${hrf}">SeBiblia</a> `;
-						console.log(hrf);
-						//console.log(nn);
-						const nn = ph('<a>SeBiblia</a>').attr('href', hrf);
-						ph(el).before(nn);
-						
-						const mod = ph(el).parent().html();
-						console.log(mod);
-					}
-					//console.log(is_cit);
-				}
-			}
+		if(oo.startsWith("#")){
+			continue;
 		}
+		
+		let LOC = "SBLM";
+		if(lngu == 'en'){ LOC = "WEB"; }
+		
+		let brf = null;
+		let matches = null;
+		
+		matches = oo.match(rx_bhebref);
+		if(matches){
+			brf = matches[1];
+			brf = "H" + brf;
+			LOC = "RVAs";
+			if(lngu == 'en'){ LOC = "KJVs"; }
+		}
+		
+		matches = oo.match(rx_bgreref);
+		if(matches){
+			brf = matches[1];
+			brf = "G" + brf;
+			LOC = "RVAs";
+			if(lngu == 'en'){ LOC = "KJVs"; }
+		}
+		
+		matches = oo.match(rx_btxtref);
+		if(matches){
+			const book = matches[1];
+			const chapter = matches[2];
+			const verse = matches[3];
+			brf = ".txta ; " + book + "." + chapter + ":" + verse;
+		}
+		
+		//console.log(oo);
+		matches = oo.match(rx_bref);
+		if(matches){
+			brf = matches[1];
+			brf = brf.replaceAll("+", " ");
+			brf = brf.trim();
+			brf = brf.replaceAll(" ", ".");
+			if(brf.charAt(1) === '.'){
+				brf = brf.substring(0, 1) + brf.substring(2);
+			}
+			//console.log("FOUND_BIREF=" + brf);
+			const is_cit = parse_citation(brf);
+			if(! is_cit){
+				console.error(oo);
+				console.error("############################################################################ ERROR CON cit=" + brf);
+				brf = null;
+			} 
+		}
+		
+		if(brf != null){
+			gvar.biblang.curr_LOC = LOC;
+			const bl_obj = await eval_biblang_command(brf);
+			const url_serv = "https://SeBiblia.github.io/es/tool.html";
+			//const url_serv = "http://localhost/JOSE/sebiblia.github.io/es/tool.html";
+			const hrf = get_last_href(url_serv);
+			if(hrf != null){
+				//console.log(hrf);
+				const nn = ph('<a>SeBiblia</a>').attr('href', hrf);
+				ph(el).before(nn);				
+			}
+		}		
 	}
 	
 	const out_htm = ph.html({decodeEntities:false});
