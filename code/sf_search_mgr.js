@@ -249,9 +249,9 @@ function update_loc_ui(dv_ret, cod){
 }
 
 function open_home_sebib(){
-	const loc = document.location;
-	//const m_href = `https://sebiblia.github.io`;
-	window.open(loc);
+	//const loc = document.location.host;
+	//window.open(loc);
+	window.location.href = `https://sebiblia.github.io`;
 }
 
 function init_menus(){
