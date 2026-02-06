@@ -248,17 +248,19 @@ function update_loc_ui(dv_ret, cod){
 	set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
 }
 
-function open_home_sebib(){
+function go_home_sebib(){
 	//const loc = document.location.host;
 	//window.open(loc);
-	window.location.href = `https://sebiblia.github.io`;
+	const url = window.location.origin + window.location.pathname;
+	window.location.href = url;
+	//window.location.href = `https://sebiblia.github.io`;
 }
 
 function init_menus(){
 	
 	const dv_home_tit = document.getElementById("id_home_tit");
 	dv_home_tit.addEventListener('click', function() {
-		open_home_sebib();
+		go_home_sebib();
 	});		
 		
 	const dv_menus = document.getElementById("id_menus");
@@ -546,6 +548,7 @@ export async function start_srch_mgr(curr_lang){
 	
 	const conf = set_search_from_url();
 	if(conf != null){
+		clean_params_in_url();
 		await do_select(conf);
 	}
 }
@@ -1949,28 +1952,6 @@ function get_search_href(){
 	const loc = document.location;
 	const url_serv = `${loc.origin}${loc.pathname}`;
 	const qr_href = get_last_href(url_serv);
-	/*
-	const his = gvar.biblang.history;
-	if(his == null){
-		const qr_href = `${loc.origin}${loc.pathname}`;
-		return qr_href;
-	}
-	if(his.length == 0){
-		const qr_href = `${loc.origin}${loc.pathname}`;
-		return qr_href;
-	}
-	const last = his[his.length - 1];
-	if(DEBUG_HREFS){ 
-		console.log("get_search_href"); 
-		console.log(JSON.stringify(last.conf)); 		
-	}
-	
-	const mm = conf_to_mini(last.conf);
-	const mm2 = encode_mini(mm);
-	const enc_conf = encodeURIComponent(mm2);
-	const enc_expr = encodeURIComponent(last.expr);
-	const qr_href = `${loc.origin}${loc.pathname}?${GET_var_expr}=${enc_expr}&${GET_var_conf}=${enc_conf}`;
-	*/
 	
 	console.log("get_search_href");
 	console.log(qr_href);
@@ -1989,16 +1970,12 @@ function find_GET_parameter(prm_nm) {
 			tmp = item.split("=");
 			if(tmp[0] === prm_nm){ result = decodeURIComponent(tmp[1]); }
 	});
-	/*
-	location.search
-		.substr(1)
-		.split("&")
-		.forEach(function (item) {
-			tmp = item.split("=");
-			if(tmp[0] === prm_nm){ result = decodeURIComponent(tmp[1]); }
-		});
-	*/
 	return result;
+}
+
+function clean_params_in_url(){
+	const url = window.location.origin + window.location.pathname;
+	window.history.replaceState([], document.title, url);;
 }
 
 function set_search_from_url(){
@@ -2010,6 +1987,7 @@ function set_search_from_url(){
 	if(mini == null){
 		return null;
 	}
+	
 	const mm = decode_mini(mini);
 	const conf = mini_to_conf(mm);
 
