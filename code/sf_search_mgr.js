@@ -44,6 +44,7 @@ const SUF_VERSE_TXT = "_verse_txt";
 const SUF_VERSE_PRE = "_verse_pre";
 
 const id_grid_text_analysis = "id_grid_text_analysis";
+const id_home_tit = "id_home_tit";
 const id_pop_menu_sele = "id_pop_menu_sele";
 const id_search_butt = "id_search_butt";
 const id_repeat_butt = "id_repeat_butt";
@@ -247,8 +248,19 @@ function update_loc_ui(dv_ret, cod){
 	set_htm_rx_in(dv_rx_tgt, dv_rx_tgt.rx_in_cod);
 }
 
+function open_home_sebib(){
+	const loc = document.location;
+	//const m_href = `https://sebiblia.github.io`;
+	window.open(loc);
+}
 
 function init_menus(){
+	
+	const dv_home_tit = document.getElementById("id_home_tit");
+	dv_home_tit.addEventListener('click', function() {
+		open_home_sebib();
+	});		
+		
 	const dv_menus = document.getElementById("id_menus");
 	
 	const dv_old_tes = document.getElementById("id_old_test");
