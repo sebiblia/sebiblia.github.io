@@ -744,8 +744,16 @@ function fill_search_info(bl_obj){
 		dv_prv_chp.addEventListener('click', () => {
 			go_prev_chapter();
 		});
+		/*
+		const dv_prv_crono = document.createElement("div");
+		dv_prv_crono.classList.add("is_button", "prev_crono");
+		dv_prv_crono.innerHTML = gvar.all_msg.prev_crono;
+		dv_chp_nav.appendChild(dv_prv_crono);
+		dv_prv_crono.addEventListener('click', () => {
+		});*/
 		
 		const dv_num_vrs = document.createElement("input");
+		dv_num_vrs.classList.add("input_num_verse");
 		dv_num_vrs.value = 1;
 		dv_num_vrs.type = "number";
 		dv_chp_nav.appendChild(dv_num_vrs);
@@ -757,22 +765,19 @@ function fill_search_info(bl_obj){
 		});
 
 		const dv_go = document.createElement("div");
-		dv_go.classList.add("is_button");
+		dv_go.classList.add("is_button", "go_num_verse");
 		dv_go.innerHTML = gvar.all_msg.go_to_num_verse;
 		dv_chp_nav.appendChild(dv_go);
 		dv_go.addEventListener('click', () => {
 			go_verse(dv_num_vrs.value);
 		});
-		
 		/*
-		const dv_show = document.createElement("div");
-		dv_show.classList.add("is_button");
-		dv_show.innerHTML = gvar.all_msg.show_num_verses;
-		dv_chp_nav.appendChild(dv_show);
-		dv_show.addEventListener('click', () => {
-			show_num_verses(dv_num_vrs.value, bl_obj);
-		});
-		*/
+		const dv_nxt_crono = document.createElement("div");
+		dv_nxt_crono.classList.add("is_button", "next_crono");
+		dv_nxt_crono.innerHTML = gvar.all_msg.next_crono;
+		dv_chp_nav.appendChild(dv_nxt_crono);
+		dv_nxt_crono.addEventListener('click', () => {
+		});*/
 		
 		const dv_nxt_chp = document.createElement("div");
 		dv_nxt_chp.classList.add("is_button", "next_chap");

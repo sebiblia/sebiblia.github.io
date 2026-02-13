@@ -82,6 +82,9 @@ h1, h2, h3, h4, h5, h6 {
 .icon-logout::before { content: "\007D"; }
 .icon-prev-chap::before { content: "\00A0"; }
 .icon-next-chap::before { content: "\00A1"; }
+.icon-clock::before { content: "\00A8"; }
+.icon-more::before { content: "\00B6"; }
+.icon-less::before { content: "\00B7"; }
 
 .hebreo:lang(he) { direction: rtl; }
 .griego:lang(el) { direction: ltr; }
@@ -786,7 +789,7 @@ a.exam_ref:hover {
 	display: grid;
 	width: 100%;
 	gap: 1em 1em;
-	grid-template-columns: 1fr 20fr 1fr 10fr 1fr;
+	grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.1fr;
 	grid-template-rows: auto;
 	font-size: 0.7em;
 	align-items: center;  
@@ -798,9 +801,32 @@ a.exam_ref:hover {
 	grid-column-end: 1;
 }
 
+.prev_crono {
+	//font-size: 0.5em;
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.input_num_verse {
+	width: 100%;
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+.go_num_verse {
+	grid-column-start: 4;
+	grid-column-end: 4;
+}
+
+.next_crono {
+	//font-size: 0.5em;
+	grid-column-start: 5;
+	grid-column-end: 5;
+}
+
 .next_chap {
-	grid-column-start: -1;
-	grid-column-end: -1;
+	grid-column-start: 6;
+	grid-column-end: 6;
 }
 
 .end_of_verses {

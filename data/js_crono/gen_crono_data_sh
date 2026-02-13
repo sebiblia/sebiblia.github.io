@@ -1,0 +1,18 @@
+#!/bin/bash
+
+CURR_DIR=$(pwd)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Using "${BASH_SOURCE[0]}
+
+cd $SCRIPT_DIR
+
+rm crono_verses.js
+
+echo "Generating crono_verses.js from CRONO_VERSES.txt"
+
+node print_js_crono.js CRONO_VERSES.txt crono_verses.js
+
+
+cd ${CURR_DIR}
+
