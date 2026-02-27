@@ -268,8 +268,8 @@ Ejemplos:
 - [$last] Retorna los versiculos de la ULTIMA busqueda.
 - [.rhis] RESETEA la historia de busquedas. Borra toda la informacion de busquedas anteriores.
 
-- [.rx:i] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) sean INSENSITIVAS a mayusculas, minusculas, o TILDES. Este comando se ejecuta por defecto al comienzo de TODA busqueda.
-- [.rx:ni] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) NO sean insensitivas a mayusculas, minusculas, o TILDES. Es decir que las busquedas se vuelven SENSITIVAS a mayusculas, minusculas, o TILDES.
+- [.rxi] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) sean INSENSITIVAS a mayusculas, minusculas, o TILDES. Este comando se ejecuta por defecto al comienzo de TODA busqueda.
+- [.rxs] Cambia la configuracion para que las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular) sean SENSITIVAS a mayusculas, minusculas, o TILDES. Es decir que las busquedas se vuelven SENSITIVAS a mayusculas, minusculas, o TILDES.
 
 - [.dbg] Cambia la configuracion para empezar a guardar información de depurado. Permite saber como se ejecutó, cuales fueron los pasos, durante la ejecucion de una busqueda. Si desde el [menu principal](#interfaz-basica) se tiene abierto el campo de DEPURADO, este comando se ejecuta antes de la busqueda y al final de la busqueda toda la informacion de depurado se muestra en dicho campo de DEPURADO.
 - [.nodbg] Cambia la configuracion para dejar de guardar información de depurado. 

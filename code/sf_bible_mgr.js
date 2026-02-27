@@ -28,6 +28,8 @@ const scod_defs_dir = "../data/js_scod_defs/";
 
 const vrefs_dir = "../data/js_refs/";
 
+const js_crono_path = "../data/js_crono/crono_verses.js";
+
 const loading_img = "../img/loading_icon.gif";
 
 const local_smutus_file = "../data/js_mutu/MUT_SCOD_REF.js";
@@ -1436,6 +1438,17 @@ async function import_socu_text(socuid){
 	gvar.full_socu_text[socuid] = md_loc.all_socu;
 }
 
+export async function import_crono_bib(){
+	if(gvar.crono_bib != null){
+		return;
+	} 
+	
+	const md_bib = await import_file(js_crono_path, "CRONO_VERSES");
+	
+	gvar.crono_bib = {};
+	gvar.crono_bib.num2vid = md_bib.num2vid;
+	gvar.crono_bib.vid2num = md_bib.vid2num;
+}
 
 /*
 

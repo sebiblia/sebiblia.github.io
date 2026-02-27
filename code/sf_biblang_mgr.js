@@ -3,7 +3,7 @@
 import { isArgumentsArray, ExpressionParser } from './sf_expression_parser.js'
 import { gvar, update_evaluating_bar, } from './sf_search_mgr.js';
 import { bib_chapter_sizes, } from './sf_bib_chapter_sizes.js';
-import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, calc_vstxt, } from './sf_bible_mgr.js';
+import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, calc_vstxt, import_crono_bib, } from './sf_bible_mgr.js';
 import { distance, closest,  } from './sf_word_dist.js';
 
 const DEBUG_MATCHES = false;
@@ -24,6 +24,9 @@ const SCOD_SVERSES_SUFIX = "_S";
 const MIN_VERSE = [1, 1, 1];
 const MAX_VERSE = [66, 22, 21];
 
+const CRONO_TOT_VERSES = 31370;
+const CRONO_PAGE_SZ = 20;
+
 let ALL_BOOK_NAMES = [];
 
 const biblang_def = {
@@ -39,7 +42,7 @@ const biblang_def = {
 		'..': (a, b) => calc_comment(a, b),
 	},
 	PREFIX_OPS: {
-		// '.': (bib) => set_bib(bib),
+		// '#': (bib) => set_bib(bib),
 	},
 	PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['*'], ['='], [';'], ['..']],
 	LITERAL_OPEN: '/',
@@ -131,9 +134,11 @@ const rx_in_nams = {
 	"sco":1,	// use sco_input to locate and compare
 };
 
-const rx_insen = "rx:i";
-const rx_noisen = "rx:ni";
+const rx_insen = "rxi";
+const rx_sensi = "rxs";
 const dbg_lang = "dbg";
+const inc_crono = "inc_crono";
+const dec_crono = "dec_crono";
 const nodbg_lang = "nodbg";
 const reset_history = "rhis";
 const open_text_analysis = "txta";
@@ -227,6 +232,10 @@ function reset_curr_rx_insensitive(){
 	gvar.biblang.regex_insensitive = true;
 }
 
+function reset_crono(){
+	gvar.biblang.crono_op = false;
+}
+
 function init_history(){
 	if(gvar.biblang == null){ gvar.biblang = {}; }
 	gvar.biblang.history = [];
@@ -259,6 +268,7 @@ function init_biblang_conf(){
 	
 	gvar.biblang.regex_insensitive = true;
 
+	reset_crono();
 	reset_curr_range();
 }
 
@@ -1180,9 +1190,9 @@ function calc_verse(wrd){
 	return { op: rop, lverses: [wrd], };
 }
 
-const regex_numvar = /^([\w]+):*(.*)$/;
+//const regex_numvar = /^([\w]+):*(.*)$/;
 
-const regex_bibvar = /^([.#+=><:\-]+)([\w\d:_.]+)$/;
+const regex_bibvar = /^([.+=><:\-]+)([\w\d:_.]+)$/;
 
 function is_bib_var(tm){
 	const matches = tm.match(regex_bibvar);	
@@ -1240,7 +1250,7 @@ async function calc_bibvar(bvar){
 			gvar.biblang.regex_insensitive = true;
 			if(gvar.dbg_biblang){ add_dbg_log("regex_insensitive=" + vr); }
 		}
-		if(vr == rx_noisen){
+		if(vr == rx_sensi){
 			gvar.biblang.regex_insensitive = false;
 			if(gvar.dbg_biblang){ add_dbg_log("regex_insensitive=" + vr); }
 		}
@@ -1259,11 +1269,20 @@ async function calc_bibvar(bvar){
 		if(vr == open_text_analysis){
 			add_dbg_log("open_text_analysis");
 			robj.is_txta_oper = true;
-		}		
+		}
+		if(vr == inc_crono){
+			add_dbg_log("inc_crono");
+			gvar.biblang.crono_op = inc_crono;
+		}
+		if(vr == dec_crono){
+			add_dbg_log("dec_crono");
+			gvar.biblang.crono_op = dec_crono;
+		}
 	}
+	/*
 	if(kk == '#'){
 		const fvr = nam.toLowerCase();
-		const matches = fvr.match(regex_numvar);	
+		const matches = fvr.match(regex_numvar);
 		if(matches){
 			const vr = matches[1];
 			const val = Number(matches[2]);
@@ -1278,6 +1297,7 @@ async function calc_bibvar(bvar){
 			}
 		}
 	}
+	*/
 	const rng_var = get_name_range(nam);
 	if(rng_var.length > 0){
 		set_new_range(kk, rng_var);
@@ -1807,6 +1827,7 @@ export async function eval_biblang_command(command, config){
 	reset_curr_rx_insensitive();
 	reset_curr_range();
 	reset_texta();
+	reset_crono();
 
 	if(config != null){
 		set_biblang_conf(config);
@@ -1865,6 +1886,10 @@ export async function eval_biblang_command(command, config){
 	gvar.biblang.all_ocu = {};
 
 	robj.intervals = range_to_intervals(gvar.biblang.curr_range);
+	
+	if(gvar.biblang.crono_op && is_crono_req(robj)){
+		await calc_crono_op(robj, gvar.biblang.crono_op);
+	}
 	
 	if(gvar.dbg_biblang){
 		add_dbg_log("FINAL_RESULT");
@@ -2026,5 +2051,45 @@ function verse_in_range(vr){
 	const book = Number(vii[0]);
 	const in_rng = gvar.biblang.curr_range.includes(book);
 	return in_rng;
+}
+
+function is_crono_req(robj){
+	if(robj.lverses.length != 1){
+		return false;
+	}
+	if(robj.all_scods.length != 0){
+		return false;
+	}
+	const kks = Object.keys(robj.all_ocu);
+	if(kks.length != 0){
+		return false;
+	}
+	return true;
+}
+
+async function calc_crono_op(robj, op){
+	await import_crono_bib();
+	const n2v = gvar.crono_bib.num2vid;
+	const v2n = gvar.crono_bib.vid2num;
+	const vid = robj.lverses[0];
+	let nv = v2n[vid];
+	if(op = inc_crono){
+		nv += 1;
+	} else {
+		nv -= (1 + CRONO_PAGE_SZ);
+	}
+	if(nv < 0){ nv = 0; }
+	if(nv > CRONO_TOT_VERSES){ nv = CRONO_TOT_VERSES; }
+	let ii = 0;
+	const crono_verses = [];
+	for(ii = 0; ii < CRONO_PAGE_SZ; ii++){
+		const nv_add = nv + ii;
+		if(nv_add > CRONO_TOT_VERSES){
+			break;
+		}
+		const vid_add = n2v[nv_add];
+		crono_verses.push(vid_add);
+	}
+	robj.lverses = crono_verses;
 }
 

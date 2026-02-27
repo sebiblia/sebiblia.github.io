@@ -6880,7 +6880,7 @@ export const biblang_examples_es = [
         ]
       ]
     },
-    "expr": ".rx:ni ; mat.1:1-5 & /(\\s+)á(\\s+)/",
+    "expr": ".rxs ; mat.1:1-5 & /(\\s+)á(\\s+)/",
     "comment": "Configura para buscedas SENSITIVAS y busca los versiculos de la cita biblica \"mateo.1:1-5\" que tienen la Expresion Regular Javascript /(s+)á(s+)/ en la Reina-Valera 1909 (RVA)"
   },
   {
