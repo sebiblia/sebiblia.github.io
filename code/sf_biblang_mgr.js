@@ -2071,13 +2071,20 @@ async function calc_crono_op(robj, op){
 	await import_crono_bib();
 	const n2v = gvar.crono_bib.num2vid;
 	const v2n = gvar.crono_bib.vid2num;
+	if(robj.lverses.length != 1){
+		console.error("NOT A CRONO OP !!!");
+	}
 	const vid = robj.lverses[0];
 	let nv = v2n[vid];
-	if(op = inc_crono){
+	//console.log("CRONO_BASE_NUM:" + nv);
+	if(op == inc_crono){
 		nv += 1;
 	} else {
-		nv -= (1 + CRONO_PAGE_SZ);
+		//const num_dec = (1 + CRONO_PAGE_SZ);
+		const num_dec = CRONO_PAGE_SZ;
+		nv -= num_dec;
 	}
+	//console.log("CRONO_NEXT_BASE_NUM:" + nv);
 	if(nv < 0){ nv = 0; }
 	if(nv > CRONO_TOT_VERSES){ nv = CRONO_TOT_VERSES; }
 	let ii = 0;
@@ -2087,6 +2094,7 @@ async function calc_crono_op(robj, op){
 		if(nv_add > CRONO_TOT_VERSES){
 			break;
 		}
+		//console.log("CRONO_NUM:" + nv_add);
 		const vid_add = n2v[nv_add];
 		crono_verses.push(vid_add);
 	}

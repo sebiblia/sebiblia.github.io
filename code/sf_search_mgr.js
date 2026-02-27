@@ -744,13 +744,14 @@ function fill_search_info(bl_obj){
 		dv_prv_chp.addEventListener('click', () => {
 			go_prev_chapter();
 		});
-		/*
+		
 		const dv_prv_crono = document.createElement("div");
 		dv_prv_crono.classList.add("is_button", "prev_crono");
 		dv_prv_crono.innerHTML = gvar.all_msg.prev_crono;
 		dv_chp_nav.appendChild(dv_prv_crono);
 		dv_prv_crono.addEventListener('click', () => {
-		});*/
+			go_prev_crono();
+		});
 		
 		const dv_num_vrs = document.createElement("input");
 		dv_num_vrs.classList.add("input_num_verse");
@@ -771,13 +772,14 @@ function fill_search_info(bl_obj){
 		dv_go.addEventListener('click', () => {
 			go_verse(dv_num_vrs.value);
 		});
-		/*
+		
 		const dv_nxt_crono = document.createElement("div");
 		dv_nxt_crono.classList.add("is_button", "next_crono");
 		dv_nxt_crono.innerHTML = gvar.all_msg.next_crono;
 		dv_chp_nav.appendChild(dv_nxt_crono);
 		dv_nxt_crono.addEventListener('click', () => {
-		});*/
+			go_next_crono();
+		});
 		
 		const dv_nxt_chp = document.createElement("div");
 		dv_nxt_chp.classList.add("is_button", "next_chap");
@@ -2910,5 +2912,45 @@ function toggle_show_message(msg){
 
 	dv_href.scrollIntoView({ behavior: 'smooth', block: 'center'});
 	//scroll_to_top(dv_href);
+}
+
+async function go_prev_crono(){
+	const dv_verses = document.getElementById("id_verses");
+	const all_bibobj = dv_verses.all_bibobj;
+	if(all_bibobj == null){
+		console.error("all_bibobj == null");
+		return;
+	}
+	if(all_bibobj.length == 0){
+		console.error("all_bibobj.length == null");
+		return;
+	}
+	const bibobj = all_bibobj[0];
+	const vid = bibobj.id_dv_ver.split('_').join(':');
+	const frm = `.dec_crono ; ${vid}`;
+	
+	const dv_expr = document.getElementById(id_expression);
+	dv_expr.value = frm;
+	await do_select();
+}
+
+async function go_next_crono(){
+	const dv_verses = document.getElementById("id_verses");
+	const all_bibobj = dv_verses.all_bibobj;
+	if(all_bibobj == null){
+		console.error("all_bibobj == null");
+		return;
+	}
+	if(all_bibobj.length == 0){
+		console.error("all_bibobj.length == null");
+		return;
+	}
+	const bibobj = all_bibobj[all_bibobj.length - 1];
+	const vid = bibobj.id_dv_ver.split('_').join(':');
+	const frm = `.inc_crono ; ${vid}`;
+	
+	const dv_expr = document.getElementById(id_expression);
+	dv_expr.value = frm;
+	await do_select();
 }
 
