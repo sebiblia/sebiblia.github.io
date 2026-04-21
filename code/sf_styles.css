@@ -24,6 +24,11 @@
 	src: url(../fonts/SeBibliaIcons.ttf);
 }
 
+@font-face {
+	font-family: bangers_font;
+	src: url(../fonts/Bangers-Regular.ttf);
+}
+
 .has_icons {
 	font-family: tc_icons_font;
 	font-size: 1.2em;

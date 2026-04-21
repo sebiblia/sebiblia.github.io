@@ -142,6 +142,7 @@ const dec_crono = "dec_crono";
 const nodbg_lang = "nodbg";
 const reset_history = "rhis";
 const open_text_analysis = "txta";
+const format_desc = "f:";
 
 const range_nams = {
 	"all":[],
@@ -899,81 +900,6 @@ function is_number(val){
 	return false;
 }
 
-/*
-const regex_cit_end = /^-(\d+)$/;
-
-function is_bib_end_cit(tm, citobj){
-	const cha_sz = bib_chapter_sizes;
-	const matches = tm.match(regex_cit_end);
-	if(matches){
-		citobj.verse_end = Number(matches[1]);
-		if(cha_sz[citobj.book][citobj.chapter] == null){
-			return false;
-		}
-		if(citobj.verse_end > cha_sz[citobj.book][citobj.chapter]){
-			return false;
-		}
-		return citobj;
-	}
-	return false;
-}
-
-const regex_cit_vers = /^:(\d+)(.*)/;
-
-function is_bib_verse_cit(tm, citobj){
-	const cha_sz = bib_chapter_sizes;
-	const matches = tm.match(regex_cit_vers);
-	if(matches){
-		citobj.verse = Number(matches[1]);
-		if(cha_sz[citobj.book][citobj.chapter] == null){
-			return false;
-		}
-		if(citobj.verse > cha_sz[citobj.book][citobj.chapter]){
-			return false;
-		}
-		let rest = matches[2];
-		if(rest.length > 0){
-			return is_bib_end_cit(rest, citobj);
-		} else {
-			citobj.verse_end = citobj.verse;
-		}
-		return citobj;
-	}		
-	return false;	
-}
-
-const regex_citation = /^([^.-]+)[.-](\d+)(.*)/;
-
-function is_bib_citation(tm){
-	const cha_sz = bib_chapter_sizes;
-	const citobj = {};
-	citobj.txt = tm;
-	const matches = tm.match(regex_citation);
-	if(matches){
-		let nam = matches[1].toLowerCase();
-		const book = is_book_name(nam);
-		if(! book){ return false; }
-		citobj.book = Number(book);
-		citobj.chapter = Number(matches[2]);
-		if(cha_sz[citobj.book] == null){
-			return false;
-		}
-		if(cha_sz[citobj.book][citobj.chapter] == null){
-			return false;
-		}
-		let rest = matches[3];
-		if(rest.length > 0){
-			return is_bib_verse_cit(rest, citobj);
-		} else {
-			citobj.verse = 1;
-			citobj.verse_end = Number(cha_sz[citobj.book][citobj.chapter]);;
-		}
-		return citobj;
-	}		
-	return false;
-}
-*/
-
 const regex_citation = /^([^.-]+)[.-](\d+)(.*)/;
 
 export function parse_citation(tm){
@@ -1190,8 +1116,6 @@ function calc_verse(wrd){
 	return { op: rop, lverses: [wrd], };
 }
 
-//const regex_numvar = /^([\w]+):*(.*)$/;
-
 const regex_bibvar = /^([.+=><:\-]+)([\w\d:_.]+)$/;
 
 function is_bib_var(tm){
@@ -1278,26 +1202,10 @@ async function calc_bibvar(bvar){
 			add_dbg_log("dec_crono");
 			gvar.biblang.crono_op = dec_crono;
 		}
-	}
-	/*
-	if(kk == '#'){
-		const fvr = nam.toLowerCase();
-		const matches = fvr.match(regex_numvar);
-		if(matches){
-			const vr = matches[1];
-			const val = Number(matches[2]);
-			let num = "all";
-			if(is_number(val)){
-				num = val;
-			}
-			if(size_nams[vr] != null){
-				if(gvar.biblang.size_output == null){ gvar.biblang.size_output = {}; }
-				gvar.biblang.size_output[vr] = num;
-				if(gvar.dbg_biblang){ add_dbg_log("size_output[" + vr + "]=" + num); }
-			}
+		if(vr.startsWith(format_desc)){
+			gvar.biblang.current_format = vr;
 		}
 	}
-	*/
 	const rng_var = get_name_range(nam);
 	if(rng_var.length > 0){
 		set_new_range(kk, rng_var);
@@ -1458,6 +1366,7 @@ export function get_txt_matches(vtxt, rxo, fix_ocu){
 		let ocu = {
 			idx: rr.index,
 			lng: rr[0].length,
+			fmt: gvar.biblang.current_format,
 		};
 		
 		if(prv != null){
@@ -1519,16 +1428,6 @@ function to_insenitive_bib(bib){
 	if(ibibs[bib] != null){
 		return ibibs[bib];
 	}
-	/*
-	if(bib == "RVA"){
-		return "RVAi";
-	}
-	if(bib == "RVAs"){
-		return "RVAsi";
-	}
-	if(bib == "SBLM"){
-		return "SBLMi";
-	}*/
 	return bib;
 }
 
@@ -1659,12 +1558,6 @@ async function calc_base_term(term, prev){
 		}
 		return { op: rop, lverses: cit, };
 	}
-	/*
-	const cit = is_bib_citation(term);
-	if(cit){
-		return calc_citation(cit);
-	}
-	*/
 	return calc_word(term, prev);
 }
 

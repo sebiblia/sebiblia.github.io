@@ -425,7 +425,7 @@ OBSERVACION: Algunos videos estan con la vieja interfaz que tenia un boton adici
 
 El lenguaje BIBLANG tiene una gramatica bastante simple basada en expresiones.
 
-En sintaxis de JavaScript y usando el programa disponible en npm conocido como Expression Parser:
+En sintaxis de JavaScript y usando el programa disponible en npm conocido como [Expression Parser](https://www.npmjs.com/package/expressionparser) con pequeñas adaptaciones para los objetivos de BIBLANG. Ver codigo fuente en [github](https://github.com/sebiblia/sebiblia.github.io/tree/main/code):
 
 	const biblang_def = {
 		INFIX_OPS: {
@@ -440,12 +440,12 @@ En sintaxis de JavaScript y usando el programa disponible en npm conocido como E
 			'..': (a, b) => calc_comment(a, b),
 		},
 		PREFIX_OPS: {},
-		PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['='], [';'], ['..']],
+		PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['*'], ['='], [';'], ['..']],
 		LITERAL_OPEN: '/',
 		LITERAL_CLOSE: '/',
 		GROUP_OPEN: '(',
 		GROUP_CLOSE: ')',
-		SEPARATORS: [';', '!', '|', '&', '%'],
+		SEPARATORS: [';', '!', '|', '&', '%', '*'],
 		WHITESPACE_CHARS: [' '],
 		SYMBOLS: ['(', ')', '/'],
 		AMBIGUOUS: {},
@@ -467,7 +467,7 @@ En sintaxis de JavaScript y usando el programa disponible en npm conocido como E
 		if(rx){
 			return calc_bibregex(rx, prev);
 		}
-		const bvar = is_bib_var(term)	// const regex_bibvar = /^([.#+=><:\-]+)([\w\d:_.]+)$/;
+		const bvar = is_bib_var(term)	// const regex_bibvar = /^([.+=><:\-]+)([\w\d:_.]+)$/;
 		if(bvar){
 			return calc_bibvar(bvar);
 		}

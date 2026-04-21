@@ -26,6 +26,7 @@ const DEBUG_INSERT_TAGS = false;
 const DEBUG_CALC_NXT_PRESENT = false;
 const DEBUG_ADD_SCOD_OCUS = false;
 const DEBUG_PERSISTANCE = false;
+const DEBUG_FORMAT = false;
 
 const WITH_AUX_BUTTON = false;
 
@@ -1641,7 +1642,11 @@ function insert_all_tags(vs_txt, vs_ocu, cls, bk_num){
 				ini_tg = ini_nt;
 			} else {
 				ini_tg = ini_ot;
-			}			
+			}
+		}
+		if(ocu.fmt != null){
+			const din_class = calc_din_class(ocu.fmt);
+			ini_tg = `<span class="${din_class}">`;
 		}
 		insert_tag(htm, ocu.idx, ini_tg);
 		const end_pos = ocu.idx + ocu.lng;
@@ -2952,5 +2957,99 @@ async function go_next_crono(){
 	const dv_expr = document.getElementById(id_expression);
 	dv_expr.value = frm;
 	await do_select();
+}
+
+function calc_din_class(fmt_str){
+	if(gvar.biblang.all_styles == null){ gvar.biblang.all_styles = {}; }
+	if(gvar.biblang.all_styles[fmt_str] != null){
+		return gvar.biblang.all_styles[fmt_str];
+	}
+	const arr_fmt = fmt_str.split(':');
+	const nm_cls = arr_fmt.join('-') + '-din-cls';
+	const nw_style = document.createElement('style');
+	
+	const fobj = calc_format_obj(arr_fmt);
+	const cls_def = calc_class_def(nm_cls, fobj);
+	nw_style.innerHTML = cls_def;
+	
+	document.head.appendChild(nw_style);
+	gvar.biblang.all_styles[fmt_str] = nm_cls;
+	return nm_cls;
+}
+
+const format_keywords = {
+	b: [ 'font-weight', 'bold'],
+	bold: [ 'font-weight', 'bold'],
+	i: [ 'font-style', 'italic'],
+	italic: [ 'font-style', 'italic'],
+	u: [ 'text-decoration', 'underline'],
+	underline: [ 'text-decoration', 'underline'],
+	black: [ 'color', 'black'],
+	cw: [ 'color', 'white'],
+	white: [ 'color', 'white'],
+	cr: [ 'color', 'red'],
+	red: [ 'color', 'red'],
+	cb: [ 'color', 'blue'],
+	blue: [ 'color', 'blue'],
+	cy: [ 'color', 'yellow'],
+	yellow: [ 'color', 'yellow'],
+	cg: [ 'color', 'green'],
+	green: [ 'color', 'green'],
+	bangers: [ 'font-family', 'bangers_font'],
+};
+
+function is_number(val){
+	if((typeof val === 'number') && ! isNaN(val)){
+		return true;
+	}
+	return false;
+}
+
+function calc_format_obj(fmt_arr){	
+	if(gvar.biblang.format_key_word == null){
+		gvar.biblang.format_key_word = format_keywords;
+	}
+	const fmt_obj = {};
+	let ii = 0;
+	for(ii = 0; ii < fmt_arr.length; ii++){
+		if(ii == 0){
+			continue;
+		}
+		const itm = fmt_arr[ii];
+		if(itm.length == 0){
+			continue;
+		}
+		if(gvar.biblang.format_key_word[itm] != null){
+			const att = gvar.biblang.format_key_word[itm];
+			const nm = att[0];
+			const val = att[1];
+			fmt_obj[nm] = val;
+			continue;
+		}
+		const fst = itm[0];
+		if(is_number(Number(fst))){
+			fmt_obj['font-size'] = itm;
+			if(DEBUG_FORMAT){ console.log(`got font-size= ${itm}`); }
+		} else if(fst == '#'){
+			fmt_obj['color'] = itm;
+		} else {
+			//fmt_obj['font-family'] = itm;
+		}
+	}
+	return fmt_obj;
+}
+
+function calc_class_def(nm_cls, fobj){
+	const df_beg = `.${nm_cls} {`;
+	const keys = Object.keys(fobj);
+	let df = df_beg;
+	let ii = 0;
+	for(ii = 0; ii < keys.length; ii++){
+		const kk = keys[ii];
+		df += "\n";
+		df += `\t${kk}: ${fobj[kk]};`;
+	}
+	df += '\n}';
+	return df;
 }
 
