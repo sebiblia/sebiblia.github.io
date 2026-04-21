@@ -1203,7 +1203,7 @@ async function calc_bibvar(bvar){
 			gvar.biblang.crono_op = dec_crono;
 		}
 		if(vr.startsWith(format_desc)){
-			gvar.biblang.current_format = vr;
+			gvar.biblang.current_format = nam;
 		}
 	}
 	const rng_var = get_name_range(nam);

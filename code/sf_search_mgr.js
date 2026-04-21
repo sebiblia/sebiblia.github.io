@@ -2964,15 +2964,21 @@ function calc_din_class(fmt_str){
 	if(gvar.biblang.all_styles[fmt_str] != null){
 		return gvar.biblang.all_styles[fmt_str];
 	}
+	if(DEBUG_FORMAT){ console.log(`calc_din_class fmt_str= ${fmt_str}`); }
+	
 	const arr_fmt = fmt_str.split(':');
-	const nm_cls = arr_fmt.join('-') + '-din-cls';
-	const nw_style = document.createElement('style');
+	let nm_cls = arr_fmt.join('-') + '-din-cls';
 	
 	const fobj = calc_format_obj(arr_fmt);
+	if(fobj.classname != null){
+		nm_cls = fobj.classname;
+	}
 	const cls_def = calc_class_def(nm_cls, fobj);
-	nw_style.innerHTML = cls_def;
 	
+	const nw_style = document.createElement('style');
+	nw_style.innerHTML = cls_def;	
 	document.head.appendChild(nw_style);
+	
 	gvar.biblang.all_styles[fmt_str] = nm_cls;
 	return nm_cls;
 }
@@ -2996,6 +3002,7 @@ const format_keywords = {
 	cg: [ 'color', 'green'],
 	green: [ 'color', 'green'],
 	bangers: [ 'font-family', 'bangers_font'],
+	cgg: [ 'color', '#00f600'],
 };
 
 function is_number(val){
@@ -3032,14 +3039,23 @@ function calc_format_obj(fmt_arr){
 			if(DEBUG_FORMAT){ console.log(`got font-size= ${itm}`); }
 		} else if(fst == '#'){
 			fmt_obj['color'] = itm;
+		} else if(fst == '.'){
+			fmt_obj.classname = itm.substring(1) + '-cls';
+			if(DEBUG_FORMAT){ console.log(`got clasname= ${fmt_obj.classname}`); }
 		} else {
-			//fmt_obj['font-family'] = itm;
+			const fmly = itm.replaceAll('.', ' ');
+			add_google_font(itm);
+			fmt_obj['font-family'] = `'${fmly}'`;
 		}
 	}
 	return fmt_obj;
 }
 
 function calc_class_def(nm_cls, fobj){
+	if(fobj.classname != null){
+		nm_cls = fobj.classname;
+	}
+	if(DEBUG_FORMAT){ console.log(`calc_class_def clasname= ${nm_cls}`); }
 	const df_beg = `.${nm_cls} {`;
 	const keys = Object.keys(fobj);
 	let df = df_beg;
@@ -3052,4 +3068,31 @@ function calc_class_def(nm_cls, fobj){
 	df += '\n}';
 	return df;
 }
+
+function add_google_font(itm){
+	if(DEBUG_FORMAT){ console.log(`add_google_font itm= ${itm}`); }
+	
+	const fnam = itm.replaceAll('.', '+');
+	//const fmly = itm.replaceAll('.', '_');
+	const furl = `https://fonts.googleapis.com/css?family=${fnam}`;
+
+	const flnk = document.createElement('link');
+	flnk.rel = 'stylesheet';
+	flnk.href = furl;
+	document.head.appendChild(flnk);
+
+	/*
+	const nw_style = document.createElement('style');	
+	const fml_def = `
+		@font-fase {
+			font-family: '${fmly}';
+			src: url('https://fonts.googleapis.com/css?family=${fnam}');
+		}
+	`;	
+	if(DEBUG_FORMAT){ console.log(`add_google_font def= ${fml_def}`); }
+	nw_style.innerHTML = fml_def;
+	document.head.appendChild(nw_style);	
+	*/
+}
+
 
