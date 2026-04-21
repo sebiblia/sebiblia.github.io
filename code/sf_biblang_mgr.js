@@ -1731,6 +1731,8 @@ export async function eval_biblang_command(command, config){
 	gvar.biblang.prog_bar.tot_ocu = 0;
 	gvar.biblang.dbg_log = [];
 	
+	delete gvar.biblang.current_format;
+	
 	gvar.biblang.all_scods = [];
 	gvar.biblang.all_ocu = {};
 	gvar.biblang.all_rx_found = {};
