@@ -31,6 +31,7 @@ const CRONO_PAGE_SZ = 20;
 let ALL_BOOK_NAMES = [];
 
 const biblang_def = {
+	CONSEC_OP: ';',
 	INFIX_OPS: {
 		'*': (a, b) => calc_before_any(a, b),
 		'%': (a, b) => calc_followed_by(a, b),

@@ -59,6 +59,7 @@ function isBasicDataObject(obj) {
     const methodNames = Object.getOwnPropertyNames(proto).filter((key) => typeof proto[key] === "function" && key !== "constructor");
     return methodNames.length === 0;
 }
+//const asyThunkEvaluator = async (val) => await evaluate(val);
 const thunkEvaluator = (val) => evaluate(val);
 const objEvaluator = mapValues(thunkEvaluator);
 const classObjEvaluator = (val) => {
@@ -406,17 +407,43 @@ export class ExpressionParser {
         }
         return output;
     }
-    /*
+    // JLQ ADAPTATION to handle weird cases
     evaluateRpn(stack, infixer, prefixer, terminator, terms) {
 		const arr_ev = [];
+		let lhs = null;
+		let rhs = null;
+        let cons_tok = this.options.CONSEC_OP;
+		if((cons_tok == null) && (this.options.INFIX_OPS != null)){
+			const kks = Object.keys(this.options.INFIX_OPS);
+			if(kks.length > 0){
+				cons_tok = kks[0];
+			}
+		}
+		if((cons_tok == null) && (this.options.SEPARATORS != null)){
+			if(this.options.SEPARATORS.length > 0){
+				cons_tok = this.options.SEPARATORS[0];
+			}
+		}
+		if(DEBUG_EV_RPN){ console.log(`evRpn. Using consec operator= ${cons_tok}`); }
 		while(stack.length > 0){
 			arr_ev.unshift(this.base_eval_rpn(stack, infixer, prefixer, terminator, terms));
 		}
-		return arr_ev;
+		let ii = 0;
+		for(ii = 0; ii < arr_ev.length; ii++){
+			if(lhs == null){
+				lhs = arr_ev[ii];
+			} else {
+				rhs = arr_ev[ii];
+				lhs = infixer(cons_tok, lhs, rhs);
+			}
+		}
+		return lhs;
 	}
+    /*
+	evaluateRpn(stack, infixer, prefixer, terminator, terms) {
+		return this.base_eval_rpn(stack, infixer, prefixer, terminator, terms);
+	}*/
     base_eval_rpn(stack, infixer, prefixer, terminator, terms) {
-	*/
-    evaluateRpn(stack, infixer, prefixer, terminator, terms) {
         let lhs, rhs;
 		if(DEBUG_EV_RPN){ console.log(`evRpn. STACK=`); console.log(stack); }
         const token = stack.pop();
@@ -432,11 +459,13 @@ export class ExpressionParser {
         const isPrefix = prefixDelegate && stack.length > 0;
         if (isInfix || isPrefix) {
 			if(DEBUG_EV_RPN){ console.log(`evRpn. isInfix || isPrefix. TOKEN=${token}`); }
-            rhs = this.evaluateRpn(stack, infixer, prefixer, terminator, terms);
+            //rhs = this.evaluateRpn(stack, infixer, prefixer, terminator, terms);
+            rhs = this.base_eval_rpn(stack, infixer, prefixer, terminator, terms);
         }
         if (isInfix) {
 			if(DEBUG_EV_RPN){ console.log(`evRpn. isInfix. TOKEN=${token}`); }
-            lhs = this.evaluateRpn(stack, infixer, prefixer, terminator, terms);
+            //lhs = this.evaluateRpn(stack, infixer, prefixer, terminator, terms);
+            lhs = this.base_eval_rpn(stack, infixer, prefixer, terminator, terms);
             return infixer(token, lhs, rhs);
         }
         else if (isPrefix) {
