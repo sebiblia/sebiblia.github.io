@@ -7,7 +7,7 @@ IT HAS SOME ADAPTATIONS
 import { gvar, } from './sf_search_mgr.js';
 
 const DEBUG_EV_RPN = false;
-const DEBUG_EV_TNK = true;
+const DEBUG_EV_TNK = false;
 //const DEBUG_CALC_RPN = false;
 
 "use strict";

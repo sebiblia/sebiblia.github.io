@@ -10,7 +10,7 @@ const DEBUG_MATCHES = false;
 const DEBUG_GET_RANGE = false;
 const DEBUG_SCOD_IDX = false;
 const DEBUG_FOLLOWED = false;
-const DEBUG_PARSER = true;
+const DEBUG_PARSER = false;
 
 const DEFAULT_HIS_MAX_SZ = 1000;
 
