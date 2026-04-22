@@ -1645,7 +1645,7 @@ function insert_all_tags(vs_txt, vs_ocu, cls, bk_num){
 			}
 		}
 		if(ocu.fmt != null){
-			const din_class = calc_din_class(ocu.fmt);
+			const din_class = calc_din_class(ocu.fmt, cls);
 			ini_tg = `<span class="${din_class}">`;
 		}
 		insert_tag(htm, ocu.idx, ini_tg);
@@ -2959,20 +2959,33 @@ async function go_next_crono(){
 	await do_select();
 }
 
-function calc_din_class(fmt_str){
+function calc_din_class(fmt_str, def_cls){
 	if(gvar.biblang.all_styles == null){ gvar.biblang.all_styles = {}; }
 	if(gvar.biblang.all_styles[fmt_str] != null){
 		return gvar.biblang.all_styles[fmt_str];
 	}
-	if(DEBUG_FORMAT){ console.log(`calc_din_class fmt_str= ${fmt_str}`); }
-	
 	const arr_fmt = fmt_str.split(':');
-	let nm_cls = arr_fmt.join('-') + '-din-cls';
+	if(fmt_str.startsWith('f:fcls')){
+		if(DEBUG_FORMAT){ console.log(`trying old format = ${fmt_str}`); }
+		if(arr_fmt.length > 1){
+			const cls_nm1 = arr_fmt[1];
+			if(DEBUG_FORMAT){ console.log(`returning old class= ${cls_nm1}`); }
+			return cls_nm1;
+		} 
+		return def_cls;
+	}
+	if(DEBUG_FORMAT){ console.log(`calc_din_class CREATING NEW CLASS fmt_str= ${fmt_str}`); }
+	if(gvar.biblang.curr_font_class_id == null){
+		gvar.biblang.curr_font_class_id = 0;
+	}
+	gvar.biblang.curr_font_class_id++;
+	
+	const fcls_id = gvar.biblang.curr_font_class_id;
+	
+	const nm_cls = 'fcls' + fcls_id;
+	if(DEBUG_FORMAT){ console.log(`calc_class_def clasname= ${nm_cls}`); }
 	
 	const fobj = calc_format_obj(arr_fmt);
-	if(fobj.classname != null){
-		nm_cls = fobj.classname;
-	}
 	const cls_def = calc_class_def(nm_cls, fobj);
 	
 	const nw_style = document.createElement('style');
@@ -3001,7 +3014,7 @@ const format_keywords = {
 	yellow: [ 'color', 'yellow'],
 	cg: [ 'color', 'green'],
 	green: [ 'color', 'green'],
-	bangers: [ 'font-family', 'bangers_font'],
+	comic: [ 'font-family', 'bangers_font'],
 	cgg: [ 'color', '#00f600'],
 };
 
@@ -3039,9 +3052,6 @@ function calc_format_obj(fmt_arr){
 			if(DEBUG_FORMAT){ console.log(`got font-size= ${itm}`); }
 		} else if(fst == '#'){
 			fmt_obj['color'] = itm;
-		} else if(fst == '.'){
-			fmt_obj.classname = itm.substring(1) + '-cls';
-			if(DEBUG_FORMAT){ console.log(`got clasname= ${fmt_obj.classname}`); }
 		} else {
 			const fmly = itm.replaceAll('.', ' ');
 			add_google_font(itm);
@@ -3052,9 +3062,6 @@ function calc_format_obj(fmt_arr){
 }
 
 function calc_class_def(nm_cls, fobj){
-	if(fobj.classname != null){
-		nm_cls = fobj.classname;
-	}
 	if(DEBUG_FORMAT){ console.log(`calc_class_def clasname= ${nm_cls}`); }
 	const df_beg = `.${nm_cls} {`;
 	const keys = Object.keys(fobj);
@@ -3070,16 +3077,20 @@ function calc_class_def(nm_cls, fobj){
 }
 
 function add_google_font(itm){
-	if(DEBUG_FORMAT){ console.log(`add_google_font itm= ${itm}`); }
 	
 	const fnam = itm.replaceAll('.', '+');
 	//const fmly = itm.replaceAll('.', '_');
-	const furl = `https://fonts.googleapis.com/css?family=${fnam}`;
+	//const furl = `https://fonts.googleapis.com/css?family=${fnam}`;
+	const furl = `https://fonts.googleapis.com/css2?family=${fnam}:wght@400;700&display=swap`;
 
+	if(DEBUG_FORMAT){ console.log(`add_google_font url= ${furl}`); }
+	
 	const flnk = document.createElement('link');
 	flnk.rel = 'stylesheet';
 	flnk.href = furl;
 	document.head.appendChild(flnk);
+
+}
 
 	/*
 	const nw_style = document.createElement('style');	
@@ -3093,6 +3104,6 @@ function add_google_font(itm){
 	nw_style.innerHTML = fml_def;
 	document.head.appendChild(nw_style);	
 	*/
-}
+
 
 
