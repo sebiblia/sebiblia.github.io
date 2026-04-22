@@ -10,6 +10,7 @@ const DEBUG_MATCHES = false;
 const DEBUG_GET_RANGE = false;
 const DEBUG_SCOD_IDX = false;
 const DEBUG_FOLLOWED = false;
+const DEBUG_PARSER = true;
 
 const DEFAULT_HIS_MAX_SZ = 1000;
 
@@ -837,9 +838,10 @@ function set_bib(inbib){
 	return false;
 }
 
-const regex_verse = /^\d+:\d+:\d+$/;
+//const regex_verse = /^\d+:\d+:\d+$/;
+const regex_verse = /^\d/;
 
-function is_verse(tm){
+function is_verse_id(tm){
 	const matches = tm.match(regex_verse);	
 	if(matches){
 		return true;
@@ -1106,10 +1108,10 @@ async function calc_citation(cit){
 	return { op: rop, lverses: rng, };
 }
 
-function calc_verse(wrd){
+function calc_verse_id(wrd){
 	const rop = wrd;
 	if(gvar.dbg_biblang){
-		add_dbg_log("calc_verse");
+		add_dbg_log("calc_verse_id");
 		add_dbg_log(rop);
 		add_dbg_log("_____________________________");
 	}
@@ -1535,8 +1537,12 @@ async function find_regex(bib, num, rx, prev){
 }
 
 async function calc_base_term(term, prev){
-	if(is_verse(term)){
-		return calc_verse(term);
+	if(DEBUG_PARSER){ 
+		//console.trace();
+		console.log(`calc_base_term. term=${term}, prev=${prev}`); 
+	}
+	if(is_verse_id(term)){
+		return calc_verse_id(term);
 	}
 	if(is_scode(term)){
 		return calc_scode(term);
@@ -1753,7 +1759,7 @@ export async function eval_biblang_command(command, config){
 		add_dbg_log(toks);
 	}
 
-	let robj = null;
+	let robj = { op: "eval_biblang_command error. CHECK DEBUG INFO.", lverses: [], };
 	try{
 		robj = await par.expressionToValue(command);
 	} catch(err){
@@ -1764,7 +1770,17 @@ export async function eval_biblang_command(command, config){
 		robj = { op: "expressionToValue error. CHECK DEBUG INFO.", lverses: [], };
 	}
 	
+	if(DEBUG_PARSER){ console.log("ev_blang_command"); console.log(robj); }
+    if(Array.isArray(robj)) {
+		if(robj.length > 0){
+			robj = await robj[0];
+		} else {
+			robj = { op: "Empty_expr in eval_biblang_command error. CHECK DEBUG INFO.", lverses: [], };
+		}
+	}
+	
 	const all_vss = robj.lverses;
+	if(DEBUG_PARSER){ console.log("ev_blang_command"); console.log(all_vss); }
 	robj.lverses = all_vss.sort(cmp_verses);;
 	
 	robj.all_scods = gvar.biblang.all_scods;

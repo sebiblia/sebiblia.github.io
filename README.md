@@ -457,8 +457,8 @@ En sintaxis de JavaScript y usando el programa disponible en npm conocido como [
 	};
 
 	function calc_base_term(term, prev){
-		if(is_verse(term)){		// const regex_verse = /^\d+:\d+:\d+$/;
-			return calc_verse(term);
+		if(is_verse_id(term)){		// const regex_verse = /^\d+:\d+:\d+$/;  and anything that matches /^\d/ is treated as verse_id.
+			return calc_verse_id(term);
 		}
 		if(is_scode(term)){		// const regex_scode = /^[HGhg]\d+$/;
 			return calc_scode(term);

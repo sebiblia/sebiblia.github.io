@@ -3,6 +3,13 @@
 THIS CODE IS BASED ON PACKAGE ExpressionParser
 IT HAS SOME ADAPTATIONS
 */
+
+import { gvar, } from './sf_search_mgr.js';
+
+const DEBUG_EV_RPN = false;
+const DEBUG_EV_TNK = true;
+//const DEBUG_CALC_RPN = false;
+
 "use strict";
 //Object.defineProperty(exports, "__esModule", { value: true });
 //exports.isArgumentsArray = void 0;
@@ -60,25 +67,32 @@ const classObjEvaluator = (val) => {
 };
 const evaluate = (thunkExpression) => {
     if (typeof thunkExpression === "function" && thunkExpression.length === 0) {
+		if(DEBUG_EV_TNK){ console.log(`evTnk. function.`); }
         return evaluate(thunkExpression());
     }
     //else if (exports.isArgumentsArray(thunkExpression)) {
     else if (isArgumentsArray(thunkExpression)) {
+		if(DEBUG_EV_TNK){ console.log(`evTnk. isArgumentsArray.`); }
         return thunkExpression.map((val) => evaluate(val()));
     }
     else if (Array.isArray(thunkExpression)) {
+		if(DEBUG_EV_TNK){ console.log(`evTnk. Array.isArray.`); }
         return thunkExpression.map(thunkEvaluator);
     }
     else if (isBasicDataObject(thunkExpression)) {
+		if(DEBUG_EV_TNK){ console.log(`evTnk. isBasicDataObject.`); }
         return objEvaluator(thunkExpression);
     }
     else if (typeof thunkExpression === "object") {
+		if(DEBUG_EV_TNK){ console.log(`evTnk. object.`); }
         return classObjEvaluator(thunkExpression);
     }
     else {
+		if(DEBUG_EV_TNK){ console.log(`evTnk. other.`); }
         return thunkExpression;
     }
 };
+// JLQ ADAPTATION pass prev to delegate
 const thunk = (delegate, ...args) => (...prev) => delegate(...args, ...prev);
 const isOptionsLegacy = (options) => {
     return options.hasOwnProperty("SEPARATOR");
@@ -392,29 +406,48 @@ export class ExpressionParser {
         }
         return output;
     }
+    /*
+    evaluateRpn(stack, infixer, prefixer, terminator, terms) {
+		const arr_ev = [];
+		while(stack.length > 0){
+			arr_ev.unshift(this.base_eval_rpn(stack, infixer, prefixer, terminator, terms));
+		}
+		return arr_ev;
+	}
+    base_eval_rpn(stack, infixer, prefixer, terminator, terms) {
+	*/
     evaluateRpn(stack, infixer, prefixer, terminator, terms) {
         let lhs, rhs;
+		if(DEBUG_EV_RPN){ console.log(`evRpn. STACK=`); console.log(stack); }
         const token = stack.pop();
         if (typeof token === "undefined") {
             throw new Error("Parse Error: unexpected EOF");
         }
+        
+		if(DEBUG_EV_RPN){ console.log(`evRpn. TOKEN=${token}`); }
+
         const infixDelegate = this.getInfixOp(token);
         const prefixDelegate = this.getPrefixOp(token);
         const isInfix = infixDelegate && stack.length > 1;
         const isPrefix = prefixDelegate && stack.length > 0;
         if (isInfix || isPrefix) {
+			if(DEBUG_EV_RPN){ console.log(`evRpn. isInfix || isPrefix. TOKEN=${token}`); }
             rhs = this.evaluateRpn(stack, infixer, prefixer, terminator, terms);
         }
         if (isInfix) {
+			if(DEBUG_EV_RPN){ console.log(`evRpn. isInfix. TOKEN=${token}`); }
             lhs = this.evaluateRpn(stack, infixer, prefixer, terminator, terms);
             return infixer(token, lhs, rhs);
         }
         else if (isPrefix) {
+			if(DEBUG_EV_RPN){ console.log(`evRpn. isPrefix. TOKEN=${token}`); }
             return prefixer(token, rhs);
         }
         else {
+			if(DEBUG_EV_RPN){ console.log(`evRpn. terminator. TOKEN=${token}`); }
             return terminator(token, terms);
         }
+		if(DEBUG_EV_RPN){ console.log(`evRpn. GOT TO END !!!!!`); }
     }
     rpnToExpression(stack) {
         const infixExpr = (term, lhs, rhs) => this.options.GROUP_OPEN +

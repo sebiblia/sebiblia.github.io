@@ -522,6 +522,39 @@ async function main_test_parse_cit(){
 	console.log(is_cit);
 }
 
+async function main_biblang_tokens(){
+	if (process.argv.length < 3) {
+		console.log('Usage: node ' + process.argv[1] + ' <command>');
+		process.exit(1);
+	}
+	
+	const command = process.argv[2];
+	
+	gvar.dbg_biblang = true;
+
+	init_lang('es');
+	init_biblang('es');
+	
+	let toks = ["VACIO"];
+	let toks2 = null;
+	let rpn = null;
+	const par = gvar.biblang.parser;
+	//rpn = par.expressionToRpn(command);
+	const all_tt = ['mat'];
+	//toks = par.expressionToThunk(command, all_tt);
+	const bl_obj = await eval_biblang_command(command);
+	/*
+	console.log("THE_TOKENS");
+	console.log(toks);
+	console.log("THE_RPN");
+	console.log(rpn);
+	
+	//toks2 = par.rpnToTokens(rpn);
+	console.log("TOKS2");
+	console.log(toks2);
+	*/
+}
+
 
 //test_splice();
 //test_reduce();
@@ -532,7 +565,7 @@ async function main_test_parse_cit(){
 //main_test_inc_dec();
 //main_test_verses();
 //main_test_parse_cit();
+main_biblang_tokens();
 
-
-main_biblang_command();
+//main_biblang_command();
 
