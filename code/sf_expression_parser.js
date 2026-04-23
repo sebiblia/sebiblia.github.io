@@ -4,10 +4,11 @@ THIS CODE IS BASED ON PACKAGE ExpressionParser
 IT HAS SOME ADAPTATIONS
 */
 
-import { gvar, } from './sf_search_mgr.js';
+import { is_verse_id, parse_citation, } from './sf_biblang_mgr.js';
 
 const DEBUG_EV_RPN = false;
 const DEBUG_EV_TNK = false;
+const DEBUG_TOKENIZE = false;
 //const DEBUG_CALC_RPN = false;
 
 "use strict";
@@ -233,6 +234,22 @@ export class ExpressionParser {
             return this.options.WHITESPACE_CHARS[0];
         }
     }
+    // JLQ. ADAPTATION SPECIAL CASE FOR COMMON ERROR
+    push_tok(tokens, tok){
+		if((tokens.length > 0) && is_verse_id(tok)){
+			if(DEBUG_TOKENIZE){ console.log(`push_tok. SPECIAL CASE tok=${tok}`); }
+			const lst = tokens[tokens.length - 1];
+			const tok2 = lst + '.' + tok;
+			if(DEBUG_TOKENIZE){ console.log(`push_tok. SPECIAL CASE tok2=${tok2}`); }
+			const cit = parse_citation(tok2);
+			if(cit){
+				tokens.pop();
+				tokens.push(tok2);
+				return;
+			}
+		}
+		tokens.push(tok);		
+	}
     tokenize(expression) {
         let token = "";
         const EOF = 0;
@@ -249,11 +266,13 @@ export class ExpressionParser {
                 if (disambiguated && state.startedWithSep && !endedWithSep) {
                     // ambiguous operator is nestled with the RHS
                     // treat it as a prefix operator
-                    tokens.push(disambiguated);
+					this.push_tok(tokens, disambiguated);
+                    //tokens.push(disambiguated);
                 }
                 else {
                     // TODO: break apart joined surroundingOpen/Close
-                    tokens.push(token);
+					this.push_tok(tokens, token);
+                    //tokens.push(token);
                 }
                 token = "";
                 state.startedWithSep = false;
@@ -283,7 +302,8 @@ export class ExpressionParser {
             }
             else if (currChar === this.options.LITERAL_CLOSE) {
                 state.scanningLiteral = false;
-                tokens.push(this.options.LITERAL_OPEN + token + this.options.LITERAL_CLOSE);
+				this.push_tok(tokens, this.options.LITERAL_OPEN + token + this.options.LITERAL_CLOSE);
+                //tokens.push(this.options.LITERAL_OPEN + token + this.options.LITERAL_CLOSE);
                 token = "";
             }
             else if (currChar === EOF) {
@@ -296,20 +316,23 @@ export class ExpressionParser {
                 endWord(true);
                 state.startedWithSep = true;
                 if (!this.isWhitespace(currChar)) {
-                    tokens.push(currChar);
+					this.push_tok(tokens, currChar);
+                    //tokens.push(currChar);
                 }
             }
             else if (currChar === this.options.GROUP_OPEN ||
                 currChar === this.options.GROUP_CLOSE) {
                 endWord(currChar === this.options.GROUP_CLOSE);
                 state.startedWithSep = currChar === this.options.GROUP_OPEN;
-                tokens.push(currChar);
+				this.push_tok(tokens, currChar);
+                //tokens.push(currChar);
             }
             else if (currChar in this.surroundingOpen ||
                 currChar in this.surroundingClose) {
                 endWord(currChar in this.surroundingClose);
                 state.startedWithSep = currChar in this.surroundingOpen;
-                tokens.push(currChar);
+				this.push_tok(tokens, currChar);
+                //tokens.push(currChar);
             }
             else if ((this.isSymbol(currChar) && !state.scanningSymbols) ||
                 (!this.isSymbol(currChar) && state.scanningSymbols)) {

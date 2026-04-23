@@ -28,8 +28,6 @@ const MAX_VERSE = [66, 22, 21];
 const CRONO_TOT_VERSES = 31370;
 const CRONO_PAGE_SZ = 20;
 
-const SPC_OPER = ' ';
-
 let ALL_BOOK_NAMES = [];
 
 const biblang_def = {
@@ -41,7 +39,7 @@ const biblang_def = {
 		'|': (a, b) => calc_or(a, b, '|'),
 		'!': (a, b) => calc_not(a, b),
 		';': (a, b) => calc_or(a, b, ';'),
-		' ': (a, b) => calc_or(a, b, SPC_OPER),
+		' ': (a, b) => calc_or(a, b, ';'),	// SPECIAL CASE FOR COMMON ERROR
 		'=': (a, b) => calc_asig(a, b),
 		'::': (a, b) => calc_range(a, b),
 		'..': (a, b) => calc_comment(a, b),
@@ -494,29 +492,7 @@ async function calc_and(aa, bb){
 	return robj;
 }
  
-async function calc_or(aa, bb, symb){
-	let tbb = null;
-	if(symb == SPC_OPER){
-		tbb = await bb(GET_TOK);
-		const is_tok = (tbb.is_get_tok == true);
-		if(is_tok){
-			console.log("calc_or. SPECIAL CASE SEPARATOR. NEXT IS TOKEN=" + tbb.op);
-			const taa = await aa(GET_TOK);
-			const aa_is_tok = (taa.is_get_tok == true);
-			if(aa_is_tok){
-				const full_tok = taa.op + '.' + tbb.op;
-				const is_cit = parse_citation(full_tok);
-				console.log("calc_or. SPECIAL CASE SEPARATOR. FULL_TOKEN=" + full_tok);
-				if(is_cit){
-					console.log("calc_or. SPECIAL CASE SEPARATOR. IS_CITATION=" + full_tok);
-					return await calc_base_term(full_tok);
-				}
-			}
-		} else {
-			console.log("calc_or. SPECIAL CASE SEPARATOR. next NOT token. ALREADY EXECUTED NEXT !!!!");
-		}
-	}
-	
+async function calc_or(aa, bb, symb){	
 	const oaa = await aa();
 	const obb = await bb();
 	
@@ -867,7 +843,7 @@ function set_bib(inbib){
 //const regex_verse = /^\d+:\d+:\d+$/;
 const regex_verse = /^\d/;
 
-function is_verse_id(tm){
+export function is_verse_id(tm){
 	const matches = tm.match(regex_verse);	
 	if(matches){
 		return true;
