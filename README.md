@@ -342,12 +342,16 @@ Y puede tener mas de 3 parametros. El comando NO puede tener espacios. El UNICO 
 
 Los parametros pueden ser
 
-1. Un [font google](https://fonts.google.com/) usando el separador '.' (punto) en cambio del ' ' (espacio) si el nombre tiene palabras separadas
-2. Un tamaño escrito en formato [css](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size) si empieza por un digito
-3. Un color escrito en formato #digitos de [css](https://developer.mozilla.org/es/docs/Web/CSS/Reference/Values/color_value) o #nombre-de-color
-3. Una palabra clave
+1. Un [font google](https://fonts.google.com/) usando el separador '.' (punto) en cambio del ' ' (espacio) si el nombre tiene palabras separadas. Las minusculas y mayusculas CUENTAN, DEBEN coincidir con el nombre del [font google](https://fonts.google.com/)
+2. Un tamaño que empieze por DIGITO escrito en formato [css](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size). No se permiten tamaños en letras.
+3. Un color escrito en formato #digitos de [css](https://developer.mozilla.org/es/docs/Web/CSS/Reference/Values/color_value) o #nombre-de-color usando nombres de [css](https://developer.mozilla.org/es/docs/Web/CSS/Reference/Values/color_value) 
+4. Una palabra clave
 
 Lista de palabras clave:
+
+	b bold i italic u underline cw cr cb cy cg cgg
+	
+Significado:
 
 	b: [ 'font-weight', 'bold'],
 	bold: [ 'font-weight', 'bold'],
