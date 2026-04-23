@@ -4,7 +4,7 @@
 
 La aplicación [SeBiblia.github.io](https://SeBiblia.github.io) permite el **ESTUDIO** de la **BIBLIA** en sus **IDIOMAS ORIGINALES** (hebreo y griego) **SIN NECESIDAD de HABLARLOS** porque esta diseñada para facilitar la **BUSQUEDA y NAVEGACION** de los textos en los idiomas ORIGINALES (hebreo y griego) pero **LEYENDO en el idioma TRADUCIDO** (Español o Inglés), usando fundamentalmente **[codigos Strong](#codigo-strong)** que con solo **HACER CLICK** y **sin memorizarlos** pueden hacer busquedas sobre los textos escritos en hebreo y griego para luego LEER los resultados de la busqueda en el idioma traducido de preferencia. 
 
-Las condiciones de busqueda son muy flexibles y configurables. Esto se logra mediante un pequeño lenguaje computacional sobre conjuntos de versiculos que se puede **APRENDER sobre la MARCHA** siguiendo los **EJEMPLOS** de busqueda. Y la navegación se logra con varios **menus desplegables** que se activan haciendo click sobre los textos de respuesta y que abren diferentes opciones de busquedas automaticas con solo hacer un click.
+Las condiciones de busqueda son muy flexibles y configurables. Esto se logra mediante un pequeño [lenguaje computacional](#lenguaje-biblang) sobre conjuntos de versiculos que se puede **APRENDER sobre la MARCHA** siguiendo los **EJEMPLOS** de busqueda. Y la navegación se logra con varios **menus desplegables** que se activan haciendo click sobre los textos de respuesta y que abren diferentes opciones de busquedas automaticas con solo hacer un click.
 
 ## Interfaz basica
 
@@ -12,7 +12,7 @@ Las condiciones de busqueda son muy flexibles y configurables. Esto se logra med
 
 ## Condición de busqueda
 
-La condicion de busqueda es en realidad un pequeño lenguaje computacional sobre conjuntos de versiculos pero los criterios básicos de seleccion de conjuntos de versiculos son los siguientes:
+La condicion de busqueda es en realidad un pequeño [lenguaje computacional](#lenguaje-biblang) sobre conjuntos de versiculos pero los criterios básicos de seleccion de conjuntos de versiculos son los siguientes:
 
 ###  Codigo Strong
 
@@ -73,7 +73,24 @@ gen, exo, lev, num, deu, jos, jue, rut, 1sa, 2sa, 1re, 2re, 1cr, 2cr, esd, neh, 
 
 Los nombres completos con mas de tres letras, NO las abreviaturas, pueden tener hasta 2 letras mal y la aplicación aproximara al nombre mas cercano.
 
-Las citas NO pueden tener espacios. Deben ir SIN espacios. Con uno de los siguientes formatos:
+Las citas NO DEBEN tener espacios. DEBEN ir SIN espacios. Con uno de los siguientes formatos:
+
+
+- nombre_libro.capítulo
+
+Ejemplo: [job.1](https://sebiblia.github.io/es/tool.html?biblang=job.1&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Aapo)
+
+- abrev_libro.capítulo
+
+Ejemplo: [hch.5](https://sebiblia.github.io/es/tool.html?biblang=hch.5&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Aapo)
+
+- abrev_libro.capítulo:versiculo
+
+Ejemplo: [MAT.1:5](https://sebiblia.github.io/es/tool.html?biblang=MAT.1%3A5&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
+
+- nombre_libro.capítulo:versiculo_inicio-versiculo_final
+
+Ejemplo: [marteo.1:5-9](https://sebiblia.github.io/es/tool.html?biblang=marteo.1%3A5-9&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
 - nombre_libro.capítulo
 
@@ -83,14 +100,9 @@ Ejemplo: [1_Tesalonisenses.1](https://sebiblia.github.io/es/tool.html?biblang=1_
 
 Ejemplo: [2CoRintios-1](https://sebiblia.github.io/es/tool.html?biblang=2CoRintios-1&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
-- nombre_libro.capítulo:versiculo
+En casos SIMPLES el [lenguaje BIBLANG](#lenguaje-biblang) acepta citas que NO cumplen el formato aceptado pero en general se DEBE tener en cuenta que las citas biblicas NO llevan espacios. DEBEN ir SIN espacios. Sobre todo cuando estan en medio de [operaciones binarias](#operaciones-binarias) del [lenguaje](#lenguaje-biblang).
 
-Ejemplo: [MAT.1:5](https://sebiblia.github.io/es/tool.html?biblang=MAT.1%3A5&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
-
-- nombre_libro.capítulo:versiculo_inicio-versiculo_final
-
-Ejemplo: [marteo.1:5-9](https://sebiblia.github.io/es/tool.html?biblang=marteo.1%3A5-9&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
-
+Ejemplo: [1co 4](https://sebiblia.github.io/es/tool.html?biblang=1co%204&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7CP%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Aapo)
 
 ###  Operaciones binarias
 
@@ -110,9 +122,9 @@ En la [condición de busqueda](#interfaz-basica) también se pueden poner operac
 
 Un a manera directa de ver varios ejemplos funcionando se encuentra en la opcion de "EJEMPLOS" del [menu principal](#interfaz-basica). Solo hay que darles 'click' para ver el resultado.
 
-Y para los usuarios avanzados, en la sección [Gramatica de BIBLANG](#gramatica-de-biblang), se de la especificación del lenguaje de expresiones biblicas que se diseño para esta aplicación y que da una gran flexibilidad de procesamiento usando el campo de [condición de busqueda](#interfaz-basica). 
+Y para los usuarios avanzados, en la sección [Lenguaje BIBLANG](#lenguaje-biblang), se de la especificación de la gramatica del [lenguaje](#lenguaje-biblang) de expresiones biblicas que se diseño para esta aplicación y que da una gran flexibilidad de procesamiento usando el campo de [condición de busqueda](#interfaz-basica). 
 
-Mientras tanto estos ejemplos dan una idea de como usar dicho lenguaje.
+Mientras tanto estos ejemplos dan una idea de como usar dicho [lenguaje](#lenguaje-biblang).
 
 ###  Expresión regular
 
@@ -122,85 +134,146 @@ Ejemplo: [/dijo.$/](https://sebiblia.github.io/es/tool.html?biblang=%2Fdijo.%24%
 
 ###  Comando
 
+El objetivo de los comandos es alterar la CONFIGURACION de la busqueda. La mayoria son equivalentes a usar la interfaz de la aplicacion para configurar la busqueda usando los [menus desplegables](#menus-de-configuracion). 
+
 Los comandos retornan CERO (0) versiculos, así que cuando se usan dentro de una formula binaria el resultado de CUALES versiculos retorna la operacion depende de los siguientes parametros en la operación binaria en que ese encuentren estos comandos. Sin embargo SI afectan el resultado porque alteran la configuración, es decir en donde, en que texto, los siguientes parametros van a realizar la busqueda o la forma de presentar los resultados.
 
-####  Códigos hebreos (OT)
+- Ejemplos de comandos de [rango](#rangos-de-busqueda):
 
-Estos comandos cambian la configuración para que los códigos Strong HEBREOS se busquen en el respectivo texto critico del Antiguo Testamento.
+=all =ot =nt =pa =ev +ot +nt +pa +ev +mat -mat +heb -heb -rev -act
 
-Los siguientes comandos son equivalentes a modificar [el campo OT](#menu-o-campo-ot), por sus siglas en Inglés de: Old Testament, y que en el [gráfico](#interfaz-basica) se denominó [códigos hebreos](#interfaz-basica) para que sea mas comprensible para el principiante o la persona que no habla Inglés. La excepción es la Septuaginta (LXX) puesto que fue escrita en griego. Y por supuesto las busquedas de códigos Strong en LXX deben ser códigos Strong del griego.
+- Ejemplos de [comandos de formato](#comandos-de-formato)
 
-- [.WLC](https://sebiblia.github.io/es/tool.html?biblang=.WLC&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en West Minister Leningrad Codex (WLC).
-- [.ALE](https://sebiblia.github.io/es/tool.html?biblang=.ALE&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en Aleppo Codex (ALE).
-- [.TKH](https://sebiblia.github.io/es/tool.html?biblang=.TKH&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en la Tanakh (TKH).
-- [.LXX](https://sebiblia.github.io/es/tool.html?biblang=.LXX&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong GRIEGOS en la Septuaginta (LXX).
+.f:.c1:Jim.Nightshade:cy:15vh
+.f:UnifrakturCook:cg:2em
 
-Ejemplo: [(.WLC ; H1) ! (.ALE ; H1)](https://sebiblia.github.io/es/tool.html?biblang=(.WLC%20%3B%20H1)%20!%20(.ALE%20%3B%20H1)&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Busca los versiculos que en la WLC tienen el código H1 pero en la ALE NO tienen dicho código.
+- Lista de [comandos de configuracion](#comandos-de-configuracion) con equivalentes en los [menus](menus-de-configuracion) de la interfaz
 
+.WLC .ALE .TKH .LXX .BYZ .TR .WH .NES .RVA .RVAs .KJV KJVs .SBLM .WEB :loc :ot :nt :sco .asc .min .may .dbg .nodbg 
 
-#### Códigos griegos (NT)
+- [Otros comandos](#otros-comandos)
 
-Estos comandos cambian la configuración para que los códigos Strong GRIEGOS se busquen en el respectivo texto critico del Nuevo Testamento.
+.txta $last .rhis .rxi .rxs .all
 
-Son equivalentes a modificar [el campo NT](#menu-o-campo-nt), por sus siglas en Inglés de: New Testament, y que en el [gráfico](#interfaz-basica) se denominó [Códigos griegos](#interfaz-basica) para que sea mas comprensible para el principiante o la persona que no habla Inglés.
+## Menus principal
 
-- [.BYZ](https://sebiblia.github.io/es/tool.html?biblang=.BYZ&conf=O%24LXX%7CN%24WH%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto Bizantino (BYZ).
-- [.TR](https://sebiblia.github.io/es/tool.html?biblang=.TR&conf=O%24LXX%7CN%24NES%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el Textus Receptus (TR).
-- [.WH](https://sebiblia.github.io/es/tool.html?biblang=.WH&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto critico de Wescott and Hort (WH).
-- [.NES](https://sebiblia.github.io/es/tool.html?biblang=.NES&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto critico de Nestle 1904 (NES).
+Es el menu que se muestra en la [interfaz basica](#interfaz-basica) en la parte superior derecha.
 
-#### Texto traducido (LOC)
+1. HISTORIA DE COMMANDOS. Muestra todos los comandos ejecutados desde el último reinicio de historia (commando .rhis o seleccion por menu principal). Atajo en compu: "CTRL+A+H".
+2. LIBROS. Muestra las abbreviaturas de los libros en el idioma actual. Atajo en compu: "CTRL+A+B".
+2. COPIAR ENLACE WEB. Copy un enlace web que permite compartir los resultados actuales. Atajo en compu: "CTRL+A+L".
+3. EJEMPLOS. Muestra ejemplos de commandos que se pueden ejecutar con solo hacer 'click' sobre el ejemplo. Atajo en compu: "CTRL+A+E".
+4. MANUAL. Abre esta pagina web del manual. Atajo en compu: "CTRL+A+M".
+5. VARIABLES. Muestra las variables que el usuario a creado en la sesion actual. Atajo en compu: "CTRL+A+V".
+6. DEPURAR. Activa la ventana de depurado para observar posibles errores en la formula actual. Atajo en compu: "CTRL+A+D".
+7. MOSTRAR ENLACE WEB. Muestra el enlace web que permite compartir los resultados actuales. Atajo en compu: "CTRL+A+K".
+8. SALVAR RESULTADO. Guarda en "Descargas" del navegador el resultado actual en formato JSON. Atajo en compu: "CTRL+A+U".
+9. SALVAR HISTORIA. Guarda en "Descargas" del navegador la historia de commandos actual en formato JSON. Atajo en compu: "CTRL+A+S".
+10. RECUPERAR HISTORIA. Permite recuperar una historia guardada en formato JSON. Atajo en compu: "CTRL+A+R".
+11. INICIAR HISTORIA. Ejecuta el commando ".rhis". Atajo en compu: "CTRL+A+I".
 
-Estos comandos cambian la configuración para determinar que versión de biblia TRADUCIDA se usará en la busqueda. Por defecto se usa para mostrar los versiculos resultado en la versión escogida y hacer busquedas de [Texto](#palabra) y [Expresiones Regulares](#expresión-regular) en la versión escogida, pero esto se puede modificar con [comandos o el campo RX](#dónde-busca-palabras-y-expresiones-regulares-rx).
+## Menus de configuracion
 
-Son equivalentes a modificar [el campo LOC](#menu-o-campo-loc), por referirse a un texto local, y que en el [gráfico](#interfaz-basica) se denominó [Texto traducido](#interfaz-basica) para que sea mas comprensible.
+Se muestran en la [interfaz basica](#interfaz-basica) encima del campo de busqueda.
 
+### Menu o campo OT
 
-- [.RVA](https://sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 (RVA).
-- [.RVAs](https://sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-basica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la RVA (y que corresponden al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la RVAs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
-- [.KJV](https://sebiblia.github.io/es/tool.html?biblang=.KJV&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version (KJV).
-- [.KJVs](https://sebiblia.github.io/es/tool.html?biblang=.KJVs&conf=O%24ALE%7CN%24BYZ%7CL%24KJV%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version con códigos Strong (KJVs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-basica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la KJV (una vez traducidos al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la KJVs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
-- [.SBLM](https://sebiblia.github.io/es/tool.html?biblang=.SBLM&conf=O%24ALE%7CN%24BYZ%7CL%24KJVs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Sagrada Biblia Libre para el Mundo (SBLM).
-- [.WEB](https://sebiblia.github.io/es/tool.html?biblang=.WEB&conf=O%24ALE%7CN%24BYZ%7CL%24SBLM%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión World English Bible (WEB).
+Permite seleccionar sobre que texto del Antiguo Testamento se van hacer las busquedas de [códigos Strong](#codigo-strong) hebreos. La excepciones la Septuaginta (LXX) por estar escrita en griego y porlo tanto se buscan [códigos Strong](#codigo-strong) griegos. Es equivalente a ejecutar un [comando de campo OT](#códigos-hebreos-ot) antes de la busqueda.
 
-#### Dónde busca palabras y expresiones regulares (RX)
+### Menu o campo NT
 
-Estos comandos cambian la configuración para determinar DONDE se buscan palabras y expresiones regulares. 
+Permite seleccionar sobre que texto del Nuevo Testamento se van hacer las busquedas de [códigos Strong](#codigo-strong) griegos. Es equivalente a ejecutar un [comando de campo NT](#códigos-griegos-nt) antes de la busqueda.
 
-Son equivalentes a modificar [el campo RX](#menu-o-campo-rx), una abreviatura de Regular eXpresion, que se refiere a expresiones regulares, y que en el [gráfico](#interfaz-basica) se denominó [texto traducido](#interfaz-basica) para que sea mas comprensible para el principiante.
+### Menu o campo LOC
 
-Es importante anotar que los versiculos encontrados SIEMPRE se muestran en el idioma del campo (RX), el modificado por estos comandos. Es por eso que NORMALMENTE el campo RX está en LOC (en idioma traducido). Pero si se quiere ver el texto en el idioma original se puede cambiar justamente este campo (RX), ya sea usando estos comandos o con el menu en la [interfaza grafica](#interfaz-basica).
+Permite seleccionar sobre que texto TRADUCIDO se va a usar en las busquedas. Es equivalente a ejecutar un [comando de campo LOC](#texto-traducido-loc) antes de la busqueda.
 
-- [:loc](https://sebiblia.github.io/es/tool.html?biblang=%3Aloc&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo LOC.
-- [:ot](https://sebiblia.github.io/es/tool.html?biblang=%3Aot&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo OT. Las palabras y expresiones regulares se escriben en ASCCI siguiendo el [trans-deletreo](#trans-deletreo) del Unicode griego a ASCCI dado por la tabla de [trans-deletreo](#trans-deletreo)
-- [:nt](https://sebiblia.github.io/es/tool.html?biblang=%3Ant&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo NT. Las palabras y expresiones regulares se escriben en ASCCI siguiendo el [trans-deletreo](#trans-deletreo) del Unicode griego a ASCCI dado por la tabla de [trans-deletreo](#trans-deletreo)
-- :sco . Reservado. Sin implementar.
+### Menu o campo RX
 
-#### Presentación de versiculos resultado (P)
+Permite seleccionar sobre que texto (OT, NT o LOC) se van hacer las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular). Los versiculos resultado se muestran en el texto seleccionado, a menos que haya [comandos](#dónde-busca-palabras-y-expresiones-regulares-rx) que modifiquen dicho comportamiento. Es equivalente a ejecutar un [comando de campo RX](#dónde-busca-palabras-y-expresiones-regulares-rx) antes de la busqueda.
 
-Estos comandos establecen en que tipo de caracteres se escriben los versiculos. Sirven mas que todo cuando los versiculos resultado se estan mostrando de los textos en los idiomas ORIGINALES. Es decir cuando el campo RX tiene valor OT o valor NT.
+### Menu o campo D
 
-Estos comandos solo son ejecutables desde el campo de busqueda. No hay interfaz visible de usuario para ejecutar estos comandos.
+Permite seleccionar el Diccionario de TRADUCCION que se va a usar en el analisis textual de un versiculo. 
 
-Deberian escribirse una sola vez en la formula puesto que solo afecta la presentacion el ultimo ejecutado.
+Cada opcion de Diccionario tiene un color distintivo que se corresponde con el color en que se muestran la TRADUCCION en los analisis textuales de versiculos.
 
-- [.asc](https://sebiblia.github.io/es/tool.html?biblang=.asc&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24min%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los resultados se muestren en letras del idioma traducido, [caracteres ASCII](https://es.wikipedia.org/wiki/ASCII). Si el campo RX esta en OT o NT usara las tablas de [trans-deletreo](#trans-deletreo).
-- [.min](https://sebiblia.github.io/es/tool.html?biblang=.min&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los resultados se muestren en letras minusculas. Solo afecta la presentacion cuando el campo RX esta en OT o NT (resultados tomados de los textos en los idiomas originales).
-- [.may](https://sebiblia.github.io/es/tool.html?biblang=.may&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los resultados se muestren en letras mayusculas. Solo afecta la presentacion cuando el campo RX esta en OT o NT (resultados tomados de los textos en los idiomas originales).
+Estan las siguientes opciones, 
 
-Ejemplos:
+1. uRVA. Unificada de la RVAs. Es un diccionario extraido de la Reina-Valera con códigos Strong. En este diccionario se seleccionó una UNICA TRADUCCION para cada pareja de (codigo Strong, deletreo-ASCCI del vocablo). Primero se selecciono la de mayor ocurrencia y si había empates, una o mas TRADUCCION con el mismo numero de ocurrencias, se selecciono la TRADUCCION mas corta.
 
-- [.may ; H125](https://sebiblia.github.io/es/tool.html?biblang=.may%20%3B%20H125&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24may%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras hebreas.
+2. uKJV. Unificada de la KJVs. Es un diccionario extraido de la King James Version con códigos Strong. En este diccionario se seleccionó una UNICA TRADUCCION para cada pareja de (codigo Strong, deletreo-ASCCI del vocablo). Primero se selecciono la de mayor ocurrencia y si había empates, una o mas TRADUCCION con el mismo numero de ocurrencias, se selecciono la TRADUCCION mas corta.
 
-- [.asc ; H125](https://sebiblia.github.io/es/tool.html?biblang=.asc%20%3B%20H125&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24may%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras ASCII.
+3. Ben. BibleHub English. Es un diccionario extraido de los analisis textuales de biblehub.com.
 
-- [.min ; G166](https://sebiblia.github.io/es/tool.html?biblang=.min%20%3B%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24min%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras minusculas griegas.
+4. B2es Biblehub Español. Es una traduccion de Ben usando Google translate.
 
-- [.may ; G166](https://sebiblia.github.io/es/tool.html?biblang=.may%20%3B%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24min%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras mayusculas griegas.
+5. Sen. English Strong code definitions. Es un diccionario extraido de las definiciones en Inglés de los códigos Strong. Por lo tanto si un codigo Strong tiene diferentes deletreos ya sea por conjugaciones o prefijos que modifican la raiz. Este diccionario solo muestra una UNICA definicion para cada codigo Strong.
 
-Observe que TODOS los campos afectan el resultado. 
+6. Ses. Definiciones de codigos Strong. Es un diccionario extraido de las definiciones en Español de los códigos Strong. Por lo tanto si un codigo Strong tiene diferentes deletreos ya sea por conjugaciones o prefijos que modifican la raiz. Este diccionario solo muestra una UNICA definicion para cada codigo Strong.
 
-#### Rangos de busqueda
+7. SBIB. Esta opcions solo esta disponible para las versiones KJVs y RVAs. Es decir cuando el campo LOC tiene uno de estos dos valores. Es simplemente la correspondencia uno a uno de cada codigo Strong que ESTA en el analisis textual, con su aparicion, si TAMBIEN ESTA, en el versiculo correspondiente de la RVAs o la KJVs.
+
+## Lenguaje BIBLANG
+
+El lenguaje BIBLANG tiene una gramatica bastante simple basada en expresiones.
+
+En sintaxis de JavaScript y usando el programa disponible en npm conocido como [Expression Parser](https://www.npmjs.com/package/expressionparser) con pequeñas adaptaciones para los objetivos de BIBLANG. Ver codigo fuente en [github](https://github.com/sebiblia/sebiblia.github.io/tree/main/code):
+
+	const biblang_def = {
+		INFIX_OPS: {
+			'*': (a, b) => calc_before_any(a, b),
+			'%': (a, b) => calc_followed_by(a, b),
+			'&': (a, b) => calc_and(a, b),
+			'|': (a, b) => calc_or(a, b, '|'),
+			'!': (a, b) => calc_not(a, b),
+			';': (a, b) => calc_or(a, b, ';'),
+			'=': (a, b) => calc_asig(a, b),
+			'::': (a, b) => calc_range(a, b),
+			'..': (a, b) => calc_comment(a, b),
+		},
+		PREFIX_OPS: {},
+		PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['*'], ['='], [';'], ['..']],
+		LITERAL_OPEN: '/',
+		LITERAL_CLOSE: '/',
+		GROUP_OPEN: '(',
+		GROUP_CLOSE: ')',
+		SEPARATORS: [';', '!', '|', '&', '%', '*'],
+		WHITESPACE_CHARS: [' '],
+		SYMBOLS: ['(', ')', '/'],
+		AMBIGUOUS: {},
+		
+		termDelegate: function(term, prev) {
+			return calc_base_term(term, prev);
+		},
+		descriptions: [],
+	};
+
+	function calc_base_term(term, prev){
+		if(is_verse_id(term)){		// const regex_verse = /^\d+:\d+:\d+$/;  and anything that matches /^\d/ is treated as verse_id.
+			return calc_verse_id(term);
+		}
+		if(is_scode(term)){		// const regex_scode = /^[HGhg]\d+$/;
+			return calc_scode(term);
+		}
+		const rx = is_bib_regex(term)	// const regex_bibrx = /^\/([^/]*)\/$/;
+		if(rx){
+			return calc_bibregex(rx, prev);
+		}
+		const bvar = is_bib_var(term)	// const regex_bibvar = /^([.+=><:\-]+)([\w\d:_.]+)$/;
+		if(bvar){
+			return calc_bibvar(bvar);
+		}
+		const cit = is_bib_citation(term);	// starts with: const regex_citation = /^([^.-]+)[.-](\d+)(.*)/;
+		if(cit){
+			return calc_citation(cit);
+		}
+		return calc_word(term, prev); // every thing else is taken as a word to search for.
+	}
+
+## Comandos de configuracion
+
+### Rangos de busqueda
 
 Sirven para determinar en que libros de la biblia se van a hacer busquedas de [códigos Strong](#codigo-strong), [Texto](#palabra) y de [Expresiones Regulares](#expresión-regular).  Asi, estos comandos deben usarse en conjunto con busquedas de [códigos Strong](#codigo-strong), [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular).
 
@@ -257,6 +330,115 @@ Ejemplos de uso:
 
 - [=mat ; +rev; +luk ; infier](https://sebiblia.github.io/es/tool.html?biblang=%3Dmat%20%3B%20%2Brev%3B%20%2Bluk%20%3B%20infier&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev)
 
+#### Comandos de formato
+
+Los comandos que comienzan por .f son comandos que alteran la presentacion de las [palabras](#palabra) buscadas.
+
+La estructura (sintaxis) de estos comandos es la siguiente:
+
+.f:parametro1:parametro2:parametro3:parametro4
+
+Y puede tener mas de 3 parametros. El comando NO puede tener espacios. El UNICO separador es el caracter ':' que separa los parametros
+
+Los parametros pueden ser
+
+1. Un [font google](https://fonts.google.com/) usando el separador '.' (punto) en cambio del ' ' (espacio) si el nombre tiene palabras separadas
+2. Un tamaño escrito en formato [css](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size) si empieza por un digito
+3. Un color escrito en formato #digitos de [css](https://developer.mozilla.org/es/docs/Web/CSS/Reference/Values/color_value) o #nombre-de-color
+3. Una palabra clave
+
+Lista de palabras clave:
+
+	b: [ 'font-weight', 'bold'],
+	bold: [ 'font-weight', 'bold'],
+	i: [ 'font-style', 'italic'],
+	italic: [ 'font-style', 'italic'],
+	u: [ 'text-decoration', 'underline'],
+	underline: [ 'text-decoration', 'underline'],
+	cw: [ 'color', 'white'],
+	cr: [ 'color', 'red'],
+	cb: [ 'color', 'blue'],
+	cy: [ 'color', 'yellow'],
+	cg: [ 'color', 'green'],
+	cgg: [ 'color', '#00f600'],
+
+
+###  Códigos hebreos (OT)
+
+Estos comandos cambian la configuración para que los códigos Strong HEBREOS se busquen en el respectivo texto critico del Antiguo Testamento.
+
+Los siguientes comandos son equivalentes a modificar [el campo OT](#menu-o-campo-ot), por sus siglas en Inglés de: Old Testament, y que en el [gráfico](#interfaz-basica) se denominó [códigos hebreos](#interfaz-basica) para que sea mas comprensible para el principiante o la persona que no habla Inglés. La excepción es la Septuaginta (LXX) puesto que fue escrita en griego. Y por supuesto las busquedas de códigos Strong en LXX deben ser códigos Strong del griego.
+
+- [.WLC](https://sebiblia.github.io/es/tool.html?biblang=.WLC&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en West Minister Leningrad Codex (WLC).
+- [.ALE](https://sebiblia.github.io/es/tool.html?biblang=.ALE&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en Aleppo Codex (ALE).
+- [.TKH](https://sebiblia.github.io/es/tool.html?biblang=.TKH&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en la Tanakh (TKH).
+- [.LXX](https://sebiblia.github.io/es/tool.html?biblang=.LXX&conf=O%24TKH%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong GRIEGOS en la Septuaginta (LXX).
+
+Ejemplo: [(.WLC ; H1) ! (.ALE ; H1)](https://sebiblia.github.io/es/tool.html?biblang=(.WLC%20%3B%20H1)%20!%20(.ALE%20%3B%20H1)&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Busca los versiculos que en la WLC tienen el código H1 pero en la ALE NO tienen dicho código.
+
+### Códigos griegos (NT)
+
+Estos comandos cambian la configuración para que los códigos Strong GRIEGOS se busquen en el respectivo texto critico del Nuevo Testamento.
+
+Son equivalentes a modificar [el campo NT](#menu-o-campo-nt), por sus siglas en Inglés de: New Testament, y que en el [gráfico](#interfaz-basica) se denominó [Códigos griegos](#interfaz-basica) para que sea mas comprensible para el principiante o la persona que no habla Inglés.
+
+- [.BYZ](https://sebiblia.github.io/es/tool.html?biblang=.BYZ&conf=O%24LXX%7CN%24WH%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto Bizantino (BYZ).
+- [.TR](https://sebiblia.github.io/es/tool.html?biblang=.TR&conf=O%24LXX%7CN%24NES%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el Textus Receptus (TR).
+- [.WH](https://sebiblia.github.io/es/tool.html?biblang=.WH&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto critico de Wescott and Hort (WH).
+- [.NES](https://sebiblia.github.io/es/tool.html?biblang=.NES&conf=O%24LXX%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que se busquen códigos Strong en el texto critico de Nestle 1904 (NES).
+
+### Texto traducido (LOC)
+
+Estos comandos cambian la configuración para determinar que versión de biblia TRADUCIDA se usará en la busqueda. Por defecto se usa para mostrar los versiculos resultado en la versión escogida y hacer busquedas de [Texto](#palabra) y [Expresiones Regulares](#expresión-regular) en la versión escogida, pero esto se puede modificar con [comandos o el campo RX](#dónde-busca-palabras-y-expresiones-regulares-rx).
+
+Son equivalentes a modificar [el campo LOC](#menu-o-campo-loc), por referirse a un texto local, y que en el [gráfico](#interfaz-basica) se denominó [Texto traducido](#interfaz-basica) para que sea mas comprensible.
+
+
+- [.RVA](https://sebiblia.github.io/es/tool.html?biblang=.RVA&conf=O%24WLC%7CN%24BYZ%7CL%24RVAs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 (RVA).
+- [.RVAs](https://sebiblia.github.io/es/tool.html?biblang=.RVAs&conf=O%24WLC%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Reina-Valera 1909 con códigos Strong (RVAs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-basica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la RVA (y que corresponden al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la RVAs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
+- [.KJV](https://sebiblia.github.io/es/tool.html?biblang=.KJV&conf=O%24ALE%7CN%24BYZ%7CL%24RVA%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version (KJV).
+- [.KJVs](https://sebiblia.github.io/es/tool.html?biblang=.KJVs&conf=O%24ALE%7CN%24BYZ%7CL%24KJV%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión King James Version con códigos Strong (KJVs). Observese que estos códigos Strong NO son los que se buscan cuando se entra un código Strong en la [condición de busqueda](#interfaz-basica) porque estos códigos Strong son los que se clasificaron en la TRADUCCION de la KJV (una vez traducidos al idioma original) y NO los del texto en el idioma original, que son los que nos interesa buscar. La mayoría corresponden, pero no siempre es el caso. Justamente el objetivo es poder identificar lo que dice el texto en su idioma original. Para hacer una busqueda de los códigos Strong clasificados en la KJVs es necesario hacer una búsqueda de una [expresión regular](#expresión-regular) que contenga el ćódigo.
+- [.SBLM](https://sebiblia.github.io/es/tool.html?biblang=.SBLM&conf=O%24ALE%7CN%24BYZ%7CL%24KJVs%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión Sagrada Biblia Libre para el Mundo (SBLM).
+- [.WEB](https://sebiblia.github.io/es/tool.html?biblang=.WEB&conf=O%24ALE%7CN%24BYZ%7CL%24SBLM%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los versículos que se muestran del resultado sean de la versión World English Bible (WEB).
+
+### Dónde busca palabras y expresiones regulares (RX)
+
+Estos comandos cambian la configuración para determinar DONDE se buscan palabras y expresiones regulares. 
+
+Son equivalentes a modificar [el campo RX](#menu-o-campo-rx), una abreviatura de Regular eXpresion, que se refiere a expresiones regulares, y que en el [gráfico](#interfaz-basica) se denominó [texto traducido](#interfaz-basica) para que sea mas comprensible para el principiante.
+
+Es importante anotar que los versiculos encontrados SIEMPRE se muestran en el idioma del campo (RX), el modificado por estos comandos. Es por eso que NORMALMENTE el campo RX está en LOC (en idioma traducido). Pero si se quiere ver el texto en el idioma original se puede cambiar justamente este campo (RX), ya sea usando estos comandos o con el menu en la [interfaza grafica](#interfaz-basica).
+
+- [:loc](https://sebiblia.github.io/es/tool.html?biblang=%3Aloc&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo LOC.
+- [:ot](https://sebiblia.github.io/es/tool.html?biblang=%3Aot&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo OT. Las palabras y expresiones regulares se escriben en ASCCI siguiendo el [trans-deletreo](#trans-deletreo) del Unicode griego a ASCCI dado por la tabla de [trans-deletreo](#trans-deletreo)
+- [:nt](https://sebiblia.github.io/es/tool.html?biblang=%3Ant&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24loc%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que las palabras y las expresiones regulares se busquen en el texto critico seleccionado en el campo NT. Las palabras y expresiones regulares se escriben en ASCCI siguiendo el [trans-deletreo](#trans-deletreo) del Unicode griego a ASCCI dado por la tabla de [trans-deletreo](#trans-deletreo)
+- :sco . Reservado. Sin implementar.
+
+
+### Presentación de versiculos resultado (P)
+
+Estos comandos establecen en que tipo de caracteres se escriben los versiculos. Sirven mas que todo cuando los versiculos resultado se estan mostrando de los textos en los idiomas ORIGINALES. Es decir cuando el campo RX tiene valor OT o valor NT.
+
+Estos comandos solo son ejecutables desde el campo de busqueda. No hay interfaz visible de usuario para ejecutar estos comandos.
+
+Deberian escribirse una sola vez en la formula puesto que solo afecta la presentacion el ultimo ejecutado.
+
+- [.asc](https://sebiblia.github.io/es/tool.html?biblang=.asc&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24min%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los resultados se muestren en letras del idioma traducido, [caracteres ASCII](https://es.wikipedia.org/wiki/ASCII). Si el campo RX esta en OT o NT usara las tablas de [trans-deletreo](#trans-deletreo).
+- [.min](https://sebiblia.github.io/es/tool.html?biblang=.min&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los resultados se muestren en letras minusculas. Solo afecta la presentacion cuando el campo RX esta en OT o NT (resultados tomados de los textos en los idiomas originales).
+- [.may](https://sebiblia.github.io/es/tool.html?biblang=.may&conf=O%24ALE%7CN%24BYZ%7CL%24WEB%7Co%24asc%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Cambia la configuración para que los resultados se muestren en letras mayusculas. Solo afecta la presentacion cuando el campo RX esta en OT o NT (resultados tomados de los textos en los idiomas originales).
+
+Ejemplos:
+
+- [.may ; H125](https://sebiblia.github.io/es/tool.html?biblang=.may%20%3B%20H125&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24may%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras hebreas.
+
+- [.asc ; H125](https://sebiblia.github.io/es/tool.html?biblang=.asc%20%3B%20H125&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24may%7Ci%24ot%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras ASCII.
+
+- [.min ; G166](https://sebiblia.github.io/es/tool.html?biblang=.min%20%3B%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24min%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras minusculas griegas.
+
+- [.may ; G166](https://sebiblia.github.io/es/tool.html?biblang=.may%20%3B%20G166&conf=O%24WLC%7CN%24BYZ%7CL%24WEB%7Co%24min%7Ci%24nt%7Cs%24sco%3Aall%2Brx%3Aall%2Bwd%3Aall%2Bhis%3A1000%2Bdbg%3A1000%7Cr%24true%7CI%24gen%3Arev) Muestra los resultados en letras mayusculas griegas.
+
+Observe que TODOS los campos afectan el resultado. 
+
 #### Otros comandos
 
 - [.txta] Opens the "TEXT ANALYSIS" of the next or previous verse.
@@ -274,49 +456,6 @@ Ejemplos:
 - [.dbg] Cambia la configuracion para empezar a guardar información de depurado. Permite saber como se ejecutó, cuales fueron los pasos, durante la ejecucion de una busqueda. Si desde el [menu principal](#interfaz-basica) se tiene abierto el campo de DEPURADO, este comando se ejecuta antes de la busqueda y al final de la busqueda toda la informacion de depurado se muestra en dicho campo de DEPURADO.
 - [.nodbg] Cambia la configuracion para dejar de guardar información de depurado. 
 - [.all] Fija todos los parametros de configuracion para trabajar con TODA la biblia. Este comando se ejecuta por defecto al comienzo de TODA busqueda. 
-
-
-## Menus o campos de configuración
-
-Se muestran en la [interfaz basica](#interfaz-basica) encima del campo de busqueda.
-
-### Menu o campo OT
-
-Permite seleccionar sobre que texto del Antiguo Testamento se van hacer las busquedas de [códigos Strong](#codigo-strong) hebreos. La excepciones la Septuaginta (LXX) por estar escrita en griego y porlo tanto se buscan [códigos Strong](#codigo-strong) griegos. Es equivalente a ejecutar un [comando de campo OT](#códigos-hebreos-ot) antes de la busqueda.
-
-### Menu o campo NT
-
-Permite seleccionar sobre que texto del Nuevo Testamento se van hacer las busquedas de [códigos Strong](#codigo-strong) griegos. Es equivalente a ejecutar un [comando de campo NT](#códigos-griegos-nt) antes de la busqueda.
-
-### Menu o campo LOC
-
-Permite seleccionar sobre que texto TRADUCIDO se va a usar en las busquedas. Es equivalente a ejecutar un [comando de campo LOC](#texto-traducido-loc) antes de la busqueda.
-
-### Menu o campo RX
-
-Permite seleccionar sobre que texto (OT, NT o LOC) se van hacer las busquedas de [Texto](#palabra) o de [Expresiones Regulares](#expresión-regular). Los versiculos resultado se muestran en el texto seleccionado, a menos que haya [comandos](#dónde-busca-palabras-y-expresiones-regulares-rx) que modifiquen dicho comportamiento. Es equivalente a ejecutar un [comando de campo RX](#dónde-busca-palabras-y-expresiones-regulares-rx) antes de la busqueda.
-
-### Menu o campo D
-
-Permite seleccionar el Diccionario de TRADUCCION que se va a usar en el analisis textual de un versiculo. 
-
-Cada opcion de Diccionario tiene un color distintivo que se corresponde con el color en que se muestran la TRADUCCION en los analisis textuales de versiculos.
-
-Estan las siguientes opciones, 
-
-1. uRVA. Unificada de la RVAs. Es un diccionario extraido de la Reina-Valera con códigos Strong. En este diccionario se seleccionó una UNICA TRADUCCION para cada pareja de (codigo Strong, deletreo-ASCCI del vocablo). Primero se selecciono la de mayor ocurrencia y si había empates, una o mas TRADUCCION con el mismo numero de ocurrencias, se selecciono la TRADUCCION mas corta.
-
-2. uKJV. Unificada de la KJVs. Es un diccionario extraido de la King James Version con códigos Strong. En este diccionario se seleccionó una UNICA TRADUCCION para cada pareja de (codigo Strong, deletreo-ASCCI del vocablo). Primero se selecciono la de mayor ocurrencia y si había empates, una o mas TRADUCCION con el mismo numero de ocurrencias, se selecciono la TRADUCCION mas corta.
-
-3. Ben. BibleHub English. Es un diccionario extraido de los analisis textuales de biblehub.com.
-
-4. B2es Biblehub Español. Es una traduccion de Ben usando Google translate.
-
-5. Sen. English Strong code definitions. Es un diccionario extraido de las definiciones en Inglés de los códigos Strong. Por lo tanto si un codigo Strong tiene diferentes deletreos ya sea por conjugaciones o prefijos que modifican la raiz. Este diccionario solo muestra una UNICA definicion para cada codigo Strong.
-
-6. Ses. Definiciones de codigos Strong. Es un diccionario extraido de las definiciones en Español de los códigos Strong. Por lo tanto si un codigo Strong tiene diferentes deletreos ya sea por conjugaciones o prefijos que modifican la raiz. Este diccionario solo muestra una UNICA definicion para cada codigo Strong.
-
-7. SBIB. Esta opcions solo esta disponible para las versiones KJVs y RVAs. Es decir cuando el campo LOC tiene uno de estos dos valores. Es simplemente la correspondencia uno a uno de cada codigo Strong que ESTA en el analisis textual, con su aparicion, si TAMBIEN ESTA, en el versiculo correspondiente de la RVAs o la KJVs.
 
 ### Trans-deletreo
 
@@ -389,23 +528,6 @@ GREEK
 ω -> w 
 ```
 
-## Menus principal
-
-Es el menu que se muestra en la [interfaz basica](#interfaz-basica) en la parte superior derecha.
-
-1. HISTORIA DE COMMANDOS. Muestra todos los comandos ejecutados desde el último reinicio de historia (commando .rhis o seleccion por menu principal). Atajo en compu: "CTRL+A+H".
-2. LIBROS. Muestra las abbreviaturas de los libros en el idioma actual. Atajo en compu: "CTRL+A+B".
-2. COPIAR ENLACE WEB. Copy un enlace web que permite compartir los resultados actuales. Atajo en compu: "CTRL+A+L".
-3. EJEMPLOS. Muestra ejemplos de commandos que se pueden ejecutar con solo hacer 'click' sobre el ejemplo. Atajo en compu: "CTRL+A+E".
-4. MANUAL. Abre esta pagina web del manual. Atajo en compu: "CTRL+A+M".
-5. VARIABLES. Muestra las variables que el usuario a creado en la sesion actual. Atajo en compu: "CTRL+A+V".
-6. DEPURAR. Activa la ventana de depurado para observar posibles errores en la formula actual. Atajo en compu: "CTRL+A+D".
-7. MOSTRAR ENLACE WEB. Muestra el enlace web que permite compartir los resultados actuales. Atajo en compu: "CTRL+A+K".
-8. SALVAR RESULTADO. Guarda en "Descargas" del navegador el resultado actual en formato JSON. Atajo en compu: "CTRL+A+U".
-9. SALVAR HISTORIA. Guarda en "Descargas" del navegador la historia de commandos actual en formato JSON. Atajo en compu: "CTRL+A+S".
-10. RECUPERAR HISTORIA. Permite recuperar una historia guardada en formato JSON. Atajo en compu: "CTRL+A+R".
-11. INICIAR HISTORIA. Ejecuta el commando ".rhis". Atajo en compu: "CTRL+A+I".
-
 ## Ejemplo de un ciclo corto de trabajo
 
 Un ciclo corto normal de trabajo es:
@@ -420,63 +542,6 @@ Un ciclo corto normal de trabajo es:
 Ver los videos [subidos a YouTube](https://www.youtube.com/watch?v=ULr0gb-iHlI&list=PLB1e7xsVodJX0xQcz36gQybgPpjjQL-ED) en el canal de JoseLuisQuirogaBeltran en la lista SeBiblia.github.io
 
 OBSERVACION: Algunos videos estan con la vieja interfaz que tenia un boton adicional para alterar la presentación. Se simplificó la interfaz para el caso normal en que se hacen busquedas sobre OT o NT. La funcionalidad se mantiene de dos maneras. COn un boton adicional por versiculo, si se esta buscando sobre OT o NT palabras o expresiones regulares. Y por supuesto con [los comandos para modificacion de la presentacion](#presentación-de-versiculos-resultado-p).
-
-## Gramatica de BIBLANG
-
-El lenguaje BIBLANG tiene una gramatica bastante simple basada en expresiones.
-
-En sintaxis de JavaScript y usando el programa disponible en npm conocido como [Expression Parser](https://www.npmjs.com/package/expressionparser) con pequeñas adaptaciones para los objetivos de BIBLANG. Ver codigo fuente en [github](https://github.com/sebiblia/sebiblia.github.io/tree/main/code):
-
-	const biblang_def = {
-		INFIX_OPS: {
-			'*': (a, b) => calc_before_any(a, b),
-			'%': (a, b) => calc_followed_by(a, b),
-			'&': (a, b) => calc_and(a, b),
-			'|': (a, b) => calc_or(a, b, '|'),
-			'!': (a, b) => calc_not(a, b),
-			';': (a, b) => calc_or(a, b, ';'),
-			'=': (a, b) => calc_asig(a, b),
-			'::': (a, b) => calc_range(a, b),
-			'..': (a, b) => calc_comment(a, b),
-		},
-		PREFIX_OPS: {},
-		PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['*'], ['='], [';'], ['..']],
-		LITERAL_OPEN: '/',
-		LITERAL_CLOSE: '/',
-		GROUP_OPEN: '(',
-		GROUP_CLOSE: ')',
-		SEPARATORS: [';', '!', '|', '&', '%', '*'],
-		WHITESPACE_CHARS: [' '],
-		SYMBOLS: ['(', ')', '/'],
-		AMBIGUOUS: {},
-		
-		termDelegate: function(term, prev) {
-			return calc_base_term(term, prev);
-		},
-		descriptions: [],
-	};
-
-	function calc_base_term(term, prev){
-		if(is_verse_id(term)){		// const regex_verse = /^\d+:\d+:\d+$/;  and anything that matches /^\d/ is treated as verse_id.
-			return calc_verse_id(term);
-		}
-		if(is_scode(term)){		// const regex_scode = /^[HGhg]\d+$/;
-			return calc_scode(term);
-		}
-		const rx = is_bib_regex(term)	// const regex_bibrx = /^\/([^/]*)\/$/;
-		if(rx){
-			return calc_bibregex(rx, prev);
-		}
-		const bvar = is_bib_var(term)	// const regex_bibvar = /^([.+=><:\-]+)([\w\d:_.]+)$/;
-		if(bvar){
-			return calc_bibvar(bvar);
-		}
-		const cit = is_bib_citation(term);	// starts with: const regex_citation = /^([^.-]+)[.-](\d+)(.*)/;
-		if(cit){
-			return calc_citation(cit);
-		}
-		return calc_word(term, prev); // every thing else is taken as a word to search for.
-	}
 
 
 

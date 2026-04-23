@@ -11,6 +11,7 @@ const DEBUG_GET_RANGE = false;
 const DEBUG_SCOD_IDX = false;
 const DEBUG_FOLLOWED = false;
 const DEBUG_PARSER = false;
+const DEBUG_FORMAT = false;
 
 const DEFAULT_HIS_MAX_SZ = 1000;
 
@@ -45,7 +46,7 @@ const biblang_def = {
 		'..': (a, b) => calc_comment(a, b),
 	},
 	PREFIX_OPS: {
-		// '#': (bib) => set_bib(bib),
+		// '?': (bib) => set_bib(bib),
 	},
 	PRECEDENCE: [['::'], ['!'], ['|'], ['&'], ['%'], ['*'], ['='], [';'], ['..']],
 	LITERAL_OPEN: '/',
@@ -1123,7 +1124,7 @@ function calc_verse_id(wrd, prev){
 	return { op: rop, lverses: [wrd], };
 }
 
-const regex_bibvar = /^([.+=><:\-]+)([\w\d:_.]+)$/;
+const regex_bibvar = /^([.+=><:\-]+)([\w\d:#_.]+)$/;
 
 function is_bib_var(tm){
 	const matches = tm.match(regex_bibvar);	
@@ -1211,6 +1212,7 @@ async function calc_bibvar(bvar){
 		}
 		if(vr.startsWith(format_desc)){
 			gvar.biblang.current_format = nam;
+			if(DEBUG_FORMAT){ console.log(`Setting format to ${nam}`); }
 		}
 	}
 	const rng_var = get_name_range(nam);
@@ -1546,9 +1548,6 @@ async function calc_base_term(term, prev){
 		//console.trace();
 		console.log(`calc_base_term. term=${term}, prev=${prev}`); 
 	}
-	if(is_verse_id(term)){
-		return calc_verse_id(term, prev);
-	}
 	if(is_scode(term)){
 		return calc_scode(term);
 	}
@@ -1568,6 +1567,9 @@ async function calc_base_term(term, prev){
 			add_dbg_log(rop);
 		}
 		return { op: rop, lverses: cit, };
+	}
+	if(is_verse_id(term)){
+		return calc_verse_id(term, prev);
 	}
 	return calc_word(term, prev);
 }

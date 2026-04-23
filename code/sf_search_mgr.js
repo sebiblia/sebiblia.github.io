@@ -3035,7 +3035,7 @@ function calc_format_obj(fmt_arr){
 		if(ii == 0){
 			continue;
 		}
-		const itm = fmt_arr[ii];
+		let itm = fmt_arr[ii];
 		if(itm.length == 0){
 			continue;
 		}
@@ -3051,7 +3051,11 @@ function calc_format_obj(fmt_arr){
 			fmt_obj['font-size'] = itm;
 			if(DEBUG_FORMAT){ console.log(`got font-size= ${itm}`); }
 		} else if(fst == '#'){
+			if((itm.length > 1) && (itm[1].match(/^\w/))){
+				itm = itm.substring(1);
+			}
 			fmt_obj['color'] = itm;
+			if(DEBUG_FORMAT){ console.log(`got color= ${itm}`); }
 		} else {
 			const fmly = itm.replaceAll('.', ' ');
 			add_google_font(itm);
