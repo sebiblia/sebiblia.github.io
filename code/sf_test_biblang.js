@@ -540,7 +540,6 @@ async function main_biblang_tokens(){
 	let rpn = null;
 	const par = gvar.biblang.parser;
 	//rpn = par.expressionToRpn(command);
-	const all_tt = ['mat'];
 	//toks = par.expressionToThunk(command, all_tt);
 	const bl_obj = await eval_biblang_command(command);
 	/*

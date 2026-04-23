@@ -28,10 +28,12 @@ const MAX_VERSE = [66, 22, 21];
 const CRONO_TOT_VERSES = 31370;
 const CRONO_PAGE_SZ = 20;
 
+const SPC_OPER = ' ';
+
 let ALL_BOOK_NAMES = [];
 
 const biblang_def = {
-	CONSEC_OP: ';',
+	CONSEC_OP: ' ',
 	INFIX_OPS: {
 		'*': (a, b) => calc_before_any(a, b),
 		'%': (a, b) => calc_followed_by(a, b),
@@ -39,6 +41,7 @@ const biblang_def = {
 		'|': (a, b) => calc_or(a, b, '|'),
 		'!': (a, b) => calc_not(a, b),
 		';': (a, b) => calc_or(a, b, ';'),
+		' ': (a, b) => calc_or(a, b, SPC_OPER),
 		'=': (a, b) => calc_asig(a, b),
 		'::': (a, b) => calc_range(a, b),
 		'..': (a, b) => calc_comment(a, b),
@@ -492,6 +495,28 @@ async function calc_and(aa, bb){
 }
  
 async function calc_or(aa, bb, symb){
+	let tbb = null;
+	if(symb == SPC_OPER){
+		tbb = await bb(GET_TOK);
+		const is_tok = (tbb.is_get_tok == true);
+		if(is_tok){
+			console.log("calc_or. SPECIAL CASE SEPARATOR. NEXT IS TOKEN=" + tbb.op);
+			const taa = await aa(GET_TOK);
+			const aa_is_tok = (taa.is_get_tok == true);
+			if(aa_is_tok){
+				const full_tok = taa.op + '.' + tbb.op;
+				const is_cit = parse_citation(full_tok);
+				console.log("calc_or. SPECIAL CASE SEPARATOR. FULL_TOKEN=" + full_tok);
+				if(is_cit){
+					console.log("calc_or. SPECIAL CASE SEPARATOR. IS_CITATION=" + full_tok);
+					return await calc_base_term(full_tok);
+				}
+			}
+		} else {
+			console.log("calc_or. SPECIAL CASE SEPARATOR. next NOT token. ALREADY EXECUTED NEXT !!!!");
+		}
+	}
+	
 	const oaa = await aa();
 	const obb = await bb();
 	
@@ -1109,7 +1134,10 @@ async function calc_citation(cit){
 	return { op: rop, lverses: rng, };
 }
 
-function calc_verse_id(wrd){
+function calc_verse_id(wrd, prev){
+	if(prev == GET_TOK){
+		return { op: wrd, lverses: [], is_get_tok: true, }
+	}
 	const rop = wrd;
 	if(gvar.dbg_biblang){
 		add_dbg_log("calc_verse_id");
@@ -1543,7 +1571,7 @@ async function calc_base_term(term, prev){
 		console.log(`calc_base_term. term=${term}, prev=${prev}`); 
 	}
 	if(is_verse_id(term)){
-		return calc_verse_id(term);
+		return calc_verse_id(term, prev);
 	}
 	if(is_scode(term)){
 		return calc_scode(term);
