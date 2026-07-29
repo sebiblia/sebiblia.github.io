@@ -11,6 +11,7 @@ const DEBUG_ANALYSIS = false;
 const DEBUG_NOT_COMMON = false;
 const DEBUG_FILL_BIBOBJ = false;
 const DEBUG_VSTXT = false;
+const DEBUG_GET_SDEF = false;
 
 export const CLOSING_STRONG = '_>'; 	// to avoid html conflicts H1 ... H6 headers
 
@@ -25,6 +26,7 @@ const sloc_dir = "../data/js_sloc/";
 
 const scodes_dir = "../data/js_scods/";
 const scod_defs_dir = "../data/js_scod_defs/";
+const scod_sword_defs_dir = "../data/js_sdic/";
 
 const vrefs_dir = "../data/js_refs/";
 
@@ -46,6 +48,11 @@ const local_sdefs_files = {
 	en: scod_defs_dir + "EN_SCOD_DEFS.js",
 	es: scod_defs_dir + "ES_SCOD_DEFS.js",
 	SDEFS: scod_defs_dir + "SCOD_LOC_DEFS.js",
+};
+
+const local_sword_sdefs_files = {
+	en: scod_sword_defs_dir + "sdefs.en.js",
+	es: scod_sword_defs_dir + "sdefs.es.js",
 };
 
 const local_scods_files = {
@@ -1103,94 +1110,6 @@ async function import_sroots(){
 	gvar.full_sroots = md_sroots.loc_txt;	
 }
 
-export async function get_next_scode(scode){
-	const all_sdefs = await get_sdefs();
-	if(all_sdefs == null){
-		return null;
-	}
-	let nxt = calc_next_scode(scode);
-	while(nxt != null){
-		if(all_sdefs[nxt] != null){
-			return nxt;
-		}
-		nxt = calc_next_scode(nxt);
-	}
-	return null;
-}
-
-export async function get_prev_scode(scode){
-	const all_sdefs = await get_sdefs();
-	if(all_sdefs == null){
-		return null;
-	}
-	let prv = calc_prev_scode(scode);
-	while(prv != null){
-		if(all_sdefs[prv] != null){
-			return prv;
-		}
-		prv = calc_prev_scode(prv);
-	}
-	return null;
-}
-
-export async function get_sdefs(){
-	try{
-		await import_sdefs("SDEFS");		
-		return gvar.full_sdefs.SDEFS;
-	} catch {
-		console.error("cannot get_sdefs");
-		return null;
-	}
-}
-
-export async function get_scode_def(scode, lang){
-	const bad = { asc:"", def:"", };
-	const all_sdefs = await get_sdefs();
-	if(all_sdefs == null){
-		return bad;
-	}
-	try{
-		let arr_def = all_sdefs[scode];
-		if(arr_def == null){
-			return bad;
-		}
-		await import_sdefs(lang);
-		if(arr_def.length != 2){
-			return bad;
-		}
-		const scod_asc = arr_def[0];
-		const scod_id = arr_def[1];
-		let scod_def = gvar.full_sdefs[lang][scod_id];
-		if(scod_def == null){
-			return bad;
-		}
-		return { asc: scod_asc, def: scod_def, };
-	} catch {
-		console.error("FAILED get_scode_def(" + scode + ", " + lang + ")");
-		return bad;
-	}
-}
-
-async function import_sdefs(lang){
-	if(local_sdefs_files[lang] == null){
-		return;
-	}
-	if(gvar.full_sdefs == null){
-		gvar.full_sdefs = {};
-	} 
-	if(gvar.full_sdefs[lang] != null){
-		return;
-	}
-	const scod_fl = local_sdefs_files[lang];
-	const md_scod = await import_file(scod_fl, lang);
-	
-	let defs = md_scod.loc_txt;
-	if(lang == "SDEFS"){
-		defs = md_scod.scod_defs;
-	}
-	gvar.full_sdefs[lang] = defs;
-}
-
 function get_loaded_files_from(file_names, loaded){
 	if(loaded == null){
 		return [];
@@ -1216,7 +1135,8 @@ export function dbg_log_all_loaded_files(){
 	const f2 = get_loaded_files_from(local_scods_files, gvar.full_scodes);
 	const f3 = get_loaded_files_from(local_bible_files, gvar.full_bible);
 	const f4 = get_loaded_files_from(local_sdefs_files, gvar.full_sdefs);
-	const all_f = [...new Set([...f1, ...f2, ...f3, ...f4])];
+	const f5 = get_loaded_files_from(local_sword_sdefs_files, gvar.full_sword_sdefs);
+	const all_f = [...new Set([...f1, ...f2, ...f3, ...f4, ...f5])];
 	const str_f = all_f.join(" , ");
 	add_dbg_log(str_f);
 	add_dbg_log("_______________________________");
@@ -1450,40 +1370,81 @@ export async function import_crono_bib(){
 	gvar.crono_bib.vid2num = md_bib.vid2num;
 }
 
-/*
-
-fetch('nom_arch.js', { cache: 'only-if-cached' }).then((resp) => {
-	if(resp.ok){
-		console.log("SI ESTA en cache");
-	} else {
-		console.log("NO esta en cache");		
+async function import_sword_sdefs(lang){
+	if(gvar.full_sword_sdefs == null){
+		gvar.full_sword_sdefs = {};
 	}
-}).catch(() => {
-	console.log("NO esta en cache");
-});
+	if(gvar.full_sword_sdefs[lang] != null){
+		return;
+	}
+	if(local_sword_sdefs_files[lang] == null){
+		return;
+	}
+	const scod_fl = local_sword_sdefs_files[lang];
+	const md_scod = await import_file(scod_fl, lang);
 
-
-
-//download_file();
-
-
-<div id="contenedor-progreso">
-  <progress id="barra-progreso" value="0" max="1"></progress>
-</div>
-
-
-#contenedor-progreso {
-  width: 300px; 
-  border: 1px solid #ccc; 
-  padding: 5px; 
+	gvar.full_sword_sdefs[lang] = md_scod.sdic;
 }
 
-#barra-progreso {
-  width: 100%; 
-  height: 20px; 
+async function get_sword_sdefs(lang){
+	try{
+		let rq_lang = gvar.lang;
+		if(lang != null){
+			rq_lang = lang;
+		}
+		await import_sword_sdefs(rq_lang);
+		return gvar.full_sword_sdefs[rq_lang];
+	} catch {
+		console.error("cannot get_sword_sdefs");
+		return null;
+	}
 }
 
-*/
+export async function get_scode_def(scode, lang){
+	if(DEBUG_GET_SDEF){ console.log(`get_scode_def(${scode},${lang})`); }
 
+	const bad = { asc:"", def:"", };
+	const all_sdefs = await get_sword_sdefs(lang);
+	if(all_sdefs == null){ return bad; }
 
+	const arr_def = all_sdefs[scode];
+	if(arr_def == null){ return bad; }
+	if(arr_def.length != 2){ return bad; }
+
+	const scod_asc = arr_def[0];
+	const scod_def = arr_def[1];
+	return { asc: scod_asc, def: scod_def, };
+}
+
+export async function get_next_scode(scode){
+	//const all_sdefs = await get_sdefs();
+	const all_sdefs = await get_sword_sdefs();
+	if(all_sdefs == null){
+		return null;
+	}
+	let nxt = calc_next_scode(scode);
+	while(nxt != null){
+		if(all_sdefs[nxt] != null){
+			return nxt;
+		}
+		nxt = calc_next_scode(nxt);
+	}
+	return null;
+}
+
+export async function get_prev_scode(scode){
+	//const all_sdefs = await get_sdefs();
+	const all_sdefs = await get_sword_sdefs();
+	if(all_sdefs == null){
+		return null;
+	}
+	let prv = calc_prev_scode(scode);
+	while(prv != null){
+		if(all_sdefs[prv] != null){
+			return prv;
+		}
+		prv = calc_prev_scode(prv);
+	}
+	return null;
+}
 
