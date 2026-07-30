@@ -6,7 +6,7 @@ import { get_new_dv_under, scroll_to_top, toggle_select_option, get_opt_id,
 
 import { verse_to_min_greek, verse_to_may_greek, verse_to_hebrew, get_text_analysis, make_strong_ref, get_scode_def, get_citation, 
 	get_scode_mutus, get_scode_roots, get_next_scode, get_prev_scode, fill_bibobj_vtxt, fill_bibobj_cit_and_ref, local_scod_bibles, 
-	get_verse_refs, get_socu_text, fill_cri_asc, fill_loc_asc, CLOSING_STRONG, 
+	get_verse_refs, get_socu_text, fill_cri_asc, fill_loc_asc, CLOSING_STRONG, get_scode_full_def,
 } from './sf_bible_mgr.js';
 
 import { init_lang, } from './sf_lang_mgr.js';
@@ -74,6 +74,7 @@ const id_scodes = "id_scodes";
 const id_del_expr = "id_del_expr";
 const id_menu_scod_def = "id_menu_scod_def";
 const id_submenu_scods = "id_submenu_scods";
+const id_full_scod_def = "id_full_scod_def";
 const id_dv_evaluating = "id_dv_evaluating";
 const id_evaluating_bar = "id_evaluating_bar";
 const id_evaluating_name = "id_evaluating_name";
@@ -642,7 +643,8 @@ async function fill_sdefs(bl_obj){
 		dv_scodes.appendChild(dv_def);
 		
 		dv_def.addEventListener('click', function() {
-			toggle_scod_actions(dv_def, scod);
+			const dv_scod_acts = toggle_scod_actions(dv_def, scod);
+			toggle_scod_full_def(dv_scod_acts, scod);
 			scroll_to_top(dv_def);
 		});		
 	}
@@ -1745,7 +1747,14 @@ function toggle_scod_actions(dv_def, scod){
 	const cls_itm = ["is_option"];
 	const dv_to_scroll = null;
 	const toggle_op = null;
-	toggle_select_option(dv_def, id_menu, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	const dv_scod_acts = toggle_select_option(dv_def, id_menu, ops, clk_fn, cls_men, cls_itm, dv_to_scroll, toggle_op);
+	dv_scod_acts.when_remove_fn = () => {
+		const dv_def = document.getElementById(id_full_scod_def);
+		if(dv_def != null){
+			dv_def.remove();
+		}
+	};
+	return dv_scod_acts;
 }
 
 function toggle_scod_subops(dv_parent_ops, scod, id_menu, idx_selec, sub_ops){
@@ -3096,18 +3105,60 @@ function add_google_font(itm){
 
 }
 
-	/*
-	const nw_style = document.createElement('style');	
-	const fml_def = `
-		@font-fase {
-			font-family: '${fmly}';
-			src: url('https://fonts.googleapis.com/css?family=${fnam}');
-		}
-	`;	
-	if(DEBUG_FORMAT){ console.log(`add_google_font def= ${fml_def}`); }
-	nw_style.innerHTML = fml_def;
-	document.head.appendChild(nw_style);	
-	*/
+async function toggle_scod_full_def(dv_def, scod, lang){
 
+	var dv_txt = get_new_dv_under(dv_def, id_full_scod_def);
+	if(dv_txt == null){
+		return;
+	}
+	dv_txt.classList.add("full_width");
+	dv_txt.style.whiteSpace = 'pre-wrap';
 
+	const odef = await get_scode_full_def(scod, lang);
+	const dicdef = get_case_def_obj(odef);
+	const hds = gvar.fields_stg_def;
 
+	const full_txt = `
+${hds.orig} ${odef.orig}
+
+${dicdef.dic}
+${dicdef.def}
+
+${hds.orin} ${odef.orin}
+
+${hds.sdef}
+${odef.sdef}
+
+${hds.posp} ${odef.posp}
+${dicdef.ent} ${dicdef.idx}
+${hds.tran} ${odef.tran}
+	`;
+
+	dv_txt.textContent = full_txt;
+	return dv_txt;
+}
+
+function get_case_def_obj(obj_def){
+	const hds = gvar.fields_stg_def;
+	let vdic = "NO_DIC";
+	let vdef = "NO_DEF";
+	let vent = "NO_ENT";
+	let vidx = "NO_IDX";
+	if(obj_def.bdbd != null){
+		vdic = hds.bdbd;
+		vdef = obj_def.bdbd;
+	}
+	if(obj_def.thad != null){
+		vdic = hds.thad;
+		vdef = obj_def.thad;
+	}
+	if(obj_def.twot != null){
+		vent = hds.twot;
+		vidx = obj_def.twot;
+	}
+	if(obj_def.tdnt != null){
+		vent = hds.tdnt;
+		vidx = obj_def.tdnt;
+	}
+	return {dic:vdic, def:vdef, ent:vent, idx:vidx};
+}

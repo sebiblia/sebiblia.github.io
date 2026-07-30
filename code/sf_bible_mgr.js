@@ -25,7 +25,6 @@ const loc_dir = "../data/js_loc/";
 const sloc_dir = "../data/js_sloc/";
 
 const scodes_dir = "../data/js_scods/";
-const scod_defs_dir = "../data/js_scod_defs/";
 const scod_sword_defs_dir = "../data/js_sdic/";
 
 const vrefs_dir = "../data/js_refs/";
@@ -44,15 +43,11 @@ const local_vrefs_files = {
 	REFS1: vrefs_dir + "VERSE_REFS.js",
 };
 
-const local_sdefs_files = {
-	en: scod_defs_dir + "EN_SCOD_DEFS.js",
-	es: scod_defs_dir + "ES_SCOD_DEFS.js",
-	SDEFS: scod_defs_dir + "SCOD_LOC_DEFS.js",
-};
-
-const local_sword_sdefs_files = {
-	en: scod_sword_defs_dir + "sdefs.en.js",
-	es: scod_sword_defs_dir + "sdefs.es.js",
+const local_sword_stg_files = {
+	sdefs_en: scod_sword_defs_dir + "sdefs.en.js",
+	sdefs_es: scod_sword_defs_dir + "sdefs.es.js",
+	sdic_en: scod_sword_defs_dir + "sdic_en.js",
+	sdic_es: scod_sword_defs_dir + "sdic_es.js",
 };
 
 const local_scods_files = {
@@ -1134,8 +1129,7 @@ export function dbg_log_all_loaded_files(){
 	const f1 = get_loaded_files_from(local_text_files, gvar.full_local_text);
 	const f2 = get_loaded_files_from(local_scods_files, gvar.full_scodes);
 	const f3 = get_loaded_files_from(local_bible_files, gvar.full_bible);
-	const f4 = get_loaded_files_from(local_sdefs_files, gvar.full_sdefs);
-	const f5 = get_loaded_files_from(local_sword_sdefs_files, gvar.full_sword_sdefs);
+	const f5 = get_loaded_files_from(local_sword_stg_files, gvar.full_sword_sdefs);
 	const all_f = [...new Set([...f1, ...f2, ...f3, ...f4, ...f5])];
 	const str_f = all_f.join(" , ");
 	add_dbg_log(str_f);
@@ -1370,34 +1364,35 @@ export async function import_crono_bib(){
 	gvar.crono_bib.vid2num = md_bib.vid2num;
 }
 
-async function import_sword_sdefs(lang){
+async function get_sword_sdefs(rq_lang){
+	let lang = gvar.lang;
+	if(rq_lang != null){
+		lang = rq_lang;
+	}
 	if(gvar.full_sword_sdefs == null){
 		gvar.full_sword_sdefs = {};
 	}
 	if(gvar.full_sword_sdefs[lang] != null){
-		return;
+		return gvar.full_sword_sdefs[lang];
 	}
-	if(local_sword_sdefs_files[lang] == null){
-		return;
-	}
-	const scod_fl = local_sword_sdefs_files[lang];
-	const md_scod = await import_file(scod_fl, lang);
 
-	gvar.full_sword_sdefs[lang] = md_scod.sdic;
-}
-
-async function get_sword_sdefs(lang){
-	try{
-		let rq_lang = gvar.lang;
-		if(lang != null){
-			rq_lang = lang;
-		}
-		await import_sword_sdefs(rq_lang);
-		return gvar.full_sword_sdefs[rq_lang];
-	} catch {
-		console.error("cannot get_sword_sdefs");
+	const kk = "sdefs_" + lang;
+	const the_fnm = local_sword_stg_files[kk];
+	if(the_fnm == null){
 		return null;
 	}
+
+	try{
+		const md_scod = await import_file(the_fnm, lang);
+
+		gvar.full_sword_sdefs[lang] = md_scod.sdic;
+
+	} catch {
+		console.error("Cannot import file" + the_fnm);
+		return null;
+	}
+
+	return gvar.full_sword_sdefs[lang];
 }
 
 export async function get_scode_def(scode, lang){
@@ -1417,7 +1412,6 @@ export async function get_scode_def(scode, lang){
 }
 
 export async function get_next_scode(scode){
-	//const all_sdefs = await get_sdefs();
 	const all_sdefs = await get_sword_sdefs();
 	if(all_sdefs == null){
 		return null;
@@ -1433,7 +1427,6 @@ export async function get_next_scode(scode){
 }
 
 export async function get_prev_scode(scode){
-	//const all_sdefs = await get_sdefs();
 	const all_sdefs = await get_sword_sdefs();
 	if(all_sdefs == null){
 		return null;
@@ -1446,5 +1439,48 @@ export async function get_prev_scode(scode){
 		prv = calc_prev_scode(prv);
 	}
 	return null;
+}
+
+async function get_sword_sdic(rq_lang){
+	let lang = gvar.lang;
+	if(rq_lang != null){
+		lang = rq_lang;
+	}
+	if(gvar.full_sword_sdic == null){
+		gvar.full_sword_sdic = {};
+	}
+	if(gvar.full_sword_sdic[lang] != null){
+		return gvar.full_sword_sdic[lang];
+	}
+
+	const kk = "sdic_" + lang;
+	const the_fnm = local_sword_stg_files[kk];
+	if(the_fnm == null){
+		return null;
+	}
+
+	try{
+		const md_scod = await import_file(the_fnm, lang);
+
+		gvar.full_sword_sdic[lang] = md_scod.sdic;
+
+	} catch {
+		console.error("Cannot import file" + the_fnm);
+		return null;
+	}
+
+	return gvar.full_sword_sdic[lang];
+}
+
+export async function get_scode_full_def(scode, lang){
+	if(DEBUG_GET_SDEF){ console.log(`get_scode_full_def(${scode},${lang})`); }
+
+	const bad = {};
+	const all_sdefs = await get_sword_sdic(lang);
+	if(all_sdefs == null){ return bad; }
+
+	const obj_def = all_sdefs[scode];
+	if(obj_def == null){ return bad; }
+	return obj_def;
 }
 

@@ -502,6 +502,32 @@ const lang_utra = {
 	es: "uRVA",
 };
 
+const sdic_field_en = {
+	orig: `Original:`,
+	tran: `Transliteration:`,
+	phon: `Phonetic:`,
+	bdbd: `BDB Definition:`,
+	thad: `Thayer Definition:`,
+	orin: `Origin:`,
+	twot: `TWOT entry:`,
+	tdnt: `TDNT entry:`,
+	posp: `Part(s) of speech:`,
+	sdef: `Strong's Definition:`,
+};
+
+const sdic_field_es = {
+	orig: `Original:`,
+	tran: `Transliteración:`,
+	phon: `Fonetica:`,
+	bdbd: `Definición BDB:`,
+	thad: `Definición Thayer:`,
+	orin: `Origen:`,
+	twot: `Indice TWOT:`,
+	tdnt: `Indice TDNT:`,
+	posp: `Gramatica:`,
+	sdef: `Definición Strong:`,
+};
+
 export function init_lang(nm_lang){
 	if(nm_lang == "es"){
 		init_es();
@@ -578,6 +604,8 @@ function init_es(){
 	gvar.tok_ops_scod = tok_ops_scod_es;
 	gvar.ops_def_scod = ops_def_scod_es;
 
+	gvar.fields_stg_def = sdic_field_es;
+
 	gvar.add_abbr = add_abbr_es;
 	gvar.examples = MOD_EX_ES.biblang_examples_es;
 }
@@ -602,6 +630,8 @@ function init_en(){
 	gvar.tok_ops_asc_id = tok_ops_asc_id_en;
 	gvar.tok_ops_scod = tok_ops_scod_en;
 	gvar.ops_def_scod = ops_def_scod_en;
+
+	gvar.fields_stg_def = sdic_field_en;
 
 	gvar.add_abbr = add_abbr_en;
 	gvar.examples = MOD_EX_EN.biblang_examples_en;
