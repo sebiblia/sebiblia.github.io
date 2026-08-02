@@ -39,7 +39,6 @@ export const all_stra = {
     "ebvtm": "of their fathers",
     "heb": "of the father",
     "hebvt": "of the fathers",
-    "lbit": "of their fathers",
     "leb": "i will be his father",
     "lebi": "my father",
     "lebic": "thy father’s",
@@ -93,6 +92,7 @@ export const all_stra = {
     "vlebvtihm": "unto them and to their fathers"
   },
   "H10": {
+    "vebdh": "and destruction",
     "vebdv": "and destruction"
   },
   "H100": {
@@ -132,7 +132,6 @@ export const all_stra = {
     "biti": "my house",
     "bitm": "his house",
     "bitv": "to his house",
-    "bt": "of the daughter",
     "bti": "and the houses",
     "btic": "and the houses",
     "bticm": "in the house",
@@ -142,11 +141,9 @@ export const all_stra = {
     "btinv": "our houses",
     "btiv": "and of the houses",
     "cbit": "like the house",
-    "ebvtm": "throughout the house",
     "hbit": "of the house",
     "hbith": "home",
     "hbtim": "and the houses",
-    "hfqdt": "him in prison",
     "lbit": "of the house",
     "lbitc": "to thine house",
     "lbith": "to her household",
@@ -162,7 +159,6 @@ export const all_stra = {
     "mbtihm": "from their houses",
     "mbtinv": "out of our houses",
     "mhbit": "within",
-    "s": "his house",
     "vbbit": "house",
     "vbbiti": "for in my house",
     "vbbitv": "house",
@@ -201,6 +197,9 @@ export const all_stra = {
     "vbit": "and let the house",
     "vbith": "house",
     "vbticvn": "and your houses"
+  },
+  "H1006": {
+    "hbit": "to bajith"
   },
   "H1007": {
     "bit": "of beth–aven",
@@ -250,7 +249,7 @@ export const all_stra = {
     "dbltim": "and upon beth–diblathaim"
   },
   "H1016": {
-    "bit": "to beth–dagon",
+    "bit": "beth–dagon",
     "dgn": "to beth–dagon",
     "dgvn": "beth–dagon"
   },
@@ -382,11 +381,11 @@ export const all_stra = {
   "H1043": {
     "ant": "of beth–anath",
     "bit": "of beth–anath",
-    "vbit": "and beth–anath"
+    "vbit": "of beth–anath"
   },
   "H1044": {
-    "aqd": "of the shearing house",
-    "bit": "of the shearing house"
+    "aqd": "house",
+    "bit": "house"
   },
   "H1046": {
     "flp": "and beth–palet",
@@ -501,7 +500,6 @@ export const all_stra = {
     "bcvrv": "his firstborn",
     "hbcr": "the firstborn",
     "hbcvr": "the firstborn",
-    "lbcr": "which is indeed the firstborn",
     "mbcr": "all the firstborn",
     "mbcvr": "and all the firstborn"
   },
@@ -544,7 +542,6 @@ export const all_stra = {
   },
   "H1066": {
     "bcim": "bochim",
-    "f": "to bochim",
     "hbcim": "to bochim"
   },
   "H1067": {
@@ -555,7 +552,8 @@ export const all_stra = {
   },
   "H1069": {
     "cmbcirh": "as of her that bringeth forth her first child",
-    "ibcr": "firstling"
+    "ibcr": "firstling",
+    "lbcr": "firstborn"
   },
   "H107": {
     "begrvt": "with the letters",
@@ -629,8 +627,7 @@ export const all_stra = {
     "blti": "i am waxed old",
     "blv": "waxed old",
     "iblh": "consumeth",
-    "iblv": "shall long enjoy",
-    "iclv": "they spend",
+    "iblv": "they spend",
     "lbltv": "waste",
     "lblvt": "shall consume",
     "tblh": "shall wax old"
@@ -642,6 +639,9 @@ export const all_stra = {
   },
   "H1088": {
     "vblh": "and balah"
+  },
+  "H1089": {
+    "vmblhim": "and troubled"
   },
   "H109": {
     "vledib": "and to grieve"
@@ -682,7 +682,8 @@ export const all_stra = {
     "blilv": "over his fodder"
   },
   "H1099": {
-    "bli": "upon nothing"
+    "bli": "upon nothing",
+    "mh": "upon nothing"
   },
   "H11": {
     "bebdvn": "in destruction",
@@ -699,7 +700,6 @@ export const all_stra = {
     "vblial": "and men of belial"
   },
   "H1101": {
-    "_": "and gave provender",
     "bll": "did there confound",
     "blti": "i shall be anointed",
     "blvl": "mingled",
@@ -720,7 +720,7 @@ export const all_stra = {
     "bla": "he hath swallowed up",
     "blai": "till i swallow down",
     "blani": "he hath swallowed me up",
-    "blanv": "we have swallowed her up",
+    "blanv": "he hath swallowed me up",
     "blanvhv": "we have swallowed him up",
     "blav": "and destroy",
     "blavnv": "they had swallowed us up",
@@ -777,6 +777,9 @@ export const all_stra = {
     "lblam": "unto balaam",
     "vblam": "as balaam"
   },
+  "H111": {
+    "edd": "that hadad"
+  },
   "H1110": {
     "vbvlqh": "and maketh it waste",
     "vmblqh": "and waste"
@@ -806,7 +809,6 @@ export const all_stra = {
     "vlblti": "no"
   },
   "H1116": {
-    "_": "upon the high places",
     "bbmh": "in the high place",
     "bbmvt": "in the high places",
     "bbmvtm": "with their high places",
@@ -838,13 +840,14 @@ export const all_stra = {
     "vbmhl": "and bimhal"
   },
   "H1119": {
+    "bmi": "for the dunghill",
     "bmv": "at"
   },
   "H112": {
     "edv": "unto iddo"
   },
   "H1120": {
-    "bal": "and bamoth–baal",
+    "bal": "of baal",
     "bmvt": "of baal",
     "vbmvt": "and bamoth–baal",
     "vmbmvt": "and from bamoth"
@@ -862,6 +865,7 @@ export const all_stra = {
     "bnh": "son",
     "bni": "the children",
     "bnic": "thy sons",
+    "bnici": "thou and thy children",
     "bnicm": "your sons",
     "bnih": "for her children",
     "bnihm": "their sons",
@@ -872,7 +876,6 @@ export const all_stra = {
     "bnnv": "this our son",
     "bntihm": "their sons",
     "bnv": "his son",
-    "bt": "the son",
     "cbni": "like lambs",
     "cbnihm": "our sons",
     "hbn": "son",
@@ -938,7 +941,6 @@ export const all_stra = {
     "vbnvhi": "and his sons"
   },
   "H1124": {
-    "_": "building",
     "bnh": "builded",
     "bnhi": "builded",
     "bnin": "builded",
@@ -1052,11 +1054,13 @@ export const all_stra = {
     "edninv": "our lord",
     "edniv": "his master",
     "ednnv": "let our lord",
+    "ednv": "unto his master",
     "edvn": "lord",
     "edvnih": "where her lord",
     "edvnihm": "of their masters",
     "edvnim": "his master",
     "edvninv": "is our lord",
+    "hedn": "the lord",
     "hednim": "of lords",
     "hedvn": "the lord",
     "ledni": "unto my lord",
@@ -1141,7 +1145,6 @@ export const all_stra = {
     "lbnimn": "of benjamin",
     "mbnimin": "of benjamin",
     "mbnimn": "of benjamin",
-    "s": "of benjamin",
     "vbbnimin": "and against benjamin",
     "vbbnimn": "and in benjamin",
     "vbnimin": "and benjamin",
@@ -1154,7 +1157,8 @@ export const all_stra = {
     "bni": "were benjamites",
     "eiw": "a benjamite",
     "himini": "a benjamite",
-    "imini": "a benjamite"
+    "imini": "a benjamite",
+    "lbnimini": "of the benjamites"
   },
   "H1146": {
     "bnin": "of the building",
@@ -1255,6 +1259,7 @@ export const all_stra = {
   },
   "H1165": {
     "baircm": "your beasts",
+    "bairh": "in his beast",
     "bairm": "their cattle",
     "bairv": "in his beast",
     "vbairm": "and their beasts",
@@ -1271,7 +1276,8 @@ export const all_stra = {
     "ibalvc": "marry",
     "tbal": "beulah",
     "vbal": "and hath married",
-    "vbalh": "and married"
+    "vbalh": "and married",
+    "vbalth": "in unto her and be her husband"
   },
   "H1167": {
     "bal": "man",
@@ -1527,13 +1533,18 @@ export const all_stra = {
   },
   "H1207": {
     "bzetiv": "but the miry places",
+    "bzetv": "but the miry places",
     "bzh": "without mire",
     "vbzh": "and fens"
+  },
+  "H1208": {
+    "hbzvr": "of the vintage"
   },
   "H1209": {
     "bzi": "of bezai"
   },
   "H121": {
+    "bedm": "adam",
     "cedm": "as adam",
     "edm": "of adam",
     "medm": "adam",
@@ -1572,7 +1583,7 @@ export const all_stra = {
     "bbza": "the gain",
     "bza": "covetousness",
     "bzac": "of thy covetousness",
-    "bzam": "their covetousness",
+    "bzam": "their gain",
     "bzav": "of his covetousness",
     "hbza": "lucre",
     "lbzav": "for his gain"
@@ -1764,23 +1775,21 @@ export const all_stra = {
     "lbqr": "and so did they with the oxen",
     "lbqrv": "of oxen",
     "mbqrc": "of thy herd",
+    "vbbqr": "and oxen",
     "vbbqrm": "and with their herds",
     "vbbqrnv": "and with our herds",
-    "vbfrdim": "and oxen",
     "vbqr": "and oxen",
     "vbqrc": "and thy herds",
     "vbqrcm": "and your herds",
     "vbqrm": "and their herds",
     "vhbqr": "and of the oxen",
     "vlbqr": "oxen",
-    "vmbqrv": "and of his own herd",
-    "vzen": "and oxen"
+    "vmbqrv": "and of his own herd"
   },
   "H1242": {
     "bbqr": "in the morning",
     "bqr": "in the morning",
     "cbqr": "thou shalt be as the morning",
-    "f": "in the morning",
     "hbqr": "until the morning",
     "lbqr": "in the morning",
     "lbqrim": "every morning",
@@ -1891,7 +1900,8 @@ export const all_stra = {
     "cbri": "according to my cleanness"
   },
   "H1253": {
-    "bbr": "never"
+    "bbr": "never",
+    "cbr": "upon thee and purely"
   },
   "H1254": {
     "bhbrem": "when they were created",
@@ -1958,6 +1968,7 @@ export const all_stra = {
     "vhbrdim": "them and the grisled"
   },
   "H1262": {
+    "bre": "not neither did he eat",
     "brv": "choose",
     "lbrvt": "they were their meat",
     "lhbrvt": "to eat",
@@ -1988,7 +1999,8 @@ export const all_stra = {
     "vmbrti": "and from berothai"
   },
   "H1269": {
-    "brxit": "of birzavith"
+    "brxit": "of birzavith",
+    "brxvt": "of birzavith"
   },
   "H127": {
     "bedmh": "in the land",
@@ -2003,7 +2015,6 @@ export const all_stra = {
     "edmtv": "his land",
     "edmvt": "their lands",
     "hedmh": "of the earth",
-    "herz": "of the land",
     "ledmh": "for the earth",
     "ledmt": "to the land",
     "ledmtv": "to his earth",
@@ -2056,12 +2067,14 @@ export const all_stra = {
   "H1273": {
     "hbrkmi": "the barhumite"
   },
+  "H1274": {
+    "brih": "between the fat"
+  },
   "H1275": {
     "vbri": "and beri"
   },
   "H1276": {
-    "hbrim": "and all the berites",
-    "s": "and all the berites"
+    "hbrim": "and all the berites"
   },
   "H1277": {
     "breh": "plenteous",
@@ -2241,6 +2254,7 @@ export const all_stra = {
     "brcihm": "upon their knees",
     "brcim": "and all knees",
     "brciv": "on his knees",
+    "brcv": "between his knees",
     "hbrcim": "all the knees",
     "vbrcim": "knees"
   },
@@ -2281,7 +2295,6 @@ export const all_stra = {
   "H1296": {
     "brcih": "of berechiah",
     "brcihv": "of berechiah",
-    "s": "of berechiah",
     "vbrcih": "and berechiah"
   },
   "H1297": {
@@ -2301,7 +2314,8 @@ export const all_stra = {
     "edmiim": "edomites",
     "edmit": "edomites",
     "edvmim": "of the edomites",
-    "hedmi": "the edomite"
+    "hedmi": "the edomite",
+    "vedvmim": "to syria"
   },
   "H1300": {
     "brq": "lightning",
@@ -2384,6 +2398,9 @@ export const all_stra = {
   },
   "H1312": {
     "bwlm": "bishlam"
+  },
+  "H1313": {
+    "bwmi": "with my spice"
   },
   "H1314": {
     "bbwmim": "with sweet odours",
@@ -2523,7 +2540,6 @@ export const all_stra = {
     "cbt": "and was unto him as a daughter",
     "hbnvt": "of daughters",
     "hbt": "daughter",
-    "irimvt": "the daughter",
     "lbntiv": "unto his daughters",
     "lbnvt": "to owls",
     "lbt": "daughter",
@@ -2631,6 +2647,9 @@ export const all_stra = {
     "btri": "between the parts",
     "btriv": "between the parts",
     "btrv": "piece"
+  },
+  "H1336": {
+    "btr": "of bether"
   },
   "H1337": {
     "bt": "of bath–rabbim",
@@ -2741,8 +2760,7 @@ export const all_stra = {
     "igelnv": "may redeem",
     "lgel": "redeem",
     "lgelc": "not do the part of a kinsman",
-    "lgevl": "it redeem",
-    "li": "redeem",
+    "lgevl": "redeem",
     "mgel": "from the avenger",
     "mgelnv": "unto us one of our next kinsmen",
     "tgel": "it redeem",
@@ -2792,7 +2810,8 @@ export const all_stra = {
     "vgbtm": "and their rings"
   },
   "H1355": {
-    "gbh": "the back"
+    "gbh": "the back",
+    "gbih": "the back"
   },
   "H1356": {
     "gbim": "full of ditches"
@@ -2868,10 +2887,10 @@ export const all_stra = {
     "gbhvt": "were high",
     "hgbhim": "the high",
     "hgbhvt": "upon the high",
-    "hwfil": "him that is high",
     "mgbh": "of that which is high",
     "vgbh": "but the proud",
     "vgbhim": "than the highest",
+    "vhgbh": "him that is high",
     "vhgbhh": "were high",
     "vhgbhim": "and the haughty"
   },
@@ -2901,7 +2920,6 @@ export const all_stra = {
     "gbvlv": "is his border",
     "hgbl": "and the border",
     "hgbvl": "and the border",
-    "hgdvl": "and the great",
     "lgbvl": "border",
     "lgbvlm": "to their own border",
     "mgblcm": "or their border",
@@ -2931,7 +2949,7 @@ export const all_stra = {
     "gbri": "men",
     "gbrihv": "of his mighty men",
     "gbrim": "valiant",
-    "gbvr": "a mighty man",
+    "gbvr": "mighty",
     "gbvri": "mighty",
     "gbvric": "and thy mighty",
     "gbvrih": "and her mighty men",
@@ -3119,7 +3137,6 @@ export const all_stra = {
   "H1393": {
     "hgbani": "the gibeonite",
     "hgbanim": "the gibeonites",
-    "hgbavni": "the gibeonite",
     "lgbanim": "the gibeonites",
     "vhgbanim": "the gibeonites"
   },
@@ -3225,9 +3242,12 @@ export const all_stra = {
   "H1407": {
     "gd": "was as coriander"
   },
-  "H1409": {
-    "gd": "a troop",
+  "H1408": {
     "lgd": "for that troop"
+  },
+  "H1409": {
+    "bgd": "a troop",
+    "gd": "a troop"
   },
   "H141": {
     "vednirm": "and adoniram"
@@ -3275,7 +3295,9 @@ export const all_stra = {
     "vgdvdi": "him and the bands"
   },
   "H1417": {
-    "gddt": "shall be cuttings",
+    "gddt": "shall be cuttings"
+  },
+  "H1418": {
     "gdvdih": "the furrows"
   },
   "H1419": {
@@ -3284,7 +3306,6 @@ export const all_stra = {
     "bgdvl": "at the eldest",
     "cgdl": "as well as the great",
     "cgdvl": "as the great",
-    "ck": "and great",
     "gdl": "great",
     "gdlh": "a great",
     "gdli": "were with the great men",
@@ -3331,6 +3352,7 @@ export const all_stra = {
     "hgdvlh": "all these great things",
     "vgdvlh": "and dignity",
     "vgdvltc": "thy greatness",
+    "vgdvltic": "thy greatness",
     "vlgdltv": "and his greatness"
   },
   "H1421": {
@@ -3353,7 +3375,7 @@ export const all_stra = {
     "gdi": "of gadi"
   },
   "H1425": {
-    "hgdi": "the gadite",
+    "hgdi": "of gad",
     "lgdi": "of the gadites",
     "vgdi": "and the gadites",
     "vhgdi": "and the gadites",
@@ -3364,6 +3386,9 @@ export const all_stra = {
   },
   "H1427": {
     "gdiel": "gaddiel"
+  },
+  "H1428": {
+    "gditiv": "all his banks"
   },
   "H1429": {
     "gditic": "thy kids"
@@ -3399,14 +3424,14 @@ export const all_stra = {
     "itgdl": "magnify",
     "lgdl": "it is to make great",
     "lhgdil": "magnifical",
+    "mgdil": "great",
+    "mgdl": "great",
     "mgdlim": "grown up",
-    "mgdvl": "he is the tower",
     "tgdilv": "ye will magnify",
     "tgdl": "proudly",
     "tgdlnv": "that thou shouldest magnify",
     "vegdlh": "great",
     "vegdlnv": "and will magnify",
-    "vgdl": "great",
     "vgdlti": "so i was great",
     "vhgdil": "and became great",
     "vhtgdlti": "thus will i magnify",
@@ -3520,6 +3545,7 @@ export const all_stra = {
     "gdrtiv": "all his hedges",
     "gdrvt": "to the sheepcotes",
     "hgdrt": "the wall",
+    "vgdrh": "and hedges",
     "vgdrt": "and folds",
     "vgdrvt": "and folds"
   },
@@ -3534,8 +3560,7 @@ export const all_stra = {
     "vgdrvt": "and gederoth"
   },
   "H1451": {
-    "hgdri": "the gederite",
-    "s": "the gederite"
+    "hgdri": "the gederite"
   },
   "H1452": {
     "hgdrti": "the gederathite"
@@ -3615,13 +3640,15 @@ export const all_stra = {
     "gvxn": "of gozan"
   },
   "H1471": {
+    "bgiim": "among the heathen",
     "bgvi": "on such a nation",
     "bgvihm": "in their nations",
     "bgvim": "among the heathen",
     "cgvi": "as a nation",
     "cgvim": "as the nations",
+    "giim": "nations",
     "gvi": "a nation",
-    "gvic": "of thy nation",
+    "gvic": "thy nations",
     "gvii": "shall all the nations",
     "gviic": "thy nations",
     "gvim": "nations",
@@ -3634,6 +3661,7 @@ export const all_stra = {
     "mgvim": "out of the nations",
     "vbgvim": "nations",
     "vgvi": "nation",
+    "vgvic": "thy nations",
     "vgviic": "thy nations",
     "vgvim": "nations",
     "vhgvi": "but the nations",
@@ -3663,6 +3691,7 @@ export const all_stra = {
     "vbgvlh": "into captivity"
   },
   "H1474": {
+    "glvn": "and golan",
     "gvln": "and golan"
   },
   "H1475": {
@@ -3766,6 +3795,7 @@ export const all_stra = {
     "vmgrl": "from the lot"
   },
   "H1487": {
+    "vgiw": "and clods",
     "vgvw": "and clods"
   },
   "H1488": {
@@ -3823,11 +3853,10 @@ export const all_stra = {
     "gxlti": "that which i took not away",
     "gxlv": "whom they caught",
     "gxvl": "the spoiled",
-    "hgxlh": "which he took violently away",
     "igxl": "hath spoiled",
     "igxlv": "consume",
     "mgxlv": "from him that spoileth",
-    "tgxl": "neither rob",
+    "tgxl": "rob",
     "vgxlv": "and exercised",
     "vgxvl": "and spoiled",
     "vigxl": "and plucked",
@@ -3855,6 +3884,7 @@ export const all_stra = {
     "gxlh": "none by violence",
     "gxlt": "the spoil",
     "gxlvt": "by violence",
+    "hgxlh": "that",
     "vgxlh": "by violence"
   },
   "H1501": {
@@ -3913,6 +3943,7 @@ export const all_stra = {
     "vgxrt": "is the decree"
   },
   "H1511": {
+    "vhgrxi": "and the gezrites",
     "vhgxri": "and the gezrites"
   },
   "H1512": {
@@ -3945,12 +3976,14 @@ export const all_stra = {
     "gie": "to the valley",
     "hgeivt": "valley",
     "hgie": "of the valley",
+    "hgievt": "valley",
     "lgi": "thereof into the valley",
     "vbgi": "and to the valley",
     "vgevtic": "and in thy valleys",
     "vgie": "nor the valley",
     "vhgi": "now there was a valley",
     "vhgie": "on the other side and there was a valley",
+    "vlgeit": "and to the valleys",
     "vlgeivt": "and to the valleys"
   },
   "H1517": {
@@ -3992,16 +4025,14 @@ export const all_stra = {
     "vgkxi": "and gehazi"
   },
   "H1523": {
-    "_": "be glad",
     "egilh": "i will joy",
-    "gil": "rejoice",
     "gili": "rejoice",
     "gilv": "be glad",
     "igil": "rejoice",
     "igilv": "be joyful",
     "igilvn": "shall they rejoice",
     "igl": "shall rejoice",
-    "med igilmed": "shall he rejoice",
+    "igvl": "rejoice",
     "ngilh": "we will rejoice",
     "tgil": "shall be joyful",
     "tgl": "rejoice",
@@ -4018,6 +4049,7 @@ export const all_stra = {
     "cgilcm": "which are of your sort",
     "gil": "for joy",
     "gili": "joy",
+    "gvl": "shall greatly",
     "vgil": "and gladness"
   },
   "H1525": {
@@ -4358,7 +4390,7 @@ export const all_stra = {
     "ehbh": "loveth",
     "ehbi": "loving",
     "ehbic": "that love",
-    "ehbih": "among all her lovers",
+    "ehbih": "i love",
     "ehbim": "love",
     "ehbiv": "and all his friends",
     "ehbm": "i will love",
@@ -4406,6 +4438,7 @@ export const all_stra = {
     "viehbc": "and he will love",
     "viehbh": "loved",
     "viehbhv": "loved",
+    "viehbv": "loved",
     "vlehbh": "and to love",
     "vmehbic": "and thy lovers",
     "vtehb": "loved",
@@ -4489,7 +4522,6 @@ export const all_stra = {
   },
   "H1581": {
     "bgmlim": "upon the camels",
-    "bkmvrim": "and on camels",
     "gml": "camels’",
     "gmlic": "thy camels",
     "gmlihm": "their camels",
@@ -4501,6 +4533,7 @@ export const all_stra = {
     "lgmlim": "for the camels",
     "mgml": "camel",
     "mgmli": "camels",
+    "vbgmlim": "and on camels",
     "vgmlihm": "and their camels",
     "vgmlim": "and camels",
     "vhgmlim": "and the camels",
@@ -4569,6 +4602,7 @@ export const all_stra = {
     "behbim": "ourselves with loves"
   },
   "H1590": {
+    "bgnbim": "among thieves",
     "cgnb": "like a thief",
     "gnb": "a thief",
     "gnbim": "if thieves",
@@ -4692,8 +4726,7 @@ export const all_stra = {
     "vtgaw": "shook"
   },
   "H1608": {
-    "gaw": "of gaash",
-    "s": "of gaash"
+    "gaw": "of gaash"
   },
   "H1609": {
     "gatm": "gatam",
@@ -4797,7 +4830,8 @@ export const all_stra = {
     "ttgrh": "why shouldest thou meddle",
     "ttgrv": "meddle",
     "vhtgr": "it and contend",
-    "vitgrh": "and be stirred up"
+    "vitgrh": "and be stirred up",
+    "vitgrv": "and be stirred up"
   },
   "H1625": {
     "grh": "the cud",
@@ -4813,7 +4847,8 @@ export const all_stra = {
     "grvn": "necks",
     "grvnc": "on thy neck",
     "grvni": "my throat",
-    "grvnm": "their throat"
+    "grvnm": "their throat",
+    "vgrvnc": "and thy throat"
   },
   "H1628": {
     "bgrvt": "the habitation"
@@ -4834,8 +4869,7 @@ export const all_stra = {
     "vhgrxn": "nor axe"
   },
   "H1632": {
-    "gdl": "of great",
-    "kmh": "of great"
+    "grl": "of great"
   },
   "H1633": {
     "grmv": "they gnaw not the bones",
@@ -4951,8 +4985,7 @@ export const all_stra = {
   "H1647": {
     "grwm": "gershom",
     "grwvm": "of gershom",
-    "lgrwvm": "of gershom",
-    "s": "gershom"
+    "lgrwvm": "of gershom"
   },
   "H1648": {
     "grwvn": "of gershon",
@@ -4996,7 +5029,8 @@ export const all_stra = {
   "H1655": {
     "bgwmhvn": "upon whose bodies",
     "gwmh": "and his body",
-    "gwmhvn": "their bodies"
+    "gwmhvn": "their bodies",
+    "gwmihvn": "their bodies"
   },
   "H1656": {
     "gwmh": "nor rained"
@@ -5036,8 +5070,7 @@ export const all_stra = {
   },
   "H1663": {
     "hgti": "the gittite",
-    "hgtim": "and all the gittites",
-    "s": "the gittite"
+    "hgtim": "and all the gittites"
   },
   "H1664": {
     "gtim": "gittaim",
@@ -5080,7 +5113,9 @@ export const all_stra = {
   "H1673": {
     "deg": "doeg",
     "dveg": "to doeg",
-    "ldveg": "to doeg"
+    "dvig": "to doeg",
+    "ldveg": "to doeg",
+    "ldvig": "to doeg"
   },
   "H1674": {
     "bdegh": "with carefulness",
@@ -5180,6 +5215,9 @@ export const all_stra = {
   "H1685": {
     "dbkin": "sacrifices"
   },
+  "H1686": {
+    "dbivnim": "of dove’s dung"
+  },
   "H1687": {
     "bdbir": "as in the oracle",
     "dbir": "oracle",
@@ -5204,8 +5242,7 @@ export const all_stra = {
   "H1690": {
     "dblh": "of a cake",
     "dblim": "cakes",
-    "dblt": "a lump",
-    "vzmvqim": "cakes"
+    "dblt": "a lump"
   },
   "H1691": {
     "dblim": "of diblaim"
@@ -5273,7 +5310,6 @@ export const all_stra = {
     "dvbri": "of them that speak",
     "edbr": "that i shall speak",
     "edbrh": "i will speak",
-    "emrtm": "and have ye not spoken",
     "hdbr": "that talked",
     "hdbrvt": "which speak",
     "hmdbr": "speaking",
@@ -5327,7 +5363,7 @@ export const all_stra = {
     "cdbr": "according to the word",
     "cdbrc": "as thou hast said",
     "cdbri": "of all is become unto you as the words",
-    "cdbric": "according to thy words",
+    "cdbric": "as thou hast said",
     "cdbricm": "nothing",
     "cdbrim": "such words",
     "dbr": "the word",
@@ -5341,12 +5377,13 @@ export const all_stra = {
     "dbriv": "his words",
     "dbrnv": "this our business",
     "dbrv": "his word",
-    "f": "you a thing",
+    "dbrvv": "not against his word",
     "hdbr": "this thing",
     "hdbrim": "these words",
     "ldbr": "in this thing",
     "ldbrc": "in thy word",
     "ldbri": "words",
+    "ldbric": "in thy word",
     "ldbricm": "for your words",
     "ldbrihm": "not their words",
     "ldbrim": "not the words",
@@ -5356,6 +5393,7 @@ export const all_stra = {
     "mdbrihm": "of their words",
     "vbdbr": "thing",
     "vbdbrc": "all these things at thy word",
+    "vbdbric": "all these things at thy word",
     "vdbr": "and the word",
     "vdbri": "in the book",
     "vdbric": "and thy words",
@@ -5365,6 +5403,7 @@ export const all_stra = {
     "vhdbrim": "things",
     "vldbrv": "and in his word",
     "vmdbrc": "of thy word",
+    "vmdbric": "of thy word",
     "vmdbrihm": "of their words"
   },
   "H1698": {
@@ -5515,6 +5554,9 @@ export const all_stra = {
     "vdhbe": "and the gold",
     "vdhbh": "and the gold"
   },
+  "H1723": {
+    "dhie": "the dehavites"
+  },
   "H1724": {
     "ndhm": "astonied"
   },
@@ -5529,7 +5571,8 @@ export const all_stra = {
     "vmdibt": "and cause sorrow"
   },
   "H1728": {
-    "dvgim": "and it shall come to pass that the fishers"
+    "dvgim": "and it shall come to pass that the fishers",
+    "ldvgim": "fishers"
   },
   "H1729": {
     "dvgh": "with fishhooks"
@@ -5566,7 +5609,6 @@ export const all_stra = {
     "vhdvd": "basket"
   },
   "H1732": {
-    "am": "and there they were with david",
     "bdvd": "david",
     "bdvid": "david",
     "cdvd": "as did david",
@@ -5575,10 +5617,8 @@ export const all_stra = {
     "dvid": "of david",
     "ldvd": "david",
     "ldvid": "david",
-    "s": "david",
     "vdvd": "and david",
     "vdvid": "and david",
-    "vize": "and david",
     "vldvd": "but upon david"
   },
   "H1733": {
@@ -5586,6 +5626,7 @@ export const all_stra = {
     "ddtv": "his father’s sister"
   },
   "H1734": {
+    "ddi": "of dodo",
     "ddv": "of dodo",
     "dvdv": "of dodo"
   },
@@ -5616,6 +5657,7 @@ export const all_stra = {
   },
   "H1740": {
     "hdikni": "he hath cast me out",
+    "hdiknv": "he hath cast me out",
     "idik": "and shall have purged",
     "idikv": "they washed"
   },
@@ -5667,10 +5709,14 @@ export const all_stra = {
     "mdvr": "than to dwell"
   },
   "H1753": {
+    "deri": "the inhabitants",
+    "derin": "that dwell",
     "diri": "the inhabitants",
     "dirin": "that dwell",
+    "idrvn": "dwelt",
     "idvrn": "dwelt",
     "tdvr": "dwelt",
+    "vderi": "the inhabitants",
     "vdiri": "the inhabitants"
   },
   "H1754": {
@@ -5686,7 +5732,7 @@ export const all_stra = {
     "drtinv": "to us or to our generations",
     "drvt": "generations",
     "drvtinv": "between us and you and our generations",
-    "dvr": "generations",
+    "dvr": "generation",
     "dvri": "mine age",
     "dvrim": "generations",
     "dvrv": "his generation",
@@ -5728,7 +5774,6 @@ export const all_stra = {
     "vtdvwnh": "and shall tread it down"
   },
   "H176": {
-    "ei": "nor for",
     "ev": "or"
   },
   "H1760": {
@@ -5768,12 +5813,10 @@ export const all_stra = {
   },
   "H1767": {
     "bdi": "in",
-    "bgnbim": "for since",
     "cdi": "as",
     "di": "sufficient",
     "dic": "so much as is sufficient",
     "dim": "till they had enough",
-    "lmdi": "themselves sufficiently",
     "mdi": "from",
     "vcdi": "thus shall there arise too much",
     "vdi": "enough",
@@ -5833,7 +5876,8 @@ export const all_stra = {
     "vdin": "and plead"
   },
   "H1778": {
-    "deinin": "which may judge"
+    "deinin": "which may judge",
+    "denin": "which may judge"
   },
   "H1779": {
     "din": "the cause",
@@ -5842,6 +5886,7 @@ export const all_stra = {
     "mdin": "from judgment",
     "vdin": "judgment",
     "vdini": "and my cause",
+    "wdin": "there is a judgment",
     "wdvn": "there is a judgment"
   },
   "H178": {
@@ -5881,7 +5926,6 @@ export const all_stra = {
   "H1787": {
     "diwvn": "dishon",
     "dwn": "dishon",
-    "s": "dishon",
     "vdiwn": "and dishon",
     "vdwvn": "and dishon"
   },
@@ -5930,6 +5974,7 @@ export const all_stra = {
     "dcit": "which thou hast broken",
     "dcitnv": "though thou hast sore broken",
     "idch": "he croucheth",
+    "vdch": "he croucheth",
     "vndch": "and a contrite",
     "vndciti": "broken"
   },
@@ -6152,6 +6197,7 @@ export const all_stra = {
     "evdt": "sake"
   },
   "H1820": {
+    "dmiti": "i have likened",
     "ndmh": "and brought to silence",
     "ndmith": "how art thou cut off",
     "ndmiti": "is me for i am undone",
@@ -6228,10 +6274,10 @@ export const all_stra = {
     "mtevh": "desireth",
     "tevh": "desireth",
     "tteiv": "neither desire",
-    "ttev": "be not desirous",
+    "ttev": "neither desire",
     "ttevh": "neither shalt thou covet",
     "viteiv": "longed",
-    "vitev": "greatly desire",
+    "vitev": "longed",
     "vitevh": "longed",
     "vitevv": "but lusted"
   },
@@ -6273,7 +6319,7 @@ export const all_stra = {
     "ldn": "of dan",
     "lmdn": "from dan",
     "mdn": "from dan",
-    "vdn": "dan",
+    "vdn": "and why did dan",
     "vldn": "dan"
   },
   "H1836": {
@@ -6296,10 +6342,11 @@ export const all_stra = {
   },
   "H1840": {
     "cdniel": "none like daniel",
+    "dnel": "daniel",
     "dniel": "daniel",
     "ldniel": "unto daniel",
+    "mdnel": "than daniel",
     "mdniel": "than daniel",
-    "s": "daniel",
     "vdniel": "and daniel"
   },
   "H1841": {
@@ -6505,6 +6552,7 @@ export const all_stra = {
     "bdrcihn": "in all thy ways",
     "bdrciv": "in his ways",
     "bdrcm": "their way",
+    "bdrcv": "not in his ways",
     "bhdrc": "and the way",
     "cdrc": "journey",
     "cdrcic": "thee according to thy ways",
@@ -6512,6 +6560,7 @@ export const all_stra = {
     "cdrcinv": "unto us according to our ways",
     "cdrciv": "according to his ways",
     "cdrcm": "according to their way",
+    "cdrcv": "according to his ways",
     "drc": "by the way",
     "drcc": "thy way",
     "drccm": "is your way",
@@ -6545,7 +6594,6 @@ export const all_stra = {
     "mdrciv": "us of his ways",
     "mdrcm": "way",
     "mdrcv": "way",
-    "s": "by the way",
     "vbdrc": "and in the way",
     "vbdrci": "in the ways",
     "vbdrcv": "by the way",
@@ -6666,7 +6714,7 @@ export const all_stra = {
   "H1881": {
     "bdti": "among the laws",
     "cdt": "decree",
-    "dt": "for a commandment",
+    "dt": "law",
     "dti": "laws",
     "dtv": "law",
     "hdt": "of the decree",
@@ -6739,10 +6787,12 @@ export const all_stra = {
     "vhbl": "and abel"
   },
   "H1894": {
-    "vhbnim": "and ebony"
+    "vhbnim": "and ebony",
+    "vhvbnim": "and ebony"
   },
   "H1895": {
-    "hbri": "let now the astrologers"
+    "hbri": "let now the astrologers",
+    "hbrv": "let now the astrologers"
   },
   "H1896": {
     "hge": "of hege",
@@ -6811,9 +6861,7 @@ export const all_stra = {
     "vhdbri": "counsellors"
   },
   "H1908": {
-    "edd": "hadad",
     "hdd": "hadad",
-    "s": "hadad",
     "vhdd": "hadad"
   },
   "H1909": {
@@ -6925,7 +6973,7 @@ export const all_stra = {
     "hh": "ye woe worth"
   },
   "H193": {
-    "eili": "and the mighty",
+    "evli": "and the mighty",
     "evlm": "but their strength"
   },
   "H1930": {
@@ -6958,7 +7006,7 @@ export const all_stra = {
     "lhve": "be",
     "lhvh": "shall be",
     "lhvin": "be",
-    "lhvn": "might",
+    "lhvn": "but they shall",
     "thve": "shall be",
     "thvh": "shall be",
     "vhvt": "so it ceased",
@@ -6984,6 +7032,9 @@ export const all_stra = {
     "hvdvih": "of hodaviah",
     "vhvdvih": "and hodaviah"
   },
+  "H1939": {
+    "hdivhv": "were hodaiah"
+  },
   "H194": {
     "evli": "it may be"
   },
@@ -6999,7 +7050,8 @@ export const all_stra = {
     "hvvt": "mischiefs",
     "lhvti": "my calamity",
     "vbhvt": "in their own naughtiness",
-    "vhvt": "the substance"
+    "vhvt": "the substance",
+    "vhvti": "and my calamity"
   },
   "H1943": {
     "hvh": "mischief"
@@ -7051,7 +7103,6 @@ export const all_stra = {
   },
   "H1954": {
     "bhvwa": "to hosea",
-    "f": "to hosea",
     "hvwa": "hoshea",
     "lhvwa": "of hoshea",
     "vhvwa": "he and hoshea"
@@ -7119,7 +7170,7 @@ export const all_stra = {
     "vthiinh": "and be"
   },
   "H1962": {
-    "vhvti": "and my calamity"
+    "vhiti": "and my calamity"
   },
   "H1963": {
     "hic": "how",
@@ -7215,6 +7266,7 @@ export const all_stra = {
     "hlici": "my steps"
   },
   "H1979": {
+    "bhlcvtm": "in their walk",
     "bhlictm": "in their walk",
     "hlict": "the companies",
     "hlicvt": "to the ways",
@@ -7225,12 +7277,9 @@ export const all_stra = {
   },
   "H1980": {
     "bhthlcc": "when thou goest",
-    "blctc": "which thou wentest",
     "chvlc": "as when one goeth",
     "cmhlc": "as one that travelleth",
     "ehlc": "i lead",
-    "elc": "i will surely",
-    "elch": "speedily",
     "ethlc": "why go",
     "hhlc": "that walketh",
     "hhlcim": "that went",
@@ -7264,33 +7313,19 @@ export const all_stra = {
     "ihlc": "go",
     "ihlcv": "go",
     "ihlcvn": "there go",
-    "ilc": "forth",
-    "ilcv": "shall surely",
     "ithlc": "walketh",
     "ithlcv": "and went",
     "ithlcvn": "walk",
-    "lc": "walking",
-    "lch": "and now behold i go",
-    "lctc": "go",
-    "lcv": "to go",
     "lhlc": "to go",
     "lhlci": "to them that walk",
     "lhlcim": "to them that walk",
     "lhthlc": "to walk",
-    "llct": "run",
     "mhlc": "thee from coming",
     "mthlc": "walketh",
     "mthlct": "it went up and down",
     "nhlc": "and walked",
     "nhlcti": "i am gone",
-    "nlch": "speedily",
     "thlc": "walketh",
-    "tlc": "walked",
-    "tlci": "with me then i will go",
-    "tlcnh": "walking",
-    "tlcv": "who went",
-    "tlcvn": "will go",
-    "velc": "but i am now going",
     "vethlch": "and i will walk",
     "vhlc": "and walk",
     "vhlch": "went",
@@ -7306,15 +7341,10 @@ export const all_stra = {
     "vhthlcv": "and walk",
     "vhvlc": "but whoso walketh",
     "vihlc": "and went",
-    "vilc": "on",
-    "vilcv": "that went",
     "vithlc": "walked",
     "vithlcv": "and go",
     "vmhthlc": "and from walking up and down",
-    "vnlch": "shall go",
     "vthlc": "ran along",
-    "vtlc": "on",
-    "vtlcnh": "walking",
     "vtthlcnh": "walk to and fro"
   },
   "H1981": {
@@ -7343,7 +7373,6 @@ export const all_stra = {
     "hllv": "praise",
     "hllvc": "praised",
     "hllvhv": "praise",
-    "hllvih": "praise",
     "hmthll": "glory",
     "hmthllim": "that boast",
     "hthllv": "glory",
@@ -7430,7 +7459,6 @@ export const all_stra = {
     "hhmh": "and those",
     "hm": "these",
     "hmh": "who",
-    "lhm": "them",
     "lhmh": "them",
     "mhmh": "at them",
     "vchm": "how many soever",
@@ -7517,6 +7545,7 @@ export const all_stra = {
   "H2000": {
     "hmmm": "did vex",
     "hmmni": "me he hath crushed",
+    "hmmnv": "me he hath crushed",
     "lhmm": "to consume",
     "vhmm": "it nor break",
     "vhmti": "thee and will destroy",
@@ -7531,7 +7560,8 @@ export const all_stra = {
     "vhmn": "and haman"
   },
   "H2002": {
-    "vhmnice": "and have a chain"
+    "vhmnice": "and have a chain",
+    "vhmvnce": "and have a chain"
   },
   "H2003": {
     "hmsim": "as when the melting"
@@ -7567,7 +7597,9 @@ export const all_stra = {
   "H2009": {
     "hnc": "unto her behold",
     "hnh": "behold",
-    "hve": "and behold",
+    "hnni": "and behold",
+    "vhnh": "and behold",
+    "vhnhv": "and behold",
     "vhnm": "and lo"
   },
   "H201": {
@@ -7694,6 +7726,9 @@ export const all_stra = {
   "H2024": {
     "vhre": "and hara"
   },
+  "H2025": {
+    "vhhrel": "so the altar"
+  },
   "H2026": {
     "bhrg": "slew",
     "bhrvgim": "upon these slain",
@@ -7733,7 +7768,6 @@ export const all_stra = {
     "lhrgv": "to slay",
     "lhrvg": "to kill",
     "nhrg": "is it if we slay",
-    "s": "it he will kill",
     "thrg": "wilt thou slay",
     "thrghv": "shall slay",
     "thrgm": "slay",
@@ -7772,7 +7806,8 @@ export const all_stra = {
     "hrgh": "of slaughter"
   },
   "H2029": {
-    "hrh": "they conceive",
+    "hrh": "conceived",
+    "hrinv": "we have been with child",
     "hriti": "have i conceived",
     "hrth": "that she had conceived",
     "hrv": "conceiving",
@@ -7916,6 +7951,9 @@ export const all_stra = {
   "H2050": {
     "thvttv": "how long will ye imagine mischief"
   },
+  "H2051": {
+    "vdn": "dan"
+  },
   "H2052": {
     "vhb": "what he did"
   },
@@ -8004,7 +8042,7 @@ export const all_stra = {
     "vxbvd": "and zabud"
   },
   "H2072": {
-    "vxcvr": "and zabbud"
+    "vxbvd": "and zabbud"
   },
   "H2073": {
     "mxbl": "from their dwelling",
@@ -8013,7 +8051,6 @@ export const all_stra = {
   },
   "H2074": {
     "bxblvn": "to zebulun",
-    "iwwcr": "and zebulun",
     "lxbvln": "of zebulun",
     "mxblvn": "of zebulun",
     "vbxblvn": "and unto zebulun",
@@ -8104,15 +8141,14 @@ export const all_stra = {
     "xbk": "zebah"
   },
   "H2079": {
-    "xbi": "zabbai",
-    "xci": "of zabbai"
+    "xbi": "zabbai"
   },
   "H208": {
     "evnm": "of onam",
-    "s": "and onam",
     "vevnm": "and onam"
   },
   "H2080": {
+    "xbidh": "was zebudah",
     "xbvdh": "was zebudah"
   },
   "H2081": {
@@ -8200,6 +8236,7 @@ export const all_stra = {
     "lhxhr": "no more be admonished",
     "nxhr": "and took not warning",
     "vhxhir": "and warn",
+    "vhxhirh": "him and warned",
     "vhxhirv": "him and warned",
     "vhxhrt": "and warn",
     "vhxhrth": "and thou shalt teach",
@@ -8302,10 +8339,12 @@ export const all_stra = {
     "xa": "nor moved"
   },
   "H2112": {
+    "xeain": "trembled",
     "xiain": "trembled"
   },
   "H2113": {
     "lxavh": "them to be removed",
+    "lxvah": "them to be removed",
     "xvah": "and it shall be a vexation"
   },
   "H2114": {
@@ -8504,7 +8543,7 @@ export const all_stra = {
     "bxcrnv": "when we remembered",
     "chxcirv": "and it came to pass when he made mention",
     "cxcr": "remember",
-    "excir": "i will make mention",
+    "excir": "i will remember",
     "excirh": "to be remembered",
     "excr": "and i will remember",
     "excrc": "within me therefore will i remember",
@@ -8602,12 +8641,10 @@ export const all_stra = {
     "xcrvnc": "thy remembrance"
   },
   "H2147": {
-    "s": "of zichri",
     "vxcri": "and zichri",
     "xcri": "of zichri"
   },
   "H2148": {
-    "s": "of zechariah",
     "vlxcrih": "and to zechariah",
     "vxcrih": "and zechariah",
     "vxcrihv": "and zechariah",
@@ -8619,6 +8656,7 @@ export const all_stra = {
   },
   "H215": {
     "erv": "have been enlightened",
+    "evr": "was light",
     "evri": "shine",
     "heirh": "shined",
     "heirv": "lightened",
@@ -8637,7 +8675,8 @@ export const all_stra = {
     "vevr": "that shineth",
     "vheir": "thereof that they may give light",
     "vher": "to shine",
-    "vier": "at break of day"
+    "vier": "at break of day",
+    "vternh": "were enlightened"
   },
   "H2150": {
     "hxlxlim": "the sprigs"
@@ -8684,7 +8723,6 @@ export const all_stra = {
   },
   "H2158": {
     "bxmrvt": "unto him with psalms",
-    "hxmir": "of the singing",
     "xmrt": "songs",
     "xmrvt": "songs"
   },
@@ -8729,7 +8767,8 @@ export const all_stra = {
     "mxmnvt": "appointed"
   },
   "H2164": {
-    "hxdmntvn": "for you for ye have prepared"
+    "hxdmntvn": "for you for ye have prepared",
+    "hxmntvn": "for you for ye have prepared"
   },
   "H2165": {
     "bxmnihm": "in their times",
@@ -8833,6 +8872,7 @@ export const all_stra = {
     "hxnv": "continually",
     "hxnvt": "with whores",
     "hxvnh": "the harlot",
+    "ixnh": "will they now commit",
     "ixnv": "will they now commit",
     "lhxnvth": "fall to whoredom",
     "lxnvt": "to go a whoring",
@@ -8857,7 +8897,6 @@ export const all_stra = {
     "xnit": "for thou hast gone a whoring",
     "xnth": "hath played the harlot",
     "xnv": "but they went a whoring",
-    "xnvni": "harlot",
     "xnvt": "to all whores",
     "xvnh": "of an harlot",
     "xvnvt": "with harlots"
@@ -8984,6 +9023,7 @@ export const all_stra = {
     "vnxaq": "and cry",
     "vtxaq": "she cried",
     "vxaqh": "crying",
+    "vxaqi": "and cry",
     "vxaqtm": "and ye shall cry out",
     "vxaqv": "and cry",
     "xaq": "cry",
@@ -9294,7 +9334,6 @@ export const all_stra = {
     "mxram": "from their seed",
     "mxrav": "of his seed",
     "vbxrac": "and thy seed",
-    "vhelmnh": "of the seed",
     "vlxrac": "and to thy seed",
     "vlxram": "unto them and to their seed",
     "vlxrav": "and to his seed",
@@ -9471,7 +9510,6 @@ export const all_stra = {
     "bkblih": "in her pangs",
     "bkblim": "with cords",
     "hkbl": "line",
-    "itmc": "with the cords",
     "kbl": "coast",
     "kbli": "the sorrows",
     "kblic": "thy tacklings",
@@ -9482,6 +9520,7 @@ export const all_stra = {
     "lkblim": "under the cords",
     "mkbl": "from the coast",
     "vbkbl": "with a cord",
+    "vbkbli": "with the cords",
     "vkbl": "portion",
     "vkblim": "and sorrows"
   },
@@ -9561,6 +9600,7 @@ export const all_stra = {
     "etkbr": "join",
     "hikbrc": "have fellowship",
     "htkbrvt": "and after the league",
+    "ikbr": "joined",
     "itkbrv": "they shall join themselves together",
     "kbr": "he coupled",
     "kbrt": "shall be coupled",
@@ -9599,7 +9639,7 @@ export const all_stra = {
     "kbric": "of thy companions",
     "kbrim": "knit together",
     "kbriv": "his companions",
-    "kbrv": "his fellow",
+    "kbrv": "his companions",
     "mkbric": "above thy fellows",
     "vkbri": "and companions"
   },
@@ -9819,7 +9859,7 @@ export const all_stra = {
   "H2308": {
     "ekdl": "or shall i forbear",
     "hkdlti": "unto them should i leave",
-    "ikdl": "leave",
+    "ikdl": "cease",
     "ikdlv": "or whether they will forbear",
     "ikdlvn": "shall cease",
     "kdl": "cease",
@@ -10009,6 +10049,9 @@ export const all_stra = {
     "vbkvk": "through with a thorn",
     "vkvk": "and brambles"
   },
+  "H2337": {
+    "vbkvkim": "and in thickets"
+  },
   "H2338": {
     "ikipv": "thereof and joined"
   },
@@ -10034,7 +10077,7 @@ export const all_stra = {
     "vkvilh": "and havilah"
   },
   "H2342": {
-    "evkilh": "i am pained",
+    "ekvlh": "i am pained",
     "hivkl": "travailed",
     "hmkllvt": "of them that danced",
     "ikil": "shaketh",
@@ -10058,14 +10101,13 @@ export const all_stra = {
     "mkllc": "that formed",
     "mkvll": "god that formed",
     "mtkvll": "man travaileth",
-    "tkil": "is in pain",
+    "tkil": "pain",
     "tkilin": "what hast thou brought forth",
     "tkilv": "will ye not tremble",
     "tkvl": "pain",
     "tkvll": "driveth away",
     "tkvllcm": "that bare",
     "vhtkvll": "and wait patiently",
-    "vikil": "that a man should both hope",
     "vikilv": "and they tarried",
     "vikl": "wounded",
     "vklh": "shall abide",
@@ -10130,7 +10172,7 @@ export const all_stra = {
     "ksh": "pitied",
     "kst": "thou hast had pity",
     "kvsh": "spare",
-    "tks": "regard",
+    "tks": "spare",
     "tkvs": "shall not spare",
     "vkvsh": "concerning this also and spare",
     "vtks": "spared"
@@ -10147,7 +10189,6 @@ export const all_stra = {
     "exl": "is spent",
     "exlt": "is gone",
     "exlv": "fail",
-    "mevxl": "going to and fro",
     "txli": "why gaddest thou about",
     "vexl": "but when he is gone"
   },
@@ -10187,7 +10228,8 @@ export const all_stra = {
     "vmkzvt": "and from the streets"
   },
   "H2352": {
-    "bkvrim": "in holes"
+    "bkvrim": "in holes",
+    "kr": "on the hole"
   },
   "H2353": {
     "kvr": "where were white",
@@ -10267,11 +10309,11 @@ export const all_stra = {
     "kwm": "and husham"
   },
   "H2368": {
+    "bktmv": "them with his seal",
     "ckvtm": "as a seal",
     "ktm": "of a signet",
     "ktmc": "thy signet",
-    "kvtm": "of a signet",
-    "vtktm": "them with his seal"
+    "kvtm": "of a signet"
   },
   "H2369": {
     "kvtm": "of hothan"
@@ -10305,9 +10347,8 @@ export const all_stra = {
     "kxiti": "me and that which i have seen",
     "kxitic": "so as i have seen",
     "kxitm": "have ye not seen",
-    "kxv": "have seen",
+    "kxv": "prophesy",
     "lkxvt": "to behold",
-    "mhtlvt": "prophesy",
     "tkxh": "moreover thou shalt provide",
     "tkxinh": "behold",
     "tkxv": "prophesy",
@@ -10496,6 +10537,9 @@ export const all_stra = {
     "vkxq": "and strong",
     "vkxqi": "and stiffhearted"
   },
+  "H239": {
+    "vexn": "yea he gave good heed"
+  },
   "H2390": {
     "vkxq": "stronger"
   },
@@ -10524,13 +10568,13 @@ export const all_stra = {
     "kxqihv": "hezekiah",
     "lkxqih": "of hezekiah",
     "lkxqihv": "of hezekiah",
-    "s": "not to hezekiah",
     "vkxqih": "and hezekiah"
   },
   "H2397": {
     "bkkim": "in chains",
     "kk": "bracelets",
     "kki": "my hook",
+    "kkiim": "hooks",
     "kkim": "hooks"
   },
   "H2398": {
@@ -10539,6 +10583,7 @@ export const all_stra = {
     "ekpe": "that i might not sin",
     "ekpnh": "not unto thee i bare the loss",
     "hkpet": "that sinneth",
+    "hkpi": "sin",
     "hkpie": "to sin",
     "hkpiev": "sin",
     "hmkpe": "that offereth it for sin",
@@ -10663,6 +10708,7 @@ export const all_stra = {
     "mkpetm": "from their sin",
     "mkpetv": "for his sin",
     "mkpevt": "not from the sins",
+    "vbkpetiv": "and in his sin",
     "vbkpetv": "and in his sin",
     "vbkpevt": "is all this and for the sins",
     "vhkpet": "and the sin offering",
@@ -10713,7 +10759,11 @@ export const all_stra = {
     "kpvw": "hattush"
   },
   "H2408": {
-    "vkpec": "thy sins"
+    "vkpec": "thy sins",
+    "vkpic": "thy sins"
+  },
+  "H2409": {
+    "lkpie": "and for a sin offering"
   },
   "H241": {
     "bexni": "in the ears",
@@ -10774,6 +10824,7 @@ export const all_stra = {
     "bkiin": "of life",
     "bkiiv": "in his life",
     "bkit": "with the beasts",
+    "bkiv": "in his lifetime",
     "hki": "her the living",
     "hkih": "of the living creature",
     "hkiim": "of life",
@@ -10813,6 +10864,7 @@ export const all_stra = {
     "vkii": "and my life",
     "vkiim": "and life",
     "vkit": "and the beasts",
+    "vkiti": "and his life",
     "vkitm": "their life",
     "vkitv": "and his life",
     "vlkih": "and for the beast",
@@ -10871,7 +10923,6 @@ export const all_stra = {
     "kitni": "hath quickened",
     "kiv": "live",
     "kivtm": "till they were whole",
-    "lcnh": "alive",
     "lhkit": "alive",
     "lhkitv": "by promising him life",
     "lhkivt": "to revive",
@@ -10886,6 +10937,7 @@ export const all_stra = {
     "tkii": "and live",
     "tkiinh": "alive",
     "tkiini": "shalt quicken",
+    "tkiinv": "shalt quicken",
     "tkini": "quicken",
     "tkinv": "from thee quicken",
     "tkiv": "that ye may live",
@@ -10926,13 +10978,14 @@ export const all_stra = {
     "kivt": "living"
   },
   "H2425": {
+    "ki": "lived",
     "vki": "he shall even live",
     "vkih": "then she shall live"
   },
   "H2426": {
     "bkil": "host",
     "bkilc": "be within thy walls",
-    "bkl": "in the trench",
+    "bkl": "by the wall",
     "hkl": "of this host",
     "kil": "it whose rampart",
     "kl": "therefore he made the rampart",
@@ -10947,18 +11000,18 @@ export const all_stra = {
     "bkilc": "thy riches",
     "bkilv": "hands on their substance",
     "ckil": "thee an army",
-    "clm": "of valour",
     "hkil": "of the host",
     "hkilim": "of the forces",
     "kil": "of valour",
     "kilc": "thy substance",
     "kilh": "her power",
     "kilhm": "their riches",
-    "kili": "is my strength",
+    "kili": "army",
     "kilim": "men of valour",
     "kilm": "their wealth",
     "kilv": "and all his army",
     "lkil": "host",
+    "lkilv": "for his army",
     "mkil": "to strength",
     "vhkil": "as the host",
     "vkil": "army",
@@ -11036,6 +11089,9 @@ export const all_stra = {
     "kirvm": "so hiram",
     "kvrm": "now hiram",
     "lkirm": "hiram"
+  },
+  "H2439": {
+    "kiwh": "make haste"
   },
   "H244": {
     "hexni": "of ozni",
@@ -11323,7 +11379,6 @@ export const all_stra = {
     "cklvm": "as a dream",
     "hklmvt": "dreamer",
     "hklvm": "of dreams",
-    "iklmvn": "dreams",
     "klmticm": "to your dreams",
     "klmtinv": "to us our dreams",
     "klmtiv": "his dreams",
@@ -11351,6 +11406,7 @@ export const all_stra = {
     "vklnvt": "windows",
     "vklvnim": "windows",
     "vklvniv": "and their windows",
+    "vklvnv": "and their windows",
     "vklvnvt": "and there were windows"
   },
   "H2475": {
@@ -11424,7 +11480,7 @@ export const all_stra = {
     "klztv": "thee his armour"
   },
   "H2489": {
-    "ceim": "himself that the poor",
+    "klceim": "himself that the poor",
     "klch": "the poor",
     "lklch": "against the poor"
   },
@@ -11486,6 +11542,7 @@ export const all_stra = {
     "vikl": "began",
     "vikllv": "they profaned",
     "viklv": "and begin",
+    "vkllh": "and they shall pollute",
     "vkllt": "neither shalt thou profane",
     "vkllv": "into it and defile",
     "vkllvh": "into it and defile",
@@ -11523,11 +11580,11 @@ export const all_stra = {
     "hklvm": "which i have dreamed",
     "iklm": "dreameth",
     "iklmv": "are in good liking",
+    "iklmvn": "shall dream",
     "klm": "dreamed",
     "klmnv": "and we dreamed",
     "klmt": "that thou hast dreamed",
     "klmti": "i have dreamed",
-    "klmvt": "shall dream",
     "kvlm": "or that dreamer",
     "mklmim": "which ye cause to be dreamed",
     "viklm": "and he dreamed",
@@ -11631,6 +11688,7 @@ export const all_stra = {
     "klzic": "thy loins",
     "klzim": "sackcloth upon your loins",
     "klziv": "on his loins",
+    "klzv": "if his loins",
     "mklzic": "out of thy loins"
   },
   "H2505": {
@@ -11717,7 +11775,6 @@ export const all_stra = {
     "lekihm": "to their brethren",
     "lekinv": "which was our brother",
     "lekiv": "his brethren",
-    "lhm": "for their brethren",
     "mek": "than a brother",
     "meki": "brethren",
     "mekic": "brother",
@@ -11785,7 +11842,8 @@ export const all_stra = {
     "vklqlqvt": "and slippery"
   },
   "H252": {
-    "ekc": "thy brethren"
+    "ekc": "thy brethren",
+    "ekic": "thy brethren"
   },
   "H2520": {
     "klqt": "helkath"
@@ -11906,6 +11964,7 @@ export const all_stra = {
     "kmvel": "hamuel"
   },
   "H2537": {
+    "kmipl": "was hamutal",
     "kmvpl": "was hamutal"
   },
   "H2538": {
@@ -11930,6 +11989,7 @@ export const all_stra = {
   },
   "H2543": {
     "bkmrim": "upon the asses",
+    "bkmvrim": "on asses",
     "hkmr": "them upon an ass",
     "hkmrim": "asses",
     "hkmvr": "of an ass",
@@ -11943,7 +12003,6 @@ export const all_stra = {
     "kmvr": "of an ass",
     "kmvricm": "and your asses",
     "kmvrim": "asses",
-    "lkm": "on asses",
     "lkmrihm": "their asses",
     "lkmrv": "his ass",
     "lkmvr": "for the ass",
@@ -12090,6 +12149,7 @@ export const all_stra = {
   "H2560": {
     "ikmrv": "and be troubled",
     "kmr": "is red",
+    "kmrmrh": "is foul",
     "kmrmrv": "are troubled",
     "vtkmrh": "and daubed"
   },
@@ -12117,6 +12177,10 @@ export const all_stra = {
     "kmr": "slimepits",
     "vhkmr": "and slime"
   },
+  "H2565": {
+    "kmrtim": "heaps",
+    "kmvr": "heaps"
+  },
   "H2566": {
     "kmrn": "amram"
   },
@@ -12134,7 +12198,6 @@ export const all_stra = {
     "lkmwh": "the fifteenth",
     "lkmwt": "belonging to the five",
     "mkmw": "of five",
-    "s": "and five",
     "vbkmwh": "and on the fifteenth",
     "vkmw": "and five",
     "vkmwh": "and five",
@@ -12189,6 +12252,10 @@ export const all_stra = {
   "H2578": {
     "kmt": "to hamath–zobah",
     "zvbh": "to hamath–zobah"
+  },
+  "H2579": {
+    "kmt": "the great",
+    "rbh": "the great"
   },
   "H258": {
     "htekdi": "go thee one way or other"
@@ -12337,6 +12404,7 @@ export const all_stra = {
     "ebgil": "abigail",
     "ebigil": "and abigail",
     "ebigl": "to abigail",
+    "ebvgil": "then abigail",
     "lebigil": "of abigail",
     "lebigl": "to abigail",
     "vebigil": "and abigail",
@@ -12365,6 +12433,7 @@ export const all_stra = {
     "ikn": "nor shew favour",
     "iknc": "gracious",
     "iknn": "fair",
+    "iknni": "will be gracious",
     "iknnv": "and favour",
     "knn": "him hath mercy",
     "knni": "be merciful",
@@ -12524,6 +12593,7 @@ export const all_stra = {
     "ksidic": "of thy saints",
     "ksidim": "of saints",
     "ksidiv": "of his saints",
+    "ksidv": "of his saints",
     "lksidic": "to thy holy one",
     "lksidiv": "of his saints",
     "vksid": "and holy",
@@ -12650,6 +12720,7 @@ export const all_stra = {
     "lkfh": "to huppah"
   },
   "H2648": {
+    "bhkfxm": "in their haste",
     "bkfxh": "and it came to pass as she made haste",
     "bkfxi": "in my haste",
     "bkfxm": "in their haste",
@@ -12763,7 +12834,6 @@ export const all_stra = {
     "vkfr": "and of hepher"
   },
   "H2661": {
-    "frvt": "to the moles",
     "lkfr": "to the moles"
   },
   "H2662": {
@@ -12780,6 +12850,7 @@ export const all_stra = {
     "itkfw": "changed",
     "kfw": "searching",
     "kfwv": "search",
+    "mkfw": "a diligent",
     "nkfwh": "let us search",
     "nkfwv": "searched out",
     "tkfwnh": "and searchest",
@@ -12789,7 +12860,7 @@ export const all_stra = {
     "vkfwv": "and they shall search"
   },
   "H2665": {
-    "mkfw": "search"
+    "kfw": "search"
   },
   "H2666": {
     "kfwh": "because she was not free"
@@ -12801,7 +12872,8 @@ export const all_stra = {
     "kfwh": "nor freedom"
   },
   "H2669": {
-    "hkfwit": "a several"
+    "hkfwit": "a several",
+    "hkfwvt": "a several"
   },
   "H267": {
     "ekvmi": "ahumai"
@@ -12824,7 +12896,6 @@ export const all_stra = {
     "kzv": "over them and his arrow",
     "lkz": "shaft",
     "mkz": "nor for the arrow",
-    "vaz": "and the staff",
     "vbkzim": "and the arrows",
     "vkz": "arrow",
     "vkzic": "and will cause thine arrows",
@@ -12870,7 +12941,8 @@ export const all_stra = {
     "vkzvr": "and hazor"
   },
   "H2675": {
-    "kdth": "hadattah"
+    "kdth": "hadattah",
+    "vkzvr": "hadattah"
   },
   "H2676": {
     "ckzt": "about midnight",
@@ -12904,7 +12976,8 @@ export const all_stra = {
     "hkzim": "an arrow"
   },
   "H2679": {
-    "hmnkvt": "of the manahethites"
+    "hmnkvt": "of the manahethites",
+    "kzi": "of the manahethites"
   },
   "H268": {
     "bekvr": "it in till afterwards",
@@ -12917,7 +12990,8 @@ export const all_stra = {
     "vmekvr": "and behind"
   },
   "H2680": {
-    "hmnkti": "of the manahethites"
+    "hmnkti": "of the manahethites",
+    "vkzi": "of the manahethites"
   },
   "H2681": {
     "kzir": "and a court"
@@ -12965,6 +13039,8 @@ export const all_stra = {
   },
   "H269": {
     "bekth": "her sister",
+    "ekitihm": "sisters",
+    "ekitiv": "and all his sisters",
     "ekivtc": "thy sisters",
     "ekivti": "and my sisters",
     "ekivtihm": "sisters",
@@ -12983,6 +13059,7 @@ export const all_stra = {
     "ekvtnv": "with our sister",
     "lektnv": "sister",
     "lekvtc": "thy sisters",
+    "vekitihm": "whose sisters",
     "vekivtihm": "whose sisters",
     "vekti": "and my sister",
     "vektv": "and his sister",
@@ -12995,7 +13072,10 @@ export const all_stra = {
   },
   "H2690": {
     "lmkzrim": "it came even to pass as the trumpeters",
-    "mkzrim": "sounded"
+    "lmkzzrim": "it came even to pass as the trumpeters",
+    "mkzrim": "sounded",
+    "mkzrrim": "sounding",
+    "mkzzrim": "sounded"
   },
   "H2691": {
     "bkzr": "in the court",
@@ -13268,7 +13348,7 @@ export const all_stra = {
     "vlkrim": "nor to the nobles"
   },
   "H2716": {
-    "zvetm": "their own dung"
+    "kreihm": "their own dung"
   },
   "H2717": {
     "ekrib": "i dry up",
@@ -13300,11 +13380,11 @@ export const all_stra = {
     "hkrbt": "destroyed"
   },
   "H2719": {
-    "bhr": "with their mattocks",
     "bkrb": "by the sword",
     "bkrbc": "with thy sword",
     "bkrbi": "with my sword",
     "bkrbm": "by their own sword",
+    "bkrbtihm": "with their mattocks",
     "bkrbv": "sword",
     "bkrbvt": "with knives",
     "bkrbvtiv": "and with his axes",
@@ -13472,8 +13552,8 @@ export const all_stra = {
     "bkrvxim": "with chains"
   },
   "H2738": {
-    "krvl": "of nettles",
-    "qmwnim": "and nettles"
+    "krlim": "and nettles",
+    "krvl": "of nettles"
   },
   "H2739": {
     "krvmf": "of harumaph"
@@ -13496,6 +13576,7 @@ export const all_stra = {
     "vkrvn": "and fierce"
   },
   "H2741": {
+    "hkrifi": "the haruphite",
     "hkrvfi": "the haruphite"
   },
   "H2742": {
@@ -13559,8 +13640,8 @@ export const all_stra = {
     "vhkripim": "and the crisping pins"
   },
   "H2755": {
-    "dbivnim": "of dove’s dung",
-    "zvetm": "their own dung"
+    "kri": "of dove’s dung",
+    "krihm": "their own dung"
   },
   "H2756": {
     "krif": "hariph"
@@ -13691,7 +13772,8 @@ export const all_stra = {
     "krs": "heres"
   },
   "H2777": {
-    "hkrsit": "of the east"
+    "hkrsit": "of the east",
+    "hkrsvt": "of the east"
   },
   "H2778": {
     "bkrfm": "when they defied",
@@ -13814,13 +13896,11 @@ export const all_stra = {
     "kvrw": "that the plowman",
     "mkriw": "secretly practised",
     "mkrwim": "now therefore why speak",
-    "rah": "devise",
     "tkriw": "and holdest thy tongue",
     "tkriwi": "holdest thy peace",
     "tkriwvn": "hold your peace",
     "tkrw": "hold not thy peace",
     "tkrwnh": "shall be deaf",
-    "tkwh": "to me lest if thou be silent",
     "vhkriw": "shall hold his peace",
     "vhkriwv": "held their peace",
     "vhkrw": "held his peace",
@@ -13832,7 +13912,8 @@ export const all_stra = {
   },
   "H2791": {
     "hkrwim": "of craftsmen",
-    "krw": "secretly"
+    "krw": "secretly",
+    "krwim": "artificer"
   },
   "H2792": {
     "krw": "heresh"
@@ -13992,7 +14073,7 @@ export const all_stra = {
     "lkwvt": "to keep silence",
     "mkwh": "have not i held my peace",
     "mkwim": "stilled",
-    "tkwh": "wilt thou hold thy peace",
+    "tkwh": "be not silent",
     "vikwv": "thereof are still"
   },
   "H2815": {
@@ -14009,6 +14090,9 @@ export const all_stra = {
   "H2818": {
     "kwkin": "careful",
     "kwkn": "they have need of"
+  },
+  "H2819": {
+    "kwkvt": "shall be needful"
   },
   "H282": {
     "ekihvd": "ahihud"
@@ -14191,7 +14275,8 @@ export const all_stra = {
     "bktitm": "with their terror",
     "ktit": "terror",
     "ktiti": "my terror",
-    "ktitm": "their terror"
+    "ktitm": "their terror",
+    "ktitv": "my terror"
   },
   "H2852": {
     "nktc": "are determined"
@@ -14207,7 +14292,6 @@ export const all_stra = {
     "ktln": "of hethlon"
   },
   "H2856": {
-    "bktmv": "and sealed",
     "hktim": "be stopped",
     "hktvm": "seal",
     "hktvmim": "now those that sealed",
@@ -14223,10 +14307,10 @@ export const all_stra = {
     "vktmim": "and sealed",
     "vktmv": "and seal",
     "vktvm": "and seal",
-    "vlhtm": "and to seal up",
     "vlktm": "and to seal up",
     "vnktm": "and sealed",
-    "vnktvm": "and seal"
+    "vnktvm": "and seal",
+    "vtktm": "and sealed"
   },
   "H2857": {
     "vktmh": "sealed"
@@ -14391,6 +14475,7 @@ export const all_stra = {
     "hpbat": "rings",
     "hpbavt": "rings",
     "mpbativ": "by the rings",
+    "mpbatv": "by the rings",
     "pbat": "rings",
     "pbatihm": "their rings",
     "pbatm": "their rings",
@@ -14429,9 +14514,6 @@ export const all_stra = {
   "H289": {
     "ekimn": "and ahiman",
     "vekimn": "and ahiman"
-  },
-  "H2890": {
-    "lb": "pureness"
   },
   "H2891": {
     "ephr": "will i cleanse",
@@ -14663,8 +14745,12 @@ export const all_stra = {
     "hpknh": "of the grinding"
   },
   "H2914": {
+    "bpkrim": "with the emerods",
     "pkri": "emerods",
-    "pkrihm": "of their emerods"
+    "pkricm": "of your emerods",
+    "pkrihm": "of their emerods",
+    "pkrim": "and they had emerods",
+    "vbpkrim": "and with the emerods"
   },
   "H2915": {
     "hpik": "unto you where is the daubing"
@@ -14776,6 +14862,7 @@ export const all_stra = {
     "vipmehv": "and polluted",
     "vipmev": "they defiled",
     "vnpmeh": "and is defiled",
+    "vnpmtm": "with them that ye should be defiled",
     "vpme": "and be unclean",
     "vpmeh": "then she shall be unclean",
     "vpmetm": "ye shall defile",
@@ -14821,8 +14908,7 @@ export const all_stra = {
     "vpmetv": "having his uncleanness"
   },
   "H2933": {
-    "npminv": "and reputed vile",
-    "vnpmtm": "neither shall ye make yourselves unclean"
+    "npminv": "and reputed vile"
   },
   "H2934": {
     "bpmvn": "hide",
@@ -14964,7 +15050,7 @@ export const all_stra = {
     "prid": "and he was driven"
   },
   "H2958": {
-    "bprm": "before"
+    "bprvm": "before"
   },
   "H2959": {
     "iprik": "he wearieth"
@@ -15085,7 +15171,8 @@ export const all_stra = {
     "liewihv": "of josiah"
   },
   "H2978": {
-    "heitvn": "of the entrance"
+    "heitvn": "of the entrance",
+    "hietvn": "of the entrance"
   },
   "H2979": {
     "ietri": "jeaterai"
@@ -15647,8 +15734,9 @@ export const all_stra = {
     "lidaic": "unto them that know",
     "lidaim": "to men of skill",
     "lmidai": "to mine acquaintance",
+    "mida": "had a kinsman",
     "midai": "mine acquaintance",
-    "mvda": "had a kinsman",
+    "midat": "this is known",
     "mvdat": "this is known",
     "mvdiac": "behold i will make thee know",
     "mvdiam": "prognosticators",
@@ -15835,13 +15923,15 @@ export const all_stra = {
   },
   "H3064": {
     "bihvdi": "himself of them to wit of a jew",
+    "bihvdiim": "the jew",
     "bihvdim": "the jew",
     "hihvdi": "the jew",
+    "hihvdiim": "the jews’",
     "hihvdim": "the jews",
-    "ihvdh": "thee that all the jews",
     "ihvdi": "jew",
     "ihvdim": "jews",
     "lihvdim": "the jews",
+    "vhihvdiim": "but the jews",
     "vhihvdim": "of the jews",
     "vlihvdim": "it to the jews"
   },
@@ -15857,13 +15947,10 @@ export const all_stra = {
   "H3068": {
     "bihvh": "in the lord",
     "cihvh": "as the lord",
-    "h": "the lord",
     "hihvh": "is not the lord",
-    "hriw": "whom the lord",
     "ihvh": "the lord",
     "lihvh": "unto the lord",
     "mihvh": "the lord",
-    "s": "the lord",
     "vbihvh": "of the lord",
     "vihvh": "and the lord",
     "vlihvh": "is of the lord",
@@ -15876,6 +15963,10 @@ export const all_stra = {
   },
   "H307": {
     "bekmte": "at achmetha"
+  },
+  "H3071": {
+    "ihvh": "of it jehovah–nissi",
+    "nsi": "of it jehovah–nissi"
   },
   "H3075": {
     "ihvxbd": "jehozabad",
@@ -15928,6 +16019,7 @@ export const all_stra = {
     "vihvadh": "jehoadah"
   },
   "H3086": {
+    "ihvadin": "was jehoaddan",
     "ihvadn": "was jehoaddan"
   },
   "H3087": {
@@ -16007,7 +16099,6 @@ export const all_stra = {
     "ekri": "after",
     "ekric": "after",
     "ekricm": "after",
-    "ekricn": "and it came to pass after",
     "ekrih": "after",
     "ekrihm": "after",
     "ekrihn": "after them",
@@ -16023,10 +16114,10 @@ export const all_stra = {
     "vekr": "and afterward",
     "vekri": "and after",
     "vekric": "thee neither after",
-    "vekricn": "and after",
     "vekrih": "and after",
     "vekrihm": "and after",
     "vekriv": "and after",
+    "vekrv": "and after",
     "vmekri": "from me"
   },
   "H3100": {
@@ -16065,6 +16156,9 @@ export const all_stra = {
   "H3107": {
     "ivxbd": "jozabad",
     "vivxbd": "and jozabad"
+  },
+  "H3108": {
+    "vivxbd": "for jozachar"
   },
   "H3109": {
     "vike": "and joha",
@@ -16114,8 +16208,6 @@ export const all_stra = {
     "cimim": "days",
     "cimvt": "according to the days",
     "civm": "as it is this day",
-    "dvid": "days",
-    "f": "days",
     "hcimi": "days",
     "himim": "of the chronicles",
     "himin": "of the days",
@@ -16131,6 +16223,7 @@ export const all_stra = {
     "imimh": "yearly",
     "iminv": "our days",
     "imiv": "all his days",
+    "imv": "of his days",
     "imvt": "the days",
     "ivm": "day",
     "ivmc": "for thy day",
@@ -16148,7 +16241,6 @@ export const all_stra = {
     "mimim": "yearly",
     "mimiv": "him at any time",
     "mivm": "day",
-    "s": "day",
     "vbimi": "and in the days",
     "vbimicm": "and in your days",
     "vbimim": "days",
@@ -16280,7 +16372,8 @@ export const all_stra = {
     "vivqim": "and jokim"
   },
   "H3138": {
-    "ivrh": "the first rain"
+    "ivrh": "the first rain",
+    "virh": "both the former"
   },
   "H3139": {
     "ivrh": "of jorah"
@@ -16337,7 +16430,8 @@ export const all_stra = {
     "vitr": "and further"
   },
   "H3149": {
-    "vixiel": "and jeziel"
+    "vixiel": "and jeziel",
+    "vixvel": "and jeziel"
   },
   "H315": {
     "vekrk": "and aharah"
@@ -16385,6 +16479,7 @@ export const all_stra = {
     "ekrkl": "of aharhel"
   },
   "H3160": {
+    "ikbh": "jehubbah",
     "vkbh": "jehubbah"
   },
   "H3161": {
@@ -16431,6 +16526,7 @@ export const all_stra = {
   },
   "H3171": {
     "ikiel": "of jehiel",
+    "ikvel": "jehiel",
     "vikiel": "and jehiel"
   },
   "H3172": {
@@ -16447,6 +16543,9 @@ export const all_stra = {
   },
   "H3174": {
     "vikih": "and jehiah"
+  },
+  "H3175": {
+    "vikil": "that a man should both hope"
   },
   "H3176": {
     "eikl": "will i wait",
@@ -16469,7 +16568,7 @@ export const all_stra = {
     "tvkl": "shalt thou tarry",
     "veiklh": "unto me and when i waited",
     "vhvklti": "when i had waited",
-    "viikl": "and he stayed",
+    "viikl": "and he tarried",
     "viklv": "and waited",
     "vivkl": "and he tarried"
   },
@@ -16512,14 +16611,18 @@ export const all_stra = {
   "H3185": {
     "ikziel": "jahziel"
   },
+  "H3186": {
+    "viikr": "but he tarried longer"
+  },
   "H3187": {
     "bhtikw": "was reckoned",
     "hmtikwim": "among those that were reckoned by genealogy",
-    "htikw": "and with him were reckoned by genealogy",
+    "htikw": "both to the genealogy",
     "htikwm": "beside their genealogy",
     "htikwv": "were reckoned by genealogies",
     "lhtikw": "concerning genealogies",
-    "vhtikwm": "and the number"
+    "vhtikwm": "and the number",
+    "vlhtikw": "and to the genealogy"
   },
   "H3188": {
     "hikw": "of the genealogy"
@@ -16625,8 +16728,7 @@ export const all_stra = {
     "vbiin": "or for wine",
     "vhiin": "and the wine",
     "viin": "and wine",
-    "vmiin": "and of the wine",
-    "vwmn": "and wine"
+    "vmiin": "and of the wine"
   },
   "H3198": {
     "evcik": "in him but i will maintain",
@@ -16678,6 +16780,7 @@ export const all_stra = {
   "H3201": {
     "evcl": "i cannot",
     "hevcl": "can",
+    "hicvl": "able",
     "hivcl": "can",
     "icl": "could",
     "iclh": "could",
@@ -16687,7 +16790,7 @@ export const all_stra = {
     "iclv": "could",
     "icvl": "that could",
     "ivcl": "cannot",
-    "ivclv": "against thee but they shall not prevail",
+    "ivclv": "could",
     "ivclvn": "might",
     "nvcl": "we cannot",
     "tvcl": "thou mayest",
@@ -16707,14 +16810,15 @@ export const all_stra = {
     "ivcl": "that can",
     "tcvl": "thou canst",
     "ticvl": "thou canst",
+    "tvcl": "thou canst",
     "viclh": "and prevailed"
   },
   "H3203": {
+    "icilih": "also was jecoliah",
     "iclih": "also was jecoliah",
     "iclihv": "was jecholiah"
   },
   "H3204": {
-    "_": "jeconiah",
     "icnih": "jeconiah",
     "icnihv": "jeconiah",
     "icvnih": "jeconiah"
@@ -16799,7 +16903,7 @@ export const all_stra = {
     "vild": "and bring forth",
     "vildh": "and born",
     "vildt": "and bear",
-    "vildv": "bare",
+    "vildv": "born",
     "vitildv": "and they declared their pedigrees",
     "vivld": "and begat",
     "vivldv": "born",
@@ -16817,6 +16921,7 @@ export const all_stra = {
     "ildihn": "their young ones",
     "ildim": "children",
     "ildiv": "sons",
+    "ildv": "when his young ones",
     "lild": "with the child",
     "mildi": "children",
     "vbildi": "themselves in the children",
@@ -16860,7 +16965,90 @@ export const all_stra = {
     "vilid": "of it and he that is born"
   },
   "H3212": {
-    "lc": "go"
+    "blctc": "when thou goest",
+    "blctm": "not as they went",
+    "blctn": "they went",
+    "blctv": "as he went",
+    "eilch": "i will go",
+    "elc": "i will go",
+    "elch": "i will go",
+    "evlic": "to go",
+    "evlicm": "them i will cause them to walk",
+    "helc": "shall i go",
+    "hilc": "them whether they will walk",
+    "hilcv": "walk",
+    "hilici": "away",
+    "hlicc": "led",
+    "hlicv": "carry",
+    "hmvlic": "that led",
+    "hmvlicc": "who led",
+    "hnlc": "shall we go",
+    "htlc": "wilt thou go",
+    "htlci": "i will go",
+    "hvlic": "those carried",
+    "hvlicm": "not when he led",
+    "ilc": "go",
+    "ilcv": "they went",
+    "ilcvn": "and walk",
+    "ivlc": "shall bring",
+    "ivlic": "shall carry",
+    "ivlicm": "shall lead them forth",
+    "lc": "go",
+    "lch": "come",
+    "lci": "go",
+    "lcn": "go",
+    "lcnh": "go",
+    "lct": "walketh",
+    "lctc": "thy walking",
+    "lcti": "when i went",
+    "lctm": "and went",
+    "lctv": "and went",
+    "lcv": "come",
+    "lhlicv": "to carry",
+    "llct": "to go",
+    "lmvlic": "to him which led",
+    "mlct": "to go",
+    "mvlcvt": "with me whither do these bear",
+    "mvlic": "he leadeth",
+    "mvlicc": "he led",
+    "mvlicm": "that led",
+    "ne": "unto him come",
+    "nlc": "we will go",
+    "nlch": "let us go",
+    "tlc": "thou shalt go",
+    "tlci": "but if thou wilt not go",
+    "tlcnh": "shall flow",
+    "tlcv": "and go",
+    "tlcvn": "ye shall not go",
+    "vblct": "went",
+    "vblctc": "and when thou walkest",
+    "vblctm": "and when they were departed",
+    "velc": "so i went",
+    "velch": "that i may go",
+    "vevlc": "and led",
+    "vevlich": "follow",
+    "vhlctih": "her and bring",
+    "vhvlc": "and go",
+    "vhvlcti": "to walk",
+    "vhvlicv": "and leadeth",
+    "vilc": "went",
+    "vilcv": "and went",
+    "vivlc": "to go",
+    "vivlcni": "this then he brought",
+    "vivlichv": "and carried",
+    "vivlicm": "so he led",
+    "vlc": "and go",
+    "vlch": "and come",
+    "vlci": "and come away",
+    "vlcv": "and go",
+    "vllct": "and to walk",
+    "vnlc": "we went through",
+    "vnlch": "come",
+    "vtlc": "and she went",
+    "vtlci": "and art come",
+    "vtlcnh": "went",
+    "vtlcv": "and ye walk",
+    "wilc": "to go"
   },
   "H3213": {
     "eilil": "therefore will i howl",
@@ -16937,7 +17125,7 @@ export const all_stra = {
     "imimh": "jemima"
   },
   "H3225": {
-    "bimin": "thee with the right hand",
+    "bimin": "on the right side",
     "biminc": "by thy right hand",
     "biminh": "is in her right hand",
     "bimini": "in my right hand",
@@ -16970,7 +17158,7 @@ export const all_stra = {
     "vimin": "and jamin"
   },
   "H3227": {
-    "himni": "on thy right"
+    "himini": "on thy right"
   },
   "H3228": {
     "himini": "of the jaminites"
@@ -17013,7 +17201,7 @@ export const all_stra = {
     "vimrh": "and imrah"
   },
   "H3237": {
-    "vhmwni": "me that i may feel"
+    "vhimwni": "me that i may feel"
   },
   "H3238": {
     "hivnh": "the oppressing",
@@ -17078,6 +17266,7 @@ export const all_stra = {
     "weniknv": "because i should leave"
   },
   "H3241": {
+    "vinim": "and janum",
     "vinvm": "and janum"
   },
   "H3242": {
@@ -17124,6 +17313,7 @@ export const all_stra = {
     "isdt": "thou hast founded",
     "isdtm": "that thou hast founded",
     "isdtv": "thou hast established",
+    "isdv": "have laid the foundation",
     "lisd": "to lay the foundation",
     "lisvd": "to lay the foundation",
     "misdim": "set",
@@ -17152,9 +17342,10 @@ export const all_stra = {
     "isvdtv": "his foundation"
   },
   "H3249": {
-    "vsvri": "and they that depart"
+    "isvri": "and they that depart"
   },
   "H325": {
+    "ekwrw": "ahasuerus",
     "ekwvrvw": "ahasuerus",
     "ekwvrw": "ahasuerus"
   },
@@ -17187,7 +17378,7 @@ export const all_stra = {
     "isfv": "no more",
     "isif": "lest if he should exceed",
     "isifv": "them any more",
-    "ivsf": "so and more",
+    "ivsf": "no more again",
     "ivsfv": "no more",
     "ivsfvn": "to me and more",
     "ivsif": "more",
@@ -17290,6 +17481,7 @@ export const all_stra = {
     "hekwtri": "and haahashtari"
   },
   "H3260": {
+    "iadi": "of iddo",
     "iadv": "of iddo"
   },
   "H3261": {
@@ -17302,7 +17494,8 @@ export const all_stra = {
     "iavz": "and jeuz"
   },
   "H3265": {
-    "iair": "of jair"
+    "iair": "of jair",
+    "iavr": "of jair"
   },
   "H3266": {
     "iavw": "jeush",
@@ -17337,7 +17530,12 @@ export const all_stra = {
   },
   "H3273": {
     "iaiel": "jeiel",
-    "viaiel": "and jeiel"
+    "iavel": "jehiel",
+    "viaiel": "and jeiel",
+    "viavel": "and jeiel"
+  },
+  "H3274": {
+    "iaiw": "jeush"
   },
   "H3275": {
     "viacn": "and jachan"
@@ -17385,7 +17583,7 @@ export const all_stra = {
     "vbian": "because"
   },
   "H3283": {
-    "ci": "like the ostriches",
+    "anim": "like the ostriches",
     "cianim": "like the ostriches"
   },
   "H3284": {
@@ -17414,6 +17612,7 @@ export const all_stra = {
   "H3289": {
     "eiazc": "i will give thee counsel",
     "eiazh": "i will guide",
+    "hiavzh": "that is purposed",
     "hlivaz": "counsel",
     "iaz": "counsel",
     "iazh": "hath purposed",
@@ -17479,8 +17678,7 @@ export const all_stra = {
     "viarh": "jarah"
   },
   "H3295": {
-    "biart": "it in an honeycomb",
-    "iarvt": "the forests"
+    "biart": "it in an honeycomb"
   },
   "H3296": {
     "ergim": "of jaare–oregim",
@@ -17493,7 +17691,8 @@ export const all_stra = {
     "viarwih": "and jaresiah"
   },
   "H3299": {
-    "viawi": "and jaasau"
+    "viawi": "and jaasau",
+    "viawv": "and jaasau"
   },
   "H33": {
     "ebi": "of the abi–ezrites",
@@ -17609,7 +17808,6 @@ export const all_stra = {
     "chvziem": "and it came to pass when they brought out",
     "czet": "do",
     "czeti": "unto him as soon as i am gone out",
-    "dvid": "went out",
     "evzie": "and that i should bring forth",
     "evzieh": "them i will bring out",
     "eze": "i will go out",
@@ -17667,6 +17865,7 @@ export const all_stra = {
     "izetm": "brought you out",
     "izev": "went out",
     "izevt": "out",
+    "izti": "came i out",
     "izve": "to",
     "lhvzehv": "that he should carry",
     "lhvzie": "to bring out",
@@ -17692,19 +17891,19 @@ export const all_stra = {
     "tvzieni": "pull me out",
     "tvziev": "and bring forth",
     "tze": "shall go forth",
-    "tzei": "that thou go out",
+    "tzei": "go not forth",
     "tzenh": "and ye shall go out",
     "tzev": "and ye shall not go out",
     "vbhvziem": "and when they brought out",
     "vbzetm": "and when they go forth",
     "vbzetv": "and when he cometh",
     "vevze": "therefore will i bring forth",
+    "vevzeh": "them with commandment",
     "vevzie": "and i brought",
     "vevziem": "wherefore i caused them to go forth",
     "veze": "and went forth",
     "vezeh": "and i went out",
     "vezie": "and brought you forth",
-    "vezvh": "them with commandment",
     "vhivze": "but he that goeth out",
     "vhivzet": "that went out",
     "vhize": "but he that goeth forth",
@@ -17798,6 +17997,7 @@ export const all_stra = {
     "ezigh": "let me now leave",
     "hzg": "to set",
     "hzigni": "me he hath made",
+    "hzignv": "me he hath made",
     "izg": "be stayed",
     "mzig": "behold i will put",
     "tzig": "him shalt thou set",
@@ -17827,22 +18027,24 @@ export const all_stra = {
   },
   "H3326": {
     "hizia": "chamber",
+    "hizva": "chamber",
     "izia": "chambers",
+    "izva": "chambers",
     "izvai": "bed"
   },
   "H3327": {
     "bizkq": "for in isaac",
     "izkq": "and isaac",
     "lizkq": "isaac",
-    "s": "isaac",
     "vizkq": "and isaac",
     "vlizkq": "and isaac"
   },
   "H3328": {
-    "vzkr": "and jezoar"
+    "izkr": "and jezoar"
   },
   "H3329": {
-    "vmiziei": "they that came forth"
+    "vmiziei": "they that came forth",
+    "vmiziev": "they that came forth"
   },
   "H333": {
     "epr": "of ater"
@@ -17869,13 +18071,14 @@ export const all_stra = {
     "izvq": "is as firm",
     "izvqim": "were cast",
     "lzqt": "were cast",
+    "mizqt": "the vessels to her and she poured out",
     "mvzq": "a molten",
     "mvzqt": "the vessels to her and she poured out",
     "mzq": "of molten",
     "vizq": "and he cast",
     "vizqm": "and laid them out",
     "vizqt": "and pour",
-    "vizqv": "and they set down",
+    "vizqv": "and pour",
     "vizvq": "is as firm",
     "vtzq": "and poured them out",
     "zq": "pour out"
@@ -17892,6 +18095,7 @@ export const all_stra = {
   },
   "H3335": {
     "ezrc": "i formed",
+    "ezvrc": "i formed",
     "hcivzr": "is in the potter’s",
     "hivzr": "to the potter",
     "hivzrim": "these were the potters",
@@ -17908,7 +18112,7 @@ export const all_stra = {
     "izrtic": "i have formed",
     "izrtiv": "i have formed",
     "izrtm": "thou hast made",
-    "izrv": "that the maker",
+    "izrv": "formed",
     "livzrv": "as the potter’s",
     "lizrv": "with his maker",
     "nvzr": "formed",
@@ -17939,15 +18143,19 @@ export const all_stra = {
   "H334": {
     "epr": "lefthanded"
   },
+  "H3340": {
+    "hizri": "of the jezerites"
+  },
   "H3341": {
     "hzit": "he hath kindled",
     "hzitv": "set",
     "iztv": "shall be burned",
     "mzit": "behold i will kindle",
-    "nzth": "that is kindled",
+    "nzth": "are burned",
     "nztv": "thereof are burned",
     "tzitv": "that ye shall set",
     "tztnh": "shall be burned",
+    "vhvztih": "set",
     "vhzitv": "and set",
     "vhzitvh": "set",
     "vhzti": "and i will kindle",
@@ -18196,6 +18404,7 @@ export const all_stra = {
     "hmiretc": "thee for fear",
     "ireh": "fear",
     "iret": "the fear",
+    "iretc": "is not this thy fear",
     "ireti": "my fear",
     "iretv": "you and that his fear",
     "liretc": "who is devoted to thy fear",
@@ -18234,7 +18443,6 @@ export const all_stra = {
     "brdt": "came down",
     "brdti": "when i go down",
     "brdtv": "came down",
-    "bvr": "that i should not go down",
     "civrdi": "as those that go down",
     "erd": "i will go down",
     "erdh": "i will go down",
@@ -18271,6 +18479,7 @@ export const all_stra = {
     "lhvrid": "to carry it down",
     "lrdt": "to go down",
     "mirdi": "that i should not go down",
+    "mivrdi": "that i should not go down",
     "mrdh": "not to go down",
     "mrdt": "him from going down",
     "mvrid": "he bringeth down",
@@ -18329,8 +18538,7 @@ export const all_stra = {
     "ird": "jered"
   },
   "H3383": {
-    "birdn": "of jordan",
-    "f": "jordan",
+    "birdn": "jordan",
     "hirdn": "jordan",
     "hirdnh": "to jordan",
     "irdn": "by jordan",
@@ -18343,6 +18551,7 @@ export const all_stra = {
     "hirh": "man who casteth",
     "hirim": "shot",
     "hivrim": "of the archers",
+    "hmvreim": "shot",
     "hmvrim": "of the archers",
     "hrni": "teach",
     "hrtic": "i have taught",
@@ -18373,6 +18582,7 @@ export const all_stra = {
     "vevrc": "thee and teach",
     "vhvriti": "and will teach",
     "vhvritic": "and teach",
+    "virev": "shot",
     "virh": "and rain",
     "viriti": "the description hither to me that i may cast",
     "virm": "shall shoot",
@@ -18411,7 +18621,6 @@ export const all_stra = {
     "lirvwlm": "to jerusalem",
     "mirvwlim": "of jerusalem",
     "mirvwlm": "from jerusalem",
-    "s": "at jerusalem",
     "vbirvwlm": "and in jerusalem",
     "virvwlim": "and jerusalem",
     "virvwlm": "and jerusalem",
@@ -18499,7 +18708,7 @@ export const all_stra = {
     "vlebinc": "for the poor"
   },
   "H340": {
-    "eibic": "then i will be an enemy"
+    "veibti": "then i will be an enemy"
   },
   "H3400": {
     "viriel": "and jeriel"
@@ -18528,7 +18737,6 @@ export const all_stra = {
     "irkv": "near jericho",
     "lirikv": "unto jericho",
     "mirikv": "from jericho",
-    "s": "of jericho",
     "virikv": "now jericho"
   },
   "H3406": {
@@ -18609,7 +18817,6 @@ export const all_stra = {
     "veibi": "of mine enemies",
     "veibinv": "and our enemies",
     "veibiv": "his enemies",
-    "veibti": "unto thine enemies",
     "vevib": "and enemy",
     "vmeibi": "from mine enemies"
   },
@@ -18619,9 +18826,11 @@ export const all_stra = {
   "H3411": {
     "bircti": "in the sides",
     "birctim": "in the two sides",
+    "birctm": "on the two sides",
     "ircti": "to the sides",
     "lirctim": "for the sides",
     "mircti": "parts",
+    "mircvti": "on the sides",
     "virctv": "and his border",
     "vlircti": "and for the sides"
   },
@@ -18643,8 +18852,7 @@ export const all_stra = {
   },
   "H3415": {
     "ira": "grieved",
-    "irah": "shall be grievous",
-    "vira": "so that it went ill"
+    "irah": "shall be grievous"
   },
   "H3416": {
     "virfel": "and irpeel"
@@ -18679,12 +18887,11 @@ export const all_stra = {
     "irqam": "of jorkoam"
   },
   "H3422": {
+    "birqrq": "with yellow",
     "irqrq": "be greenish",
-    "irqrqt": "greenish",
-    "vebrvtih": "with yellow"
+    "irqrqt": "greenish"
   },
   "H3423": {
-    "brwat": "to possess",
     "eirwnh": "that i shall inherit it",
     "evriw": "for i will cast out",
     "evriwm": "them will i drive out",
@@ -18692,12 +18899,12 @@ export const all_stra = {
     "hirw": "an heir",
     "hivrw": "the heir",
     "hlirwnv": "us to take that we have",
+    "hriw": "had cast out",
     "hvriw": "cast out",
     "hvriwm": "driving them out",
     "hvriwv": "drive them out",
     "hvrwt": "who didst drive out",
     "hvrwtnv": "which thou hast given us to inherit",
-    "ihvh": "had cast out",
     "iirw": "shall inherit",
     "iirwc": "shall be thine heir",
     "iirwm": "shall possess",
@@ -18724,6 +18931,7 @@ export const all_stra = {
     "lrwth": "to possess",
     "lrwtv": "to possess",
     "mvriw": "maketh poor",
+    "mvriwm": "to possess",
     "nirw": "shall drive out",
     "nirwh": "in possession",
     "rw": "to possess",
@@ -18735,13 +18943,12 @@ export const all_stra = {
     "tvriwmv": "shall destroy",
     "tvriwv": "but if ye will not drive out",
     "tvrw": "lest thou come to poverty",
-    "vbrwat": "to possess",
     "vevrwnv": "and disinherit",
     "vhvriw": "drive out",
     "vhvrw": "drive out",
     "vhvrwtim": "me then i shall be able to drive them out",
     "vhvrwtm": "and seize",
-    "viirw": "possess",
+    "viirw": "thereof and drove out",
     "viirwm": "them and they succeeded",
     "viirwv": "and possessed",
     "virw": "drove",
@@ -18791,6 +18998,7 @@ export const all_stra = {
     "bwbtm": "against me when they dwelt",
     "bwbtnv": "when we sat",
     "bwbtv": "when he sitteth",
+    "cwbt": "sat",
     "cwbtv": "as soon as he sat",
     "evwibc": "will yet make thee to dwell",
     "ewb": "to sit",
@@ -18804,6 +19012,7 @@ export const all_stra = {
     "hiwbi": "o thou that dwellest",
     "hiwbim": "which dwell",
     "hiwbt": "o thou that art situate",
+    "hiwbti": "o thou that art situate",
     "hnvwbvt": "that are inhabited",
     "hvwb": "make",
     "hvwbti": "to dwell",
@@ -18816,6 +19025,7 @@ export const all_stra = {
     "ivwbim": "sat",
     "ivwbiv": "and upon the inhabitants",
     "ivwbt": "thou inhabitant",
+    "ivwbti": "that dwellest",
     "ivwibv": "to be inhabited",
     "iwb": "sat",
     "iwbh": "sit",
@@ -18847,18 +19057,18 @@ export const all_stra = {
     "mvwib": "setteth",
     "mvwibi": "to keep",
     "mwbt": "dwelt",
-    "nvwbh": "not inhabited",
+    "nvwbh": "which are not inhabited",
     "nvwbt": "inhabited",
     "nvwbv": "which are not inhabited",
     "nwb": "we will not dwell",
+    "tiwbnh": "shall not return",
     "tvwb": "thou shalt be inhabited",
     "tvwibni": "makest me dwell",
     "twb": "shall dwell",
     "twbi": "and shall set",
-    "twbnh": "shall not return",
     "twbv": "ye shall dwell",
     "vbiwbi": "and among them that dwell",
-    "vewb": "and sit",
+    "vewb": "and i sat",
     "vewbh": "dwell",
     "vhivwbim": "inhabitants",
     "vhiwb": "whereon he sat",
@@ -18872,6 +19082,7 @@ export const all_stra = {
     "vhwibv": "and set",
     "vivwb": "to dwell",
     "vivwbi": "and the inhabitants",
+    "vivwibini": "me and set",
     "vivwibni": "me and set",
     "vivwibv": "and set",
     "viwb": "and dwelt",
@@ -18917,6 +19128,10 @@ export const all_stra = {
   "H3428": {
     "liwbeb": "to jeshebeab"
   },
+  "H3429": {
+    "bwbt": "in the seat",
+    "iwb": "in the seat"
+  },
   "H343": {
     "beidcm": "at your calamity",
     "eid": "the calamity",
@@ -18929,7 +19144,9 @@ export const all_stra = {
     "veidcm": "and your destruction"
   },
   "H3430": {
-    "bnb": "and ishbi–benob"
+    "bnb": "and ishbi–benob",
+    "viwbi": "and ishbi–benob",
+    "viwbv": "and ishbi–benob"
   },
   "H3431": {
     "iwbk": "and ishbah"
@@ -18954,6 +19171,7 @@ export const all_stra = {
     "liwbqwh": "to joshbekashah"
   },
   "H3437": {
+    "iwib": "jashub",
     "iwvb": "jashub",
     "liwvb": "of jashub"
   },
@@ -19040,7 +19258,7 @@ export const all_stra = {
     "viwimel": "and jesimiel"
   },
   "H3451": {
-    "mvt": "seize"
+    "iwimvt": "seize"
   },
   "H3452": {
     "biwimn": "in the desert",
@@ -19060,8 +19278,7 @@ export const all_stra = {
     "iwiwi": "of jeshishai"
   },
   "H3455": {
-    "viiwm": "him and he was put",
-    "vivwm": "and there was set"
+    "viiwm": "and there was set"
   },
   "H3456": {
     "tiwmnh": "shall be desolate",
@@ -19089,8 +19306,7 @@ export const all_stra = {
     "veih": "where are now"
   },
   "H3460": {
-    "iwmaihv": "ishmaiah",
-    "viwmaih": "and ismaiah"
+    "iwmaihv": "ishmaiah"
   },
   "H3461": {
     "viwmri": "ishmerai"
@@ -19107,7 +19323,6 @@ export const all_stra = {
     "veiwn": "and sleep",
     "veiwnh": "and slept",
     "viiwn": "and he slept",
-    "viwn": "old store",
     "viwnv": "and sleep",
     "vnvwntm": "and ye shall have remained long",
     "vtiwnhv": "and she made him sleep"
@@ -19124,7 +19339,8 @@ export const all_stra = {
   "H3465": {
     "hiwnh": "of the old",
     "iwn": "yet of old",
-    "iwnim": "and old"
+    "iwnim": "and old",
+    "viwn": "the old"
   },
   "H3466": {
     "iwnh": "thereof and jeshanah"
@@ -19256,8 +19472,10 @@ export const all_stra = {
   },
   "H3474": {
     "eiwr": "straight",
+    "evwr": "straight",
     "hiwr": "straight",
     "hmiwrim": "who go right",
+    "hvwr": "straight",
     "iiwr": "uprightly",
     "iiwrv": "look straight",
     "iwr": "meet",
@@ -19306,7 +19524,6 @@ export const all_stra = {
   "H3478": {
     "biwrel": "in israel",
     "ciwrel": "even like israel",
-    "f": "of israel",
     "iwrel": "of israel",
     "liwrel": "of israel",
     "miwrel": "from israel",
@@ -19343,7 +19560,6 @@ export const all_stra = {
     "viwrvn": "and thou jesurun"
   },
   "H3485": {
-    "ad": "them even unto issachar",
     "biwwcr": "of issachar",
     "iwwcr": "of issachar",
     "liwwcr": "of issachar",
@@ -19463,6 +19679,7 @@ export const all_stra = {
     "itri": "my cord",
     "itrim": "withs",
     "itrm": "the rest",
+    "itrv": "my cord",
     "mitr": "of the remnant",
     "vbitr": "and toward the remnant",
     "vitr": "now the rest",
@@ -19491,7 +19708,6 @@ export const all_stra = {
     "itrt": "because the riches"
   },
   "H3503": {
-    "itr": "and jethro",
     "itrv": "and jethro"
   },
   "H3504": {
@@ -19537,7 +19753,7 @@ export const all_stra = {
   },
   "H3512": {
     "hcevt": "sad",
-    "vnceh": "against him therefore he shall be grieved"
+    "vnceh": "the broken"
   },
   "H3513": {
     "bhcbdi": "when i have gotten me honour",
@@ -19674,11 +19890,13 @@ export const all_stra = {
     "eilim": "rams",
     "eiliv": "were upon the posts",
     "eilm": "rams",
+    "eilv": "were upon the posts",
     "el": "each post",
     "elihm": "neither their trees",
     "elihmh": "and upon each post",
     "elim": "of rams’",
     "eliv": "thereof the posts",
+    "elv": "thereof the posts",
     "heil": "the ram",
     "heilim": "rams",
     "heilm": "rams",
@@ -19693,7 +19911,9 @@ export const all_stra = {
     "veilim": "rams",
     "veiliv": "and the posts",
     "veilm": "rams",
-    "veliv": "thereof and the posts"
+    "veilv": "and the posts",
+    "veliv": "thereof and the posts",
+    "velv": "thereof and the posts"
   },
   "H3520": {
     "cbvdh": "upon a stately",
@@ -19777,6 +19997,7 @@ export const all_stra = {
     "ncbwvt": "brought unto bondage",
     "vcbwh": "and subdue it",
     "vcbwv": "and subdue",
+    "vicbiwvm": "and brought them into subjection",
     "vicbwvm": "and brought them into subjection",
     "vncbwh": "is subdued",
     "vtcbwv": "and brought them into subjection"
@@ -19799,6 +20020,7 @@ export const all_stra = {
     "cd": "the barrel",
     "cdc": "thy pitcher",
     "cdh": "her pitcher",
+    "cdim": "barrels",
     "hcdim": "the pitchers",
     "mcdc": "of thy pitcher",
     "vcdh": "with her pitcher",
@@ -19980,11 +20202,9 @@ export const all_stra = {
     "vcvmx": "and tablets"
   },
   "H3559": {
-    "_": "and prepare",
     "bhcin": "had prepared",
     "bhcinv": "when he prepared",
     "chcin": "had established",
-    "ci": "had prepared",
     "cvnn": "he were ready",
     "cvnnh": "establish",
     "cvnnhv": "establish",
@@ -20007,7 +20227,6 @@ export const all_stra = {
     "hhcin": "had prepared",
     "hmcin": "who prepareth",
     "hvcn": "it is prepared",
-    "ibin": "he directeth",
     "icin": "it right",
     "icnv": "be fitted",
     "icvn": "shall be established",
@@ -20058,6 +20277,7 @@ export const all_stra = {
   "H356": {
     "eiln": "of elon",
     "eilvn": "of elon",
+    "elvn": "and elon",
     "lelvn": "of elon",
     "veilvn": "and elon",
     "velvn": "and elon"
@@ -20070,9 +20290,12 @@ export const all_stra = {
   },
   "H3562": {
     "cnnihv": "of cononiah",
-    "vcnnihv": "conaniah"
+    "cvnnihv": "of cononiah",
+    "vcnnihv": "conaniah",
+    "vcvnnihv": "conaniah"
   },
   "H3563": {
+    "bcvs": "in the cup",
     "ccvs": "i am like an owl",
     "cvs": "the cup",
     "cvsh": "her cup",
@@ -20129,6 +20352,10 @@ export const all_stra = {
   },
   "H3570": {
     "cvwi": "of cushi"
+  },
+  "H3571": {
+    "cwit": "an ethiopian",
+    "hcwit": "an ethiopian"
   },
   "H3572": {
     "cvwn": "of cushan"
@@ -20309,8 +20536,8 @@ export const all_stra = {
     "vcimh": "and pleiades"
   },
   "H3599": {
+    "bcis": "in the cup",
     "bcisc": "thou shalt not have in thy bag",
-    "bcvs": "in the cup",
     "cis": "purse",
     "mcis": "out of the bag",
     "vbcis": "and with the bag"
@@ -20392,11 +20619,14 @@ export const all_stra = {
   "H361": {
     "lelmvt": "and likewise to the arches",
     "veilmiv": "and the arches",
+    "veilmv": "and the arches",
     "velmiv": "thereof and the arches",
-    "velmv": "and the arches",
+    "velmv": "thereof and the arches",
     "velmvt": "and the arches",
     "vleilmiv": "in it and in the arches",
-    "vlelmiv": "thereof and the arches"
+    "vleilmv": "in it and in the arches",
+    "vlelmiv": "thereof and the arches",
+    "vlelmv": "thereof and the arches"
   },
   "H3610": {
     "cleim": "mingled"
@@ -20421,6 +20651,9 @@ export const all_stra = {
   "H3613": {
     "bclb": "in caleb–ephratah",
     "efrth": "in caleb–ephratah"
+  },
+  "H3614": {
+    "clbi": "and he was of the house of caleb"
   },
   "H3615": {
     "bclvt": "are consumed",
@@ -20454,7 +20687,7 @@ export const all_stra = {
     "icl": "is consumed away",
     "iclh": "shall fail",
     "iclivn": "and they all shall fail",
-    "iclv": "and consumed",
+    "iclv": "they spend",
     "lclh": "until they had made an end",
     "lcltm": "them to destroy them utterly",
     "lclvt": "upon them to accomplish",
@@ -20523,6 +20756,7 @@ export const all_stra = {
     "clvbi": "and chelubai"
   },
   "H3622": {
+    "clhi": "chelluh",
     "clvhv": "chelluh"
   },
   "H3623": {
@@ -20566,6 +20800,7 @@ export const all_stra = {
     "vmcli": "of the vessels"
   },
   "H3628": {
+    "hclie": "out of prison",
     "hclve": "out of prison"
   },
   "H3629": {
@@ -20608,7 +20843,8 @@ export const all_stra = {
     "iwtcllvn": "set up",
     "lwcllh": "and to make up",
     "vwcllh": "and set up",
-    "vwcllv": "and finished"
+    "vwcllv": "and finished",
+    "wclilv": "and have set up"
   },
   "H3636": {
     "vcll": "and chelal"
@@ -20676,6 +20912,7 @@ export const all_stra = {
   },
   "H3643": {
     "cmhm": "chimham",
+    "cmvhm": "of chimham",
     "vcmhn": "and chimham"
   },
   "H3644": {
@@ -20690,6 +20927,7 @@ export const all_stra = {
     "vcmv": "and when"
   },
   "H3645": {
+    "cmiw": "and chemosh",
     "cmvw": "of chemosh",
     "lcmvw": "chemosh",
     "mcmvw": "of chemosh",
@@ -20734,6 +20972,7 @@ export const all_stra = {
     "vcnv": "and his foot"
   },
   "H3654": {
+    "cn": "manner",
     "cnim": "and lice",
     "hcnim": "lice",
     "hcnm": "lice",
@@ -20817,6 +21056,7 @@ export const all_stra = {
   },
   "H3667": {
     "cnan": "of canaan",
+    "cnanih": "whose traffickers",
     "vcnan": "and canaan"
   },
   "H3668": {
@@ -20868,6 +21108,7 @@ export const all_stra = {
     "cnfihn": "their wings",
     "cnfim": "wings",
     "cnfiv": "wing",
+    "cnfv": "her wings",
     "cnfvt": "corners",
     "hcnf": "of the borders",
     "hcnfim": "wings",
@@ -20890,7 +21131,8 @@ export const all_stra = {
     "vmtcnwin": "being gathered together"
   },
   "H3674": {
-    "cnvtiv": "of their companions"
+    "cnvtiv": "of their companions",
+    "cnvtv": "of their companions"
   },
   "H3675": {
     "cnvthvn": "of their companions",
@@ -20924,7 +21166,8 @@ export const all_stra = {
     "vlcsev": "and upon his throne"
   },
   "H3679": {
-    "csdeh": "the chaldean"
+    "csdeh": "the chaldean",
+    "csdie": "the chaldean"
   },
   "H368": {
     "emim": "them emims",
@@ -20957,6 +21200,7 @@ export const all_stra = {
     "icsnh": "shall cover",
     "icsnv": "covered",
     "icsv": "cover",
+    "icsvmv": "cover",
     "itcsv": "neither shall they cover",
     "lcst": "of covering",
     "lcstv": "on this side and on that side to cover",
@@ -21045,6 +21289,7 @@ export const all_stra = {
   "H369": {
     "cein": "had well nigh",
     "ein": "past",
+    "einm": "and are not",
     "einnv": "except",
     "hein": "unto him is there never",
     "lein": "in abundance",
@@ -21059,7 +21304,8 @@ export const all_stra = {
   },
   "H3691": {
     "bcslv": "even in chisleu",
-    "csliv": "chisleu"
+    "csliv": "chisleu",
+    "cslv": "chisleu"
   },
   "H3692": {
     "cslvn": "of chislon"
@@ -21158,7 +21404,7 @@ export const all_stra = {
     "hcaisv": "had provoked",
     "hcasni": "to provoke me to anger",
     "hcast": "wherewith thou hast provoked me to anger",
-    "hcasvni": "in her why have they provoked me to anger",
+    "hcasvni": "that ye might provoke me to anger",
     "hmcaisim": "that provoketh me to anger",
     "icaishv": "provoked they him to anger",
     "lcavs": "to be angry",
@@ -21170,7 +21416,7 @@ export const all_stra = {
     "mcasim": "me to anger",
     "tcaisv": "them and provoke me not to anger",
     "tcasnh": "so she provoked",
-    "vcas": "it and be grieved",
+    "vcas": "sorrow",
     "vcasth": "also provoked",
     "vhcasti": "i will also vex",
     "vicaisv": "thus they provoked him to anger",
@@ -21348,6 +21594,7 @@ export const all_stra = {
   },
   "H3726": {
     "hamnh": "and chephar–haammonai",
+    "hamni": "and chephar–haammonai",
     "vcfr": "and chephar–haammonai"
   },
   "H3727": {
@@ -21460,7 +21707,6 @@ export const all_stra = {
   },
   "H3746": {
     "hcri": "and the captains",
-    "hcrti": "was over the cherethites",
     "lcri": "with the captains"
   },
   "H3747": {
@@ -21551,6 +21797,7 @@ export const all_stra = {
   "H376": {
     "beiw": "against that man",
     "beiwh": "against her husband",
+    "benwi": "the men",
     "benwim": "any man",
     "ceiw": "man",
     "cenwi": "every one",
@@ -21560,16 +21807,15 @@ export const all_stra = {
     "eiwi": "my husband",
     "eiwim": "a man",
     "eiwv": "his man",
-    "elf": "men",
     "enwi": "men",
-    "enwim": "one",
+    "enwihn": "her husband",
+    "enwim": "men",
     "enwiv": "every man",
     "heiw": "and the man",
     "henwim": "and the man",
-    "hewh": "her husband",
     "leiw": "to the man",
     "leiwc": "with thy husband",
-    "leiwh": "man",
+    "leiwh": "her husband",
     "leiwi": "to my husband",
     "lenwi": "an hebrew",
     "lenwim": "man",
@@ -21577,9 +21823,8 @@ export const all_stra = {
     "lmeiw": "as men",
     "meiw": "man",
     "meiwh": "from her husband",
-    "menwi": "and there was none of the men",
+    "menwi": "men",
     "mhenwim": "men",
-    "s": "further if the man",
     "vbenwi": "men",
     "veiw": "man",
     "veiwh": "and her husband",
@@ -21736,7 +21981,7 @@ export const all_stra = {
   },
   "H3774": {
     "crtim": "the cherethims",
-    "hcrti": "of the cherethites",
+    "hcrti": "was over the cherethites",
     "vhcrti": "and the cherethites"
   },
   "H3775": {
@@ -21755,6 +22000,7 @@ export const all_stra = {
     "cwd": "and chesed"
   },
   "H3778": {
+    "cwdiim": "of the chaldees",
     "cwdim": "of the chaldeans",
     "cwdimh": "unto chaldea",
     "hcwdim": "of the chaldeans",
@@ -21766,7 +22012,9 @@ export const all_stra = {
     "cwdeh": "of the chaldeans",
     "cwdei": "the chaldeans",
     "cwdein": "chaldeans",
+    "cwdie": "the chaldeans",
     "lcwdei": "to the chaldeans",
+    "lcwdie": "to the chaldeans",
     "vcwdi": "or chaldean"
   },
   "H378": {
@@ -21796,11 +22044,11 @@ export const all_stra = {
     "icwilv": "unless they cause some to fall",
     "icwl": "he shall not fall",
     "icwlv": "shall fall",
+    "icwvlv": "unless they cause some to fall",
     "lhcwilv": "me but they were the ruin",
     "mcwlim": "but let them be overthrown",
     "tcwl": "thou shalt not stumble",
     "tcwli": "to fall",
-    "twcli": "no more neither bereave",
     "vbcwlv": "when he stumbleth",
     "vbhcwlm": "now when they shall fall",
     "vcwl": "shall fall",
@@ -21833,7 +22081,8 @@ export const all_stra = {
     "cwficm": "nor to your sorcerers"
   },
   "H3787": {
-    "hcwrhcwirhcwr": "to direct",
+    "hcwir": "to direct",
+    "hcwr": "to direct",
     "icwr": "shall prosper",
     "vcwr": "seem right"
   },
@@ -21845,7 +22094,6 @@ export const all_stra = {
     "bctbim": "upon them and they were of them that were written",
     "bctbv": "when he had written",
     "bctvb": "when he writeth up",
-    "cctbh": "day thereof and it was written",
     "cctbm": "day thereof and it was written",
     "cctvb": "as it is written",
     "ctb": "write",
@@ -21860,6 +22108,7 @@ export const all_stra = {
     "ctvbim": "are they not written",
     "ectb": "i have written",
     "ectbnh": "and write",
+    "ectvb": "i have written",
     "hctbim": "wrote",
     "hctvb": "according to all that is written",
     "hctvbh": "that are written",
@@ -21868,7 +22117,6 @@ export const all_stra = {
     "ictb": "let it be written",
     "ictbm": "may write",
     "ictbv": "shall be written",
-    "lc": "write",
     "lctb": "of writing",
     "lv": "i have written",
     "nctb": "write",
@@ -21946,7 +22194,7 @@ export const all_stra = {
     "ebim": "of abijam"
   },
   "H380": {
-    "beiwvn": "in the black",
+    "beiwvn": "in obscure",
     "bewvn": "in obscure",
     "ceiwvn": "as the apple"
   },
@@ -22078,6 +22326,9 @@ export const all_stra = {
   "H3813": {
     "lep": "covered"
   },
+  "H3814": {
+    "blep": "softly"
+  },
   "H3815": {
     "lel": "of lael"
   },
@@ -22193,7 +22444,6 @@ export const all_stra = {
   "H3826": {
     "blbvtm": "in their hearts",
     "lbtc": "is thine heart",
-    "lbtm": "and their hearts",
     "lbvt": "the hearts"
   },
   "H3827": {
@@ -22216,9 +22466,11 @@ export const all_stra = {
   "H383": {
     "eiti": "there is",
     "eiticvn": "ye",
+    "eitine": "that we will",
     "eitne": "that we will",
     "eitvhi": "is",
-    "heitc": "art"
+    "heitc": "art",
+    "heitic": "art"
   },
   "H3830": {
     "blbvw": "clothed",
@@ -22465,8 +22717,10 @@ export const all_stra = {
     "lhqt": "the company"
   },
   "H3863": {
+    "le": "that if",
     "lv": "if",
     "lve": "oh",
+    "vle": "though",
     "vlv": "would god that",
     "vlve": "though"
   },
@@ -22480,6 +22734,7 @@ export const all_stra = {
     "vlvd": "and lud"
   },
   "H3866": {
+    "lvdiim": "ludim",
     "lvdim": "ludim",
     "vlvdim": "and the lydians"
   },
@@ -22534,6 +22789,7 @@ export const all_stra = {
     "vhlkt": "and the tables"
   },
   "H3872": {
+    "hlkvt": "of luhith",
     "hlvkit": "of luhith"
   },
   "H3873": {
@@ -22616,10 +22872,11 @@ export const all_stra = {
     "tlini": "i will lodge",
     "tlinv": "that ye murmur",
     "tln": "lodge",
+    "tlvnv": "that ye murmur",
     "vilinv": "to murmur",
     "viln": "lodged",
     "vilnv": "murmured",
-    "vilvnv": "murmured",
+    "vilvnv": "to murmur",
     "vitlnn": "and abideth",
     "vlin": "i pray thee and tarry all night",
     "vlinv": "all night",
@@ -22652,7 +22909,11 @@ export const all_stra = {
     "lvwi": "knead",
     "lwvt": "knead",
     "mlvw": "after he hath kneaded",
+    "vtlvw": "and kneaded",
     "vtlw": "and kneaded"
+  },
+  "H3889": {
+    "lvw": "of laish"
   },
   "H389": {
     "ec": "yet",
@@ -22750,11 +23011,11 @@ export const all_stra = {
     "lkmv": "his bread",
     "llkm": "for bread",
     "llkmc": "for thy food",
-    "mbieim": "bread",
     "mlkm": "meat",
     "mlkmv": "of his bread",
     "vblkm": "and of the bread",
     "vhlkm": "and the bread",
+    "vlhlkm": "and the bread",
     "vlkm": "and bread",
     "vlkmc": "and thy bread",
     "vlkmi": "my meat",
@@ -23072,6 +23333,9 @@ export const all_stra = {
   "H3941": {
     "lfidvt": "of lapidoth"
   },
+  "H3942": {
+    "lfni": "before"
+  },
   "H3943": {
     "ilftv": "are turned aside",
     "vilft": "took hold"
@@ -23294,6 +23558,7 @@ export const all_stra = {
     "hecilh": "of that meat"
   },
   "H3960": {
+    "mlvwni": "slandereth",
     "mlwni": "slandereth",
     "tlwn": "accuse"
   },
@@ -23315,18 +23580,18 @@ export const all_stra = {
   },
   "H3966": {
     "bmed": "is exceeding",
-    "igl": "how greatly",
     "lmed": "a very",
     "med": "very",
     "medc": "and with all thy might",
-    "medv": "and with all his might",
-    "s": "not for he was sore"
+    "medv": "and with all his might"
   },
   "H3967": {
     "bmeh": "for an hundred",
     "hmeh": "of an hundred",
+    "hmeivt": "over hundreds",
     "hmetim": "out of two hundred",
     "hmevt": "of hundreds",
+    "hmievt": "of the hundreds",
     "lmeh": "of an hundred",
     "lmet": "an hundred",
     "lmevt": "by hundreds",
@@ -23354,7 +23619,7 @@ export const all_stra = {
     "mevii": "the desires"
   },
   "H3971": {
-    "mevm": "and if any blot",
+    "mevm": "in whom was no blemish",
     "mmvm": "without spot",
     "mvm": "blemish",
     "mvmm": "themselves their spot",
@@ -23406,7 +23671,6 @@ export const all_stra = {
     "vmeclvt": "as knives"
   },
   "H398": {
-    "_": "in it to eat",
     "becl": "devoured",
     "beclcm": "then it shall be that when ye eat",
     "becli": "among them that did eat",
@@ -23438,7 +23702,7 @@ export const all_stra = {
     "evcl": "of the eater",
     "evclh": "of devouring",
     "evclih": "that eat",
-    "hecl": "that eateth",
+    "hecl": "at all",
     "heclhv": "to eat",
     "heclim": "which did eat",
     "heclt": "that eateth",
@@ -23460,11 +23724,11 @@ export const all_stra = {
     "ieclvh": "eat",
     "ieclvm": "they shall eat",
     "ieclvn": "nor eat",
+    "ivclv": "were higher",
     "lecl": "to eat",
     "leclv": "to be devoured",
     "lecvl": "to eat",
     "lhcil": "to consume",
-    "lkm": "in it to eat",
     "mecil": "behold i will feed",
     "mecilm": "behold i will feed",
     "mecl": "to eat",
@@ -23495,7 +23759,7 @@ export const all_stra = {
     "veclv": "and eat",
     "veclvh": "and eat",
     "veclvm": "in them and devour",
-    "vecvl": "thee and eat",
+    "vecvl": "and eat",
     "vhecilhv": "and feed",
     "vhecl": "and he that eateth",
     "vheclhv": "and feed",
@@ -23518,8 +23782,7 @@ export const all_stra = {
     "vtecl": "and consumed",
     "vteclm": "shall devour",
     "vteclnh": "did eat up",
-    "wiecl": "should eat",
-    "wlvwh": "eating"
+    "wiecl": "should eat"
   },
   "H3980": {
     "cmeclt": "shall be as the fuel",
@@ -23582,6 +23845,7 @@ export const all_stra = {
     "mestim": "i will not cast them away",
     "mestiv": "seeing i have rejected",
     "mestm": "rejected",
+    "mestnv": "rejected",
     "mesv": "thee but they have rejected",
     "mevs": "to refuse",
     "mves": "despiseth",
@@ -23635,13 +23899,14 @@ export const all_stra = {
     "bmbve": "at the entering in",
     "cmbve": "cometh",
     "cmbvei": "as men enter",
-    "hmbie": "was the entry",
     "hmbve": "of the entry",
     "lmbve": "to the entrance",
     "mbev": "unto the going down",
     "mbve": "entry",
-    "mbvev": "his going down",
-    "mvbec": "and thy coming in"
+    "mbvev": "his going down"
+  },
+  "H3997": {
+    "mbvet": "at the entry"
   },
   "H3998": {
     "mbvctm": "now shall be their perplexity",
@@ -23746,7 +24011,8 @@ export const all_stra = {
     "mbzr": "mibzar"
   },
   "H4015": {
-    "mbrkiv": "and all his fugitives"
+    "mbrkiv": "and all his fugitives",
+    "mbrkv": "and all his fugitives"
   },
   "H4016": {
     "bmbwiv": "him by the secrets"
@@ -23790,6 +24056,7 @@ export const all_stra = {
     "bmgdl": "at migdol",
     "bmgdvl": "in migdol",
     "mgdl": "migdol",
+    "mgdvl": "he is the tower",
     "mmgdl": "from the tower"
   },
   "H4025": {
@@ -23859,7 +24126,6 @@ export const all_stra = {
   },
   "H4035": {
     "bmgvrh": "yet in the barn",
-    "mgvrvti": "me from all my fears",
     "vmgvrtm": "their fears"
   },
   "H4036": {
@@ -23919,7 +24185,7 @@ export const all_stra = {
   "H4046": {
     "bmgfh": "in the plague",
     "cmgfh": "as this plague",
-    "hmgfh": "of the plague",
+    "hmgfh": "and the plague",
     "lmgfh": "that they should be plagued",
     "mgfh": "plague",
     "mgft": "as this plague",
@@ -24055,10 +24321,12 @@ export const all_stra = {
   "H4066": {
     "mdinim": "discord",
     "mdvn": "strife",
-    "vmdinim": "and their contentions",
-    "vmdvn": "and contention"
+    "mdvnim": "and a contentious",
+    "vmdvn": "and contention",
+    "vmdvnim": "and their contentions"
   },
   "H4067": {
+    "mdin": "of great stature",
     "mdvn": "of great stature"
   },
   "H4068": {
@@ -24099,12 +24367,12 @@ export const all_stra = {
     "mdi": "of the medes"
   },
   "H4077": {
-    "_": "the median",
     "mdie": "the median"
   },
   "H4079": {
     "mdini": "and the contentions",
-    "mdinim": "causeth contentions"
+    "mdinim": "than with a brawling",
+    "vmdinim": "and their contentions"
   },
   "H408": {
     "el": "unto them nay",
@@ -24166,11 +24434,14 @@ export const all_stra = {
     "el": "let not"
   },
   "H4090": {
-    "mdnim": "strifes"
+    "mdnim": "discord"
   },
   "H4091": {
     "mdn": "and medan",
     "vmdn": "and medan"
+  },
+  "H4092": {
+    "vhmdnim": "and the midianites"
   },
   "H4093": {
     "bmdac": "no not in thy thought",
@@ -24207,7 +24478,6 @@ export const all_stra = {
     "belim": "yourselves with idols",
     "belm": "among the gods",
     "cel": "like god",
-    "eil": "of the mighty one",
     "el": "god",
     "eli": "my god",
     "elim": "of gods",
@@ -24334,7 +24604,8 @@ export const all_stra = {
     "mhr": "dowry"
   },
   "H412": {
-    "el": "these"
+    "el": "these",
+    "elh": "these"
   },
   "H4120": {
     "bmhrh": "is not quickly",
@@ -24351,7 +24622,7 @@ export const all_stra = {
     "wll": "maher–shalal–hash–baz"
   },
   "H4123": {
-    "kxv": "deceits"
+    "mhtlvt": "deceits"
   },
   "H4124": {
     "bmveb": "and moab",
@@ -24377,6 +24648,8 @@ export const all_stra = {
     "vmvebi": "or moabite"
   },
   "H4126": {
+    "mbvec": "and thy coming in",
+    "mvbec": "and thy coming in",
     "vmvbeiv": "thereof and the comings"
   },
   "H4127": {
@@ -24393,13 +24666,16 @@ export const all_stra = {
     "vtmvg": "and it shall melt",
     "vtmvgnv": "from us and hast consumed"
   },
+  "H4128": {
+    "vimdd": "and measured"
+  },
   "H4129": {
+    "mvda": "had a kinsman",
     "vmda": "thy kinswoman"
   },
   "H413": {
     "el": "against",
     "eliv": "also hath",
-    "s": "and as for",
     "vel": "after"
   },
   "H4130": {
@@ -24409,7 +24685,7 @@ export const all_stra = {
     "bmvp": "slippeth",
     "emvp": "i shall not be moved",
     "htmvpph": "is moved",
-    "imipv": "for they cast",
+    "imipv": "fall",
     "imvp": "be moved",
     "imvpv": "fall",
     "mp": "man falling down",
@@ -24612,6 +24888,7 @@ export const all_stra = {
   },
   "H4158": {
     "mifat": "and mephaath",
+    "mvfat": "and upon mephaath",
     "vmfat": "and mephaath"
   },
   "H4159": {
@@ -24680,7 +24957,6 @@ export const all_stra = {
     "imiqv": "they are corrupt"
   },
   "H4168": {
-    "cmv": "as an hearth",
     "mvqdi": "burnings",
     "qd": "as an hearth"
   },
@@ -24781,7 +25057,8 @@ export const all_stra = {
   },
   "H4184": {
     "imiwvn": "but they handle",
-    "vemwc": "i pray thee that i may feel"
+    "vemwc": "i pray thee that i may feel",
+    "vhmwni": "me that i may feel"
   },
   "H4185": {
     "emiw": "neither have i gone back",
@@ -24790,6 +25067,7 @@ export const all_stra = {
     "imvwv": "shall not depart",
     "imwv": "depart",
     "mwv": "departed",
+    "tmiw": "shall not depart",
     "tmiwv": "from which ye shall not remove",
     "tmvw": "shall not depart",
     "tmw": "depart",
@@ -24886,7 +25164,6 @@ export const all_stra = {
     "mmitim": "among them and behold they slay",
     "mmtim": "that if ye put me to death",
     "mmtnv": "than that we should die",
-    "mmvti": "and thou shalt die",
     "mmvtt": "slew",
     "mt": "was dead",
     "mtc": "thy dead",
@@ -24905,7 +25182,6 @@ export const all_stra = {
     "mvttni": "because he slew",
     "nmitc": "but surely",
     "nmvt": "and not die",
-    "s": "and he died",
     "tmit": "slay",
     "tmithv": "slay",
     "tmitni": "put me to death",
@@ -25015,11 +25291,13 @@ export const all_stra = {
     "mxbktihm": "their altars",
     "mxbktiv": "this altar",
     "mxbktm": "their altars",
+    "mxbktv": "the altars",
     "mxbkv": "his altar",
     "mxbkvt": "altars",
     "mxbkvtic": "even thine altars",
     "mxbkvticm": "your altars",
     "mxbkvtihm": "their altars",
+    "mxbkvtim": "upon their altars",
     "mxbkvtm": "their altars",
     "vhmxbk": "the altar",
     "vhmxbkt": "and the altars",
@@ -25148,7 +25426,6 @@ export const all_stra = {
     "mxrq": "bowl",
     "mxrqi": "bowls",
     "mxrqvt": "basons",
-    "s": "and the basons",
     "vhmxrqvt": "and the basons",
     "vmxrqtiv": "and his basons"
   },
@@ -25188,7 +25465,6 @@ export const all_stra = {
     "vlmkbrvt": "and for the joinings"
   },
   "H4227": {
-    "bmrkwt": "and in the pan",
     "hmkbt": "baken in a pan",
     "mkbt": "pan",
     "vlmkbt": "and for that which is baked in the pan"
@@ -25335,6 +25611,7 @@ export const all_stra = {
     "hmkli": "of the mahlites"
   },
   "H4251": {
+    "bmkliim": "diseases",
     "bmklvim": "diseases"
   },
   "H4252": {
@@ -25364,7 +25641,6 @@ export const all_stra = {
     "mklqtv": "and in his course",
     "mklqvt": "the courses",
     "mklqvtm": "the courses",
-    "s": "them into courses",
     "vlmklqvt": "also for the courses",
     "vmklqtv": "in his course"
   },
@@ -25404,13 +25680,14 @@ export const all_stra = {
     "mkmd": "the desire",
     "mkmdi": "even the beloved",
     "mkmdih": "all the goodly",
+    "mkmdihm": "their pleasant things",
     "mkmdim": "yea he is altogether lovely",
     "mkmdinv": "and all our pleasant things",
     "vmkmdi": "pleasant things"
   },
   "H4262": {
     "mkmdih": "all her pleasant things",
-    "mkmdihm": "their pleasant things"
+    "mkmvdihm": "their pleasant things"
   },
   "H4263": {
     "vmkml": "pitieth"
@@ -25526,6 +25803,9 @@ export const all_stra = {
     "melh": "of which",
     "velh": "and the other",
     "vlelh": "and to the others"
+  },
+  "H4280": {
+    "lmkrevt": "it a draught house"
   },
   "H4281": {
     "lmkrwt": "for the mattocks",
@@ -25706,7 +25986,6 @@ export const all_stra = {
     "melhinv": "our god",
     "melhiv": "of his god",
     "mhelhim": "was of god",
-    "s": "of god",
     "vbelhi": "of the god",
     "vbelhihm": "among them upon their gods",
     "vbelhiv": "and their god",
@@ -25735,7 +26014,8 @@ export const all_stra = {
     "lmpai": "and as plantings",
     "mpa": "the planting",
     "mpah": "his plants",
-    "mpai": "of my planting"
+    "mpai": "of my planting",
+    "mpav": "of my planting"
   },
   "H4303": {
     "hmpamim": "the savoury meat",
@@ -25823,7 +26103,6 @@ export const all_stra = {
     "velv": "but if"
   },
   "H4320": {
-    "mich": "micah",
     "micih": "of michaiah"
   },
   "H4321": {
@@ -25846,7 +26125,6 @@ export const all_stra = {
   "H4325": {
     "bmi": "the water",
     "bmim": "in water",
-    "bmv": "for the dunghill",
     "cmim": "like water",
     "hmim": "the waters",
     "hmimh": "to the water",
@@ -25864,7 +26142,6 @@ export const all_stra = {
     "mmi": "water",
     "mmim": "waters",
     "mmimi": "of the water",
-    "s": "of the water",
     "vbmim": "water",
     "vcmim": "and are as water",
     "vhmim": "and the waters",
@@ -25873,8 +26150,7 @@ export const all_stra = {
     "vmimi": "and my water",
     "vmimic": "thy water",
     "vmimihm": "their water",
-    "vmmi": "out of the waters",
-    "wlg": "snow water"
+    "vmmi": "out of the waters"
   },
   "H4326": {
     "lmimn": "to mijamin",
@@ -25888,7 +26164,11 @@ export const all_stra = {
     "lminhv": "after his kind",
     "lminv": "after his kind"
   },
+  "H4328": {
+    "misdvt": "the foundations"
+  },
   "H4329": {
+    "misc": "and the covert",
     "mvsc": "and the covert"
   },
   "H433": {
@@ -25942,6 +26222,9 @@ export const all_stra = {
     "lmiwrim": "down sweetly",
     "miwrim": "uprightly",
     "vmiwrim": "and equity"
+  },
+  "H434": {
+    "velvl": "and a thing of nought"
   },
   "H4340": {
     "bmitric": "thine arrows upon thy strings",
@@ -26197,6 +26480,9 @@ export const all_stra = {
     "mcricm": "of your acquaintance",
     "mcrv": "of his acquaintance"
   },
+  "H4379": {
+    "vmcrh": "and saltpits"
+  },
   "H438": {
     "elvn": "of allon",
     "melvn": "from allon"
@@ -26308,6 +26594,7 @@ export const all_stra = {
   },
   "H4392": {
     "hmleh": "of her that is with child",
+    "hmleim": "they are full",
     "mle": "full",
     "mleh": "shekels full",
     "mleim": "of them full",
@@ -26415,6 +26702,7 @@ export const all_stra = {
   },
   "H4404": {
     "bmlbn": "in the brickkiln",
+    "bmlcn": "through the brickkiln",
     "mlbn": "the brickkiln"
   },
   "H4405": {
@@ -26454,6 +26742,7 @@ export const all_stra = {
   },
   "H4409": {
     "lmlicv": "of melicu",
+    "lmlvci": "of melicu",
     "mlvc": "malluch"
   },
   "H441": {
@@ -26501,7 +26790,7 @@ export const all_stra = {
   },
   "H4417": {
     "bmlk": "salt",
-    "hmlk": "of the salt",
+    "hmlk": "of salt",
     "lmlk": "to salt",
     "mlk": "of salt",
     "vmlk": "and salt"
@@ -26525,13 +26814,11 @@ export const all_stra = {
     "mlkh": "in a salt"
   },
   "H4421": {
-    "al": "to battle",
     "bmlkmh": "in the battle",
     "cmlkmh": "battle",
     "hmlkmh": "of war",
     "hmlkmvt": "won in battles",
     "lmlkmh": "to battle",
-    "lmlkmh f": "to battle",
     "mlkmh": "of war",
     "mlkmt": "of battle",
     "mlkmtc": "of war",
@@ -26605,6 +26892,7 @@ export const all_stra = {
     "vmlizh": "and the interpretation"
   },
   "H4427": {
+    "bmlc": "that he might not reign",
     "bmlcv": "when he began to reign",
     "cmlcv": "and it came to pass when he reigned",
     "emlc": "i will be king",
@@ -26630,6 +26918,8 @@ export const all_stra = {
     "mlci": "thou and reign",
     "mlct": "reigned",
     "mlcv": "that reigned",
+    "mlvch": "reign",
+    "mlvci": "thou and reign",
     "mmlc": "reign",
     "nmlic": "king",
     "tmlc": "reign",
@@ -26681,7 +26971,6 @@ export const all_stra = {
     "mlcnv": "is our king",
     "mlcv": "of his king",
     "mmlc": "king",
-    "s": "unto the king",
     "vbmlci": "and against the kings",
     "vhmlc": "and the king",
     "vhmlcim": "and the kings",
@@ -26767,7 +27056,7 @@ export const all_stra = {
     "lmlcvt": "of the reign",
     "lmlcvtv": "of his reign",
     "mlcivt": "kingdoms",
-    "mlctv": "of his reign",
+    "mlctv": "and his kingdom",
     "mlcvt": "of the kingdom",
     "mlcvtc": "of thy kingdom",
     "mlcvtm": "of their kingdom",
@@ -26883,11 +27172,11 @@ export const all_stra = {
     "mmdih": "the measures"
   },
   "H4462": {
-    "mmvcn": "and memucan"
+    "mmvcn": "and memucan",
+    "mvmcn": "and memucan"
   },
   "H4463": {
-    "mmvti": "deaths",
-    "vmth": "the deaths"
+    "mmvti": "deaths"
   },
   "H4464": {
     "mmxr": "a bastard"
@@ -26973,7 +27262,7 @@ export const all_stra = {
   "H4479": {
     "mn": "who",
     "vlmn": "it to whomsoever",
-    "vmn": "and who"
+    "vmn": "and whoso"
   },
   "H448": {
     "elieth": "eliathah",
@@ -26990,10 +27279,12 @@ export const all_stra = {
     "mnh": "from",
     "mnhin": "and part",
     "mnhn": "but",
-    "mnhvn": "these",
+    "mnhvn": "and part",
     "mni": "from me",
     "vmn": "from",
     "vmnh": "of it",
+    "vmnhin": "and part",
+    "vmnhvn": "and part",
     "vmni": "and i"
   },
   "H4482": {
@@ -27615,6 +27906,7 @@ export const all_stra = {
     "maxc": "of thy strength",
     "maxcm": "is your strength",
     "maxcn": "for your strength",
+    "maxh": "even to his fortress",
     "maxim": "of forces",
     "maxnih": "holds",
     "maxv": "shall his strong",
@@ -27651,6 +27943,7 @@ export const all_stra = {
     "vmavntv": "and his dwelling place"
   },
   "H4586": {
+    "mainim": "of mehunim",
     "mavnim": "of meunim",
     "vhmavnim": "and the mehunims"
   },
@@ -27677,6 +27970,7 @@ export const all_stra = {
     "imap": "too little",
     "imapv": "shall be diminished",
     "map": "to the fewness",
+    "mapv": "because they are few",
     "tmaip": "to the fewness",
     "tmaipi": "borrow not a few",
     "tmaipv": "ye shall give few",
@@ -27757,17 +28051,14 @@ export const all_stra = {
   },
   "H4602": {
     "hmacti": "of a maachathite",
-    "s": "of the maachathite",
     "vhmacti": "and maachathi"
   },
   "H4603": {
-    "bmalv": "in his trespass",
-    "hmal": "is this that ye have committed",
+    "bmalm": "me in that they have committed",
     "imal": "transgresseth",
     "lmal": "commit",
     "lmavl": "transgressed",
     "mal": "commit",
-    "malm": "whereby they have trespassed",
     "malnv": "we have trespassed",
     "malt": "for thou hast trespassed",
     "maltm": "because ye trespassed",
@@ -27782,11 +28073,12 @@ export const all_stra = {
   },
   "H4604": {
     "bmal": "in this trespass",
-    "bmalm": "a trespass",
+    "bmalm": "with their trespass",
     "bmalv": "in his transgression",
-    "hmal": "this trespass",
+    "hmal": "what trespass",
     "mal": "a trespass",
-    "malv": "with their trespass",
+    "malm": "and all their trespasses",
+    "malv": "that he hath trespassed",
     "vmalv": "and his trespass"
   },
   "H4605": {
@@ -27810,16 +28102,19 @@ export const all_stra = {
     "lmalh": "the going up",
     "malh": "the going up",
     "maliv": "thereof on this side and on that side and the going up",
+    "malv": "thereof on this side and on that side and the going up",
     "mlmalh": "before"
   },
   "H4609": {
     "bmalt": "by steps",
     "bmalvt": "degrees",
     "bmalvtiv": "the stairs",
+    "bmalvtv": "the stairs",
     "hmalh": "he to go up",
     "hmalvt": "steps",
     "malvt": "degrees",
     "malvtiv": "his stories",
+    "malvtv": "his stories",
     "vbmalvt": "steps",
     "vmalthv": "and his stairs",
     "vmalvt": "steps"
@@ -27846,6 +28141,7 @@ export const all_stra = {
     "malliv": "of his doings",
     "mmallihm": "works",
     "vcmallinv": "and according to our doings",
+    "vmalilicm": "doings",
     "vmallic": "and thy doings",
     "vmallicm": "and your doings",
     "vmallihm": "and their doings",
@@ -27878,6 +28174,7 @@ export const all_stra = {
   },
   "H4618": {
     "lmanitm": "their furrows",
+    "lmanvtm": "their furrows",
     "manh": "acre"
   },
   "H4619": {
@@ -27930,7 +28227,7 @@ export const all_stra = {
     "eliam": "eliam"
   },
   "H4630": {
-    "mmarcvt": "out of the armies"
+    "mmarvt": "out of the armies"
   },
   "H4631": {
     "bmarh": "in a cave",
@@ -27958,7 +28255,8 @@ export const all_stra = {
     "march": "army",
     "marct": "the armies",
     "marcvt": "the armies",
-    "mhmarch": "out of the army"
+    "mhmarch": "out of the army",
+    "mmarcvt": "out of the armies"
   },
   "H4635": {
     "hmarct": "on a row",
@@ -28205,6 +28503,7 @@ export const all_stra = {
     "mzevni": "come",
     "mzti": "and wherefore have i not found",
     "nmze": "found",
+    "nmzeh": "unto thee was he found",
     "nmzeic": "all that are found",
     "nmzet": "thou art found",
     "nmzeti": "for me i am found",
@@ -28321,6 +28620,8 @@ export const all_stra = {
     "vmzhlvtic": "and thy neighings"
   },
   "H4685": {
+    "bmzdvt": "him into holds",
+    "bmzvdh": "net",
     "mzvd": "the net",
     "mzvdim": "bulwarks",
     "vmzdth": "against her and her munition"
@@ -28358,7 +28659,7 @@ export const all_stra = {
     "mzvti": "my commandments",
     "mzvtic": "thy commandments",
     "mzvtiv": "his commandments",
-    "mzvtv": "his commandment",
+    "mzvtv": "his commandments",
     "vbmzvh": "and in the commandments",
     "vbmzvtiv": "in his commandments",
     "vcmzvh": "and commandment",
@@ -28800,7 +29101,7 @@ export const all_stra = {
     "lmr": "bitter",
     "lmri": "unto the bitter",
     "lmrim": "into her and become bitter",
-    "mr": "i had great bitterness",
+    "mr": "bitter",
     "mrh": "bitterly",
     "mri": "among us lest angry",
     "mrim": "for they were bitter",
@@ -28828,6 +29129,7 @@ export const all_stra = {
   },
   "H4756": {
     "mre": "the lord",
+    "mrei": "my lord",
     "mri": "my lord",
     "vmre": "and a lord"
   },
@@ -28882,7 +29184,8 @@ export const all_stra = {
     "vmrewh": "and mareshah"
   },
   "H4763": {
-    "mrewtiv": "hair for his bolster"
+    "mrewtiv": "hair for his bolster",
+    "mrewtv": "at his bolster"
   },
   "H4764": {
     "mrb": "merab"
@@ -28919,6 +29222,7 @@ export const all_stra = {
   },
   "H4772": {
     "mrgltiv": "his feet",
+    "mrgltv": "at his feet",
     "mrglvtiv": "at his feet",
     "vmrgltiv": "and his feet"
   },
@@ -29011,6 +29315,9 @@ export const all_stra = {
   "H4786": {
     "mrt": "which were a grief"
   },
+  "H4787": {
+    "mrt": "bitterness"
+  },
   "H4788": {
     "mrvdim": "that are cast out",
     "vmrvdi": "and my misery",
@@ -29046,6 +29353,7 @@ export const all_stra = {
   },
   "H4794": {
     "bmrvztm": "to his course",
+    "bmrzvtm": "to his course",
     "cmrzt": "the running",
     "mrvzt": "the running",
     "mrvztm": "and their course"
@@ -29088,7 +29396,7 @@ export const all_stra = {
     "vbmrkqim": "me in far countries"
   },
   "H4802": {
-    "mkbt": "in the fryingpan",
+    "bmrkwt": "in the fryingpan",
     "mrkwt": "baken in the fryingpan"
   },
   "H4803": {
@@ -29155,7 +29463,6 @@ export const all_stra = {
   "H4813": {
     "lmrim": "unto miriam",
     "mrim": "and miriam",
-    "s": "and miriam",
     "vmrim": "and miriam"
   },
   "H4814": {
@@ -29290,7 +29597,8 @@ export const all_stra = {
   },
   "H4839": {
     "hmrq": "the broth",
-    "vhmrq": "the broth"
+    "vhmrq": "the broth",
+    "vmrq": "and broth"
   },
   "H484": {
     "elmgim": "of almug",
@@ -29306,7 +29614,6 @@ export const all_stra = {
   "H4842": {
     "bmrqkt": "by the apothecaries’",
     "hmrqkt": "the ointment",
-    "mrqkim": "by the apothecaries’",
     "mrqkt": "compound"
   },
   "H4843": {
@@ -29381,7 +29688,8 @@ export const all_stra = {
     "vmwe": "and massa"
   },
   "H4855": {
-    "hmwe": "this usury"
+    "hmwe": "this usury",
+    "mwe": "usury"
   },
   "H4856": {
     "vmwe": "nor respect"
@@ -29486,6 +29794,7 @@ export const all_stra = {
   "H4878": {
     "lmwvbti": "to backsliding",
     "mwbh": "backsliding",
+    "mwbvtihm": "and their backslidings",
     "mwvbt": "for the turning away",
     "mwvbticm": "your backslidings",
     "mwvbtinv": "sake for our backslidings",
@@ -29508,7 +29817,7 @@ export const all_stra = {
     "mwvctv": "the hedge"
   },
   "H4882": {
-    "lmwsh": "for a spoil"
+    "lmwvsh": "for a spoil"
   },
   "H4883": {
     "hmwvr": "therewith or shall the saw"
@@ -29600,8 +29909,7 @@ export const all_stra = {
     "vmwi": "and silk"
   },
   "H4898": {
-    "mwixbel": "of meshezabeel",
-    "s": "of meshezabeel"
+    "mwixbel": "of meshezabeel"
   },
   "H4899": {
     "bmwik": "anointed",
@@ -29860,6 +30168,7 @@ export const all_stra = {
   },
   "H4928": {
     "mwmatc": "at thy bidding",
+    "mwmatm": "shall obey",
     "mwmatv": "him over his guard"
   },
   "H4929": {
@@ -29906,7 +30215,7 @@ export const all_stra = {
     "vmwnhv": "and next"
   },
   "H4933": {
-    "lmwsh": "shall become a booty",
+    "lmwsh": "for a spoil",
     "lmwsvt": "thee and thou shalt be for booties",
     "mwsh": "for a spoil",
     "vlmwsh": "and a spoil"
@@ -29952,6 +30261,7 @@ export const all_stra = {
     "lmwfktihm": "after their kinds",
     "lmwfktiv": "by their families",
     "lmwfktm": "after their families",
+    "lmwfktv": "the family",
     "lmwfkvt": "for the families",
     "lmwfkvtihm": "according to their families",
     "lmwfkvtm": "according to their families",
@@ -30249,6 +30559,10 @@ export const all_stra = {
     "vmtnih": "and mattaniah",
     "vmtnihv": "and mattaniah"
   },
+  "H4984": {
+    "mtnwe": "exalted",
+    "vhmtnwe": "and thou art exalted"
+  },
   "H4985": {
     "imtqv": "are sweet",
     "mtqv": "shall be sweet",
@@ -30451,8 +30765,6 @@ export const all_stra = {
     "vnbev": "shall prophesy"
   },
   "H5013": {
-    "nbie": "prophesied",
-    "nbiie": "prophesied",
     "vhtnbi": "prophesied"
   },
   "H5014": {
@@ -30482,6 +30794,7 @@ export const all_stra = {
     "nbvcdnezr": "nebuchadnezzar",
     "nbvcdnzr": "whom nebuchadnezzar",
     "nbvcdrezr": "of nebuchadrezzar",
+    "nbvcdrezvr": "which nebuchadrezzar",
     "vnbvcdrezr": "when nebuchadnezzar"
   },
   "H502": {
@@ -30551,7 +30864,9 @@ export const all_stra = {
   },
   "H5029": {
     "nbie": "the prophet",
-    "nbiie": "were the prophets"
+    "nbieh": "the prophet",
+    "nbieie": "the prophet",
+    "nbiie": "the prophet"
   },
   "H503": {
     "melifvt": "may bring forth thousands"
@@ -30583,6 +30898,7 @@ export const all_stra = {
     "nbieih": "of her prophets",
     "nbieim": "prophets",
     "nbieiv": "of all his prophets",
+    "nbiev": "the prophets",
     "vbnbei": "also in the prophets",
     "vbnbie": "and by a prophet",
     "vbnbiei": "in the prophets",
@@ -30734,6 +31050,7 @@ export const all_stra = {
     "igdv": "lest they should tell",
     "igid": "tell",
     "igidv": "shall shew",
+    "lgid": "to tell",
     "lhgid": "to shew",
     "lmgidi": "of garments unto them which expounded",
     "mgdt": "had not yet shewed",
@@ -30782,9 +31099,9 @@ export const all_stra = {
     "belf": "thousand",
     "belfi": "with thousands",
     "belfiv": "his thousands",
+    "belfv": "his thousands",
     "celf": "also about a thousand",
     "celfim": "thousand",
-    "eiw": "thousand",
     "elf": "thousand",
     "elfi": "thousand",
     "elfim": "thousand",
@@ -30795,12 +31112,10 @@ export const all_stra = {
     "lelfim": "unto thousands",
     "melf": "than a thousand",
     "melfi": "thousand",
-    "s": "thousand",
     "velf": "thousand",
     "velfim": "and two thousand",
     "vlelficm": "and by your thousands",
-    "vlelfim": "and by thousands",
-    "wrim": "thousand"
+    "vlelfim": "and by thousands"
   },
   "H5050": {
     "igh": "shall not shine",
@@ -30869,6 +31184,7 @@ export const all_stra = {
   "H506": {
     "elf": "thousands",
     "elfe": "the thousand",
+    "elfim": "thousands",
     "elfin": "thousands"
   },
   "H5060": {
@@ -31117,7 +31433,7 @@ export const all_stra = {
   "H5077": {
     "hmndim": "ye that put far away",
     "mndicm": "you that cast you out",
-    "vidk": "drave"
+    "vide": "drave"
   },
   "H5078": {
     "ndh": "gifts"
@@ -31168,7 +31484,7 @@ export const all_stra = {
     "vhndkh": "her that is driven out",
     "vhndkim": "and the outcasts",
     "vidikv": "you and have withdrawn",
-    "vidk": "and compelled",
+    "vidk": "drave",
     "vndkh": "fetcheth a stroke",
     "vndkt": "shouldest be driven",
     "vndktm": "thee and ye shall be driven out",
@@ -31278,8 +31594,12 @@ export const all_stra = {
     "nhi": "lamentation",
     "vnhi": "and wailing"
   },
+  "H5093": {
+    "nhih": "with a doleful"
+  },
   "H5094": {
     "nhirv": "light",
+    "vnhire": "and the light",
     "vnhirv": "and that light",
     "vnhvre": "and the light"
   },
@@ -31299,7 +31619,7 @@ export const all_stra = {
     "vnhll": "and nahallal"
   },
   "H5097": {
-    "hnazvzim": "and upon all bushes"
+    "hnhllim": "and upon all bushes"
   },
   "H5098": {
     "nhm": "as a roaring",
@@ -31373,6 +31693,7 @@ export const all_stra = {
     "ini": "which shall not break",
     "inie": "disallowed",
     "tnievn": "and wherefore discourage ye",
+    "tnvevn": "and wherefore discourage ye",
     "viniev": "they discouraged"
   },
   "H5107": {
@@ -31382,10 +31703,12 @@ export const all_stra = {
   },
   "H5108": {
     "nib": "the fruit",
+    "nvb": "the fruit",
     "vnibv": "and the fruit"
   },
   "H5109": {
-    "nibi": "nebai"
+    "nibi": "nebai",
+    "nvbi": "nebai"
   },
   "H511": {
     "elqnh": "of elkanah",
@@ -31398,6 +31721,7 @@ export const all_stra = {
     "mtnvdd": "bemoaning",
     "ndv": "get",
     "nvdi": "flee",
+    "nvdv": "flee",
     "tnd": "nor bemoan",
     "tndni": "remove",
     "tndv": "neither bemoan",
@@ -31486,8 +31810,11 @@ export const all_stra = {
   },
   "H5121": {
     "bnivt": "to naioth",
+    "bnvit": "to naioth",
     "mnivt": "from naioth",
-    "nivt": "to naioth"
+    "mnvvt": "from naioth",
+    "nivt": "to naioth",
+    "nvit": "to naioth"
   },
   "H5122": {
     "nvli": "a dunghill",
@@ -31502,6 +31829,7 @@ export const all_stra = {
     "nvmh": "and drowsiness"
   },
   "H5125": {
+    "inin": "shall be continued",
     "invn": "shall be continued"
   },
   "H5126": {
@@ -31537,6 +31865,7 @@ export const all_stra = {
     "tnvs": "that thou fleddest",
     "tnvsv": "to whom will ye flee",
     "tnvsvn": "no for we will flee",
+    "vinisv": "and fled",
     "vins": "fled",
     "vinsv": "fled",
     "vinvsv": "and fled",
@@ -31550,6 +31879,7 @@ export const all_stra = {
   "H5128": {
     "cnva": "was moved",
     "eniac": "up and down",
+    "envac": "up and down",
     "hniah": "hath shaken",
     "hniamv": "scatter",
     "ina": "move",
@@ -31558,6 +31888,7 @@ export const all_stra = {
     "iniavn": "let them wander up and down",
     "inva": "and i will sift",
     "invav": "vagabonds",
+    "invavn": "let them wander up and down",
     "lnva": "to be promoted",
     "na": "a fugitive",
     "nav": "they stagger",
@@ -31783,7 +32114,7 @@ export const all_stra = {
     "vhnkltm": "and leave it for an inheritance",
     "vhtnkltm": "ye shall inherit",
     "vhtnklvm": "shall possess",
-    "vinklv": "took their inheritance",
+    "vinklv": "had their inheritance",
     "vnkl": "shall inherit",
     "vnklt": "and inherit",
     "vnkltm": "and ye shall inherit",
@@ -31843,7 +32174,6 @@ export const all_stra = {
     "nkltv": "inheritance",
     "nklvt": "heritages",
     "vbnkltv": "with his inheritance",
-    "vinklv": "the inheritance",
     "vmnklt": "unto the inheritance",
     "vnklh": "nor inheritance",
     "vnklt": "and the heritage",
@@ -31971,7 +32301,7 @@ export const all_stra = {
     "inkwv": "did diligently observe",
     "nkw": "divine",
     "nkwti": "tarry for i have learned by experience",
-    "tavnnv": "neither shall ye use enchantment",
+    "tnkwv": "neither shall ye use enchantment",
     "vinkwv": "and enchantments",
     "vmnkw": "or an enchanter",
     "vnkw": "and used enchantments"
@@ -32056,6 +32386,9 @@ export const all_stra = {
     "nkt": "nahath",
     "vnkt": "and nahath"
   },
+  "H5185": {
+    "nktim": "are come down"
+  },
   "H5186": {
     "bnpti": "when i stretch forth",
     "cnpvt": "as soon as he had stretched out",
@@ -32090,14 +32423,15 @@ export const all_stra = {
     "npiv": "gone",
     "npth": "me and turned",
     "npv": "for they intended",
-    "npvi": "that declineth",
+    "npvi": "gone",
     "npvih": "is stretched out still",
     "npvivt": "with stretched forth",
     "npvt": "until afternoon",
+    "npvvt": "with stretched forth",
     "nvph": "who stretchest out",
-    "tp": "away",
+    "tp": "turn",
     "tph": "thou shalt not wrest",
-    "vep": "therefore will i stretch out",
+    "vep": "and i laid",
     "vhmpim": "as for such as turn aside",
     "vhpi": "and incline",
     "vhpv": "you and incline",
@@ -32243,7 +32577,6 @@ export const all_stra = {
     "emvt": "cubits",
     "hemh": "a cubit",
     "lemvt": "cubits",
-    "mevt": "five",
     "vcemtim": "and as it were two cubits",
     "vemh": "thereof and a cubit",
     "vemtim": "a cubit",
@@ -32255,7 +32588,6 @@ export const all_stra = {
     "hnpvfti": "the netophathite",
     "npfti": "of netophathi",
     "npvfti": "of the netophathites",
-    "s": "a netophathite",
     "vnpvfti": "and the netophathites"
   },
   "H5201": {
@@ -32332,8 +32664,7 @@ export const all_stra = {
     "vninvh": "now nineveh"
   },
   "H5211": {
-    "hnis": "he that fleeth",
-    "hns": "he that fleeth"
+    "hnis": "he that fleeth"
   },
   "H5212": {
     "nisn": "nisan"
@@ -32541,7 +32872,7 @@ export const all_stra = {
   },
   "H5234": {
     "ecir": "so will i acknowledge",
-    "hcir": "him neither did he acknowledge",
+    "hcir": "whom he shall acknowledge",
     "hcirhv": "and knew",
     "hcirv": "they know",
     "hcr": "discern",
@@ -32571,6 +32902,7 @@ export const all_stra = {
     "vitncr": "and he knew"
   },
   "H5235": {
+    "ncrv": "that he became a stranger",
     "vncr": "and a strange"
   },
   "H5236": {
@@ -32601,6 +32933,9 @@ export const all_stra = {
   "H524": {
     "emh": "nation",
     "emie": "nations"
+  },
+  "H5240": {
+    "nmbxh": "that was vile"
   },
   "H5241": {
     "lnmvel": "of nemuel",
@@ -32760,6 +33095,9 @@ export const all_stra = {
     "vnscim": "and drink offerings",
     "vnscv": "and his drink offering"
   },
+  "H5263": {
+    "nss": "and they shall be as when a standardbearer"
+  },
   "H5264": {
     "mtnvssvt": "lifted up as an ensign"
   },
@@ -32802,7 +33140,6 @@ export const all_stra = {
     "hnah": "to neah"
   },
   "H527": {
-    "emvn": "the multitude",
     "hemvn": "of the multitude"
   },
   "H5270": {
@@ -32888,7 +33225,7 @@ export const all_stra = {
     "vnamh": "and naamah"
   },
   "H528": {
-    "emvn": "than populous"
+    "emvn": "the multitude"
   },
   "H5280": {
     "hnami": "of the naamites"
@@ -32911,7 +33248,7 @@ export const all_stra = {
   },
   "H5285": {
     "hnazvz": "instead of the thorn",
-    "hnhllim": "and upon all thorns"
+    "hnazvzim": "and upon all thorns"
   },
   "H5286": {
     "narv": "they shall yell"
@@ -32960,6 +33297,9 @@ export const all_stra = {
     "vnarim": "children",
     "vnarv": "and his servant"
   },
+  "H5289": {
+    "hnar": "the young one"
+  },
   "H529": {
     "emn": "in whom is no faith",
     "emnim": "the truth",
@@ -32978,6 +33318,7 @@ export const all_stra = {
     "lnarh": "for the damsel",
     "lnartih": "to her maidens",
     "lnarvtic": "for thy maidens",
+    "nar": "a damsel",
     "narh": "young",
     "narti": "here fast by my maidens",
     "nartih": "damsels",
@@ -32986,6 +33327,7 @@ export const all_stra = {
     "narvtiv": "with his maidens",
     "vhnar": "and the damsel",
     "vhnarh": "and the maid",
+    "vlnar": "but unto the damsel",
     "vlnarh": "but unto the damsel",
     "vnarh": "now when every maid’s",
     "vnarti": "i also and my maidens",
@@ -33061,8 +33403,7 @@ export const all_stra = {
     "vhemvnh": "and faithfulness"
   },
   "H5300": {
-    "nfiwsim": "of nephishesim",
-    "nfvsim": "of nephusim"
+    "nfvwsim": "of nephishesim"
   },
   "H5301": {
     "hfkti": "thereof to lose",
@@ -33082,6 +33423,11 @@ export const all_stra = {
     "hnfilim": "the giants",
     "hnflim": "the giants"
   },
+  "H5304": {
+    "nfisim": "of nephusim",
+    "nfiwsim": "of nephishesim",
+    "nfvsim": "of nephusim"
+  },
   "H5305": {
     "nfiw": "naphish",
     "vnfiw": "and nephish"
@@ -33091,7 +33437,6 @@ export const all_stra = {
     "nfc": "an emerald"
   },
   "H5307": {
-    "al": "he will fall",
     "bnfl": "falleth",
     "bnflim": "among them that fall",
     "cnfl": "and it will come to pass when some of them be overthrown",
@@ -33169,8 +33514,7 @@ export const all_stra = {
     "vnfltm": "and ye shall fall",
     "vnflv": "shall fall",
     "vtfl": "fell",
-    "wifvl": "fall",
-    "wm": "shall fall"
+    "wifvl": "fall"
   },
   "H5308": {
     "ifl": "down",
@@ -33178,7 +33522,8 @@ export const all_stra = {
     "nflin": "fell down",
     "nflv": "fell down",
     "tflvn": "ye fall down",
-    "vnflh": "fell"
+    "vnflh": "fell",
+    "vnflv": "fell"
   },
   "H5309": {
     "cnfl": "untimely birth",
@@ -33213,6 +33558,7 @@ export const all_stra = {
     "nfqh": "came forth",
     "nfqin": "come forth",
     "nfqt": "went forth",
+    "nfqv": "came forth",
     "vnfq": "and came forth"
   },
   "H5313": {
@@ -33302,8 +33648,7 @@ export const all_stra = {
     "vbnftli": "and unto naphtali",
     "vlnftli": "o naphtali",
     "vmnftli": "and of naphtali",
-    "vnftli": "and naphtali",
-    "vxblvn": "and naphtali"
+    "vnftli": "and naphtali"
   },
   "H5322": {
     "hnz": "and the hawk",
@@ -33316,7 +33661,7 @@ export const all_stra = {
   "H5324": {
     "hnzb": "that was set",
     "hnzbh": "that that standeth",
-    "hnzbim": "that stood",
+    "hnzbim": "officers",
     "hnzbt": "that stood",
     "hnzbvt": "the women that stood",
     "hzbt": "thou hast set",
@@ -33363,6 +33708,7 @@ export const all_stra = {
     "lmnzk": "to the chief singer",
     "lnzk": "to set forward",
     "mnzkim": "overseers",
+    "nzkt": "by a perpetual",
     "vmnzkim": "to oversee"
   },
   "H533": {
@@ -33386,7 +33732,7 @@ export const all_stra = {
     "nzkm": "their strength"
   },
   "H5333": {
-    "hnzbim": "officers",
+    "hnzibim": "officers",
     "nzbi": "where is the garrison",
     "nzbim": "garrisons",
     "nzib": "a garrison",
@@ -33400,7 +33746,7 @@ export const all_stra = {
     "nzik": "of neziah"
   },
   "H5336": {
-    "vnzvri": "the preserved"
+    "vnziri": "the preserved"
   },
   "H5337": {
     "enzlh": "deliver",
@@ -33519,6 +33865,7 @@ export const all_stra = {
     "tnzrch": "shall keep",
     "tnzrni": "preserve",
     "tzr": "keepeth",
+    "tzrnh": "observe",
     "tzrni": "thou shalt preserve",
     "tzrnv": "thou shalt preserve",
     "vbnzvrim": "in the monuments",
@@ -33529,6 +33876,7 @@ export const all_stra = {
     "vnzr": "it and he that keepeth",
     "vnzrt": "and subtil",
     "vnzrvt": "even hidden things",
+    "vnzvri": "the preserved",
     "vtzrc": "her and she shall keep"
   },
   "H5342": {
@@ -33553,7 +33901,6 @@ export const all_stra = {
     "nqvb": "with holes",
     "tqbnv": "neither curse",
     "tqvb": "or bore",
-    "veqvb": "i cursed",
     "viqb": "and bored",
     "vnqb": "when he blasphemeth",
     "vnqbh": "and pierce"
@@ -33582,7 +33929,7 @@ export const all_stra = {
   },
   "H535": {
     "emlh": "how weak",
-    "emll": "languish",
+    "emll": "languisheth",
     "emllh": "languisheth",
     "emllv": "languisheth",
     "vemll": "therein shall languish"
@@ -33879,6 +34226,7 @@ export const all_stra = {
     "hwievc": "with thee have deceived",
     "iwe": "deceive",
     "iwec": "deceive",
+    "iwi": "seize",
     "iwie": "deceive",
     "iwiev": "of you deceive",
     "nwe": "therefore behold i even i will utterly",
@@ -33887,7 +34235,6 @@ export const all_stra = {
   },
   "H5378": {
     "iwe": "shall not exact",
-    "mwe": "unto them ye exact",
     "nwe": "that was in debt"
   },
   "H5379": {
@@ -33948,9 +34295,9 @@ export const all_stra = {
     "iwh": "that lendeth",
     "mnvwi": "or which of my creditors",
     "nvwh": "let the extortioner",
+    "nweim": "unto them ye exact",
     "nwh": "to whom thou dost lend",
     "nwim": "might exact",
-    "nwimnweimnwim": "unto them ye exact",
     "nwiti": "i have neither lent on usury",
     "nwv": "i have neither lent on usury",
     "twh": "when thou dost lend",
@@ -33963,7 +34310,8 @@ export const all_stra = {
     "nweticm": "your carriages"
   },
   "H5386": {
-    "nwic": "thy debt"
+    "nwic": "thy debt",
+    "nwici": "thy debt"
   },
   "H5387": {
     "hnweim": "the princes",
@@ -34206,6 +34554,7 @@ export const all_stra = {
   },
   "H5411": {
     "hntinim": "the nethinims",
+    "hntvnim": "the nethinims",
     "ntinim": "nethinims",
     "vhntinim": "and the nethinims"
   },
@@ -34247,8 +34596,7 @@ export const all_stra = {
     "hnvtn": "which maketh",
     "httn": "hast thou given",
     "httnm": "wilt thou deliver",
-    "ihvh": "sendeth",
-    "intn": "be given",
+    "intn": "be delivered",
     "itn": "oh that",
     "itnc": "o that",
     "itnhv": "but they gave",
@@ -34502,6 +34850,7 @@ export const all_stra = {
     "sbe": "for the drunkard",
     "sbeim": "sabeans",
     "sbveim": "and while they are drunken",
+    "svbeim": "sabeans",
     "vnsbeh": "and we will fill"
   },
   "H5434": {
@@ -34605,6 +34954,7 @@ export const all_stra = {
     "sbibtinv": "that are about us",
     "sbibtiv": "round about",
     "sbibtm": "that were round about",
+    "sbibtv": "round about",
     "sbibvt": "round about",
     "sbibvti": "were about",
     "sbibvtic": "round about",
@@ -34698,6 +35048,7 @@ export const all_stra = {
     "esgvd": "shall i fall down",
     "isgd": "he falleth down",
     "isgdv": "they fall down",
+    "isgvd": "he falleth down",
     "lv": "he falleth down",
     "visgd": "and falleth down"
   },
@@ -34864,6 +35215,7 @@ export const all_stra = {
   },
   "H5481": {
     "svmfnih": "dulcimer",
+    "vsifnih": "and dulcimer",
     "vsvfnih": "and dulcimer",
     "vsvmfnih": "and dulcimer"
   },
@@ -34874,6 +35226,7 @@ export const all_stra = {
     "bsvs": "with horses",
     "bsvsim": "by horses",
     "bsvsiv": "with his horses",
+    "bsvsv": "with his horses",
     "csvs": "horse",
     "csvsi": "as thy horses",
     "csvsic": "as thy horses",
@@ -34904,6 +35257,7 @@ export const all_stra = {
     "svsi": "of susi"
   },
   "H5486": {
+    "esf": "consume",
     "esifm": "consume",
     "isfv": "shall be consumed",
     "isvf": "of them perish",
@@ -35016,6 +35370,7 @@ export const all_stra = {
     "vsrv": "shall depart",
     "vsvr": "even by departing",
     "vsvrh": "and removing to and fro",
+    "vsvri": "from me",
     "vtsr": "off"
   },
   "H5494": {
@@ -35038,6 +35393,7 @@ export const all_stra = {
     "vtsitni": "although thou movedst"
   },
   "H5497": {
+    "svth": "and his clothes",
     "svtv": "and his clothes"
   },
   "H5498": {
@@ -35108,6 +35464,7 @@ export const all_stra = {
     "lsgim": "because ye are all become dross",
     "lsig": "is to me become dross",
     "lsigim": "is become dross",
+    "lsvg": "is to me become dross",
     "sgim": "like dross",
     "sigic": "thy dross",
     "sigim": "dross"
@@ -35263,6 +35620,7 @@ export const all_stra = {
     "vtemz": "and strengtheneth"
   },
   "H5530": {
+    "cwhscl": "to every one that he is a fool",
     "cwscl": "to every one that he is a fool",
     "scl": "man or a fool",
     "sclim": "me they are sottish",
@@ -35345,6 +35703,7 @@ export const all_stra = {
   },
   "H5545": {
     "eslk": "shall i pardon",
+    "eslvk": "shall i pardon",
     "hslk": "who forgiveth",
     "islk": "pardon",
     "lc": "shall i pardon",
@@ -35677,7 +36036,7 @@ export const all_stra = {
     "hsarh": "out of the whirlwind",
     "msar": "and tempest",
     "sar": "tempest",
-    "sarh": "stormy",
+    "sarh": "out of the whirlwind",
     "sart": "whirlwind",
     "sarvt": "and a stormy",
     "vsar": "whirlwind",
@@ -35929,6 +36288,7 @@ export const all_stra = {
     "vhsfrvim": "and the sepharvites"
   },
   "H5617": {
+    "sfrim": "of sepharvaim",
     "sfrvim": "of sepharvaim",
     "vsfrvim": "and from sepharvaim"
   },
@@ -36054,7 +36414,8 @@ export const all_stra = {
     "vsrrt": "and stubborn"
   },
   "H5638": {
-    "hstiv": "for lo the winter"
+    "hstiv": "for lo the winter",
+    "hstv": "for lo the winter"
   },
   "H5639": {
     "stvr": "sethur"
@@ -36173,7 +36534,6 @@ export const all_stra = {
     "abdvm": "and whom they have served",
     "eabd": "as i have served",
     "eabdc": "i will serve",
-    "eabvr": "i will not transgress",
     "habd": "that serveth",
     "habdim": "of those that served",
     "habdtic": "i have not caused thee to serve",
@@ -36252,6 +36612,7 @@ export const all_stra = {
     "abdic": "thy servants",
     "abdvhi": "ye servants",
     "labdc": "thy servants",
+    "labdic": "thy servants",
     "labdvhi": "his servants"
   },
   "H565": {
@@ -36295,7 +36656,6 @@ export const all_stra = {
     "mabdi": "servants",
     "mabdic": "bondmen",
     "mabdiv": "of his servants",
-    "s": "thy servant",
     "vabd": "is servant",
     "vabdc": "and thy manservant",
     "vabdi": "and the servants",
@@ -36476,7 +36836,6 @@ export const all_stra = {
     "babrc": "when thou art passed over",
     "babrcm": "when ye are come over",
     "babrv": "to carry over",
-    "bc": "pass through",
     "bhabir": "to pass through",
     "cabr": "was past",
     "cabrm": "and it came to pass when they were gone over",
@@ -36503,7 +36862,7 @@ export const all_stra = {
     "iabrv": "shall come over",
     "iabrvm": "them shall pass away",
     "iabrvn": "that they may not pass over",
-    "iabvr": "is passed over",
+    "iabvr": "nor alienate",
     "labir": "to carry over",
     "labr": "to pass over",
     "labrc": "that thou shouldest enter",
@@ -36560,8 +36919,7 @@ export const all_stra = {
     "vtabir": "and take away",
     "vtabr": "over",
     "vtabrv": "and ye went over",
-    "wabrti": "that i passed",
-    "xam": "be overpast"
+    "wabrti": "that i passed"
   },
   "H5675": {
     "abr": "on this side",
@@ -36603,7 +36961,7 @@ export const all_stra = {
     "vabrtv": "his wrath"
   },
   "H5679": {
-    "barbvt": "in the plain",
+    "babrvt": "in the plain",
     "habrh": "a ferry boat"
   },
   "H568": {
@@ -36666,7 +37024,7 @@ export const all_stra = {
   "H5689": {
     "agbh": "she doted",
     "agbim": "thy lovers",
-    "vtagb": "and she doted",
+    "vtagb": "she doted",
     "vtagbh": "she doted"
   },
   "H569": {
@@ -36763,7 +37121,6 @@ export const all_stra = {
   "H5703": {
     "ad": "for ever",
     "adi": "for ever",
-    "ebiad": "the everlasting",
     "lad": "for ever",
     "vad": "and ever"
   },
@@ -36866,6 +37223,7 @@ export const all_stra = {
     "ade": "of iddo",
     "adv": "iddo",
     "adve": "of iddo",
+    "ladie": "of iddo",
     "ladve": "of iddo",
     "vadv": "and of iddo"
   },
@@ -36889,11 +37247,11 @@ export const all_stra = {
     "adiim": "ornaments",
     "adim": "themselves of their ornaments",
     "adiv": "whose mouth",
+    "badi": "ornaments",
     "cadi": "thee with them all as with an ornament"
   },
   "H5717": {
     "adiel": "of adiel",
-    "s": "of adiel",
     "vadiel": "and adiel"
   },
   "H5718": {
@@ -37088,6 +37446,7 @@ export const all_stra = {
     "en": "how",
     "enh": "where",
     "mein": "no whither",
+    "men": "no whither",
     "venh": "no whither"
   },
   "H5750": {
@@ -37156,6 +37515,7 @@ export const all_stra = {
     "vhavim": "and avim"
   },
   "H5762": {
+    "aivt": "was avith",
     "avit": "was avith"
   },
   "H5763": {
@@ -37170,6 +37530,7 @@ export const all_stra = {
     "mavl": "of the unrighteous"
   },
   "H5766": {
+    "alth": "and there is no unrighteousness",
     "avl": "iniquity",
     "avlh": "iniquity",
     "avlt": "wickedness",
@@ -37226,6 +37587,9 @@ export const all_stra = {
     "ene": "i beseech",
     "enh": "i beseech"
   },
+  "H5770": {
+    "avin": "eyed"
+  },
   "H5771": {
     "avn": "the iniquity",
     "avnc": "thine iniquity",
@@ -37247,6 +37611,7 @@ export const all_stra = {
     "avnv": "his iniquity",
     "avnvt": "iniquities",
     "avnvticm": "your iniquities",
+    "avnvtihm": "all their iniquities",
     "avvn": "the iniquity",
     "avvnvtiv": "his own iniquities",
     "bavn": "the iniquity",
@@ -37297,6 +37662,7 @@ export const all_stra = {
     "bavffi": "for thee when i shall brandish",
     "eavfh": "for then would i fly away",
     "htaif": "wilt thou set",
+    "htavf": "wilt thou set",
     "iafv": "they shall fly",
     "iavf": "wilt thou set",
     "iavff": "he did fly",
@@ -37307,6 +37673,7 @@ export const all_stra = {
     "tavf": "that flieth",
     "tavfinh": "who are these that fly",
     "vafv": "but they shall fly",
+    "vaif": "wilt thou set",
     "viaf": "and did fly",
     "vnafh": "and we fly away"
   },
@@ -37336,7 +37703,8 @@ export const all_stra = {
     "vavfrt": "and lead"
   },
   "H5778": {
-    "aifi": "of ephai"
+    "aifi": "of ephai",
+    "avfi": "of ephai"
   },
   "H5779": {
     "azv": "take"
@@ -37514,11 +37882,8 @@ export const all_stra = {
   "H5799": {
     "laxexl": "for a scapegoat"
   },
-  "H58": {
-    "ebl": "and unto the plain"
-  },
   "H580": {
-    "enknv": "to whom we"
+    "env": "to whom we"
   },
   "H5800": {
     "axb": "hath forsaken",
@@ -37543,9 +37908,10 @@ export const all_stra = {
     "axbvni": "because they have forsaken",
     "axbvt": "are forsaken",
     "axvb": "nor any left",
-    "axvbh": "shall be forsaken",
+    "axvbh": "forsaken",
     "baxbcm": "in that ye have forsaken",
     "baxbm": "because they had forsaken",
+    "caxvbt": "which they left",
     "eaxb": "and will not forsake",
     "eaxbc": "i will not leave",
     "eaxbh": "i will leave",
@@ -37681,27 +38047,10 @@ export const all_stra = {
   },
   "H582": {
     "benvw": "in man",
-    "benwi": "men",
-    "eiw": "his men",
     "envw": "of man",
-    "enwi": "the men",
-    "enwihn": "their husbands",
-    "enwim": "men",
-    "enwinv": "our men",
-    "enwiv": "his men",
-    "henwim": "men",
+    "henvw": "shall mortal man",
     "lenvw": "to man",
-    "lenwi": "unto the men",
-    "lenwim": "to husbands",
-    "lenwiv": "unto his men",
-    "menvw": "than man",
-    "menwi": "of the men",
-    "venwi": "men",
-    "venwihm": "they and their men",
-    "venwim": "men",
-    "venwiv": "and his men",
-    "vhenwim": "the men",
-    "vmenwi": "men"
+    "menvw": "than man"
   },
   "H5820": {
     "axmvt": "azmaveth",
@@ -37746,6 +38095,7 @@ export const all_stra = {
     "iaxrh": "shall help",
     "iaxrni": "help",
     "iaxrv": "shall help",
+    "laxir": "that thou succour",
     "laxr": "to help",
     "laxrc": "helpeth",
     "laxrni": "help",
@@ -37765,7 +38115,6 @@ export const all_stra = {
     "viaxrv": "helped",
     "viaxrvhv": "and they did help",
     "viaxrvni": "help",
-    "vle": "but they helped",
     "vnaxrti": "in him and i am helped"
   },
   "H5827": {
@@ -37774,6 +38123,7 @@ export const all_stra = {
   "H5828": {
     "axr": "help",
     "axrc": "thee help",
+    "axrh": "him to help",
     "axri": "my help",
     "axrm": "he is their help",
     "axrnv": "our help",
@@ -37983,7 +38333,7 @@ export const all_stra = {
     "enknh": "we"
   },
   "H5860": {
-    "viap": "and he railed",
+    "viap": "flew",
     "vtap": "but didst fly"
   },
   "H5861": {
@@ -38010,6 +38360,7 @@ export const all_stra = {
   },
   "H5867": {
     "ailm": "of elam",
+    "avlm": "of elam",
     "bailm": "of elam",
     "vailm": "and elam",
     "vmailm": "and from elam"
@@ -38034,7 +38385,8 @@ export const all_stra = {
     "ainmv": "their eyes",
     "ainnv": "us",
     "aint": "wells",
-    "ainv": "his eye",
+    "aintm": "furrows",
+    "ainv": "his eyes",
     "ainvt": "the fountains",
     "ani": "the eyes",
     "bain": "eye",
@@ -38047,7 +38399,7 @@ export const all_stra = {
     "bainihn": "in their eyes",
     "baininv": "in our eyes",
     "bainiv": "in his sight",
-    "bainv": "in his eye",
+    "bainv": "unto him",
     "cain": "as the colour",
     "caini": "so our eyes",
     "hain": "whose eyes",
@@ -38074,7 +38426,7 @@ export const all_stra = {
     "vainim": "eyes",
     "vaininv": "neither have our eyes",
     "vainiv": "and his eyes",
-    "vainv": "and the colour",
+    "vainv": "and his eyes",
     "vbaini": "well",
     "vlaini": "in the sight"
   },
@@ -38146,7 +38498,7 @@ export const all_stra = {
     "ain": "even unto en–eglaim"
   },
   "H5883": {
-    "ain": "thereof were at en–rogel",
+    "ain": "en–rogel",
     "bain": "by en–rogel",
     "rgl": "en–rogel"
   },
@@ -38155,7 +38507,7 @@ export const all_stra = {
     "vbain": "and at en–rimmon"
   },
   "H5885": {
-    "ain": "of en–shemesh",
+    "ain": "to en–shemesh",
     "wmw": "to en–shemesh"
   },
   "H5887": {
@@ -38200,7 +38552,6 @@ export const all_stra = {
     "arihm": "their cities",
     "arim": "cities",
     "ariv": "all his cities",
-    "bai": "from the city",
     "bair": "in the city",
     "bairi": "in mine own city",
     "bairv": "of his city",
@@ -38216,7 +38567,6 @@ export const all_stra = {
     "hair": "of the city",
     "hairh": "into the city",
     "harim": "cities",
-    "kzr": "court",
     "lair": "of the city",
     "lairv": "unto his city",
     "lari": "unto the cities",
@@ -38231,7 +38581,6 @@ export const all_stra = {
     "mariv": "of his cities",
     "mhair": "out of the city",
     "mharim": "of the city",
-    "s": "were in the cities",
     "vair": "city",
     "vari": "cities",
     "varic": "and thy cities",
@@ -38257,6 +38606,7 @@ export const all_stra = {
   },
   "H5895": {
     "air": "and upon a colt",
+    "airh": "his foal",
     "airim": "ass colts",
     "airm": "ass colts",
     "airv": "his foal",
@@ -38334,6 +38684,7 @@ export const all_stra = {
     "cenivt": "ships",
     "enih": "a ship",
     "enivt": "ships",
+    "evnivt": "ships",
     "menivtihm": "from their ships",
     "vbenivt": "ships",
     "venivt": "for me and the ships",
@@ -38397,9 +38748,12 @@ export const all_stra = {
   },
   "H5922": {
     "al": "upon",
+    "alc": "thee",
+    "alh": "over",
     "alhi": "for",
     "ali": "unto me",
     "alic": "over",
+    "alih": "over",
     "alihm": "upon",
     "alihvn": "unto",
     "aline": "to",
@@ -38583,6 +38937,7 @@ export const all_stra = {
     "alvt": "burnt offerings",
     "alvticm": "your burnt offerings",
     "alvtiv": "to go up",
+    "alvtv": "to go up",
     "avlh": "burnt offerings",
     "avlt": "burnt offering",
     "avlticm": "you your burnt offerings",
@@ -38623,11 +38978,13 @@ export const all_stra = {
     "alvh": "of iniquity"
   },
   "H5933": {
+    "alih": "aliah",
     "alvh": "alvah"
   },
   "H5934": {
     "alvmic": "of thy youth",
-    "alvmiv": "of his youth"
+    "alvmiv": "of his youth",
+    "alvmv": "of the sin of his youth"
   },
   "H5935": {
     "alin": "alian",
@@ -38674,10 +39031,10 @@ export const all_stra = {
     "alivt": "her the upper"
   },
   "H5943": {
-    "_": "that the most high",
     "aleh": "the most high",
     "alie": "that the most high",
-    "vlaleh": "the most high"
+    "vlaleh": "the most high",
+    "vlalie": "the most high"
   },
   "H5944": {
     "alit": "chamber",
@@ -38687,6 +39044,7 @@ export const all_stra = {
     "halih": "of the parlour",
     "malivtiv": "from his chambers",
     "valitiv": "thereof and of the upper chambers",
+    "valitv": "and his ascent",
     "valivt": "chambers",
     "valivtiv": "and his chambers",
     "vhalivt": "the upper chambers"
@@ -38749,6 +39107,7 @@ export const all_stra = {
     "htallti": "what things i have wrought",
     "iavllv": "glean",
     "lhtavll": "to practise",
+    "mavll": "children",
     "tavll": "thou shalt not glean",
     "vallti": "and defiled",
     "vavll": "thee and do",
@@ -38759,6 +39118,8 @@ export const all_stra = {
   "H5954": {
     "al": "went in",
     "alin": "came",
+    "allin": "came",
+    "allt": "came",
     "alt": "came",
     "hal": "brought in",
     "halni": "went in",
@@ -38908,7 +39269,6 @@ export const all_stra = {
     "mamim": "people",
     "mamiv": "from his people",
     "mham": "the people",
-    "s": "the people",
     "vam": "people",
     "vamc": "and thy people",
     "vamh": "and her people",
@@ -38957,7 +39317,6 @@ export const all_stra = {
     "amdh": "standeth",
     "amdi": "stand",
     "amdim": "stood",
-    "amdm": "stood",
     "amdt": "endureth",
     "amdti": "whom i stand",
     "amdtm": "ye stand",
@@ -39023,7 +39382,7 @@ export const all_stra = {
     "viamidh": "and confirmed",
     "viamidm": "and made",
     "viamidni": "me and set",
-    "viamidv": "and they set",
+    "viamidv": "it and set up",
     "vlamd": "and to stand",
     "vlhamid": "and to repair",
     "vnamid": "and set",
@@ -39088,6 +39447,7 @@ export const all_stra = {
     "vamdihm": "and their pillars",
     "vamdim": "of pillars",
     "vamdiv": "pillars",
+    "vamdv": "pillars",
     "vamvd": "the pillar",
     "vamvdi": "and pillars",
     "vamvdih": "and the pillars",
@@ -39099,7 +39459,6 @@ export const all_stra = {
   },
   "H5983": {
     "amvn": "of ammon",
-    "s": "of ammon",
     "vamvn": "and ammon"
   },
   "H5984": {
@@ -39107,11 +39466,11 @@ export const all_stra = {
     "amnim": "of the ammonites",
     "amnivt": "of ammon",
     "amvni": "an ammonite",
+    "amvnivt": "of ammon",
     "hamni": "the ammonite",
     "hamvni": "the ammonite",
     "hamvnim": "and the ammonites",
     "mhamvnim": "and with them other beside the ammonites",
-    "s": "the ammonite",
     "vhamnim": "and the ammonites"
   },
   "H5985": {
@@ -39143,7 +39502,7 @@ export const all_stra = {
     "amixbd": "was ammizabad"
   },
   "H5991": {
-    "amihvd": "of ammihud"
+    "amikvr": "of ammihud"
   },
   "H5992": {
     "amindb": "of amminadab",
@@ -39256,7 +39615,7 @@ export const all_stra = {
   },
   "H60": {
     "cebl": "into mourning",
-    "ebl": "mourning",
+    "ebl": "of mourning",
     "eblc": "of thy mourning",
     "eblm": "their mourning",
     "hebl": "mourning",
@@ -39583,12 +39942,13 @@ export const all_stra = {
   },
   "H6035": {
     "anii": "the poor",
-    "aniim": "the poor",
     "aniv": "meek",
-    "anvi": "all ye meek",
+    "anv": "meek",
+    "anvi": "the poor",
     "anvim": "the meek",
     "lanvi": "for the meek",
-    "vanvim": "but the meek"
+    "vanvim": "but the meek",
+    "vlanvim": "unto the lowly"
   },
   "H6036": {
     "anvb": "anub"
@@ -39622,11 +39982,9 @@ export const all_stra = {
   "H6041": {
     "ani": "the poor",
     "anih": "o poor",
-    "anii": "o poor",
+    "anii": "the poor",
     "aniic": "of thy poor",
     "aniim": "of the poor",
-    "anvim": "on the poor",
-    "erz": "the poor",
     "hani": "of the poor",
     "haniim": "when the poor",
     "lani": "to the poor",
@@ -39636,10 +39994,11 @@ export const all_stra = {
     "vaniic": "and thy poor",
     "vaniim": "the poor",
     "vaniv": "upon his afflicted",
-    "vlanvim": "unto the lowly"
+    "vlaniim": "unto the lowly"
   },
   "H6042": {
-    "vani": "and unni"
+    "vani": "and unni",
+    "vanv": "and unni"
   },
   "H6043": {
     "anih": "anaiah",
@@ -39671,7 +40030,7 @@ export const all_stra = {
     "mannim": "unto observers of times",
     "mavnn": "or an observer of times",
     "mavnnim": "meonenim",
-    "tnkwv": "nor observe times",
+    "tavnnv": "nor observe times",
     "vannim": "and are soothsayers",
     "vavnn": "and observed times",
     "vmavnnim": "and thou shalt have no more soothsayers"
@@ -39730,6 +40089,7 @@ export const all_stra = {
   },
   "H606": {
     "cenw": "as a man",
+    "envwe": "of men",
     "enw": "man",
     "enwe": "of men",
     "enwim": "of men",
@@ -39784,11 +40144,10 @@ export const all_stra = {
     "hantvti": "the antothite"
   },
   "H607": {
-    "_": "thou",
     "ent": "thou",
     "enth": "thou",
-    "hve": "thou",
-    "vent": "now thou"
+    "vent": "now thou",
+    "venth": "now thou"
   },
   "H6070": {
     "vanttih": "and antothijah"
@@ -39814,12 +40173,12 @@ export const all_stra = {
   },
   "H6076": {
     "afl": "the forts",
-    "bpkrim": "with the emerods",
+    "afli": "emerods",
+    "aflicm": "of your emerods",
+    "aflim": "and they had emerods",
+    "baflim": "with the emerods",
     "hafl": "to the tower",
-    "pkri": "emerods",
-    "pkricm": "of your emerods",
-    "pkrim": "and they had emerods",
-    "vbpkrim": "and with the emerods"
+    "vbaflim": "and with the emerods"
   },
   "H6077": {
     "bafl": "in ophel",
@@ -39953,6 +40312,7 @@ export const all_stra = {
   },
   "H6090": {
     "azb": "if there be any wicked",
+    "azbi": "mine idol",
     "bazb": "him with sorrow",
     "mazbc": "from thy sorrow"
   },
@@ -40036,7 +40396,6 @@ export const all_stra = {
     "gbr": "in ezion–geber",
     "lazivn": "to ezion–geber",
     "mazivn": "from ezion–gaber",
-    "s": "and from ezion–gaber",
     "vmazin": "and from ezion–gaber"
   },
   "H6101": {
@@ -40135,7 +40494,8 @@ export const all_stra = {
     "mazmvn": "from azmon"
   },
   "H6112": {
-    "hazni": "the eznite"
+    "hazni": "the eznite",
+    "haznv": "the eznite"
   },
   "H6113": {
     "azr": "had fast",
@@ -40248,7 +40608,8 @@ export const all_stra = {
     "viaqr": "houghed"
   },
   "H6132": {
-    "etaqrh": "plucked up by the roots"
+    "etaqrh": "plucked up by the roots",
+    "etaqrv": "plucked up by the roots"
   },
   "H6133": {
     "laqr": "by thee or to the stock"
@@ -40313,7 +40674,8 @@ export const all_stra = {
     "aric": "and thine enemies"
   },
   "H6146": {
-    "larc": "thereof to thine enemies"
+    "larc": "thereof to thine enemies",
+    "laric": "thereof to thine enemies"
   },
   "H6147": {
     "ar": "er",
@@ -40344,7 +40706,7 @@ export const all_stra = {
   },
   "H615": {
     "esir": "of the prisoner",
-    "esiri": "being bound",
+    "esiri": "prisoners",
     "esiric": "thy prisoners",
     "esirim": "there the prisoners",
     "esiriv": "of his prisoners",
@@ -40389,7 +40751,7 @@ export const all_stra = {
     "varbi": "and willows"
   },
   "H6156": {
-    "arb": "for sweet"
+    "arb": "is sweet"
   },
   "H6157": {
     "arb": "divers sorts of flies",
@@ -40443,6 +40805,7 @@ export const all_stra = {
     "carbi": "for them as the arabian",
     "harbi": "the arabian",
     "harbieim": "and the arabians",
+    "harbiim": "and against the arabians",
     "harbim": "and against the arabians",
     "vharbim": "and the arabians"
   },
@@ -40646,7 +41009,7 @@ export const all_stra = {
   "H6191": {
     "arvm": "subtilly",
     "iarimv": "they have taken crafty",
-    "iarm": "is prudent"
+    "iarm": "subtilly"
   },
   "H6192": {
     "narmv": "were gathered together"
@@ -40810,6 +41173,7 @@ export const all_stra = {
     "awvt": "to do",
     "awvtcm": "and now because ye have done",
     "awvth": "she had done",
+    "awvvt": "ready dressed",
     "bawi": "made",
     "bawiv": "in him that made",
     "bawth": "while he doeth",
@@ -40859,7 +41223,6 @@ export const all_stra = {
     "nawim": "that are done",
     "nawth": "is wrought",
     "nawv": "made",
-    "s": "do",
     "taw": "but do",
     "tawh": "shalt thou make",
     "tawi": "make",
@@ -40888,7 +41251,6 @@ export const all_stra = {
     "veaw": "and i did",
     "veawc": "and i will make of thee",
     "veawh": "and i will make",
-    "viap": "flew",
     "viaw": "and he made",
     "viawh": "wrought",
     "viawhv": "to make",
@@ -40986,6 +41348,7 @@ export const all_stra = {
     "viesfhv": "he took",
     "viesfm": "and gathered them together",
     "viesfv": "gathered themselves together",
+    "visf": "gathered together",
     "vmesfcm": "will be your rereward",
     "vnesf": "is taken away",
     "vnesfh": "is taken",
@@ -41154,7 +41517,6 @@ export const all_stra = {
     "vlesfim": "and toward asuppim"
   },
   "H6240": {
-    "awh": "made",
     "awr": "were twelve",
     "awrh": "twelve",
     "hawr": "the twelve"
@@ -41271,7 +41633,7 @@ export const all_stra = {
     "vath": "for whereas"
   },
   "H6259": {
-    "atidim": "should be ready"
+    "atvdim": "should be ready"
   },
   "H626": {
     "esfh": "are gathered"
@@ -41300,7 +41662,9 @@ export const all_stra = {
     "atdim": "that they should be ready",
     "atdt": "and the things that shall come",
     "atid": "ready",
+    "atidim": "should be ready",
     "hatidim": "who are ready",
+    "vatidtihm": "their treasures",
     "vatvdvtihm": "their treasures"
   },
   "H6265": {
@@ -41428,6 +41792,7 @@ export const all_stra = {
     "cfertiv": "were not like his branches",
     "ferh": "the bough",
     "fertiv": "and his boughs",
+    "fertv": "and his branches",
     "fervt": "forth sprigs"
   },
   "H6289": {
@@ -41589,7 +41954,6 @@ export const all_stra = {
   },
   "H631": {
     "besrm": "against them when they shall bind",
-    "esiri": "were bound",
     "esr": "prepare",
     "esrh": "wherewith she hath bound",
     "esri": "binding",
@@ -41597,8 +41961,11 @@ export const all_stra = {
     "esrv": "they are bound",
     "esrvt": "were not bound",
     "esvr": "tied",
+    "esvri": "were bound",
     "esvrim": "girded",
     "hesrv": "and ye shall be kept in prison",
+    "hesvrim": "and bound",
+    "hsvrim": "for out of prison",
     "iesr": "be bound",
     "iesrni": "unto her if they bind",
     "iesrvni": "me fast",
@@ -41770,6 +42137,7 @@ export const all_stra = {
     "nfvzim": "scattered",
     "nfvztm": "wherein ye are scattered",
     "nfzim": "scattered",
+    "nfzit": "was there scattered",
     "nfzt": "was there scattered",
     "nfztm": "wherein ye have been scattered",
     "nfzv": "was scattered",
@@ -41834,6 +42202,7 @@ export const all_stra = {
   },
   "H6335": {
     "nfwv": "is scattered",
+    "tfvwi": "because ye are grown fat",
     "tfvwv": "because ye are grown fat",
     "vfwtm": "and grow up",
     "vfwv": "shall spread"
@@ -41912,7 +42281,8 @@ export const all_stra = {
     "vfkdv": "and his dread"
   },
   "H6344": {
-    "fkdiv": "of his stones"
+    "fkdiv": "of his stones",
+    "fkdv": "of his stones"
   },
   "H6345": {
     "fkdti": "and that my fear"
@@ -41978,6 +42348,9 @@ export const all_stra = {
     "fpdh": "a topaz",
     "fpdt": "the topaz"
   },
+  "H6359": {
+    "fpirim": "were free"
+  },
   "H636": {
     "ea": "timber",
     "eae": "wood",
@@ -41988,9 +42361,11 @@ export const all_stra = {
     "vcfpiw": "and like a hammer"
   },
   "H6361": {
+    "fpiwihvn": "their hosen",
     "fpwihvn": "their hosen"
   },
   "H6362": {
+    "fpvrim": "were free",
     "fvpr": "is as when one letteth out",
     "vifpr": "but he slipped away"
   },
@@ -42071,6 +42446,9 @@ export const all_stra = {
   "H6378": {
     "fc": "a vial"
   },
+  "H6379": {
+    "mfcim": "and behold there ran out"
+  },
   "H638": {
     "vef": "also"
   },
@@ -42116,6 +42494,7 @@ export const all_stra = {
   },
   "H6383": {
     "flei": "seeing it is secret",
+    "fleih": "is too wonderful",
     "flieh": "is too wonderful"
   },
   "H6384": {
@@ -42217,6 +42596,10 @@ export const all_stra = {
     "flkin": "serve",
     "iflkvn": "serve",
     "vflki": "or ministers"
+  },
+  "H64": {
+    "crmim": "of the vineyards",
+    "ebl": "of the vineyards"
   },
   "H640": {
     "vefdt": "and gird",
@@ -42388,6 +42771,7 @@ export const all_stra = {
   },
   "H6428": {
     "htflwi": "roll",
+    "htflwti": "roll",
     "itflwv": "they shall wallow",
     "vhtflwi": "and wallow",
     "vhtflwv": "and wallow"
@@ -42401,9 +42785,10 @@ export const all_stra = {
   "H6430": {
     "bflwtim": "the philistines",
     "cflwtim": "like the philistines",
+    "flwtiim": "against the philistines",
     "flwtim": "of the philistines",
     "hflwti": "the philistine",
-    "hflwtim": "of the philistines",
+    "hflwtim": "the philistines",
     "lflwtim": "which belonged to the philistines",
     "mflwtim": "philistines",
     "vbflwtim": "against the philistines",
@@ -42481,6 +42866,7 @@ export const all_stra = {
   "H6439": {
     "fniel": "peniel",
     "fnvel": "of penuel",
+    "vfniel": "and penuel",
     "vfnvel": "and penuel"
   },
   "H644": {
@@ -42544,7 +42930,6 @@ export const all_stra = {
     "mlfnicm": "from before",
     "mlfniv": "before",
     "mlfnnv": "which was before",
-    "vfi": "but the mouth",
     "vfni": "face",
     "vfnic": "in thine own person",
     "vfnih": "and her countenance",
@@ -42575,6 +42960,7 @@ export const all_stra = {
   },
   "H6443": {
     "fninim": "of rubies",
+    "mfniim": "than rubies",
     "mfninim": "than rubies"
   },
   "H6444": {
@@ -42801,7 +43187,7 @@ export const all_stra = {
   "H6476": {
     "fzki": "break forth",
     "fzkv": "break forth",
-    "ifzkv": "shall break forth",
+    "ifzkv": "and break forth",
     "vfzkv": "and break forth"
   },
   "H6477": {
@@ -42922,6 +43308,7 @@ export const all_stra = {
     "fqdtv": "his office",
     "fqdvt": "officers",
     "hfqdh": "of visitation",
+    "hfqdt": "him in prison",
     "lfqdh": "reckoning",
     "lfqdtm": "according to their offices",
     "vfqdt": "and to the office",
@@ -42930,7 +43317,6 @@ export const all_stra = {
   },
   "H6487": {
     "bfqdvn": "in that which was delivered",
-    "hfqd": "or that which was delivered",
     "hfqdvn": "or that which was delivered",
     "lfqdvn": "shall be for store"
   },
@@ -42959,6 +43345,7 @@ export const all_stra = {
   "H6491": {
     "efqk": "and i will open",
     "fqk": "open",
+    "fqkh": "open",
     "fqkt": "and dost thou open",
     "fqkvt": "are open",
     "fqvk": "not opening",
@@ -43069,8 +43456,7 @@ export const all_stra = {
     "frdim": "mules’",
     "frdv": "upon his mule",
     "hfrd": "and the mule",
-    "vbfrdim": "and upon mules",
-    "vbgmlim": "and on mules",
+    "vbfrdim": "and on mules",
     "vfrd": "and mules",
     "vfrdim": "and mules",
     "vhfrd": "and the mule"
@@ -43121,6 +43507,9 @@ export const all_stra = {
   "H6511": {
     "vhfrh": "and parah"
   },
+  "H6512": {
+    "frvt": "to the moles"
+  },
   "H6513": {
     "vfrh": "with phurah"
   },
@@ -43138,7 +43527,8 @@ export const all_stra = {
     "bfrvr": "or pot"
   },
   "H6518": {
-    "frxiv": "of his villages"
+    "frxiv": "of his villages",
+    "frxv": "of his villages"
   },
   "H6519": {
     "frxvt": "of unwalled villages",
@@ -43154,6 +43544,7 @@ export const all_stra = {
     "frxvn": "the inhabitants of the villages"
   },
   "H6521": {
+    "hfrvxim": "of the villages",
     "hfrxi": "and of country",
     "hfrxim": "of the villages"
   },
@@ -43313,7 +43704,8 @@ export const all_stra = {
     "hfrsi": "the persian"
   },
   "H6543": {
-    "frseh": "the persian"
+    "frseh": "the persian",
+    "frsie": "the persian"
   },
   "H6544": {
     "bfra": "for the avenging",
@@ -43385,6 +43777,7 @@ export const all_stra = {
     "hfrvzh": "that was broken",
     "hfrz": "the breaker",
     "hfrzim": "and that the breaches",
+    "hmfrvzim": "which were broken down",
     "hmtfrzim": "that break away",
     "ifrz": "and grew",
     "ifrzni": "he breaketh",
@@ -43447,7 +43840,7 @@ export const all_stra = {
     "hfrq": "in the crossway"
   },
   "H6564": {
-    "vmrq": "and broth"
+    "vfrq": "and broth"
   },
   "H6565": {
     "efr": "break",
@@ -43811,10 +44204,10 @@ export const all_stra = {
     "ftkvt": "may be open",
     "ftvk": "open",
     "ftvkh": "open",
-    "ftvki": "graven",
     "ftvkvt": "open",
     "fvtk": "thou openest",
     "htftki": "loose",
+    "htftkv": "loose",
     "iftk": "it shall be opened",
     "iftkv": "be opened",
     "iftkvm": "that they should not be opened",
@@ -43982,7 +44375,6 @@ export const all_stra = {
     "bzennv": "with our flocks",
     "czen": "like a flock",
     "hzen": "of the flock",
-    "lrb": "and sheep",
     "lzen": "for their flocks",
     "lzenc": "and with thy sheep",
     "lzeni": "my flock",
@@ -43990,7 +44382,6 @@ export const all_stra = {
     "mzen": "out of the flock",
     "mzenc": "out of thy flock",
     "mzenv": "of his own flock",
-    "s": "sheep",
     "vbzen": "or for sheep",
     "vbzenc": "of thy sheep",
     "vczen": "and as a sheep",
@@ -44078,8 +44469,10 @@ export const all_stra = {
   },
   "H6636": {
     "czbeim": "thee as zeboim",
+    "vzbiim": "and zeboim",
     "vzbim": "and zeboim",
     "vzbvim": "and zeboim",
+    "zbiim": "of zeboiim",
     "zbviim": "of zeboiim",
     "zbvim": "of zeboiim"
   },
@@ -44089,6 +44482,9 @@ export const all_stra = {
   "H6638": {
     "lzbvt": "to swell",
     "vzbth": "shall swell"
+  },
+  "H6639": {
+    "zbh": "to swell"
   },
   "H664": {
     "vefqh": "and aphekah"
@@ -44315,11 +44711,13 @@ export const all_stra = {
     "efrkih": "her young",
     "efrkim": "upon the young",
     "hefrkim": "upon the young",
-    "vefrkiv": "her young ones"
+    "vefrkiv": "her young ones",
+    "vefrkv": "her young ones"
   },
   "H6670": {
     "izhlv": "neighed",
     "lhzhil": "to shine",
+    "vtzhli": "and bellow",
     "vtzhlv": "and bellow",
     "vzhli": "and cry aloud",
     "vzhlv": "and shout",
@@ -44350,7 +44748,8 @@ export const all_stra = {
   "H6675": {
     "vmzetv": "from their filthiness",
     "zeh": "and filthiness",
-    "zet": "the filth"
+    "zet": "the filth",
+    "zvetm": "their own dung"
   },
   "H6676": {
     "zverc": "thy neck",
@@ -44375,7 +44774,6 @@ export const all_stra = {
   },
   "H6678": {
     "mzbh": "of zobah",
-    "s": "of zobah",
     "vmzvbh": "and out of zobah",
     "zvbe": "of zoba",
     "zvbh": "of zobah"
@@ -44510,6 +44908,7 @@ export const all_stra = {
     "zvfim": "and the honeycomb"
   },
   "H6689": {
+    "zif": "of zuph",
     "zvf": "of zuph",
     "zvfi": "zophai"
   },
@@ -44583,6 +44982,7 @@ export const all_stra = {
     "vlzvr": "and for a rock",
     "vmzvr": "out of the rock",
     "vzvr": "and the rock",
+    "vzvrm": "and their beauty",
     "zrim": "of the rocks",
     "zvr": "the rock",
     "zvri": "my strength",
@@ -44594,6 +44994,7 @@ export const all_stra = {
   },
   "H6699": {
     "zvrt": "them the form",
+    "zvrti": "them the form",
     "zvrtiv": "them the form",
     "zvrtv": "them the form"
   },
@@ -44626,6 +45027,7 @@ export const all_stra = {
     "zkv": "they were whiter"
   },
   "H6706": {
+    "bzkikim": "and on the higher places",
     "lzkik": "her like the top",
     "zkik": "upon the top"
   },
@@ -44633,7 +45035,7 @@ export const all_stra = {
     "zkikh": "in a dry"
   },
   "H6708": {
-    "bzkikim": "and on the higher places"
+    "bzkkiim": "and on the higher places"
   },
   "H6709": {
     "zkntv": "and his ill savour"
@@ -44799,7 +45201,7 @@ export const all_stra = {
     "zrih": "for her pains"
   },
   "H6736": {
-    "vzvrm": "and their beauty",
+    "vzirm": "and their beauty",
     "zirim": "of idols"
   },
   "H6737": {
@@ -44838,7 +45240,8 @@ export const all_stra = {
     "zlh": "zillah"
   },
   "H6742": {
-    "zlil": "and lo a cake"
+    "zlil": "and lo a cake",
+    "zlvl": "and lo a cake"
   },
   "H6743": {
     "bmzlik": "not thyself because of him who prospereth",
@@ -45081,7 +45484,7 @@ export const all_stra = {
     "zmtc": "thy locks"
   },
   "H6778": {
-    "viin": "of figs and bunches of raisins",
+    "vzmvqim": "of figs and bunches of raisins",
     "zmqim": "clusters of raisins",
     "zmvqim": "bunches of raisins"
   },
@@ -45212,6 +45615,7 @@ export const all_stra = {
     "hznif": "mitre",
     "vhznifvt": "and the hoods",
     "vznif": "diadem",
+    "vznvf": "diadem",
     "znif": "mitre"
   },
   "H6798": {
@@ -45336,7 +45740,9 @@ export const all_stra = {
     "zairih": "her little ones",
     "zairihm": "their little ones",
     "zairim": "but now they that are younger",
-    "zairv": "thereof in his youngest"
+    "zairv": "thereof in his youngest",
+    "zavrih": "her little ones",
+    "zavrihm": "their little ones"
   },
   "H6811": {
     "zairh": "to zair"
@@ -45352,6 +45758,7 @@ export const all_stra = {
     "zan": "of zoan"
   },
   "H6815": {
+    "bzanim": "of zaanaim",
     "bzannim": "of zaanaim"
   },
   "H6816": {
@@ -45410,7 +45817,6 @@ export const all_stra = {
     "zfd": "cleaveth"
   },
   "H6822": {
-    "bzfitnv": "we have watched",
     "ezfh": "therefore i will look",
     "hmzfh": "a watchman",
     "hzfh": "and the watchman",
@@ -45423,12 +45829,14 @@ export const all_stra = {
     "vezfh": "and will watch",
     "vhzfh": "a watchman",
     "vzfi": "and espy",
+    "vzfv": "and he is waited",
     "vzfvi": "and he is waited",
     "zfh": "thee a watchman",
     "zfic": "thy watchmen",
     "zfim": "watchmen",
     "zfinv": "we have watched",
     "zfiv": "his watchmen",
+    "zfv": "his watchmen",
     "zfvt": "beholding",
     "zvfh": "watcheth",
     "zvfih": "she looketh well"
@@ -45491,7 +45899,8 @@ export const all_stra = {
     "hzfvni": "of the zephonites"
   },
   "H6832": {
-    "zfiai": "dung"
+    "zfiai": "dung",
+    "zfvai": "dung"
   },
   "H6833": {
     "czfrim": "as birds",
@@ -45516,6 +45925,9 @@ export const all_stra = {
     "vzfkt": "and a cruse",
     "zfkt": "and the cruse"
   },
+  "H6836": {
+    "bzfitnv": "in our watching"
+  },
   "H6837": {
     "zfivn": "ziphion"
   },
@@ -45530,7 +45942,7 @@ export const all_stra = {
     "vezm": "and ozem"
   },
   "H6840": {
-    "vzfvnc": "with thy hid"
+    "vzfinc": "with thy hid"
   },
   "H6841": {
     "vzfiri": "he"
@@ -45547,8 +45959,12 @@ export const all_stra = {
     "hzfrh": "the morning",
     "vlzfirt": "and for a diadem"
   },
+  "H6844": {
+    "hzfit": "in the watchtower"
+  },
   "H6845": {
     "hzfinv": "hide",
+    "izfinv": "they hide",
     "izfn": "he layeth up",
     "izfnni": "he shall hide",
     "izfnv": "men lay up",
@@ -45562,6 +45978,7 @@ export const all_stra = {
     "tzfnni": "thou wouldest hide",
     "vtzfnhv": "child she hid",
     "vtzfnv": "and hid",
+    "vzfn": "he layeth up",
     "vzfvn": "is laid up",
     "zfn": "her hideth",
     "zfnih": "her hideth",
@@ -45812,7 +46229,6 @@ export const all_stra = {
     "lzrvf": "to try",
     "lzvrf": "them to the founder",
     "mzrf": "as a refiner",
-    "s": "of the goldsmiths",
     "vezrf": "purge away",
     "vezrfnv": "and i will try",
     "vizrfv": "and tried",
@@ -45940,7 +46356,7 @@ export const all_stra = {
     "qbl": "choose",
     "viqblm": "received",
     "viqblv": "took",
-    "vqbl": "undertook",
+    "vqbl": "and took",
     "vqblv": "so took"
   },
   "H6902": {
@@ -45956,6 +46372,9 @@ export const all_stra = {
   },
   "H6904": {
     "qblv": "of war"
+  },
+  "H6905": {
+    "qbl": "him before"
   },
   "H6906": {
     "hiqba": "rob",
@@ -46120,6 +46539,7 @@ export const all_stra = {
   "H6918": {
     "bqdvw": "in the holy one",
     "bqdwiv": "in his saints",
+    "bqdwv": "in his saints",
     "hqdvw": "this holy",
     "hqdvwim": "which were holy",
     "lqdvw": "the holy",
@@ -46206,7 +46626,8 @@ export const all_stra = {
     "qdmc": "before",
     "qdmh": "before",
     "qdmi": "before",
-    "qdmih": "that were before",
+    "qdmic": "before",
+    "qdmih": "before",
     "qdmihvn": "before",
     "qdmvhi": "before",
     "vqdmvhi": "before"
@@ -46417,7 +46838,8 @@ export const all_stra = {
     "vlqdw": "and the sanctuary",
     "vlqdwim": "and for the holy",
     "vqdw": "both the sanctuary",
-    "vqdwi": "in the things"
+    "vqdwi": "holy things",
+    "vqdwv": "in the things"
   },
   "H6945": {
     "bqdwim": "is among the unclean",
@@ -46509,7 +46931,7 @@ export const all_stra = {
     "lqv": "line",
     "qv": "line",
     "qvm": "their line",
-    "vqv": "that had the line"
+    "vqv": "and a line"
   },
   "H6958": {
     "qeh": "spue not you out",
@@ -46554,8 +46976,9 @@ export const all_stra = {
     "wqvinhv": "that we looked for"
   },
   "H6961": {
-    "qv": "line",
-    "vqv": "and a line"
+    "qvh": "line",
+    "vqv": "and a line",
+    "vqvh": "and a line"
   },
   "H6962": {
     "eqvp": "long was i grieved",
@@ -46763,6 +47186,7 @@ export const all_stra = {
     "vhqim": "to set",
     "vhqimv": "and they set",
     "vmhqim": "and setteth up",
+    "vqemin": "had set up",
     "vqimin": "had set up",
     "vqm": "and rose up"
   },
@@ -46785,11 +47209,11 @@ export const all_stra = {
   },
   "H6969": {
     "lmqvnnvt": "for the mourning women",
-    "qinh": "shall lament",
     "tqvnnh": "shall lament",
     "viqnn": "lamented",
     "viqvnn": "lamented",
-    "vqvnnv": "for thee and lament"
+    "vqvnnv": "for thee and lament",
+    "vqvnnvh": "shall lament"
   },
   "H697": {
     "berbh": "for the locusts",
@@ -46846,7 +47270,6 @@ export const all_stra = {
   "H6976": {
     "hqvz": "of koz",
     "lhqvz": "to hakkoz",
-    "s": "of koz",
     "vqvz": "and coz"
   },
   "H6977": {
@@ -46993,7 +47416,7 @@ export const all_stra = {
     "mqprt": "perfumed",
     "mqprvt": "had burned incense",
     "qpr": "to burn",
-    "qprtm": "ye have burned incense",
+    "qprtm": "that ye burned",
     "qprv": "had burned incense",
     "tqpir": "and shalt burn",
     "tqpirv": "and burn incense",
@@ -47002,6 +47425,7 @@ export const all_stra = {
     "vhqpirm": "shall burn",
     "vhqpirv": "shall burn",
     "vhqprt": "and burn",
+    "viqpirv": "me and have burned incense",
     "viqpr": "and he burnt",
     "viqprv": "me and have burned incense",
     "vmqpir": "and to kindle",
@@ -47031,7 +47455,7 @@ export const all_stra = {
     "vqprin": "doubts"
   },
   "H7002": {
-    "qprtm": "the incense"
+    "hqpr": "the incense"
   },
   "H7003": {
     "qprvn": "of kitron"
@@ -47092,8 +47516,7 @@ export const all_stra = {
     "hqinvt": "in the lamentations",
     "lqinh": "into lamentation",
     "qinh": "a lamentation",
-    "qnim": "therein lamentations",
-    "vqvnnvh": "this is the lamentation"
+    "qnim": "therein lamentations"
   },
   "H7016": {
     "vqinh": "and kinah"
@@ -47204,6 +47627,8 @@ export const all_stra = {
     "verbah": "of it four"
   },
   "H7030": {
+    "qitrs": "harp",
+    "qitrvs": "harp",
     "qtrvs": "harp"
   },
   "H7031": {
@@ -47232,7 +47657,7 @@ export const all_stra = {
     "vnqlh": "should seem vile"
   },
   "H7035": {
-    "viqhlv": "and they were gathered together"
+    "viqlhv": "and they were gathered together"
   },
   "H7036": {
     "bqlvn": "into shame",
@@ -47387,7 +47812,6 @@ export const all_stra = {
   },
   "H7058": {
     "hqmk": "of meal",
-    "mecl": "meal",
     "qmk": "meal",
     "vqmk": "and flour"
   },
@@ -47411,7 +47835,7 @@ export const all_stra = {
     "qmzv": "his handful"
   },
   "H7063": {
-    "krlim": "with thorns"
+    "qmwnim": "with thorns"
   },
   "H7064": {
     "cqn": "as a nest",
@@ -47424,6 +47848,7 @@ export const all_stra = {
   },
   "H7065": {
     "bqnetv": "them in his zeal",
+    "bqnev": "while he was zealous",
     "eqniem": "they have moved me to jealousy",
     "hmqne": "unto him enviest",
     "iqne": "envy",
@@ -47448,7 +47873,6 @@ export const all_stra = {
   },
   "H7068": {
     "bqneti": "in my jealousy",
-    "bqnev": "for my sake",
     "hqneh": "of jealousy",
     "hqnet": "the jealousy",
     "qneh": "of jealousy",
@@ -47547,6 +47971,7 @@ export const all_stra = {
   "H7077": {
     "iqnnv": "make their nests",
     "mqnnt": "that makest thy nest",
+    "mqnnti": "that makest thy nest",
     "qnnh": "make her nest",
     "qnnv": "made their nests",
     "tqnn": "that maketh her nest"
@@ -47564,6 +47989,7 @@ export const all_stra = {
   "H7080": {
     "bqsm": "unto thee whiles they divine",
     "cqsm": "divination",
+    "cqsvm": "divination",
     "hqsmim": "and the diviners",
     "hqvsm": "the soothsayer",
     "iqsmv": "thereof divine",
@@ -47573,6 +47999,7 @@ export const all_stra = {
     "qsmi": "i pray thee divine",
     "qsmicm": "nor to your diviners",
     "qsmim": "or that useth",
+    "qsvmi": "i pray thee divine",
     "tqsmnh": "nor divine",
     "vhqsmim": "and that divine",
     "vhqvsmim": "and the diviners",
@@ -47580,8 +48007,7 @@ export const all_stra = {
     "vlqsmim": "and the diviners",
     "vqsm": "and the prudent",
     "vqsmicm": "and your diviners",
-    "vqsmim": "and divining",
-    "wve": "divination"
+    "vqsmim": "and divining"
   },
   "H7081": {
     "hqsm": "was the divination",
@@ -47617,6 +48043,7 @@ export const all_stra = {
   },
   "H7087": {
     "hqfeim": "that are settled",
+    "iqfevn": "nor dark",
     "qfev": "were congealed",
     "tqfieni": "and curdled",
     "vqfevn": "nor dark"
@@ -47694,15 +48121,14 @@ export const all_stra = {
     "mqzvt": "of the lowest",
     "mqzvtm": "from their coasts",
     "qzvt": "ends",
-    "qzvtiv": "end",
+    "qzvtiv": "ends",
     "qzvtm": "unto the ends"
   },
   "H7099": {
-    "hqzvt": "ends",
     "qzvi": "unto the ends"
   },
   "H71": {
-    "emnh": "are not abana"
+    "ebnh": "are not abana"
   },
   "H710": {
     "vbergvn": "and in purple"
@@ -47801,19 +48227,20 @@ export const all_stra = {
   "H7114": {
     "bqzr": "the reaper",
     "bqzrc": "and when ye reap",
-    "evn": "shall reap",
     "hqvzrim": "the reapers",
     "hqzr": "straitened",
     "hqzrim": "the reapers",
     "hqzrt": "hast thou shortened",
     "hqzvr": "at all",
+    "iqzirv": "they reap",
     "iqzr": "shall reap",
     "iqzrhv": "reap",
     "iqzrv": "shall reap",
     "iqzrvn": "that they do reap",
-    "iqzvr": "and reapeth",
+    "iqzvr": "shall reap",
     "iqzvrv": "they reap",
     "lqvzrim": "unto the reapers",
+    "lqzr": "and when ye reap",
     "qvzr": "wherewith the mower",
     "qzr": "is shorter",
     "qzrh": "at all",
@@ -47850,9 +48277,8 @@ export const all_stra = {
     "vlqzt": "and at the end"
   },
   "H7119": {
-    "iqr": "is of an excellent",
     "qrim": "as cold",
-    "rvk": "is of an excellent"
+    "vqr": "is of an excellent"
   },
   "H712": {
     "bergx": "in a coffer",
@@ -47906,6 +48332,7 @@ export const all_stra = {
     "qrev": "call",
     "qrevt": "that thou calledst",
     "qrve": "am i invited",
+    "qrvei": "the renowned",
     "qvre": "calleth",
     "tqre": "she crieth",
     "tqrei": "and shalt call",
@@ -48169,7 +48596,6 @@ export const all_stra = {
     "qrvbh": "or near",
     "qrvbi": "my kinsfolk",
     "qrvbim": "that approach",
-    "vgm": "moreover they that were nigh",
     "vhqrb": "and the next",
     "vhqrbvt": "or near",
     "vhqrvb": "and he that is near",
@@ -48179,6 +48605,7 @@ export const all_stra = {
   },
   "H7139": {
     "iqrk": "themselves nor make themselves bald",
+    "iqrkh": "they shall not make",
     "iqrkv": "they shall not make",
     "mqrk": "was made bald",
     "qrki": "make thee bald",
@@ -48227,8 +48654,7 @@ export const all_stra = {
   },
   "H7148": {
     "qrei": "famous",
-    "qriei": "which were famous",
-    "qrvei": "these were"
+    "qriei": "these were"
   },
   "H7149": {
     "bqrih": "in the cities",
@@ -48272,7 +48698,8 @@ export const all_stra = {
   "H7156": {
     "qritim": "and kirjathaim",
     "vqritim": "and kirjathaim",
-    "vqritimh": "and kiriathaim"
+    "vqritimh": "and kiriathaim",
+    "vqritmh": "and kiriathaim"
   },
   "H7157": {
     "arim": "of kirjath–arim",
@@ -48645,6 +49072,7 @@ export const all_stra = {
     "hreitim": "have they seen",
     "hreitm": "see",
     "hreitni": "it then thou shewedst",
+    "hreitnv": "thou which hast shewed",
     "hreivt": "which were meet",
     "hrem": "shewed",
     "hreni": "shewed",
@@ -48693,7 +49121,7 @@ export const all_stra = {
     "reihm": "all that see",
     "reim": "saw",
     "reinv": "we saw",
-    "reit": "seest",
+    "reit": "seeing",
     "reith": "thou hast seen",
     "reiti": "i have seen",
     "reitic": "him saying i have not seen",
@@ -48728,7 +49156,7 @@ export const all_stra = {
     "vereh": "and i saw",
     "verehv": "him and shew",
     "verenv": "and see him",
-    "vhreh": "and shall be shewed",
+    "vhreh": "enjoy",
     "vhreiti": "and i will shew",
     "vhreni": "and shew",
     "vire": "saw",
@@ -48740,6 +49168,7 @@ export const all_stra = {
     "virevm": "and shewed",
     "vitrev": "looked",
     "vlrevt": "seeth",
+    "vnre": "and behold",
     "vnreh": "sheweth",
     "vnrehv": "and when we shall see",
     "vnreth": "shall be seen",
@@ -48756,9 +49185,10 @@ export const all_stra = {
     "vreitm": "and see",
     "vreitn": "and see",
     "vreitni": "and hast regarded",
+    "vreth": "saw",
     "vrev": "and see",
     "vtre": "saw",
-    "vtreh": "land appear",
+    "vtreh": "saw",
     "vtrehv": "it she saw",
     "vtreinh": "had seen",
     "vtreni": "saw",
@@ -48766,6 +49196,9 @@ export const all_stra = {
   },
   "H7201": {
     "vhreh": "and the glede"
+  },
+  "H7202": {
+    "vreh": "therefore see"
   },
   "H7203": {
     "breh": "in vision"
@@ -48785,6 +49218,9 @@ export const all_stra = {
     "vhrevbni": "and the reubenites",
     "vlrevbni": "and to the reubenites"
   },
+  "H7207": {
+    "revt": "the beholding"
+  },
   "H7208": {
     "revmh": "was reumah"
   },
@@ -48796,13 +49232,15 @@ export const all_stra = {
   },
   "H7210": {
     "crei": "thee as a gazingstock",
-    "f": "to look to",
     "mrei": "that it cannot be seen",
     "rei": "seest me"
   },
   "H7211": {
     "reih": "of reaiah",
     "vreih": "and reaiah"
+  },
+  "H7212": {
+    "reit": "the beholding"
   },
   "H7213": {
     "vremh": "and it shall be lifted up"
@@ -48922,7 +49360,6 @@ export const all_stra = {
     "hrewvn": "day of the first",
     "hrewvnh": "in the first",
     "hrewvnim": "first",
-    "lmbrewvnh": "for because ye did it not at the first",
     "lrewnh": "at the first",
     "lrewnim": "of former",
     "mrewvn": "from the beginning",
@@ -48958,7 +49395,6 @@ export const all_stra = {
   "H7227": {
     "brb": "by many",
     "brbim": "of many",
-    "f": "and increased",
     "hrb": "this great",
     "hrbim": "with many",
     "lrb": "to many",
@@ -48998,17 +49434,17 @@ export const all_stra = {
     "brb": "in the multitude",
     "crb": "according to the multitude",
     "hrb": "should not the multitude",
-    "irb": "and the greatness",
     "lrb": "in abundance",
     "lrvb": "plenty",
     "mrb": "for multitude",
     "mrbcm": "you because ye were more",
     "rb": "for the multitude",
-    "vbbqr": "abundantly",
+    "rbi": "to him the great things",
     "vbrb": "and in the greatness",
     "vcrb": "and according to the multitude",
     "vmrb": "and after many",
-    "vrb": "but much"
+    "vrb": "but much",
+    "vrvb": "and the multitude"
   },
   "H7231": {
     "lrb": "to multiply",
@@ -49022,6 +49458,7 @@ export const all_stra = {
   },
   "H7233": {
     "brbbtiv": "his ten thousands",
+    "brbbtv": "his ten thousands",
     "brbbvt": "or with ten thousands",
     "lrbbh": "out of ten thousand",
     "mrbbh": "among ten thousand",
@@ -49057,6 +49494,7 @@ export const all_stra = {
     "lhrbh": "many",
     "lhrbvt": "to increase",
     "mhrbh": "of many",
+    "mhrbit": "any more",
     "mhrbt": "any more",
     "mrbh": "increaseth",
     "mrbim": "many",
@@ -49070,6 +49508,7 @@ export const all_stra = {
     "trbni": "hath made me great",
     "trbv": "no more",
     "trbvn": "with thee and that ye may increase",
+    "verb": "and multiplied",
     "verbh": "and multiplied",
     "verbhv": "him and increased",
     "vhrbc": "and multiply",
@@ -49116,7 +49555,6 @@ export const all_stra = {
   },
   "H7239": {
     "rbevt": "threescore",
-    "rbi": "to him the great things",
     "rbtim": "are twenty thousand",
     "rbv": "eighteen",
     "rbve": "was forty",
@@ -49130,6 +49568,7 @@ export const all_stra = {
   },
   "H7240": {
     "rbbn": "times ten thousand",
+    "rbvn": "times ten thousand",
     "vrbv": "times ten thousand"
   },
   "H7241": {
@@ -49162,6 +49601,8 @@ export const all_stra = {
   },
   "H7244": {
     "rbiaeh": "the fourth",
+    "rbiaie": "the fourth",
+    "rbiaih": "a fourth",
     "rbiaite": "the fourth"
   },
   "H7245": {
@@ -49254,7 +49695,7 @@ export const all_stra = {
     "vrbqh": "and rebekah"
   },
   "H726": {
-    "vedvmim": "and the syrians"
+    "vermim": "and the syrians"
   },
   "H7260": {
     "rbrbin": "great",
@@ -49266,10 +49707,11 @@ export const all_stra = {
     "rbrbnvhi": "of his lords",
     "vrbrbnc": "and thy lords",
     "vrbrbni": "and my lords",
+    "vrbrbnic": "and thy lords",
     "vrbrbnvhi": "and his lords"
   },
   "H7262": {
-    "rb": "and rab–shakeh",
+    "rb": "of rabshakeh",
     "wqh": "of rabshakeh"
   },
   "H7263": {
@@ -49342,7 +49784,7 @@ export const all_stra = {
   },
   "H7271": {
     "brglh": "with the feet",
-    "brglih": "with his feet",
+    "brglih": "with the feet",
     "rglie": "the feet",
     "rglin": "the feet",
     "rglvhi": "his feet"
@@ -49424,13 +49866,15 @@ export const all_stra = {
     "vtrgnv": "and ye murmured"
   },
   "H728": {
+    "ernih": "of araunah",
     "ervnh": "and araunah",
-    "hervnh": "of araunah"
+    "hervnh": "of araunah",
+    "hevrnh": "of araunah"
   },
   "H7280": {
     "ergah": "them suddenly",
     "ergia": "to rest",
-    "ergiah": "but i will suddenly",
+    "ergiah": "is but for a moment",
     "hrgai": "rest",
     "hrgia": "that he may give rest",
     "hrgiah": "also shall rest",
@@ -49517,7 +49961,6 @@ export const all_stra = {
     "nrdf": "why persecute",
     "nrdfh": "if we follow",
     "nrdfnv": "are under persecution",
-    "pvb": "because i follow",
     "rdf": "pursued",
     "rdfc": "while they pursue",
     "rdfi": "that follow",
@@ -49530,6 +49973,7 @@ export const all_stra = {
     "rdfvc": "thee which persecuted",
     "rdfvm": "wherein they chased",
     "rdfvni": "they persecute",
+    "rdvfi": "because i follow",
     "rvdf": "the pursuer",
     "trdf": "pursueth",
     "trdfm": "so persecute",
@@ -49592,7 +50036,7 @@ export const all_stra = {
   "H730": {
     "berx": "with cedar",
     "berxic": "thy cedars",
-    "berxim": "in the cedars",
+    "berxim": "of cedar",
     "cerx": "like a cedar",
     "cerxim": "as the cedars",
     "erx": "and cedar",
@@ -49632,7 +50076,8 @@ export const all_stra = {
     "rvh": "shall be as a watered"
   },
   "H7303": {
-    "vrhgh": "and rohgah"
+    "vrhgh": "and rohgah",
+    "vrvhgh": "and rohgah"
   },
   "H7304": {
     "mrvkim": "and large",
@@ -49713,7 +50158,7 @@ export const all_stra = {
     "ervm": "i will be exalted",
     "ervmmc": "i will extol",
     "hhrimv": "had offered",
-    "hrim": "gave",
+    "hrim": "sacrifice was taken away",
     "hrimh": "lift up",
     "hrimi": "lift up",
     "hrimti": "i have lift up",
@@ -49728,9 +50173,9 @@ export const all_stra = {
     "htrim": "canst thou lift up",
     "hvrm": "sacrifice was taken away",
     "irim": "on high",
-    "irimv": "which they offer",
+    "irimv": "exalt",
     "irmvn": "shall be exalted",
-    "irvm": "be exalted",
+    "irvm": "shall be lifted up",
     "irvmm": "would exalt",
     "irvmmni": "me he shall set me up",
     "irvmv": "exalt",
@@ -49753,6 +50198,7 @@ export const all_stra = {
     "rvmh": "be thou exalted",
     "rvmmti": "nor bring up",
     "rvmmv": "exalt",
+    "trim": "shall be exalted",
     "trimv": "ye shall offer",
     "trm": "shall be lifted up",
     "trmm": "therefore shalt thou not exalt",
@@ -49834,7 +50280,6 @@ export const all_stra = {
     "iraa": "neither shall there be shouting",
     "iria": "he shall cry",
     "iriav": "shall shout",
-    "irva": "shall be destroyed",
     "itrvaav": "they shout for joy",
     "lhria": "to cry alarm",
     "mriaim": "shouted",
@@ -49858,6 +50303,7 @@ export const all_stra = {
     "eriznv": "make him run away",
     "ervz": "ran",
     "ervzh": "let me now run",
+    "ervzm": "run away",
     "erz": "for by thee i have run through",
     "erzh": "wherefore wilt thou run",
     "hirzvn": "run",
@@ -50019,6 +50465,7 @@ export const all_stra = {
     "erktic": "thy paths",
     "erktihm": "whose ways",
     "erktiv": "his ways",
+    "erktv": "his ways",
     "erkv": "his way",
     "erkvt": "the paths",
     "erkvti": "unto all my paths",
@@ -50121,7 +50568,8 @@ export const all_stra = {
     "vrkvqim": "and they that are far off"
   },
   "H7351": {
-    "rhipnv": "and our rafters"
+    "rhipnv": "and our rafters",
+    "rkipnv": "and our rafters"
   },
   "H7352": {
     "rkiqin": "far"
@@ -50176,6 +50624,7 @@ export const all_stra = {
     "rkmih": "for her bowels",
     "rkmim": "mercies",
     "rkmiv": "all pity",
+    "rkmv": "for his mercies",
     "vbrkmic": "mercies’",
     "vbrkmim": "mercies",
     "vcrkmic": "mercies",
@@ -50259,9 +50708,8 @@ export const all_stra = {
     "hrkqt": "far",
     "hrkqtim": "although i have cast them far off",
     "irkiqnh": "shall drive it far",
-    "irkq": "be too far",
+    "irkq": "be loosed",
     "irkqv": "far",
-    "irtq": "be loosed",
     "lrkq": "to refrain",
     "lrkqh": "here that i should go far off",
     "rkq": "far",
@@ -50321,12 +50769,13 @@ export const all_stra = {
     "iribn": "strive",
     "lrb": "to strive",
     "lrib": "contend",
+    "lrvb": "unto us to complain",
     "mribiv": "the adversaries",
+    "mribv": "the adversaries",
     "rb": "strive",
     "rbt": "thou hast pleaded",
     "rbv": "strove",
     "rib": "plead",
-    "ribc": "debate",
     "ribh": "plead",
     "ribv": "plead",
     "ribvt": "why dost thou strive",
@@ -50336,6 +50785,7 @@ export const all_stra = {
     "tribni": "me wherefore thou contendest",
     "tribv": "wherefore will ye plead",
     "tribvn": "did chide",
+    "trvb": "strive",
     "verib": "and i contended",
     "veribh": "and i rebuked",
     "virb": "chode",
@@ -50362,8 +50812,7 @@ export const all_stra = {
     "vrb": "and the cause",
     "vrbvt": "to the pleadings",
     "vrib": "and strife",
-    "vribcm": "and your strife",
-    "vrvb": "and the multitude"
+    "vribcm": "and your strife"
   },
   "H738": {
     "ceri": "lion",
@@ -50490,7 +50939,6 @@ export const all_stra = {
     "vtrcbnh": "and they rode"
   },
   "H7393": {
-    "brb": "of my chariots",
     "brcb": "with chariots",
     "brcbi": "chariots",
     "brcbv": "in his chariot",
@@ -50602,9 +51050,8 @@ export const all_stra = {
     "vlrcw": "and dromedaries"
   },
   "H741": {
-    "_": "so the altar",
+    "vhereil": "and the altar",
     "vheriel": "and the altar",
-    "vhhrel": "so the altar",
     "vmhereil": "so the altar"
   },
   "H7410": {
@@ -50667,7 +51114,6 @@ export const all_stra = {
     "vrmvnim": "and pomegranates"
   },
   "H7417": {
-    "hmter": "to remmon–methoar",
     "hrmvn": "rimmon",
     "lrmvn": "to rimmon",
     "rmn": "of rimmon",
@@ -50817,7 +51263,6 @@ export const all_stra = {
     "mtrvnn": "that shouteth",
     "nrnnh": "let us sing",
     "rni": "sing",
-    "rnn": "shall shout aloud",
     "rnnv": "sing",
     "rnv": "sing",
     "trnh": "crieth",
@@ -50835,6 +51280,9 @@ export const all_stra = {
   },
   "H7443": {
     "rnnim": "gavest thou the goodly"
+  },
+  "H7444": {
+    "rnn": "for joy"
   },
   "H7445": {
     "brnnh": "with singing",
@@ -50901,8 +51349,6 @@ export const all_stra = {
     "ratv": "his wickedness",
     "ravt": "and the wickedness",
     "ravticm": "for all your evils",
-    "rwa": "of the wicked",
-    "tkrw": "not evil",
     "vbratc": "and with thy wickedness",
     "vbratm": "in their own wickedness",
     "vhra": "and bad",
@@ -50929,7 +51375,7 @@ export const all_stra = {
     "hra": "a friend",
     "lrac": "thy neighbour’s",
     "lrahv": "his neighbour",
-    "lraic": "them unto thy neighbour",
+    "lraic": "not unto thy neighbour",
     "mrah": "departeth from her husband",
     "mrahv": "of his neighbour",
     "ra": "companion",
@@ -50942,8 +51388,7 @@ export const all_stra = {
     "raim": "lovers",
     "raiv": "friends",
     "riacm": "a pit for your friend",
-    "s": "thy neighbour’s",
-    "vra": "and friend",
+    "vra": "friend",
     "vrahv": "nor of his friends",
     "vrai": "and my friends",
     "vraic": "thou and thy fellows",
@@ -50980,8 +51425,9 @@ export const all_stra = {
     "rab": "is hungry",
     "rabh": "the hungry",
     "rabim": "hungry",
+    "vmrab": "from the hungry",
     "vrab": "and hungry",
-    "vrabim": "and they that were hungry"
+    "vrabim": "from the hungry"
   },
   "H7458": {
     "brab": "by the famine",
@@ -51011,10 +51457,10 @@ export const all_stra = {
     "bradh": "with trembling",
     "rad": "trembling",
     "radh": "fear",
-    "vrad": "and trembling"
+    "vrad": "and trembling",
+    "vradh": "upon me and trembling"
   },
   "H7462": {
-    "aqd": "and as he was at the shearing",
     "bratv": "as he fed",
     "crah": "he shall feed",
     "erah": "i will feed",
@@ -51065,6 +51511,7 @@ export const all_stra = {
   },
   "H7464": {
     "ravtih": "her companions",
+    "vravti": "i and my fellows",
     "vravtih": "with her companions"
   },
   "H7465": {
@@ -51101,7 +51548,7 @@ export const all_stra = {
   },
   "H7474": {
     "raiti": "my love",
-    "vravti": "i and my fellows"
+    "vraiti": "i and my fellows"
   },
   "H7475": {
     "raivn": "also is vexation",
@@ -51211,7 +51658,7 @@ export const all_stra = {
     "mra": "a wicked doer",
     "mraim": "of evildoers",
     "nra": "now will we deal worse",
-    "ra": "unto thee but if it seem ill",
+    "ra": "also was displeased",
     "rah": "is utterly",
     "rav": "associate",
     "tra": "them how thou didst afflict",
@@ -51293,6 +51740,7 @@ export const all_stra = {
     "rfeh": "unto me heal",
     "rfei": "ye are all physicians",
     "rfeni": "heal",
+    "rfenv": "we would have healed",
     "rfeti": "i have healed",
     "rfetim": "not that i healed",
     "rfetm": "neither have ye healed",
@@ -51309,6 +51757,7 @@ export const all_stra = {
     "virfev": "they have healed",
     "virfv": "were healed",
     "vnrfe": "and is healed",
+    "vnrfev": "shall be healed",
     "vnrfv": "shall be healed",
     "vrfe": "healed",
     "vrfem": "and heal",
@@ -51472,7 +51921,7 @@ export const all_stra = {
     "rzv": "take pleasure",
     "rzvi": "let him be acceptable",
     "trzh": "enjoy",
-    "tzrnh": "observe",
+    "trznh": "observe",
     "verzh": "and i will take pleasure",
     "vhrzt": "enjoy",
     "virzhv": "and he will be favourable",
@@ -51631,6 +52080,7 @@ export const all_stra = {
   },
   "H7543": {
     "irqk": "compoundeth",
+    "mrqkim": "of spices prepared",
     "rqk": "of the apothecary",
     "rqki": "made",
     "rvqk": "of the apothecary",
@@ -51712,6 +52162,7 @@ export const all_stra = {
     "hrwvm": "thee that which is noted"
   },
   "H756": {
+    "ercvi": "the archevites",
     "ercvie": "the archevites"
   },
   "H7560": {
@@ -51738,6 +52189,7 @@ export const all_stra = {
     "trwia": "and wilt thou condemn",
     "trwiai": "thou shalt condemn",
     "trwiani": "do not condemn",
+    "vhrwanv": "and have done wickedly",
     "vhrwiav": "and condemn",
     "virwiav": "and yet had condemned",
     "vmrwia": "and he that condemneth",
@@ -51759,7 +52211,6 @@ export const all_stra = {
     "brwaim": "at the wicked",
     "crwa": "with the wicked",
     "hlrwa": "the ungodly",
-    "hra": "from his wicked",
     "hrwa": "of the wicked",
     "hrwah": "the wicked",
     "hrwaim": "wicked",
@@ -51779,12 +52230,13 @@ export const all_stra = {
     "vrwaim": "but the wicked"
   },
   "H7564": {
+    "brwat": "but for the wickedness",
     "hrwah": "this is wickedness",
     "lrwah": "into wickedness",
     "mrwatv": "from his wickedness",
-    "mvriwm": "but for the wickedness",
     "rwah": "wickedly",
     "rwatv": "to his fault",
+    "vbrwat": "but for the wickedness",
     "vbrwatv": "by his own wickedness",
     "vrwah": "but wickedness",
     "vrwat": "as for the wickedness"
@@ -51821,13 +52273,14 @@ export const all_stra = {
   },
   "H7570": {
     "irtik": "to boil",
-    "rtkih": "under it and make it boil",
+    "rtk": "under it and make it boil",
     "rtkv": "boiled"
   },
   "H7571": {
-    "rtk": "well"
+    "rtkih": "well"
   },
   "H7572": {
+    "brtiqvt": "by the chains",
     "brtvqvt": "by the chains"
   },
   "H7573": {
@@ -51842,6 +52295,7 @@ export const all_stra = {
     "mrtmh": "from rithmah"
   },
   "H7576": {
+    "irtq": "be loosed",
     "rtqv": "were bound"
   },
   "H7577": {
@@ -51873,7 +52327,7 @@ export const all_stra = {
     "hiweg": "roar",
     "iweg": "roar",
     "iwegv": "roared",
-    "vweg": "and a roaring",
+    "vweg": "they shall roar",
     "weg": "roar",
     "wegim": "roar",
     "wegti": "i have roared",
@@ -51898,7 +52352,7 @@ export const all_stra = {
     "mwteh": "wondering"
   },
   "H7584": {
-    "cwveh": "as desolation"
+    "cwevh": "as desolation"
   },
   "H7585": {
     "bwevl": "into hell",
@@ -51912,7 +52366,6 @@ export const all_stra = {
     "wevlh": "to the grave"
   },
   "H7586": {
-    "lmlkmh": "saul",
     "lwevl": "saul",
     "mwevl": "of saul",
     "vlwevl": "saul",
@@ -51962,14 +52415,14 @@ export const all_stra = {
     "hwelim": "that asked",
     "hwelthv": "he shall be lent",
     "hwelti": "did i desire",
-    "iwel": "ask",
+    "iwel": "therefore shall he beg",
     "iwelc": "asketh",
     "iwelv": "ask",
     "iwelvn": "ask",
     "iwelvni": "they ask",
     "lv": "to enquire",
     "lwel": "to ask",
-    "lwevl": "him to ask",
+    "lwevl": "to enquire",
     "nwel": "asked",
     "nwelti": "obtained i leave",
     "twel": "asked",
@@ -52186,16 +52639,15 @@ export const all_stra = {
     "viwb": "and took",
     "viwbm": "carried away captive",
     "viwbv": "captives",
+    "vwbh": "captive",
     "vwbit": "and thou hast taken",
     "vwbm": "them and carry them away captives",
     "vwbvm": "captives",
     "wbh": "had carried away captive",
-    "wbic": "captive",
     "wbihm": "captives",
     "wbim": "whose captives",
     "wbit": "captive",
     "wbitm": "again which ye have taken captive",
-    "wbiv": "and thou hast taken",
     "wbv": "took they captive",
     "wbvt": "carried away captive",
     "wvbihm": "captives",
@@ -52244,8 +52696,11 @@ export const all_stra = {
     "wbvat": "of the oath"
   },
   "H7622": {
+    "vwbit": "the captivity",
     "vwbvt": "the captivity",
     "wbit": "the captivity",
+    "wbitc": "thy captivity",
+    "wbitcm": "your captivity",
     "wbithn": "the captivity",
     "wbitm": "their captivity",
     "wbitnv": "our captivity",
@@ -52253,7 +52708,8 @@ export const all_stra = {
     "wbvtc": "thy captivity",
     "wbvtcm": "your captivity",
     "wbvticm": "your captivity",
-    "wbvtm": "for i will cause their captivity"
+    "wbvtm": "their captivity",
+    "wbvtnv": "our captivity"
   },
   "H7623": {
     "iwbk": "shall praise",
@@ -52315,11 +52771,12 @@ export const all_stra = {
     "lwbi": "to captivity",
     "mhwbi": "of the captivity",
     "mwbi": "out of the captivity",
-    "vwbh": "and lead thy captivity",
     "vwbicm": "both yourselves and your captives",
     "wbi": "captive",
+    "wbic": "and lead thy captivity",
     "wbih": "o captive",
-    "wbim": "of their captivity"
+    "wbim": "of their captivity",
+    "wbiv": "them captive"
   },
   "H7629": {
     "vwbi": "that shobi"
@@ -52349,6 +52806,7 @@ export const all_stra = {
   },
   "H7635": {
     "vwbilc": "and thy path",
+    "vwbilic": "and thy path",
     "wbili": "paths"
   },
   "H7636": {
@@ -52356,7 +52814,7 @@ export const all_stra = {
   },
   "H7637": {
     "bwbait": "and it came to pass at the seventh time",
-    "bwbiai": "in the seventh",
+    "bwbiai": "of the seven",
     "hwbai": "the seventh",
     "hwbait": "and in the seventh",
     "hwbiai": "and on the seventh",
@@ -52454,7 +52912,6 @@ export const all_stra = {
     "wbah": "filled",
     "wbanv": "filled",
     "wbat": "thou art filled",
-    "wbatc": "thou wast unsatiable",
     "wbati": "i am full",
     "wbav": "they were filled"
   },
@@ -52527,7 +52984,6 @@ export const all_stra = {
   "H7651": {
     "bwba": "in the seven",
     "bwbah": "the seventh",
-    "bwbiai": "in the seventh",
     "hwba": "the seventh",
     "hwbah": "seven",
     "lwba": "against the seven",
@@ -52542,6 +52998,7 @@ export const all_stra = {
     "wba": "seven",
     "wbah": "and seven",
     "wbat": "seven",
+    "wbatim": "all seven",
     "wbatm": "all seven"
   },
   "H7652": {
@@ -52553,7 +53010,8 @@ export const all_stra = {
   },
   "H7654": {
     "lwbah": "sufficiently",
-    "wbat": "with them and yet couldest not be satisfied"
+    "wbah": "enough",
+    "wbatc": "with them and yet couldest not be satisfied"
   },
   "H7655": {
     "vwbah": "and seven",
@@ -52673,7 +53131,6 @@ export const all_stra = {
     "cwbr": "it as the breaking",
     "lwbrc": "thy bruise",
     "mwbrim": "by reason of breakings",
-    "nwbrh": "breach",
     "vhwbr": "and destruction",
     "vmwbr": "for vexation",
     "vwbr": "destruction",
@@ -52744,7 +53201,7 @@ export const all_stra = {
     "wbtv": "for the loss of his time"
   },
   "H7675": {
-    "bwbt": "in the seat",
+    "bwbt": "in the same place",
     "hwbt": "of the seat",
     "wbt": "and cause the seat"
   },
@@ -52839,6 +53296,7 @@ export const all_stra = {
     "wvgim": "all them that err"
   },
   "H7687": {
+    "vbwgib": "son segub",
     "vbwgvb": "son segub",
     "vwgvb": "and segub",
     "wgvb": "him segub"
@@ -52870,9 +53328,9 @@ export const all_stra = {
     "wginvt": "upon shigionoth"
   },
   "H7693": {
-    "iwcbnh": "shall lie",
-    "twcbnh": "ravished",
-    "wcbt": "thou hast not been lien"
+    "iwglnh": "shall lie",
+    "twglnh": "ravished",
+    "wglt": "thou hast not been lien"
   },
   "H7694": {
     "vhwgl": "unto me the queen",
@@ -52947,6 +53405,7 @@ export const all_stra = {
     "twdd": "spoil",
     "vhwvdd": "spoileth",
     "vwddv": "and spoil",
+    "vwdm": "shall destroy",
     "wdd": "is spoiled",
     "wddh": "is spoiled",
     "wddim": "the spoilers",
@@ -52958,6 +53417,7 @@ export const all_stra = {
     "wvddi": "to thee if robbers"
   },
   "H7704": {
+    "bhwdh": "themselves in the field",
     "bwdc": "in thy field",
     "bwdh": "in the field",
     "bwdi": "in the country",
@@ -53009,6 +53469,7 @@ export const all_stra = {
   },
   "H7709": {
     "bwdmvt": "in the fields",
+    "hwdmvt": "and all the fields",
     "vmwdmt": "and of the fields",
     "vwdmh": "and as corn blasted",
     "vwdmvt": "and the fields",
@@ -53069,6 +53530,7 @@ export const all_stra = {
   },
   "H772": {
     "berae": "earth",
+    "era": "inferior",
     "erae": "the earth",
     "merae": "from the earth",
     "vberae": "and in earth",
@@ -53084,6 +53546,7 @@ export const all_stra = {
   "H7722": {
     "bwveh": "let destruction",
     "cweh": "like a storm",
+    "cwveh": "as desolation",
     "lwveh": "to destroy",
     "mweihm": "from their destructions",
     "vlwveh": "and in the desolation",
@@ -53093,6 +53556,7 @@ export const all_stra = {
   },
   "H7723": {
     "bwiv": "in vanity",
+    "bwv": "in vanity",
     "hwve": "false",
     "lwve": "in vain",
     "vwve": "for vain",
@@ -53116,7 +53580,7 @@ export const all_stra = {
     "ewibc": "i will answer",
     "ewibnh": "and i cannot reverse",
     "ewibnv": "i will not turn away",
-    "ewvb": "i will return",
+    "ewvb": "to return",
     "ewvbh": "and return",
     "hhwb": "again",
     "hiwvb": "yet return again",
@@ -53224,7 +53688,7 @@ export const all_stra = {
     "viwibhv": "again",
     "viwibm": "again",
     "viwibv": "again",
-    "viwm": "after this shall he turn",
+    "viwvb": "and turneth away",
     "viwvbv": "turned back",
     "vlhwib": "and to restore",
     "vlwbi": "and unto them that turn",
@@ -53233,7 +53697,7 @@ export const all_stra = {
     "vnwb": "that we returned",
     "vnwbh": "and let us go again",
     "vnwib": "ye that we may",
-    "vnwvb": "but we will return",
+    "vnwvb": "turn",
     "vnwvbh": "and let us return",
     "vtwb": "returned",
     "vtwbnh": "were restored",
@@ -53242,6 +53706,7 @@ export const all_stra = {
     "vwbbti": "again",
     "vwbbtic": "and i will turn thee back",
     "vwbh": "he said go back",
+    "vwbi": "return",
     "vwbih": "and her converts",
     "vwbt": "if thou turn",
     "vwbti": "and i will bring again",
@@ -53263,6 +53728,7 @@ export const all_stra = {
     "wvb": "return",
     "wvbbh": "to return",
     "wvbbtc": "it hath perverted",
+    "wvbbvm": "they have turned them away",
     "wvbc": "thou return",
     "wvbh": "return",
     "wvbi": "return",
@@ -53271,8 +53737,7 @@ export const all_stra = {
   },
   "H7726": {
     "wvbb": "frowardly",
-    "wvbbim": "o backsliding",
-    "wvbbvm": "they have turned them away"
+    "wvbbim": "o backsliding"
   },
   "H7727": {
     "vwvbb": "and shobab"
@@ -53323,10 +53788,11 @@ export const all_stra = {
     "wviti": "i reckoned"
   },
   "H7738": {
-    "tvwih": "my substance"
+    "twvh": "my substance"
   },
   "H7739": {
     "iwtvh": "shall be made",
+    "wvi": "was made",
     "wviv": "was made"
   },
   "H774": {
@@ -53341,6 +53807,7 @@ export const all_stra = {
     "lwvk": "to meditate"
   },
   "H7743": {
+    "vtwik": "and is humbled",
     "vtwvk": "and is humbled",
     "wkh": "inclineth"
   },
@@ -53350,7 +53817,7 @@ export const all_stra = {
   },
   "H7745": {
     "vwvkh": "and of pits",
-    "wvkh": "pit"
+    "wvkh": "a pit"
   },
   "H7746": {
     "wvkh": "of shuah"
@@ -53391,8 +53858,7 @@ export const all_stra = {
   "H7752": {
     "bwvp": "from the scourge",
     "bwvpim": "you with whips",
-    "wvp": "a whip",
-    "wvpf": "scourge"
+    "wvp": "scourge"
   },
   "H7753": {
     "wc": "therefore behold i will hedge",
@@ -53419,6 +53885,7 @@ export const all_stra = {
     "wvliv": "the hem"
   },
   "H7758": {
+    "will": "stripped",
     "wvll": "stripped"
   },
   "H7759": {
@@ -53438,7 +53905,6 @@ export const all_stra = {
     "berzvt": "them among the countries",
     "cerz": "land",
     "cerzcm": "a land",
-    "edmt": "that her land",
     "erz": "of the earth",
     "erzc": "of thy land",
     "erzcm": "of your land",
@@ -53461,7 +53927,6 @@ export const all_stra = {
     "merzv": "of his land",
     "merzvt": "lands",
     "mherz": "from the earth",
-    "s": "to the earth",
     "vberz": "and in the earth",
     "vberzcm": "any offering thereof in your land",
     "verz": "and earth",
@@ -53475,8 +53940,7 @@ export const all_stra = {
     "vlerzm": "and unto the land",
     "vmerz": "and from the land",
     "vmerzv": "out of his land",
-    "vmerzvt": "them out of the lands",
-    "zdq": "of the earth"
+    "vmerzvt": "them out of the lands"
   },
   "H7760": {
     "bwvm": "disposed",
@@ -53500,7 +53964,6 @@ export const all_stra = {
     "iwmc": "make",
     "iwmni": "moreover oh that i were made",
     "iwvm": "or who maketh",
-    "leiwi": "which is left",
     "lwvm": "to put",
     "mwim": "without any regarding",
     "mwmv": "doeth",
@@ -53518,6 +53981,7 @@ export const all_stra = {
     "vewimm": "and i will make",
     "vewm": "and put",
     "vewmh": "and let me set",
+    "vivwm": "and there was set",
     "viwimc": "therefore made",
     "viwimh": "and made",
     "viwimhv": "set",
@@ -53528,6 +53992,7 @@ export const all_stra = {
     "viwmhv": "set",
     "viwmm": "them and had made",
     "viwmv": "and they laid",
+    "vlwimv": "and to tread them down",
     "vlwvm": "and he will appoint",
     "vlwvmv": "and to tread them down",
     "vnwim": "and let us set",
@@ -53778,6 +54243,7 @@ export const all_stra = {
   },
   "H7792": {
     "vwvri": "the walls",
+    "vwvrie": "the walls",
     "vwvrih": "and the walls"
   },
   "H7793": {
@@ -54001,7 +54467,7 @@ export const all_stra = {
     "wkpi": "slaying",
     "wkpv": "and they slew",
     "wkvp": "shot out",
-    "wvkp": "he that killeth"
+    "wvkp": "shot out"
   },
   "H782": {
     "verwt": "the request"
@@ -54055,7 +54521,8 @@ export const all_stra = {
     "wkz": "of pride"
   },
   "H7831": {
-    "vwkzimh": "and shahazimah"
+    "vwkzimh": "and shahazimah",
+    "vwkzvmh": "and shahazimah"
   },
   "H7832": {
     "bwkvq": "made sport",
@@ -54109,7 +54576,6 @@ export const all_stra = {
   },
   "H7837": {
     "bwkr": "in a morning",
-    "calvt": "of the day",
     "cwkr": "as the morning",
     "hwkr": "of the day",
     "wkr": "of the morning",
@@ -54133,7 +54599,7 @@ export const all_stra = {
     "ewv": "fire",
     "hew": "of the fire",
     "lew": "to the fire",
-    "mew": "out of the fire",
+    "mew": "of the fire",
     "mhew": "from one fire",
     "vbew": "with fire",
     "vew": "and fire",
@@ -54303,7 +54769,7 @@ export const all_stra = {
     "wpfim": "overflowing",
     "wpftni": "overflow",
     "wpfvnv": "had overwhelmed",
-    "wvpf": "rusheth"
+    "wvpf": "when the overflowing"
   },
   "H7858": {
     "bwpf": "thereof shall be with a flood",
@@ -54316,7 +54782,8 @@ export const all_stra = {
     "vlwpr": "side"
   },
   "H786": {
-    "ew": "can"
+    "ew": "can",
+    "hew": "are there"
   },
   "H7860": {
     "hwprim": "and the officers",
@@ -54332,6 +54799,7 @@ export const all_stra = {
     "wpriv": "and their officers"
   },
   "H7861": {
+    "wpri": "was shitrai",
     "wrpi": "was shitrai"
   },
   "H7862": {
@@ -54339,6 +54807,9 @@ export const all_stra = {
   },
   "H7863": {
     "wiev": "though his excellency"
+  },
+  "H7864": {
+    "vwie": "and sheva"
   },
   "H7865": {
     "wien": "sion"
@@ -54384,10 +54855,10 @@ export const all_stra = {
     "wig": "or he is pursuing"
   },
   "H7874": {
-    "bwid": "and plaister",
     "vwdt": "and plaister"
   },
   "H7875": {
+    "bwid": "them with plaister",
     "lwid": "into lime",
     "wid": "of lime"
   },
@@ -54411,7 +54882,7 @@ export const all_stra = {
     "wikv": "unto him talk"
   },
   "H7879": {
-    "bwiki": "in my prayer",
+    "bwiki": "my complaint",
     "wik": "who hath babbling",
     "wiki": "my complaint",
     "wikv": "and his communication",
@@ -54433,8 +54904,7 @@ export const all_stra = {
   },
   "H7882": {
     "wikh": "a pit",
-    "wikvt": "pits",
-    "wvkh": "a pit"
+    "wikvt": "pits"
   },
   "H7883": {
     "hwikvr": "from sihor",
@@ -54447,10 +54917,10 @@ export const all_stra = {
     "vbwikvr": "and to shihor–libnath"
   },
   "H7885": {
-    "wip": "with oars",
-    "wvp": "scourge"
+    "wip": "scourge"
   },
   "H7886": {
+    "wilh": "shiloh",
     "wilv": "shiloh"
   },
   "H7887": {
@@ -54478,7 +54948,7 @@ export const all_stra = {
     "hewbli": "of the ashbelites"
   },
   "H7890": {
-    "rglihm": "their own piss"
+    "winihm": "their own piss"
   },
   "H7891": {
     "ewir": "but i will sing",
@@ -54492,6 +54962,7 @@ export const all_stra = {
     "iwvrr": "shall sing",
     "lwir": "singing",
     "lwrim": "for singers",
+    "lwvr": "singing",
     "mwrrim": "singing men",
     "mwvrr": "sang",
     "nwir": "how shall we sing",
@@ -54506,7 +54977,6 @@ export const all_stra = {
     "vwr": "so is he that singeth",
     "vwrim": "as well the singers",
     "vwrvt": "of singing men",
-    "wir": "i will sing",
     "wirv": "sing",
     "wrim": "the singers",
     "wrrv": "behold"
@@ -54516,7 +54986,6 @@ export const all_stra = {
     "bwrim": "songs",
     "cwir": "song",
     "cwirt": "sing",
-    "ewirh": "song",
     "hwir": "of musick",
     "hwirh": "this song",
     "hwirim": "the song",
@@ -54528,6 +54997,7 @@ export const all_stra = {
     "vmwiri": "and with my song",
     "vwir": "and songs",
     "wir": "song",
+    "wirh": "his song",
     "wiric": "of thy songs",
     "wiricm": "and all your songs",
     "wirt": "a song",
@@ -54542,14 +55012,15 @@ export const all_stra = {
     "wiwe": "of shisha"
   },
   "H7895": {
-    "wiwq": "of shishak"
+    "wiwq": "of shishak",
+    "wvwq": "that shishak"
   },
   "H7896": {
     "ewit": "i will set",
     "ewitc": "how shall i put",
     "ewtnv": "but i will make",
     "ivwt": "if there be laid",
-    "iwit": "laid",
+    "iwit": "and make",
     "iwitv": "they have set",
     "iwitvhv": "make",
     "iwt": "he made",
@@ -54614,6 +55085,7 @@ export const all_stra = {
     "hwcbim": "that lie",
     "hwcibh": "and laid",
     "iwcb": "lie",
+    "iwcbnh": "shall lie",
     "iwcbv": "they shall lie down",
     "iwcbvn": "take no rest",
     "iwcib": "or who can stay",
@@ -54622,6 +55094,7 @@ export const all_stra = {
     "mwcbt": "from her that lieth",
     "nwcbh": "we lie down",
     "twcb": "lie",
+    "twcbnh": "ravished",
     "twcbvn": "ye shall lie down",
     "vbwcbc": "when thou liest",
     "vcwcb": "or as he that lieth",
@@ -54749,6 +55222,7 @@ export const all_stra = {
     "vthwck": "so shalt thou find"
   },
   "H7913": {
+    "hwckim": "that forget",
     "wcki": "that forget"
   },
   "H7914": {
@@ -54779,7 +55253,7 @@ export const all_stra = {
     "ewcilc": "i will instruct",
     "ewcilh": "i will behave myself wisely",
     "hmwcil": "therefore the prudent",
-    "hmwcilim": "and some of them of understanding",
+    "hmwcilim": "that taught",
     "hwcil": "made me understand",
     "hwcilv": "be wise",
     "hwcl": "of wisdom",
@@ -54819,6 +55293,7 @@ export const all_stra = {
     "mwclh": "there shall nothing cast their young",
     "mwclt": "barren",
     "twcl": "childless",
+    "twcli": "no more neither bereave",
     "vmwclt": "or barren",
     "vwclc": "and they shall bereave",
     "vwclh": "among you which shall rob you of your children",
@@ -54832,7 +55307,6 @@ export const all_stra = {
   },
   "H7922": {
     "bwcl": "a wise",
-    "hmwcilim": "knowledge",
     "lwcl": "the wisdom",
     "mwcl": "from understanding",
     "vwcl": "understanding",
@@ -54925,7 +55399,7 @@ export const all_stra = {
     "wcnh": "dwelt",
     "wcni": "which dwell",
     "wcnt": "o thou that dwellest",
-    "wcnti": "dwell",
+    "wcnti": "o thou that dwellest",
     "wcnv": "dwell"
   },
   "H7932": {
@@ -54945,6 +55419,7 @@ export const all_stra = {
     "vwcniv": "and his neighbours",
     "vwcnv": "let him and his neighbour",
     "wcn": "is a neighbour",
+    "wcnci": "of all thy neighbours",
     "wcni": "neighbours",
     "wcnic": "thy neighbours",
     "wcnih": "and the neighbour",
@@ -54953,7 +55428,6 @@ export const all_stra = {
   "H7935": {
     "lwcnih": "of shechaniah",
     "lwcnihv": "to shecaniah",
-    "s": "of shechaniah",
     "vwcnihv": "and shecaniah",
     "wcnih": "of shechaniah"
   },
@@ -55036,8 +55510,7 @@ export const all_stra = {
   },
   "H7945": {
     "bwl": "though",
-    "bwli": "that for my sake",
-    "bwlmi": "for whose cause"
+    "bwli": "that for my sake"
   },
   "H7946": {
     "wlenn": "being wholly at ease"
@@ -55084,7 +55557,7 @@ export const all_stra = {
     "wlh": "at rest"
   },
   "H7955": {
-    "wlv": "any thing amiss"
+    "wlh": "any thing amiss"
   },
   "H7956": {
     "lwlh": "were of shelah",
@@ -55092,8 +55565,7 @@ export const all_stra = {
     "wlh": "shelah"
   },
   "H7957": {
-    "wlhbt": "flame",
-    "wlhbtih": "which hath a most vehement flame"
+    "wlhbt": "flame"
   },
   "H7958": {
     "hwlv": "the quails",
@@ -55106,6 +55578,7 @@ export const all_stra = {
   "H796": {
     "ewddivt": "of ashdod",
     "ewdvdim": "and when they of ashdod",
+    "ewdvdivt": "of ashdod",
     "hewdvdim": "upon them of ashdod",
     "vhewdvdi": "and the ashdothites",
     "vhewdvdim": "and the ashdodites"
@@ -55182,7 +55655,6 @@ export const all_stra = {
     "hwlvwh": "of the three",
     "hwlw": "three",
     "hwlwh": "of three",
-    "imim": "three",
     "lwlvw": "every three",
     "lwlw": "in three",
     "lwlwh": "three",
@@ -55211,12 +55683,11 @@ export const all_stra = {
     "bwlwim": "and thirtieth",
     "cwlwim": "about thirty",
     "hwliwim": "of the captains",
-    "hwlvwim": "of the thirty",
+    "hwlvwim": "of the captains",
     "hwlwim": "among the thirty",
     "mhwlwim": "and three",
     "vwlwim": "and thirty",
     "wlvwim": "and thirty",
-    "wlwh": "and three",
     "wlwim": "thirty"
   },
   "H7971": {
@@ -55357,7 +55828,6 @@ export const all_stra = {
     "vwlkim": "and shilhim"
   },
   "H7979": {
-    "f": "at the table",
     "hwlkn": "the table",
     "hwlknvt": "and upon the tables",
     "lwlkn": "for the tables",
@@ -55427,7 +55897,7 @@ export const all_stra = {
     "wlipim": "mighty"
   },
   "H799": {
-    "dt": "went a fiery"
+    "ewdt": "went a fiery"
   },
   "H7990": {
     "vwlip": "nor ruler",
@@ -55439,6 +55909,7 @@ export const all_stra = {
   "H7991": {
     "bwlw": "in a measure",
     "hwliw": "the lord",
+    "hwliwim": "of the captains",
     "hwlwi": "among the captains",
     "vbwlwim": "and with instruments of musick",
     "vhwlwim": "and the captains",
@@ -55446,8 +55917,10 @@ export const all_stra = {
     "vwlwiv": "and his captains",
     "vwlwm": "and captains",
     "wliw": "in great measure",
+    "wliwim": "excellent things",
     "wliwiv": "of his captains",
     "wliwv": "a captain",
+    "wlwh": "his captain",
     "wlwim": "great lords",
     "wlwiv": "captains",
     "wlwv": "his captain"
@@ -55459,7 +55932,6 @@ export const all_stra = {
     "hwliwi": "the third",
     "hwliwit": "of the same and in the third",
     "hwliwt": "the third",
-    "hwlwh": "among three",
     "hwlwi": "the third",
     "hwlwim": "into the third",
     "hwlwit": "a third part",
@@ -55627,7 +56099,7 @@ export const all_stra = {
     "lebq": "and it shall become small dust"
   },
   "H800": {
-    "tm": "of the fire"
+    "mewtm": "of the fire"
   },
   "H8000": {
     "hwlm": "those deliver",
@@ -55704,7 +56176,6 @@ export const all_stra = {
   },
   "H8010": {
     "bwlmh": "solomon",
-    "f": "of solomon",
     "lwlmh": "solomon",
     "mwlmh": "and solomon",
     "vlwlmh": "solomon",
@@ -55720,8 +56191,8 @@ export const all_stra = {
   },
   "H8013": {
     "vwlmit": "and shelomith",
-    "wlmvt": "shelomoth",
-    "wlvmit": "shelomith"
+    "vwlmvt": "and shelomith",
+    "wlmvt": "shelomoth"
   },
   "H8014": {
     "wlmi": "of shalmai"
@@ -55745,7 +56216,7 @@ export const all_stra = {
   "H8019": {
     "vwlmit": "and shelomith",
     "wlmit": "shelomith",
-    "wlvmit": "of shelomith"
+    "wlvmit": "shelomith"
   },
   "H802": {
     "bewh": "for a wife",
@@ -55760,7 +56231,6 @@ export const all_stra = {
     "ewtv": "his wife",
     "hewh": "and the woman",
     "hnwim": "of the women",
-    "leiwh": "and the woman",
     "lewh": "to wife",
     "lewt": "wife",
     "lewti": "to my wife",
@@ -55842,7 +56312,8 @@ export const all_stra = {
     "wlwim": "unto the third"
   },
   "H803": {
-    "ewivtih": "her foundations"
+    "ewivtih": "her foundations",
+    "ewvitih": "her foundations"
   },
   "H8030": {
     "vwlwh": "and shilshah"
@@ -55852,7 +56323,6 @@ export const all_stra = {
   },
   "H8032": {
     "mwlwm": "neither heretofore",
-    "wliwim": "to thee",
     "wlwm": "past",
     "wlwvm": "past"
   },
@@ -56075,7 +56545,7 @@ export const all_stra = {
     "wmvah": "a rumour"
   },
   "H8053": {
-    "wmir": "shamir"
+    "wmvr": "shamir"
   },
   "H8054": {
     "wmvt": "shammoth"
@@ -56089,7 +56559,7 @@ export const all_stra = {
     "hwmkt": "to rejoice",
     "iwmk": "rejoice",
     "iwmknh": "maketh it glad",
-    "iwmkv": "be glad",
+    "iwmkv": "rejoice",
     "lwmk": "that i may rejoice",
     "lwmvk": "in them but for a man to rejoice",
     "mwmki": "rejoicing",
@@ -56105,13 +56575,14 @@ export const all_stra = {
     "vlwmvk": "and to be merry",
     "vnwmkh": "and rejoice",
     "vtwmk": "and was glad",
-    "vwmk": "and rejoice",
+    "vwmk": "glad",
     "vwmki": "and rejoice",
     "vwmkt": "and thou shalt rejoice",
     "vwmktim": "rejoice",
     "vwmktm": "and ye shall rejoice",
     "vwmkv": "and rejoice",
     "wmk": "rejoice",
+    "wmkhv": "glad",
     "wmki": "be glad",
     "wmkm": "rejoiced",
     "wmknv": "make us glad",
@@ -56124,7 +56595,7 @@ export const all_stra = {
   "H8056": {
     "hwmkim": "who rejoice",
     "vwmkim": "and rejoiced",
-    "wmk": "a merry",
+    "wmk": "rejoiced",
     "wmkh": "and to be a joyful",
     "wmki": "that rejoice",
     "wmkim": "glad"
@@ -56154,6 +56625,7 @@ export const all_stra = {
     "twmpnh": "year thou shalt let it rest",
     "viwmpvh": "throw her down",
     "vwmpth": "and thou even thyself shalt discontinue",
+    "wmphv": "throw her down",
     "wmpv": "shook",
     "wmpvh": "throw her down",
     "wmvp": "shall release"
@@ -56224,7 +56696,8 @@ export const all_stra = {
     "ewime": "ashima"
   },
   "H8070": {
-    "vwmirmvt": "and shemiramoth"
+    "vwmirmvt": "and shemiramoth",
+    "vwmrimvt": "and shemiramoth"
   },
   "H8071": {
     "bwmlh": "in a cloth",
@@ -56241,10 +56714,13 @@ export const all_stra = {
     "wmlticm": "your garments",
     "wmltiv": "his clothes",
     "wmltm": "their clothes",
-    "wmltv": "only it is his raiment"
+    "wmltv": "his apparel"
   },
   "H8072": {
     "wmlh": "and samlah"
+  },
+  "H8073": {
+    "wmli": "of shalmai"
   },
   "H8074": {
     "bhwmh": "while she lieth desolate",
@@ -56259,7 +56735,6 @@ export const all_stra = {
     "iwm": "by it shall be astonished",
     "iwmv": "let them be desolate",
     "iwtvmm": "me is desolate",
-    "lwmh": "was desolate",
     "mwmim": "there astonished",
     "mwmm": "upon the desolate",
     "mwvmm": "astonied",
@@ -56281,7 +56756,7 @@ export const all_stra = {
     "vwmmtic": "and thy desolate places",
     "vwmmv": "into desolation",
     "wmm": "of desolation",
-    "wmmh": "because it was desolate",
+    "wmmh": "they are laid desolate",
     "wmmv": "shall be astonished",
     "wmmvt": "desolations",
     "wmv": "be astonished",
@@ -56296,7 +56771,7 @@ export const all_stra = {
   },
   "H8076": {
     "hwmm": "that is desolate",
-    "lwmmh": "it desolate"
+    "wmmh": "it desolate"
   },
   "H8077": {
     "lwmmh": "a desolation",
@@ -56328,7 +56803,6 @@ export const all_stra = {
     "hwmn": "of oil",
     "lwmn": "oil",
     "mwmn": "oil",
-    "vbqr": "and oil",
     "vcwmn": "and like oil",
     "vhwmn": "and the oil",
     "vlwmn": "oil",
@@ -56374,6 +56848,7 @@ export const all_stra = {
     "bhwma": "was heard",
     "bwma": "heareth",
     "bwmac": "when thou heardest",
+    "bwmacm": "and when ye hear",
     "bwmam": "when they had heard",
     "bwmav": "when he heard",
     "cwma": "heard",
@@ -56465,6 +56940,7 @@ export const all_stra = {
     "wmah": "hear",
     "wmai": "hear",
     "wmaim": "for we understand",
+    "wmaiv": "that whosoever heareth",
     "wman": "hear",
     "wmanh": "hear",
     "wmani": "hear",
@@ -56472,7 +56948,7 @@ export const all_stra = {
     "wmanvh": "lo we heard",
     "wmat": "thou hast heard",
     "wmati": "i have heard",
-    "wmatic": "i have heard thee",
+    "wmatic": "i have heard",
     "wmatm": "that ye have heard",
     "wmav": "hear",
     "wmavni": "hear",
@@ -56499,8 +56975,7 @@ export const all_stra = {
     "wmac": "report",
     "wmah": "the fame",
     "wmai": "my fame",
-    "wmam": "tidings",
-    "wmatic": "of thee by the hearing"
+    "wmam": "tidings"
   },
   "H8089": {
     "vwmav": "and his fame",
@@ -56519,7 +56994,8 @@ export const all_stra = {
   },
   "H8092": {
     "vwmae": "and shimma",
-    "wmae": "shimea"
+    "wmae": "shimea",
+    "wmah": "of shimea"
   },
   "H8093": {
     "wmah": "of shimeah"
@@ -56535,7 +57011,6 @@ export const all_stra = {
   },
   "H8096": {
     "lwmai": "shimei",
-    "s": "and shimei",
     "vlwmai": "and shimei",
     "vwmai": "and shimei",
     "wmai": "and shimei"
@@ -56575,12 +57050,12 @@ export const all_stra = {
     "lwmzh": "unto their shame"
   },
   "H8104": {
-    "0ewmr": "will i keep",
     "bwmrm": "and in keeping",
     "bwmvr": "observed",
     "cwmri": "as keepers",
     "ewmr": "and keep",
     "ewmrh": "i will keep",
+    "ewmvr": "will i keep",
     "htwmr": "whether thou wouldest keep",
     "hwmr": "take heed",
     "hwmri": "now therefore beware",
@@ -56592,7 +57067,6 @@ export const all_stra = {
     "iwmrni": "preserved",
     "iwmrnv": "hath not kept",
     "iwmrv": "take heed",
-    "lv": "will i keep",
     "lwmr": "to keep",
     "lwmrc": "to keep",
     "lwmri": "keepers",
@@ -56786,7 +57260,8 @@ export const all_stra = {
   },
   "H8128": {
     "vwnin": "teeth",
-    "wnh": "the teeth"
+    "wnh": "the teeth",
+    "wnih": "the teeth"
   },
   "H8129": {
     "hwn": "and shen"
@@ -56826,7 +57301,6 @@ export const all_stra = {
     "vwnec": "of thee and so hate",
     "vwneh": "hate",
     "vwnei": "and they that hate",
-    "vwnet": "and they hate",
     "vwneti": "yea i hated",
     "vwnveh": "and hated",
     "vwvne": "but he that hateth",
@@ -56850,12 +57324,14 @@ export const all_stra = {
     "wnetm": "did not ye hate",
     "wnetni": "thou dost but hate",
     "wnev": "hate",
+    "wnevni": "and they hate",
     "wnevtic": "of them that hate",
     "wnveh": "hated",
     "wvne": "hateth"
   },
   "H8131": {
-    "lwnec": "be to them that hate"
+    "lwnec": "be to them that hate",
+    "lwneic": "be to them that hate"
   },
   "H8132": {
     "iwne": "changed",
@@ -56863,6 +57339,7 @@ export const all_stra = {
   },
   "H8133": {
     "ewtni": "was changed",
+    "ewtnv": "was changed",
     "ihwne": "shall alter",
     "iwne": "them and he shall be diverse",
     "iwnvn": "be changed",
@@ -56884,13 +57361,14 @@ export const all_stra = {
   },
   "H8135": {
     "bwneh": "him of hatred",
+    "bwnet": "hated",
     "hwneh": "so that the hatred",
     "mwnetic": "out of thy hatred",
     "vmwnetv": "them and because he hated",
     "vwneh": "and hatred",
+    "vwnet": "hatred",
     "wneh": "hatred",
-    "wnetm": "and their hatred",
-    "wnevni": "hatred"
+    "wnetm": "and their hatred"
   },
   "H8136": {
     "wnen": "of angels"
@@ -56998,7 +57476,6 @@ export const all_stra = {
     "bwni": "in the second",
     "hwni": "the second",
     "hwnit": "of the other",
-    "s": "another",
     "vhwnit": "and again",
     "vwnim": "in the second rank",
     "wni": "a second",
@@ -57038,7 +57515,7 @@ export const all_stra = {
     "wnicm": "also of you both",
     "wnihm": "both",
     "wnim": "two",
-    "wninv": "both",
+    "wninv": "us both",
     "wti": "two",
     "wtihm": "which two",
     "wtihn": "and they were also both",
@@ -57291,7 +57768,8 @@ export const all_stra = {
     "warih": "her gates",
     "warihm": "gate",
     "warim": "gate",
-    "wariv": "into his gates"
+    "wariv": "into his gates",
+    "warv": "into his gates"
   },
   "H818": {
     "cewm": "as one which is faulty",
@@ -57312,7 +57790,7 @@ export const all_stra = {
     "warv": "all his hair"
   },
   "H8182": {
-    "ctenim": "them like vile"
+    "hwarim": "them like vile"
   },
   "H8183": {
     "bwarh": "me with a tempest",
@@ -57339,6 +57817,7 @@ export const all_stra = {
   },
   "H8186": {
     "vwarvrh": "and horrible thing",
+    "waririh": "an horrible thing",
     "warrt": "horrible thing",
     "warvrh": "an horrible thing",
     "warvrih": "an horrible thing"
@@ -57381,7 +57860,8 @@ export const all_stra = {
     "wawvaiv": "his pleasant"
   },
   "H8192": {
-    "nwfh": "upon the high"
+    "nwfh": "upon the high",
+    "vwfv": "stick out"
   },
   "H8193": {
     "bwfh": "the lip",
@@ -57390,6 +57870,7 @@ export const all_stra = {
     "bwftic": "in thy lips",
     "bwftim": "with his lips",
     "bwftiv": "with his lips",
+    "bwftv": "with his lips",
     "bwftvtic": "into thy lips",
     "bwftvtihm": "are in their lips",
     "lwft": "of the bank",
@@ -57476,7 +57957,6 @@ export const all_stra = {
     "iwfpvhv": "in judgment",
     "iwfvp": "can he judge",
     "iwfvpv": "they judged",
-    "lmwfp": "in judgment",
     "lmwfpi": "to my judge",
     "lwfp": "to judge",
     "lwfpnv": "to judge",
@@ -57497,6 +57977,7 @@ export const all_stra = {
     "vlwfpiv": "and for their judges",
     "vnwfpti": "and will plead",
     "vwfp": "and he shall judge",
+    "vwfphv": "in judgment",
     "vwfpic": "and thy judges",
     "vwfpih": "and the judges",
     "vwfpim": "and judges",
@@ -57556,7 +58037,7 @@ export const all_stra = {
     "wfpn": "of shiphtan"
   },
   "H8205": {
-    "vwfv": "stick out",
+    "vwfi": "stick out",
     "wfi": "to an high place",
     "wfiim": "in high places",
     "wfim": "on high places"
@@ -57614,6 +58095,7 @@ export const all_stra = {
     "vwfcti": "and i will pour",
     "vwfcv": "and cast",
     "wfc": "to shed",
+    "wfch": "slipped",
     "wfci": "pour out",
     "wfct": "thou hast shed",
     "wfcthv": "she poured",
@@ -57646,7 +58128,6 @@ export const all_stra = {
     "twfilnv": "shall bring him low",
     "twfl": "shall be low",
     "twflnh": "shall be humbled",
-    "vhgbh": "and abase",
     "vhwfil": "and he shall bring down",
     "vhwfilhv": "and abase",
     "viwfl": "shall be humbled",
@@ -57757,7 +58238,8 @@ export const all_stra = {
     "wfrh": "was shiphrah"
   },
   "H8237": {
-    "wfrirv": "his royal pavilion"
+    "wfrirv": "his royal pavilion",
+    "wfrvrv": "his royal pavilion"
   },
   "H8238": {
     "bwfrfre": "very early"
@@ -57849,6 +58331,7 @@ export const all_stra = {
     "viwqhv": "and they made him drink",
     "viwqnv": "to drink",
     "viwqvm": "and to drink",
+    "vnwqh": "and drowned",
     "vtwq": "drink",
     "vtwqhv": "and gave him drink",
     "vtwqin": "drink",
@@ -57885,6 +58368,7 @@ export const all_stra = {
     "bhwqp": "in quietness",
     "ewqph": "unto me i will take my rest",
     "ewqvp": "sake i will not rest",
+    "ewqvph": "unto me i will take my rest",
     "hwqp": "rest",
     "hwqpim": "to them that are at rest",
     "iwqip": "appeaseth",
@@ -57917,6 +58401,7 @@ export const all_stra = {
     "twqvl": "or else thou shalt pay",
     "vewql": "and weighed",
     "vewqlh": "and weighed",
+    "vewqvlh": "and weighed",
     "viwql": "weighed",
     "viwqlv": "so they weighed",
     "vwql": "and weighed",
@@ -58021,7 +58506,6 @@ export const all_stra = {
   },
   "H8269": {
     "bwrim": "over princes",
-    "elf": "captains",
     "hwr": "the chief",
     "hwrim": "and all the princes",
     "lwr": "to the captain",
@@ -58112,6 +58596,9 @@ export const all_stra = {
     "wrh": "he had power",
     "writ": "for as a prince hast thou power"
   },
+  "H8281": {
+    "writic": "with thy remnant"
+  },
   "H8282": {
     "vwrvtihm": "and their queens",
     "wrti": "and princess",
@@ -58156,8 +58643,11 @@ export const all_stra = {
     "wrvqih": "the principal plants"
   },
   "H8292": {
-    "wriqvt": "hissing",
-    "wrqvt": "the bleatings"
+    "wrqvt": "the bleatings",
+    "wrvqt": "hissing"
+  },
+  "H8293": {
+    "wrvtc": "with thy remnant"
   },
   "H8294": {
     "vwrk": "and serah",
@@ -58200,7 +58690,8 @@ export const all_stra = {
     "vwrid": "or remain",
     "wrid": "none remaining",
     "wridi": "which were left",
-    "wridiv": "those that remain"
+    "wridiv": "those that remain",
+    "wridv": "those that remain"
   },
   "H8301": {
     "mwrid": "from sarid",
@@ -58241,7 +58732,7 @@ export const all_stra = {
     "mwrct": "traversing"
   },
   "H8309": {
-    "hwdmvt": "and all the fields"
+    "hwrmvt": "and all the fields"
   },
   "H831": {
     "ewqlvn": "ashkelon",
@@ -58406,6 +58897,7 @@ export const all_stra = {
   "H833": {
     "ewrv": "relieve",
     "ewrvni": "will call me blessed",
+    "iewr": "and he shall be blessed",
     "iewrvhv": "shall call him blessed",
     "mewr": "upon her and happy",
     "mewri": "for the leaders",
@@ -58425,7 +58917,8 @@ export const all_stra = {
     "wrwt": "chains"
   },
   "H8332": {
-    "lwrwi": "to banishment"
+    "lwrwi": "to banishment",
+    "lwrwv": "to banishment"
   },
   "H8333": {
     "bwrwrvt": "chains",
@@ -58471,7 +58964,8 @@ export const all_stra = {
     "hww": "and fine linen",
     "vbww": "and fine linen",
     "vww": "linen",
-    "ww": "of fine linen"
+    "ww": "of fine linen",
+    "wwi": "was of fine linen"
   },
   "H8337": {
     "bww": "for six",
@@ -58571,7 +59065,6 @@ export const all_stra = {
     "wt": "thereof six"
   },
   "H8354": {
-    "eclim": "and drinking",
     "ewth": "nor drink",
     "hwtim": "that drink",
     "iwth": "and shall drink",
@@ -58604,6 +59097,7 @@ export const all_stra = {
     "vwtitm": "and drink",
     "vwtv": "and drink",
     "vwtvt": "and drink",
+    "vwvtim": "and drinking",
     "wth": "drink",
     "wti": "all that drink",
     "wtinv": "we have drunken",
@@ -58700,9 +59194,11 @@ export const all_stra = {
     "htevt": "the little chambers",
     "te": "chamber",
     "teiv": "the little chambers",
+    "tev": "the little chambers",
     "vhte": "the little chambers",
     "vtei": "and the little chambers",
-    "vteiv": "and the little chambers"
+    "vteiv": "and the little chambers",
+    "vtev": "and the little chambers"
   },
   "H8373": {
     "tebti": "i have longed"
@@ -58763,7 +59259,6 @@ export const all_stra = {
     "ctenim": "figs",
     "htenh": "the fig tree",
     "htenim": "figs",
-    "hwarim": "figs",
     "ltenh": "to the fig tree",
     "mtenh": "fig from the fig tree",
     "tenh": "the fig tree",
@@ -58851,6 +59346,7 @@ export const all_stra = {
     "vbtbvntc": "and with thine understanding",
     "vbtbvntv": "and by his understanding",
     "vbtbvnvt": "them by the skilfulness",
+    "vbtvbntv": "and by his understanding",
     "vtbvnh": "and understanding"
   },
   "H8395": {
@@ -58875,9 +59371,9 @@ export const all_stra = {
   },
   "H84": {
     "bebrtv": "thee with his feathers",
-    "birqrq": "and her feathers",
     "ebrh": "or wings",
-    "ebrtv": "them on her wings"
+    "ebrtv": "them on her wings",
+    "vebrvtih": "and her feathers"
   },
   "H840": {
     "vewrel": "and asareel"
@@ -59058,7 +59554,8 @@ export const all_stra = {
   },
   "H8427": {
     "vhtvit": "and set",
-    "vitiv": "and scrabbled"
+    "vitiv": "and scrabbled",
+    "vitv": "and scrabbled"
   },
   "H8428": {
     "htvv": "and limited"
@@ -59138,7 +59635,8 @@ export const all_stra = {
     "tvldvt": "are the generations"
   },
   "H8436": {
-    "vtilvn": "and tilon"
+    "vtilvn": "and tilon",
+    "vtvlvn": "and tilon"
   },
   "H8437": {
     "vtvllinv": "and they that wasted"
@@ -59218,10 +59716,13 @@ export const all_stra = {
     "tvzevt": "belong the issues",
     "tvzevtm": "upon their borders",
     "tzetiv": "and the outgoings",
-    "tzevt": "and the outgoings"
+    "tzetv": "and the goings out",
+    "tzevt": "and the outgoings",
+    "tzevtiv": "and the outgoings"
   },
   "H8445": {
-    "tqht": "of tikvath"
+    "tqht": "of tikvath",
+    "tvqht": "of tikvath"
   },
   "H8446": {
     "htrim": "beside that which chapmen",
@@ -59276,7 +59777,9 @@ export const all_stra = {
     "tvrtc": "thy law",
     "tvrti": "my law",
     "tvrtiv": "and his laws",
+    "tvrtv": "and all the laws",
     "vbtrtv": "in his law",
+    "vbtrvtc": "in thy law",
     "vbtvrh": "and in the law",
     "vbtvrtc": "in thy law",
     "vbtvrtv": "in his law",
@@ -59321,6 +59824,7 @@ export const all_stra = {
   "H8457": {
     "btxnvtic": "in thy whoredoms",
     "btxnvtm": "her with their whoredom",
+    "mtxntc": "is this of thy whoredoms",
     "mtxnvtic": "is this of thy whoredoms",
     "txntc": "thy whoredoms",
     "txnvtc": "thy fornication",
@@ -59334,6 +59838,7 @@ export const all_stra = {
   "H8458": {
     "btkblvt": "for by wise counsel",
     "btkbvltiv": "by his counsels",
+    "btkbvltv": "by his counsels",
     "tkblvt": "where no counsel",
     "vbtkblvt": "and with good advice"
   },
@@ -59415,7 +59920,8 @@ export const all_stra = {
     "btkfnks": "in tahpanhes",
     "tkfnks": "they even to tahpanhes",
     "vbtkfnks": "at tehaphnehes",
-    "vtkfnks": "and tahapanes"
+    "vtkfnks": "and tahapanes",
+    "vtkfns": "and tahapanes"
   },
   "H8472": {
     "tkfnis": "of tahpenes",
@@ -59446,7 +59952,8 @@ export const all_stra = {
     "tkt": "for",
     "tkti": "when she was mine",
     "tktih": "flat",
-    "tktiv": "in the place"
+    "tktiv": "in the place",
+    "tktv": "in the same place"
   },
   "H8479": {
     "tktvhi": "under it"
@@ -59667,6 +60174,7 @@ export const all_stra = {
     "tlv": "they hanged",
     "tlvi": "hanged",
     "tlvim": "them and hanged",
+    "tlvm": "had hanged",
     "vitlm": "them and hanged",
     "vitlv": "hanged",
     "vtlh": "from off thee and shall hang",
@@ -59697,6 +60205,7 @@ export const all_stra = {
   },
   "H8523": {
     "tliteh": "third",
+    "tlitie": "third",
     "vtlti": "and shall be the third"
   },
   "H8524": {
@@ -59726,8 +60235,7 @@ export const all_stra = {
     "etcm": "behold i have bought",
     "ethm": "and thou shalt teach",
     "ethn": "is and they shall cast",
-    "eti": "and have tempted",
-    "etv": "or that which was delivered",
+    "eti": "he upon",
     "vet": "and thou shalt teach"
   },
   "H8530": {
@@ -59794,7 +60302,6 @@ export const all_stra = {
     "etm": "with",
     "etnv": "with",
     "etv": "with",
-    "evtc": "of",
     "evti": "will be with",
     "vet": "with"
   },
@@ -59876,7 +60383,6 @@ export const all_stra = {
     "tmcv": "hold",
     "ttmc": "retaineth",
     "tvmic": "thou maintainest",
-    "vbkbli": "himself and he shall be holden",
     "vitmc": "him and he held up",
     "vtmcih": "is every one that retaineth",
     "vtvmc": "and him that holdeth"
@@ -59900,6 +60406,7 @@ export const all_stra = {
     "vhtmti": "and will consume",
     "vitm": "failed",
     "vitmv": "were ended",
+    "vlhtm": "and to make an end",
     "vtm": "shall be spent",
     "vtmv": "shall be consumed",
     "vttm": "is spent"
@@ -59957,9 +60464,11 @@ export const all_stra = {
     "vtmrim": "and palm trees",
     "vtmriv": "and their palm trees",
     "vtmrt": "and palm trees",
+    "vtmrv": "and their palm trees",
     "vtmrvt": "and palm trees"
   },
   "H8562": {
+    "tmrvq": "cleanseth",
     "tmrvqih": "her her things for purification",
     "tmrvqihn": "and let their things for purification",
     "vbtmrvqi": "and with other things for the purifying"
@@ -59969,6 +60478,9 @@ export const all_stra = {
   },
   "H8564": {
     "tmrvrim": "thee high heaps"
+  },
+  "H8565": {
+    "ctnim": "and thou art as a whale"
   },
   "H8566": {
     "htnv": "hath hired",
@@ -60103,6 +60615,7 @@ export const all_stra = {
     "hmtaim": "err",
     "htah": "hath caused them to err",
     "htaitm": "for ye dissembled",
+    "htatim": "for ye dissembled",
     "htav": "caused me to wander",
     "htavm": "have caused them to go astray",
     "itav": "they wander",
@@ -60396,6 +60909,7 @@ export const all_stra = {
     "etiq": "gallery",
     "etiqim": "for the galleries",
     "vetiqihe": "it and the galleries",
+    "vetvqihe": "it and the galleries",
     "vhetiqim": "and the galleries"
   },
   "H8620": {
@@ -60416,6 +60930,9 @@ export const all_stra = {
     "ltqvft": "and it came to pass at the end",
     "tqvft": "end",
     "vtqvftv": "and his circuit"
+  },
+  "H8623": {
+    "wtqif": "with him that is mightier"
   },
   "H8624": {
     "tqifh": "strong",
@@ -60495,7 +61012,11 @@ export const all_stra = {
     "trbvt": "stead an increase"
   },
   "H8636": {
+    "vbtrbit": "and unjust gain",
     "vtrbit": "increase"
+  },
+  "H8637": {
+    "trglti": "i taught"
   },
   "H8638": {
     "vmtrgm": "and interpreted"
@@ -60571,7 +61092,8 @@ export const all_stra = {
     "trmit": "neither shall a deceitful",
     "trmitm": "for their deceit",
     "trmt": "of the deceit",
-    "vtrmit": "and the deceit"
+    "vtrmit": "and the deceit",
+    "vtrmvt": "and the deceit"
   },
   "H865": {
     "cetmvl": "before",
@@ -60664,7 +61186,6 @@ export const all_stra = {
     "ltwvah": "for safety",
     "ltwvat": "for the salvation",
     "ltwvatc": "for thy salvation",
-    "s": "for me then thou shalt help",
     "twvah": "salvation",
     "twvat": "is the help",
     "twvatc": "thy salvation",
@@ -60737,7 +61258,8 @@ export const all_stra = {
     "bbeh": "in the entry"
   },
   "H873": {
-    "vbeiwte": "and the bad"
+    "vbeiwte": "and the bad",
+    "vbiwte": "and the bad"
   },
   "H874": {
     "ber": "plainly",
@@ -60861,13 +61383,13 @@ export const all_stra = {
     "bblie": "the babylonians"
   },
   "H897": {
-    "lbx": "thee for a spoil"
+    "lbg": "thee for a spoil"
   },
   "H898": {
     "bbgdv": "seeing he hath dealt deceitfully",
-    "bgd": "treacherously",
+    "bgd": "of the transgressor",
     "bgdh": "treacherously",
-    "bgdi": "transgressors",
+    "bgdi": "treacherously",
     "bgdim": "treacherously",
     "bgdth": "against whom thou hast dealt treacherously",
     "bgdti": "behold i should offend",
@@ -60972,7 +61494,7 @@ export const all_stra = {
   "H907": {
     "bdic": "should thy lies",
     "bdim": "of the liars",
-    "bdiv": "but his lies",
+    "bdiv": "his parts",
     "hbdim": "is upon the liars"
   },
   "H908": {
@@ -61081,6 +61603,7 @@ export const all_stra = {
     "ibhlvn": "they are troubled",
     "lbhlni": "me to make haste",
     "mbhlim": "being hastened",
+    "mbhlt": "may be gotten hastily",
     "nbhl": "troubled",
     "nbhlh": "vexed",
     "nbhlnv": "are we troubled",
@@ -61094,6 +61617,7 @@ export const all_stra = {
     "vibhlv": "vexed",
     "vibhlvhv": "and they thrust him out",
     "vlbhlm": "them and to trouble",
+    "vmbhlim": "and troubled",
     "vnbhlti": "i am afraid",
     "vnbhlv": "shall be troubled",
     "vtbhl": "thee and thou art troubled"
@@ -61173,7 +61697,6 @@ export const all_stra = {
     "vlbhrt": "and for a bright spot"
   },
   "H935": {
-    "_": "came",
     "bbe": "cometh",
     "bbec": "shalt thou be when thou comest in",
     "bbecm": "whither i bring",
@@ -61225,7 +61748,7 @@ export const all_stra = {
     "cwbe": "as he came",
     "ebe": "i will go",
     "ebeh": "i will go in",
-    "ebi": "he shall come",
+    "ebi": "will i bring",
     "ebie": "i will bring",
     "ebiec": "thee and bring",
     "ebiem": "and i will bring",
@@ -61259,6 +61782,7 @@ export const all_stra = {
     "hbievc": "have brought",
     "hbievm": "they brought",
     "hbve": "come",
+    "hmbie": "as one goeth",
     "hmbieim": "bring",
     "hmvbe": "that was brought",
     "htbve": "come",
@@ -61296,6 +61820,7 @@ export const all_stra = {
     "lhbiem": "to bring",
     "mbe": "at the entering in",
     "mbeim": "bringing",
+    "mbi": "behold i will bring",
     "mbie": "behold i will bring",
     "mbiec": "bringeth",
     "mbieim": "brought",
@@ -61309,10 +61834,9 @@ export const all_stra = {
     "nbie": "we gat",
     "nbve": "come",
     "nbveh": "we will go",
-    "rahv": "cometh",
     "tbe": "come",
     "tbehv": "and put",
-    "tbeinh": "they shall enter",
+    "tbeinh": "are come",
     "tbemv": "thou shalt bring",
     "tben": "came",
     "tbenh": "are come",
@@ -61353,6 +61877,7 @@ export const all_stra = {
     "vcbe": "is down",
     "vcbve": "was down",
     "vebe": "and i came",
+    "vebeh": "and i brought",
     "vebem": "and brought",
     "vebie": "and i brought",
     "vebiem": "and have brought",
@@ -61360,6 +61885,7 @@ export const all_stra = {
     "vebveh": "and come in",
     "vhbe": "and bring",
     "vhbeim": "went in",
+    "vhbeiti": "and i will bring",
     "vhbet": "and thou shalt bring",
     "vhbeth": "then thou shalt bring",
     "vhbeti": "and i will bring",
@@ -61383,6 +61909,8 @@ export const all_stra = {
     "vhbievtihv": "and i will bring",
     "vhbievtim": "even them will i bring",
     "vhbievtm": "and bring",
+    "vhbvetim": "them from thence and will bring",
+    "vhmbi": "and broughtest in",
     "vhmbie": "and broughtest in",
     "vhvbe": "then he shall be brought",
     "vibe": "came",
@@ -61400,9 +61928,9 @@ export const all_stra = {
     "vibieni": "and he brought",
     "vibiev": "and they brought",
     "vibievm": "and brought",
+    "vibv": "came",
     "vibve": "came",
     "vibvev": "and came",
-    "vicv": "and when they came",
     "vlbe": "or came in",
     "vlbve": "and come in",
     "vlhbie": "and to bring",
@@ -61415,12 +61943,12 @@ export const all_stra = {
     "vnbiem": "and we will bring",
     "vnbve": "come",
     "vnbveh": "yourselves and let us go",
-    "vnftli": "brought",
     "vtbe": "came",
     "vtbehv": "and brought",
     "vtbei": "and thou art come",
     "vtbenh": "and they came",
     "vtbet": "and come",
+    "vtbeti": "and come",
     "vtbev": "and came",
     "vtbiehv": "and she brought",
     "vtbiem": "and broughtest",
@@ -61520,7 +62048,7 @@ export const all_stra = {
     "bir": "as a fountain",
     "br": "a pit",
     "brvt": "wells",
-    "bvr": "into the pit",
+    "bvr": "to the pit",
     "bvrv": "of his cistern",
     "hber": "of a pit",
     "hbrh": "and the pit",
@@ -61694,6 +62222,7 @@ export const all_stra = {
     "vmbkvricm": "and of your young men"
   },
   "H971": {
+    "bkiniv": "the towers",
     "bkvniv": "the towers"
   },
   "H972": {
@@ -61706,7 +62235,7 @@ export const all_stra = {
   },
   "H973": {
     "bklh": "also abhorred",
-    "mbhlt": "may be gotten hastily"
+    "mbklt": "may be gotten hastily"
   },
   "H974": {
     "bkn": "that triest",
@@ -61742,16 +62271,15 @@ export const all_stra = {
     "bkrtic": "i have chosen",
     "bkrtm": "and did choose",
     "bkrv": "choose",
-    "bkvr": "excellent",
+    "bkvr": "chosen",
+    "bkvri": "chosen",
     "ebkr": "i chose",
     "ebkrh": "him and choose out",
     "ebkrhv": "that i have chosen",
     "hbkr": "that hath chosen",
     "ibkr": "shall choose",
-    "ikbr": "joined",
     "nbkr": "than choice",
     "nbkrh": "let us choose",
-    "s": "chosen",
     "tbkr": "and choose",
     "vbkr": "and choose",
     "vbkrt": "therefore choose",
@@ -61908,6 +62436,7 @@ export const all_stra = {
     "hbn": "understand",
     "hmbin": "he considereth",
     "hmbinim": "that taught",
+    "hmbvnim": "that taught",
     "htbnnt": "hast thou perceived",
     "htbvnn": "doth not consider",
     "htbvnnv": "consider",
@@ -61971,7 +62500,8 @@ export const all_stra = {
   },
   "H997": {
     "bin": "of it between",
-    "binihn": "among"
+    "binihn": "among",
+    "binihvn": "among"
   },
   "H998": {
     "bbinh": "to her understanding",

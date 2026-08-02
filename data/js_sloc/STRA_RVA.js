@@ -39,7 +39,6 @@ export const all_stra = {
     "ebvtm": "de sus padres",
     "heb": "del padre",
     "hebvt": "de los padres",
-    "lbit": "sus padres",
     "leb": "por padre",
     "lebi": "mi padre",
     "lebic": "tu padre",
@@ -126,7 +125,6 @@ export const all_stra = {
     "biti": "mi casa",
     "bitm": "á su casa",
     "bitv": "su casa",
-    "bt": "de la hija",
     "bti": "las casas",
     "btic": "y las casas",
     "bticm": "casa",
@@ -136,11 +134,9 @@ export const all_stra = {
     "btinv": "casas",
     "btiv": "y de la casa",
     "cbit": "como la casa",
-    "ebvtm": "en las casas",
     "hbit": "de la casa",
     "hbith": "á casa",
     "hbtim": "las casas",
-    "hfqdt": "en la casa de la cárcel",
     "lbit": "á la casa",
     "lbitc": "casa",
     "lbith": "su familia",
@@ -156,7 +152,6 @@ export const all_stra = {
     "mbtihm": "de sus casas",
     "mbtinv": "casas",
     "mhbit": "por dentro",
-    "s": "de su casa",
     "vbbit": "la casa",
     "vbbiti": "en mi casa",
     "vbbitv": "la casa",
@@ -194,6 +189,9 @@ export const all_stra = {
     "vbit": "y la casa",
     "vbith": "casa",
     "vbticvn": "cuartos y vuestras casas"
+  },
+  "H1006": {
+    "hbit": "á bayith"
   },
   "H1007": {
     "bit": "de beth aven",
@@ -243,7 +241,7 @@ export const all_stra = {
     "dbltim": "beth diblathaim"
   },
   "H1016": {
-    "bit": "á beth dagón",
+    "bit": "beth dagón",
     "dgn": "á beth dagón",
     "dgvn": "beth dagón"
   },
@@ -454,7 +452,6 @@ export const all_stra = {
     "bcvrv": "su primogénito",
     "hbcr": "el primogénito",
     "hbcvr": "el primogénito",
-    "lbcr": "que es el primogénito",
     "mbcr": "primogénito",
     "mbcvr": "primogénito"
   },
@@ -494,7 +491,6 @@ export const all_stra = {
   },
   "H1066": {
     "bcim": "bochîm",
-    "f": "á bochîm",
     "hbcim": "á bochîm"
   },
   "H1067": {
@@ -502,7 +498,8 @@ export const all_stra = {
   },
   "H1069": {
     "cmbcirh": "como de primeriza",
-    "ibcr": "madurará"
+    "ibcr": "madurará",
+    "lbcr": "dar el derecho de primogenitura"
   },
   "H107": {
     "begrvt": "con letras",
@@ -568,8 +565,7 @@ export const all_stra = {
     "blti": "que he envejecido",
     "blv": "envejeciéronse",
     "iblh": "y el cuerpo mío se va gastando",
-    "iblv": "perpetuarán",
-    "iclv": "gastan",
+    "iblv": "gastan",
     "lbltv": "lo consumirán",
     "lblvt": "y se consumirá",
     "tblh": "se envejecerá"
@@ -618,7 +614,8 @@ export const all_stra = {
     "blilv": "su pasto"
   },
   "H1099": {
-    "bli": "nada"
+    "bli": "nada",
+    "mh": "nada"
   },
   "H11": {
     "bebdvn": "en la perdición",
@@ -648,7 +645,7 @@ export const all_stra = {
     "bla": "destruyó",
     "blai": "que trague",
     "blani": "tragóme",
-    "blanv": "devoremos",
+    "blanv": "tragóme",
     "blanvhv": "hémoslo devorado",
     "blav": "y tuercen",
     "blavnv": "tragado",
@@ -697,6 +694,9 @@ export const all_stra = {
     "blam": "á balaam",
     "lblam": "á balaam",
     "vblam": "balaam"
+  },
+  "H111": {
+    "edd": "adad"
   },
   "H1110": {
     "vbvlqh": "y la desnuda",
@@ -756,6 +756,9 @@ export const all_stra = {
   "H1118": {
     "vbmhl": "bimhal"
   },
+  "H1119": {
+    "bmv": "con aguas"
+  },
   "H112": {
     "edv": "á iddo"
   },
@@ -778,6 +781,7 @@ export const all_stra = {
     "bnh": "su hijo",
     "bni": "los hijos",
     "bnic": "tus hijos",
+    "bnici": "hijos",
     "bnicm": "vuestros hijos",
     "bnih": "sus hijos",
     "bnihm": "sus hijos",
@@ -788,7 +792,6 @@ export const all_stra = {
     "bnnv": "hijo",
     "bntihm": "del hijo",
     "bnv": "su hijo",
-    "bt": "hijo",
     "cbni": "como corderitos",
     "cbnihm": "hijos",
     "hbn": "hijo",
@@ -850,7 +853,6 @@ export const all_stra = {
     "vbnvhi": "hijos"
   },
   "H1124": {
-    "_": "y edifican",
     "bnh": "edificó",
     "bnhi": "edificó",
     "bnin": "edificaban",
@@ -954,11 +956,13 @@ export const all_stra = {
     "edninv": "señor",
     "edniv": "de su señor",
     "ednnv": "señor",
+    "ednv": "su señor",
     "edvn": "señor",
     "edvnih": "señor",
     "edvnihm": "de sus señores",
     "edvnim": "y si",
     "edvninv": "es el señor",
+    "hedn": "del señor",
     "hednim": "y señor",
     "hedvn": "el señor",
     "ledni": "á mi señor",
@@ -1036,7 +1040,6 @@ export const all_stra = {
     "lbnimn": "de benjamín",
     "mbnimin": "de benjamín",
     "mbnimn": "de benjamín",
-    "s": "de benjamín",
     "vbbnimin": "y contra benjamín",
     "vbbnimn": "y en benjamín",
     "vbnimin": "y de benjamín",
@@ -1048,7 +1051,8 @@ export const all_stra = {
     "bn": "de benjamín",
     "eiw": "del linaje de benjamín",
     "himini": "de benjamín",
-    "imini": "de benjamín"
+    "imini": "de benjamín",
+    "lbnimini": "de los benjamitas"
   },
   "H1146": {
     "bnin": "del edificio",
@@ -1100,6 +1104,7 @@ export const all_stra = {
     "badh": "por",
     "badi": "por",
     "badm": "por",
+    "badnv": "por",
     "badv": "por",
     "vbad": "por"
   },
@@ -1133,6 +1138,7 @@ export const all_stra = {
   },
   "H1165": {
     "baircm": "vuestras bestias",
+    "bairh": "su bestia",
     "bairm": "sus bestias",
     "bairv": "su bestia",
     "vbairm": "y sus bestias",
@@ -1149,7 +1155,8 @@ export const all_stra = {
     "ibalvc": "se casa",
     "tbal": "beulah",
     "vbal": "y casádose",
-    "vbalh": "y se casare"
+    "vbalh": "y se casare",
+    "vbalth": "entrarás á ella y tu serás su marido"
   },
   "H1167": {
     "bal": "el marido",
@@ -1391,10 +1398,14 @@ export const all_stra = {
   "H1207": {
     "vbzh": "y de los lugares húmedos"
   },
+  "H1208": {
+    "hbzvr": "el fuerte"
+  },
   "H1209": {
     "bzi": "de besai"
   },
   "H121": {
+    "bedm": "de adam",
     "cedm": "cual adam",
     "edm": "adam",
     "medm": "de adam",
@@ -1607,23 +1618,21 @@ export const all_stra = {
     "lbqr": "tomaron de los bueyes",
     "lbqrv": "de bueyes",
     "mbqrc": "tus vacas",
+    "vbbqr": "bueyes",
     "vbbqrm": "vacas",
     "vbbqrnv": "vacas",
-    "vbfrdim": "bueyes",
     "vbqr": "y vacas",
     "vbqrc": "vacas",
     "vbqrcm": "y vuestras vacas",
     "vbqrm": "y sus vacas",
     "vhbqr": "bueyes",
     "vlbqr": "y de bueyes",
-    "vmbqrv": "y de sus vacas",
-    "vzen": "bueyes"
+    "vmbqrv": "y de sus vacas"
   },
   "H1242": {
     "bbqr": "de mañana",
     "bqr": "la mañana",
     "cbqr": "y en mitad de la siesta se levantará bonanza resplandecerás y serás como la mañana",
-    "f": "y por la mañana",
     "hbqr": "la mañana",
     "lbqr": "á la mañana",
     "lbqrim": "son cada mañana",
@@ -1813,7 +1822,8 @@ export const all_stra = {
     "vmbrti": "y de beeroth"
   },
   "H1269": {
-    "brxit": "de birzabith"
+    "brxit": "de birzabith",
+    "brxvt": "de birzabith"
   },
   "H127": {
     "bedmh": "en la tierra",
@@ -1828,7 +1838,6 @@ export const all_stra = {
     "edmtv": "su tierra",
     "edmvt": "llamaron sus tierras",
     "hedmh": "la tierra",
-    "herz": "la tierra",
     "ledmh": "de la tierra",
     "ledmt": "á la tierra",
     "ledmtv": "tierra",
@@ -2057,6 +2066,7 @@ export const all_stra = {
     "brcihm": "sus rodillas",
     "brcim": "rodillas",
     "brciv": "rodillas",
+    "brcv": "las rodillas",
     "hbrcim": "las rodillas",
     "vbrcim": "rodillas"
   },
@@ -2093,7 +2103,6 @@ export const all_stra = {
   "H1296": {
     "brcih": "de berechîas",
     "brcihv": "berechîas",
-    "s": "berechîas",
     "vbrcih": "y berechîas"
   },
   "H1297": {
@@ -2187,6 +2196,9 @@ export const all_stra = {
   },
   "H1312": {
     "bwlm": "bislam"
+  },
+  "H1313": {
+    "bwmi": "y mis aromas"
   },
   "H1314": {
     "bbwmim": "con cosas",
@@ -2322,7 +2334,6 @@ export const all_stra = {
     "cbt": "como á una hija",
     "hbnvt": "las hijas",
     "hbt": "hija",
-    "irimvt": "hija",
     "lbntiv": "á sus hijas",
     "lbnvt": "por hijas",
     "lbt": "á la hija",
@@ -2362,7 +2373,7 @@ export const all_stra = {
     "vlbnvtiv": "y sus hijas",
     "vlbt": "ó hija",
     "vmbnvt": "é hijas",
-    "zivn": "la hija"
+    "zivn": "de la hija"
   },
   "H1324": {
     "bt": "batos",
@@ -2421,7 +2432,6 @@ export const all_stra = {
     "vibtr": "mitad"
   },
   "H1335": {
-    "btr": "de bether",
     "btri": "las partes",
     "btriv": "partes",
     "btrv": "partió"
@@ -2534,7 +2544,6 @@ export const all_stra = {
     "lgel": "redime",
     "lgelc": "redímate",
     "lgevl": "redime",
-    "li": "redime",
     "mgel": "del cercano",
     "mgelnv": "y de nuestros redentores",
     "tgel": "redime",
@@ -2581,7 +2590,8 @@ export const all_stra = {
     "vgbihm": "sus rayos"
   },
   "H1355": {
-    "gbh": "sus espaldas"
+    "gbh": "sus espaldas",
+    "gbih": "sus espaldas"
   },
   "H1356": {
     "gbim": "muchas acequias"
@@ -2599,7 +2609,6 @@ export const all_stra = {
   "H136": {
     "bedni": "en el señor",
     "edni": "el señor",
-    "ednic": "señor",
     "edniv": "él y su señor",
     "edvn": "señoreador",
     "edvni": "señor",
@@ -2654,10 +2663,10 @@ export const all_stra = {
     "gbhvt": "era más alto",
     "hgbhim": "altos",
     "hgbhvt": "altos",
-    "hwfil": "y al alto",
     "mgbh": "de lo alto",
     "vgbh": "mas al altivo",
     "vgbhim": "alto",
+    "vhgbh": "y al alto",
     "vhgbhh": "era más alto",
     "vhgbhim": "y los altos"
   },
@@ -2685,7 +2694,6 @@ export const all_stra = {
     "gbvlv": "su término",
     "hgbl": "el término",
     "hgbvl": "este término",
-    "hgdvl": "con sus términos",
     "lgbvl": "del término",
     "lgbvlm": "á su término",
     "mgbvl": "es término",
@@ -2890,7 +2898,6 @@ export const all_stra = {
   "H1393": {
     "hgbani": "gabaonita",
     "hgbanim": "á los gabaonitas",
-    "hgbavni": "gabaonita",
     "lgbanim": "los gabaonitas",
     "vhgbanim": "los gabaonitas"
   },
@@ -2989,9 +2996,12 @@ export const all_stra = {
   "H1407": {
     "gd": "de culantro"
   },
-  "H1409": {
-    "gd": "gad",
+  "H1408": {
     "lgd": "para la fortuna"
+  },
+  "H1409": {
+    "bgd": "gad",
+    "gd": "gad"
   },
   "H141": {
     "vednirm": "y adoniram"
@@ -3038,16 +3048,12 @@ export const all_stra = {
     "mhgdvd": "del campo",
     "vgdvdi": "partidas"
   },
-  "H1417": {
-    "gdvdih": "sus canales"
-  },
   "H1419": {
     "bgdl": "á la grandeza",
     "bgdlvt": "en grandezas",
     "bgdvl": "desde el mayor",
     "cgdl": "como al grande",
     "cgdvl": "con el grande",
-    "ck": "y grande",
     "gdl": "grande",
     "gdlh": "con grande",
     "gdli": "con los principales",
@@ -3094,6 +3100,7 @@ export const all_stra = {
     "hgdvlh": "tus grandezas",
     "vgdvlh": "ó que distinción",
     "vgdvltc": "tu grandeza",
+    "vgdvltic": "tu grandeza",
     "vlgdltv": "y su grandeza"
   },
   "H1421": {
@@ -3124,6 +3131,9 @@ export const all_stra = {
   },
   "H1427": {
     "gdiel": "gaddiel"
+  },
+  "H1428": {
+    "gditiv": "riberas"
   },
   "H1429": {
     "gditic": "cabritas"
@@ -3161,7 +3171,6 @@ export const all_stra = {
     "tgdl": "mi",
     "tgdlnv": "lo engrandezcas",
     "vegdlnv": "ensalzarélo",
-    "vgdl": "poderoso",
     "vgdlti": "y fuí engrandecido",
     "vhgdil": "y engrandecíase",
     "vhtgdlti": "y seré engrandecido",
@@ -3274,7 +3283,6 @@ export const all_stra = {
     "vgdrvt": "y corrales"
   },
   "H1449": {
-    "vgdrh": "y cercados",
     "vhgdrh": "y gedera"
   },
   "H145": {
@@ -3285,8 +3293,7 @@ export const all_stra = {
     "vgdrvt": "y gederoh"
   },
   "H1451": {
-    "hgdri": "gederita",
-    "s": "gederita"
+    "hgdri": "gederita"
   },
   "H1452": {
     "hgdrti": "gederathita"
@@ -3348,13 +3355,15 @@ export const all_stra = {
     "gvxn": "de gozán"
   },
   "H1471": {
+    "bgiim": "las gentes",
     "bgvi": "de tal gente",
     "bgvihm": "en sus naciones",
     "bgvim": "entre las gentes",
     "cgvi": "como gente",
     "cgvim": "como las gentes",
+    "giim": "gentes",
     "gvi": "gente",
-    "gvic": "de tu gente",
+    "gvic": "gentes",
     "gvii": "las gentes",
     "gviic": "gentes",
     "gvim": "las gentes",
@@ -3367,6 +3376,7 @@ export const all_stra = {
     "mgvim": "de las gentes",
     "vbgvim": "entre las gentes",
     "vgvi": "y gente",
+    "vgvic": "los hijos á tus gentes",
     "vgviic": "los hijos á tus gentes",
     "vgvim": "naciones",
     "vhgvi": "mas la gente",
@@ -3387,7 +3397,6 @@ export const all_stra = {
   },
   "H1473": {
     "bgvlh": "en cautiverio",
-    "glh": "peregrina",
     "gvlh": "de partida",
     "hglh": "los cautivos",
     "hgvlh": "los trasportados",
@@ -3396,6 +3405,7 @@ export const all_stra = {
     "vbgvlh": "cautiverio"
   },
   "H1474": {
+    "glvn": "á gaulón",
     "gvln": "á golan"
   },
   "H1476": {
@@ -3482,6 +3492,7 @@ export const all_stra = {
     "vmgrl": "de la suerte"
   },
   "H1487": {
+    "vgiw": "y de costras",
     "vgvw": "y de costras"
   },
   "H1488": {
@@ -3531,11 +3542,10 @@ export const all_stra = {
     "gxlti": "he tomado",
     "gxlv": "roban",
     "gxvl": "al oprimido",
-    "hgxlh": "robó",
     "igxl": "cometiere",
     "igxlv": "quitan",
     "mgxlv": "le despoja",
-    "tgxl": "quitarías",
+    "tgxl": "robes",
     "vgxvl": "y robado",
     "vigxl": "y arrebató",
     "vigxlv": "los cuales salteaban",
@@ -3616,6 +3626,7 @@ export const all_stra = {
     "vgxrt": "y la sentencia"
   },
   "H1511": {
+    "vhgrxi": "y en los gerzeos",
     "vhgxri": "y en los gerzeos"
   },
   "H1512": {
@@ -3686,15 +3697,13 @@ export const all_stra = {
     "vgkxi": "y giezi"
   },
   "H1523": {
-    "_": "se alegre",
     "egilh": "y me goce",
-    "gil": "mucho",
     "gili": "alégrate",
     "gilv": "alegraos",
     "igil": "mucho",
     "igilv": "se gocen",
     "igl": "se gozará",
-    "med igilmed": "se gozará",
+    "igvl": "mucho",
     "ngilh": "nos gozaremos",
     "tgil": "empero te regocijarás",
     "tgl": "se alegrará",
@@ -4023,7 +4032,7 @@ export const all_stra = {
     "ehbh": "y la ama",
     "ehbi": "los que aman",
     "ehbic": "amando",
-    "ehbih": "sus amadores",
+    "ehbih": "amo",
     "ehbim": "si amáis",
     "ehbiv": "sus amigos",
     "ehbm": "amarélos",
@@ -4071,6 +4080,7 @@ export const all_stra = {
     "viehbc": "y te amará",
     "viehbh": "y amóla",
     "viehbhv": "y amólo",
+    "viehbv": "y amólo",
     "vlehbh": "y que amaren",
     "vmehbic": "y tus enamorados",
     "vtehb": "amaba",
@@ -4149,7 +4159,6 @@ export const all_stra = {
   },
   "H1581": {
     "bgmlim": "camellos",
-    "bkmvrim": "y camellos",
     "gml": "camellos",
     "gmlic": "á tus camellos",
     "gmlihm": "sus camellos",
@@ -4161,6 +4170,7 @@ export const all_stra = {
     "lgmlim": "los camellos",
     "mgml": "camellos",
     "mgmli": "camellos",
+    "vbgmlim": "y camellos",
     "vgmlihm": "camellos",
     "vgmlim": "y camellos",
     "vhgmlim": "y los camellos",
@@ -4225,6 +4235,7 @@ export const all_stra = {
     "behbim": "en amores"
   },
   "H1590": {
+    "bgnbim": "entre ladrones",
     "cgnb": "como ladrón",
     "gnb": "ladrón",
     "gnbim": "ladrones",
@@ -4343,11 +4354,10 @@ export const all_stra = {
     "vhtgawv": "y temblarán",
     "vitgaw": "y tembló",
     "vitgawv": "y tembló",
-    "vtgaw": "fué conmovida"
+    "vtgaw": "y tembló"
   },
   "H1608": {
-    "gaw": "de gaas",
-    "s": "gaas"
+    "gaw": "de gaas"
   },
   "H1609": {
     "gatm": "el duque cora el duque gatam",
@@ -4442,7 +4452,8 @@ export const all_stra = {
     "ttgr": "te empeñes",
     "ttgrh": "te entrometes",
     "ttgrv": "os metáis",
-    "vitgrh": "y llegará con ira"
+    "vitgrh": "y llegará con ira",
+    "vitgrv": "y llegará con ira"
   },
   "H1625": {
     "grh": "rumia",
@@ -4458,7 +4469,8 @@ export const all_stra = {
     "grvn": "cuellierguidas",
     "grvnc": "tu cuello",
     "grvni": "mi garganta",
-    "grvnm": "su garganta"
+    "grvnm": "su garganta",
+    "vgrvnc": "y tu garganta"
   },
   "H1629": {
     "ngrxti": "cortado"
@@ -4475,8 +4487,7 @@ export const all_stra = {
     "vhgrxn": "ni hachas"
   },
   "H1632": {
-    "gdl": "el de grande",
-    "kmh": "el de grande"
+    "grl": "el de grande"
   },
   "H1633": {
     "grmv": "dejan",
@@ -4629,7 +4640,8 @@ export const all_stra = {
   "H1655": {
     "bgwmhvn": "se enseñoreó de sus cuerpos",
     "gwmh": "y su cuerpo",
-    "gwmhvn": "sus cuerpos"
+    "gwmhvn": "sus cuerpos",
+    "gwmihvn": "sus cuerpos"
   },
   "H1656": {
     "gwmh": "rociada con lluvia"
@@ -4667,8 +4679,7 @@ export const all_stra = {
   },
   "H1663": {
     "hgti": "getheo",
-    "hgtim": "los getheos",
-    "s": "getheo"
+    "hgtim": "los getheos"
   },
   "H1664": {
     "gtim": "gitthaim",
@@ -4711,7 +4722,9 @@ export const all_stra = {
   "H1673": {
     "deg": "entonces doeg",
     "dveg": "doeg",
-    "ldveg": "doeg"
+    "dvig": "doeg",
+    "ldveg": "doeg",
+    "ldvig": "doeg"
   },
   "H1674": {
     "bdegh": "con temor",
@@ -4806,6 +4819,9 @@ export const all_stra = {
   "H1685": {
     "dbkin": "sacrificios"
   },
+  "H1686": {
+    "dbivnim": "de un cabo de estiércol"
+  },
   "H1687": {
     "bdbir": "en el oratorio",
     "dbir": "el templo",
@@ -4896,7 +4912,6 @@ export const all_stra = {
     "dvbri": "de los que hablan",
     "edbr": "hablaré",
     "edbrh": "hablaré",
-    "emrtm": "hablado",
     "hdbr": "que hablaba",
     "hdbrvt": "que hablan",
     "hmdbr": "hablo",
@@ -4964,12 +4979,13 @@ export const all_stra = {
     "dbriv": "de sus palabras",
     "dbrnv": "negocio",
     "dbrv": "su palabra",
-    "f": "una cosa",
+    "dbrvv": "á su palabra",
     "hdbr": "esto",
     "hdbrim": "estas palabras",
     "ldbr": "cada cosa",
     "ldbrc": "en tu palabra",
     "ldbri": "las palabras",
+    "ldbric": "en tu palabra",
     "ldbricm": "á vuestras razones",
     "ldbrihm": "las palabras",
     "ldbrim": "lo",
@@ -4979,6 +4995,7 @@ export const all_stra = {
     "mdbrihm": "palabras",
     "vbdbr": "es cosa",
     "vbdbrc": "por mandato",
+    "vbdbric": "por mandato",
     "vdbr": "palabra",
     "vdbri": "las crónicas",
     "vdbric": "palabras",
@@ -4988,6 +5005,7 @@ export const all_stra = {
     "vhdbrim": "que son palabras",
     "vldbrv": "en su palabra",
     "vmdbrc": "de tus palabras",
+    "vmdbric": "de tus palabras",
     "vmdbrihm": "palabras"
   },
   "H1698": {
@@ -5123,6 +5141,9 @@ export const all_stra = {
     "vdhbe": "y el oro",
     "vdhbh": "y oro"
   },
+  "H1723": {
+    "dhie": "dieveos"
+  },
   "H1724": {
     "ndhm": "atónito"
   },
@@ -5168,7 +5189,6 @@ export const all_stra = {
     "vhdvd": "cesta"
   },
   "H1732": {
-    "am": "david",
     "bdvd": "á david",
     "bdvid": "y á david",
     "cdvd": "como david",
@@ -5177,10 +5197,8 @@ export const all_stra = {
     "dvid": "david",
     "ldvd": "de david",
     "ldvid": "á david",
-    "s": "david",
     "vdvd": "y david",
     "vdvid": "y david",
-    "vize": "y david",
     "vldvd": "mas sobre david"
   },
   "H1733": {
@@ -5188,6 +5206,7 @@ export const all_stra = {
     "ddtv": "su tía"
   },
   "H1734": {
+    "ddi": "de dodo",
     "ddv": "de dodo",
     "dvdv": "de dodo"
   },
@@ -5216,6 +5235,7 @@ export const all_stra = {
   },
   "H1740": {
     "hdikni": "y echóme",
+    "hdiknv": "y echóme",
     "idik": "y limpiare",
     "idikv": "lavarán"
   },
@@ -5257,10 +5277,14 @@ export const all_stra = {
     "vlehrn": "y á aarón"
   },
   "H1753": {
+    "deri": "los moradores",
+    "derin": "moran",
     "diri": "los moradores",
     "dirin": "moran",
+    "idrvn": "hacían morada",
     "idvrn": "hacían morada",
     "tdvr": "del cual moraban",
+    "vderi": "los moradores",
     "vdiri": "los moradores"
   },
   "H1754": {
@@ -5348,7 +5372,6 @@ export const all_stra = {
     "di": "bastará",
     "dic": "lo que te basta",
     "dim": "material abundante",
-    "lmdi": "había suficientes",
     "mdi": "allí",
     "vcdi": "y habrá mucho",
     "vdi": "y abundancia",
@@ -5401,7 +5424,8 @@ export const all_stra = {
     "tdinni": "defiéndeme"
   },
   "H1778": {
-    "deinin": "y gobernadores"
+    "deinin": "y gobernadores",
+    "denin": "y gobernadores"
   },
   "H1779": {
     "din": "la causa",
@@ -5410,6 +5434,7 @@ export const all_stra = {
     "mdin": "del juicio",
     "vdin": "el juicio",
     "vdini": "y mi causa",
+    "wdin": "que hay un juicio",
     "wdvn": "que hay un juicio"
   },
   "H178": {
@@ -5446,7 +5471,6 @@ export const all_stra = {
   "H1787": {
     "diwvn": "disón",
     "dwn": "fueron disón",
-    "s": "disón",
     "vdiwn": "y disán",
     "vdwvn": "y disán"
   },
@@ -5494,6 +5518,7 @@ export const all_stra = {
     "dcit": "que has abatido",
     "dcitnv": "quebrantaste",
     "idch": "encógese",
+    "vdch": "encógese",
     "vndch": "y humillado",
     "vndciti": "y molido"
   },
@@ -5648,7 +5673,7 @@ export const all_stra = {
     "dmcm": "la sangre",
     "dmh": "su sangre",
     "dmi": "la sangre",
-    "dmic": "tus sangres",
+    "dmic": "tu sangre",
     "dmih": "sangre",
     "dmihm": "su sangre",
     "dmim": "sanguinarios",
@@ -5771,7 +5796,7 @@ export const all_stra = {
     "ttev": "codicies",
     "ttevh": "desearás",
     "viteiv": "deseó",
-    "vitev": "y deseará"
+    "vitev": "deseó"
   },
   "H1830": {
     "tdma": "y llorando",
@@ -5830,10 +5855,11 @@ export const all_stra = {
   },
   "H1840": {
     "cdniel": "ellos otro como daniel",
+    "dnel": "daniel",
     "dniel": "daniel",
     "ldniel": "á daniel",
+    "mdnel": "que daniel",
     "mdniel": "que daniel",
-    "s": "daniel",
     "vdniel": "mas daniel"
   },
   "H1841": {
@@ -5908,6 +5934,7 @@ export const all_stra = {
     "dqlh": "dicla"
   },
   "H1854": {
+    "dq": "fué reducido",
     "idqnv": "se trilla",
     "ivdq": "se trilla",
     "vidq": "y tornólo",
@@ -6025,6 +6052,7 @@ export const all_stra = {
     "bdrcihn": "tus caminos",
     "bdrciv": "en sus caminos",
     "bdrcm": "su camino",
+    "bdrcv": "por los caminos",
     "bhdrc": "el camino",
     "cdrc": "de camino",
     "cdrcic": "caminos",
@@ -6032,6 +6060,7 @@ export const all_stra = {
     "cdrcinv": "caminos",
     "cdrciv": "según sus caminos",
     "cdrcm": "conforme á sus caminos",
+    "cdrcv": "según su camino",
     "drc": "por el camino",
     "drcc": "tu camino",
     "drch": "el camino",
@@ -6064,7 +6093,6 @@ export const all_stra = {
     "mdrciv": "en sus caminos",
     "mdrcm": "camino",
     "mdrcv": "camino",
-    "s": "por el camino",
     "vbdrc": "y en el camino",
     "vbdrci": "en los caminos",
     "vbdrcv": "por el camino",
@@ -6243,7 +6271,8 @@ export const all_stra = {
     "vhbl": "abel"
   },
   "H1895": {
-    "hbri": "y defiéndante los contempladores"
+    "hbri": "y defiéndante los contempladores",
+    "hbrv": "y defiéndante los contempladores"
   },
   "H1896": {
     "hge": "de hegai",
@@ -6307,9 +6336,7 @@ export const all_stra = {
     "vhdbri": "y los del consejo"
   },
   "H1908": {
-    "edd": "era entonces adad",
     "hdd": "adad",
-    "s": "adad",
     "vhdd": "adad"
   },
   "H1909": {
@@ -6320,7 +6347,7 @@ export const all_stra = {
   "H191": {
     "evil": "el necio",
     "evilim": "los insensatos",
-    "evlim": "los necios",
+    "evlim": "son necios",
     "hevil": "al necio",
     "levil": "al necio",
     "vevilim": "mas los necios"
@@ -6423,9 +6450,8 @@ export const all_stra = {
     "hhie": "ella",
     "hhve": "su",
     "hie": "ella",
-    "hivda": "lo cual",
+    "hv": "lo cual",
     "hve": "él",
-    "s": "en su",
     "vhie": "y ella",
     "vhve": "y él",
     "whve": "de su"
@@ -6483,7 +6509,8 @@ export const all_stra = {
     "hvvt": "agravios",
     "lhvti": "de mi quebrantamiento",
     "vbhvt": "mas los pecadores en su pecado",
-    "vhvt": "mas la iniquidad"
+    "vhvt": "mas la iniquidad",
+    "vhvti": "y mi tormento"
   },
   "H1943": {
     "hvh": "quebrantamiento"
@@ -6534,7 +6561,6 @@ export const all_stra = {
   },
   "H1954": {
     "bhvwa": "á oseas",
-    "f": "á oseas",
     "hvwa": "oseas",
     "lhvwa": "de oseas",
     "vhvwa": "y josué"
@@ -6574,6 +6600,7 @@ export const all_stra = {
     "hihih": "sería",
     "hiinv": "somos",
     "hiit": "fuiste",
+    "hiith": "sobre",
     "hiiti": "he sido",
     "hiitm": "fuisteis",
     "hith": "fué",
@@ -6636,7 +6663,7 @@ export const all_stra = {
     "wihiv": "habrá"
   },
   "H1962": {
-    "vhvti": "y mi tormento"
+    "vhiti": "y mi tormento"
   },
   "H1963": {
     "hic": "cómo",
@@ -6723,12 +6750,9 @@ export const all_stra = {
   },
   "H1980": {
     "bhthlcc": "cuando anduvieres",
-    "blctc": "habías ido",
     "chvlc": "como el que va",
     "cmhlc": "como caminante",
     "ehlc": "yo iré",
-    "elc": "iré",
-    "elch": "y vendrán",
     "ethlc": "andaré",
     "hhlc": "es el que va",
     "hhlcim": "que habían ido",
@@ -6762,28 +6786,18 @@ export const all_stra = {
     "ihlc": "irá",
     "ihlcv": "salen",
     "ihlcvn": "van",
-    "ilc": "irá",
-    "ilcv": "sin duda",
     "ithlc": "andará",
     "ithlcv": "andan",
     "ithlcvn": "andan",
-    "lc": "andando",
-    "lctc": "anda",
-    "lcv": "recorred",
     "lhlc": "ir",
     "lhlci": "á los que caminan",
     "lhlcim": "andan",
     "lhthlc": "á recorrer",
-    "llct": "id",
     "mhlc": "que pasa",
     "mthlc": "va",
     "mthlct": "encendidos discurría",
     "nhlc": "andábamos",
-    "nlch": "y vendrán",
     "thlc": "pasea",
-    "tlc": "de mí como anduvo",
-    "tlcnh": "van",
-    "tlcvn": "irá",
     "vethlch": "y andaré",
     "vhlc": "é irá",
     "vhlch": "fué",
@@ -6799,15 +6813,10 @@ export const all_stra = {
     "vhthlcv": "recorred",
     "vhvlc": "mas el que camina",
     "vihlc": "y anduvo",
-    "vilc": "fué",
-    "vilcv": "se fué",
     "vithlc": "caminó",
     "vithlcv": "y andaban",
     "vmhthlc": "y de andar",
-    "vnlch": "y vendrán",
     "vthlc": "discurría",
-    "vtlc": "iré",
-    "vtlcnh": "van",
     "vtthlcnh": "id"
   },
   "H1981": {
@@ -6834,7 +6843,6 @@ export const all_stra = {
     "hllv": "aleluya",
     "hllvc": "te alabaron",
     "hllvhv": "alabadle",
-    "hllvih": "aleluya",
     "hmthll": "mas alábese",
     "hthllv": "gloriaos",
     "hvllim": "los insensatos",
@@ -6912,15 +6920,11 @@ export const all_stra = {
     "hhmh": "su",
     "hm": "ellos",
     "hmh": "ellos",
-    "lhm": "su",
     "lhmh": "y sus",
-    "mhm": "de ellos",
     "mhmh": "las",
     "vchm": "tanto como son",
     "vhm": "y ellos",
     "vhmh": "y ellos",
-    "vlhm": "y por sí",
-    "vmhm": "ellos",
     "whm": "los"
   },
   "H1993": {
@@ -7000,11 +7004,12 @@ export const all_stra = {
   },
   "H2000": {
     "hmmni": "desmenuzóme",
+    "hmmnv": "desmenuzóme",
     "lhmm": "para consumirlos",
     "vhmm": "ni lo comprimirá",
     "vhmti": "de ti y consternaré",
     "vihm": "y perturbó",
-    "vihmm": "y los destruyó"
+    "vihmm": "y consumiólos"
   },
   "H2001": {
     "hmn": "amán",
@@ -7013,7 +7018,8 @@ export const all_stra = {
     "vhmn": "con amán"
   },
   "H2002": {
-    "vhmnice": "y collar"
+    "vhmnice": "y collar",
+    "vhmvnce": "y collar"
   },
   "H2003": {
     "hmsim": "de fundiciones"
@@ -7175,6 +7181,9 @@ export const all_stra = {
   "H2024": {
     "vhre": "y á ara"
   },
+  "H2025": {
+    "vhhrel": "y el altar"
+  },
   "H2026": {
     "bhrg": "mataba",
     "ehrg": "de ellos mataré",
@@ -7246,6 +7255,7 @@ export const all_stra = {
   },
   "H2029": {
     "hrh": "concibieron",
+    "hrinv": "concebimos",
     "hriti": "concebí",
     "hrth": "embarazada",
     "hrv": "conciben",
@@ -7458,7 +7468,7 @@ export const all_stra = {
     "vxbvd": "zabud"
   },
   "H2072": {
-    "vxcvr": "y zabud"
+    "vxbvd": "y zabud"
   },
   "H2073": {
     "mxbl": "de su morada",
@@ -7466,14 +7476,13 @@ export const all_stra = {
   },
   "H2074": {
     "bxblvn": "á zabulón",
-    "iwwcr": "y zabulón",
     "lxbvln": "de zabulón",
     "mxblvn": "y de zabulón",
     "vbxblvn": "y á zabulón",
     "vlxbvln": "zabulón",
     "vmxblvn": "y de zabulón",
     "vmxbvln": "zabulón",
-    "vxblvn": "zabulón",
+    "vxblvn": "y zabulón",
     "vxbvln": "y zabulón",
     "xblvn": "de zabulón",
     "xbvln": "de zabulón"
@@ -7554,14 +7563,14 @@ export const all_stra = {
     "xbk": "á zeba"
   },
   "H2079": {
-    "xci": "de zachâi"
+    "xbi": "de zachâi"
   },
   "H208": {
     "evnm": "de onam",
-    "s": "y oman",
     "vevnm": "y onán"
   },
   "H2080": {
+    "xbidh": "fué zebuda",
     "xbvdh": "fué zebuda"
   },
   "H2081": {
@@ -7649,6 +7658,7 @@ export const all_stra = {
     "lhxhir": "amonestares",
     "nxhr": "se apercibió",
     "vhxhir": "corneta y avisare",
+    "vhxhirh": "y amonestádole",
     "vhxhirv": "y amonestádole",
     "vhxhrt": "y amonestarlos",
     "vhxhrth": "y enseña",
@@ -7733,10 +7743,11 @@ export const all_stra = {
     "wixav": "temblarán"
   },
   "H2112": {
+    "xeain": "temblaban",
     "xiain": "temblaban"
   },
   "H2113": {
-    "lxavh": "á turbación"
+    "lxvah": "á turbación"
   },
   "H2114": {
     "bxrim": "con los dioses ajenos",
@@ -7995,12 +8006,10 @@ export const all_stra = {
     "xcrvnc": "recuerdo"
   },
   "H2147": {
-    "s": "de zichri",
     "vxcri": "zichri",
     "xcri": "de zichri"
   },
   "H2148": {
-    "s": "de zachârías",
     "vlxcrih": "zachârías",
     "vxcrih": "y zachârías",
     "vxcrihv": "zachârías",
@@ -8012,6 +8021,7 @@ export const all_stra = {
   },
   "H215": {
     "erv": "han sido aclarados",
+    "evr": "venida la mañana",
     "evri": "resplandece",
     "heirh": "mío alumbra",
     "heirv": "alumbraron",
@@ -8030,7 +8040,8 @@ export const all_stra = {
     "vevr": "en aumento",
     "vheir": "para que alumbren",
     "vher": "y haz resplandecer",
-    "vier": "y los suyos y amanecióles"
+    "vier": "y los suyos y amanecióles",
+    "vternh": "fueron aclarados"
   },
   "H2150": {
     "hxlxlim": "los ramitos"
@@ -8076,7 +8087,6 @@ export const all_stra = {
   },
   "H2158": {
     "bxmrvt": "con cánticos",
-    "hxmir": "de la canción",
     "xmrvt": "cánticos"
   },
   "H216": {
@@ -8118,7 +8128,8 @@ export const all_stra = {
     "mxmnvt": "señalados"
   },
   "H2164": {
-    "hxdmntvn": "será de vosotros ciertamente preparáis"
+    "hxdmntvn": "será de vosotros ciertamente preparáis",
+    "hxmntvn": "será de vosotros ciertamente preparáis"
   },
   "H2165": {
     "bxmnihm": "en sus tiempos",
@@ -8220,6 +8231,7 @@ export const all_stra = {
     "hxnv": "fornicarán",
     "hxnvt": "fornicaron",
     "hxvnh": "la ramera",
+    "ixnh": "cumplirán",
     "ixnv": "cumplirán",
     "lhxnvth": "se prostituya",
     "lxnvt": "á fornicar",
@@ -8244,7 +8256,6 @@ export const all_stra = {
     "xnit": "has fornicado",
     "xnth": "fornicó",
     "xnv": "fornicaron",
-    "xnvni": "de la ramera",
     "xnvt": "las rameras",
     "xvnh": "ramera",
     "xvnvt": "mantiene rameras"
@@ -8291,7 +8302,7 @@ export const all_stra = {
     "bxat": "en el sudor"
   },
   "H2189": {
-    "lxavh": "sacudido"
+    "lxavh": "á turbación"
   },
   "H219": {
     "cevrh": "que la luz",
@@ -8359,6 +8370,7 @@ export const all_stra = {
     "vnxaq": "clamaremos",
     "vtxaq": "gritó",
     "vxaqh": "gritando",
+    "vxaqi": "aullad y clamad",
     "vxaqtm": "y clamaréis",
     "vxaqv": "y clamad",
     "xaq": "clama",
@@ -8662,7 +8674,6 @@ export const all_stra = {
     "mxram": "de su simiente",
     "mxrav": "su simiente",
     "vbxrac": "tu simiente",
-    "vhelmnh": "del linaje",
     "vlxrac": "á ti y á tu simiente",
     "vlxram": "les daría á ellos y á su simiente",
     "vlxrav": "y á su simiente",
@@ -8677,7 +8688,7 @@ export const all_stra = {
     "xrac": "tu simiente",
     "xracm": "vuestra simiente",
     "xrah": "simiente",
-    "xrai": "mi simiente",
+    "xrai": "no cortarás mi simiente",
     "xram": "su simiente",
     "xrav": "su simiente"
   },
@@ -8825,7 +8836,6 @@ export const all_stra = {
     "bkblim": "con sogas",
     "hkbl": "cordeles",
     "hkblim": "ataduras",
-    "itmc": "será con las cuerdas",
     "kbl": "la tierra",
     "kbli": "dolores",
     "kblic": "tus cuerdas",
@@ -8836,6 +8846,7 @@ export const all_stra = {
     "lkblim": "de las sogas",
     "mkbl": "este término",
     "vbkbl": "ó con la cuerda",
+    "vbkbli": "será con las cuerdas",
     "vkbl": "sola parte",
     "vkblim": "y sogas"
   },
@@ -8951,7 +8962,7 @@ export const all_stra = {
     "kbr": "compañero",
     "kbrim": "ligados",
     "kbriv": "sus compañeros",
-    "kbrv": "á su compañero",
+    "kbrv": "sus compañeros",
     "mkbric": "de gozo sobre tus compañeros",
     "vkbri": "y compañeros"
   },
@@ -9319,7 +9330,6 @@ export const all_stra = {
     "hkvkim": "las espinas",
     "kvk": "espino",
     "vbkvk": "tú garfio",
-    "vbkvkim": "en fosos",
     "vkvk": "y ortigas y cardos"
   },
   "H2339": {
@@ -9343,7 +9353,7 @@ export const all_stra = {
     "vkvilh": "havila"
   },
   "H2342": {
-    "evkilh": "me duelen",
+    "ekvlh": "me duelen",
     "hivkl": "tal parirá",
     "hmkllvt": "las que danzaban",
     "ikil": "hará temblar",
@@ -9367,13 +9377,12 @@ export const all_stra = {
     "mkllc": "tu criador",
     "mkvll": "el grande cría",
     "mtkvll": "y la tempestad",
-    "tkil": "el parto gime",
+    "tkil": "dolor",
     "tkilv": "arena",
     "tkvl": "dolor",
     "tkvll": "ahuyenta",
     "tkvllcm": "que os parió",
     "vhtkvll": "y espera",
-    "vikil": "es esperar",
     "vikilv": "y habiendo esperado",
     "vikl": "temor",
     "vklh": "y caerá",
@@ -9447,7 +9456,6 @@ export const all_stra = {
     "exl": "se ha acabado",
     "exlt": "pereció",
     "exlv": "se fueron",
-    "mevxl": "y el errante",
     "txli": "discurres",
     "vexl": "es mas en apartándose"
   },
@@ -9564,11 +9572,11 @@ export const all_stra = {
     "kwm": "husam"
   },
   "H2368": {
+    "bktmv": "y sellólas",
     "ckvtm": "como un sello",
     "ktm": "de sello",
     "ktmc": "tu anillo",
-    "kvtm": "de sello",
-    "vtktm": "y sellólas"
+    "kvtm": "de sello"
   },
   "H2369": {
     "kvtm": "hotham"
@@ -9603,7 +9611,6 @@ export const all_stra = {
     "kxitm": "habéis visto",
     "kxv": "vieron",
     "lkxvt": "para contemplar",
-    "mhtlvt": "profetizad",
     "tkxinh": "vean",
     "tkxv": "veréis",
     "vekxh": "y yo miré",
@@ -9651,7 +9658,6 @@ export const all_stra = {
     "iexin": "haya escuchado",
     "iexinv": "oyen",
     "mxin": "escucha",
-    "vexn": "é hizo escuchar",
     "vhexin": "clamé y él me escuchará",
     "vhexini": "y escucha",
     "vhexinv": "oid",
@@ -9804,13 +9810,13 @@ export const all_stra = {
     "likxqihv": "ezechîas",
     "lkxqih": "de ezechîas",
     "lkxqihv": "de ezechîas",
-    "s": "á ezechîas",
     "vkxqih": "ezechîas"
   },
   "H2397": {
     "bkkim": "con grillos",
     "kk": "cadenas",
     "kki": "mi anzuelo",
+    "kkiim": "anzuelos",
     "kkim": "anzuelos"
   },
   "H2398": {
@@ -9819,6 +9825,7 @@ export const all_stra = {
     "ekpe": "pecar",
     "ekpnh": "pagaba el daño",
     "hkpet": "que pecare",
+    "hkpi": "hizo pecar",
     "hkpie": "pecar",
     "hkpiev": "pecó",
     "hmkpe": "que la ofreciere",
@@ -9943,6 +9950,7 @@ export const all_stra = {
     "mkpetm": "haber pecado",
     "mkpetv": "su pecado",
     "mkpevt": "de los pecados",
+    "vbkpetiv": "y en su pecado",
     "vbkpetv": "y en su pecado",
     "vbkpevt": "y por los pecados",
     "vhkpet": "y la expiación",
@@ -9992,7 +10000,8 @@ export const all_stra = {
     "kpvw": "hattus"
   },
   "H2408": {
-    "vkpec": "tus pecados"
+    "vkpec": "tus pecados",
+    "vkpic": "tus pecados"
   },
   "H241": {
     "bexni": "en oídos",
@@ -10052,6 +10061,7 @@ export const all_stra = {
     "bkiin": "la vida",
     "bkiiv": "en su vida",
     "bkit": "de ella con las bestias",
+    "bkiv": "y había absalom en su vida",
     "hki": "vivo",
     "hkih": "viva",
     "hkiim": "viva",
@@ -10068,7 +10078,6 @@ export const all_stra = {
     "kiim": "vivos",
     "kiinv": "vida",
     "kiiv": "de su vida",
-    "kil": "esforzado",
     "kit": "bestia",
     "kitc": "los que son de tu grey",
     "kiti": "mi vida",
@@ -10092,6 +10101,7 @@ export const all_stra = {
     "vkii": "y mi vida",
     "vkiim": "y vida",
     "vkit": "y las bestias",
+    "vkiti": "y su vida",
     "vkitm": "su vida",
     "vkitv": "y su vida",
     "vlkih": "y á la bestia",
@@ -10149,7 +10159,6 @@ export const all_stra = {
     "kitni": "me ha vivificado",
     "kiv": "vivirá",
     "kivtm": "que sanaron",
-    "lcnh": "para mantener",
     "lhkit": "para mantener",
     "lhkitv": "infundiéndole ánimo",
     "lhkivt": "para vida",
@@ -10164,6 +10173,7 @@ export const all_stra = {
     "tkii": "vivid",
     "tkiinh": "vivirán",
     "tkiini": "á darme vida",
+    "tkiinv": "á darme vida",
     "tkini": "me dió vida",
     "tkinv": "darás",
     "tkiv": "para que viváis",
@@ -10207,13 +10217,9 @@ export const all_stra = {
     "bkil": "ejército",
     "hkl": "de aqueste ejército",
     "kil": "el ejército",
-    "kili": "ejército",
-    "kilm": "sus frutos",
-    "kilv": "su ejército",
+    "kilv": "de su ejército",
     "kl": "el antemuro",
-    "lkilv": "para su ejército",
     "vkil": "y del ejército",
-    "vkilv": "y á su ejército",
     "vkl": "y antemuro"
   },
   "H2427": {
@@ -10224,9 +10230,7 @@ export const all_stra = {
     "bkil": "ejército",
     "bkilc": "tus riquezas",
     "bkilv": "mano á sus bienes",
-    "bkl": "en la barbacana",
     "ckil": "otro ejército",
-    "clm": "valientes",
     "hkil": "del ejército",
     "hkilim": "de la gente de guerra",
     "kil": "valientes",
@@ -10310,6 +10314,9 @@ export const all_stra = {
     "kvrm": "e hiram",
     "lkirm": "á hiram"
   },
+  "H2439": {
+    "kiwh": "presto"
+  },
   "H244": {
     "hexni": "de ozni",
     "lexni": "de ozni"
@@ -10372,7 +10379,7 @@ export const all_stra = {
     "tkcmni": "me has hecho más sabio",
     "ttkcm": "sabio",
     "vikcm": "sabio",
-    "vkcm": "y sé sabio",
+    "vkcm": "sabio",
     "vkcmv": "y sed sabios",
     "vwkcmti": "mi sabiduría"
   },
@@ -10572,7 +10579,6 @@ export const all_stra = {
     "cklvm": "como sueño",
     "hklmvt": "el soñador",
     "hklvm": "sueño",
-    "iklmvn": "sueños",
     "klmticm": "sueños",
     "klmtinv": "nuestros sueños",
     "klmtiv": "sus sueños",
@@ -10595,6 +10601,7 @@ export const all_stra = {
     "vklnvt": "y había ventanas",
     "vklvnim": "y había ventanas",
     "vklvniv": "y sus ventanas",
+    "vklvnv": "y sus ventanas",
     "vklvnvt": "y tenía sus ventanas"
   },
   "H2477": {
@@ -10656,7 +10663,7 @@ export const all_stra = {
     "klztv": "para ti sus despojos"
   },
   "H2489": {
-    "ceim": "muchos desdichados",
+    "klceim": "muchos desdichados",
     "klch": "el pobre",
     "lklch": "al pobre"
   },
@@ -10717,6 +10724,7 @@ export const all_stra = {
     "vikl": "y comenzó",
     "vikllv": "y contaminaron",
     "viklv": "matando",
+    "vkllh": "y la contaminarán",
     "vkllv": "y violarán",
     "vkllvh": "y violarán",
     "vkllvhv": "y la contaminarán",
@@ -10751,11 +10759,11 @@ export const all_stra = {
     "cklmim": "como los que sueñan",
     "hklvm": "he soñado",
     "iklm": "y sueña",
+    "iklmvn": "soñarán",
     "klm": "tuvo",
     "klmnv": "hemos tenido",
     "klmt": "soñaste",
     "klmti": "soñé",
-    "klmvt": "soñarán",
     "kvlm": "tal soñador",
     "mklmim": "soñáis",
     "viklm": "y soñó",
@@ -10853,6 +10861,7 @@ export const all_stra = {
     "klzic": "tus lomos",
     "klzim": "los lomos",
     "klziv": "sus lomos",
+    "klzv": "sus lomos",
     "mklzic": "lomos"
   },
   "H2505": {
@@ -10931,7 +10940,6 @@ export const all_stra = {
     "lekihm": "á sus hermanos",
     "lekinv": "hermano",
     "lekiv": "á sus hermanos",
-    "lhm": "hermanos",
     "mek": "de tu hermano",
     "meki": "mis hermanos",
     "mekic": "á tu hermano",
@@ -10999,7 +11007,8 @@ export const all_stra = {
     "vklqlqvt": "y resbaladeros"
   },
   "H252": {
-    "ekc": "á ti y á tus hermanos"
+    "ekc": "á ti y á tus hermanos",
+    "ekic": "á ti y á tus hermanos"
   },
   "H2520": {
     "klqt": "fué helchât"
@@ -11113,6 +11122,7 @@ export const all_stra = {
     "kmvel": "hamuel"
   },
   "H2537": {
+    "kmipl": "hamutal",
     "kmvpl": "fué amutal"
   },
   "H2538": {
@@ -11137,6 +11147,7 @@ export const all_stra = {
   },
   "H2543": {
     "bkmrim": "asnos",
+    "bkmvrim": "pan en asnos",
     "hkmr": "un asno",
     "hkmrim": "los asnos",
     "hkmvr": "el asno",
@@ -11150,7 +11161,6 @@ export const all_stra = {
     "kmvr": "asno",
     "kmvricm": "y vuestros asnos",
     "kmvrim": "asnos",
-    "lkm": "pan en asnos",
     "lkmrihm": "á sus asnos",
     "lkmrv": "asno",
     "lkmvr": "para el asno",
@@ -11333,7 +11343,6 @@ export const all_stra = {
     "lkmwh": "la décimaquinta",
     "lkmwt": "pertenecientes á los cinco",
     "mkmw": "quinientos",
-    "s": "y cinco",
     "vbkmwh": "y á los quince",
     "vkmw": "y cinco",
     "vkmwh": "y cinco",
@@ -11365,7 +11374,6 @@ export const all_stra = {
   },
   "H2573": {
     "hkmt": "odre",
-    "kmt": "lo",
     "vkmt": "y un odre"
   },
   "H2574": {
@@ -11523,6 +11531,7 @@ export const all_stra = {
     "ebgil": "abigail",
     "ebigil": "á abigail",
     "ebigl": "á abigail",
+    "ebvgil": "entonces abigail",
     "lebigil": "de abigail",
     "lebigl": "á abigail",
     "vebigil": "y abigail",
@@ -11551,6 +11560,7 @@ export const all_stra = {
     "ikn": "perdonará",
     "iknc": "se apiadará",
     "iknn": "tendrá piedad",
+    "iknni": "tendrá compasión",
     "iknnv": "se compadecerá",
     "knn": "ha dado",
     "knni": "ten misericordia",
@@ -11699,6 +11709,7 @@ export const all_stra = {
     "ksidic": "de tus santos",
     "ksidim": "de los santos",
     "ksidiv": "de sus santos",
+    "ksidv": "de sus santos",
     "lksidic": "á tu santo",
     "lksidiv": "de sus santos",
     "vksid": "y misericordioso",
@@ -11817,6 +11828,7 @@ export const all_stra = {
     "lkfh": "por uppa"
   },
   "H2648": {
+    "bhkfxm": "con la premura",
     "bkfxi": "premura",
     "bkfxm": "con la premura",
     "ikfvx": "inmutarse",
@@ -11938,8 +11950,9 @@ export const all_stra = {
     "htkfw": "yo me disfrazaré",
     "ikfw": "es buscado",
     "ikfwv": "exacta",
-    "kfw": "exacta",
+    "kfw": "que escudriña",
     "kfwv": "mirad",
+    "mkfw": "exacta",
     "nkfwh": "escudriñemos",
     "nkfwv": "fueron escudriñadas",
     "tkfwnh": "y la escudriñares",
@@ -11949,7 +11962,7 @@ export const all_stra = {
     "vkfwv": "los cuales escudriñarán"
   },
   "H2665": {
-    "mkfw": "inquieren"
+    "kfw": "inquieren"
   },
   "H2666": {
     "kfwh": "es libre"
@@ -11961,7 +11974,8 @@ export const all_stra = {
     "kfwh": "libertad"
   },
   "H2669": {
-    "hkfwit": "separada"
+    "hkfwit": "separada",
+    "hkfwvt": "apartada"
   },
   "H267": {
     "ekvmi": "á ahumai"
@@ -11981,10 +11995,9 @@ export const all_stra = {
     "kzim": "saetas",
     "kziv": "sus saetas",
     "kzm": "sus saetas",
-    "kzv": "ellos y su dardo",
+    "kzv": "sus saetas",
     "lkz": "por saeta",
     "mkz": "ni de saeta",
-    "vaz": "el asta",
     "vbkzim": "y saetas",
     "vkz": "y saeta",
     "vkzic": "tus saetas",
@@ -12029,7 +12042,8 @@ export const all_stra = {
     "vkzvr": "y asor"
   },
   "H2675": {
-    "kdth": "y asor hadatta"
+    "kdth": "y asor hadatta",
+    "vkzvr": "y asor hadatta"
   },
   "H2677": {
     "bkzi": "medio",
@@ -12110,6 +12124,8 @@ export const all_stra = {
   },
   "H269": {
     "bekth": "de su hermana",
+    "ekitihm": "hermanas",
+    "ekitiv": "sus hermanas",
     "ekivtc": "hermanas",
     "ekivti": "y hermanas",
     "ekivtihm": "hermanas",
@@ -12128,6 +12144,7 @@ export const all_stra = {
     "ekvtnv": "hermana",
     "lektnv": "hermana",
     "lekvtc": "hermanas",
+    "vekitihm": "fueron hermanas",
     "vekivtihm": "fueron hermanas",
     "vekti": "y mi hermana",
     "vektv": "y su hermana",
@@ -12140,7 +12157,10 @@ export const all_stra = {
   },
   "H2690": {
     "lmkzrim": "pues las trompetas",
-    "mkzrim": "tañían"
+    "lmkzzrim": "pues las trompetas",
+    "mkzrim": "tañían",
+    "mkzrrim": "trompetas",
+    "mkzzrim": "tañían"
   },
   "H2691": {
     "bkzr": "en el patio",
@@ -12288,7 +12308,7 @@ export const all_stra = {
     "kqim": "y leyes",
     "kqiv": "sus estatutos",
     "kqm": "su ración",
-    "kqv": "su estatuto",
+    "kqv": "términos",
     "lkq": "por estatuto",
     "lkqim": "estatutos",
     "mkqi": "de mis leyes",
@@ -12391,7 +12411,7 @@ export const all_stra = {
     "vlkrim": "á los nobles"
   },
   "H2716": {
-    "zvetm": "su estiércol"
+    "kreihm": "su estiércol"
   },
   "H2717": {
     "ekrib": "hago secar",
@@ -12423,11 +12443,11 @@ export const all_stra = {
     "hkrbt": "fué destruída"
   },
   "H2719": {
-    "bhr": "con sus lugares asolados",
     "bkrb": "á cuchillo",
     "bkrbc": "espada",
     "bkrbi": "espada",
     "bkrbm": "por su espada",
+    "bkrbtihm": "con sus lugares asolados",
     "bkrbv": "espada",
     "bkrbvt": "con espadas",
     "bkrbvtiv": "con sus martillos",
@@ -12585,8 +12605,8 @@ export const all_stra = {
     "bkrvxim": "entre los collares"
   },
   "H2738": {
-    "krvl": "de ortigas",
-    "qmwnim": "espinas ortigas"
+    "krlim": "espinas ortigas",
+    "krvl": "de ortigas"
   },
   "H2739": {
     "krvmf": "de harumaph"
@@ -12609,6 +12629,7 @@ export const all_stra = {
     "vkrvn": "del furor"
   },
   "H2741": {
+    "hkrifi": "haruphita",
     "hkrvfi": "haruphita"
   },
   "H2742": {
@@ -12667,7 +12688,7 @@ export const all_stra = {
     "kvri": "de hurí"
   },
   "H2755": {
-    "zvetm": "su estiércol"
+    "krihm": "su estiércol"
   },
   "H2756": {
     "krif": "ariph"
@@ -12788,7 +12809,8 @@ export const all_stra = {
     "krs": "de heres"
   },
   "H2777": {
-    "hkrsit": "oriental"
+    "hkrsit": "oriental",
+    "hkrsvt": "oriental"
   },
   "H2778": {
     "bkrfm": "cuando desafiaron",
@@ -12904,13 +12926,11 @@ export const all_stra = {
     "kvrw": "en que el que ara",
     "mkriw": "ideaba",
     "mkrwim": "en orden á",
-    "rah": "intentes",
     "tkriw": "y callas",
     "tkriwi": "callares",
     "tkriwvn": "del todo",
     "tkrw": "calles",
     "tkrwnh": "ensordecerán",
-    "tkwh": "desentiendas",
     "vhkriw": "callare",
     "vhkriwv": "calló",
     "vhkrw": "calló",
@@ -12922,7 +12942,8 @@ export const all_stra = {
   },
   "H2791": {
     "hkrwim": "de los artífices",
-    "krw": "secretamente"
+    "krw": "secretamente",
+    "krwim": "y el artífice"
   },
   "H2792": {
     "krw": "heres"
@@ -13254,7 +13275,8 @@ export const all_stra = {
     "bktitm": "con su terror",
     "ktit": "miedo",
     "ktiti": "mi terror",
-    "ktitm": "su espanto"
+    "ktitm": "su espanto",
+    "ktitv": "mi terror"
   },
   "H2852": {
     "nktc": "están determinadas"
@@ -13391,7 +13413,6 @@ export const all_stra = {
     "vpbk": "matanza"
   },
   "H2875": {
-    "lpbk": "al degolladero",
     "pbk": "á teba"
   },
   "H2876": {
@@ -13438,6 +13459,7 @@ export const all_stra = {
     "hpbat": "anillos",
     "hpbavt": "anillos",
     "mpbativ": "á los anillos",
+    "mpbatv": "á los anillos",
     "pbat": "anillos",
     "pbatihm": "sus anillos",
     "pbatm": "los anillos",
@@ -13477,7 +13499,6 @@ export const all_stra = {
     "vekimn": "ahiman"
   },
   "H2890": {
-    "lb": "la limpieza",
     "phvr": "muy limpio"
   },
   "H2891": {
@@ -13533,7 +13554,6 @@ export const all_stra = {
     "hipibh": "á los buenos",
     "hpibt": "bien",
     "pvb": "place",
-    "pvbh": "bien",
     "vmpib": "y bienhechor",
     "vpvb": "y os vaya bien"
   },
@@ -13778,6 +13798,7 @@ export const all_stra = {
     "vipmehv": "para contaminarlo",
     "vipmev": "y contaminando",
     "vnpmeh": "y se amancillare",
+    "vnpmtm": "seáis inmundos",
     "vpme": "y será inmundo",
     "vpmeh": "será inmunda",
     "vpmetm": "entonces profanarás",
@@ -13819,8 +13840,7 @@ export const all_stra = {
     "vpmetv": "estando inmunda"
   },
   "H2933": {
-    "npminv": "somos viles",
-    "vnpmtm": "os contaminéis"
+    "npminv": "somos viles"
   },
   "H2934": {
     "bpmvn": "encúbrelos",
@@ -14060,7 +14080,8 @@ export const all_stra = {
     "liewihv": "de josías"
   },
   "H2978": {
-    "heitvn": "de la entrada"
+    "heitvn": "de la entrada",
+    "hietvn": "de la entrada"
   },
   "H2979": {
     "ietri": "jeothrai"
@@ -14470,6 +14491,7 @@ export const all_stra = {
   "H3038": {
     "iditvn": "de jeduthún",
     "idvtvn": "de jeduthún",
+    "liditvn": "principal á jeduthún",
     "lidtvn": "y los de jeduthún",
     "lidvtvn": "de jeduthún",
     "vidtvn": "y de jeduthún",
@@ -14590,8 +14612,8 @@ export const all_stra = {
     "lidaic": "á los que te conocen",
     "lidaim": "de los elocuentes",
     "lmidai": "á mis conocidos",
+    "mida": "un pariente",
     "midai": "y mis conocidos",
-    "mvda": "un pariente",
     "mvdiac": "he aquí yo te enseñaré",
     "mvdiam": "y sabrán",
     "nda": "sabemos",
@@ -14765,13 +14787,15 @@ export const all_stra = {
   },
   "H3064": {
     "bihvdi": "de los judíos",
+    "bihvdiim": "judío",
     "bihvdim": "judío",
     "hihvdi": "judío",
+    "hihvdiim": "los judíos",
     "hihvdim": "los judíos",
-    "ihvdh": "los judíos",
     "ihvdi": "judío",
     "ihvdim": "judíos",
     "lihvdim": "los judíos",
+    "vhihvdiim": "mas los judíos",
     "vhihvdim": "los judíos",
     "vlihvdim": "á los judíos"
   },
@@ -14787,13 +14811,10 @@ export const all_stra = {
   "H3068": {
     "bihvh": "en jehová",
     "cihvh": "como jehová",
-    "h": "á jehová",
     "hihvh": "jehová",
-    "hriw": "jehová",
     "ihvh": "jehová",
     "lihvh": "á jehová",
     "mihvh": "de jehová",
-    "s": "á jehová",
     "vbihvh": "de jehová",
     "vihvh": "y jehová",
     "vlihvh": "mas de jehová",
@@ -14806,6 +14827,10 @@ export const all_stra = {
   },
   "H307": {
     "bekmte": "en achmetta"
+  },
+  "H3071": {
+    "ihvh": "jehová nissi",
+    "nsi": "jehová nissi"
   },
   "H3075": {
     "ihvxbd": "jozabad",
@@ -14932,7 +14957,6 @@ export const all_stra = {
     "ekri": "después",
     "ekric": "después",
     "ekricm": "después",
-    "ekricn": "después",
     "ekrih": "en pos",
     "ekrihm": "tras",
     "ekrihn": "después",
@@ -14948,10 +14972,10 @@ export const all_stra = {
     "vekr": "y después",
     "vekri": "y después",
     "vekric": "después",
-    "vekricn": "pasadas estas cosas",
     "vekrih": "después",
     "vekrihm": "tras",
     "vekriv": "después",
+    "vekrv": "después",
     "vmekri": "de en pos"
   },
   "H3100": {
@@ -15039,8 +15063,6 @@ export const all_stra = {
     "cimim": "días",
     "cimvt": "conforme á los días",
     "civm": "como hoy",
-    "dvid": "días",
-    "f": "días",
     "hcimi": "son tus días",
     "himim": "de las crónicas",
     "himin": "de los días",
@@ -15056,6 +15078,7 @@ export const all_stra = {
     "imimh": "en año",
     "iminv": "días",
     "imiv": "sus días",
+    "imv": "de sus días",
     "imvt": "de los tiempos",
     "ivm": "día",
     "ivmc": "tu día",
@@ -15073,7 +15096,6 @@ export const all_stra = {
     "mimim": "días",
     "mimiv": "días",
     "mivm": "desde el día",
-    "s": "día",
     "vbimi": "y en días",
     "vbimicm": "vuestros días",
     "vbimim": "días",
@@ -15142,7 +15164,7 @@ export const all_stra = {
     "civnim": "como palomas",
     "hivnh": "la paloma",
     "ivnh": "el",
-    "ivnim": "como palomas",
+    "ivnim": "de palomas",
     "ivnt": "silenciosa",
     "ivnti": "paloma",
     "vcivnh": "como paloma",
@@ -15251,7 +15273,8 @@ export const all_stra = {
     "vitr": "mío á más"
   },
   "H3149": {
-    "vixiel": "y jeziel"
+    "vixiel": "y jeziel",
+    "vixvel": "y jeziel"
   },
   "H315": {
     "vekrk": "ara"
@@ -15350,6 +15373,9 @@ export const all_stra = {
   "H3174": {
     "vikih": "y jehías"
   },
+  "H3175": {
+    "vikil": "es esperar"
+  },
   "H3176": {
     "eikl": "esperaré",
     "ekilh": "es razón",
@@ -15412,8 +15438,7 @@ export const all_stra = {
     "vhtikwm": "y contados"
   },
   "H3188": {
-    "hikw": "de la genealogía",
-    "htikw": "también á los que eran contados"
+    "hikw": "de la genealogía"
   },
   "H3189": {
     "ikt": "jahath"
@@ -15490,8 +15515,7 @@ export const all_stra = {
     "vbiin": "el vino",
     "vhiin": "y vino",
     "viin": "vino",
-    "vmiin": "y del vino",
-    "vwmn": "vino"
+    "vmiin": "y del vino"
   },
   "H3198": {
     "evcik": "empero defenderé",
@@ -15538,6 +15562,7 @@ export const all_stra = {
   "H3201": {
     "evcl": "podré",
     "hevcl": "podré yo",
+    "hicvl": "á ti mas podré",
     "hivcl": "podrá",
     "icl": "podía",
     "iclh": "pudiendo",
@@ -15566,10 +15591,10 @@ export const all_stra = {
     "ivcl": "que pueda",
     "tcvl": "ahora pudieres",
     "ticvl": "ahora pudieres",
+    "tvcl": "ahora pudieres",
     "viclh": "y los vencía"
   },
   "H3204": {
-    "_": "á jechônías",
     "icnih": "jechônías",
     "icnihv": "á jechônías",
     "icvnih": "á jechônías"
@@ -15608,7 +15633,7 @@ export const all_stra = {
     "ildtic": "engendré",
     "ildtihv": "engendrélo",
     "ildtm": "te parió",
-    "ildtni": "nací",
+    "ildtni": "me has engendrado",
     "ildtnv": "me has engendrado",
     "ildtv": "le ha parido",
     "ildv": "parió",
@@ -15667,6 +15692,7 @@ export const all_stra = {
     "ildihn": "sus hijos",
     "ildim": "muchachos",
     "ildiv": "hijos",
+    "ildv": "sus pollos",
     "lild": "y tu hijo",
     "mildi": "al niño",
     "vbildi": "y en hijos",
@@ -15707,7 +15733,87 @@ export const all_stra = {
     "vilid": "y el nacido"
   },
   "H3212": {
-    "lc": "ve"
+    "blctc": "en andar",
+    "blctm": "cuando andaban",
+    "blctn": "cuando andaban",
+    "blctv": "yendo",
+    "eilch": "y andaré",
+    "elc": "iré",
+    "elch": "iré",
+    "evlic": "porque dónde iría",
+    "evlicm": "y harélos andar",
+    "helc": "iré",
+    "hilc": "si anda",
+    "hilcv": "andarán",
+    "hilici": "lleva",
+    "hlicc": "te ha traído",
+    "hlicv": "llevad",
+    "hmvlicc": "que te hizo caminar",
+    "hnlc": "iremos",
+    "htlc": "quieres venir",
+    "htlci": "irás",
+    "hvlicm": "cuando los llevó",
+    "ilc": "vaya",
+    "ilcv": "cuando andaban",
+    "ilcvn": "irá",
+    "ivlc": "llevará",
+    "ivlic": "llevarán",
+    "ivlicm": "los llevará",
+    "lc": "ve",
+    "lch": "ven",
+    "lci": "ve",
+    "lcn": "idos",
+    "lcnh": "andad",
+    "lct": "salió",
+    "lctc": "que andas",
+    "lcti": "que yo iba",
+    "lctm": "ido",
+    "lctv": "cosa andar",
+    "lcv": "venid",
+    "lhlicv": "lo llevó",
+    "llct": "para ir",
+    "lmvlic": "al que pastoreó",
+    "mlct": "es ir",
+    "mvlcvt": "llevan",
+    "mvlic": "el lleva",
+    "mvlicm": "el que los condujo",
+    "ne": "ruégote que vengas",
+    "nlc": "hemos de ir",
+    "nlch": "vamos",
+    "tlc": "anduvieres",
+    "tlci": "iré",
+    "tlcnh": "y andan",
+    "tlcv": "andaréis",
+    "tlcvn": "iréis",
+    "vblct": "andaban",
+    "vblctc": "y andando",
+    "vblctm": "y yéndose",
+    "velc": "y fuí",
+    "velch": "é iré",
+    "vevlc": "y yo os he traído",
+    "vevlich": "seguidme",
+    "vhlctih": "y la llevaré",
+    "vhvlc": "y ve",
+    "vhvlcti": "y guiaré",
+    "vhvlicv": "y le hace andar",
+    "vilc": "y fuése",
+    "vilcv": "y fueron",
+    "vivlc": "se retirase",
+    "vivlcni": "llevóme",
+    "vivlichv": "tenía y lleváronle",
+    "vivlicm": "é hízoles ir",
+    "vlc": "y ve",
+    "vlch": "ven",
+    "vlci": "vete",
+    "vlcv": "é id",
+    "vllct": "y andes",
+    "vnlc": "y vámonos",
+    "vnlch": "venid",
+    "vtlc": "y fuése",
+    "vtlci": "has venido",
+    "vtlcnh": "y fuése",
+    "vtlcv": "y os vais",
+    "wilc": "tornando"
   },
   "H3213": {
     "eilil": "yo aullaré",
@@ -15828,6 +15934,7 @@ export const all_stra = {
     "limnh": "de imna"
   },
   "H3233": {
+    "himni": "derecho",
     "himnit": "derecha"
   },
   "H3234": {
@@ -15876,6 +15983,7 @@ export const all_stra = {
     "vtnk": "y ella puso"
   },
   "H3241": {
+    "vinim": "y janum",
     "vinvm": "y janum"
   },
   "H3242": {
@@ -15921,6 +16029,7 @@ export const all_stra = {
     "isdt": "fundaste",
     "isdtm": "lo fundaste",
     "isdtv": "lo fundaste",
+    "isdv": "echarán el fundamento",
     "lisd": "para los cimientos",
     "lisvd": "á fundar",
     "misdim": "fundadas",
@@ -15948,9 +16057,10 @@ export const all_stra = {
     "isvdtv": "su cimiento"
   },
   "H3249": {
-    "vsvri": "y los que de mí se apartan"
+    "isvri": "y los que de mí se apartan"
   },
   "H325": {
+    "ekwrw": "assuero",
     "ekwvrvw": "assuero",
     "ekwvrw": "assuero"
   },
@@ -15973,7 +16083,6 @@ export const all_stra = {
     "evsif": "más",
     "hsif": "más",
     "hvsft": "es mayor",
-    "isd": "el fundó",
     "isf": "más",
     "isfh": "ya",
     "isfnv": "hemos añadido",
@@ -16109,7 +16218,9 @@ export const all_stra = {
   },
   "H3273": {
     "iaiel": "jeiel",
-    "viaiel": "jehiel"
+    "iavel": "jehiel",
+    "viaiel": "jehiel",
+    "viavel": "y jehiel"
   },
   "H3275": {
     "viacn": "jachân"
@@ -16176,6 +16287,7 @@ export const all_stra = {
   "H3289": {
     "eiazc": "y toma",
     "eiazh": "ti fijaré",
+    "hiavzh": "que está acordado",
     "hlivaz": "á ti por consejero",
     "iaz": "ha acordado",
     "iazh": "lo decretó",
@@ -16239,8 +16351,7 @@ export const all_stra = {
     "viarh": "á jara"
   },
   "H3295": {
-    "biart": "en un panal",
-    "iarvt": "las breñas"
+    "biart": "en un panal"
   },
   "H3296": {
     "ergim": "de jaare oregim",
@@ -16250,7 +16361,8 @@ export const all_stra = {
     "viarwih": "jaarsías"
   },
   "H3299": {
-    "viawi": "y jaasai"
+    "viawi": "y jaasai",
+    "viawv": "y jaasai"
   },
   "H33": {
     "ebi": "de los abiezeritas",
@@ -16355,7 +16467,6 @@ export const all_stra = {
     "chvziem": "y cuando hubieron sacado",
     "czet": "saldrá",
     "czeti": "en saliendo",
-    "dvid": "salió",
     "evzie": "y saque",
     "evzieh": "las sacaré",
     "eze": "saldré",
@@ -16411,6 +16522,7 @@ export const all_stra = {
     "izetm": "habéis salido",
     "izev": "salieron",
     "izevt": "que salían",
+    "izti": "salí",
     "izve": "salía",
     "lhvzehv": "para que lo sacase",
     "lhvzie": "que sacasen",
@@ -16434,19 +16546,19 @@ export const all_stra = {
     "tvzie": "sacarás",
     "tvziev": "saquéis",
     "tze": "saldrá",
-    "tzei": "saldrás",
+    "tzei": "salgas",
     "tzenh": "y saldrán",
     "tzev": "saldréis",
     "vbhvziem": "y al sacar",
     "vbzetm": "salieron",
     "vbzetv": "y cuando saliere",
     "vevze": "yo pues saqué",
+    "vevzeh": "y enviélos",
     "vevzie": "y saqué",
     "vevziem": "saquélos",
     "veze": "y salí",
     "vezeh": "y salí",
     "vezie": "y os saqué",
-    "vezvh": "y enviélos",
     "vhivze": "mas el que saliere",
     "vhivzet": "y la que sacaba",
     "vhize": "lo que ha salido",
@@ -16482,7 +16594,7 @@ export const all_stra = {
     "vizeti": "y salía",
     "vizetm": "salir",
     "vizev": "y salieron",
-    "viziev": "y sacaron",
+    "viziev": "sacarán",
     "vlzet": "y para salir",
     "vmvzie": "y que saca",
     "vmvziei": "y que me saca",
@@ -16532,6 +16644,7 @@ export const all_stra = {
   "H3322": {
     "hzg": "á sentar",
     "hzigni": "paróme",
+    "hzignv": "paróme",
     "vhzgni": "el me ha puesto",
     "vhzgtih": "y la haga tornar",
     "vhzgtiv": "y lo pusiere",
@@ -16554,18 +16667,18 @@ export const all_stra = {
   },
   "H3326": {
     "hizia": "el aposento",
+    "hizva": "el aposento",
     "izvai": "mi cama"
   },
   "H3327": {
     "bizkq": "en isaac",
     "izkq": "isaac",
     "lizkq": "isaac",
-    "s": "á isaac",
     "vizkq": "é isaac",
     "vlizkq": "y á isaac"
   },
   "H3328": {
-    "vzkr": "jesohar"
+    "izkr": "jesohar"
   },
   "H333": {
     "epr": "de ater"
@@ -16590,6 +16703,7 @@ export const all_stra = {
     "izqim": "habían sido fundidas",
     "izqm": "y fundiólos",
     "izvq": "y fuerte",
+    "mizqt": "echaba",
     "mvzq": "sólido",
     "mvzqt": "echaba",
     "mzq": "fuerte",
@@ -16611,6 +16725,7 @@ export const all_stra = {
   },
   "H3335": {
     "ezrc": "que te formase",
+    "ezvrc": "que te formase",
     "hcivzr": "del alfarero",
     "hivzr": "del alfarero",
     "hivzrim": "fueron alfareros",
@@ -16627,7 +16742,7 @@ export const all_stra = {
     "izrtic": "formé",
     "izrtiv": "mía los críe los formé",
     "izrtm": "los formaste",
-    "izrv": "la hizo",
+    "izrv": "formaron",
     "livzrv": "el vaso",
     "lizrv": "con su hacedor",
     "nvzr": "fué formado",
@@ -16649,18 +16764,16 @@ export const all_stra = {
   "H3338": {
     "vizri": "y mis pensamientos"
   },
-  "H3339": {
-    "hizri": "de los jeseritas"
-  },
   "H3341": {
     "hzit": "de gran palabra hizo encender",
     "hzitv": "encendiéronse",
     "iztv": "quemados",
     "mzit": "he aquí que yo enciendo",
-    "nzth": "ha sido asolada",
+    "nzth": "quemadas",
     "nztv": "quemadas",
     "tzitv": "le prenderéis",
     "tztnh": "serán puestas",
+    "vhvztih": "pegaron",
     "vhzitv": "y la pondrán",
     "vhzitvh": "pegaron",
     "vhzti": "y encenderé",
@@ -16833,7 +16946,6 @@ export const all_stra = {
   "H3372": {
     "eire": "temeré",
     "eirenv": "le temeré",
-    "hmvrim": "pero los flecheros",
     "hnvre": "maravilloso",
     "hnvret": "y terribles",
     "iire": "temerá",
@@ -16878,7 +16990,6 @@ export const all_stra = {
     "viret": "mas tendrás temor",
     "virev": "y temerá",
     "virevn": "y tema",
-    "virv": "pero los flecheros",
     "vlireh": "y te teman",
     "vnire": "de vosotros por esto temimos",
     "vnrevt": "y maravillas",
@@ -16908,6 +17019,7 @@ export const all_stra = {
     "hmiretc": "castigaráte acaso",
     "ireh": "temor",
     "iret": "el temor",
+    "iretc": "es este tu temor",
     "ireti": "mi temor",
     "iretv": "temáis",
     "liretc": "te teme",
@@ -16946,7 +17058,6 @@ export const all_stra = {
     "brdt": "descendió",
     "brdti": "cuando yo descienda",
     "brdtv": "que descendiendo",
-    "bvr": "descendiese",
     "civrdi": "como los que caen",
     "erd": "descenderé",
     "erdh": "descenderé",
@@ -16982,6 +17093,7 @@ export const all_stra = {
     "lhvrid": "á llevarlo",
     "lrdt": "para descender",
     "mirdi": "descendiese",
+    "mivrdi": "descendiese",
     "mrdh": "de descender",
     "mrdt": "de descender",
     "mvrid": "él hace descender",
@@ -17040,8 +17152,7 @@ export const all_stra = {
     "ird": "jared"
   },
   "H3383": {
-    "birdn": "del jordán",
-    "f": "el jordán",
+    "birdn": "el jordán",
     "hirdn": "del jordán",
     "hirdnh": "al jordán",
     "irdn": "al jordán",
@@ -17054,6 +17165,7 @@ export const all_stra = {
     "hirh": "y echa",
     "hirim": "tiraron",
     "hivrim": "los flecheros",
+    "hmvreim": "tiraron",
     "hmvrim": "los flecheros",
     "hrni": "enséñame",
     "hrtic": "te he encaminado",
@@ -17083,6 +17195,7 @@ export const all_stra = {
     "vevrc": "y te enseñaré",
     "vhvriti": "os enseñaré",
     "vhvritic": "y te enseñaré",
+    "virev": "tiraron",
     "virh": "y os enseñe",
     "viriti": "y yo os echaré",
     "virm": "los herirá",
@@ -17121,7 +17234,6 @@ export const all_stra = {
     "lirvwlm": "á jerusalem",
     "mirvwlim": "en jerusalem",
     "mirvwlm": "de jerusalem",
-    "s": "jerusalem",
     "vbirvwlm": "y en jerusalem",
     "virvwlim": "y jerusalem",
     "virvwlm": "y jerusalem",
@@ -17207,7 +17319,7 @@ export const all_stra = {
     "vlebinc": "menesterosos"
   },
   "H340": {
-    "eibic": "á tus enemigos"
+    "veibti": "á tus enemigos"
   },
   "H3400": {
     "viriel": "jeriel"
@@ -17236,11 +17348,11 @@ export const all_stra = {
     "irkv": "de jericó",
     "lirikv": "á jericó",
     "mirikv": "de jericó",
-    "s": "de jericó",
     "virikv": "empero jericó"
   },
   "H3406": {
     "irimvt": "de azriel",
+    "irmvt": "y ramoth",
     "lirmvt": "á jerimoth",
     "virimvt": "jerimoth",
     "virmvt": "y jeremoth",
@@ -17317,7 +17429,6 @@ export const all_stra = {
     "veibi": "y mis enemigos",
     "veibinv": "enemigos",
     "veibiv": "á sus enemigos",
-    "veibti": "seré enemigo",
     "vevib": "y adversario",
     "vmeibi": "de mis enemigos"
   },
@@ -17327,9 +17438,11 @@ export const all_stra = {
   "H3411": {
     "bircti": "á los lados",
     "birctim": "ángulos",
+    "birctm": "á los lados",
     "ircti": "los lados",
     "lirctim": "del lado del tabernáculo á",
     "mircti": "de los fines",
+    "mircvti": "cabo",
     "vlircti": "y para el lado"
   },
   "H3412": {
@@ -17384,23 +17497,22 @@ export const all_stra = {
     "irqam": "de jorcaam"
   },
   "H3422": {
+    "birqrq": "con amarillez",
     "irqrq": "sea verde",
-    "irqrqt": "cavernillas verdosas",
-    "vebrvtih": "con amarillez"
+    "irqrqt": "cavernillas verdosas"
   },
   "H3423": {
-    "brwat": "á poseer",
     "eirwnh": "la tengo de heredar",
     "evriw": "yo arrojaré",
     "evriwm": "los desarraigaré",
     "evrw": "siendo pobre",
     "hirw": "heredero",
     "hivrw": "el heredero",
+    "hriw": "había echado",
     "hvriw": "había echado",
     "hvriwm": "las desarraigó",
     "hvriwv": "echaron",
     "hvrwt": "echaste",
-    "ihvh": "había echado",
     "iirw": "heredará",
     "iirwc": "te heredará",
     "iirwv": "heredarán",
@@ -17424,6 +17536,7 @@ export const all_stra = {
     "lrwth": "para poseerla",
     "lrwtv": "para tomar posesión",
     "mvriw": "las echó",
+    "mvriwm": "á poseer",
     "nirw": "lo poseerías",
     "nirwh": "heredemos",
     "rw": "á tomar posesión",
@@ -17433,7 +17546,6 @@ export const all_stra = {
     "tvriw": "tú echarás",
     "tvriwv": "echareis",
     "tvrw": "perezcas",
-    "vbrwat": "á poseer",
     "vevrwnv": "y lo destruiré",
     "vhvriw": "también echará",
     "vhvrw": "él echará",
@@ -17497,6 +17609,7 @@ export const all_stra = {
     "hiwbi": "ti que habitas",
     "hiwbim": "que habitaban",
     "hiwbt": "que está asentada",
+    "hiwbti": "que está asentada",
     "hnvwbvt": "habitadas",
     "hvwb": "habiten",
     "hvwbti": "hice yo habitar",
@@ -17509,6 +17622,7 @@ export const all_stra = {
     "ivwbim": "estaban sentados",
     "ivwbiv": "y sobre los moradores",
     "ivwbt": "oh moradora",
+    "ivwbti": "la que habitas",
     "ivwibv": "y habitarán",
     "iwb": "habitó",
     "iwbh": "moró",
@@ -17544,13 +17658,13 @@ export const all_stra = {
     "nvwbt": "que mora",
     "nvwbv": "se habitan",
     "nwb": "moraremos",
+    "tiwbnh": "más se restaurarán",
     "tvwb": "serás habitada",
     "twb": "será habitada",
     "twbi": "pondré",
-    "twbnh": "más se restaurarán",
     "twbv": "habitará",
     "vbiwbi": "y en los moradores",
-    "vewb": "y heme sentado",
+    "vewb": "y asenté",
     "vewbh": "y sentéme",
     "vhivwbim": "moradores",
     "vhiwb": "se hubiere sentado",
@@ -17564,6 +17678,7 @@ export const all_stra = {
     "vhwibv": "y asentaron",
     "vivwb": "aposenta",
     "vivwbi": "allí juntamente con los moradores",
+    "vivwibini": "y me ha puesto",
     "vivwibni": "y me ha puesto",
     "vivwibv": "sentaron",
     "viwb": "y habitó",
@@ -17609,6 +17724,10 @@ export const all_stra = {
   "H3428": {
     "liwbeb": "por isebeab"
   },
+  "H3429": {
+    "bwbt": "se sentaba en cátedra",
+    "iwb": "se sentaba en cátedra"
+  },
   "H343": {
     "beidcm": "en vuestra calamidad",
     "eid": "el castigo",
@@ -17621,7 +17740,9 @@ export const all_stra = {
     "veidcm": "y vuestra calamidad"
   },
   "H3430": {
-    "bnb": "en esto isbi benob"
+    "bnb": "en esto isbi benob",
+    "viwbi": "en esto isbi benob",
+    "viwbv": "en esto isbi benob"
   },
   "H3431": {
     "iwbk": "y á isba"
@@ -17645,6 +17766,7 @@ export const all_stra = {
     "liwbqwh": "á josbecasa"
   },
   "H3437": {
+    "iwib": "jabsub",
     "iwvb": "jasub",
     "liwvb": "de jasub"
   },
@@ -17729,7 +17851,7 @@ export const all_stra = {
     "viwimel": "jesimiel"
   },
   "H3451": {
-    "mvt": "condenados"
+    "iwimvt": "condenados"
   },
   "H3452": {
     "biwimn": "en la soledad",
@@ -17748,7 +17870,7 @@ export const all_stra = {
     "iwiwi": "de jesiaí"
   },
   "H3455": {
-    "vivwm": "y pusiéronle"
+    "viiwm": "y pusiéronle"
   },
   "H3456": {
     "tiwmnh": "serán asolados"
@@ -17776,8 +17898,7 @@ export const all_stra = {
     "veiv": "y dónde"
   },
   "H3460": {
-    "iwmaihv": "ismaías",
-    "viwmaih": "e ismaías"
+    "iwmaihv": "ismaías"
   },
   "H3461": {
     "viwmri": "ismari"
@@ -17785,8 +17906,6 @@ export const all_stra = {
   "H3462": {
     "eiwn": "porque no duerma",
     "iiwn": "dormirá",
-    "iwn": "duerme",
-    "iwnh": "dormía",
     "iwnim": "dormían",
     "iwnv": "duermen",
     "nvwn": "lo añejo",
@@ -17795,7 +17914,6 @@ export const all_stra = {
     "veiwn": "dormiré",
     "veiwnh": "y dormí",
     "viiwn": "durmióse",
-    "viwn": "lo añejo",
     "viwnv": "y duerman",
     "vnvwntm": "y hubiereis envejecido",
     "vtiwnhv": "y ella hizo que él se durmiese"
@@ -17812,7 +17930,8 @@ export const all_stra = {
   "H3465": {
     "hiwnh": "vieja",
     "iwn": "añejo",
-    "iwnim": "añejas"
+    "iwnim": "añejas",
+    "viwn": "lo añejo"
   },
   "H3467": {
     "evwa": "y seré salvo",
@@ -17936,8 +18055,10 @@ export const all_stra = {
   },
   "H3474": {
     "eiwr": "y enderezaré",
+    "evwr": "de ti y enderezaré",
     "hiwr": "endereza",
     "hmiwrim": "que van por sus caminos derechos",
+    "hvwr": "endereza",
     "iiwr": "enderezará",
     "iwr": "bien",
     "iwrh": "agradó",
@@ -17965,7 +18086,6 @@ export const all_stra = {
   "H3477": {
     "hiwr": "lo recto",
     "hiwrh": "el derecho",
-    "iiwr": "parecerá bien",
     "iwr": "recto",
     "iwrh": "derecho",
     "iwri": "los rectos",
@@ -17984,7 +18104,6 @@ export const all_stra = {
   "H3478": {
     "biwrel": "en israel",
     "ciwrel": "como israel",
-    "f": "de israel",
     "iwrel": "de israel",
     "liwrel": "á israel",
     "miwrel": "de israel",
@@ -18020,7 +18139,6 @@ export const all_stra = {
     "iwrvn": "jeshurun"
   },
   "H3485": {
-    "ad": "issachâr",
     "biwwcr": "en issachâr",
     "iwwcr": "de issachâr",
     "liwwcr": "de issachâr",
@@ -18137,6 +18255,7 @@ export const all_stra = {
     "itri": "mi cuerda",
     "itrim": "mimbres",
     "itrm": "y dejan",
+    "itrv": "mi cuerda",
     "mitr": "del residuo",
     "vbitr": "y para con el resto",
     "vitr": "lo demás",
@@ -18160,7 +18279,6 @@ export const all_stra = {
     "itrt": "las riquezas"
   },
   "H3503": {
-    "itr": "jethro",
     "itrv": "jethro"
   },
   "H3504": {
@@ -18201,7 +18319,7 @@ export const all_stra = {
   },
   "H3512": {
     "hcevt": "cuanto entristecisteis",
-    "vnceh": "y él se contristará"
+    "vnceh": "y quebrantado"
   },
   "H3513": {
     "bncbd": "contra el noble",
@@ -18325,10 +18443,12 @@ export const all_stra = {
     "eilim": "carneros",
     "eiliv": "sus postes",
     "eilm": "carneros",
+    "eilv": "sus postes",
     "el": "cada poste",
     "elihmh": "cada poste",
     "elim": "de carneros",
     "eliv": "sus postes",
+    "elv": "sus postes",
     "heil": "el carnero",
     "heilim": "los postes",
     "heilm": "carneros",
@@ -18342,7 +18462,9 @@ export const all_stra = {
     "veilim": "carneros",
     "veiliv": "y sus postes",
     "veilm": "carneros",
-    "veliv": "y sus postes"
+    "veilv": "y sus postes",
+    "veliv": "y sus postes",
+    "velv": "y sus postes"
   },
   "H3520": {
     "hcbvdh": "y el bagaje"
@@ -18438,7 +18560,6 @@ export const all_stra = {
     "cd": "la tinaja",
     "cdc": "cántaro",
     "cdh": "su cántaro",
-    "cdim": "cántaros",
     "hcdim": "los cántaros",
     "mcdc": "de tu cántaro",
     "vcdh": "cántaro",
@@ -18615,7 +18736,6 @@ export const all_stra = {
   "H3559": {
     "bhcin": "él le había preparado",
     "bhcinv": "cuando formaba",
-    "ci": "habían prevenido",
     "cvnn": "afirmó",
     "cvnnh": "compuso",
     "cvnnhv": "confirma",
@@ -18636,7 +18756,6 @@ export const all_stra = {
     "hhcin": "hubiese preparado",
     "hmcin": "el que prepara",
     "hvcn": "aparejada",
-    "ibin": "ordena",
     "icin": "podía",
     "icnv": "fuesen ordenados",
     "icvn": "será firme",
@@ -18695,9 +18814,12 @@ export const all_stra = {
   },
   "H3562": {
     "cnnihv": "ello á chônanías",
-    "vcnnihv": "asimismo chônanías"
+    "cvnnihv": "ello á chônanías",
+    "vcnnihv": "asimismo chônanías",
+    "vcvnnihv": "asimismo chônanías"
   },
   "H3563": {
+    "bcvs": "en el vaso",
     "ccvs": "como el buho",
     "cvs": "el cáliz",
     "cvsh": "su cáliz",
@@ -18866,7 +18988,6 @@ export const all_stra = {
     "ci": "y quemadura"
   },
   "H3588": {
-    "ch": "así porque",
     "ci": "porque",
     "hci": "por",
     "vci": "y cuando"
@@ -18954,7 +19075,6 @@ export const all_stra = {
     "ccrin": "talentos"
   },
   "H3605": {
-    "avnvtihm": "de toda",
     "bcl": "en toda",
     "bclm": "todo",
     "ccl": "conforme á todo",
@@ -18970,12 +19090,11 @@ export const all_stra = {
     "clv": "todos",
     "cvlm": "todos",
     "hcl": "todo",
-    "hicvl": "á todos",
-    "kil": "porque todos",
     "lcl": "á todos",
     "lclcm": "á todos",
     "lclm": "todos",
     "lclnv": "todos",
+    "lcvl": "de toda",
     "mcl": "de todas",
     "mclm": "entre todos",
     "mclnv": "de todos",
@@ -19027,10 +19146,12 @@ export const all_stra = {
   },
   "H361": {
     "veilmiv": "y sus arcos",
+    "veilmv": "y sus arcos",
     "velmiv": "y sus arcos",
     "velmv": "y sus arcos",
     "velmvt": "y los arcos",
-    "vlelmiv": "y sus arcos"
+    "vlelmiv": "y sus arcos",
+    "vlelmv": "y sus arcos"
   },
   "H3610": {
     "cleim": "con mezcla"
@@ -19051,6 +19172,9 @@ export const all_stra = {
     "lclb": "á caleb",
     "vclb": "y caleb",
     "vlclb": "mas á caleb"
+  },
+  "H3614": {
+    "clbi": "y era del linaje de caleb"
   },
   "H3615": {
     "bclvtc": "cuando acabares",
@@ -19149,6 +19273,7 @@ export const all_stra = {
     "clvbi": "y chêlubai"
   },
   "H3622": {
+    "clhi": "chêluhi",
     "clvhv": "chêluhi"
   },
   "H3623": {
@@ -19192,6 +19317,7 @@ export const all_stra = {
     "vmcli": "de los vasos"
   },
   "H3628": {
+    "hclie": "de la cárcel",
     "hclve": "de la cárcel"
   },
   "H3629": {
@@ -19297,6 +19423,7 @@ export const all_stra = {
   },
   "H3643": {
     "cmhm": "chimham",
+    "cmvhm": "en geruth chimham",
     "vcmhn": "chimham"
   },
   "H3644": {
@@ -19310,6 +19437,7 @@ export const all_stra = {
     "vcmv": "y al"
   },
   "H3645": {
+    "cmiw": "y chêmos",
     "cmvw": "de chêmos",
     "lcmvw": "á chêmos",
     "mcmvw": "de chêmos",
@@ -19352,6 +19480,7 @@ export const all_stra = {
     "vcnv": "con su basa"
   },
   "H3654": {
+    "cn": "de vestir y de la misma manera",
     "cnim": "piojos",
     "hcnim": "piojos",
     "hcnm": "piojos",
@@ -19430,6 +19559,7 @@ export const all_stra = {
   },
   "H3667": {
     "cnan": "de canaán",
+    "cnanih": "cuyos mercaderes",
     "vcnan": "y canaán"
   },
   "H3668": {
@@ -19479,6 +19609,7 @@ export const all_stra = {
     "cnfihn": "sus alas",
     "cnfim": "alas",
     "cnfiv": "ala",
+    "cnfv": "sus alas",
     "cnfvt": "cabos",
     "hcnfim": "alas",
     "lcnf": "ala",
@@ -19500,7 +19631,8 @@ export const all_stra = {
     "vmtcnwin": "y juntáronse"
   },
   "H3674": {
-    "cnvtiv": "sus compañeros"
+    "cnvtiv": "sus compañeros",
+    "cnvtv": "sus compañeros"
   },
   "H3675": {
     "cnvthvn": "sus compañeros",
@@ -19534,7 +19666,8 @@ export const all_stra = {
     "vlcsev": "y sobre su trono"
   },
   "H3679": {
-    "csdeh": "caldeo"
+    "csdeh": "caldeo",
+    "csdie": "caldeo"
   },
   "H368": {
     "emim": "emimeos",
@@ -19566,6 +19699,7 @@ export const all_stra = {
     "icsnh": "cubrirá",
     "icsnv": "lo cubría",
     "icsv": "cubren",
+    "icsvmv": "cubrirá",
     "itcsv": "serán cubiertos",
     "lcst": "de cubrir",
     "lcstv": "para cubrirlo",
@@ -19608,7 +19742,7 @@ export const all_stra = {
   "H3682": {
     "csvt": "cobertura",
     "csvtc": "de tu manto",
-    "csvth": "ni su vestido",
+    "csvth": "cubierta",
     "csvtm": "su cobertura",
     "csvtv": "cubierta"
   },
@@ -19682,7 +19816,8 @@ export const all_stra = {
   },
   "H3691": {
     "bcslv": "que es chisleu",
-    "csliv": "de chisleu"
+    "csliv": "de chisleu",
+    "cslv": "de chisleu"
   },
   "H3692": {
     "cslvn": "de chislón"
@@ -19938,6 +20073,7 @@ export const all_stra = {
   },
   "H3726": {
     "hamnh": "y cephar hammonai",
+    "hamni": "y cephar hammonai",
     "vcfr": "y cephar hammonai"
   },
   "H3727": {
@@ -20040,7 +20176,6 @@ export const all_stra = {
   },
   "H3746": {
     "hcri": "y capitanes",
-    "hcrti": "los ceretheos",
     "lcri": "capitanes"
   },
   "H3747": {
@@ -20135,19 +20270,18 @@ export const all_stra = {
     "eiw": "cada uno",
     "eiwc": "marido",
     "eiwh": "su marido",
-    "eiwi": "mi marido",
-    "eiwim": "varón",
+    "eiwi": "marido",
+    "eiwim": "los",
     "eiwv": "cada uno",
-    "elf": "hombres",
     "enwi": "hombres",
+    "enwihn": "á su marido",
     "enwim": "varón",
     "enwiv": "cada uno",
-    "heiw": "varón",
+    "heiw": "aquel varón",
     "henwim": "hombres",
-    "hewh": "á su marido",
     "leiw": "al varón",
     "leiwc": "y tu marido",
-    "leiwh": "varón",
+    "leiwh": "marido",
     "leiwi": "á mi marido",
     "lenwi": "los",
     "lenwic": "nosotros",
@@ -20156,9 +20290,8 @@ export const all_stra = {
     "lmeiw": "hombre",
     "meiw": "hombres",
     "meiwh": "marido",
-    "menwi": "había nadie",
+    "menwi": "varones",
     "mhenwim": "los malos",
-    "s": "aquel varón",
     "vbenwi": "de los",
     "veiw": "y cada uno",
     "veiwh": "y su marido",
@@ -20312,6 +20445,7 @@ export const all_stra = {
     "cwd": "y á chêsed"
   },
   "H3778": {
+    "cwdiim": "de caldeos",
     "cwdim": "de los caldeos",
     "cwdimh": "los caldeos",
     "hcwdim": "de los caldeos",
@@ -20323,7 +20457,9 @@ export const all_stra = {
     "cwdeh": "de los caldeos",
     "cwdei": "caldeos",
     "cwdein": "caldeos",
+    "cwdie": "caldeos",
     "lcwdei": "á los caldeos",
+    "lcwdie": "á los caldeos",
     "vcwdi": "caldeo"
   },
   "H378": {
@@ -20353,6 +20489,7 @@ export const all_stra = {
     "icwilv": "han hecho caer",
     "icwl": "le será estorbo",
     "icwlv": "caerán",
+    "icwvlv": "han hecho caer",
     "lhcwilv": "ruina",
     "mcwlim": "y tropiecen",
     "tcwl": "tropezarás",
@@ -20397,7 +20534,6 @@ export const all_stra = {
   "H3789": {
     "bctbim": "estaban estos entre los escritos",
     "bctbv": "cuando escribía",
-    "cctbh": "escribir",
     "cctbm": "escribir",
     "cctvb": "como está escrito",
     "ctb": "escribe",
@@ -20488,7 +20624,7 @@ export const all_stra = {
     "ebim": "abiam"
   },
   "H380": {
-    "beiwvn": "en la oscuridad",
+    "beiwvn": "tenebrosa",
     "bewvn": "tenebrosa",
     "ceiwvn": "como la niña"
   },
@@ -20572,11 +20708,9 @@ export const all_stra = {
     "le": "no",
     "lle": "de los que no",
     "llve": "de los que no",
-    "lv": "no",
     "lve": "no",
     "vhlve": "no",
     "vle": "y no",
-    "vlv": "sin",
     "vlve": "ni",
     "wle": "nunca"
   },
@@ -20621,6 +20755,9 @@ export const all_stra = {
   "H3813": {
     "lep": "cubierto"
   },
+  "H3814": {
+    "blep": "calladamente"
+  },
   "H3815": {
     "lel": "de lael"
   },
@@ -20662,7 +20799,7 @@ export const all_stra = {
     "mlbhn": "de su corazón",
     "mlbi": "de mi arbitrio",
     "mlbm": "de su corazón",
-    "mlbv": "por su corazón",
+    "mlbv": "de su corazón",
     "vblb": "corazón",
     "vclbc": "y según tu corazón",
     "vlb": "el corazón",
@@ -20727,7 +20864,6 @@ export const all_stra = {
   "H3826": {
     "blbvtm": "en sus corazones",
     "lbtc": "corazón",
-    "lbtm": "y su corazón",
     "lbvt": "los corazones"
   },
   "H3828": {
@@ -20978,7 +21114,7 @@ export const all_stra = {
     "lhqt": "una compañía"
   },
   "H3863": {
-    "le": "no",
+    "le": "si",
     "lv": "ojalá",
     "lve": "si",
     "vlv": "ojalá"
@@ -20993,6 +21129,7 @@ export const all_stra = {
     "vlvd": "lud"
   },
   "H3866": {
+    "lvdiim": "á ludim",
     "lvdim": "á ludim",
     "vlvdim": "y los de lut"
   },
@@ -21040,6 +21177,7 @@ export const all_stra = {
     "vhlkt": "las tablas"
   },
   "H3872": {
+    "hlkvt": "de luhith",
     "hlvkit": "de luhith"
   },
   "H3873": {
@@ -21077,9 +21215,9 @@ export const all_stra = {
     "blvim": "de los levitas",
     "hlvi": "levita",
     "hlvim": "los levitas",
-    "llvi": "leví",
+    "llvi": "al levita",
     "llvim": "á los levitas",
-    "lvi": "de leví",
+    "lvi": "levita",
     "lvinv": "levitas",
     "vhlvi": "y el levita",
     "vhlvim": "y los levitas",
@@ -21111,6 +21249,7 @@ export const all_stra = {
     "tlini": "viviré",
     "tlinv": "murmuréis",
     "tln": "quedes",
+    "tlvnv": "murmuréis",
     "vilinv": "posaron",
     "viln": "y durmió",
     "vilnv": "murmuró",
@@ -21133,6 +21272,7 @@ export const all_stra = {
   },
   "H3888": {
     "mlvw": "después que esté hecha",
+    "vtlvw": "y amasó",
     "vtlw": "y amasó"
   },
   "H389": {
@@ -21233,6 +21373,7 @@ export const all_stra = {
     "mlkmv": "pan",
     "vblkm": "y del pan",
     "vhlkm": "en que suban los panes",
+    "vlhlkm": "en que suban los panes",
     "vlkm": "pan",
     "vlkmc": "pan",
     "vlkmi": "mi pan",
@@ -21748,6 +21889,7 @@ export const all_stra = {
     "hecilh": "de aquella comida"
   },
   "H3960": {
+    "mlvwni": "infama",
     "mlwni": "infama",
     "tlwn": "acuses"
   },
@@ -21766,17 +21908,17 @@ export const all_stra = {
   },
   "H3966": {
     "bmed": "en extremo",
-    "igl": "mucho",
     "lmed": "muy",
     "med": "en gran",
-    "medv": "su fuerzas",
-    "s": "tenía gran"
+    "medv": "su fuerzas"
   },
   "H3967": {
     "bmeh": "por cien",
     "hmeh": "era de cien",
+    "hmeivt": "centuriones",
     "hmetim": "doscientas",
     "hmevt": "y centuriones",
+    "hmievt": "á los centuriones",
     "lmeh": "ciento",
     "lmet": "cien",
     "lmevt": "de ciento",
@@ -21851,7 +21993,6 @@ export const all_stra = {
     "vmeclvt": "cuchillos"
   },
   "H398": {
-    "_": "en ella para comer",
     "becl": "cuando consumió",
     "beclcm": "será que cuando comenzareis á comer",
     "becli": "de los convidados",
@@ -21882,7 +22023,7 @@ export const all_stra = {
     "evcil": "él la comida",
     "evcl": "comía",
     "evclh": "consumidor",
-    "hecl": "comiere",
+    "hecl": "se comiere",
     "heclhv": "dale de comer",
     "heclim": "coméis",
     "heclt": "se comiere",
@@ -21904,11 +22045,11 @@ export const all_stra = {
     "ieclvh": "se comerá",
     "ieclvm": "comerán",
     "ieclvn": "comen",
+    "ivclv": "quitaban",
     "lecl": "á comer",
     "leclv": "lo devoren",
     "lecvl": "comer",
     "lhcil": "para consumir",
-    "lkm": "en ella para comer",
     "mecil": "he aquí que yo les hago comer",
     "mecilm": "yo les daré á comer",
     "mecl": "de comer",
@@ -21962,8 +22103,7 @@ export const all_stra = {
     "vtecl": "y consumió",
     "vteclm": "los consumirá",
     "vteclnh": "devoraban",
-    "wiecl": "coma",
-    "wlvwh": "comiendo"
+    "wiecl": "coma"
   },
   "H3980": {
     "meclt": "y pábulo"
@@ -22024,6 +22164,7 @@ export const all_stra = {
     "mestim": "los desecharé",
     "mestiv": "desechado",
     "mestm": "habéis desechado",
+    "mestnv": "has desechado",
     "mesv": "desecharon",
     "mevs": "desechar",
     "mves": "menosprecia",
@@ -22077,14 +22218,11 @@ export const all_stra = {
     "bmbve": "á la entrada",
     "cmbve": "ti como viene",
     "cmbvei": "como por portillos",
-    "hmbie": "estaba la entrada",
     "hmbve": "de la entrada",
     "lmbve": "á las entradas",
     "mbev": "hasta donde se pone",
     "mbve": "la entrada",
-    "mbvet": "las entradas",
-    "mbvev": "donde se pone",
-    "mvbec": "entrada"
+    "mbvev": "donde se pone"
   },
   "H3998": {
     "mbvctm": "su confusión"
@@ -22274,8 +22412,7 @@ export const all_stra = {
     "mgvrt": "teme"
   },
   "H4035": {
-    "bmgvrh": "en el granero",
-    "mgvrvti": "mis temores"
+    "bmgvrh": "en el granero"
   },
   "H4036": {
     "mgvr": "sino magor missabib",
@@ -22442,12 +22579,14 @@ export const all_stra = {
     "vmdvkim": "y extravíos"
   },
   "H4066": {
-    "mdinim": "rencillosa",
+    "mdinim": "rencillas",
     "mdvn": "y",
-    "vmdinim": "y las contiendas",
-    "vmdvn": "y contienda"
+    "mdvnim": "rencillosa",
+    "vmdvn": "y contienda",
+    "vmdvnim": "y las contiendas"
   },
   "H4067": {
+    "mdin": "de grande altura",
     "mdvn": "de grande altura"
   },
   "H4068": {
@@ -22484,17 +22623,16 @@ export const all_stra = {
     "mdi": "de media"
   },
   "H4077": {
-    "_": "de media",
     "mdie": "de media"
   },
   "H4079": {
     "mdini": "las contiendas",
-    "mdinim": "rencillosa"
+    "mdinim": "rencillosa",
+    "vmdinim": "y las contiendas"
   },
   "H408": {
     "el": "no",
     "lel": "á nada",
-    "tks": "no",
     "vel": "ni"
   },
   "H4080": {
@@ -22529,8 +22667,7 @@ export const all_stra = {
     "hmdini": "madianita",
     "hmdinim": "sobre los madianitas",
     "hmdinit": "madianita",
-    "mdinim": "los midianitas",
-    "vhmdnim": "y los midianitas"
+    "mdinim": "los midianitas"
   },
   "H4085": {
     "bmdch": "majaban en morteros"
@@ -22553,6 +22690,9 @@ export const all_stra = {
   },
   "H4091": {
     "mdn": "y á medan"
+  },
+  "H4092": {
+    "vhmdnim": "y los midianitas"
   },
   "H4093": {
     "bmdac": "en tu pensamiento",
@@ -22580,7 +22720,6 @@ export const all_stra = {
     "belim": "con los ídolos",
     "belm": "entre los dioses",
     "cel": "como dios",
-    "eil": "del fuerte",
     "el": "dios",
     "eli": "dios",
     "elim": "dios",
@@ -22703,7 +22842,8 @@ export const all_stra = {
     "mhr": "mío mucho dote"
   },
   "H412": {
-    "el": "estos"
+    "el": "estos",
+    "elh": "estos"
   },
   "H4120": {
     "bmhrh": "presto",
@@ -22720,7 +22860,7 @@ export const all_stra = {
     "wll": "maher salal hash baz"
   },
   "H4123": {
-    "kxv": "mentiras"
+    "mhtlvt": "mentiras"
   },
   "H4124": {
     "bmveb": "moab",
@@ -22765,15 +22905,17 @@ export const all_stra = {
     "elimv": "á",
     "elinv": "nos",
     "eliv": "le",
-    "s": "le",
+    "elv": "contra",
     "vel": "y á",
     "velhm": "les",
     "veli": "y contra",
-    "velic": "á"
+    "velic": "á",
+    "veliv": "ti á"
   },
   "H4131": {
     "emvp": "resbalaré",
     "htmvpph": "en gran",
+    "imipv": "caerán",
     "imvp": "resbalará",
     "imvpv": "caerán",
     "mp": "que cae",
@@ -22946,6 +23088,7 @@ export const all_stra = {
   },
   "H4158": {
     "mifat": "mephaath",
+    "mvfat": "mephaath",
     "vmfat": "y mephaath"
   },
   "H4159": {
@@ -23002,7 +23145,6 @@ export const all_stra = {
     "imiqv": "soltáronse"
   },
   "H4168": {
-    "cmv": "cual tizón",
     "mvqdi": "con las llamas",
     "qd": "cual tizón"
   },
@@ -23176,7 +23318,6 @@ export const all_stra = {
     "mmit": "mata",
     "mmitim": "los matan",
     "mmtnv": "morir",
-    "mmvti": "y morirás",
     "mmvtt": "él los mataba",
     "mt": "es muerto",
     "mtc": "muerto",
@@ -23195,7 +23336,6 @@ export const all_stra = {
     "mvttni": "me mató",
     "nmitc": "te mataremos",
     "nmvt": "moriremos",
-    "s": "y cayó muerto",
     "tmit": "consume",
     "tmithv": "matéis",
     "tmitni": "es verdad",
@@ -23296,6 +23436,7 @@ export const all_stra = {
     "mxbktihm": "altares",
     "mxbktiv": "altares",
     "mxbktm": "sus altares",
+    "mxbktv": "sus altares",
     "mxbkv": "su altar",
     "mxbkvt": "altares",
     "mxbkvtic": "en tus altares",
@@ -23422,7 +23563,6 @@ export const all_stra = {
     "mxrq": "jarro",
     "mxrqi": "jarros",
     "mxrqvt": "tazones",
-    "s": "y tazones",
     "vhmxrqvt": "vasos tazas",
     "vmxrqtiv": "y sus tazones"
   },
@@ -23460,7 +23600,6 @@ export const all_stra = {
     "vlmkbrvt": "y para las junturas"
   },
   "H4227": {
-    "bmrkwt": "cazuela",
     "hmkbt": "de sartén",
     "mkbt": "sartén",
     "vlmkbt": "y para la fruta de sartén"
@@ -23592,6 +23731,7 @@ export const all_stra = {
     "hmkli": "mahalítica"
   },
   "H4251": {
+    "bmkliim": "enfermedades",
     "bmklvim": "enfermedades"
   },
   "H4252": {
@@ -23645,6 +23785,7 @@ export const all_stra = {
     "lelhc": "tus dioses",
     "lelhhvn": "dios",
     "lelhi": "á mi dios",
+    "lelhic": "tus dioses",
     "velhe": "y el dios",
     "vlelhe": "y al dios",
     "vlelhi": "y al dios"
@@ -23661,7 +23802,7 @@ export const all_stra = {
     "vmkmdi": "y mis cosas preciosas"
   },
   "H4262": {
-    "mkmdihm": "todas sus cosas preciosas"
+    "mkmvdihm": "todas sus cosas preciosas"
   },
   "H4264": {
     "bmknh": "en el campo",
@@ -23766,6 +23907,9 @@ export const all_stra = {
     "velh": "y estos",
     "vlelh": "y por estas",
     "vmelh": "estos"
+  },
+  "H4280": {
+    "lmkrevt": "necesaria"
   },
   "H4281": {
     "lmkrwt": "y cuando se hacían bocas en las rejas"
@@ -23929,7 +24073,6 @@ export const all_stra = {
     "melhinv": "dios",
     "melhiv": "de su dios",
     "mhelhim": "los dioses",
-    "s": "de dios",
     "vbelhi": "del dios",
     "vbelhihm": "en sus dioses",
     "vbelhiv": "y á su dios",
@@ -24005,6 +24148,7 @@ export const all_stra = {
   },
   "H4310": {
     "bmi": "quién",
+    "bwlmi": "por quién",
     "lmi": "para quién",
     "mi": "quién",
     "mmi": "de quién",
@@ -24081,7 +24225,6 @@ export const all_stra = {
     "mmi": "aguas",
     "mmim": "aguas",
     "mmimi": "las aguas",
-    "s": "las aguas",
     "vbmim": "y agua",
     "vcmim": "y somos como aguas",
     "vhmim": "y las aguas",
@@ -24090,8 +24233,7 @@ export const all_stra = {
     "vmimi": "y mi agua",
     "vmimic": "tu agua",
     "vmimihm": "su agua",
-    "vmmi": "de las aguas",
-    "wlg": "con aguas"
+    "vmmi": "de las aguas"
   },
   "H4326": {
     "lmimn": "por miamim",
@@ -24103,6 +24245,9 @@ export const all_stra = {
     "lminhm": "según su género",
     "lminhv": "según su especie",
     "lminv": "según su especie"
+  },
+  "H4328": {
+    "misdvt": "los cimientos"
   },
   "H433": {
     "elh": "á dios",
@@ -24386,6 +24531,9 @@ export const all_stra = {
     "mcricm": "de vuestros familiares",
     "mcrv": "de sus familiares"
   },
+  "H4379": {
+    "vmcrh": "y mina"
+  },
   "H438": {
     "elvn": "de allón",
     "melvn": "y allón saananim"
@@ -24434,7 +24582,6 @@ export const all_stra = {
     "cmlevt": "y será que cuando fueren cumplidos",
     "emle": "y yo cumpliré",
     "emleh": "seré llena",
-    "hmleim": "llenos",
     "hmmleim": "que henchían",
     "htmle": "cortarás",
     "imle": "henchiráse",
@@ -24585,6 +24732,7 @@ export const all_stra = {
   },
   "H4404": {
     "bmlbn": "en un horno de ladrillos",
+    "bmlcn": "é hízolos pasar por hornos de ladrillos",
     "mlbn": "fortifica el horno"
   },
   "H4405": {
@@ -24624,6 +24772,7 @@ export const all_stra = {
   },
   "H4409": {
     "lmlicv": "de melichâ",
+    "lmlvci": "de melichâ",
     "mlvc": "malluch"
   },
   "H441": {
@@ -24689,13 +24838,11 @@ export const all_stra = {
     "mlkh": "despoblada"
   },
   "H4421": {
-    "al": "á la batalla",
     "bmlkmh": "en la batalla",
     "cmlkmh": "batalla",
     "hmlkmh": "de guerra",
     "hmlkmvt": "las guerras",
     "lmlkmh": "á la guerra",
-    "lmlkmh f": "á la guerra",
     "mlkmh": "de guerra",
     "mlkmt": "de la batalla",
     "mlkmtc": "de guerra",
@@ -24790,6 +24937,8 @@ export const all_stra = {
     "mlci": "reina",
     "mlct": "reinaba",
     "mlcv": "rey",
+    "mlvch": "reina",
+    "mlvci": "reina",
     "mmlc": "reine",
     "nmlic": "elegiremos por rey",
     "tmlc": "has",
@@ -24841,7 +24990,6 @@ export const all_stra = {
     "mlcnv": "rey",
     "mlcv": "rey",
     "mmlc": "que el rey",
-    "s": "rey",
     "vbmlci": "contra los reyes",
     "vhmlc": "y el rey",
     "vhmlcim": "y los reyes",
@@ -25038,7 +25186,8 @@ export const all_stra = {
     "mmdih": "sus medidas"
   },
   "H4462": {
-    "mmvcn": "memucán"
+    "mmvcn": "memucán",
+    "mvmcn": "memucán"
   },
   "H4463": {
     "mmvti": "enfermedades"
@@ -25133,7 +25282,6 @@ export const all_stra = {
   },
   "H4480": {
     "hmn": "del",
-    "lcm": "qué pensáis",
     "lmn": "desde",
     "lmni": "y de",
     "mcm": "de",
@@ -25148,8 +25296,7 @@ export const all_stra = {
     "vlmni": "y de",
     "vmmnh": "mas de",
     "vmmnv": "y por",
-    "vmn": "de",
-    "vmnhin": "y en parte"
+    "vmn": "de"
   },
   "H4481": {
     "mn": "de",
@@ -25157,10 +25304,12 @@ export const all_stra = {
     "mnh": "de",
     "mnhin": "en parte",
     "mnhn": "en parte",
-    "mnhvn": "ellos",
+    "mnhvn": "en parte",
     "mni": "por",
     "vmn": "de",
     "vmnh": "y en parte",
+    "vmnhin": "en parte",
+    "vmnhvn": "en parte",
     "vmni": "de"
   },
   "H4482": {
@@ -25434,6 +25583,7 @@ export const all_stra = {
     "msgrt": "á la cual moldura",
     "msgrtih": "las cintas",
     "vmsgrt": "las cuales",
+    "vmsgrtih": "las cintas",
     "vmsgrtihm": "con sus cintas"
   },
   "H4527": {
@@ -25719,6 +25869,7 @@ export const all_stra = {
     "maxc": "de tu fortaleza",
     "maxcm": "es vuestra fortaleza",
     "maxcn": "es vuestra fortaleza",
+    "maxh": "su fortaleza",
     "maxv": "su fortaleza",
     "vlmavx": "y fortalecerlo",
     "vmavx": "y la fortaleza",
@@ -25750,6 +25901,7 @@ export const all_stra = {
     "vmavntv": "y su habitación"
   },
   "H4586": {
+    "mainim": "de meunim",
     "mavnim": "de meunim",
     "vhmavnim": "los ammonitas"
   },
@@ -25785,7 +25937,6 @@ export const all_stra = {
     "lmap": "y el pequeño",
     "map": "un poco",
     "mapim": "pocos",
-    "mapv": "han disminuído",
     "vlmap": "y á los pocos",
     "vmap": "y un poco"
   },
@@ -25845,17 +25996,14 @@ export const all_stra = {
   },
   "H4602": {
     "hmacti": "de maachâti",
-    "s": "de maachâti",
     "vhmacti": "i y machâti"
   },
   "H4603": {
-    "bmalv": "prevaricó",
-    "hmal": "prevaricáis",
+    "bmalm": "contra mí rebelión",
     "imal": "prevaricará",
     "lmal": "de prevaricar",
     "lmavl": "aumentaron",
     "mal": "prevaricó",
-    "malm": "prevaricaron",
     "malt": "por que has prevaricado",
     "maltm": "el pecado",
     "malv": "se rebelaron",
@@ -25867,10 +26015,11 @@ export const all_stra = {
   "H4604": {
     "bmal": "ó por prevaricación",
     "bmalm": "prevaricaron",
-    "bmalv": "en su prevaricación",
-    "hmal": "esta traición",
-    "mal": "por su rebelión",
-    "malv": "su rebelión",
+    "bmalv": "por su rebelión",
+    "hmal": "transgresión",
+    "mal": "cometió",
+    "malm": "su rebelión",
+    "malv": "él por su prevaricación",
     "vmalv": "y su prevaricación"
   },
   "H4605": {
@@ -25890,7 +26039,8 @@ export const all_stra = {
     "bmalh": "la cuesta",
     "lmalh": "está delante de la subida",
     "malh": "la grada",
-    "maliv": "y sus gradas"
+    "maliv": "y sus gradas",
+    "malv": "y sus gradas"
   },
   "H4609": {
     "bmalt": "por gradas",
@@ -25925,6 +26075,7 @@ export const all_stra = {
     "malliv": "de sus obras",
     "mmallihm": "obras",
     "vcmallinv": "obras",
+    "vmalilicm": "obras",
     "vmallic": "y tus obras",
     "vmallicm": "y vuestras obras",
     "vmallihm": "de ellos y sus obras",
@@ -25999,7 +26150,7 @@ export const all_stra = {
     "eliam": "eliam"
   },
   "H4630": {
-    "mmarcvt": "de los filisteos"
+    "mmarvt": "de los filisteos"
   },
   "H4631": {
     "bmarh": "en la cueva",
@@ -26027,7 +26178,8 @@ export const all_stra = {
     "march": "escuadrón",
     "marct": "al ejército",
     "marcvt": "el campo",
-    "mhmarch": "de la batalla"
+    "mhmarch": "de la batalla",
+    "mmarcvt": "salió de los escuadrones"
   },
   "H4635": {
     "hmarct": "órdenes"
@@ -26256,6 +26408,7 @@ export const all_stra = {
     "mzevni": "halláronme",
     "mzti": "he hallado",
     "nmze": "fué hallado",
+    "nmzeh": "lo tomaran",
     "nmzeic": "los que en ti se hallaron",
     "nmzet": "fuiste hallada",
     "nmzeti": "por mi fuí hallado",
@@ -26370,6 +26523,7 @@ export const all_stra = {
     "vmzhlvtic": "tus relinchos"
   },
   "H4685": {
+    "bmzdvt": "en fortalezas",
     "mzvd": "la red",
     "mzvdim": "y lazos"
   },
@@ -26405,7 +26559,7 @@ export const all_stra = {
     "mzvti": "mis mandamientos",
     "mzvtic": "tus mandamientos",
     "mzvtiv": "sus mandamientos",
-    "mzvtv": "su mandamiento",
+    "mzvtv": "sus mandamientos",
     "vbmzvh": "y mandamientos",
     "vbmzvtiv": "en sus mandamientos",
     "vcmzvh": "y los mandamientos",
@@ -26559,7 +26713,7 @@ export const all_stra = {
     "vbmzrim": "y en egipto",
     "vlmzrim": "y á los egipcios",
     "vmmzrim": "y de egipto",
-    "vmzrim": "egipto"
+    "vmzrim": "y los egipcios"
   },
   "H4715": {
     "mzrf": "el crisol"
@@ -26816,7 +26970,7 @@ export const all_stra = {
     "mrh": "de ánimo",
     "mri": "de ánimo colérico",
     "mrim": "de mara",
-    "mrt": "la amargura",
+    "mrt": "con amargura",
     "vmr": "y amargo",
     "vmrh": "amarga",
     "vmri": "y que están con amargura"
@@ -26839,6 +26993,7 @@ export const all_stra = {
   },
   "H4756": {
     "mre": "el señor",
+    "mrei": "señor",
     "mri": "señor",
     "vmre": "y el señor"
   },
@@ -26893,7 +27048,8 @@ export const all_stra = {
     "vmrewh": "y maresa"
   },
   "H4763": {
-    "mrewtiv": "por cabecera"
+    "mrewtiv": "por cabecera",
+    "mrewtv": "á su cabecera"
   },
   "H4764": {
     "mrb": "merab"
@@ -26926,6 +27082,7 @@ export const all_stra = {
   },
   "H4772": {
     "mrgltiv": "pies",
+    "mrgltv": "á sus pies",
     "mrglvtiv": "á sus pies",
     "vmrgltiv": "y sus pies"
   },
@@ -27039,6 +27196,7 @@ export const all_stra = {
   },
   "H4794": {
     "bmrvztm": "á su carrera",
+    "bmrzvtm": "á su carrera",
     "cmrzt": "como el correr",
     "mrvzt": "como el correr",
     "mrvztm": "la carrera"
@@ -27078,7 +27236,7 @@ export const all_stra = {
     "vbmrkqim": "aun en lejanos"
   },
   "H4802": {
-    "mkbt": "fuere aderezado en sartén",
+    "bmrkwt": "fuere aderezado en sartén",
     "mrkwt": "cocida en cazuela"
   },
   "H4803": {
@@ -27144,7 +27302,6 @@ export const all_stra = {
   "H4813": {
     "lmrim": "á maría",
     "mrim": "maría",
-    "s": "y mariam",
     "vmrim": "y á maría"
   },
   "H4814": {
@@ -27265,7 +27422,7 @@ export const all_stra = {
   },
   "H4838": {
     "mrqv": "limpiad",
-    "tmrvq": "son medicina",
+    "tmriq": "son medicina",
     "vmrq": "fregada"
   },
   "H4839": {
@@ -27282,7 +27439,6 @@ export const all_stra = {
   "H4842": {
     "bmrqkt": "por obra de perfumadores",
     "hmrqkt": "hacían los ungüentos",
-    "mrqkim": "por obra de perfumadores",
     "mrqkt": "superior"
   },
   "H4843": {
@@ -27453,6 +27609,7 @@ export const all_stra = {
   "H4878": {
     "lmwvbti": "á la rebelión",
     "mwbh": "la rebelde",
+    "mwbvtihm": "sus deslealtades",
     "mwvbticm": "rebeliones",
     "mwvbtinv": "rebeliones",
     "mwvbtm": "su rebelión",
@@ -27558,8 +27715,7 @@ export const all_stra = {
     "vmwi": "y seda"
   },
   "H4898": {
-    "mwixbel": "mesezabeel",
-    "s": "de mesezabeel"
+    "mwixbel": "mesezabeel"
   },
   "H4899": {
     "bmwik": "contra el ungido",
@@ -27788,6 +27944,7 @@ export const all_stra = {
     "vmwma": "y misma"
   },
   "H4928": {
+    "mwmatm": "les darán obediencia",
     "mwmatv": "su consejo"
   },
   "H4929": {
@@ -27832,7 +27989,7 @@ export const all_stra = {
     "vmwnhv": "el segundo"
   },
   "H4933": {
-    "lmwsh": "y hollados",
+    "lmwsh": "en presa",
     "mwsh": "hollados"
   },
   "H4934": {
@@ -27872,6 +28029,7 @@ export const all_stra = {
     "lmwfktihm": "según sus especies",
     "lmwfktiv": "por sus familias",
     "lmwfktm": "por sus familias",
+    "lmwfktv": "la familia",
     "lmwfkvt": "y la familia",
     "lmwfkvtihm": "por sus familias",
     "lmwfkvtm": "conforme á sus familias",
@@ -28024,6 +28182,7 @@ export const all_stra = {
     "mwtie": "del banquete"
   },
   "H4962": {
+    "bmti": "hombres",
     "mmtim": "de los hombres",
     "mti": "hombres",
     "mtic": "tus varones",
@@ -28130,6 +28289,9 @@ export const all_stra = {
     "mtnihv": "á mathanías",
     "vmtnih": "y mattanía",
     "vmtnihv": "y mathanías"
+  },
+  "H4984": {
+    "vhmtnwe": "y la altura"
   },
   "H4985": {
     "imtqv": "son dulces",
@@ -28329,8 +28491,6 @@ export const all_stra = {
     "vnbev": "y profetizarán"
   },
   "H5013": {
-    "nbie": "y profetizaron",
-    "nbiie": "y profetizaron",
     "vhtnbi": "y profetizaron"
   },
   "H5014": {
@@ -28360,6 +28520,7 @@ export const all_stra = {
     "nbvcdnezr": "nabucodonosor",
     "nbvcdnzr": "nabucodonosor",
     "nbvcdrezr": "nabucodonosor",
+    "nbvcdrezvr": "nabucodonosor",
     "vnbvcdrezr": "cuando nabucodonosor"
   },
   "H502": {
@@ -28424,7 +28585,9 @@ export const all_stra = {
   },
   "H5029": {
     "nbie": "profeta",
-    "nbiie": "los profetas"
+    "nbieh": "profeta",
+    "nbieie": "profetas",
+    "nbiie": "profetas"
   },
   "H503": {
     "melifvt": "que paran á millares"
@@ -28456,6 +28619,7 @@ export const all_stra = {
     "nbieih": "sus profetas",
     "nbieim": "profetas",
     "nbieiv": "sus profetas",
+    "nbiev": "los profetas",
     "vbnbei": "y en los profetas",
     "vbnbie": "y por profeta",
     "vbnbiei": "á mis profetas",
@@ -28601,6 +28765,7 @@ export const all_stra = {
     "igdv": "den aviso",
     "igid": "enseñará",
     "igidv": "contaron",
+    "lgid": "á dar",
     "lhgid": "á dar",
     "mgdt": "declarado",
     "mgid": "que anuncio",
@@ -28661,9 +28826,9 @@ export const all_stra = {
     "belf": "mil",
     "belfi": "mil",
     "belfiv": "sus miles",
+    "belfv": "sus miles",
     "celf": "como unos mil",
     "celfim": "mil",
-    "eiw": "mil",
     "elf": "mil",
     "elfi": "mil",
     "elfim": "mil",
@@ -28674,12 +28839,10 @@ export const all_stra = {
     "lelfim": "en millares",
     "melf": "que mil",
     "melfi": "mil",
-    "s": "mil",
     "velf": "mil",
     "velfim": "y dos mil",
     "vlelficm": "millares",
-    "vlelfim": "y de á mil",
-    "wrim": "mil"
+    "vlelfim": "y de á mil"
   },
   "H5050": {
     "igh": "resplandecerá",
@@ -28741,6 +28904,7 @@ export const all_stra = {
   "H506": {
     "elf": "á mil",
     "elfe": "á mil",
+    "elfim": "millares",
     "elfin": "millares"
   },
   "H5060": {
@@ -29115,8 +29279,12 @@ export const all_stra = {
     "nhi": "llanto",
     "vnhi": "y lamentación"
   },
+  "H5093": {
+    "nhih": "y se endechará"
+  },
   "H5094": {
     "nhirv": "en él luz",
+    "vnhire": "y la luz",
     "vnhirv": "luz",
     "vnhvre": "y la luz"
   },
@@ -29135,7 +29303,7 @@ export const all_stra = {
     "vnhll": "y naalal"
   },
   "H5097": {
-    "hnazvzim": "las matas"
+    "hnhllim": "las matas"
   },
   "H5098": {
     "nhm": "rugiente",
@@ -29198,7 +29366,8 @@ export const all_stra = {
     "viniev": "preocuparon"
   },
   "H5109": {
-    "nibi": "nebai"
+    "nibi": "nebai",
+    "nvbi": "nebai"
   },
   "H511": {
     "elqnh": "elcana",
@@ -29287,8 +29456,11 @@ export const all_stra = {
   },
   "H5121": {
     "bnivt": "á najoth",
+    "bnvit": "á najoth",
     "mnivt": "de najoth",
-    "nivt": "á najoth"
+    "mnvvt": "de najoth",
+    "nivt": "á najoth",
+    "nvit": "á najoth"
   },
   "H5122": {
     "nvli": "sea puesta por muladar",
@@ -29303,13 +29475,14 @@ export const all_stra = {
     "nvmh": "y el sueño"
   },
   "H5125": {
+    "inin": "perpetuaráse",
     "invn": "perpetuaráse"
   },
   "H5126": {
     "nvn": "de nun"
   },
   "H5127": {
-    "hns": "tuvieron arbitrio para huir",
+    "hns": "el que huyere",
     "invs": "huirá",
     "lns": "para que huyese",
     "lnvs": "huyó",
@@ -29328,6 +29501,7 @@ export const all_stra = {
   "H5128": {
     "cnva": "como se estremecen",
     "eniac": "lugar para ir",
+    "envac": "lugar para ir",
     "hniah": "ha movido",
     "hniamv": "hazlos vagar",
     "ina": "mueva",
@@ -29336,6 +29510,7 @@ export const all_stra = {
     "iniavn": "errantes",
     "inva": "como se zarandea",
     "invav": "y anden",
+    "invavn": "errantes",
     "lnva": "á ser grande",
     "na": "errante",
     "nav": "titubead",
@@ -29596,7 +29771,6 @@ export const all_stra = {
     "nkltv": "su heredad",
     "nklvt": "heredades",
     "vbnkltv": "contra su heredad",
-    "vinklv": "fué sacada la heredad",
     "vmnklt": "la heredad",
     "vnklh": "tiene parte ni heredad",
     "vnklt": "heredad",
@@ -29722,7 +29896,7 @@ export const all_stra = {
     "inkwv": "por buen agüero",
     "nkw": "adivinar",
     "nkwti": "y quédate experimentado",
-    "tavnnv": "seréis agoreros",
+    "tnkwv": "seréis agoreros",
     "vinkwv": "y agüeros",
     "vmnkw": "ni sortílego",
     "vnkw": "y fué agorero"
@@ -29779,7 +29953,6 @@ export const all_stra = {
     "hnkt": "haz venir",
     "iktv": "serán",
     "nkt": "haces descender",
-    "nktim": "van",
     "nktv": "descendieron",
     "tkt": "aprovecha",
     "vnkt": "quiebre",
@@ -29837,10 +30010,11 @@ export const all_stra = {
     "npvih": "extendido",
     "npvivt": "cuellierguidas",
     "npvt": "que ya declinaba",
+    "npvvt": "cuellierguidas",
     "nvph": "que extiende",
-    "tp": "apartes",
+    "tp": "te apartes",
     "tph": "tuerzas",
-    "vep": "por tanto yo extenderé",
+    "vep": "y llegué",
     "vhmpim": "mas á los que se apartan",
     "vhpi": "é inclina",
     "vhpv": "están entre vosotros é inclinad",
@@ -29906,7 +30080,7 @@ export const all_stra = {
     "ipav": "plantarán",
     "lnpa": "para que plantase",
     "lpat": "de plantar",
-    "npa": "él plantó",
+    "npa": "y plantó",
     "npah": "plantó",
     "npaim": "plantarán",
     "npat": "plantaste",
@@ -29987,7 +30161,6 @@ export const all_stra = {
   "H5200": {
     "hnpfti": "de netophath",
     "hnpvfti": "nethophathita",
-    "s": "de netophath",
     "vnpvfti": "y los nethophatitas"
   },
   "H5201": {
@@ -30057,8 +30230,7 @@ export const all_stra = {
     "vninvh": "nínive"
   },
   "H5211": {
-    "hnis": "el que huyere",
-    "hns": "el que huyere"
+    "hnis": "el que huyere"
   },
   "H5212": {
     "nisn": "de nisán"
@@ -30278,6 +30450,7 @@ export const all_stra = {
     "vitncr": "conociólos"
   },
   "H5235": {
+    "ncrv": "en que fué extrañado",
     "vncr": "y extrañamiento"
   },
   "H5236": {
@@ -30299,7 +30472,7 @@ export const all_stra = {
     "vncrim": "y los extraños"
   },
   "H5238": {
-    "ncth": "en sus tesoros",
+    "ncth": "de su tesoro",
     "nctv": "de su tesoro"
   },
   "H5239": {
@@ -30454,9 +30627,6 @@ export const all_stra = {
     "vnscim": "y libaciones",
     "vnscv": "con su libación"
   },
-  "H5264": {
-    "nss": "como abanderado en derrota"
-  },
   "H5265": {
     "bnsa": "se hubiere de mudar",
     "bnsam": "desde que partieron",
@@ -30494,7 +30664,6 @@ export const all_stra = {
     "hnah": "rodeando á nea"
   },
   "H527": {
-    "emvn": "el pueblo de amón",
     "hemvn": "y toda"
   },
   "H5270": {
@@ -30592,7 +30761,7 @@ export const all_stra = {
   },
   "H5285": {
     "hnazvz": "de la zarza",
-    "hnhllim": "los zarzales"
+    "hnazvzim": "los zarzales"
   },
   "H5286": {
     "narv": "bramarán"
@@ -30651,13 +30820,14 @@ export const all_stra = {
   },
   "H5291": {
     "bnarvt": "con las mozas",
-    "hnar": "la moza",
+    "hnar": "de la moza",
     "hnarh": "de la moza",
     "hnarvt": "y la moza",
     "lnar": "la moza",
     "lnarh": "en la moza",
     "lnartih": "á sus criadas",
     "lnarvtic": "para tus niñas",
+    "nar": "moza",
     "narh": "moza",
     "narti": "mis mozas",
     "nartih": "mozas",
@@ -30666,6 +30836,7 @@ export const all_stra = {
     "narvtiv": "mozas",
     "vhnar": "y la moza",
     "vhnarh": "y la moza",
+    "vlnar": "y á la moza",
     "vlnarh": "y á la moza",
     "vnarh": "de cada una de las mozas",
     "vnarti": "doncellas",
@@ -30735,8 +30906,7 @@ export const all_stra = {
     "vhemvnh": "y la fidelidad"
   },
   "H5300": {
-    "nfiwsim": "de nephisesim",
-    "nfvsim": "de nephusim"
+    "nfvwsim": "de nephisesim"
   },
   "H5301": {
     "hfkti": "ó afligí",
@@ -30765,7 +30935,6 @@ export const all_stra = {
     "nfc": "una esmeralda"
   },
   "H5307": {
-    "al": "se pasará",
     "bnfl": "cae",
     "bnflim": "caerán",
     "cnfl": "cayeren",
@@ -30842,8 +31011,7 @@ export const all_stra = {
     "vnfltm": "y caeréis",
     "vnflv": "y caerán",
     "vtfl": "y echóse",
-    "wifvl": "cayere",
-    "wm": "caerá"
+    "wifvl": "cayere"
   },
   "H5308": {
     "ifl": "y lo demás necesario",
@@ -30851,7 +31019,8 @@ export const all_stra = {
     "nflin": "se postraron",
     "nflv": "cayeron",
     "tflvn": "os postréis",
-    "vnflh": "cual habían caído"
+    "vnflh": "cual habían caído",
+    "vnflv": "cual habían caído"
   },
   "H5309": {
     "hnfl": "que el abortivo",
@@ -30884,6 +31053,7 @@ export const all_stra = {
     "nfqh": "salieron",
     "nfqin": "salid",
     "nfqt": "y publicóse",
+    "nfqv": "salieron",
     "vnfq": "y salía"
   },
   "H5313": {
@@ -30972,8 +31142,7 @@ export const all_stra = {
     "vbnftli": "y á nephtalí",
     "vlnftli": "nephtalí",
     "vmnftli": "y de nephtalí",
-    "vnftli": "y nephtalí",
-    "vxblvn": "y nephtalí"
+    "vnftli": "y nephtalí"
   },
   "H5322": {
     "hnz": "y el halcón",
@@ -31031,6 +31200,7 @@ export const all_stra = {
   "H5329": {
     "lmnzk": "al músico",
     "lnzk": "para dar priesa",
+    "nzkt": "perpetua",
     "vmnzkim": "que los gobernasen"
   },
   "H533": {
@@ -31065,7 +31235,7 @@ export const all_stra = {
     "nzik": "de nesía"
   },
   "H5336": {
-    "vnzvri": "los asolamientos"
+    "vnziri": "los asolamientos"
   },
   "H5337": {
     "enzlh": "sácame",
@@ -31187,6 +31357,7 @@ export const all_stra = {
     "vnzr": "el que mira",
     "vnzrt": "astuta",
     "vnzrvt": "y ocultas",
+    "vnzvri": "los asolamientos",
     "vtzrc": "ámala y te conservará"
   },
   "H5342": {
@@ -31209,7 +31380,6 @@ export const all_stra = {
     "nqbv": "nombrados",
     "tqbnv": "lo maldices",
     "tqvb": "y horadarás",
-    "veqvb": "maldije",
     "viqb": "é hízole",
     "vnqb": "si blasfemare",
     "vnqbh": "y se le pasará"
@@ -31237,7 +31407,7 @@ export const all_stra = {
   },
   "H535": {
     "emlh": "inconstante",
-    "emll": "fueron talados",
+    "emll": "fué destruído",
     "emllh": "enfermó",
     "emllv": "enfermó",
     "vemll": "y extenuaráse"
@@ -31306,9 +31476,6 @@ export const all_stra = {
   "H5359": {
     "nqm": "venganza",
     "vnqm": "él vengará"
-  },
-  "H536": {
-    "emll": "fué destruída"
   },
   "H5360": {
     "bnqmh": "con venganza",
@@ -31447,7 +31614,6 @@ export const all_stra = {
     "vbwet": "alzaban",
     "vewe": "y alcé",
     "vewenv": "y debo sufrirla",
-    "vhmtnwe": "y la altura",
     "vhnvwe": "la llevare",
     "vhnwe": "y el que llevare",
     "vhnweim": "y sublimes",
@@ -31506,6 +31672,7 @@ export const all_stra = {
     "hwievc": "te han engañado",
     "iwe": "os engañe",
     "iwec": "engañe",
+    "iwi": "condenados",
     "iwie": "os engañe",
     "iwiev": "os engañen",
     "nwev": "se han engañado",
@@ -31572,7 +31739,8 @@ export const all_stra = {
     "hnwh": "que se contrajo"
   },
   "H5386": {
-    "nwic": "acreedores"
+    "nwic": "acreedores",
+    "nwici": "acreedores"
   },
   "H5387": {
     "hnweim": "príncipes",
@@ -31683,7 +31851,7 @@ export const all_stra = {
   "H5397": {
     "hnwmh": "lo que respira",
     "mnwmt": "del viento",
-    "nwmh": "hálito",
+    "nwmh": "con vida",
     "nwmt": "soplo",
     "nwmti": "mi alma",
     "vnwmh": "me ha quedado aliento",
@@ -31807,6 +31975,7 @@ export const all_stra = {
   },
   "H5411": {
     "hntinim": "los nethineos",
+    "hntvnim": "los nethineos",
     "ntinim": "nethineos",
     "vhntinim": "y los nethineos"
   },
@@ -31846,7 +32015,6 @@ export const all_stra = {
     "hnvtn": "el torna",
     "httn": "diste",
     "httnm": "los entregarás",
-    "ihvh": "dará",
     "intn": "se hará",
     "itn": "dará",
     "itnc": "te entregará",
@@ -32088,6 +32256,7 @@ export const all_stra = {
     "sbe": "el bebedor",
     "sbeim": "los sabeos",
     "sbveim": "los borrachos",
+    "svbeim": "los sabeos",
     "vnsbeh": "embriaguémonos"
   },
   "H5434": {
@@ -32179,6 +32348,7 @@ export const all_stra = {
     "sbibtinv": "contornos",
     "sbibtiv": "sus giros",
     "sbibtm": "estaban alrededor",
+    "sbibtv": "en derredor",
     "sbibvt": "alrededor",
     "sbibvti": "alrededor",
     "sbibvtic": "alrededor",
@@ -32262,6 +32432,7 @@ export const all_stra = {
   "H5456": {
     "isgd": "humíllase",
     "isgdv": "de ello humíllanse",
+    "isgvd": "humíllase",
     "lv": "humíllase"
   },
   "H5457": {
@@ -32403,6 +32574,7 @@ export const all_stra = {
   },
   "H5481": {
     "svmfnih": "de la zampoña",
+    "vsifnih": "de la zampoña",
     "vsvfnih": "de la zampoña",
     "vsvmfnih": "de la zampoña"
   },
@@ -32413,6 +32585,7 @@ export const all_stra = {
     "bsvs": "con caballos",
     "bsvsim": "en caballos",
     "bsvsiv": "con sus caballos",
+    "bsvsv": "con sus caballos",
     "csvs": "como caballo",
     "csvsi": "tus caballos",
     "csvsic": "tus caballos",
@@ -32459,7 +32632,7 @@ export const all_stra = {
     "svf": "bermejo"
   },
   "H549": {
-    "emnh": "de amana"
+    "emnh": "abana"
   },
   "H5490": {
     "svf": "el fin",
@@ -32549,6 +32722,7 @@ export const all_stra = {
     "vsrv": "tus siervos",
     "vsvr": "y apártate",
     "vsvrh": "y desterrada",
+    "vsvri": "y los que de mí se apartan",
     "vtsr": "y quitóse"
   },
   "H5496": {
@@ -32564,6 +32738,7 @@ export const all_stra = {
     "vtsitni": "habiéndome tú incitado"
   },
   "H5497": {
+    "svth": "su manto",
     "svtv": "su manto"
   },
   "H5498": {
@@ -32573,7 +32748,7 @@ export const all_stra = {
     "vskbnv": "arrastraremos"
   },
   "H5499": {
-    "hskbvt": "esos trapos",
+    "hskbvt": "trapos",
     "skbvt": "trapos"
   },
   "H55": {
@@ -32627,6 +32802,7 @@ export const all_stra = {
     "lsgim": "en escorias",
     "lsig": "escorias",
     "lsigim": "escorias",
+    "lsvg": "escorias",
     "sgim": "escorias",
     "sigic": "hasta lo más puro tus escorias",
     "sigim": "las escorias"
@@ -32765,6 +32941,7 @@ export const all_stra = {
     "vtemz": "y esforzó"
   },
   "H5530": {
+    "cwhscl": "el necio",
     "cwscl": "el necio",
     "scl": "necio",
     "sclim": "ignorantes",
@@ -32839,6 +33016,7 @@ export const all_stra = {
   },
   "H5545": {
     "eslk": "perdonaré",
+    "eslvk": "te he de perdonar",
     "hslk": "el es quien perdona",
     "islk": "perdone",
     "lc": "te he de perdonar",
@@ -33160,7 +33338,7 @@ export const all_stra = {
     "hsarh": "desde un torbellino",
     "msar": "de la tempestad",
     "sar": "la tempestad",
-    "sarh": "tempestuoso",
+    "sarh": "desde la oscuridad",
     "sart": "la tempestad",
     "sarvt": "tempestuoso",
     "vsar": "que",
@@ -33399,6 +33577,7 @@ export const all_stra = {
     "vhsfrvim": "y los de sepharvaim"
   },
   "H5617": {
+    "sfrim": "de sepharvaim",
     "sfrvim": "de sepharvaim",
     "vsfrvim": "y de sepharvaim"
   },
@@ -33506,7 +33685,8 @@ export const all_stra = {
     "vsrrt": "y rencillosa"
   },
   "H5638": {
-    "hstiv": "el invierno"
+    "hstiv": "el invierno",
+    "hstv": "el invierno"
   },
   "H5639": {
     "stvr": "sethur"
@@ -33692,6 +33872,7 @@ export const all_stra = {
     "abdic": "tus siervos",
     "abdvhi": "siervos",
     "labdc": "á tus siervos",
+    "labdic": "á tus siervos",
     "labdvhi": "sus siervos"
   },
   "H565": {
@@ -33735,7 +33916,6 @@ export const all_stra = {
     "mabdi": "de los siervos",
     "mabdic": "siervos",
     "mabdiv": "de sus siervos",
-    "s": "á tu siervo",
     "vabd": "y el siervo",
     "vabdc": "siervo",
     "vabdi": "y los siervos",
@@ -33745,7 +33925,7 @@ export const all_stra = {
     "vabdim": "y siervos",
     "vabdiv": "siervos",
     "vabdm": "siervos",
-    "vabdv": "su siervo",
+    "vabdv": "criados",
     "vbabdic": "sobre tus siervos",
     "vlabdc": "á ti y á tu siervo",
     "vlabdic": "y tus siervos",
@@ -33893,7 +34073,7 @@ export const all_stra = {
     "abrcm": "que pasamos",
     "abrh": "pasó",
     "abri": "pasa",
-    "abrim": "pasó",
+    "abrim": "pasáis",
     "abrm": "hubieron pasado",
     "abrnv": "pasamos",
     "abrt": "fuiste",
@@ -33987,8 +34167,7 @@ export const all_stra = {
     "vnabr": "y pasad",
     "vnabrh": "pasemos",
     "vtabir": "y perdonas",
-    "vtabr": "y pasó",
-    "xam": "que pasa"
+    "vtabr": "y pasó"
   },
   "H5675": {
     "abr": "de la parte allá",
@@ -34174,7 +34353,6 @@ export const all_stra = {
   "H5703": {
     "ad": "para",
     "adi": "siempre",
-    "ebiad": "eterno",
     "lad": "para siempre",
     "vad": "y para siempre"
   },
@@ -34184,7 +34362,6 @@ export const all_stra = {
     "adic": "á",
     "adih": "hasta",
     "adiv": "á",
-    "elihm": "hasta",
     "vad": "hasta",
     "vadic": "hasta",
     "vadicm": "os"
@@ -34281,6 +34458,7 @@ export const all_stra = {
     "ade": "de iddo",
     "adv": "de iddo",
     "adve": "de iddo",
+    "ladie": "de iddo",
     "ladve": "de iddo",
     "vadv": "y de iddo"
   },
@@ -34301,11 +34479,11 @@ export const all_stra = {
     "adiim": "á ser adornada",
     "adim": "de sus atavíos",
     "adiv": "sus atavíos",
+    "badi": "á ser adornada",
     "cadi": "como de vestidura de honra"
   },
   "H5717": {
     "adiel": "de adiel",
-    "s": "de adiel",
     "vadiel": "adiel"
   },
   "H5718": {
@@ -34479,6 +34657,7 @@ export const all_stra = {
     "en": "dónde",
     "enh": "cuándo",
     "mein": "á ninguna parte",
+    "men": "á ninguna parte",
     "venh": "acá"
   },
   "H5750": {
@@ -34503,9 +34682,6 @@ export const all_stra = {
     "vavd": "antes todavía",
     "vavdc": "aún",
     "vavdi": "y aun"
-  },
-  "H5751": {
-    "avdinv": "aun"
   },
   "H5752": {
     "add": "obed",
@@ -34558,6 +34734,7 @@ export const all_stra = {
     "vhavim": "y avim"
   },
   "H5762": {
+    "aivt": "fué avith",
     "avit": "fué avith"
   },
   "H5763": {
@@ -34572,6 +34749,7 @@ export const all_stra = {
     "mavl": "del perverso"
   },
   "H5766": {
+    "alth": "hay injusticia",
     "avl": "iniquidad",
     "avlh": "iniquidad",
     "avlt": "iniquidades",
@@ -34647,6 +34825,7 @@ export const all_stra = {
     "avnv": "pecado",
     "avnvt": "iniquidades",
     "avnvticm": "vuestras iniquidades",
+    "avnvtihm": "su maldad",
     "avvn": "la maldad",
     "avvnvtiv": "sus propias iniquidades",
     "bavn": "por el pecado",
@@ -34694,6 +34873,7 @@ export const all_stra = {
     "bavffi": "cuando haré resplandecer",
     "eavfh": "volaría",
     "htaif": "y volarán",
+    "htavf": "y volarán",
     "iafv": "y volarán",
     "iavf": "volará",
     "iavff": "volaban",
@@ -34703,6 +34883,7 @@ export const all_stra = {
     "tavf": "vuele",
     "tavfinh": "son estos que vuelan",
     "vafv": "mas volarán",
+    "vaif": "y volarán",
     "viaf": "y voló",
     "vnafh": "y volamos"
   },
@@ -34732,7 +34913,8 @@ export const all_stra = {
     "vavfrt": "y plomo"
   },
   "H5778": {
-    "aifi": "de ephi"
+    "aifi": "de ephi",
+    "avfi": "de ephi"
   },
   "H5779": {
     "azv": "dad"
@@ -34835,7 +35017,7 @@ export const all_stra = {
     "avwv": "juntaos"
   },
   "H579": {
-    "enh": "cuándo",
+    "enh": "lo puso",
     "ienh": "acontecerá",
     "mtenh": "busca",
     "tenh": "sobrevendrá"
@@ -34901,9 +35083,6 @@ export const all_stra = {
   "H5799": {
     "laxexl": "á azazel"
   },
-  "H58": {
-    "ebl": "la vega"
-  },
   "H5800": {
     "axb": "dejó",
     "axbc": "es tu dejar",
@@ -34929,6 +35108,7 @@ export const all_stra = {
     "axvbh": "desamparada",
     "baxbcm": "dejando",
     "baxbm": "por cuanto habían dejado",
+    "caxvbt": "fueron dejadas",
     "eaxb": "dejaré",
     "eaxbc": "no te dejaré",
     "eaxbh": "dejaré",
@@ -34990,9 +35170,6 @@ export const all_stra = {
     "laxh": "una por gaza",
     "maxh": "gaza",
     "vaxh": "gaza"
-  },
-  "H5805": {
-    "caxvbt": "como los frutos que quedan"
   },
   "H5806": {
     "axvbh": "azuba"
@@ -35056,26 +35233,11 @@ export const all_stra = {
     "vaxixe": "y aziza"
   },
   "H582": {
-    "benvw": "hay en el hombre",
-    "benwi": "hombres",
-    "eiw": "á aquellos",
+    "benvw": "de algún hombre",
     "envw": "el hombre",
-    "enwi": "los hombres",
-    "enwihn": "á sus maridos",
-    "enwim": "hombres",
-    "enwinv": "maridos",
-    "enwiv": "á aquellos",
-    "henwim": "los",
+    "henvw": "si será el hombre",
     "lenvw": "al hombre",
-    "lenwi": "á los",
-    "lenwim": "maridos",
-    "menvw": "hombre",
-    "venwi": "la gente",
-    "venwihm": "hombres",
-    "venwim": "varones",
-    "venwiv": "y los suyos",
-    "vhenwim": "los hombres",
-    "vmenwi": "de hombres"
+    "menvw": "hombre"
   },
   "H5820": {
     "axmvt": "azmaveth",
@@ -35113,6 +35275,7 @@ export const all_stra = {
     "iaxrh": "la ayudará",
     "iaxrni": "me ayuden",
     "iaxrv": "ayudó",
+    "laxir": "tú nos des ayuda",
     "laxr": "en ayuda",
     "laxrc": "te ayuda",
     "laxrni": "para ayudarme",
@@ -35131,7 +35294,6 @@ export const all_stra = {
     "viaxrv": "y fueron ayudados",
     "viaxrvhv": "y ellos le apoyaron",
     "viaxrvni": "les ayudan",
-    "vle": "les ayudaron",
     "vnaxrti": "y fuí ayudado"
   },
   "H5827": {
@@ -35140,6 +35302,7 @@ export const all_stra = {
   "H5828": {
     "axr": "ayuda",
     "axrc": "socorro",
+    "axrh": "de él para su ayuda",
     "axri": "mi socorro",
     "axrm": "él es su ayuda",
     "axrnv": "ayuda",
@@ -35345,6 +35508,7 @@ export const all_stra = {
   },
   "H5867": {
     "ailm": "de elam",
+    "avlm": "de elam",
     "bailm": "en elam",
     "vailm": "belam",
     "vmailm": "y de persia"
@@ -35368,7 +35532,8 @@ export const all_stra = {
     "ainm": "su ojo",
     "ainmv": "sus ojos",
     "aint": "fuentes",
-    "ainv": "de su ojo",
+    "aintm": "surcos",
+    "ainv": "sus ojos",
     "ainvt": "las fuentes",
     "ani": "los ojos",
     "bain": "ojo",
@@ -35380,7 +35545,7 @@ export const all_stra = {
     "bainihm": "en sus ojos",
     "baininv": "ojos",
     "bainiv": "en sus ojos",
-    "bainv": "pareciere",
+    "bainv": "le",
     "cain": "á manera",
     "caini": "ojos",
     "hain": "á la fuente",
@@ -35406,7 +35571,7 @@ export const all_stra = {
     "vainim": "ojos",
     "vaininv": "ojos",
     "vainiv": "sus ojos",
-    "vainv": "color",
+    "vainv": "ojos",
     "vbaini": "pareció",
     "vlaini": "delante"
   },
@@ -35435,7 +35600,7 @@ export const all_stra = {
   "H5873": {
     "ain": "y á en gannim",
     "gnim": "y engannim",
-    "vain": "y en gannim"
+    "vain": "y engannim"
   },
   "H5874": {
     "ain": "de endor",
@@ -35483,7 +35648,7 @@ export const all_stra = {
     "vbain": "y en en rimmón"
   },
   "H5885": {
-    "ain": "de en semes",
+    "ain": "á ensemes",
     "wmw": "á ensemes"
   },
   "H5887": {
@@ -35528,7 +35693,6 @@ export const all_stra = {
     "arihm": "sus ciudades",
     "arim": "ciudades",
     "ariv": "ciudades",
-    "bai": "la ciudad",
     "bair": "en la ciudad",
     "bairi": "en mi ciudad",
     "bairv": "en su ciudad",
@@ -35544,7 +35708,6 @@ export const all_stra = {
     "hair": "de la ciudad",
     "hairh": "á la ciudad",
     "harim": "las ciudades",
-    "kzr": "del patio",
     "lair": "de la ciudad",
     "lairv": "á su ciudad",
     "lari": "por las ciudades",
@@ -35559,7 +35722,6 @@ export const all_stra = {
     "mariv": "y las ciudades",
     "mhair": "á la ciudad",
     "mharim": "de la ciudad",
-    "s": "en las ciudades",
     "vair": "las ciudades",
     "vari": "y las ciudades",
     "varic": "y tus ciudades",
@@ -35585,6 +35747,7 @@ export const all_stra = {
   },
   "H5895": {
     "air": "un pollino",
+    "airh": "su pollino",
     "airim": "asnos",
     "airm": "asnos",
     "airv": "su pollino",
@@ -35706,7 +35869,6 @@ export const all_stra = {
   },
   "H5921": {
     "al": "sobre",
-    "alc": "de",
     "alcm": "de",
     "alhm": "sobre",
     "alhn": "está sobre",
@@ -35722,8 +35884,6 @@ export const all_stra = {
     "alinv": "sobre",
     "aliv": "sobre",
     "cal": "como para",
-    "el": "en",
-    "erz": "sobre",
     "hal": "sobre",
     "mal": "sobre",
     "mali": "de",
@@ -35740,18 +35900,20 @@ export const all_stra = {
     "valihm": "por",
     "valimv": "sobre",
     "valiv": "y sobre",
-    "veliv": "contra",
+    "valv": "á",
     "vhalih": "con lo que estaba sobre",
     "vmal": "de sobre",
     "vmaliv": "estará contento del",
-    "wal": "traían",
-    "wevl": "contra"
+    "wal": "traían"
   },
   "H5922": {
     "al": "sobre",
+    "alc": "de",
+    "alh": "sobre",
     "alhi": "en",
     "ali": "á",
-    "alic": "sobre",
+    "alic": "de",
+    "alih": "sobre",
     "alihvn": "á",
     "aline": "al",
     "alvhi": "en",
@@ -35929,6 +36091,7 @@ export const all_stra = {
     "alvt": "holocaustos",
     "alvticm": "vuestros holocaustos",
     "alvtiv": "y sus gradas",
+    "alvtv": "y sus gradas",
     "avlh": "holocausto",
     "avlt": "holocausto",
     "avlticm": "vuestros holocaustos",
@@ -35966,11 +36129,13 @@ export const all_stra = {
     "alh": "ocasión"
   },
   "H5933": {
+    "alih": "el duque alia",
     "alvh": "el duque alva"
   },
   "H5934": {
     "alvmic": "de tu mocedad",
-    "alvmiv": "de su mocedad"
+    "alvmiv": "de su mocedad",
+    "alvmv": "de sus mocedades"
   },
   "H5935": {
     "alin": "alian",
@@ -36013,10 +36178,10 @@ export const all_stra = {
     "alit": "de arriba"
   },
   "H5943": {
-    "_": "el altísimo",
     "aleh": "el altísimo",
     "alie": "el altísimo",
-    "vlaleh": "al altísimo"
+    "vlaleh": "al altísimo",
+    "vlalie": "al altísimo"
   },
   "H5944": {
     "alit": "la sala",
@@ -36093,6 +36258,8 @@ export const all_stra = {
   "H5954": {
     "al": "entró",
     "alin": "y vinieron",
+    "allin": "y vinieron",
+    "allt": "entró",
     "alt": "entró",
     "hal": "fué traído",
     "halni": "fué",
@@ -36227,7 +36394,6 @@ export const all_stra = {
     "mamim": "pueblos",
     "mamiv": "de sus pueblos",
     "mham": "el pueblo",
-    "s": "el pueblo",
     "vam": "y á cada pueblo",
     "vamc": "pueblo",
     "vamh": "y á su pueblo",
@@ -36273,7 +36439,7 @@ export const all_stra = {
     "mamnv": "nosotros",
     "mamv": "le",
     "vam": "con",
-    "vamc": "conmigo",
+    "vamc": "contigo",
     "vamcm": "y con",
     "vamdi": "con",
     "vamhm": "y con",
@@ -36296,7 +36462,6 @@ export const all_stra = {
     "amdh": "ha estado",
     "amdi": "párate",
     "amdim": "estaban",
-    "amdm": "sus puestos",
     "amdt": "permanece",
     "amdti": "del cual estoy",
     "amdtm": "estuvisteis",
@@ -36368,7 +36533,6 @@ export const all_stra = {
     "wamdim": "los que estáis"
   },
   "H5976": {
-    "amd": "se paró junto",
     "vhamdt": "y los deslomaste"
   },
   "H5977": {
@@ -36418,6 +36582,7 @@ export const all_stra = {
     "vamdihm": "y sus columnas",
     "vamdim": "de columnas",
     "vamdiv": "y sus columnas",
+    "vamdv": "columnas",
     "vamvd": "la columna",
     "vamvdi": "y columnas",
     "vamvdih": "sus columnas",
@@ -36429,7 +36594,6 @@ export const all_stra = {
   },
   "H5983": {
     "amvn": "de ammón",
-    "s": "de ammón",
     "vamvn": "y ammón"
   },
   "H5984": {
@@ -36437,11 +36601,11 @@ export const all_stra = {
     "amnim": "de los ammonitas",
     "amnivt": "ammonitas",
     "amvni": "ammonita",
+    "amvnivt": "ammonitas",
     "hamni": "ammonita",
     "hamvni": "ammonita",
     "hamvnim": "los ammonitas",
     "mhamvnim": "otros de los ammonitas",
-    "s": "de ammón",
     "vhamnim": "y los ammonitas"
   },
   "H5986": {
@@ -36469,7 +36633,7 @@ export const all_stra = {
     "amixbd": "estaba amisabad"
   },
   "H5991": {
-    "amihvd": "de amiud"
+    "amikvr": "de amiud"
   },
   "H5992": {
     "amindb": "de aminadab",
@@ -36887,17 +37051,17 @@ export const all_stra = {
     "anh": "habló",
     "anin": "ellos respondieron",
     "anv": "respondieron",
-    "vanni": "y óyeme"
+    "vanni": "y óyeme",
+    "vannv": "y óyeme"
   },
   "H6034": {
     "anh": "de ana",
     "vanh": "ana"
   },
   "H6035": {
-    "anii": "los pobres",
-    "aniim": "de los pobres",
     "aniv": "manso",
-    "anvi": "los mansos",
+    "anv": "manso",
+    "anvi": "los pobres",
     "anvim": "á los humildes",
     "lanvi": "por los mansos",
     "vanvim": "pero los mansos"
@@ -36931,11 +37095,9 @@ export const all_stra = {
   "H6041": {
     "ani": "al pobre",
     "anih": "pobrecita",
-    "anii": "los afligidos",
+    "anii": "los pobres",
     "aniic": "de tus afligidos",
     "aniim": "de los pobres",
-    "anvim": "de los pobres",
-    "erz": "los pobres",
     "hani": "al pobre",
     "haniim": "los afligidos",
     "lani": "al pobre",
@@ -36945,10 +37107,11 @@ export const all_stra = {
     "vaniic": "y tus afligidos",
     "vaniim": "y á los pobres",
     "vaniv": "y de sus pobres",
-    "vlanvim": "escarnecerá á los escarnecedores y á los humildes"
+    "vlaniim": "escarnecerá á los escarnecedores y á los humildes"
   },
   "H6042": {
-    "vani": "unni"
+    "vani": "unni",
+    "vanv": "y unni"
   },
   "H6043": {
     "anih": "anaías",
@@ -36976,7 +37139,7 @@ export const all_stra = {
     "mannim": "á agoreros",
     "mavnn": "ni agorero",
     "mavnnim": "de meonenim",
-    "tnkwv": "adivinaréis",
+    "tavnnv": "adivinaréis",
     "vannim": "y de agoreros",
     "vavnn": "y miró en tiempos",
     "vmavnnim": "en ti agoreros"
@@ -37028,6 +37191,7 @@ export const all_stra = {
   },
   "H606": {
     "cenw": "de hombre",
+    "envwe": "de los hombres",
     "enw": "de hombre",
     "enwe": "de los hombres",
     "enwim": "de los hombres",
@@ -37078,11 +37242,10 @@ export const all_stra = {
     "hantvti": "anathothita"
   },
   "H607": {
-    "_": "tú",
     "ent": "tú",
     "enth": "tú",
-    "hve": "tú",
-    "vent": "y tú"
+    "vent": "y tú",
+    "venth": "tú"
   },
   "H6071": {
     "asis": "mosto",
@@ -37100,11 +37263,11 @@ export const all_stra = {
   },
   "H6076": {
     "afl": "las torres",
-    "bpkrim": "de hemorroides",
-    "hafl": "y llegado que hubo á un lugar secreto",
-    "pkri": "hemorroides",
-    "pkricm": "de vuestras hemorroides",
-    "pkrim": "de hemorroides"
+    "afli": "hemorroides",
+    "aflicm": "de vuestras hemorroides",
+    "aflim": "de hemorroides",
+    "baflim": "de hemorroides",
+    "hafl": "y llegado que hubo á un lugar secreto"
   },
   "H6077": {
     "bafl": "en ophel",
@@ -37236,7 +37399,7 @@ export const all_stra = {
     "mazbc": "tu trabajo"
   },
   "H6091": {
-    "azbi": "mi ídolo",
+    "azbi": "los ídolos",
     "azbih": "sus ídolos",
     "azbihm": "sus ídolos",
     "azbim": "ídolos",
@@ -37257,8 +37420,7 @@ export const all_stra = {
     "vbazbt": "mas por el dolor"
   },
   "H6095": {
-    "azh": "cierra",
-    "hiavzh": "es el consejo"
+    "azh": "cierra"
   },
   "H6096": {
     "hazh": "á raíz del espinazo"
@@ -37307,7 +37469,6 @@ export const all_stra = {
     "gbr": "en esion geber",
     "lazivn": "á esion geber",
     "mazivn": "de esion geber",
-    "s": "y de esiongeber",
     "vmazin": "y de esiongeber"
   },
   "H6101": {
@@ -37399,7 +37560,8 @@ export const all_stra = {
     "mazmvn": "desde asmón"
   },
   "H6112": {
-    "hazni": "el eznita"
+    "hazni": "el eznita",
+    "haznv": "el eznita"
   },
   "H6113": {
     "azr": "cerrado",
@@ -37502,7 +37664,8 @@ export const all_stra = {
     "viaqr": "y desjarretó"
   },
   "H6132": {
-    "etaqrh": "él fueron arrancados"
+    "etaqrh": "él fueron arrancados",
+    "etaqrv": "él fueron arrancados"
   },
   "H6133": {
     "laqr": "á la raza"
@@ -37567,7 +37730,8 @@ export const all_stra = {
     "aric": "ellos contra ti tus enemigos"
   },
   "H6146": {
-    "larc": "para los que mal"
+    "larc": "para los que mal",
+    "laric": "para los que mal"
   },
   "H6147": {
     "ar": "er",
@@ -37589,7 +37753,6 @@ export const all_stra = {
     "vitarbv": "antes se mezclaron"
   },
   "H6149": {
-    "arb": "sabroso",
     "arbh": "me fué sabroso",
     "arbt": "tomaste placer",
     "iarb": "serme ha suave",
@@ -37697,6 +37860,7 @@ export const all_stra = {
     "carbi": "como arabe",
     "harbi": "el arabe",
     "harbieim": "los arabes",
+    "harbiim": "los arabes",
     "harbim": "los arabes",
     "vharbim": "y los arabes"
   },
@@ -37883,7 +38047,7 @@ export const all_stra = {
   "H6191": {
     "arvm": "es en gran",
     "iarimv": "astuta",
-    "iarm": "se hará avisado"
+    "iarm": "es en gran"
   },
   "H6192": {
     "narmv": "se amontonaron"
@@ -38034,6 +38198,7 @@ export const all_stra = {
     "awvt": "hacer",
     "awvtcm": "habéis vosotros hecho",
     "awvth": "habiendo hecho",
+    "awvvt": "guisadas",
     "bawi": "hacen",
     "bawiv": "en su hacedor",
     "bawth": "haciendo",
@@ -38080,7 +38245,6 @@ export const all_stra = {
     "nawim": "se hacen",
     "nawth": "fué hecho",
     "nawv": "y haré",
-    "s": "haz",
     "taw": "le hagas",
     "tawh": "harás",
     "tawi": "harás",
@@ -38108,7 +38272,6 @@ export const all_stra = {
     "veaw": "hice",
     "veawc": "y haré",
     "veawh": "hice",
-    "viap": "tornóse",
     "viaw": "hizo",
     "viawh": "hizo",
     "viawhv": "hacía",
@@ -38143,7 +38306,6 @@ export const all_stra = {
     "vawv": "esaú"
   },
   "H6217": {
-    "awvq": "ephraim es vejado",
     "awvqim": "de las violencias",
     "hawqim": "las violencias",
     "vawvqim": "opresiones"
@@ -38361,7 +38523,6 @@ export const all_stra = {
     "vlesfim": "y á la casa de la consulta"
   },
   "H6240": {
-    "awh": "hecho",
     "awr": "doce",
     "awrh": "doce",
     "hawr": "con doce"
@@ -38453,7 +38614,7 @@ export const all_stra = {
     "mat": "á tiempo",
     "vat": "tiempo",
     "vbat": "y en aquel tiempo",
-    "vbatim": "y en aquellos tiempos",
+    "vbatim": "en aquellos tiempos",
     "vcat": "y al tiempo",
     "vhat": "y el tiempo",
     "vhatim": "y los tiempos que",
@@ -38468,6 +38629,7 @@ export const all_stra = {
   "H6258": {
     "ath": "ahora",
     "math": "desde ahora",
+    "vat": "y ahora",
     "vath": "ahora"
   },
   "H6260": {
@@ -38489,6 +38651,7 @@ export const all_stra = {
   "H6264": {
     "atdt": "y lo que les está preparado",
     "atid": "apercibido",
+    "atidim": "estuviesen apercibidos",
     "hatidim": "los que se aprestan"
   },
   "H6265": {
@@ -38762,7 +38925,6 @@ export const all_stra = {
   },
   "H631": {
     "besrm": "ellos cuando serán atados",
-    "esiri": "estaban los presos",
     "esr": "unce",
     "esrh": "hubiere ligado",
     "esri": "atando",
@@ -38770,8 +38932,10 @@ export const all_stra = {
     "esrv": "fueron atados",
     "esrvt": "estaban atadas",
     "esvr": "también atados",
+    "esvri": "estaban los presos",
     "esvrim": "ceñida",
     "hesrv": "quedad presos",
+    "hesvrim": "y le ataron",
     "iesr": "comenzará",
     "iesrni": "me ataren",
     "iesrvni": "me ataren",
@@ -38927,6 +39091,7 @@ export const all_stra = {
     "nfvzim": "derramado",
     "nfvztm": "estáis esparcidos",
     "nfzim": "esparcido",
+    "nfzit": "y derramándose",
     "nfzt": "y derramándose",
     "nfztm": "estáis esparcidos",
     "nfzv": "y esparcióse",
@@ -38982,6 +39147,7 @@ export const all_stra = {
     "fvrte": "y á phoratha"
   },
   "H6335": {
+    "tfvwi": "os henchisteis",
     "tfvwv": "os henchisteis"
   },
   "H6336": {
@@ -39104,9 +39270,6 @@ export const all_stra = {
   "H6357": {
     "fpdh": "un topacio"
   },
-  "H6358": {
-    "fpvrim": "exentos"
-  },
   "H636": {
     "ea": "un madero",
     "eae": "de madera",
@@ -39117,6 +39280,7 @@ export const all_stra = {
     "vcfpiw": "y como martillo"
   },
   "H6361": {
+    "fpiwihvn": "y sus calzas",
     "fpwihvn": "y sus calzas"
   },
   "H6362": {
@@ -39197,6 +39361,9 @@ export const all_stra = {
   "H6378": {
     "fc": "luego la alcuza"
   },
+  "H6379": {
+    "mfcim": "que salían"
+  },
   "H638": {
     "vef": "y también"
   },
@@ -39239,6 +39406,7 @@ export const all_stra = {
   },
   "H6383": {
     "flei": "que es oculto",
+    "fleih": "más maravillosa",
     "flieh": "más maravillosa"
   },
   "H6385": {
@@ -39327,6 +39495,10 @@ export const all_stra = {
     "flkin": "adoran",
     "iflkvn": "le sirvieron",
     "vflki": "y ministros"
+  },
+  "H64": {
+    "crmim": "de las viñas",
+    "ebl": "de las viñas"
   },
   "H640": {
     "vefdt": "del ephod",
@@ -39480,6 +39652,7 @@ export const all_stra = {
   },
   "H6428": {
     "htflwi": "revuélcate",
+    "htflwti": "revuélcate",
     "itflwv": "y se revolcarán",
     "vhtflwi": "y revuélcate",
     "vhtflwv": "y revolcaos"
@@ -39493,6 +39666,7 @@ export const all_stra = {
   "H6430": {
     "bflwtim": "á los filisteos",
     "cflwtim": "como los filisteos",
+    "flwtiim": "los filisteos",
     "flwtim": "de los filisteos",
     "hflwti": "al filisteo",
     "hflwtim": "los filisteos",
@@ -39567,6 +39741,7 @@ export const all_stra = {
   "H6439": {
     "fniel": "peniel",
     "fnvel": "de penuel",
+    "vfniel": "y peniel",
     "vfnvel": "y penuel"
   },
   "H644": {
@@ -39652,6 +39827,7 @@ export const all_stra = {
   },
   "H6443": {
     "fninim": "de piedras preciosas",
+    "mfniim": "que las piedras preciosas",
     "mfninim": "que las piedras preciosas"
   },
   "H6444": {
@@ -39985,7 +40161,6 @@ export const all_stra = {
   },
   "H6487": {
     "bfqdvn": "lo encomendado",
-    "hfqd": "encomendó",
     "hfqdvn": "encomendó",
     "lfqdvn": "en depósito"
   },
@@ -40011,6 +40186,7 @@ export const all_stra = {
   "H6491": {
     "efqk": "abriré",
     "fqk": "abre",
+    "fqkh": "abre",
     "fqkt": "abres",
     "fqkvt": "están abiertos",
     "fqvk": "que abre",
@@ -40116,8 +40292,7 @@ export const all_stra = {
     "frdim": "de acémilas",
     "frdv": "sus mulos",
     "hfrd": "un mulo",
-    "vbfrdim": "y en mulos",
-    "vbgmlim": "y mulos",
+    "vbfrdim": "y mulos",
     "vfrd": "y á las acémilas",
     "vfrdim": "y acémilas",
     "vhfrd": "un mulo"
@@ -40177,7 +40352,8 @@ export const all_stra = {
     "bfrvr": "en el pote"
   },
   "H6518": {
-    "frxiv": "de sus villas"
+    "frxiv": "de sus villas",
+    "frxv": "de sus villas"
   },
   "H6519": {
     "frxvt": "sin muros"
@@ -40192,6 +40368,7 @@ export const all_stra = {
     "frxvn": "las aldeas"
   },
   "H6521": {
+    "hfrvxim": "aldeanos",
     "hfrxi": "sin muro",
     "hfrxim": "aldeanos"
   },
@@ -40333,7 +40510,8 @@ export const all_stra = {
     "hfrsi": "el persa"
   },
   "H6543": {
-    "frseh": "persa"
+    "frseh": "persa",
+    "frsie": "persa"
   },
   "H6544": {
     "bfra": "porque ha vengado",
@@ -40391,6 +40569,7 @@ export const all_stra = {
     "frzv": "rompedor",
     "hfrz": "rompedor",
     "hfrzim": "ya los portillos",
+    "hmfrvzim": "estaban derribados",
     "hmtfrzim": "que se huyen",
     "ifrz": "haga en ellos estrago",
     "ifrzni": "sobre quebranto",
@@ -40446,7 +40625,7 @@ export const all_stra = {
     "hfrq": "las encrucijadas"
   },
   "H6564": {
-    "vmrq": "hay caldo"
+    "vfrq": "hay caldo"
   },
   "H6565": {
     "efr": "invalidaré",
@@ -40780,7 +40959,6 @@ export const all_stra = {
     "ftkvt": "abiertos",
     "ftvk": "abierto",
     "ftvkh": "abierta",
-    "ftvki": "grabadas",
     "ftvkvt": "abiertos",
     "fvtk": "abres",
     "iftk": "abrió",
@@ -40938,7 +41116,6 @@ export const all_stra = {
     "bzennv": "ovejas",
     "czen": "como ovejas",
     "hzen": "las ovejas",
-    "lrb": "y ovejas",
     "lzen": "para las ovejas",
     "lzenc": "y de tu oveja",
     "lzeni": "á mis ovejas",
@@ -40946,7 +41123,6 @@ export const all_stra = {
     "mzen": "del rebaño",
     "mzenc": "de tus ovejas",
     "mzenv": "tomar de sus ovejas",
-    "s": "ovejas",
     "vbzen": "y ovejas",
     "vbzenc": "de tus ovejas",
     "vczen": "y como oveja",
@@ -41031,14 +41207,15 @@ export const all_stra = {
   },
   "H6636": {
     "czbeim": "oh ehpraim",
+    "vzbiim": "y de seboim",
     "vzbim": "y zeboim",
     "vzbvim": "y de seboim",
+    "zbiim": "de zeboim",
     "zbvim": "de zeboim"
   },
   "H6638": {
     "lzbvt": "y hagan hinchar",
-    "vzbth": "se hinchará",
-    "zbh": "que se te hinche"
+    "vzbth": "se hinchará"
   },
   "H664": {
     "vefqh": "y apheca"
@@ -41256,10 +41433,12 @@ export const all_stra = {
     "efrkih": "sus pollos",
     "efrkim": "los pollos",
     "hefrkim": "los pollos",
-    "vefrkiv": "pollos"
+    "vefrkiv": "pollos",
+    "vefrkv": "pollos"
   },
   "H6670": {
     "izhlv": "relinchaba",
+    "vtzhli": "y relinchasteis",
     "vtzhlv": "y relinchasteis",
     "vzhli": "y da voces",
     "vzhlv": "y dad voces de júbilo",
@@ -41287,7 +41466,8 @@ export const all_stra = {
     "zveim": "viles"
   },
   "H6675": {
-    "vmzetv": "su inmundicia"
+    "vmzetv": "su inmundicia",
+    "zvetm": "su estiércol"
   },
   "H6676": {
     "zverc": "tu cuello",
@@ -41311,7 +41491,6 @@ export const all_stra = {
   },
   "H6678": {
     "mzbh": "de soba",
-    "s": "de soba",
     "vmzvbh": "y de soba",
     "zvbe": "de soba",
     "zvbh": "de soba"
@@ -41433,6 +41612,7 @@ export const all_stra = {
     "zvfim": "del panal"
   },
   "H6689": {
+    "zif": "de suph",
     "zvf": "de suph",
     "zvfi": "sophai"
   },
@@ -41504,6 +41684,7 @@ export const all_stra = {
   },
   "H6699": {
     "zvrt": "su forma",
+    "zvrti": "su forma",
     "zvrtiv": "su forma",
     "zvrtv": "su forma"
   },
@@ -41688,7 +41869,7 @@ export const all_stra = {
     "zrih": "sus dolores"
   },
   "H6736": {
-    "vzvrm": "su bien parecer",
+    "vzirm": "su bien parecer",
     "zirim": "de imágenes"
   },
   "H6737": {
@@ -41943,7 +42124,7 @@ export const all_stra = {
     "zmtc": "tus guedejas"
   },
   "H6778": {
-    "viin": "de harina masas de higos y pasas",
+    "vzmvqim": "de harina masas de higos y pasas",
     "zmqim": "hilos de pasas",
     "zmvqim": "hilos de pasas"
   },
@@ -42178,7 +42359,9 @@ export const all_stra = {
     "zairi": "los más pequeños",
     "zairih": "de sus pequeños",
     "zairihm": "sus criados",
-    "zairim": "los más mozos"
+    "zairim": "los más mozos",
+    "zavrih": "de sus pequeños",
+    "zavrihm": "sus criados"
   },
   "H6812": {
     "czartv": "y el menor"
@@ -42191,6 +42374,7 @@ export const all_stra = {
     "zan": "de zoán"
   },
   "H6815": {
+    "bzanim": "de zaananim",
     "bzannim": "de zaananim"
   },
   "H6816": {
@@ -42241,7 +42425,6 @@ export const all_stra = {
     "zfd": "pegada"
   },
   "H6822": {
-    "bzfitnv": "aguardamos",
     "hmzfh": "centinela",
     "hzfh": "el atalaya",
     "hzfim": "y las centinelas",
@@ -42257,6 +42440,7 @@ export const all_stra = {
     "zfim": "vosotros atalayas",
     "zfinv": "aguardamos",
     "zfiv": "sus atalayas",
+    "zfv": "sus atalayas",
     "zfvt": "mirando",
     "zvfh": "acecha",
     "zvfih": "considera"
@@ -42341,6 +42525,9 @@ export const all_stra = {
     "vzfkt": "la botija",
     "zfkt": "y la botija"
   },
+  "H6836": {
+    "bzfitnv": "esperanza"
+  },
   "H6837": {
     "zfivn": "ziphión"
   },
@@ -42365,6 +42552,7 @@ export const all_stra = {
   },
   "H6845": {
     "hzfinv": "ocultarle",
+    "izfinv": "escóndense",
     "izfn": "guardará",
     "izfnni": "él me esconderá",
     "izfnv": "guardan",
@@ -42378,6 +42566,7 @@ export const all_stra = {
     "tzfnni": "escondieses",
     "vtzfnhv": "túvole escondido",
     "vtzfnv": "y los había escondido",
+    "vzfn": "el provee",
     "vzfvn": "está guardado",
     "zfn": "el que pretende contenerla",
     "zfnih": "el que pretende contenerla",
@@ -42607,7 +42796,6 @@ export const all_stra = {
     "lzrvf": "para ser purgados",
     "lzvrf": "al fundidor",
     "mzrf": "purificador",
-    "s": "de los plateros",
     "vezrf": "sobre ti y limpiaré",
     "vezrfnv": "probaré",
     "vizrfv": "y purificados",
@@ -42733,7 +42921,6 @@ export const all_stra = {
     "vlqbl": "y en presencia"
   },
   "H6904": {
-    "qbl": "en presencia",
     "qblv": "contra ella arietes"
   },
   "H6906": {
@@ -42890,6 +43077,7 @@ export const all_stra = {
   "H6918": {
     "bqdvw": "en el santo",
     "bqdwiv": "que en sus santos",
+    "bqdwv": "que en sus santos",
     "hqdvw": "santo",
     "hqdvwim": "del santuario",
     "lqdvw": "delicias santo",
@@ -42971,7 +43159,8 @@ export const all_stra = {
     "qdmc": "delante",
     "qdmh": "ellos y delante",
     "qdmi": "delante",
-    "qdmih": "habían sido antes",
+    "qdmic": "delante",
+    "qdmih": "ellos y delante",
     "qdmvhi": "delante",
     "vqdmvhi": "delante"
   },
@@ -43110,7 +43299,6 @@ export const all_stra = {
     "qdwvhv": "aparejaron",
     "tqdiw": "santificarás",
     "tqdiwv": "santificad",
-    "vhqdwim": "y las ofrendas",
     "vhqdwm": "y señálalos",
     "vhqdwnv": "y santificado",
     "vhqdwti": "y santificado",
@@ -43165,7 +43353,8 @@ export const all_stra = {
     "vhqdwim": "y las cosas consagradas",
     "vlqdw": "y el santuario",
     "vlqdwim": "y para las santificaciones",
-    "vqdwi": "había dedicado"
+    "vqdwi": "había dedicado",
+    "vqdwv": "había dedicado"
   },
   "H6945": {
     "bqdwim": "entre los sodomitas",
@@ -43210,7 +43399,7 @@ export const all_stra = {
     "nqhlv": "se juntaron",
     "vbhqhil": "empero cuando hubiereis de juntar la congregación",
     "viqhl": "juntó",
-    "viqhlv": "la congregación",
+    "viqhlv": "y juntáronse",
     "vtqhl": "y juntóse"
   },
   "H6951": {
@@ -43253,7 +43442,7 @@ export const all_stra = {
     "lqv": "línea",
     "qv": "línea",
     "qvm": "su hilo",
-    "vqv": "tenía un cordel"
+    "vqv": "y la plomada"
   },
   "H6959": {
     "qvba": "un almete",
@@ -43288,8 +43477,9 @@ export const all_stra = {
     "wqvinhv": "que esperábamos"
   },
   "H6961": {
-    "qv": "adelante el cordel",
-    "vqv": "un cordón"
+    "qvh": "adelante el cordel",
+    "vqv": "un cordón",
+    "vqvh": "un cordón"
   },
   "H6962": {
     "vnqpv": "y se avergonzarán"
@@ -43455,6 +43645,7 @@ export const all_stra = {
     "vqem": "se levantará",
     "vqm": "levantábase",
     "vqmh": "firme",
+    "vqmt": "levantarás",
     "vqmti": "y levantaréme",
     "vqmv": "firme",
     "vqvm": "y levántate",
@@ -43485,6 +43676,7 @@ export const all_stra = {
     "vhqim": "constituir",
     "vhqimv": "y pusieron",
     "vmhqim": "y pone",
+    "vqemin": "había levantado",
     "vqimin": "había levantado",
     "vqm": "y levantóse"
   },
@@ -43506,10 +43698,10 @@ export const all_stra = {
     "qvmmivt": "el rostro alto"
   },
   "H6969": {
-    "qinh": "endecharán",
     "tqvnnh": "endecharán",
     "viqnn": "y endechó",
-    "viqvnn": "sus lamentaciones"
+    "viqvnn": "sus lamentaciones",
+    "vqvnnvh": "endecharán"
   },
   "H697": {
     "berbh": "para langosta",
@@ -43553,7 +43745,6 @@ export const all_stra = {
   "H6976": {
     "hqvz": "de cos",
     "lhqvz": "por cos",
-    "s": "de cos",
     "vqvz": "y cos"
   },
   "H6977": {
@@ -43686,6 +43877,7 @@ export const all_stra = {
     "mqprt": "sahumada",
     "mqprvt": "habían ofrecido sahumerios",
     "qpr": "el varón quemen",
+    "qprtm": "ofrecisteis",
     "qprv": "ofrecieron perfumes",
     "tqpir": "y quemarás",
     "tqpirv": "quemaréis perfume",
@@ -43694,6 +43886,7 @@ export const all_stra = {
     "vhqpirm": "hará arder",
     "vhqpirv": "hará arder",
     "vhqprt": "y quemarás",
+    "viqpirv": "y han sacrificado",
     "viqpr": "y encendió",
     "viqprv": "perfumes",
     "vmqpir": "y encienda",
@@ -43718,7 +43911,7 @@ export const all_stra = {
     "vqprin": "y desatar dificultades"
   },
   "H7002": {
-    "qprtm": "el sahumerio"
+    "hqpr": "el sahumerio"
   },
   "H7003": {
     "qprvn": "en chîtron"
@@ -43772,8 +43965,7 @@ export const all_stra = {
     "hqinh": "con esta endecha",
     "lqinh": "y de endecha",
     "qinh": "endechas",
-    "qnim": "endechas",
-    "vqvnnvh": "esta es la endecha"
+    "qnim": "endechas"
   },
   "H7016": {
     "vqinh": "y cina"
@@ -43877,6 +44069,8 @@ export const all_stra = {
     "verbah": "cuatro"
   },
   "H7030": {
+    "qitrs": "del arpa",
+    "qitrvs": "del arpa",
     "qtrvs": "del arpa"
   },
   "H7031": {
@@ -43903,7 +44097,7 @@ export const all_stra = {
     "vnqlh": "será abatida"
   },
   "H7035": {
-    "viqhlv": "y juntáronse"
+    "viqlhv": "y juntáronse"
   },
   "H7036": {
     "bqlvn": "en afrenta",
@@ -44097,7 +44291,6 @@ export const all_stra = {
   },
   "H7068": {
     "bqneti": "celo",
-    "bqnev": "en mi celo",
     "hqneh": "del celo",
     "hqnet": "de los celos",
     "qneh": "de celo",
@@ -44191,6 +44384,7 @@ export const all_stra = {
   "H7077": {
     "iqnnv": "anidan",
     "mqnnt": "hiciste tu nido",
+    "mqnnti": "hiciste tu nido",
     "qnnh": "anidará",
     "qnnv": "hacían nido",
     "tqnn": "que hace nido"
@@ -44207,6 +44401,7 @@ export const all_stra = {
   },
   "H7080": {
     "cqsm": "como adivinación",
+    "cqsvm": "como adivinación",
     "hqsmim": "los adivinos",
     "hqvsm": "adivino",
     "iqsmv": "adivinan",
@@ -44216,6 +44411,7 @@ export const all_stra = {
     "qsmi": "yo te ruego que me adivines",
     "qsmicm": "adivinos",
     "qsmim": "y hechiceros",
+    "qsvmi": "yo te ruego que me adivines",
     "tqsmnh": "adivinación",
     "vhqsmim": "y adivinan",
     "vhqvsmim": "y los adivinos",
@@ -44223,8 +44419,7 @@ export const all_stra = {
     "vlqsmim": "y adivinos",
     "vqsm": "el adivino",
     "vqsmicm": "adivinos",
-    "vqsmim": "á los agoreros",
-    "wve": "como adivinación"
+    "vqsmim": "á los agoreros"
   },
   "H7081": {
     "hqsm": "la adivinación",
@@ -44259,6 +44454,7 @@ export const all_stra = {
     "qartiv": "sus platos"
   },
   "H7087": {
+    "iqfevn": "ni oscura",
     "qfev": "se cuajaron",
     "tqfieni": "me cuajaste",
     "vqfevn": "ni oscura"
@@ -44334,11 +44530,10 @@ export const all_stra = {
     "qzvtm": "del un cabo"
   },
   "H7099": {
-    "hqzvt": "cabos",
     "qzvi": "los términos"
   },
   "H71": {
-    "emnh": "abana"
+    "ebnh": "abana"
   },
   "H710": {
     "vbergvn": "en púrpura"
@@ -44432,17 +44627,17 @@ export const all_stra = {
   "H7114": {
     "bqzr": "al segador",
     "bqzrc": "y cuando segareis",
-    "evn": "segará",
     "hqvzrim": "los segadores",
     "hqzr": "el segador",
     "hqzrim": "á los segadores",
     "hqzrt": "has acortado",
     "hqzvr": "ha llegado á acortarse",
+    "iqzirv": "siegan",
     "iqzr": "segará",
     "iqzrhv": "la siegan",
     "iqzrv": "segarán",
     "iqzrvn": "segaren",
-    "iqzvr": "siega",
+    "iqzvr": "segará",
     "iqzvrv": "siegan",
     "lqvzrim": "á los segadores",
     "qvzr": "segador",
@@ -44479,9 +44674,8 @@ export const all_stra = {
     "vlqzt": "mas al fin"
   },
   "H7119": {
-    "iqr": "de prudente",
     "qrim": "fría",
-    "rvk": "de prudente"
+    "vqr": "de prudente"
   },
   "H712": {
     "bergx": "y poned en una caja",
@@ -44533,6 +44727,7 @@ export const all_stra = {
     "qrev": "llamad",
     "qrevt": "no llamándonos",
     "qrve": "soy convidado",
+    "qrvei": "eran los nombrados",
     "qvre": "llama",
     "tqre": "clama",
     "tqrei": "me llamarás",
@@ -44770,13 +44965,12 @@ export const all_stra = {
     "mqrb": "de cerca",
     "mqrvb": "presto",
     "qrbh": "cercana",
-    "qrbim": "vecinos",
+    "qrbim": "cerca",
     "qrbv": "á él cercano",
     "qrvb": "cercano",
     "qrvbh": "cerca",
     "qrvbi": "mis parientes",
     "qrvbim": "se acercan",
-    "vgm": "eran vecinos",
     "vhqrb": "y estaban junto",
     "vhqrbvt": "y las de cerca",
     "vhqrvb": "y el que estuviere cerca",
@@ -44830,8 +45024,7 @@ export const all_stra = {
   },
   "H7148": {
     "qrei": "de los del consejo",
-    "qriei": "fueron los del consejo",
-    "qrvei": "eran los nombrados"
+    "qriei": "eran los nombrados"
   },
   "H7149": {
     "bqrih": "en las ciudades",
@@ -44875,7 +45068,8 @@ export const all_stra = {
   "H7156": {
     "qritim": "chîriathaim",
     "vqritim": "y chîriataim",
-    "vqritimh": "y chîriathaim"
+    "vqritimh": "y chîriathaim",
+    "vqritmh": "y chîriathaim"
   },
   "H7157": {
     "arim": "de chîriath jearim",
@@ -45217,6 +45411,7 @@ export const all_stra = {
     "hreitim": "han visto",
     "hreitm": "vieron",
     "hreitni": "has hecho ver",
+    "hreitnv": "has hecho ver",
     "hrem": "les mostrase",
     "hreni": "me ha mostrado",
     "hrenv": "muéstranos",
@@ -45297,7 +45492,7 @@ export const all_stra = {
     "vereh": "y miré",
     "verehv": "y mostraréle",
     "verenv": "y le veré",
-    "vhreh": "y se ha de mostrar",
+    "vhreh": "tengo yo visto",
     "vhreiti": "y mostraré",
     "vhreni": "y me hará ver",
     "vire": "y vió",
@@ -45309,6 +45504,7 @@ export const all_stra = {
     "virevm": "y les mostraron",
     "vitrev": "y viéronse",
     "vlrevt": "ve",
+    "vnre": "tengamos qué contar y juntamente nos",
     "vnreh": "y veamos",
     "vnreth": "se dejará ver",
     "vrec": "y en viéndote",
@@ -45325,7 +45521,7 @@ export const all_stra = {
     "vreitni": "para más lejos y me has mirado",
     "vrev": "y ved",
     "vtre": "y viendo",
-    "vtreh": "y descúbrase",
+    "vtreh": "y vió",
     "vtrehv": "vió",
     "vtreinh": "han visto",
     "vtreni": "me ha visto",
@@ -45364,7 +45560,6 @@ export const all_stra = {
   },
   "H7210": {
     "crei": "como estiércol",
-    "f": "parecer",
     "rei": "parecer"
   },
   "H7211": {
@@ -45480,7 +45675,6 @@ export const all_stra = {
     "hrewvn": "primero",
     "hrewvnh": "la primera",
     "hrewvnim": "primeros",
-    "lmbrewvnh": "haberlo hecho así vosotros la primera vez",
     "lrewnh": "primero",
     "lrewnim": "de lo que precedió",
     "mrewvn": "desde el principio",
@@ -45511,7 +45705,6 @@ export const all_stra = {
   "H7227": {
     "brb": "salvar con multitud",
     "brbim": "de muchos",
-    "f": "creciendo",
     "hbrb": "pleitearía conmigo con grandeza",
     "hrb": "y la mucha",
     "hrbim": "muchas",
@@ -45551,12 +45744,10 @@ export const all_stra = {
     "brb": "en la multitud",
     "crb": "conforme á la multitud",
     "hrb": "las muchas",
-    "irb": "y de la multiplicación",
-    "lrb": "en multitud",
+    "lrb": "en abundancia",
     "lrvb": "muy mucho",
     "mrb": "por la multitud",
     "rb": "la multitud",
-    "vbbqr": "en abundancia",
     "vbrb": "la muchedumbre",
     "vcrb": "y de la grandeza",
     "vmrb": "y de la grandeza",
@@ -45573,6 +45764,7 @@ export const all_stra = {
   },
   "H7233": {
     "brbbtiv": "sus diez",
+    "brbbtv": "sus diez",
     "brbbvt": "ó de diez",
     "lrbbh": "mil",
     "mrbbh": "entre diez mil",
@@ -45620,6 +45812,7 @@ export const all_stra = {
     "trbh": "aumenten",
     "trbni": "me ha acrecentado",
     "trbv": "daréis mucho",
+    "verb": "y aumenté",
     "verbh": "y aumenté",
     "verbhv": "y multipliquélo",
     "vhrbc": "y te multiplicará",
@@ -45673,6 +45866,7 @@ export const all_stra = {
   },
   "H7240": {
     "rbbn": "millones",
+    "rbvn": "millones",
     "vrbv": "millones"
   },
   "H7241": {
@@ -45705,6 +45899,8 @@ export const all_stra = {
   },
   "H7244": {
     "rbiaeh": "la cuarta",
+    "rbiaie": "la cuarta",
+    "rbiaih": "cuarto",
     "rbiaite": "la cuarta"
   },
   "H7245": {
@@ -45862,7 +46058,6 @@ export const all_stra = {
     "hmrglim": "y los mancebos espías",
     "lrgl": "á reconocer",
     "mrglim": "espías",
-    "trglti": "con todo eso guiaba en pies",
     "virglv": "y reconocieron",
     "vlrgl": "y reconocer",
     "vlrglh": "é inspeccionar",
@@ -45870,7 +46065,7 @@ export const all_stra = {
   },
   "H7271": {
     "brglh": "pies",
-    "brglih": "con sus pies",
+    "brglih": "pies",
     "rglie": "de los pies",
     "rglin": "los pies",
     "rglvhi": "pies"
@@ -45952,8 +46147,10 @@ export const all_stra = {
     "vtrgnv": "y murmurasteis"
   },
   "H728": {
+    "ernih": "de arauna",
     "ervnh": "arauna",
-    "hervnh": "arauna"
+    "hervnh": "arauna",
+    "hevrnh": "arauna"
   },
   "H7280": {
     "ergah": "le haré correr",
@@ -46007,9 +46204,6 @@ export const all_stra = {
     "vhrdidim": "y los tocados"
   },
   "H729": {
-    "berxim": "de cedro",
-    "erxim": "de cedro",
-    "herxim": "de cedro",
     "verxim": "y en madera de cedro"
   },
   "H7290": {
@@ -46037,7 +46231,6 @@ export const all_stra = {
     "nrdf": "pasó",
     "nrdfh": "y proseguiremos",
     "nrdfnv": "persecución padecemos sobre",
-    "pvb": "seguir",
     "rdf": "siguió",
     "rdfc": "y que ellos te persigan",
     "rdfi": "los que me persiguen",
@@ -46050,6 +46243,7 @@ export const all_stra = {
     "rdfvc": "te persiguieron",
     "rdfvm": "ellos los habían perseguido",
     "rdfvni": "me persiguen",
+    "rdvfi": "seguir",
     "rvdf": "del perseguidor",
     "trdf": "seguirás",
     "trdfm": "persíguelos",
@@ -46214,7 +46408,7 @@ export const all_stra = {
     "crm": "mientras son exaltados",
     "erim": "levantaré",
     "ervm": "ensalzado",
-    "ervmmc": "ensalzarte",
+    "ervmmc": "ensalzaré",
     "hhrimv": "habían ofrecido",
     "hrim": "dieron",
     "hrimi": "levanta",
@@ -46249,10 +46443,11 @@ export const all_stra = {
     "rmmthv": "encumbrólo",
     "rmv": "elevadas",
     "rmvt": "altivos",
-    "rvm": "altivez",
+    "rvm": "se eleve",
     "rvmh": "ensálzate",
     "rvmmti": "levanté",
     "rvmmv": "ensalzad",
+    "trim": "ensalzarás",
     "trimv": "apartaréis",
     "trm": "se alzará",
     "trmm": "los ensalzarás",
@@ -46325,7 +46520,6 @@ export const all_stra = {
     "hriav": "gritad",
     "iria": "gritará",
     "iriav": "grita",
-    "irva": "será quebrantado",
     "itrvaav": "dan voces de júbilo",
     "nria": "aclamémosle",
     "nriah": "cantemos con júbilo",
@@ -46345,6 +46539,7 @@ export const all_stra = {
     "eriznv": "harélo correr",
     "ervz": "corre",
     "ervzh": "correré",
+    "ervzm": "muy pronto",
     "erz": "porque contigo desharé",
     "erzh": "de correr",
     "hirzvn": "correrán",
@@ -46583,7 +46778,8 @@ export const all_stra = {
     "vrkvqim": "y los que están lejos"
   },
   "H7351": {
-    "rhipnv": "los artesonados"
+    "rhipnv": "los artesonados",
+    "rkipnv": "los artesonados"
   },
   "H7352": {
     "rkiqin": "apartaos"
@@ -46766,12 +46962,13 @@ export const all_stra = {
     "iribn": "riñeren",
     "lrb": "para juzgar",
     "lrib": "contender",
+    "lrvb": "á demandárnoslo",
     "mribiv": "sus adversarios",
+    "mribv": "sus adversarios",
     "rb": "causa",
     "rbt": "la causa",
     "rbv": "riñeron",
     "rib": "abogará",
-    "ribc": "tu causa",
     "ribh": "disputa",
     "ribv": "pleitead",
     "ribvt": "tomaste pleito",
@@ -46795,7 +46992,7 @@ export const all_stra = {
     "mribi": "de contiendas",
     "rb": "los más",
     "rib": "pleito",
-    "ribc": "aboga",
+    "ribc": "trata",
     "ribcm": "por vuestra causa",
     "ribi": "mi causa",
     "ribm": "juzgará",
@@ -46804,8 +47001,7 @@ export const all_stra = {
     "vrb": "y de la causa",
     "vrbvt": "á los argumentos",
     "vrib": "pleito",
-    "vribcm": "y vuestros pleitos",
-    "vrvb": "en todos"
+    "vribcm": "y vuestros pleitos"
   },
   "H738": {
     "ceri": "como león",
@@ -46927,7 +47123,6 @@ export const all_stra = {
     "vtrcbnh": "y subieron"
   },
   "H7393": {
-    "brb": "carros",
     "brcb": "carros",
     "brcbi": "de los carros",
     "brcbv": "en su carro",
@@ -47029,9 +47224,8 @@ export const all_stra = {
     "vlrcw": "y para las bestias de carga"
   },
   "H741": {
-    "_": "del altar",
+    "vhereil": "y el altar",
     "vheriel": "y el altar",
-    "vhhrel": "del altar",
     "vmhereil": "del altar"
   },
   "H7410": {
@@ -47091,7 +47285,6 @@ export const all_stra = {
     "vrmvnim": "y granadas"
   },
   "H7417": {
-    "hmter": "á rimmón",
     "hrmvn": "de rimmón",
     "lrmvn": "hasta rimmón",
     "rmn": "de rimmón",
@@ -47212,7 +47405,6 @@ export const all_stra = {
     "mtrvnn": "que grita excitado",
     "nrnnh": "celebremos",
     "rni": "canta",
-    "rnn": "de júbilo",
     "rnnv": "alegraos",
     "rnv": "regocijaos",
     "trnh": "clama",
@@ -47297,8 +47489,6 @@ export const all_stra = {
     "ratv": "mal",
     "ravt": "y de las maldades",
     "ravticm": "aflicciones",
-    "rwa": "de su mal",
-    "tkrw": "mal",
     "vbratc": "y con tu malicia",
     "vbratm": "por su propia maldad",
     "vhra": "lo malo",
@@ -47337,8 +47527,7 @@ export const all_stra = {
     "raim": "amigos",
     "raiv": "amigos",
     "riacm": "hoyo delante de vuestro amigo",
-    "s": "de tu prójimo",
-    "vra": "y compañero",
+    "vra": "á tu amigo",
     "vrahv": "ni amigos",
     "vrai": "y mis compañeros",
     "vraic": "amigos"
@@ -47363,9 +47552,7 @@ export const all_stra = {
     "rab": "hambre",
     "trabv": "tendréis hambre",
     "virabc": "é hízote tener hambre",
-    "vmrab": "al hambriento",
     "vrab": "y tendrá hambre",
-    "vrabim": "y á los hambrientos",
     "vrabv": "necesitaron y tuvieron hambre",
     "vtrab": "y cuando se sintió el hambre"
   },
@@ -47407,10 +47594,10 @@ export const all_stra = {
     "bradh": "con temblor",
     "rad": "temblor",
     "radh": "temblor",
-    "vrad": "y temblor"
+    "vrad": "y temblor",
+    "vradh": "y un temblor"
   },
   "H7462": {
-    "aqd": "de esquileo",
     "bratv": "cuando apacentaba",
     "crah": "como pastor",
     "erah": "apacentaré",
@@ -47456,10 +47643,11 @@ export const all_stra = {
   },
   "H7463": {
     "rah": "amigo",
-    "vra": "ni al amigo"
+    "vrah": "ni al amigo"
   },
   "H7464": {
-    "ravtih": "de ella sus compañeras"
+    "ravtih": "de ella sus compañeras",
+    "vravti": "y mis compañeras"
   },
   "H7466": {
     "rav": "reu"
@@ -47488,7 +47676,7 @@ export const all_stra = {
   },
   "H7474": {
     "raiti": "amiga",
-    "vravti": "y mis compañeras"
+    "vraiti": "y mis compañeras"
   },
   "H7475": {
     "raivn": "era aflicción",
@@ -47591,7 +47779,7 @@ export const all_stra = {
     "mra": "el malo",
     "mraim": "de los malignos",
     "nra": "te",
-    "ra": "no te está bien",
+    "ra": "mal",
     "rah": "quebrantaráse del todo",
     "rav": "juntaos",
     "tra": "será maligno",
@@ -47603,7 +47791,7 @@ export const all_stra = {
     "vmra": "y malignos",
     "vra": "y le desagrade",
     "vrah": "sea maligno",
-    "vrav": "y comerán",
+    "vrav": "ella y quebraron",
     "vtra": "lo malo",
     "vtrav": "para que"
   },
@@ -47669,6 +47857,7 @@ export const all_stra = {
     "rfeh": "sana",
     "rfei": "médicos",
     "rfeni": "sáname",
+    "rfenv": "ha sanado",
     "rfeti": "yo sané",
     "rfetim": "los cuidaba",
     "rfetm": "curasteis",
@@ -47684,6 +47873,7 @@ export const all_stra = {
     "virfev": "y curan",
     "virfv": "y curaron",
     "vnrfe": "apostema y se sanare",
+    "vnrfev": "recibirán sanidad",
     "vnrfv": "recibirán sanidad",
     "vrfe": "y hará",
     "vrfem": "y sanará",
@@ -47835,7 +48025,7 @@ export const all_stra = {
     "rzv": "aman",
     "rzvi": "agradable",
     "trzh": "quieres",
-    "tzrnh": "y miren",
+    "trznh": "y miren",
     "verzh": "y pondré en ella mi voluntad",
     "vhrzt": "holgará",
     "virzhv": "y le amará",
@@ -48062,6 +48252,7 @@ export const all_stra = {
     "hrwvm": "lo que está escrito"
   },
   "H756": {
+    "ercvi": "los erchûeos",
     "ercvie": "los erchûeos"
   },
   "H7560": {
@@ -48089,6 +48280,7 @@ export const all_stra = {
     "trwia": "y condenarás",
     "trwiai": "y tú condenarás",
     "trwiani": "me condenes",
+    "vhrwanv": "hemos obrado impíamente",
     "vhrwiav": "y condenaren",
     "virwiav": "aunque habían condenado",
     "vmrwia": "y el que condena",
@@ -48110,7 +48302,6 @@ export const all_stra = {
     "brwaim": "de los impíos",
     "crwa": "el impío",
     "hlrwa": "impío",
-    "hra": "del impío",
     "hrwa": "del impío",
     "hrwah": "al impío",
     "hrwaim": "impíos",
@@ -48129,12 +48320,13 @@ export const all_stra = {
     "vrwaim": "mas los impíos"
   },
   "H7564": {
+    "brwat": "de ellos mas por la impiedad",
     "hrwah": "es la maldad",
     "lrwah": "en impiedad",
     "mrwatv": "impiedad",
-    "mvriwm": "pues por la impiedad",
     "rwah": "maldad",
     "rwatv": "su delito",
+    "vbrwat": "pues por la impiedad",
     "vbrwatv": "por su impiedad",
     "vrwah": "mas la impiedad",
     "vrwat": "y la impiedad"
@@ -48169,9 +48361,10 @@ export const all_stra = {
   },
   "H7570": {
     "irtik": "hace hervir",
-    "rtkih": "de ella haz que hierva"
+    "rtk": "de ella haz que hierva"
   },
   "H7572": {
+    "brtiqvt": "con cadenas",
     "brtvqvt": "con cadenas"
   },
   "H7573": {
@@ -48249,7 +48442,6 @@ export const all_stra = {
     "wevlh": "á la sepultura"
   },
   "H7586": {
-    "lmlkmh": "saúl",
     "lwevl": "de saúl",
     "mwevl": "de saúl",
     "vlwevl": "y había saúl",
@@ -48297,7 +48489,7 @@ export const all_stra = {
     "hwelim": "había pedido",
     "hwelthv": "vuelvo",
     "hwelti": "pedí",
-    "iwel": "pregunta",
+    "iwel": "pedirá",
     "iwelc": "te preguntare",
     "iwelv": "pregunte",
     "iwelvn": "preguntaren",
@@ -48512,16 +48704,15 @@ export const all_stra = {
     "viwb": "y tomó",
     "viwbm": "cautivo",
     "viwbv": "y habían llevado",
+    "vwbh": "y lleva",
     "vwbit": "y tomares",
     "vwbm": "y á ellos llevará cautivos",
     "vwbvm": "los tomaren",
     "wbh": "había traído cautivo",
-    "wbic": "y lleva",
     "wbihm": "si",
     "wbim": "á los que los cautivaron",
     "wbit": "tomaste",
     "wbitm": "habéis tomado",
-    "wbiv": "y tomares",
     "wbv": "se llevaron cautivos",
     "wbvt": "cautivo",
     "wvbihm": "los tomaren",
@@ -48570,8 +48761,11 @@ export const all_stra = {
     "wbvat": "juramento"
   },
   "H7622": {
+    "vwbit": "y los cautivos",
     "vwbvt": "y los cautivos",
-    "wbit": "la cautividad",
+    "wbit": "y los cautivos",
+    "wbitc": "para estorbar tu cautiverio",
+    "wbitcm": "vuestra cautividad",
     "wbithn": "y los cautivos",
     "wbitm": "sus cautivos",
     "wbitnv": "cautividad",
@@ -48579,7 +48773,8 @@ export const all_stra = {
     "wbvtc": "tus cautivos",
     "wbvtcm": "vuestra cautividad",
     "wbvticm": "vuestros cautivos",
-    "wbvtm": "su cautividad"
+    "wbvtm": "su cautividad",
+    "wbvtnv": "cautividad"
   },
   "H7623": {
     "iwbknh": "le sosiega",
@@ -48639,11 +48834,12 @@ export const all_stra = {
     "lwbi": "á cautividad",
     "mhwbi": "de la cautividad",
     "mwbi": "de la cautividad",
-    "vwbh": "tus cautivos",
     "vwbicm": "cautivos",
     "wbi": "la cautividad",
+    "wbic": "tus cautivos",
     "wbih": "cautiva",
-    "wbim": "de su cautividad"
+    "wbim": "de su cautividad",
+    "wbiv": "de ellos cautivos"
   },
   "H7629": {
     "vwbi": "sobi"
@@ -48670,6 +48866,7 @@ export const all_stra = {
   },
   "H7635": {
     "vwbilc": "y tus sendas",
+    "vwbilic": "y tus sendas",
     "wbili": "en las sendas"
   },
   "H7636": {
@@ -48760,7 +48957,6 @@ export const all_stra = {
     "vwbav": "y se saciarán",
     "wbanv": "sácianos",
     "wbat": "te hartaste",
-    "wbatc": "te hartaste",
     "wbav": "se hartará"
   },
   "H7647": {
@@ -48812,7 +49008,7 @@ export const all_stra = {
     "twbav": "juréis",
     "twbiav": "juréis",
     "vbnwbaim": "y contra los que juran",
-    "vewba": "saciélos",
+    "vewba": "y yo le juré",
     "vewbiac": "y te juramentaré",
     "vewbiam": "y juramentélos",
     "vhnwba": "jurare",
@@ -48829,7 +49025,6 @@ export const all_stra = {
   "H7651": {
     "bwba": "en los siete",
     "bwbah": "á los siete",
-    "bwbiai": "siete",
     "hwba": "séptimo",
     "hwbah": "siete",
     "lwba": "para los siete",
@@ -48854,7 +49049,7 @@ export const all_stra = {
   },
   "H7654": {
     "lwbah": "os saciáis",
-    "wbat": "haberte hartado"
+    "wbatc": "haberte hartado"
   },
   "H7655": {
     "vwbah": "y siete",
@@ -48967,7 +49162,6 @@ export const all_stra = {
     "bwbr": "en el quebrantamiento",
     "lwbrc": "para tu quebradura",
     "mwbrim": "y á causa de su desfallecimiento",
-    "nwbrh": "quebrantamiento",
     "vhwbr": "y quebrantamiento",
     "vmwbr": "y por el quebrantamiento",
     "vwbr": "y quebrantamiento",
@@ -49119,6 +49313,7 @@ export const all_stra = {
     "wvgim": "los que se desvían"
   },
   "H7687": {
+    "vbwgib": "y en segub",
     "vbwgvb": "y en segub",
     "vwgvb": "y segub",
     "wgvb": "á segub"
@@ -49151,9 +49346,9 @@ export const all_stra = {
     "wgivn": "sigaión"
   },
   "H7693": {
-    "iwcbnh": "dormirá",
-    "twcbnh": "y forzadas",
-    "wcbt": "te hayas publicado"
+    "iwglnh": "dormirá",
+    "twglnh": "y forzadas",
+    "wglt": "te hayas publicado"
   },
   "H7694": {
     "vhwgl": "y la reina",
@@ -49226,6 +49421,7 @@ export const all_stra = {
     "twdd": "saquees",
     "vhwvdd": "destruye",
     "vwddv": "y destruid",
+    "vwdm": "mas destruirá",
     "wdd": "fué destruído",
     "wddh": "es asolada",
     "wddim": "á ella destruidores",
@@ -49237,6 +49433,7 @@ export const all_stra = {
     "wvddi": "robadores"
   },
   "H7704": {
+    "bhwdh": "y escondídose en el campo",
     "bwdc": "en tu campo",
     "bwdh": "en el campo",
     "bwdi": "en los campos",
@@ -49341,6 +49538,7 @@ export const all_stra = {
   },
   "H772": {
     "berae": "en la tierra",
+    "era": "menor",
     "erae": "la tierra",
     "merae": "la tierra",
     "vberae": "y en la tierra",
@@ -49362,6 +49560,7 @@ export const all_stra = {
   },
   "H7723": {
     "bwiv": "en la vanidad",
+    "bwv": "en la vanidad",
     "hwve": "de vanidad",
     "lwve": "en vano",
     "vwve": "que vana",
@@ -49485,7 +49684,7 @@ export const all_stra = {
     "viwibhv": "y volviólo",
     "viwibm": "y reducíalos",
     "viwibv": "respondió",
-    "viwm": "volverá",
+    "viwvb": "y apartóse",
     "viwvbv": "volvieron",
     "vlhwib": "y devolviesen",
     "vlwbi": "y á los que se volvieren",
@@ -49494,6 +49693,7 @@ export const all_stra = {
     "vnwb": "y hémoslo vuelto",
     "vnwbh": "volvámonos",
     "vnwib": "respondamos",
+    "vnwvb": "vuélvenos",
     "vnwvbh": "y volvámonos",
     "vtwb": "volvió",
     "vtwbnh": "y fueron restituídas",
@@ -49502,6 +49702,7 @@ export const all_stra = {
     "vwbbti": "y volveré",
     "vwbbtic": "y te quebrantaré",
     "vwbh": "y tornaráse",
+    "vwbi": "volved",
     "vwbih": "y los convertidos",
     "vwbt": "y volverá",
     "vwbti": "y tornaré",
@@ -49523,6 +49724,7 @@ export const all_stra = {
     "wvb": "vuélvete",
     "wvbbh": "rebelde",
     "wvbbtc": "te engañaron",
+    "wvbbvm": "las descarriaron",
     "wvbc": "vuelvas",
     "wvbh": "vuelve",
     "wvbi": "vuélvete",
@@ -49530,8 +49732,7 @@ export const all_stra = {
   },
   "H7726": {
     "wvbb": "y fué él rebelde",
-    "wvbbim": "rebeldes",
-    "wvbbvm": "las descarriaron"
+    "wvbbim": "rebeldes"
   },
   "H7727": {
     "vwvbb": "sobab"
@@ -49560,6 +49761,7 @@ export const all_stra = {
     "wviti": "he puesto"
   },
   "H7739": {
+    "wvi": "fué puesto",
     "wviv": "fué puesto"
   },
   "H774": {
@@ -49604,8 +49806,7 @@ export const all_stra = {
   "H7752": {
     "bwvp": "del azote",
     "bwvpim": "con azotes",
-    "wvp": "azote",
-    "wvpf": "del azote"
+    "wvp": "azote"
   },
   "H7753": {
     "wct": "le has tú cercado"
@@ -49650,7 +49851,6 @@ export const all_stra = {
     "berzvt": "por las tierras",
     "cerz": "como la tierra",
     "cerzcm": "tierra",
-    "edmt": "de la tierra",
     "erz": "la tierra",
     "erzc": "tierra",
     "erzcm": "vuestra tierra",
@@ -49672,7 +49872,6 @@ export const all_stra = {
     "merzm": "de su tierra",
     "merzv": "de su tierra",
     "mherz": "desde el suelo",
-    "s": "á tierra",
     "vberz": "y en la tierra",
     "vberzcm": "en vuestra tierra",
     "verz": "y la tierra",
@@ -49686,8 +49885,7 @@ export const all_stra = {
     "vlerzm": "y con su tierra",
     "vmerz": "y de la tierra",
     "vmerzv": "y de su tierra",
-    "vmerzvt": "de las tierras",
-    "zdq": "la tierra"
+    "vmerzvt": "de las tierras"
   },
   "H7760": {
     "bwvm": "ponía en concierto",
@@ -49710,7 +49908,6 @@ export const all_stra = {
     "iwmc": "y puso",
     "iwmni": "me pusiera",
     "iwvm": "dió",
-    "leiwi": "no dejando",
     "lwvm": "para poner",
     "mwim": "sin haber quien lo considere",
     "mwmv": "cuando hiciere",
@@ -49727,6 +49924,7 @@ export const all_stra = {
     "vewimm": "para que yo los ponga",
     "vewm": "y puse",
     "vewmh": "pondré",
+    "vivwm": "y pusiéronle",
     "viwimc": "y te ha puesto",
     "viwimh": "y redújola",
     "viwimhv": "puso",
@@ -49737,6 +49935,7 @@ export const all_stra = {
     "viwmhv": "hízolo",
     "viwmm": "y los había puesto",
     "viwmv": "y pusieron",
+    "vlwimv": "y que lo ponga",
     "vlwvm": "y se elegirá",
     "vlwvmv": "y que lo ponga",
     "vnwim": "y pongamos",
@@ -49952,6 +50151,7 @@ export const all_stra = {
   },
   "H7792": {
     "vwvri": "y mala y han erigido los muros",
+    "vwvrie": "y mala y han erigido los muros",
     "vwvrih": "y los muros"
   },
   "H7793": {
@@ -50157,7 +50357,7 @@ export const all_stra = {
     "wkpi": "umbroso que sacrificáis",
     "wkpv": "y degollaron",
     "wkvp": "afilada",
-    "wvkp": "el que sacrifica"
+    "wvkp": "afilada"
   },
   "H782": {
     "verwt": "pronunciaron"
@@ -50201,7 +50401,8 @@ export const all_stra = {
     "vertkwwte": "y de artajerjes"
   },
   "H7831": {
-    "vwkzimh": "y sahasim"
+    "vwkzimh": "y sahasim",
+    "vwkzvmh": "y sahasim"
   },
   "H7832": {
     "bwkvq": "el escarnio",
@@ -50249,10 +50450,9 @@ export const all_stra = {
   },
   "H7837": {
     "bwkr": "en la mañana",
-    "calvt": "cuando subía el alba",
     "cwkr": "como el alba",
     "hwkr": "el alba",
-    "wkr": "del alba",
+    "wkr": "al alba",
     "wkrh": "cuyo nacimiento"
   },
   "H7838": {
@@ -50273,7 +50473,7 @@ export const all_stra = {
     "ewv": "fuego",
     "hew": "el fuego",
     "lew": "por fuego",
-    "mew": "del incendio",
+    "mew": "del fuego",
     "mhew": "y fuego",
     "vbew": "con el fuego",
     "vew": "fuego",
@@ -50461,6 +50661,7 @@ export const all_stra = {
     "wpri": "á los oficiales"
   },
   "H7861": {
+    "wpri": "sitrai",
     "wrpi": "sitrai"
   },
   "H7862": {
@@ -50511,10 +50712,10 @@ export const all_stra = {
     "wig": "ó tiene algún empeño"
   },
   "H7874": {
-    "bwid": "y las revocarás",
     "vwdt": "y las revocarás"
   },
   "H7875": {
+    "bwid": "con cal",
     "lwid": "hasta tornarlos en cal",
     "wid": "como cal"
   },
@@ -50525,7 +50726,6 @@ export const all_stra = {
     "wixe": "de siza"
   },
   "H7878": {
-    "bwiki": "mis quejas",
     "ewik": "empero meditaré",
     "ewikh": "oraré",
     "ewvkk": "reflexionaba",
@@ -50569,7 +50769,7 @@ export const all_stra = {
     "wkvr": "del nilo"
   },
   "H7885": {
-    "wvp": "del azote"
+    "wip": "del azote"
   },
   "H7887": {
     "bwilv": "fué en silo",
@@ -50596,7 +50796,7 @@ export const all_stra = {
     "hewbli": "de los asbelitas"
   },
   "H7890": {
-    "rglihm": "su orina"
+    "winihm": "su orina"
   },
   "H7891": {
     "ewir": "empero cantaré",
@@ -50610,6 +50810,7 @@ export const all_stra = {
     "iwvrr": "cantará",
     "lwir": "cantando",
     "lwrim": "para los cantores",
+    "lwvr": "cantando",
     "mwrrim": "cantores",
     "mwvrr": "cantaban",
     "nwir": "cantaremos",
@@ -50624,7 +50825,6 @@ export const all_stra = {
     "vwr": "el que canta",
     "vwrim": "y cantores",
     "vwrvt": "y cantoras",
-    "wir": "á ti cantaré",
     "wirv": "cantad",
     "wr": "que cantó",
     "wrim": "y cantoras",
@@ -50635,7 +50835,6 @@ export const all_stra = {
     "bwrim": "canciones",
     "cwir": "que tú eres á ellos como cantor",
     "cwirt": "tiro",
-    "ewirh": "canción",
     "hwir": "de música",
     "hwirh": "este cántico",
     "hwirim": "canción",
@@ -50647,6 +50846,7 @@ export const all_stra = {
     "vmwiri": "y con mi canción",
     "vwir": "y cántico",
     "wir": "cántico",
+    "wirh": "su canción",
     "wiric": "de tus canciones",
     "wiricm": "vuestros cantares",
     "wirt": "el cantar",
@@ -50661,7 +50861,8 @@ export const all_stra = {
     "wiwe": "de sisa"
   },
   "H7895": {
-    "wiwq": "de sisac"
+    "wiwq": "de sisac",
+    "wvwq": "sisac"
   },
   "H7896": {
     "ewit": "pondré",
@@ -50681,7 +50882,7 @@ export const all_stra = {
     "viwt": "puso",
     "vtwt": "mí pusiste",
     "vtwthv": "púsolo",
-    "vwit": "pues y déjame",
+    "vwit": "y tendrás",
     "vwth": "y la deje",
     "wit": "pon",
     "with": "pon",
@@ -50728,6 +50929,7 @@ export const all_stra = {
     "hwcbim": "duermen",
     "hwcibh": "y púsome",
     "iwcb": "durmiere",
+    "iwcbnh": "dormirá",
     "iwcbv": "yacerán",
     "iwcbvn": "durmiesen",
     "lwcb": "á dormir",
@@ -50735,6 +50937,7 @@ export const all_stra = {
     "mwcbt": "de la que duerme",
     "nwcbh": "yacemos",
     "twcb": "yacerás",
+    "twcbnh": "y forzadas",
     "twcbvn": "seréis sepultados",
     "vbwcbc": "y al acostarte",
     "vcwcb": "como el que yace",
@@ -50753,13 +50956,13 @@ export const all_stra = {
     "vwcb": "acostado",
     "vwcbh": "y duerma",
     "vwcbt": "y durmieres",
-    "vwcbti": "mas cuando durmiere",
+    "vwcbti": "él se acostará",
     "vwcbtm": "y dormiréis",
     "wcb": "durmiere",
     "wcbh": "duerme",
     "wcbi": "y duerme",
     "wcbim": "echados",
-    "wcbt": "que estaba acostada",
+    "wcbt": "te hayas publicado",
     "wcbti": "y duerme",
     "wcbv": "yacían",
     "wvcb": "durmieres"
@@ -50801,7 +51004,6 @@ export const all_stra = {
     "hnwckim": "había olvidado",
     "htwck": "olvidaráse",
     "hwck": "ha olvidado",
-    "hwckim": "que olvidáis",
     "hwcktm": "os habéis olvidado",
     "iwck": "se olvidará",
     "iwckhv": "olvidaráse",
@@ -50927,7 +51129,6 @@ export const all_stra = {
     "wclv": "abortaron"
   },
   "H7922": {
-    "hmwcilim": "que tenían",
     "lwcl": "la prudencia",
     "mwcl": "de inteligencia",
     "vwcl": "opinión",
@@ -51040,6 +51241,7 @@ export const all_stra = {
     "vwcniv": "y sus vecinos",
     "vwcnv": "vecino",
     "wcn": "el vecino",
+    "wcnci": "vecinos",
     "wcni": "vecinos",
     "wcnic": "vecinos",
     "wcnih": "y á sus ciudades vecinas",
@@ -51047,7 +51249,6 @@ export const all_stra = {
   },
   "H7935": {
     "lwcnihv": "por sechânía",
-    "s": "de sechânías",
     "wcnih": "de sechânías"
   },
   "H7936": {
@@ -51160,8 +51361,7 @@ export const all_stra = {
     "wlh": "sela"
   },
   "H7957": {
-    "wlhbt": "la llama",
-    "wlhbtih": "fuerte llama"
+    "wlhbt": "la llama"
   },
   "H7958": {
     "hwlv": "codornices",
@@ -51174,6 +51374,7 @@ export const all_stra = {
   "H796": {
     "ewddivt": "de asdod",
     "ewdvdim": "día los de asdod",
+    "ewdvdivt": "de asdod",
     "hewdvdim": "los de asdod",
     "vhewdvdi": "asdodios",
     "vhewdvdim": "y los de asdod"
@@ -51247,7 +51448,6 @@ export const all_stra = {
     "hwlvwh": "de los tres",
     "hwlw": "tres",
     "hwlwh": "los tres",
-    "imim": "tres",
     "lwlvw": "tres",
     "lwlw": "por tres",
     "lwlwh": "tres",
@@ -51276,11 +51476,10 @@ export const all_stra = {
     "cwlwim": "unos treinta",
     "hwliwim": "de treinta",
     "hwlvwim": "los treinta",
-    "hwlwim": "entre los treinta",
+    "hwlwim": "los treinta",
     "mhwlwim": "y tres",
     "vwlwim": "treinta",
     "wlvwim": "treinta",
-    "wlwh": "y tres",
     "wlwim": "treinta"
   },
   "H7971": {
@@ -51412,7 +51611,6 @@ export const all_stra = {
     "wlki": "silhi"
   },
   "H7979": {
-    "f": "á la mesa",
     "hwlkn": "la mesa",
     "hwlknvt": "las mesas",
     "lwlkn": "para las mesas",
@@ -51471,7 +51669,7 @@ export const all_stra = {
     "wlipim": "poderosos"
   },
   "H799": {
-    "dt": "á su diestra la ley"
+    "ewdt": "á su diestra la ley"
   },
   "H7990": {
     "vwlip": "señor",
@@ -51482,6 +51680,7 @@ export const all_stra = {
   "H7991": {
     "bwlw": "y con tres",
     "hwliw": "y un príncipe",
+    "hwliwim": "de los treinta",
     "hwlwi": "de los capitanes",
     "vbwlwim": "y sonajas",
     "vhwlwim": "y los capitanes",
@@ -51491,6 +51690,7 @@ export const all_stra = {
     "wliw": "en gran abundancia",
     "wliwiv": "y sus capitanes",
     "wliwv": "capitán",
+    "wlwh": "luego jehú á bidkar su capitán",
     "wlwim": "nobles",
     "wlwiv": "príncipes",
     "wlwv": "luego jehú á bidkar su capitán"
@@ -51662,7 +51862,7 @@ export const all_stra = {
     "lebq": "polvo"
   },
   "H800": {
-    "tm": "del fuego"
+    "mewtm": "del fuego"
   },
   "H8000": {
     "hwlm": "los restituirás",
@@ -51734,7 +51934,6 @@ export const all_stra = {
   },
   "H8010": {
     "bwlmh": "salomón",
-    "f": "de salomón",
     "lwlmh": "á salomón",
     "mwlmh": "salomón",
     "vlwlmh": "salomón",
@@ -51747,6 +51946,7 @@ export const all_stra = {
   },
   "H8013": {
     "vwlmit": "selomith",
+    "vwlmvt": "selomith",
     "wlmvt": "selemoth"
   },
   "H8014": {
@@ -51771,7 +51971,7 @@ export const all_stra = {
   "H8019": {
     "vwlmit": "y selomith",
     "wlmit": "selomith",
-    "wlvmit": "de solomith"
+    "wlvmit": "selomith"
   },
   "H802": {
     "bewh": "por mujer",
@@ -51786,7 +51986,6 @@ export const all_stra = {
     "ewtv": "su mujer",
     "hewh": "la mujer",
     "hnwim": "las mujeres",
-    "leiwh": "y la mujer",
     "lewh": "por mujer",
     "lewt": "á la mujer",
     "lewti": "á mi mujer",
@@ -51873,9 +52072,8 @@ export const all_stra = {
     "wlwh": "de salisa"
   },
   "H8032": {
-    "wliwim": "tres",
     "wlwm": "como antes",
-    "wlwvm": "antes"
+    "wlwvm": "tres"
   },
   "H8033": {
     "mwm": "de allí",
@@ -52051,7 +52249,7 @@ export const all_stra = {
     "lhwmdh": "para que sea destruído"
   },
   "H8047": {
-    "lwmh": "en soledad",
+    "lwmh": "en asolamiento",
     "nwmh": "en asolamiento",
     "vlwmh": "y por espanto",
     "wmh": "soledad",
@@ -52088,7 +52286,7 @@ export const all_stra = {
     "wmvah": "rumor"
   },
   "H8053": {
-    "wmir": "samir"
+    "wmvr": "samir"
   },
   "H8054": {
     "wmvt": "samoth"
@@ -52120,12 +52318,13 @@ export const all_stra = {
     "vtwmk": "y alegróse",
     "vwmk": "y alégrate",
     "vwmkh": "y regocijó",
-    "vwmki": "y gózate",
+    "vwmki": "y alégrate",
     "vwmkt": "y te alegrarás",
     "vwmktim": "se holgará",
     "vwmktm": "y os alegraréis",
     "vwmkv": "y gozaos",
     "wmk": "alégrate",
+    "wmkhv": "así mucho",
     "wmki": "gózate",
     "wmkm": "con gozo",
     "wmknv": "alégranos",
@@ -52137,7 +52336,6 @@ export const all_stra = {
   "H8056": {
     "hwmkim": "que se alegran",
     "vwmkim": "y hacían",
-    "vwmkv": "y alegraráse",
     "wmk": "alegre",
     "wmki": "se alegran",
     "wmkim": "á sus estancias alegres"
@@ -52166,6 +52364,7 @@ export const all_stra = {
     "twmp": "tuyo lo perdonará",
     "twmpnh": "la dejarás vacante y soltarás",
     "viwmpvh": "echadla",
+    "wmphv": "echadla",
     "wmpv": "se desmandaban",
     "wmpvh": "echadla",
     "wmvp": "perdonará"
@@ -52236,7 +52435,8 @@ export const all_stra = {
     "ewime": "á asima"
   },
   "H8070": {
-    "vwmirmvt": "semiramoth"
+    "vwmirmvt": "semiramoth",
+    "vwmrimvt": "y semiramoth"
   },
   "H8071": {
     "bwmlh": "en un paño",
@@ -52253,10 +52453,13 @@ export const all_stra = {
     "wmlticm": "vuestros vestidos",
     "wmltiv": "sus vestidos",
     "wmltm": "sus vestidos",
-    "wmltv": "aquél el vestido"
+    "wmltv": "sus ropas"
   },
   "H8072": {
     "wmlh": "samla"
+  },
+  "H8073": {
+    "wmli": "de samlai"
   },
   "H8074": {
     "bhwmh": "estando yerma",
@@ -52270,7 +52473,6 @@ export const all_stra = {
     "iwm": "ella se maravillará",
     "iwmv": "sean asolados",
     "iwtvmm": "de mí pasmóse",
-    "lwmh": "fué desolada",
     "mwmim": "atónito",
     "mwmm": "el pueblo asolado",
     "mwvmm": "atónito",
@@ -52290,7 +52492,7 @@ export const all_stra = {
     "vwmmtic": "desierta",
     "vwmmv": "atónitos",
     "wmm": "asoladora",
-    "wmmh": "fué asolada",
+    "wmmh": "destruídos",
     "wmmv": "se maravillarán",
     "wmmvt": "los asolamientos",
     "wmv": "espantaos",
@@ -52312,7 +52514,7 @@ export const all_stra = {
     "lwmmh": "asolada",
     "lwmmvt": "en desiertos",
     "vwmmh": "y asolada",
-    "wmmh": "en asolamiento",
+    "wmmh": "en soledad",
     "wmmvt": "asolado"
   },
   "H8078": {
@@ -52337,7 +52539,6 @@ export const all_stra = {
     "hwmn": "del aceite",
     "lwmn": "aceite",
     "mwmn": "aceite",
-    "vbqr": "y aceite",
     "vcwmn": "y como aceite",
     "vhwmn": "y del aceite",
     "vlwmn": "y para el aceite",
@@ -52382,6 +52583,7 @@ export const all_stra = {
     "bhwma": "pues que como se divulgó",
     "bwma": "ha oído",
     "bwmac": "he oído",
+    "bwmacm": "así que oyereis",
     "bwmam": "cuando oyeron",
     "bwmav": "y oía",
     "cwma": "oyó",
@@ -52474,12 +52676,12 @@ export const all_stra = {
     "wmanvh": "oímos",
     "wmat": "has oído",
     "wmati": "he oído",
-    "wmatic": "también te he oído",
+    "wmatic": "te había oído",
     "wmatm": "habéis oído",
     "wmav": "oid",
     "wmavni": "oidme",
     "wmva": "oid",
-    "wvma": "que oye"
+    "wvma": "oyeron"
   },
   "H8086": {
     "twmavn": "en oyendo",
@@ -52495,13 +52697,12 @@ export const all_stra = {
   },
   "H8088": {
     "cwma": "la fama",
-    "lwma": "así que hubo oído",
+    "lwma": "de oídas",
     "wma": "y oyendo",
     "wmac": "oirán",
     "wmah": "su fama",
     "wmai": "oyeron",
-    "wmam": "oyó",
-    "wmatic": "de oídas"
+    "wmam": "oyó"
   },
   "H8089": {
     "vwmav": "y su fama",
@@ -52528,10 +52729,8 @@ export const all_stra = {
   },
   "H8096": {
     "lwmai": "á semei",
-    "s": "y simi",
     "vlwmai": "de simi",
     "vwmai": "y simi",
-    "wmah": "de sima",
     "wmai": "de simi"
   },
   "H8097": {
@@ -52563,12 +52762,12 @@ export const all_stra = {
     "wmz": "poco"
   },
   "H8104": {
-    "0ewmr": "le conservaré",
     "bwmrm": "con ellos en guardarlos",
     "bwmvr": "cercó",
     "cwmri": "como las guardas",
     "ewmr": "guardaré",
     "ewmrh": "guardaré",
+    "ewmvr": "le conservaré",
     "htwmr": "si habías de guardar",
     "hwmr": "guárdate",
     "hwmrim": "los guardas",
@@ -52578,7 +52777,6 @@ export const all_stra = {
     "iwmrni": "me guardaba",
     "iwmrnv": "hubiere guardado",
     "iwmrv": "guarden",
-    "lv": "le conservaré",
     "lwmr": "para guardar",
     "lwmrc": "para que te guarden",
     "lwmri": "guardasteis",
@@ -52757,7 +52955,8 @@ export const all_stra = {
   },
   "H8128": {
     "vwnin": "la cual tenía unos dientes",
-    "wnh": "sus dientes"
+    "wnh": "sus dientes",
+    "wnih": "sus dientes"
   },
   "H8129": {
     "hwn": "y sen"
@@ -52794,7 +52993,6 @@ export const all_stra = {
     "vwnec": "te aborrezca",
     "vwneh": "y si la aborreciere",
     "vwnei": "y los que aborrecen",
-    "vwnet": "me aborrecen",
     "vwneti": "aborrecí",
     "vwnveh": "en lugar de que has sido desechada y aborrecida",
     "vwvne": "mas el que aborrece",
@@ -52818,12 +53016,14 @@ export const all_stra = {
     "wnetm": "á mí pues que me habéis aborrecido",
     "wnetni": "me aborreces",
     "wnev": "aborreced",
+    "wnevni": "me aborrecen",
     "wnevtic": "que te aborrecen",
     "wnveh": "aborrecida",
     "wvne": "aborrece"
   },
   "H8131": {
-    "lwnec": "sea para tus enemigos"
+    "lwnec": "sea para tus enemigos",
+    "lwneic": "sea para tus enemigos"
   },
   "H8132": {
     "iwne": "y mudaráse",
@@ -52831,6 +53031,7 @@ export const all_stra = {
   },
   "H8133": {
     "ewtni": "y demudóse",
+    "ewtnv": "y demudóse",
     "ihwne": "mudare",
     "iwnvn": "sea mudado",
     "lhwnih": "para mudar",
@@ -52849,9 +53050,9 @@ export const all_stra = {
     "mwnetic": "á causa de tus enemistades",
     "vmwnetv": "que les había dicho ó porque los aborrecía",
     "vwneh": "y odio",
+    "vwnet": "y con odio",
     "wneh": "el odio",
-    "wnetm": "odio",
-    "wnevni": "y con odio"
+    "wnetm": "odio"
   },
   "H8137": {
     "vwnezr": "seneaser"
@@ -52956,7 +53157,6 @@ export const all_stra = {
     "bwni": "á dos",
     "hwni": "el segundo",
     "hwnit": "segundo",
-    "s": "la otra",
     "vwnim": "los segundos",
     "wni": "otro",
     "wnim": "segundo",
@@ -53223,7 +53423,8 @@ export const all_stra = {
     "warih": "puertas",
     "warihm": "la puerta",
     "warim": "la puerta",
-    "wariv": "por sus puertas"
+    "wariv": "por sus puertas",
+    "warv": "por sus puertas"
   },
   "H818": {
     "ewmim": "hemos pecado"
@@ -53239,7 +53440,7 @@ export const all_stra = {
     "warv": "su pelo"
   },
   "H8182": {
-    "ctenim": "como los malos"
+    "hwarim": "como los malos"
   },
   "H8183": {
     "bwarh": "me ha quebrado con tempestad"
@@ -53311,6 +53512,7 @@ export const all_stra = {
     "bwftic": "en tus labios",
     "bwftim": "pronunciando con sus labios",
     "bwftiv": "con sus labios",
+    "bwftv": "en los labios",
     "bwftvtic": "en tus labios",
     "bwftvtihm": "están en sus labios",
     "lwftv": "de su labio",
@@ -53393,9 +53595,8 @@ export const all_stra = {
     "iwfpvhv": "para juzgar",
     "iwfvp": "juzgará",
     "iwfvpv": "juzgaban",
-    "lmwfp": "para juzgar",
     "lmwfpi": "á mi juez",
-    "lwfp": "á juzgar",
+    "lwfp": "para juzgar",
     "lwfpnv": "juzgue",
     "lwfvp": "á juzgar",
     "mwfpi": "de mi juez",
@@ -53413,6 +53614,7 @@ export const all_stra = {
     "vlwfpiv": "á sus jueces",
     "vnwfpti": "litigaré",
     "vwfp": "y juzgará",
+    "vwfphv": "para juzgar",
     "vwfpic": "y tus jueces",
     "vwfpih": "y los jueces",
     "vwfpim": "y jueces",
@@ -53523,6 +53725,7 @@ export const all_stra = {
     "vwfcti": "y derramaré",
     "vwfcv": "y extended",
     "wfc": "derramó",
+    "wfch": "resbalaron",
     "wfci": "derrama",
     "wfct": "derramaste",
     "wfcthv": "la derramó",
@@ -53542,7 +53745,7 @@ export const all_stra = {
   "H8213": {
     "ewfil": "y abatiré",
     "hmwfili": "que se humilla",
-    "hwfil": "la humillará",
+    "hwfil": "abatiré",
     "hwfilv": "humillaos",
     "hwflti": "bajo",
     "iwfilh": "humillóla",
@@ -53554,7 +53757,6 @@ export const all_stra = {
     "twfilnv": "pero al humilde",
     "twfl": "abatida",
     "twflnh": "y bajados",
-    "vhgbh": "abatiré",
     "vhwfil": "y abatirá",
     "vhwfilhv": "y abátelo",
     "viwfl": "y bajados",
@@ -53771,6 +53973,7 @@ export const all_stra = {
   "H8252": {
     "bhwqp": "en quietud",
     "ewqph": "reposaréme",
+    "ewqvph": "reposaréme",
     "hwqp": "reposo",
     "iwqp": "parará",
     "lhwqip": "para tranquilizarle",
@@ -53800,6 +54003,7 @@ export const all_stra = {
     "twqvl": "pagarás",
     "vewql": "y pesé",
     "vewqlh": "pesé",
+    "vewqvlh": "y peséles",
     "viwql": "y pesó",
     "viwqlv": "y pesaron",
     "vwql": "y pesó",
@@ -53898,7 +54102,6 @@ export const all_stra = {
   },
   "H8269": {
     "bwrim": "de los príncipes",
-    "elf": "capitanes",
     "hwr": "el principal",
     "hwrim": "los príncipes",
     "lwr": "sirviente del capitán",
@@ -54063,7 +54266,8 @@ export const all_stra = {
     "vhwridim": "de ellos",
     "vwrid": "ni quedase vivo",
     "wrid": "quedar nada",
-    "wridiv": "los que quedaban"
+    "wridiv": "los que quedaban",
+    "wridv": "los que le quedaren"
   },
   "H8301": {
     "mwrid": "de sarid",
@@ -54255,6 +54459,7 @@ export const all_stra = {
   },
   "H833": {
     "ewrv": "restituid",
+    "iewr": "sea bienaventurado",
     "iewrvhv": "llamarlo han bienaventurado",
     "mewr": "y bienaventurados",
     "mewri": "y sus gobernados",
@@ -54310,7 +54515,8 @@ export const all_stra = {
     "hww": "ó lino",
     "vbww": "y lino",
     "vww": "y lino",
-    "ww": "de lino"
+    "ww": "de lino",
+    "wwi": "fué lino"
   },
   "H8337": {
     "bww": "por seiscientas",
@@ -54403,7 +54609,6 @@ export const all_stra = {
     "wt": "de seis"
   },
   "H8354": {
-    "eclim": "y bebiendo",
     "ewth": "beber",
     "hwtim": "y bebéis",
     "iwth": "beberá",
@@ -54436,6 +54641,7 @@ export const all_stra = {
     "vwtitm": "y beberéis",
     "vwtv": "y beberán",
     "vwtvt": "y bebamos",
+    "vwvtim": "y bebiendo",
     "wth": "bebe",
     "wti": "los que beben",
     "wtinv": "bebemos",
@@ -54530,9 +54736,11 @@ export const all_stra = {
     "htevt": "de las cámaras",
     "te": "la cámara",
     "teiv": "sus cámaras",
+    "tev": "sus cámaras",
     "vhte": "las cámaras",
     "vtei": "cámaras",
-    "vteiv": "y sus cámaras"
+    "vteiv": "y sus cámaras",
+    "vtev": "y sus cámaras"
   },
   "H8373": {
     "tebti": "deseado"
@@ -54581,9 +54789,9 @@ export const all_stra = {
   "H8384": {
     "btenh": "higos",
     "cteni": "tenía higos",
+    "ctenim": "higos",
     "htenh": "la higuera",
     "htenim": "higos",
-    "hwarim": "higos",
     "ltenh": "á la higuera",
     "mtenh": "la de la higuera",
     "tenh": "la higuera",
@@ -54668,6 +54876,7 @@ export const all_stra = {
     "vbtbvntc": "y con tu prudencia",
     "vbtbvntv": "con su prudencia",
     "vbtbvnvt": "con la pericia",
+    "vbtvbntv": "y con su entendimiento",
     "vtbvnh": "y la inteligencia"
   },
   "H8395": {
@@ -54692,9 +54901,9 @@ export const all_stra = {
   },
   "H84": {
     "bebrtv": "con sus plumas",
-    "birqrq": "y sus plumas",
     "ebrh": "alas",
-    "ebrtv": "sus plumas"
+    "ebrtv": "sus plumas",
+    "vebrvtih": "y sus plumas"
   },
   "H840": {
     "vewrel": "y asareel"
@@ -54861,7 +55070,8 @@ export const all_stra = {
     "vtvdvt": "y alabanzas"
   },
   "H8427": {
-    "vitiv": "y escribía"
+    "vitiv": "y escribía",
+    "vitv": "y escribía"
   },
   "H8428": {
     "htvv": "y ponían límite"
@@ -54934,7 +55144,8 @@ export const all_stra = {
     "tvldvt": "son los orígenes"
   },
   "H8436": {
-    "vtilvn": "y tilón"
+    "vtilvn": "y tilón",
+    "vtvlvn": "y tilón"
   },
   "H8438": {
     "btvlat": "y en carmesí",
@@ -55009,6 +55220,7 @@ export const all_stra = {
     "tvzevt": "él mana",
     "tvzevtm": "salir",
     "tzetiv": "y sale",
+    "tzetv": "y sale",
     "tzevt": "y sale este término"
   },
   "H8446": {
@@ -55097,6 +55309,7 @@ export const all_stra = {
   },
   "H8457": {
     "btxnvtic": "en tus fornicaciones",
+    "mtxntc": "fornicaciones",
     "mtxnvtic": "fornicaciones",
     "txntc": "fornicaciones",
     "txnvtc": "fornicación",
@@ -55109,6 +55322,7 @@ export const all_stra = {
   "H8458": {
     "btkblvt": "con ingenio",
     "btkbvltiv": "designios",
+    "btkbvltv": "designios",
     "tkblvt": "consejo",
     "vbtkblvt": "y con industria"
   },
@@ -55186,7 +55400,8 @@ export const all_stra = {
     "btkfnks": "en taphnes",
     "tkfnks": "taphnes",
     "vbtkfnks": "y en taphnes",
-    "vtkfnks": "y de taphnes"
+    "vtkfnks": "y de taphnes",
+    "vtkfns": "y de taphnes"
   },
   "H8472": {
     "tkfnis": "thaphnes",
@@ -55211,7 +55426,6 @@ export const all_stra = {
     "tkw": "y á taas"
   },
   "H8478": {
-    "f": "en su lugar",
     "htkt": "en lugar",
     "lmtkt": "estaban debajo",
     "mtkt": "debajo",
@@ -55229,6 +55443,7 @@ export const all_stra = {
     "tktm": "en su lugar",
     "tktnh": "en su lugar",
     "tktni": "debajo",
+    "tktv": "y debajo",
     "vmtkt": "y debajo",
     "vmtkth": "y debajo",
     "vtkt": "y debajo",
@@ -55467,6 +55682,7 @@ export const all_stra = {
   },
   "H8523": {
     "tliteh": "tercer",
+    "tlitie": "tercer",
     "vtlti": "el tercero"
   },
   "H8524": {
@@ -55506,11 +55722,6 @@ export const all_stra = {
     "evti": "tú",
     "evtm": "con",
     "evtv": "con",
-    "met": "de",
-    "metc": "de ti",
-    "metcm": "de entre",
-    "meti": "tu",
-    "metm": "de ellos",
     "metv": "por el cual",
     "mevti": "ti",
     "mevtv": "por el cual",
@@ -55575,16 +55786,13 @@ export const all_stra = {
     "eth": "con",
     "eti": "conmigo",
     "etm": "con",
-    "etn": "tu",
     "etnv": "con",
     "etv": "con",
-    "evtc": "tus",
     "evti": "será conmigo",
-    "evtm": "están con",
-    "evtv": "con",
-    "met": "de parte",
+    "met": "con",
     "metc": "contigo",
-    "meti": "ni de mí",
+    "meti": "ti",
+    "metm": "de ellos",
     "metv": "también de sí",
     "vet": "con",
     "vetcm": "y los que tenéis",
@@ -55668,7 +55876,6 @@ export const all_stra = {
     "tmctic": "te sustentaré",
     "tmcv": "sustentaban",
     "ttmc": "honra",
-    "vbkbli": "y detenido",
     "vitmc": "y asió",
     "vtvmc": "y los gobernadores"
   },
@@ -55748,6 +55955,7 @@ export const all_stra = {
     "vtmrim": "y palmas",
     "vtmriv": "y sus palmas",
     "vtmrt": "de palmas",
+    "vtmrv": "y sus palmas",
     "vtmrvt": "y palmas"
   },
   "H8562": {
@@ -55947,12 +56155,14 @@ export const all_stra = {
   "H859": {
     "et": "tú",
     "eth": "tú",
+    "eti": "de tu",
     "etm": "vosotros",
     "etnh": "vuestras",
     "heth": "eres tú",
     "hetm": "vosotros",
     "vet": "y tú",
     "veth": "y tú",
+    "veti": "tu",
     "vetm": "y vosotros",
     "vetn": "vuestro",
     "vetnh": "y daré",
@@ -56160,6 +56370,7 @@ export const all_stra = {
     "etiq": "de las otras",
     "etiqim": "las galerías",
     "vetiqihe": "de él y las cámaras",
+    "vetvqihe": "de él y las cámaras",
     "vhetiqim": "y las cámaras"
   },
   "H8620": {
@@ -56177,6 +56388,9 @@ export const all_stra = {
   },
   "H8622": {
     "ltqvft": "a la vuelta"
+  },
+  "H8623": {
+    "wtqif": "más fuerte"
   },
   "H8624": {
     "tqifh": "fuerte",
@@ -56253,6 +56467,7 @@ export const all_stra = {
     "trbvt": "prole"
   },
   "H8636": {
+    "vbtrbit": "y crecido interés",
     "vtrbit": "aumento"
   },
   "H8639": {
@@ -56604,7 +56819,7 @@ export const all_stra = {
     "bgdti": "habría negado",
     "bgdtm": "quiebra la fe",
     "bgdv": "prevaricaron",
-    "bgvd": "resueltamente se rebelaron",
+    "bgvd": "que desleal",
     "bvgd": "el prevaricador",
     "bvgdim": "de desleales",
     "hbvgd": "prevarica",
@@ -56884,7 +57099,6 @@ export const all_stra = {
     "vlbhrt": "y de la mancha"
   },
   "H935": {
-    "_": "y vinieron",
     "bbe": "cuando viniere",
     "bbec": "entrar",
     "bbecm": "os llevo",
@@ -56934,7 +57148,7 @@ export const all_stra = {
     "cwbe": "vino",
     "ebe": "entraré",
     "ebeh": "entrar",
-    "ebi": "te traeré",
+    "ebi": "traeré",
     "ebie": "traeré",
     "ebienh": "haré venir",
     "ebienv": "introduzca",
@@ -56966,6 +57180,7 @@ export const all_stra = {
     "hbievc": "engolfaron",
     "hbievm": "la han traído",
     "hbve": "hemos",
+    "hmbie": "para entrar",
     "hmbieim": "trajesen",
     "hmvbe": "que había sido metido",
     "htbve": "vino",
@@ -57002,6 +57217,7 @@ export const all_stra = {
     "lhbiem": "los trajo",
     "mbe": "á la entrada",
     "mbeim": "y vendrán",
+    "mbi": "yo traigo",
     "mbie": "traigo",
     "mbiec": "te introduce",
     "mbieim": "traían",
@@ -57015,7 +57231,6 @@ export const all_stra = {
     "nbie": "traíamos",
     "nbve": "hemos",
     "nbveh": "entraremos",
-    "rahv": "viene",
     "tbe": "entres",
     "tbeinh": "entrarán",
     "tbemv": "tú los introducirás",
@@ -57043,7 +57258,7 @@ export const all_stra = {
     "vbbve": "entrare",
     "vbe": "y vendrá",
     "vbec": "viniste",
-    "vbeh": "vendrá",
+    "vbeh": "y vendrá",
     "vbei": "y entra",
     "vbeim": "y viniesen",
     "vbenv": "acometeremos",
@@ -57058,6 +57273,7 @@ export const all_stra = {
     "vcbe": "entrará",
     "vcbve": "se puso",
     "vebe": "llegué",
+    "vebeh": "y os introduje",
     "vebem": "y trájelos",
     "vebie": "y os introduje",
     "vebiem": "y helas traído",
@@ -57065,6 +57281,7 @@ export const all_stra = {
     "vebveh": "y entraré",
     "vhbe": "y cualquiera que entrare",
     "vhbeim": "vinieron",
+    "vhbeiti": "y traeré",
     "vhbet": "y meterás",
     "vhbeth": "la meterás",
     "vhbeti": "y traeré",
@@ -57088,6 +57305,7 @@ export const all_stra = {
     "vhbievtihv": "y hacerlo he venir",
     "vhbievtim": "y traerlos",
     "vhbievtm": "y traédmelo",
+    "vhbvetim": "y traerlos",
     "vhvbe": "será traído",
     "vibe": "y vino",
     "vibeh": "y trájola",
@@ -57104,9 +57322,9 @@ export const all_stra = {
     "vibieni": "metióme",
     "vibiev": "y trajeron",
     "vibievm": "y trajéronlos",
+    "vibv": "vino",
     "vibve": "y vino",
     "vibvev": "y vinieron",
-    "vicv": "mas cuando llegaron",
     "vlbe": "ni para el que entraba",
     "vlbve": "ni iré",
     "vlhbie": "traeríamos",
@@ -57119,12 +57337,12 @@ export const all_stra = {
     "vnbiem": "y te la traeremos",
     "vnbve": "y entrémonos",
     "vnbveh": "y entrémonos",
-    "vnftli": "trajeron",
     "vtbe": "vino",
     "vtbehv": "ella lo trajo",
     "vtbei": "y viniste",
     "vtbenh": "venido",
     "vtbet": "en venirme",
+    "vtbeti": "en venirme",
     "vtbev": "vinisteis",
     "vtbiehv": "y ella le metió",
     "vtbiem": "que habían de entrar",
@@ -57373,6 +57591,7 @@ export const all_stra = {
     "vmbkvricm": "y de vuestros mancebos"
   },
   "H971": {
+    "bkiniv": "sus fortalezas",
     "bkvniv": "sus fortalezas"
   },
   "H972": {
@@ -57385,7 +57604,7 @@ export const all_stra = {
   },
   "H973": {
     "bklh": "de ellos me aborreció",
-    "mbhlt": "adquirida de priesa"
+    "mbklt": "adquirida de priesa"
   },
   "H974": {
     "bkn": "que sondas",
@@ -57420,16 +57639,15 @@ export const all_stra = {
     "bkrtic": "escogí",
     "bkrtm": "os habéis elegido",
     "bkrv": "escogeos",
-    "bkvr": "escogido",
+    "bkvr": "escogidos",
+    "bkvri": "escogidos",
     "ebkr": "escogeré",
     "ebkrh": "estudiadas",
     "ebkrhv": "que yo escogí",
     "hbkr": "que ha escogido",
     "ibkr": "escogiere",
-    "ikbr": "está entre",
     "nbkr": "escogida",
     "nbkrh": "escojamos",
-    "s": "y escogidos",
     "tbkr": "escojas",
     "vbkr": "y escogerá",
     "vbkrt": "escoge",
@@ -57570,6 +57788,7 @@ export const all_stra = {
     "hbn": "enseña",
     "hmbin": "los aptos",
     "hmbinim": "que enseñaban",
+    "hmbvnim": "que enseñaban",
     "htbnnt": "has tú considerado",
     "htbvnn": "tiene entendimiento",
     "htbvnnv": "considerad",
@@ -57638,11 +57857,13 @@ export const all_stra = {
     "vbinicm": "entre",
     "vbinihm": "entre",
     "vbiniv": "codos y",
+    "vbinv": "codos y",
     "vmbin": "por medio"
   },
   "H997": {
     "bin": "entre",
-    "binihn": "entre"
+    "binihn": "entre",
+    "binihvn": "entre"
   },
   "H998": {
     "bbinh": "inteligencia",

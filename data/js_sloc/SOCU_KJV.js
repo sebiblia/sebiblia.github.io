@@ -107,7 +107,7 @@ export const all_socu = {
     "even as a father": 1,
     "even the fathers": 1,
     "even until now both we and also our fathers": 1,
-    "father": 16,
+    "father": 17,
     "fathers": 19,
     "for a father": 1,
     "for all of my father’s": 1,
@@ -379,7 +379,7 @@ export const all_socu = {
     "your father’s": 2
   },
   "H10": {
-    "and destruction": 1
+    "and destruction": 2
   },
   "H100": {
     "an hook": 1,
@@ -480,7 +480,7 @@ export const all_socu = {
     "and out of the house": 2,
     "and put his household": 2,
     "and she and he and her house": 1,
-    "and the house": 69,
+    "and the house": 68,
     "and the household": 2,
     "and the houses": 29,
     "and the tablets": 1,
@@ -501,7 +501,7 @@ export const all_socu = {
     "and toward the house": 2,
     "and unto all the house": 1,
     "and unto his own house": 1,
-    "and unto the house": 2,
+    "and unto the house": 1,
     "and unto this house": 2,
     "and upon all his household": 1,
     "and upon his house": 1,
@@ -542,10 +542,10 @@ export const all_socu = {
     "concerning the house": 3,
     "concerning the houses": 2,
     "concerning this house": 1,
-    "court": 2,
+    "court": 1,
     "even all that was in the house": 1,
     "even all the house": 1,
-    "even over against his house": 2,
+    "even over against his house": 1,
     "even the house": 2,
     "even to his house": 2,
     "even to the house": 2,
@@ -602,11 +602,11 @@ export const all_socu = {
     "him out of the house": 1,
     "him to his house": 1,
     "him unto the house": 1,
-    "his house": 14,
+    "his house": 12,
     "his household": 2,
     "his own house": 6,
     "home": 18,
-    "house": 351,
+    "house": 349,
     "household": 11,
     "houses": 30,
     "i and my house": 1,
@@ -622,7 +622,7 @@ export const all_socu = {
     "in houses": 1,
     "in mine house": 5,
     "in my house": 5,
-    "in the house": 152,
+    "in the house": 151,
     "in the houses": 1,
     "in the places": 1,
     "in the prison": 1,
@@ -679,7 +679,7 @@ export const all_socu = {
     "me in prison": 1,
     "me in the house": 1,
     "me in this house": 1,
-    "me to house": 3,
+    "me to house": 2,
     "mine house": 1,
     "my house": 6,
     "myself in the house": 6,
@@ -715,7 +715,7 @@ export const all_socu = {
     "of the daughter": 1,
     "of the door": 1,
     "of the families": 5,
-    "of the house": 439,
+    "of the house": 438,
     "of the houses": 3,
     "of the prison": 4,
     "of the ranges": 2,
@@ -740,8 +740,8 @@ export const all_socu = {
     "out of this house": 1,
     "out of thy house": 1,
     "out of your houses": 2,
-    "over against his house": 3,
-    "over against their house": 4,
+    "over against his house": 1,
+    "over against their house": 2,
     "over his house": 1,
     "over my house": 1,
     "over the house": 5,
@@ -851,7 +851,7 @@ export const all_socu = {
     "to his own house": 6,
     "to house": 2,
     "to myself for an house": 1,
-    "to the house": 59,
+    "to the house": 58,
     "to the ruler of his house": 2,
     "to the whole house": 1,
     "to their house": 1,
@@ -962,6 +962,9 @@ export const all_socu = {
     "to the house": 1,
     "was made in the house": 1
   },
+  "H1006": {
+    "to bajith": 1
+  },
   "H1007": {
     "at beth–aven": 2,
     "beth–aven": 2,
@@ -972,7 +975,7 @@ export const all_socu = {
   },
   "H1008": {
     "against beth–el": 2,
-    "and beth–el": 11,
+    "and beth–el": 10,
     "any more at beth–el": 2,
     "beneath beth–el": 2,
     "beth–el": 10,
@@ -1014,26 +1017,26 @@ export const all_socu = {
   },
   "H1010": {
     "and beth–baal–meon": 3,
-    "and upon beth–meon": 3
+    "and upon beth–meon": 2
   },
   "H1011": {
-    "and at beth–birei": 3
+    "and at beth–birei": 2
   },
   "H1012": {
     "unto beth–barah": 8
   },
   "H1013": {
-    "of beth–gader": 3
+    "of beth–gader": 2
   },
   "H1014": {
-    "and upon beth–gamul": 3
+    "and upon beth–gamul": 2
   },
   "H1015": {
     "and upon beth–diblathaim": 2
   },
   "H1016": {
     "beth–dagon": 2,
-    "to beth–dagon": 3
+    "to beth–dagon": 2
   },
   "H1017": {
     "the beth–elite": 2
@@ -1049,7 +1052,7 @@ export const all_socu = {
     "with all his bands": 1
   },
   "H1020": {
-    "and beth–jeshimoth": 3,
+    "and beth–jeshimoth": 2,
     "beth–jeshimoth": 2,
     "from beth–jesimoth": 2,
     "to beth–jeshimoth": 2
@@ -1066,14 +1069,14 @@ export const all_socu = {
     "that was far off": 2
   },
   "H1024": {
-    "and at beth–marcaboth": 3,
+    "and at beth–marcaboth": 2,
     "and beth–marcaboth": 2
   },
   "H1025": {
-    "of beth–emek": 3
+    "of beth–emek": 2
   },
   "H1026": {
-    "and beth–arabah": 3,
+    "and beth–arabah": 2,
     "beth–arabah": 2,
     "of beth–arabah": 2
   },
@@ -1081,7 +1084,7 @@ export const all_socu = {
     "beth–aram": 2
   },
   "H1028": {
-    "and beth–haran": 3
+    "and beth–haran": 2
   },
   "H1029": {
     "to beth–shittah": 2
@@ -1117,13 +1120,13 @@ export const all_socu = {
   "H1035": {
     "and beth–lehem": 2,
     "at beth–lehem": 4,
-    "beth–lehem": 5,
+    "beth–lehem": 4,
     "but thou beth–lehem": 2,
     "even beth–lehem": 2,
     "from beth–lehem": 2,
     "from beth–lehem–judah": 6,
     "in beth–lehem": 2,
-    "of beth–lehem": 23,
+    "of beth–lehem": 22,
     "of beth–lehem–judah": 8,
     "out of beth–lehem–judah": 4,
     "the same is beth–lehem": 2,
@@ -1143,7 +1146,7 @@ export const all_socu = {
     "of beth–maachah": 2
   },
   "H1039": {
-    "and beth–nimrah": 5
+    "and beth–nimrah": 4
   },
   "H104": {
     "letter": 1,
@@ -1156,11 +1159,12 @@ export const all_socu = {
     "and beth–anoth": 2
   },
   "H1043": {
-    "and beth–anath": 3,
-    "and of beth–anath": 6,
-    "of beth–anath": 6
+    "and beth–anath": 2,
+    "and of beth–anath": 4,
+    "of beth–anath": 4
   },
   "H1044": {
+    "house": 2,
     "of the shearing house": 2
   },
   "H1046": {
@@ -1168,7 +1172,7 @@ export const all_socu = {
     "and beth–palet": 2
   },
   "H1047": {
-    "and beth–peor": 3,
+    "and beth–peor": 2,
     "beth–peor": 6
   },
   "H1048": {
@@ -1198,11 +1202,11 @@ export const all_socu = {
     "the inhabitants of beth–shean": 2
   },
   "H1053": {
-    "and beth–shemesh": 11,
+    "and beth–shemesh": 10,
     "and they of beth–shemesh": 2,
     "at beth–shemesh": 8,
     "beth–shemesh": 2,
-    "of beth–shemesh": 26,
+    "of beth–shemesh": 24,
     "to beth–shemesh": 4
   },
   "H1054": {
@@ -1344,7 +1348,7 @@ export const all_socu = {
     "unto the firstborn": 4,
     "was the firstborn": 1,
     "were the firstborn": 1,
-    "which is indeed the firstborn": 2,
+    "which is indeed the firstborn": 1,
     "who was the firstborn": 1,
     "with the firstling": 3
   },
@@ -1404,7 +1408,7 @@ export const all_socu = {
   },
   "H1066": {
     "bochim": 1,
-    "to bochim": 2
+    "to bochim": 1
   },
   "H1067": {
     "and the firstborn": 3,
@@ -1417,6 +1421,7 @@ export const all_socu = {
   },
   "H1069": {
     "as of her that bringeth forth her first child": 1,
+    "firstborn": 1,
     "firstling": 1,
     "it shall bring forth new fruit": 1
   },
@@ -1520,6 +1525,9 @@ export const all_socu = {
   "H1088": {
     "and balah": 1
   },
+  "H1089": {
+    "and troubled": 1
+  },
   "H109": {
     "and to grieve": 1
   },
@@ -1582,7 +1590,7 @@ export const all_socu = {
     "provender": 1
   },
   "H1099": {
-    "upon nothing": 1
+    "upon nothing": 2
   },
   "H11": {
     "and destruction": 1,
@@ -1609,7 +1617,7 @@ export const all_socu = {
     "thou art wicked": 1
   },
   "H1101": {
-    "and gave provender": 2,
+    "and gave provender": 1,
     "and there confound": 1,
     "did there confound": 1,
     "he hath mixed": 1,
@@ -1642,7 +1650,7 @@ export const all_socu = {
     "hath swallowed up": 1,
     "he eateth it up": 1,
     "he hath swallowed down": 1,
-    "he hath swallowed me up": 1,
+    "he hath swallowed me up": 2,
     "he hath swallowed up": 4,
     "he will swallow up": 1,
     "if he destroy": 1,
@@ -1716,6 +1724,9 @@ export const all_socu = {
     "under balaam": 2,
     "unto balaam": 16,
     "with balaam": 1
+  },
+  "H111": {
+    "that hadad": 1
   },
   "H1110": {
     "and maketh it waste": 1,
@@ -1811,7 +1822,7 @@ export const all_socu = {
     "of high places": 1,
     "of the high places": 14,
     "on the high place": 1,
-    "on the high places": 3,
+    "on the high places": 4,
     "save that the high places": 2,
     "still in the high places": 3,
     "still on the high places": 2,
@@ -1838,9 +1849,11 @@ export const all_socu = {
   },
   "H1119": {
     "at": 1,
+    "for the dunghill": 2,
     "him with": 1,
     "into": 1,
     "of it in": 1,
+    "snow water": 1,
     "that they may privily": 1,
     "thereof in": 1,
     "through": 1,
@@ -1850,7 +1863,7 @@ export const all_socu = {
     "unto iddo": 4
   },
   "H1120": {
-    "and bamoth–baal": 3,
+    "and bamoth–baal": 2,
     "and from bamoth": 1,
     "of baal": 2,
     "to bamoth": 1
@@ -1859,7 +1872,7 @@ export const all_socu = {
     "a bullock": 1,
     "a calf": 1,
     "a covenant with the children": 2,
-    "a son": 47,
+    "a son": 46,
     "a young": 8,
     "after the children": 2,
     "against her young ones": 1,
@@ -1885,7 +1898,7 @@ export const all_socu = {
     "also and thy children": 1,
     "also of the sons": 1,
     "also that the children": 2,
-    "also the children": 1,
+    "also the children": 2,
     "also the robbers": 1,
     "also the son": 4,
     "also the sons": 1,
@@ -2093,7 +2106,7 @@ export const all_socu = {
     "but all the children": 1,
     "but as for the children": 2,
     "but he shall give his sons": 1,
-    "but his sons": 1,
+    "but his sons": 2,
     "but if they be the children": 1,
     "but in his son’s": 1,
     "but of the children": 2,
@@ -2105,7 +2118,7 @@ export const all_socu = {
     "but thou son": 1,
     "but thy son": 2,
     "but unto the sons": 3,
-    "but when the children": 4,
+    "but when the children": 3,
     "by the sons": 1,
     "certain of the children": 10,
     "child": 6,
@@ -2134,7 +2147,7 @@ export const all_socu = {
     "for her children": 4,
     "for his children": 2,
     "for his son": 4,
-    "for his sons": 4,
+    "for his sons": 5,
     "for i speak not with your children": 1,
     "for me against the children": 2,
     "for my son": 3,
@@ -2189,7 +2202,7 @@ export const all_socu = {
     "here am i who art thou my son": 1,
     "him a son": 7,
     "him and his son": 3,
-    "him and his sons": 3,
+    "him and his sons": 4,
     "him children": 3,
     "him is not he the son": 2,
     "him let the children": 1,
@@ -2198,7 +2211,7 @@ export const all_socu = {
     "him unto me for he shall surely die": 2,
     "himself with a young": 2,
     "his children": 11,
-    "his own children": 1,
+    "his own children": 2,
     "his own son": 1,
     "his son": 438,
     "his sons": 32,
@@ -2256,7 +2269,7 @@ export const all_socu = {
     "me thy son": 1,
     "me ye or your children": 1,
     "men": 17,
-    "might make his son": 2,
+    "might make his son": 3,
     "more sons": 1,
     "more than all his children": 2,
     "more than the sons": 1,
@@ -2266,7 +2279,7 @@ export const all_socu = {
     "moreover thou son": 2,
     "moreover unto me son": 1,
     "my children": 2,
-    "my son": 88,
+    "my son": 89,
     "my sons": 3,
     "my son’s": 2,
     "namely of the children": 3,
@@ -2345,7 +2358,7 @@ export const all_socu = {
     "of the assyrians": 1,
     "of the babylonians": 1,
     "of the breed": 1,
-    "of the children": 533,
+    "of the children": 534,
     "of the common": 1,
     "of the first": 84,
     "of the gileadites": 2,
@@ -2442,13 +2455,13 @@ export const all_socu = {
     "the blood of the children": 1,
     "the bullock": 2,
     "the child": 1,
-    "the children": 720,
-    "the daughter": 4,
+    "the children": 719,
+    "the daughter": 3,
     "the foal": 1,
     "the hostages": 1,
     "the men": 3,
     "the people": 1,
-    "the son": 2765,
+    "the son": 2753,
     "the sons": 233,
     "the strangers": 1,
     "the young": 1,
@@ -2523,7 +2536,7 @@ export const all_socu = {
     "those that are appointed": 1,
     "thou also son": 1,
     "thou also unto the children": 1,
-    "thou and thy children": 2,
+    "thou and thy children": 3,
     "thou and thy son": 3,
     "thou and thy sons": 5,
     "thou my son": 1,
@@ -2717,7 +2730,7 @@ export const all_socu = {
     "be builded": 4,
     "build": 1,
     "builded": 9,
-    "building": 2,
+    "building": 1,
     "for the building": 1,
     "hath it been in building": 1,
     "have built": 1,
@@ -2757,6 +2770,7 @@ export const all_socu = {
     "and have built": 2,
     "and he builded": 2,
     "and he built": 17,
+    "and he repaired": 1,
     "and i will build": 3,
     "and it cannot be built again": 1,
     "and let us build up": 1,
@@ -2925,7 +2939,7 @@ export const all_socu = {
     "which i am about to build": 1,
     "which i build": 1,
     "which i have builded": 1,
-    "which i have built": 5,
+    "which i have built": 6,
     "which solomon had built": 2,
     "which the builders": 1,
     "which they builded": 1,
@@ -3059,7 +3073,7 @@ export const all_socu = {
     "that his master’s": 1,
     "that my lord": 4,
     "that when my master": 1,
-    "the lord": 4,
+    "the lord": 6,
     "thee thy master’s": 2,
     "their lord": 2,
     "their masters’": 1,
@@ -3069,7 +3083,7 @@ export const all_socu = {
     "therefore shall the lord": 1,
     "these have no master": 2,
     "thou thy lord’s": 1,
-    "thy lord": 7,
+    "thy lord": 8,
     "thy master": 4,
     "thy master’s": 2,
     "to his master": 3,
@@ -3084,7 +3098,7 @@ export const all_socu = {
     "unto him didst not thou my lord": 1,
     "unto him my lord": 2,
     "unto him nay my lord": 1,
-    "unto his master": 4,
+    "unto his master": 5,
     "unto his master’s": 2,
     "unto my lord": 20,
     "unto my master": 4,
@@ -3115,7 +3129,7 @@ export const all_socu = {
   },
   "H1130": {
     "and ben–hadad": 14,
-    "ben–hadad": 10,
+    "ben–hadad": 12,
     "but ben–hadad": 2,
     "him then ben–hadad": 4,
     "of ben–hadad": 10,
@@ -3146,7 +3160,7 @@ export const all_socu = {
     "the son of hesed": 2
   },
   "H1137": {
-    "and bani": 3,
+    "and bani": 4,
     "bani": 6,
     "of bani": 7
   },
@@ -3200,7 +3214,7 @@ export const all_socu = {
     "in benjamin’s": 1,
     "in her place from benjamin’s": 1,
     "now benjamin": 1,
-    "of benjamin": 99,
+    "of benjamin": 98,
     "out of benjamin": 1,
     "that belongeth to benjamin": 1,
     "the sons of benjamin": 1,
@@ -3338,7 +3352,7 @@ export const all_socu = {
   },
   "H1165": {
     "and their beasts": 2,
-    "in his beast": 1,
+    "in his beast": 2,
     "that we and our cattle": 1,
     "their cattle": 1,
     "your beasts": 1
@@ -3349,6 +3363,7 @@ export const all_socu = {
     "and married": 1,
     "beulah": 2,
     "for i am married": 1,
+    "in unto her and be her husband": 1,
     "is thine husband": 1,
     "married": 1,
     "marrieth": 2,
@@ -3670,6 +3685,7 @@ export const all_socu = {
   "H1198": {
     "a brutish": 1,
     "and the brutish person": 1,
+    "is brutish": 1,
     "so foolish": 1,
     "surely i am more brutish": 1
   },
@@ -3905,15 +3921,18 @@ export const all_socu = {
   },
   "H1207": {
     "and fens": 1,
-    "but the miry places": 1,
+    "but the miry places": 2,
     "without mire": 1
+  },
+  "H1208": {
+    "of the vintage": 1
   },
   "H1209": {
     "bezai": 1,
     "of bezai": 2
   },
   "H121": {
-    "adam": 2,
+    "adam": 3,
     "and adam": 1,
     "and unto adam": 1,
     "as adam": 1,
@@ -3975,6 +3994,7 @@ export const all_socu = {
     "or is it gain": 1,
     "the gain": 1,
     "their covetousness": 1,
+    "their gain": 1,
     "to covetousness": 2,
     "what profit": 2
   },
@@ -4349,7 +4369,7 @@ export const all_socu = {
     "him every morning": 1,
     "him in the morning": 1,
     "i will early": 1,
-    "in the morning": 80,
+    "in the morning": 79,
     "into the morning": 1,
     "is as a morning": 1,
     "it every": 2,
@@ -4577,7 +4597,8 @@ export const all_socu = {
     "by the pureness": 1
   },
   "H1253": {
-    "never": 1
+    "never": 1,
+    "upon thee and purely": 1
   },
   "H1254": {
     "above me to make yourselves fat": 1,
@@ -4669,6 +4690,7 @@ export const all_socu = {
   "H1262": {
     "and give": 1,
     "choose": 1,
+    "not neither did he eat": 1,
     "that i may eat": 2,
     "they were their meat": 1,
     "to cause": 1,
@@ -4718,7 +4740,7 @@ export const all_socu = {
     "berothah": 1
   },
   "H1269": {
-    "of birzavith": 1
+    "of birzavith": 2
   },
   "H127": {
     "against the land": 3,
@@ -4907,11 +4929,14 @@ export const all_socu = {
   "H1273": {
     "the barhumite": 1
   },
+  "H1274": {
+    "between the fat": 1
+  },
   "H1275": {
     "and beri": 1
   },
   "H1276": {
-    "and all the berites": 2
+    "and all the berites": 1
   },
   "H1277": {
     "and fat": 1,
@@ -4945,7 +4970,7 @@ export const all_socu = {
     "bars": 12,
     "for the bars": 4,
     "her bars": 2,
-    "his bars": 2,
+    "his bars": 3,
     "his fugitives": 1,
     "in the bars": 1,
     "nor bars": 1,
@@ -5197,7 +5222,7 @@ export const all_socu = {
     "all the knees": 1,
     "and all knees": 2,
     "and the knees": 1,
-    "between his knees": 1,
+    "between his knees": 2,
     "his knees": 1,
     "knees": 3,
     "me upon my knees": 1,
@@ -5289,7 +5314,7 @@ export const all_socu = {
     "and berechiah": 3,
     "berechiah": 1,
     "of berachiah": 1,
-    "of berechiah": 7
+    "of berechiah": 6
   },
   "H1297": {
     "but": 2,
@@ -5311,7 +5336,8 @@ export const all_socu = {
     "edomites": 2,
     "for again the edomites": 1,
     "of the edomites": 1,
-    "the edomite": 4
+    "the edomite": 4,
+    "to syria": 1
   },
   "H1300": {
     "and lightnings": 1,
@@ -5423,6 +5449,9 @@ export const all_socu = {
   },
   "H1312": {
     "bishlam": 1
+  },
+  "H1313": {
+    "with my spice": 1
   },
   "H1314": {
     "and for spices": 1,
@@ -5750,7 +5779,7 @@ export const all_socu = {
     "of daughters": 1,
     "of his daughters": 4,
     "of our daughters": 1,
-    "of the daughter": 23,
+    "of the daughter": 24,
     "of the daughters": 27,
     "of the eye": 1,
     "of the first": 3,
@@ -5778,7 +5807,7 @@ export const all_socu = {
     "that our daughters": 1,
     "that the daughters": 3,
     "the company": 1,
-    "the daughter": 129,
+    "the daughter": 128,
     "the daughters": 11,
     "the villages": 1,
     "thee the daughters": 1,
@@ -5915,6 +5944,9 @@ export const all_socu = {
   "H1335": {
     "between the parts": 2,
     "piece": 1
+  },
+  "H1336": {
+    "of bether": 1
   },
   "H1337": {
     "of bath–rabbim": 2
@@ -6170,7 +6202,7 @@ export const all_socu = {
     "your bodies": 2
   },
   "H1355": {
-    "the back": 1
+    "the back": 2
   },
   "H1356": {
     "full of ditches": 2,
@@ -6495,7 +6527,7 @@ export const all_socu = {
   },
   "H1368": {
     "a mighty": 3,
-    "a mighty man": 4,
+    "a mighty man": 3,
     "a mighty one": 1,
     "against the mighty": 3,
     "all that were strong": 1,
@@ -6546,7 +6578,7 @@ export const all_socu = {
     "mighties": 2,
     "mightiest": 1,
     "mighty": 10,
-    "mighty men": 9,
+    "mighty men": 10,
     "my mighty ones": 1,
     "neither let the mighty": 1,
     "neither shall the mighty": 1,
@@ -6626,7 +6658,7 @@ export const all_socu = {
     "my might": 1,
     "nor his power": 1,
     "not in the strength": 1,
-    "of his power": 1,
+    "of his power": 2,
     "of their might": 2,
     "of thy power": 1,
     "sake that he might make his mighty power": 1,
@@ -6842,7 +6874,7 @@ export const all_socu = {
   "H1393": {
     "and the gibeonites": 1,
     "of the gibeonites": 1,
-    "the gibeonite": 2,
+    "the gibeonite": 1,
     "the gibeonites": 3,
     "unto the gibeonites": 1,
     "unto them now the gibeonites": 2
@@ -7005,7 +7037,7 @@ export const all_socu = {
     "to the housetops": 1,
     "to the roof": 5,
     "to the top": 1,
-    "to the top of the house": 1,
+    "to the top of the house": 2,
     "unto them upon the roof": 1,
     "upon the house top": 1,
     "upon the housetops": 2,
@@ -7019,9 +7051,11 @@ export const all_socu = {
     "and it was like coriander": 1,
     "was as coriander": 1
   },
-  "H1409": {
-    "a troop": 1,
+  "H1408": {
     "for that troop": 1
+  },
+  "H1409": {
+    "a troop": 2
   },
   "H141": {
     "and adoniram": 2
@@ -7092,12 +7126,15 @@ export const all_socu = {
     "were bands": 1
   },
   "H1417": {
-    "shall be cuttings": 1,
+    "shall be cuttings": 1
+  },
+  "H1418": {
     "the furrows": 1
   },
   "H1419": {
     "a great": 40,
     "a great multitude": 2,
+    "a man": 1,
     "abundant": 1,
     "all that great": 1,
     "all the great": 2,
@@ -7126,7 +7163,7 @@ export const all_socu = {
     "and it seemed great": 1,
     "and it shall be that every great": 1,
     "and of great": 2,
-    "and the great": 4,
+    "and the great": 5,
     "and the greater": 1,
     "and the greatest": 1,
     "and the high": 1,
@@ -7333,7 +7370,7 @@ export const all_socu = {
     "my greatness": 1,
     "of greatness": 1,
     "of the greatness": 1,
-    "thy greatness": 1
+    "thy greatness": 2
   },
   "H1421": {
     "and the revilings": 1,
@@ -7362,6 +7399,7 @@ export const all_socu = {
     "and the gadites": 6,
     "and to the gadites": 3,
     "and unto the gadites": 1,
+    "of gad": 1,
     "of the gadites": 1,
     "the gadite": 1,
     "the gadites": 2
@@ -7371,6 +7409,9 @@ export const all_socu = {
   },
   "H1427": {
     "gaddiel": 1
+  },
+  "H1428": {
+    "all his banks": 1
   },
   "H1429": {
     "thy kids": 1
@@ -7414,7 +7455,7 @@ export const all_socu = {
     "for he shall magnify": 1,
     "for now shall he be great": 1,
     "for thou hast magnified": 1,
-    "great": 9,
+    "great": 10,
     "great things": 4,
     "greater": 2,
     "grew": 6,
@@ -7465,11 +7506,11 @@ export const all_socu = {
     "thus will i magnify": 1,
     "till they were grown": 1,
     "to magnify": 1,
-    "until he became": 3,
+    "until he became": 2,
     "was grown": 3,
     "was much set by": 2,
     "was with him and magnified": 1,
-    "waxed great": 3,
+    "waxed great": 2,
     "wherefore thou art great": 1,
     "which brought them up": 1,
     "will be magnified": 1,
@@ -7479,6 +7520,7 @@ export const all_socu = {
     "yea he magnified": 1
   },
   "H1432": {
+    "and grew": 1,
     "great": 2,
     "grew": 1
   },
@@ -7615,6 +7657,7 @@ export const all_socu = {
   "H1448": {
     "all his hedges": 1,
     "and folds": 3,
+    "and hedges": 1,
     "by the hedges": 1,
     "in the hedges": 1,
     "sheepfolds": 1,
@@ -7632,7 +7675,7 @@ export const all_socu = {
     "and gederoth": 2
   },
   "H1451": {
-    "the gederite": 3
+    "the gederite": 1
   },
   "H1452": {
     "the gederathite": 1
@@ -7747,7 +7790,7 @@ export const all_socu = {
     "among all nations": 2,
     "among all the nations": 4,
     "among the gentiles": 6,
-    "among the heathen": 36,
+    "among the heathen": 37,
     "among the nations": 23,
     "and against all the nations": 1,
     "and all nations": 4,
@@ -7772,7 +7815,7 @@ export const all_socu = {
     "and these nations": 1,
     "and what nation": 1,
     "any more and the heathen": 1,
-    "any more neither shalt thou cause thy nations": 2,
+    "any more neither shalt thou cause thy nations": 3,
     "any of these nations": 1,
     "are among the gentiles": 1,
     "as a nation": 1,
@@ -7826,7 +7869,7 @@ export const all_socu = {
     "men of the nations": 2,
     "more than the nations": 3,
     "nation": 45,
-    "nations": 50,
+    "nations": 51,
     "nor in any nation": 1,
     "not among these nations": 1,
     "not and nations": 2,
@@ -7841,11 +7884,11 @@ export const all_socu = {
     "of another nation": 2,
     "of any nation": 1,
     "of him upon all nations": 1,
-    "of my people": 1,
+    "of my people": 2,
     "of nation": 2,
     "of nations": 10,
     "of the gentiles": 14,
-    "of the heathen": 38,
+    "of the heathen": 39,
     "of the nation": 2,
     "of the nations": 31,
     "of them and the heathen": 2,
@@ -7904,7 +7947,7 @@ export const all_socu = {
     "this people": 1,
     "those nations": 1,
     "though all the people": 1,
-    "thy nations": 2,
+    "thy nations": 4,
     "till all the people": 1,
     "to a nation": 2,
     "to a people": 1,
@@ -7932,7 +7975,7 @@ export const all_socu = {
     "us from the heathen": 1,
     "us like all the nations": 1,
     "was in all nations": 1,
-    "wherefore should the heathen": 3,
+    "wherefore should the heathen": 4,
     "wherein the nations": 1,
     "which thou shalt have shall be of the heathen": 1,
     "why do the heathen": 1,
@@ -7991,9 +8034,9 @@ export const all_socu = {
     "yet was she carried away": 1
   },
   "H1474": {
-    "and golan": 2,
+    "and golan": 3,
     "golan": 1,
-    "they gave golan": 1
+    "they gave golan": 2
   },
   "H1475": {
     "a pit": 1
@@ -8144,7 +8187,7 @@ export const all_socu = {
     "with thee into thy lot": 2
   },
   "H1487": {
-    "and clods": 1
+    "and clods": 2
   },
   "H1488": {
     "mowings": 1,
@@ -8223,6 +8266,7 @@ export const all_socu = {
     "is taken away": 1,
     "neither hath spoiled": 1,
     "neither rob": 1,
+    "rob": 1,
     "shall be violently taken away": 1,
     "spoiled": 1,
     "that which i took not away": 1,
@@ -8231,7 +8275,7 @@ export const all_socu = {
     "they pluck": 1,
     "they violently take away": 1,
     "thou wouldest take by force": 1,
-    "which he took violently away": 2,
+    "which he took violently away": 1,
     "who pluck off": 1,
     "whom they caught": 1,
     "whoso robbeth": 1
@@ -8254,6 +8298,7 @@ export const all_socu = {
   "H1500": {
     "by violence": 2,
     "none by violence": 1,
+    "that": 1,
     "that he had robbed": 1,
     "the spoil": 1
   },
@@ -8324,7 +8369,7 @@ export const all_socu = {
     "is the decree": 1
   },
   "H1511": {
-    "and the gezrites": 1
+    "and the gezrites": 2
   },
   "H1512": {
     "upon the belly": 1,
@@ -8354,7 +8399,7 @@ export const all_socu = {
     "and in all the valleys": 1,
     "and in thy valleys": 1,
     "and to the valley": 1,
-    "and to the valleys": 3,
+    "and to the valleys": 4,
     "but the valley": 4,
     "by the valley": 2,
     "every valley": 1,
@@ -8375,7 +8420,7 @@ export const all_socu = {
     "through the valley": 1,
     "to the valley": 7,
     "unto the valley": 2,
-    "valley": 3,
+    "valley": 4,
     "valleys": 1,
     "which are in the valley": 1,
     "which is in the valley": 2
@@ -8445,7 +8490,7 @@ export const all_socu = {
     "rejoiced": 1,
     "rejoiceth": 1,
     "shall be joyful": 2,
-    "shall he rejoice": 1,
+    "shall he rejoice": 2,
     "shall rejoice": 6,
     "shall they rejoice": 1,
     "thee shall rejoice": 1,
@@ -8462,6 +8507,7 @@ export const all_socu = {
     "for joy": 1,
     "joy": 1,
     "rejoice": 1,
+    "shall greatly": 2,
     "which are of your sort": 1
   },
   "H1525": {
@@ -8575,6 +8621,7 @@ export const all_socu = {
     "in edrei": 1
   },
   "H1540": {
+    "a captive": 1,
     "against me and there is none that sheweth": 2,
     "against thee and will discover": 1,
     "also shall disclose": 1,
@@ -9033,7 +9080,7 @@ export const all_socu = {
     "how i love": 1,
     "how long will ye love": 1,
     "i have loved": 4,
-    "i love": 6,
+    "i love": 7,
     "i will love": 1,
     "in that thou lovest": 2,
     "in thee and let such as love": 1,
@@ -9042,7 +9089,7 @@ export const all_socu = {
     "like him who was beloved": 1,
     "liketh": 1,
     "love": 8,
-    "loved": 19,
+    "loved": 20,
     "lover": 1,
     "loveth": 18,
     "loving": 1,
@@ -9072,7 +9119,7 @@ export const all_socu = {
     "thee a covenant with them thou lovedst": 1,
     "thee love": 1,
     "them let them also that love": 1,
-    "them that love": 2,
+    "them that love": 3,
     "them to love": 1,
     "then i loved": 1,
     "there thou and all thy friends": 1,
@@ -9366,6 +9413,7 @@ export const all_socu = {
   "H1590": {
     "a thief": 2,
     "after them as after a thief": 1,
+    "among thieves": 1,
     "and the thief": 1,
     "as the thief": 1,
     "him then that thief": 1,
@@ -9512,16 +9560,16 @@ export const all_socu = {
   },
   "H1607": {
     "and be moved": 1,
-    "and shook": 2,
+    "and shook": 3,
     "and were shaken": 2,
     "are moved": 2,
     "shall be troubled": 1,
-    "shook": 6,
+    "shook": 8,
     "thereof toss": 1
   },
   "H1608": {
     "gaash": 1,
-    "of gaash": 5
+    "of gaash": 3
   },
   "H1609": {
     "and gatam": 2,
@@ -9688,14 +9736,14 @@ export const all_socu = {
     "to scrape": 1
   },
   "H1624": {
-    "and be stirred up": 2,
+    "and be stirred up": 3,
     "because thou hast striven": 1,
     "contend": 1,
     "for why shouldest thou meddle": 1,
     "it and contend": 1,
     "meddle": 1,
     "neither contend": 1,
-    "shall be stirred up": 3,
+    "shall be stirred up": 4,
     "stirreth up": 3,
     "them not nor meddle": 1,
     "why shouldest thou meddle": 1
@@ -9710,6 +9758,7 @@ export const all_socu = {
   },
   "H1627": {
     "aloud": 1,
+    "and thy throat": 1,
     "be in their mouth": 1,
     "my throat": 1,
     "necks": 1,
@@ -9737,7 +9786,7 @@ export const all_socu = {
     "with the axe": 1
   },
   "H1632": {
-    "of great": 2
+    "of great": 1
   },
   "H1633": {
     "and shall break": 1,
@@ -9894,7 +9943,7 @@ export const all_socu = {
     "your exactions": 1
   },
   "H1647": {
-    "gershom": 6,
+    "gershom": 3,
     "of gershom": 8,
     "was gershom": 1,
     "were gershom": 1
@@ -9959,7 +10008,7 @@ export const all_socu = {
   },
   "H1655": {
     "and his body": 3,
-    "their bodies": 1,
+    "their bodies": 2,
     "upon whose bodies": 1
   },
   "H1656": {
@@ -10012,7 +10061,7 @@ export const all_socu = {
   },
   "H1663": {
     "and all the gittites": 1,
-    "the gittite": 9,
+    "the gittite": 8,
     "the gittites": 1
   },
   "H1664": {
@@ -10059,11 +10108,11 @@ export const all_socu = {
     "whereof ye were afraid": 1
   },
   "H1673": {
-    "and doeg": 2,
+    "and doeg": 4,
     "doeg": 1,
-    "to doeg": 2,
+    "to doeg": 4,
     "was doeg": 1,
-    "when doeg": 1
+    "when doeg": 2
   },
   "H1674": {
     "and with care": 1,
@@ -10200,12 +10249,12 @@ export const all_socu = {
     "themselves in the tabernacle": 2,
     "then the tabernacle": 1,
     "thy dwelling": 1,
-    "to his tent": 6,
+    "to his tent": 7,
     "to his tents": 1,
     "to tent": 2,
     "to the tabernacle": 2,
     "to the tent": 1,
-    "to their tents": 3,
+    "to their tents": 4,
     "to your tents": 4,
     "toward the tabernacle": 1,
     "unto a tent": 2,
@@ -10218,7 +10267,7 @@ export const all_socu = {
     "unto thy tents": 1,
     "unto your tents": 1,
     "was upon my tabernacle": 1,
-    "where his tent": 1,
+    "where his tent": 2,
     "which is in the tabernacle": 2,
     "which was at the tabernacle": 1,
     "you into your tents": 1,
@@ -10257,6 +10306,9 @@ export const all_socu = {
   "H1685": {
     "sacrifices": 1
   },
+  "H1686": {
+    "of dove’s dung": 1
+  },
   "H1687": {
     "and of the oracle": 1,
     "and the oracle": 2,
@@ -10289,7 +10341,7 @@ export const all_socu = {
   },
   "H1690": {
     "a lump": 2,
-    "cakes": 3,
+    "cakes": 2,
     "of a cake": 1
   },
   "H1691": {
@@ -10348,7 +10400,7 @@ export const all_socu = {
     "that sticketh closer": 1
   },
   "H1696": {
-    "according as he hath said": 2,
+    "according as he hath said": 1,
     "according as thou badest": 1,
     "according to all that he promised": 2,
     "against me and i will speak": 1,
@@ -10370,7 +10422,7 @@ export const all_socu = {
     "and hast promised": 1,
     "and have spoken": 1,
     "and have told": 2,
-    "and have ye not spoken": 2,
+    "and have ye not spoken": 1,
     "and he communed": 1,
     "and he rehearsed": 1,
     "and he said": 7,
@@ -10411,7 +10463,7 @@ export const all_socu = {
     "and they gave": 1,
     "and they said": 1,
     "and they shall speak": 1,
-    "and they spake": 9,
+    "and they spake": 10,
     "and they told": 2,
     "and thou hast promised": 1,
     "and thou shalt speak": 11,
@@ -10454,7 +10506,7 @@ export const all_socu = {
     "because ye have spoken": 1,
     "because ye speak": 1,
     "behold i have spoken": 1,
-    "behold thou hast spoken": 1,
+    "behold thou hast spoken": 2,
     "behold while thou yet talkest": 1,
     "but say": 1,
     "but speak": 1,
@@ -10668,7 +10720,7 @@ export const all_socu = {
     "thee what thou shalt say": 1,
     "them and he spake": 1,
     "them and spake": 1,
-    "them and speak": 4,
+    "them and speak": 5,
     "them neither spake": 1,
     "them not though they speak": 1,
     "them that speak": 1,
@@ -10848,7 +10900,7 @@ export const all_socu = {
     "all the things": 3,
     "all the words": 35,
     "all these things": 2,
-    "all these things at thy word": 2,
+    "all these things at thy word": 3,
     "all these words": 17,
     "all things": 4,
     "also the word": 1,
@@ -10914,7 +10966,7 @@ export const all_socu = {
     "as the duty": 2,
     "as the matter": 2,
     "as the word": 1,
-    "as thou hast said": 3,
+    "as thou hast said": 4,
     "as touching the words": 1,
     "at his word": 2,
     "at my word": 1,
@@ -10929,7 +10981,7 @@ export const all_socu = {
     "because of the words": 1,
     "because of this matter": 1,
     "because the word": 1,
-    "behold now the words": 3,
+    "behold now the words": 4,
     "behold the word": 1,
     "behold the words": 2,
     "behold they are written in the book": 3,
@@ -11022,15 +11074,15 @@ export const all_socu = {
     "his portion": 1,
     "his saying": 1,
     "his signs": 1,
-    "his word": 22,
-    "his words": 7,
+    "his word": 26,
+    "his words": 8,
     "how the matter": 2,
     "i a word": 2,
     "i beseech thee the word": 1,
     "i have a message": 1,
     "i have an errand": 1,
     "i pray thee at the word": 2,
-    "i pray thee be like the word": 3,
+    "i pray thee be like the word": 4,
     "if the thing": 2,
     "if there arise a matter": 2,
     "in a thing": 1,
@@ -11044,7 +11096,7 @@ export const all_socu = {
     "in the word": 2,
     "in the words": 1,
     "in this thing": 6,
-    "in thy word": 6,
+    "in thy word": 7,
     "iniquities": 1,
     "is not my word": 1,
     "is not this the word": 1,
@@ -11062,7 +11114,7 @@ export const all_socu = {
     "let the thing": 1,
     "let this thing": 1,
     "let thy promise": 1,
-    "let thy word": 7,
+    "let thy word": 9,
     "lying": 1,
     "manner": 4,
     "matter": 10,
@@ -11090,7 +11142,7 @@ export const all_socu = {
     "nor the word": 2,
     "not a word": 2,
     "not according to this word": 1,
-    "not against his word": 1,
+    "not against his word": 2,
     "not all the words": 1,
     "not any thing": 1,
     "not even according to all things": 1,
@@ -11106,7 +11158,7 @@ export const all_socu = {
     "not this thing": 1,
     "not to the words": 1,
     "not unto the words": 4,
-    "nothing": 18,
+    "nothing": 19,
     "nothing of the word": 1,
     "now a thing": 1,
     "now also let it be according unto your words": 1,
@@ -11142,7 +11194,7 @@ export const all_socu = {
     "of thine acts": 2,
     "of this thing": 3,
     "of thy acts": 2,
-    "of thy word": 1,
+    "of thy word": 2,
     "of thy words": 1,
     "of us a song": 1,
     "of words": 4,
@@ -11186,7 +11238,7 @@ export const all_socu = {
     "that thing": 1,
     "that this was the word": 2,
     "that this word": 1,
-    "that when thy sayings": 1,
+    "that when thy sayings": 2,
     "that your words": 1,
     "the care": 1,
     "the causes": 1,
@@ -11233,7 +11285,7 @@ export const all_socu = {
     "therefore my words": 1,
     "therefore the word": 1,
     "therefore the words": 1,
-    "therefore this thing": 1,
+    "therefore this thing": 2,
     "therefore to the word": 3,
     "therein all the words": 1,
     "thereof according to the word": 1,
@@ -11367,7 +11419,7 @@ export const all_socu = {
     "ye therefore the word": 1,
     "ye this word": 1,
     "yet in this thing": 1,
-    "you a thing": 2,
+    "you a thing": 1,
     "you in the matter": 3,
     "you the word": 1,
     "you these words": 1,
@@ -11605,6 +11657,9 @@ export const all_socu = {
     "of gold": 6,
     "the golden": 8
   },
+  "H1723": {
+    "the dehavites": 1
+  },
   "H1724": {
     "astonied": 1
   },
@@ -11619,7 +11674,8 @@ export const all_socu = {
     "and cause sorrow": 1
   },
   "H1728": {
-    "and it shall come to pass that the fishers": 1
+    "and it shall come to pass that the fishers": 1,
+    "fishers": 1
   },
   "H1729": {
     "with fishhooks": 1
@@ -11711,7 +11767,7 @@ export const all_socu = {
     "but upon david": 1,
     "but when david": 3,
     "caused david": 1,
-    "david": 280,
+    "david": 277,
     "david’s": 31,
     "doth not david": 2,
     "even against david": 1,
@@ -11763,7 +11819,7 @@ export const all_socu = {
     "so david’s": 1,
     "so when david": 1,
     "that david": 35,
-    "that david’s": 3,
+    "that david’s": 2,
     "that was between them between david": 1,
     "that were with him and when david": 4,
     "that were with him did david": 1,
@@ -11781,7 +11837,7 @@ export const all_socu = {
     "thou that david": 3,
     "thus david": 1,
     "to battle that david": 2,
-    "to david": 66,
+    "to david": 65,
     "to make david": 6,
     "to me and david": 3,
     "to the place which david": 2,
@@ -11817,7 +11873,7 @@ export const all_socu = {
     "with his uncle’s wife": 1
   },
   "H1734": {
-    "of dodo": 5
+    "of dodo": 6
   },
   "H1735": {
     "of dodavah": 1
@@ -11847,7 +11903,7 @@ export const all_socu = {
   },
   "H1740": {
     "and shall have purged": 1,
-    "he hath cast me out": 1,
+    "he hath cast me out": 2,
     "they washed": 1,
     "where they washed": 1
   },
@@ -11924,7 +11980,7 @@ export const all_socu = {
     "it to aaron’s": 1,
     "it unto aaron": 1,
     "it upon aaron": 3,
-    "of aaron": 71,
+    "of aaron": 70,
     "of aaron’s": 2,
     "of the aaronites": 2,
     "shall aaron": 2,
@@ -11958,11 +12014,11 @@ export const all_socu = {
     "than to dwell": 1
   },
   "H1753": {
-    "and among the inhabitants": 2,
-    "dwell": 1,
-    "dwelt": 2,
-    "that dwell": 2,
-    "the inhabitants": 2
+    "and among the inhabitants": 4,
+    "dwell": 2,
+    "dwelt": 3,
+    "that dwell": 4,
+    "the inhabitants": 4
   },
   "H1754": {
     "against thee round about": 1,
@@ -11982,7 +12038,7 @@ export const all_socu = {
     "as many": 2,
     "between me and you throughout your generations": 1,
     "between us and you and our generations": 1,
-    "endure to every": 2,
+    "endure to every": 3,
     "endureth throughout all": 2,
     "endureth to all": 2,
     "every generation": 2,
@@ -11992,7 +12048,7 @@ export const all_socu = {
     "for the generation": 1,
     "for your generations": 3,
     "from generation": 12,
-    "generation": 18,
+    "generation": 19,
     "generations": 53,
     "his generation": 1,
     "in all": 4,
@@ -12127,7 +12183,7 @@ export const all_socu = {
     "be able": 1,
     "be not able": 2,
     "enough": 2,
-    "for since": 4,
+    "for since": 3,
     "from": 3,
     "from the time": 1,
     "him sufficient": 1,
@@ -12149,7 +12205,7 @@ export const all_socu = {
   },
   "H1768": {
     "and whatsoever": 1,
-    "and whereas": 2,
+    "and whereas": 3,
     "came": 1,
     "even of": 3,
     "for": 2,
@@ -12225,7 +12281,7 @@ export const all_socu = {
     "will judge": 1
   },
   "H1778": {
-    "which may judge": 1
+    "which may judge": 2
   },
   "H1779": {
     "and judgment": 1,
@@ -12240,7 +12296,7 @@ export const all_socu = {
     "of judgment": 1,
     "the cause": 3,
     "the judgment": 3,
-    "there is a judgment": 2,
+    "there is a judgment": 4,
     "thou didst cause judgment": 1,
     "thy cause": 1,
     "yea strife": 1
@@ -12293,8 +12349,8 @@ export const all_socu = {
   },
   "H1787": {
     "and dishon": 2,
-    "dishon": 5,
-    "of dishon": 4,
+    "dishon": 3,
+    "of dishon": 2,
     "were these dishon": 1
   },
   "H1788": {
@@ -12354,7 +12410,7 @@ export const all_socu = {
   "H1794": {
     "and a contrite": 1,
     "broken": 1,
-    "he croucheth": 1,
+    "he croucheth": 2,
     "though thou hast sore broken": 1,
     "which thou hast broken": 1
   },
@@ -12542,7 +12598,7 @@ export const all_socu = {
     "the gates": 4,
     "the gold from the doors": 1,
     "thereof and the doors": 1,
-    "thy doors": 2,
+    "thy doors": 3,
     "to the door": 1,
     "unto the door": 1,
     "which have neither gates": 1,
@@ -12651,7 +12707,7 @@ export const all_socu = {
     "to the blood": 1,
     "to the bloody": 3,
     "unto him the blood": 2,
-    "unto him thy blood": 1,
+    "unto him thy blood": 2,
     "unto thee when thou wast in thy blood": 6,
     "upon him there shall be blood": 1,
     "upon it all the blood": 2,
@@ -12717,6 +12773,7 @@ export const all_socu = {
     "are destroyed": 1,
     "be cut off": 2,
     "how art thou cut off": 1,
+    "i have likened": 1,
     "is cut off": 2,
     "is me for i am undone": 1,
     "that perish": 2,
@@ -12815,10 +12872,10 @@ export const all_socu = {
     "have i desired": 1,
     "he coveteth": 1,
     "he hath desired": 1,
-    "longed": 2,
+    "longed": 3,
     "longeth": 1,
     "lusteth after": 1,
-    "neither desire": 2,
+    "neither desire": 4,
     "neither shalt thou covet": 1,
     "of all that he desireth": 1,
     "that lusted": 1,
@@ -12877,7 +12934,7 @@ export const all_socu = {
     "and of dan": 2,
     "and that were in dan": 1,
     "and why did dan": 1,
-    "dan": 16,
+    "dan": 15,
     "even to dan": 2,
     "even unto dan": 1,
     "from dan": 8,
@@ -12932,13 +12989,13 @@ export const all_socu = {
     "and it came to pass when i even i daniel": 1,
     "but daniel": 1,
     "but thou o daniel": 1,
-    "daniel": 13,
+    "daniel": 12,
     "i daniel": 2,
     "none like daniel": 1,
     "not daniel": 1,
     "o daniel": 1,
     "over daniel": 2,
-    "than daniel": 1,
+    "than daniel": 2,
     "then i daniel": 1,
     "unto daniel": 3,
     "unto me even unto me daniel": 1,
@@ -13073,6 +13130,7 @@ export const all_socu = {
     "and stamped it small": 1,
     "and thou shalt beat in pieces": 1,
     "corn is bruised": 2,
+    "even until it was as small": 1,
     "i did stamp": 1,
     "into powder": 1,
     "it to powder": 1,
@@ -13220,7 +13278,7 @@ export const all_socu = {
   },
   "H1870": {
     "a way": 10,
-    "according to his ways": 6,
+    "according to his ways": 7,
     "according to their way": 1,
     "according to thy ways": 1,
     "according unto all his ways": 1,
@@ -13230,6 +13288,7 @@ export const all_socu = {
     "against thee after the manner": 1,
     "all his ways": 1,
     "all the way": 1,
+    "all the ways": 1,
     "along by the high way": 4,
     "along that way": 1,
     "and a way": 1,
@@ -13270,13 +13329,14 @@ export const all_socu = {
     "by": 1,
     "by a way": 1,
     "by the same way": 1,
-    "by the way": 94,
+    "by the way": 93,
     "by the way side": 1,
     "by the wayside": 1,
     "by what way": 1,
     "conversation": 1,
     "eastward": 1,
     "even the way": 5,
+    "every way": 1,
     "for all his ways": 1,
     "for all my ways": 1,
     "for in the way": 1,
@@ -13307,8 +13367,8 @@ export const all_socu = {
     "his conversation": 1,
     "his journey": 1,
     "his own way": 1,
-    "his way": 20,
-    "his ways": 6,
+    "his way": 21,
+    "his ways": 7,
     "i being in the way": 1,
     "in a way": 3,
     "in all his ways": 7,
@@ -13340,7 +13400,7 @@ export const all_socu = {
     "me thy ways": 1,
     "me toward": 2,
     "mine own ways": 1,
-    "my way": 5,
+    "my way": 6,
     "my ways": 12,
     "neither are your ways": 2,
     "no more that way": 1,
@@ -13349,7 +13409,7 @@ export const all_socu = {
     "nor thy ways": 1,
     "not by the way": 2,
     "not from their ways": 1,
-    "not in his ways": 1,
+    "not in his ways": 2,
     "not in the way": 2,
     "not in thy ways": 1,
     "not the way": 3,
@@ -13360,7 +13420,7 @@ export const all_socu = {
     "of": 1,
     "of every way": 1,
     "of his way": 4,
-    "of his ways": 1,
+    "of his ways": 2,
     "of the way": 15,
     "of the ways": 1,
     "of their own way": 1,
@@ -13552,7 +13612,7 @@ export const all_socu = {
     "of him that seeketh": 1,
     "of it and enquired": 1,
     "of their enemies because they sought": 1,
-    "of them that seek": 1,
+    "of them that seek": 2,
     "or a necromancer": 1,
     "questioned": 1,
     "regard": 1,
@@ -13682,7 +13742,7 @@ export const all_socu = {
     "commissions": 1,
     "decree": 1,
     "for a commandment": 2,
-    "law": 2,
+    "law": 3,
     "laws": 2,
     "of the decree": 1,
     "was according to the law": 1,
@@ -13797,10 +13857,10 @@ export const all_socu = {
     "unto abel": 2
   },
   "H1894": {
-    "and ebony": 1
+    "and ebony": 2
   },
   "H1895": {
-    "let now the astrologers": 1
+    "let now the astrologers": 2
   },
   "H1896": {
     "but what hegai": 1,
@@ -13895,7 +13955,7 @@ export const all_socu = {
   "H1908": {
     "and hadad": 3,
     "and when hadad": 3,
-    "hadad": 9,
+    "hadad": 7,
     "that hadad": 1
   },
   "H1909": {
@@ -13909,6 +13969,7 @@ export const all_socu = {
     "a fool": 2,
     "a fool’s": 1,
     "and the fool": 1,
+    "are fools": 1,
     "but a fool’s": 1,
     "but every fool": 1,
     "but fools": 2,
@@ -14120,12 +14181,12 @@ export const all_socu = {
     "it may be": 1,
     "let it be": 1,
     "men tremble": 1,
-    "might": 3,
+    "might": 2,
     "sawest": 1,
     "shall be": 8,
     "shall come to pass": 3,
     "should come to pass": 2,
-    "should have": 3,
+    "should have": 2,
     "should there be": 1,
     "so it ceased": 1,
     "sought": 1,
@@ -14174,6 +14235,9 @@ export const all_socu = {
     "and hodaviah": 1,
     "of hodaviah": 2
   },
+  "H1939": {
+    "were hodaiah": 1
+  },
   "H194": {
     "if": 1,
     "if so be": 1,
@@ -14191,6 +14255,7 @@ export const all_socu = {
   },
   "H1942": {
     "and from the noisome": 1,
+    "and my calamity": 1,
     "himself in his wickedness": 1,
     "his mischievous": 1,
     "in their own naughtiness": 1,
@@ -14279,14 +14344,14 @@ export const all_socu = {
   "H1954": {
     "and hoshea": 2,
     "began hoshea": 1,
-    "by hosea": 3,
+    "by hosea": 2,
     "he and hoshea": 1,
     "hoshea": 2,
     "in hoshea": 1,
     "of hoshea": 4,
     "oshea": 2,
     "that came unto hosea": 1,
-    "to hosea": 3
+    "to hosea": 2
   },
   "H1955": {
     "hoshaiah": 1,
@@ -14523,7 +14588,7 @@ export const all_socu = {
   "H1979": {
     "even the goings": 2,
     "his ways": 1,
-    "in their walk": 1,
+    "in their walk": 2,
     "the companies": 1,
     "thy goings": 2,
     "to the ways": 2
@@ -14541,20 +14606,20 @@ export const all_socu = {
     "all along": 2,
     "all go": 1,
     "all of them they shall go": 1,
-    "also went": 4,
+    "also went": 2,
     "also went abroad": 1,
     "also which went": 1,
     "and all that followed": 1,
     "and also he cometh": 1,
     "and behold there came": 1,
-    "and came": 3,
+    "and came": 1,
     "and from walking up and down": 2,
     "and get": 1,
     "and go": 11,
     "and go over": 1,
     "and gone": 2,
     "and have not walked": 1,
-    "and he is quite": 2,
+    "and he is quite": 1,
     "and he shall walk": 1,
     "and he walketh": 1,
     "and he went": 2,
@@ -14562,22 +14627,22 @@ export const all_socu = {
     "and i go": 1,
     "and i have been with thee whithersoever thou hast walked": 1,
     "and i have walked": 1,
-    "and i likewise will go": 2,
+    "and i likewise will go": 1,
     "and i was with thee whithersoever thou wentest": 1,
     "and i will go": 1,
     "and i will walk": 2,
     "and it came to pass as they still": 2,
-    "and now behold i go": 2,
+    "and now behold i go": 1,
     "and now though thou wouldest needs": 2,
     "and shall go": 1,
     "and shalt go": 2,
     "and she go": 1,
     "and that thou go": 1,
     "and that we have walked": 1,
-    "and the travellers": 2,
+    "and the travellers": 1,
     "and they shall walk up and down": 1,
     "and they went": 4,
-    "and walk": 12,
+    "and walk": 10,
     "and walked": 7,
     "and walkest": 1,
     "and we will be gone": 1,
@@ -14586,40 +14651,40 @@ export const all_socu = {
     "and whatsoever goeth": 2,
     "and when they went": 1,
     "and who followed": 1,
-    "apace": 2,
+    "apace": 1,
     "are gone": 3,
     "are with you and i have walked": 2,
-    "as he went": 5,
+    "as he went": 4,
     "as one that travelleth": 2,
     "as they went": 3,
-    "as thou hast walked": 2,
+    "as thou hast walked": 1,
     "as when one goeth": 1,
     "be gone": 2,
     "because he walked": 1,
     "because he went": 1,
-    "because they went": 3,
+    "because they went": 2,
     "because thou hast not walked": 1,
-    "behold as soon as thou art departed": 2,
+    "behold as soon as thou art departed": 1,
     "behold i am at the point": 1,
     "behold i go": 1,
     "but have walked": 1,
     "but he himself went": 1,
     "but he walked": 1,
-    "but i am now going": 2,
+    "but i am now going": 1,
     "but none goeth": 1,
-    "but they went": 2,
+    "but they went": 1,
     "but walked": 1,
     "but we walk": 1,
-    "but who are they that shall go": 2,
+    "but who are they that shall go": 1,
     "but whoso walketh": 1,
     "by me by these things but will walk": 1,
-    "came": 8,
-    "city shall go": 4,
-    "come": 3,
+    "came": 9,
+    "city shall go": 2,
+    "come": 2,
     "cometh out": 1,
-    "continually": 8,
+    "continually": 9,
     "departed": 2,
-    "did walk": 3,
+    "did walk": 2,
     "do not all go": 1,
     "each one walking": 1,
     "followed": 2,
@@ -14628,17 +14693,17 @@ export const all_socu = {
     "for lo they are gone": 1,
     "for thee then i will come": 1,
     "for ye have not walked": 1,
-    "forth": 2,
-    "forward": 2,
+    "forth": 1,
+    "forward": 1,
     "from them that walk": 1,
-    "go": 18,
+    "go": 17,
     "go away": 1,
     "go forward": 1,
     "goeth": 6,
-    "going": 4,
+    "going": 3,
     "going on": 1,
     "gone": 1,
-    "greater": 2,
+    "greater": 1,
     "had gone": 1,
     "had walked": 1,
     "hath walked": 3,
@@ -14649,8 +14714,8 @@ export const all_socu = {
     "he is gone": 1,
     "he it is that doth go": 2,
     "he that goeth about": 1,
-    "he that walketh": 4,
-    "he walked": 3,
+    "he that walketh": 5,
+    "he walked": 2,
     "he went": 1,
     "himself followed": 1,
     "i am going": 1,
@@ -14664,7 +14729,7 @@ export const all_socu = {
     "i went": 1,
     "i went out": 1,
     "i whither goest": 1,
-    "i will surely": 4,
+    "i will surely": 2,
     "i will walk": 2,
     "if i have walked": 1,
     "in all the places wherein i have walked": 1,
@@ -14677,7 +14742,7 @@ export const all_socu = {
     "let every one of them pass away": 1,
     "long": 1,
     "man walketh": 1,
-    "me as thou hast walked": 2,
+    "me as thou hast walked": 1,
     "me seeing i go": 1,
     "men went": 3,
     "more": 1,
@@ -14690,27 +14755,27 @@ export const all_socu = {
     "not walk": 1,
     "not whither i went": 1,
     "now how i have walked": 1,
-    "of hers that went": 2,
+    "of hers that went": 1,
     "of such an one as goeth on still": 1,
-    "on": 12,
+    "on": 6,
     "or hast thou walked": 1,
     "over them and that thou goest": 1,
     "passeth away": 1,
-    "prospered": 2,
+    "prospered": 1,
     "ran along": 1,
-    "run": 3,
+    "run": 2,
     "running": 1,
     "sent": 1,
-    "shall come": 4,
-    "shall go": 6,
-    "shall surely": 3,
+    "shall come": 2,
+    "shall go": 4,
+    "shall surely": 1,
     "shall walk": 1,
     "she is gone up": 1,
     "she may go": 1,
     "she went": 1,
     "should walk": 1,
-    "so they walked to and fro": 5,
-    "speedily": 4,
+    "so they walked to and fro": 3,
+    "speedily": 2,
     "than the wandering": 1,
     "that follow": 2,
     "that followed": 1,
@@ -14721,29 +14786,29 @@ export const all_socu = {
     "that is it which goeth toward": 1,
     "that it may go": 1,
     "that passeth away": 2,
-    "that they might walk to and fro": 5,
+    "that they might walk to and fro": 3,
     "that they shall walk": 1,
-    "that thou camest": 3,
+    "that thou camest": 2,
     "that thou goest": 1,
-    "that thou mayest go": 3,
-    "that thou takest": 4,
+    "that thou mayest go": 2,
+    "that thou takest": 2,
     "that walk": 3,
     "that walked": 1,
     "that walketh": 8,
     "that was gone": 1,
-    "that we should go": 2,
-    "that went": 11,
+    "that we should go": 1,
+    "that went": 9,
     "that were conversant": 1,
     "that ye go": 1,
     "that ye went": 1,
-    "the priests going on": 8,
+    "the priests going on": 9,
     "thee and wilt walk": 1,
     "thee from coming": 1,
     "thee how i have walked": 1,
     "thee shall come": 1,
     "thee wherefore camest": 1,
     "them so they went": 1,
-    "them that went": 4,
+    "them that went": 2,
     "then i shall go": 1,
     "then i will walk": 1,
     "then went": 1,
@@ -14765,7 +14830,7 @@ export const all_socu = {
     "thou hast walked": 1,
     "thou hast walked up and down": 1,
     "to come": 1,
-    "to go": 2,
+    "to go": 1,
     "to him that walketh": 1,
     "to thee now that thou mayest go": 1,
     "to them that walk": 2,
@@ -14779,20 +14844,20 @@ export const all_socu = {
     "upon me and ye shall go": 1,
     "us not when thou wentest": 1,
     "walk": 6,
-    "walk to and fro": 5,
-    "walked": 17,
-    "walked in": 3,
-    "walketh": 11,
-    "walking": 10,
+    "walk to and fro": 3,
+    "walked": 14,
+    "walked in": 2,
+    "walketh": 10,
+    "walking": 7,
     "wandered": 1,
     "was gone": 1,
     "waxed": 7,
     "we have walked to and fro": 1,
     "we were conversant": 1,
-    "went": 48,
-    "went along": 4,
+    "went": 47,
+    "went along": 3,
     "went forth": 4,
-    "went on": 7,
+    "went on": 8,
     "went out": 2,
     "were wont to haunt": 1,
     "what am i eased": 1,
@@ -14801,7 +14866,7 @@ export const all_socu = {
     "when it moveth": 1,
     "when they went": 2,
     "when thou goest": 1,
-    "wherefore wilt thou go": 1,
+    "wherefore wilt thou go": 2,
     "wherein we went": 1,
     "wheresoever i have walked": 1,
     "which goeth": 1,
@@ -14811,28 +14876,28 @@ export const all_socu = {
     "which run continually": 1,
     "which shall march": 1,
     "which thou wentest": 3,
-    "which walk": 3,
+    "which walk": 2,
     "which walketh": 1,
     "which we go": 1,
-    "which went": 4,
+    "which went": 3,
     "whither they be gone": 1,
     "whither thou goest": 1,
     "whithersoever he went": 4,
     "who is gone": 1,
     "who walk": 1,
     "who walketh": 1,
-    "who went": 2,
+    "who went": 1,
     "whom i walk": 1,
     "whom they have walked": 1,
     "whoso walketh": 1,
     "why go": 1,
     "why wentest": 1,
-    "will go": 2,
+    "will go": 1,
     "will walk": 1,
-    "with her along weeping": 3,
+    "with her along weeping": 1,
     "with me he that walketh": 1,
-    "with me then i will go": 4,
-    "with us seeing i go": 3,
+    "with me then i will go": 1,
+    "with us seeing i go": 2,
     "wrought": 2,
     "ye walk": 1,
     "yet hast thou not walked": 1,
@@ -15011,9 +15076,9 @@ export const all_socu = {
     "so": 1,
     "that": 1,
     "that shall be in these": 1,
-    "that they": 3,
+    "that they": 2,
     "their": 1,
-    "them": 4,
+    "them": 3,
     "these": 3,
     "these are": 1,
     "they": 1,
@@ -15094,8 +15159,8 @@ export const all_socu = {
     "her multitude": 2,
     "himself for the noise": 1,
     "i will also make the multitude": 1,
-    "in it behold i say they are even as all the multitude": 2,
-    "in the city behold they are as all the multitude": 2,
+    "in it behold i say they are even as all the multitude": 3,
+    "in the city behold they are as all the multitude": 3,
     "is this great store": 1,
     "is touching the whole multitude": 1,
     "is upon all the multitude": 2,
@@ -15111,7 +15176,7 @@ export const all_socu = {
     "of the multitude": 1,
     "of the tumult": 1,
     "of this tumult": 1,
-    "over all his multitude": 1,
+    "over all his multitude": 2,
     "so shall the multitude": 1,
     "than the riches": 1,
     "that the noise": 1,
@@ -15175,12 +15240,12 @@ export const all_socu = {
   },
   "H2000": {
     "and destroy": 1,
-    "and discomfited": 3,
+    "and discomfited": 4,
     "and troubled": 1,
     "did vex": 1,
     "discomfited": 2,
     "it nor break": 1,
-    "me he hath crushed": 1,
+    "me he hath crushed": 2,
     "thee and will destroy": 1,
     "to consume": 1,
     "was against them to destroy": 1
@@ -15214,8 +15279,8 @@ export const all_socu = {
     "which haman": 2
   },
   "H2002": {
-    "and have a chain": 2,
-    "and put a chain": 1
+    "and have a chain": 4,
+    "and put a chain": 2
   },
   "H2003": {
     "as when the melting": 1
@@ -15226,7 +15291,7 @@ export const all_socu = {
     "more than they": 1,
     "not such like": 1,
     "than they": 1,
-    "thereby": 2,
+    "thereby": 1,
     "therein": 4,
     "withal": 3
   },
@@ -15287,7 +15352,7 @@ export const all_socu = {
     "unto me here": 1
   },
   "H2009": {
-    "and behold": 1,
+    "and behold": 3,
     "and lo": 2,
     "behold": 4,
     "lo": 1,
@@ -15635,6 +15700,9 @@ export const all_socu = {
   "H2024": {
     "and hara": 1
   },
+  "H2025": {
+    "so the altar": 1
+  },
   "H2026": {
     "all of them and i will slay": 1,
     "among them which slew": 1,
@@ -15684,7 +15752,7 @@ export const all_socu = {
     "is here and he shall slay": 1,
     "is it if we slay": 1,
     "is made": 1,
-    "it he will kill": 2,
+    "it he will kill": 1,
     "kill": 2,
     "killeth": 1,
     "me as thou killedst": 2,
@@ -15760,7 +15828,7 @@ export const all_socu = {
     "and she bare": 1,
     "and she conceived": 11,
     "and she conceived again": 2,
-    "conceived": 9,
+    "conceived": 10,
     "conceiving": 1,
     "had conceived": 1,
     "have i conceived": 1,
@@ -15773,6 +15841,7 @@ export const all_socu = {
     "that she had conceived": 3,
     "they conceive": 2,
     "unto her and she conceived": 1,
+    "we have been with child": 1,
     "which conceived": 1,
     "with child": 1,
     "ye shall conceive": 1
@@ -15784,6 +15853,7 @@ export const all_socu = {
     "and also behold she is with child": 1,
     "and their women with child": 1,
     "as a woman with child": 1,
+    "for lo thou shalt conceive": 1,
     "great": 1,
     "i am with child": 1,
     "it and all the women therein that were with child": 1,
@@ -15792,6 +15862,7 @@ export const all_socu = {
     "the women with child": 1,
     "their women with child": 1,
     "thou art with child": 1,
+    "unto me behold thou shalt conceive": 1,
     "was with child": 1,
     "whose these are am i with child": 1,
     "with child": 1
@@ -15955,7 +16026,7 @@ export const all_socu = {
     "to false": 1,
     "unrighteous": 1,
     "upon them their own iniquity": 1,
-    "vanity": 3,
+    "vanity": 4,
     "which wicked": 1,
     "wicked": 1,
     "wickedness": 1,
@@ -15963,6 +16034,9 @@ export const all_socu = {
   },
   "H2050": {
     "how long will ye imagine mischief": 1
+  },
+  "H2051": {
+    "dan": 1
   },
   "H2052": {
     "what he did": 1
@@ -16303,11 +16377,11 @@ export const all_socu = {
     "zabbai": 1
   },
   "H208": {
-    "and onam": 3,
+    "and onam": 2,
     "of onam": 2
   },
   "H2080": {
-    "was zebudah": 1
+    "was zebudah": 2
   },
   "H2081": {
     "zebina": 1
@@ -16498,7 +16572,7 @@ export const all_socu = {
     "be not warned": 1,
     "because he is warned": 2,
     "because thou hast not given him warning": 1,
-    "him and warned": 1,
+    "him and warned": 2,
     "nevertheless if thou warn": 3,
     "no more be admonished": 1,
     "shall be upon him but he that taketh warning": 2,
@@ -16634,12 +16708,12 @@ export const all_socu = {
     "that shall vex": 1
   },
   "H2112": {
-    "men tremble": 1,
-    "trembled": 1
+    "men tremble": 2,
+    "trembled": 2
   },
   "H2113": {
     "and it shall be a vexation": 1,
-    "them to be removed": 3,
+    "them to be removed": 4,
     "them to trouble": 1,
     "you to be removed": 1
   },
@@ -16866,6 +16940,7 @@ export const all_socu = {
     "shall all your men children": 1
   },
   "H2139": {
+    "and zabbud": 1,
     "and zaccur": 1,
     "of zaccur": 3,
     "to zaccur": 1,
@@ -16969,7 +17044,7 @@ export const all_socu = {
     "be ye mindful": 1,
     "because i say that ye are come to remembrance": 2,
     "because that he remembered": 1,
-    "because thou hast not remembered": 1,
+    "because thou hast not remembered": 2,
     "bringing": 1,
     "but he will call to remembrance": 1,
     "but i will for their sakes remember": 1,
@@ -16999,7 +17074,7 @@ export const all_socu = {
     "i will make mention": 2,
     "i will mention": 1,
     "i will not make mention": 1,
-    "i will remember": 4,
+    "i will remember": 6,
     "if i do not remember": 1,
     "in calling to remembrance": 1,
     "in remembrance": 3,
@@ -17016,7 +17091,7 @@ export const all_socu = {
     "neither were mindful": 1,
     "nevertheless i will remember": 1,
     "no mention": 1,
-    "o remember": 1,
+    "o remember": 2,
     "of them but shalt well": 2,
     "of you shall remember": 1,
     "on him he shall be no more remembered": 1,
@@ -17034,7 +17109,7 @@ export const all_socu = {
     "shall ye mention": 1,
     "she remembereth": 1,
     "should be remembered": 1,
-    "surely i will remember": 2,
+    "surely i will remember": 3,
     "that i may remember": 1,
     "that i remember": 1,
     "that is male": 1,
@@ -17055,7 +17130,7 @@ export const all_socu = {
     "they shall not be mentioned": 1,
     "think": 2,
     "those that remember": 1,
-    "thou hast not remembered": 1,
+    "thou hast not remembered": 2,
     "thou shalt be no more remembered": 1,
     "to be remembered": 3,
     "to remembrance": 3,
@@ -17166,7 +17241,7 @@ export const all_socu = {
   },
   "H2147": {
     "and zichri": 6,
-    "of zichri": 7,
+    "of zichri": 5,
     "zichri": 1
   },
   "H2148": {
@@ -17179,7 +17254,7 @@ export const all_socu = {
     "did zachariah": 1,
     "namely zechariah": 1,
     "of zachariah": 2,
-    "of zechariah": 9,
+    "of zechariah": 7,
     "then for zechariah": 1,
     "to him zechariah": 1,
     "unto zechariah": 2,
@@ -17218,7 +17293,10 @@ export const all_socu = {
     "to give them light": 2,
     "to shew them light": 1,
     "to shine": 9,
-    "to them but it gave light": 1
+    "to them but it gave light": 1,
+    "was light": 1,
+    "were enlightened": 1,
+    "which hath shewed us light": 1
   },
   "H2150": {
     "the sprigs": 1
@@ -17286,7 +17364,6 @@ export const all_socu = {
   },
   "H2158": {
     "have been my songs": 1,
-    "of the singing": 1,
     "psalmist": 1,
     "songs": 2,
     "unto him with psalms": 1
@@ -17320,7 +17397,7 @@ export const all_socu = {
     "his bright": 1,
     "his light": 1,
     "in the clear": 1,
-    "in the light": 3,
+    "in the light": 4,
     "in thy light": 2,
     "is light": 2,
     "is my light": 1,
@@ -17354,6 +17431,7 @@ export const all_socu = {
     "truly the light": 1,
     "until the day": 1,
     "unto thee and the light": 1,
+    "upon herbs": 1,
     "upon them hath the light": 2,
     "was as the light": 1,
     "was till it was light": 1,
@@ -17391,7 +17469,7 @@ export const all_socu = {
     "at appointed": 1
   },
   "H2164": {
-    "for you for ye have prepared": 1
+    "for you for ye have prepared": 2
   },
   "H2165": {
     "and according to their appointed time": 1,
@@ -17549,7 +17627,7 @@ export const all_socu = {
     "for thou hast gone a whoring": 1,
     "from playing the harlot": 1,
     "go a whoring": 4,
-    "harlot": 2,
+    "harlot": 1,
     "hath committed great": 2,
     "hath played the harlot": 2,
     "her to be an harlot": 1,
@@ -17597,7 +17675,7 @@ export const all_socu = {
     "whom they have gone a whoring": 1,
     "whoredom": 2,
     "whorish": 1,
-    "will they now commit": 1,
+    "will they now commit": 2,
     "with harlots": 1,
     "with their whorish": 2,
     "with whores": 2,
@@ -17612,11 +17690,11 @@ export const all_socu = {
     "by whoredom": 1,
     "her whoredoms": 1,
     "in her whoredoms": 1,
-    "of the whoredoms": 1,
+    "of the whoredoms": 2,
     "of thy whoredoms": 1,
     "of whoredoms": 7,
     "the whoredoms": 1,
-    "through her whoredoms": 1
+    "through her whoredoms": 2
   },
   "H2184": {
     "by their whoredom": 1,
@@ -17663,7 +17741,9 @@ export const all_socu = {
   },
   "H2189": {
     "them and shalt be removed": 1,
-    "them to be removed": 1
+    "them to be removed": 3,
+    "them to trouble": 1,
+    "you to be removed": 1
   },
   "H219": {
     "and the light": 1,
@@ -17717,6 +17797,7 @@ export const all_socu = {
     "of thine indignation": 1,
     "thine indignation": 1,
     "till the indignation": 1,
+    "until the indignation": 1,
     "upon them mine indignation": 1
   },
   "H2196": {
@@ -17743,7 +17824,7 @@ export const all_socu = {
     "and all that were with them for they cried": 1,
     "and cried": 7,
     "and crieth out": 1,
-    "and cry": 6,
+    "and cry": 7,
     "and he caused it to be proclaimed": 1,
     "and he cried": 1,
     "and i will cry out": 1,
@@ -17836,7 +17917,7 @@ export const all_socu = {
     "unto him thou art old": 2,
     "unto them i am old": 1,
     "was old": 7,
-    "waxed old": 1,
+    "waxed old": 2,
     "when she is old": 1,
     "you and i am old": 1,
     "your way for i am too old": 1
@@ -17880,7 +17961,7 @@ export const all_socu = {
     "more than the ancients": 1,
     "neither do the aged": 1,
     "nor an old man": 1,
-    "not the elders": 1,
+    "not the elders": 2,
     "of elders": 1,
     "of old men": 2,
     "of the aged": 1,
@@ -18271,7 +18352,7 @@ export const all_socu = {
     "and of his seed": 1,
     "and the seed": 2,
     "and their seed": 5,
-    "and thy seed": 9,
+    "and thy seed": 7,
     "and to his seed": 2,
     "and to thy seed": 3,
     "and upon his seed": 2,
@@ -18279,7 +18360,6 @@ export const all_socu = {
     "and with his seed": 1,
     "and with the seed": 2,
     "any of his seed": 4,
-    "be between me and thee and between my seed": 2,
     "be of the seed": 1,
     "because he is thy seed": 1,
     "between me and thee and thy seed": 2,
@@ -18314,7 +18394,7 @@ export const all_socu = {
     "o ye seed": 2,
     "of his seed": 5,
     "of seed": 2,
-    "of the seed": 9,
+    "of the seed": 8,
     "of their seed": 1,
     "of thy seed": 8,
     "of thy seed’s": 3,
@@ -18715,6 +18795,7 @@ export const all_socu = {
     "he coupled": 2,
     "is joined": 1,
     "join": 1,
+    "joined": 1,
     "or a charmer": 1,
     "shall be coupled": 2,
     "shall be coupled together": 2,
@@ -18772,9 +18853,9 @@ export const all_socu = {
     "above thy fellows": 1,
     "and companions": 1,
     "behold all his fellows": 1,
-    "his companions": 4,
+    "his companions": 8,
     "his fellow": 1,
-    "his fellows": 1,
+    "his fellows": 2,
     "i am a companion": 1,
     "knit together": 1,
     "of thy companions": 1,
@@ -19076,7 +19157,7 @@ export const all_socu = {
     "and wouldest forbear": 1,
     "but if thou shalt forbear": 1,
     "but since we left off": 1,
-    "cease": 8,
+    "cease": 10,
     "ceased": 4,
     "endeth": 1,
     "forbare": 2,
@@ -19370,6 +19451,9 @@ export const all_socu = {
     "them thorns": 1,
     "through with a thorn": 1
   },
+  "H2337": {
+    "and in thickets": 1
+  },
   "H2338": {
     "thereof and joined": 1
   },
@@ -19439,15 +19523,14 @@ export const all_socu = {
     "of them they shall be in pain": 1,
     "or ever thou hadst formed": 1,
     "or wast thou made": 1,
-    "pain": 2,
+    "pain": 3,
     "shaketh": 4,
     "shall abide": 1,
     "shall be much pained": 1,
-    "shall have great": 2,
+    "shall have great": 3,
     "so shall they be sorely pained": 1,
     "sorrowful": 1,
     "stayed": 1,
-    "that a man should both hope": 1,
     "that bare": 1,
     "that formed": 1,
     "thee and they trembled": 1,
@@ -19460,6 +19543,7 @@ export const all_socu = {
     "to dance": 1,
     "travailed": 2,
     "tremble": 1,
+    "waited carefully": 1,
     "was i brought forth": 1,
     "we have been in pain": 1,
     "what hast thou brought forth": 1,
@@ -19573,7 +19657,7 @@ export const all_socu = {
     "shall have no pity": 1,
     "shall not pity": 3,
     "shall not spare": 5,
-    "spare": 2,
+    "spare": 3,
     "spared": 1,
     "thee but mine eye spared": 1,
     "thou hast had pity": 1
@@ -19592,7 +19676,6 @@ export const all_socu = {
   "H235": {
     "but when he is gone": 1,
     "fail": 1,
-    "going to and fro": 1,
     "is gone": 1,
     "is spent": 1,
     "why gaddest thou about": 1
@@ -19664,7 +19747,8 @@ export const all_socu = {
     "you without": 1
   },
   "H2352": {
-    "in holes": 1
+    "in holes": 1,
+    "on the hole": 1
   },
   "H2353": {
     "and white": 1,
@@ -19708,7 +19792,8 @@ export const all_socu = {
     "hurai": 1
   },
   "H2361": {
-    "and huram": 4,
+    "also of huram": 1,
+    "and huram": 6,
     "did huram": 1,
     "huram": 1,
     "of huram": 2,
@@ -20226,6 +20311,9 @@ export const all_socu = {
     "with a strong": 1,
     "with strong": 1
   },
+  "H239": {
+    "yea he gave good heed": 1
+  },
   "H2390": {
     "and stronger": 1,
     "and waxed louder": 1,
@@ -20267,7 +20355,7 @@ export const all_socu = {
     "it and hezekiah": 4,
     "let not hezekiah": 2,
     "neither let hezekiah": 2,
-    "not to hezekiah": 3,
+    "not to hezekiah": 2,
     "not unto hezekiah": 1,
     "of hezekiah": 6,
     "of hizkiah": 1,
@@ -20283,7 +20371,7 @@ export const all_socu = {
   "H2397": {
     "bracelets": 1,
     "him with chains": 1,
-    "hooks": 3,
+    "hooks": 5,
     "in chains": 1,
     "my hook": 2
   },
@@ -20364,7 +20452,7 @@ export const all_socu = {
     "purify": 1,
     "shall be unto him to sin": 2,
     "shall sin": 1,
-    "sin": 23,
+    "sin": 24,
     "sinful": 1,
     "sinned": 2,
     "sinner": 1,
@@ -20398,7 +20486,7 @@ export const all_socu = {
     "though a sinner": 1,
     "thus shalt thou cleanse": 1,
     "to cleanse": 1,
-    "to sin": 29,
+    "to sin": 30,
     "trespass": 1,
     "unto me we have sinned": 1,
     "unto them i have sinned": 1,
@@ -20435,7 +20523,7 @@ export const all_socu = {
     "and it be sin": 1,
     "because for our sins": 1,
     "for his own sin": 3,
-    "for the punishment of his sins": 1,
+    "for the punishment of his sins": 2,
     "from my sins": 1,
     "hath grievously": 1,
     "have committed a sin": 1,
@@ -20500,7 +20588,7 @@ export const all_socu = {
     "also of the sin offering": 1,
     "and because their sin": 1,
     "and his sin": 1,
-    "and in his sin": 6,
+    "and in his sin": 8,
     "and let not the sin": 1,
     "and let not their sin": 1,
     "and my sin": 3,
@@ -20545,7 +20633,7 @@ export const all_socu = {
     "for him concerning his sin": 3,
     "for him for his sin": 1,
     "for his sin": 10,
-    "for his sins": 2,
+    "for his sins": 3,
     "for my sin": 1,
     "for sin": 2,
     "for sin offering": 1,
@@ -20554,7 +20642,7 @@ export const all_socu = {
     "for the sins": 2,
     "for thy sins": 1,
     "for your sins": 3,
-    "from all his sins": 1,
+    "from all his sins": 2,
     "from all your sins": 1,
     "from his sin": 1,
     "from my sin": 1,
@@ -20577,7 +20665,7 @@ export const all_socu = {
     "me from my sin": 1,
     "more to our sins": 1,
     "my sin": 5,
-    "none of his sins": 1,
+    "none of his sins": 2,
     "nor for my sin": 1,
     "nor to their sin": 1,
     "nor your sins": 1,
@@ -20590,7 +20678,7 @@ export const all_socu = {
     "of my sin": 3,
     "of purification for sin": 1,
     "of purifying": 1,
-    "of sins": 1,
+    "of sins": 2,
     "of the sin": 1,
     "of the sin offering": 23,
     "of the sins": 1,
@@ -20672,7 +20760,10 @@ export const all_socu = {
     "hattush": 5
   },
   "H2408": {
-    "thy sins": 1
+    "thy sins": 2
+  },
+  "H2409": {
+    "and for a sin offering": 1
   },
   "H241": {
     "again in thine ears": 1,
@@ -20680,7 +20771,7 @@ export const all_socu = {
     "all this mine ear": 1,
     "also in mine ears": 1,
     "also their ear": 1,
-    "and did not shew": 1,
+    "and did not shew": 2,
     "and ears": 1,
     "and his ears": 1,
     "and in the audience": 1,
@@ -20814,7 +20905,7 @@ export const all_socu = {
     "and for all their beasts": 1,
     "and for the beast": 1,
     "and for the maintenance": 1,
-    "and his life": 3,
+    "and his life": 4,
     "and in all these things is the life": 1,
     "and in the running": 2,
     "and life": 3,
@@ -20883,7 +20974,7 @@ export const all_socu = {
     "him the beasts": 1,
     "i live": 3,
     "in his life": 2,
-    "in his lifetime": 1,
+    "in his lifetime": 2,
     "in life": 1,
     "in running": 1,
     "in their lives": 1,
@@ -20897,7 +20988,7 @@ export const all_socu = {
     "is yet alive": 2,
     "left alive": 1,
     "lest the beasts": 1,
-    "life": 16,
+    "life": 15,
     "live": 3,
     "liveth": 80,
     "living creatures": 1,
@@ -20916,7 +21007,7 @@ export const all_socu = {
     "of every living thing": 2,
     "of her all the beasts": 1,
     "of her life": 1,
-    "of his life": 18,
+    "of his life": 19,
     "of life": 33,
     "of living": 3,
     "of me as i live": 1,
@@ -21050,7 +21141,7 @@ export const all_socu = {
     "with hard questions": 1
   },
   "H2421": {
-    "alive": 14,
+    "alive": 13,
     "and all that is therein and thou preservest": 1,
     "and have saved": 1,
     "and he recovered": 1,
@@ -21064,7 +21155,7 @@ export const all_socu = {
     "and not live": 2,
     "and nourished up": 1,
     "and quicken": 1,
-    "and shall live": 2,
+    "and shall live": 3,
     "and that ye will save alive": 1,
     "and they shall live": 1,
     "and thou shalt live": 3,
@@ -21075,7 +21166,7 @@ export const all_socu = {
     "and to save your lives": 1,
     "and was recovered": 1,
     "and we shall live": 2,
-    "and will ye save": 2,
+    "and will ye save": 1,
     "and ye shall live": 1,
     "as we have and lived": 1,
     "but live": 1,
@@ -21134,9 +21225,9 @@ export const all_socu = {
     "saved": 2,
     "shall he live": 1,
     "shall i recover": 2,
-    "shall live": 14,
+    "shall live": 15,
     "shall nourish": 1,
-    "shalt quicken": 1,
+    "shalt quicken": 2,
     "shalt thou live": 1,
     "that he could not live": 1,
     "that he may live": 1,
@@ -21191,7 +21282,7 @@ export const all_socu = {
     "ye had saved them alive": 1,
     "ye me and ye shall live": 1,
     "ye shall save alive": 1,
-    "you he shall live": 2,
+    "you he shall live": 4,
     "you that ye may live": 1,
     "yourselves and live": 1
   },
@@ -21219,18 +21310,23 @@ export const all_socu = {
     "he might live": 1,
     "he shall even live": 3,
     "he shall live": 1,
+    "lived": 1,
+    "liveth": 1,
     "me and live": 1,
     "shall he live": 1,
     "shall he then live": 1,
     "then she shall live": 1,
     "thither that he may live": 1,
     "to save his life": 1,
-    "upon it shall live": 1
+    "upon it shall live": 1,
+    "which he lived": 1
   },
   "H2426": {
     "and bulwarks": 1,
     "army": 1,
     "be within thy walls": 1,
+    "by the wall": 1,
+    "himself that the poor": 1,
     "host": 1,
     "in the trench": 1,
     "it whose rampart": 1,
@@ -21252,10 +21348,13 @@ export const all_socu = {
     "able": 3,
     "according to his substance": 1,
     "against the army": 1,
+    "all his host": 1,
+    "all the power": 1,
     "all the valiant": 2,
     "an host": 1,
     "and all his army": 7,
     "and all the army": 2,
+    "and all the host": 1,
     "and all their goods": 1,
     "and all their wealth": 1,
     "and all thine army": 1,
@@ -21263,7 +21362,7 @@ export const all_socu = {
     "and be ye valiant": 1,
     "and he also that is valiant": 2,
     "and his army": 1,
-    "and his host": 1,
+    "and his host": 2,
     "and it came to pass that when the army": 2,
     "and power": 1,
     "and strong": 1,
@@ -21272,14 +21371,16 @@ export const all_socu = {
     "and the wealth": 2,
     "and their substance": 1,
     "and they which be with him are valiant": 2,
+    "and upon all his host": 2,
     "and with all the valiant men": 1,
-    "army": 17,
+    "army": 18,
     "as the host": 1,
     "because my wealth": 1,
     "because of thy riches": 2,
     "behold an host": 1,
     "but the army": 2,
     "company": 1,
+    "for his army": 1,
     "for the army": 1,
     "for the war": 1,
     "for thou art a valiant": 1,
@@ -21313,7 +21414,7 @@ export const all_socu = {
     "nor his army": 2,
     "not by might": 1,
     "not thy strength": 1,
-    "of a valiant": 1,
+    "of a valiant": 2,
     "of activity": 1,
     "of an host": 1,
     "of his armies": 1,
@@ -21342,12 +21443,14 @@ export const all_socu = {
     "that were valiant": 1,
     "the army": 1,
     "the host": 1,
+    "the power": 1,
     "the riches": 3,
     "the valiant": 1,
     "the whole army": 1,
     "thee an army": 2,
     "thee riches": 1,
     "their riches": 1,
+    "their strength": 1,
     "their substance": 1,
     "their wealth": 1,
     "them by thy power": 1,
@@ -21437,7 +21540,7 @@ export const all_socu = {
     "into the bosom": 1,
     "into the lap": 1,
     "into the midst": 1,
-    "into their bosom": 2,
+    "into their bosom": 3,
     "into thy bosom": 7,
     "it in her bosom": 3,
     "it out of his bosom": 3,
@@ -21464,11 +21567,14 @@ export const all_socu = {
     "between hiram": 1,
     "for hiram": 2,
     "hiram": 5,
-    "now hiram": 3,
+    "now hiram": 4,
     "of hiram": 1,
     "so hiram": 3,
     "to hiram": 3,
     "which hiram": 1
+  },
+  "H2439": {
+    "make haste": 1
   },
   "H244": {
     "of ozni": 2,
@@ -21551,7 +21657,7 @@ export const all_socu = {
     "let us deal wisely": 1,
     "making wise": 1,
     "man and he will be yet wiser": 1,
-    "men shall be wise": 1,
+    "men shall be wise": 2,
     "never so wisely": 1,
     "that thou mayest be wise": 1,
     "thereby is not wise": 1,
@@ -21972,7 +22078,7 @@ export const all_socu = {
   "H2474": {
     "a window": 1,
     "and the windows": 3,
-    "and their windows": 1,
+    "and their windows": 2,
     "and there were windows": 4,
     "and windows": 2,
     "at a window": 2,
@@ -22122,7 +22228,7 @@ export const all_socu = {
     "and they began": 1,
     "and they shall defile": 1,
     "and they shall not profane": 1,
-    "and they shall pollute": 1,
+    "and they shall pollute": 2,
     "and this they begin": 1,
     "and thou shalt take thine inheritance": 1,
     "and to profane": 1,
@@ -22229,6 +22335,7 @@ export const all_socu = {
     "down slain": 1,
     "for the slain": 1,
     "hath caused the slain": 2,
+    "he slew": 1,
     "him all of them slain": 1,
     "him that is slain": 1,
     "is slain": 1,
@@ -22417,7 +22524,7 @@ export const all_socu = {
     "was helez": 1
   },
   "H2504": {
-    "if his loins": 1,
+    "if his loins": 2,
     "now thy loins": 1,
     "of his reins": 1,
     "of their loins": 1,
@@ -22844,7 +22951,7 @@ export const all_socu = {
     "to them with flatteries": 1
   },
   "H252": {
-    "thy brethren": 1
+    "thy brethren": 2
   },
   "H2520": {
     "helkath": 1,
@@ -22880,7 +22987,7 @@ export const all_socu = {
   "H2527": {
     "about the heat": 1,
     "and heat": 2,
-    "be hot": 2,
+    "be hot": 3,
     "heat": 2,
     "hot": 1,
     "in the heat": 3,
@@ -23032,8 +23139,9 @@ export const all_socu = {
     "was wroth": 1,
     "when the wrath": 1,
     "wherefore my fury": 1,
+    "with bottles": 1,
     "with fury": 2,
-    "wrath": 5
+    "wrath": 6
   },
   "H2535": {
     "and the sun": 1,
@@ -23046,7 +23154,7 @@ export const all_socu = {
     "hamuel": 1
   },
   "H2537": {
-    "was hamutal": 3
+    "was hamutal": 5
   },
   "H2538": {
     "and hamul": 2,
@@ -23346,7 +23454,7 @@ export const all_socu = {
     "and be troubled": 1,
     "and daubed": 1,
     "are troubled": 2,
-    "is foul": 1,
+    "is foul": 2,
     "is red": 1
   },
   "H2561": {
@@ -23387,6 +23495,10 @@ export const all_socu = {
     "and slime": 1,
     "it with slime": 1,
     "slimepits": 1
+  },
+  "H2565": {
+    "heaps": 2,
+    "upon heaps": 2
   },
   "H2566": {
     "amram": 1
@@ -23438,7 +23550,7 @@ export const all_socu = {
     "nor five": 1,
     "of each of them was five": 2,
     "of fifteen": 1,
-    "of five": 8,
+    "of five": 9,
     "of the gate shall be fifteen": 1,
     "of the gate were fifteen": 1,
     "of the one cherub was five": 2,
@@ -23547,8 +23659,7 @@ export const all_socu = {
     "of hamath": 21,
     "of hemath": 2,
     "to hamath": 3,
-    "unto hamath": 1,
-    "ye to hamath": 1
+    "unto hamath": 1
   },
   "H2575": {
     "and hammath": 1
@@ -23561,6 +23672,9 @@ export const all_socu = {
   },
   "H2578": {
     "to hamath–zobah": 2
+  },
+  "H2579": {
+    "the great": 2
   },
   "H258": {
     "go thee one way or other": 1
@@ -23753,7 +23867,7 @@ export const all_socu = {
     "as a": 1,
     "as one": 13,
     "at once": 2,
-    "at one": 3,
+    "at one": 4,
     "be ye on one": 2,
     "behold a": 2,
     "behold one": 1,
@@ -23777,7 +23891,7 @@ export const all_socu = {
     "counting one": 2,
     "curtain to another": 3,
     "each": 4,
-    "each man": 1,
+    "each man": 2,
     "each one": 1,
     "eleven": 9,
     "even as the heart of one": 1,
@@ -23862,7 +23976,7 @@ export const all_socu = {
     "on the first": 6,
     "on this side and another": 6,
     "once": 11,
-    "one": 439,
+    "one": 446,
     "or for one": 2,
     "or in some": 2,
     "or into some": 2,
@@ -23939,12 +24053,12 @@ export const all_socu = {
     "to thee one": 1,
     "together": 5,
     "together that it may be one": 1,
-    "under a": 2,
+    "under a": 3,
     "under another": 10,
     "under every": 1,
     "under one": 11,
     "until the one": 1,
-    "unto another": 7,
+    "unto another": 11,
     "unto every": 2,
     "unto her a certain": 1,
     "unto him but a few": 1,
@@ -23953,7 +24067,7 @@ export const all_socu = {
     "unto you and not one": 2,
     "upon an": 2,
     "upon another": 3,
-    "upon him in some": 2,
+    "upon him in some": 3,
     "upon one": 10,
     "upon the first": 1,
     "upon the one": 2,
@@ -24028,7 +24142,7 @@ export const all_socu = {
     "of whose spear": 1,
     "or spears": 1,
     "rib that the spear": 2,
-    "spear": 6,
+    "spear": 7,
     "spears": 2,
     "the javelin": 3,
     "the spear": 9,
@@ -24065,8 +24179,8 @@ export const all_socu = {
     "abigail": 2,
     "and abigail": 7,
     "and when abigail": 1,
-    "of abigail": 2,
-    "then abigail": 1,
+    "of abigail": 3,
+    "then abigail": 2,
     "to abigail": 3,
     "with abigail": 1
   },
@@ -24161,7 +24275,7 @@ export const all_socu = {
     "was gracious": 1,
     "when he besought": 1,
     "wherewith i have made supplication": 1,
-    "will be gracious": 3,
+    "will be gracious": 5,
     "with them nor shew mercy": 1
   },
   "H2604": {
@@ -24300,7 +24414,7 @@ export const all_socu = {
     "is thy mercy": 1,
     "it is a wicked thing": 1,
     "kindly": 5,
-    "kindness": 26,
+    "kindness": 27,
     "let i pray thee thy merciful kindness": 1,
     "let not mercy": 1,
     "let thy lovingkindness": 1,
@@ -24326,12 +24440,12 @@ export const all_socu = {
     "not the kindness": 1,
     "of all the mercies": 1,
     "of his lovingkindnesses": 2,
-    "of his mercies": 2,
+    "of his mercies": 4,
     "of his mercy": 1,
     "of it for his mercy": 1,
     "of kindness": 1,
     "of mercy": 1,
-    "of my mercy": 2,
+    "of my mercy": 3,
     "of the goodness": 1,
     "of the mercies": 1,
     "of thy lovingkindness": 1,
@@ -24440,7 +24554,7 @@ export const all_socu = {
     "not his saints": 1,
     "o ye saints": 1,
     "of all his saints": 1,
-    "of his saints": 4,
+    "of his saints": 6,
     "of saints": 1,
     "of thy saints": 1,
     "the good": 1,
@@ -24601,7 +24715,7 @@ export const all_socu = {
     "and hasteth": 1,
     "and it came to pass as she made haste": 1,
     "in my haste": 2,
-    "in their haste": 1,
+    "in their haste": 2,
     "made haste": 1,
     "not and do not tremble": 1,
     "they hasted": 1
@@ -24796,7 +24910,7 @@ export const all_socu = {
     "of hepher": 6
   },
   "H2661": {
-    "to the moles": 2
+    "to the moles": 1
   },
   "H2662": {
     "of the hepherites": 1
@@ -24838,7 +24952,7 @@ export const all_socu = {
     "nor freedom": 1
   },
   "H2669": {
-    "a several": 2,
+    "a several": 4,
     "in a several": 1
   },
   "H267": {
@@ -24867,7 +24981,7 @@ export const all_socu = {
     "for thine arrows": 1,
     "he made his arrows": 1,
     "his arrows": 2,
-    "his bow to shoot his arrows": 1,
+    "his bow to shoot his arrows": 2,
     "i will make mine arrows": 1,
     "is as an arrow": 1,
     "mine arrows": 1,
@@ -24935,7 +25049,7 @@ export const all_socu = {
     "which is hazor": 1
   },
   "H2675": {
-    "hadattah": 1
+    "hadattah": 2
   },
   "H2676": {
     "about midnight": 1,
@@ -24948,7 +25062,7 @@ export const all_socu = {
     "and an half": 7,
     "and for the half": 1,
     "and from half": 1,
-    "and half": 31,
+    "and half": 29,
     "and i and the half": 1,
     "and in the midst": 1,
     "and it came to pass at midnight": 1,
@@ -25004,10 +25118,10 @@ export const all_socu = {
     "and the arrow": 1,
     "is not the arrow": 2,
     "of the arrow": 2,
-    "the arrows": 1
+    "the arrows": 2
   },
   "H2679": {
-    "of the manahethites": 1
+    "of the manahethites": 2
   },
   "H268": {
     "and behind": 3,
@@ -25032,7 +25146,7 @@ export const all_socu = {
     "with their backs": 1
   },
   "H2680": {
-    "of the manahethites": 1
+    "of the manahethites": 2
   },
   "H2681": {
     "and a court": 1
@@ -25093,11 +25207,11 @@ export const all_socu = {
   },
   "H269": {
     "against another": 1,
-    "and all his sisters": 1,
+    "and all his sisters": 2,
     "and for his sister": 1,
     "and his sister": 2,
     "and my sister": 1,
-    "and my sisters": 1,
+    "and my sisters": 2,
     "and the sister": 2,
     "and thou art the sister": 2,
     "and to your sisters": 1,
@@ -25126,13 +25240,13 @@ export const all_socu = {
     "she is my sister": 4,
     "she is thy sister": 1,
     "sister": 25,
-    "sisters": 1,
+    "sisters": 2,
     "the sister": 8,
     "their sister": 10,
     "thou art my sister": 2,
     "thou she is my sister": 1,
     "thy sister": 1,
-    "thy sisters": 6,
+    "thy sisters": 7,
     "to another": 5,
     "to her sister": 1,
     "to me my sister": 1,
@@ -25141,7 +25255,7 @@ export const all_socu = {
     "unto him i pray thee let my sister": 1,
     "upon his sister’s": 2,
     "when thy sisters": 1,
-    "whose sisters": 1,
+    "whose sisters": 2,
     "whose sister’s": 1,
     "with his sister": 1,
     "with me my sister": 1,
@@ -25149,11 +25263,11 @@ export const all_socu = {
     "with our sister": 1
   },
   "H2690": {
-    "did blow": 2,
-    "it came even to pass as the trumpeters": 2,
-    "sounded": 4,
-    "sounded trumpets": 2,
-    "sounding": 1
+    "did blow": 4,
+    "it came even to pass as the trumpeters": 4,
+    "sounded": 8,
+    "sounded trumpets": 4,
+    "sounding": 2
   },
   "H2691": {
     "and all the villages": 1,
@@ -25173,7 +25287,7 @@ export const all_socu = {
     "and their villages": 6,
     "at the court": 2,
     "by their towns": 1,
-    "court": 57,
+    "court": 58,
     "courts": 3,
     "for the court": 6,
     "for the courts": 1,
@@ -25216,7 +25330,7 @@ export const all_socu = {
     "hazar–hatticon": 2
   },
   "H2695": {
-    "hezrai": 1,
+    "hezrai": 2,
     "hezro": 1
   },
   "H2696": {
@@ -25362,7 +25476,7 @@ export const all_socu = {
     "from mine ordinances": 1,
     "from thy statutes": 1,
     "had a portion": 2,
-    "his bounds": 1,
+    "his bounds": 2,
     "his commandments": 1,
     "his decree": 1,
     "his statutes": 4,
@@ -26041,7 +26155,7 @@ export const all_socu = {
     "yet the fierce": 1
   },
   "H2741": {
-    "the haruphite": 1
+    "the haruphite": 2
   },
   "H2742": {
     "and fine gold": 1,
@@ -26299,7 +26413,7 @@ export const all_socu = {
     "heres": 1
   },
   "H2777": {
-    "of the east": 1
+    "of the east": 2
   },
   "H2778": {
     "and blasphemed": 1,
@@ -26518,7 +26632,7 @@ export const all_socu = {
     "them because he held his peace": 3,
     "they that plow": 1,
     "thou shalt not plow": 1,
-    "to me lest if thou be silent": 2,
+    "to me lest if thou be silent": 1,
     "unto him hold thy peace": 1,
     "unto me hold thy peace": 2,
     "unto us then held they their peace": 1,
@@ -26534,6 +26648,7 @@ export const all_socu = {
     "ye would altogether": 2
   },
   "H2791": {
+    "artificer": 1,
     "of craftsmen": 1,
     "secretly": 1
   },
@@ -26583,6 +26698,7 @@ export const all_socu = {
     "of the workman": 2,
     "so the carpenter": 1,
     "that are makers": 1,
+    "the carpenter": 1,
     "the smith": 2,
     "the workman": 1,
     "to the carpenters": 1,
@@ -26796,6 +26912,7 @@ export const all_socu = {
   "H2814": {
     "and are ye still": 1,
     "and we hold our peace": 1,
+    "be not silent": 1,
     "have not i held my peace": 1,
     "hold their peace": 1,
     "holden my peace": 1,
@@ -26825,6 +26942,9 @@ export const all_socu = {
   "H2818": {
     "careful": 1,
     "they have need of": 1
+  },
+  "H2819": {
+    "shall be needful": 1
   },
   "H282": {
     "ahihud": 1
@@ -27068,7 +27188,7 @@ export const all_socu = {
     "was an hittite": 1
   },
   "H2851": {
-    "my terror": 1,
+    "my terror": 2,
     "terror": 1,
     "their terror": 3,
     "though their terror": 1,
@@ -27092,8 +27212,8 @@ export const all_socu = {
     "and seal": 4,
     "and sealed": 7,
     "and sealeth": 1,
-    "and to make an end": 3,
-    "and to seal up": 3,
+    "and to make an end": 2,
+    "and to seal up": 2,
     "be stopped": 1,
     "both that which was sealed": 1,
     "both which is sealed": 1,
@@ -27259,12 +27379,12 @@ export const all_socu = {
   },
   "H2874": {
     "and slay": 1,
-    "for the slaughter": 1,
+    "for the slaughter": 2,
     "her beasts": 1,
     "slaughter": 1,
     "them to the slaughter": 1,
     "to make a sore": 1,
-    "to the slaughter": 4
+    "to the slaughter": 5
   },
   "H2875": {
     "also tebah": 1
@@ -27326,7 +27446,7 @@ export const all_socu = {
   "H2885": {
     "and rings": 1,
     "by his rings": 2,
-    "by the rings": 2,
+    "by the rings": 3,
     "his ring": 3,
     "in the rings": 1,
     "into the rings": 4,
@@ -27336,7 +27456,7 @@ export const all_socu = {
     "shall the rings": 1,
     "the rings": 5,
     "their rings": 2,
-    "thereof unto the rings": 2,
+    "thereof unto the rings": 3,
     "unto the rings": 2,
     "were the rings": 1
   },
@@ -27382,7 +27502,7 @@ export const all_socu = {
     "of clean": 2,
     "of every clean": 4,
     "of pure": 17,
-    "pureness": 1,
+    "pureness": 2,
     "shall be clean": 1,
     "shall be thine every one that is clean": 1,
     "surely he is not clean": 2,
@@ -27402,9 +27522,6 @@ export const all_socu = {
   "H289": {
     "and ahiman": 3,
     "where ahiman": 1
-  },
-  "H2890": {
-    "pureness": 1
   },
   "H2891": {
     "and be clean": 6,
@@ -27594,7 +27711,7 @@ export const all_socu = {
     "for a good": 2,
     "for all the goodness": 5,
     "for better": 2,
-    "for good": 16,
+    "for good": 17,
     "for he is good": 6,
     "for i am not better": 1,
     "for it had been better": 1,
@@ -27718,7 +27835,7 @@ export const all_socu = {
     "that which was good": 2,
     "the best": 2,
     "the good": 21,
-    "the thing that good": 1,
+    "the thing that good": 2,
     "the thing that is good": 1,
     "the wealth": 1,
     "the welfare": 1,
@@ -27762,12 +27879,12 @@ export const all_socu = {
     "us graciously": 1,
     "was good": 3,
     "was merry": 2,
-    "well": 8,
+    "well": 9,
     "went well": 1,
     "were better": 1,
     "were fair": 1,
     "were it not better": 1,
-    "were merry": 1,
+    "were merry": 2,
     "what is good": 2,
     "what seemeth good": 1,
     "what was that good": 1,
@@ -27952,8 +28069,13 @@ export const all_socu = {
     "of the grinding": 1
   },
   "H2914": {
-    "emerods": 1,
-    "of their emerods": 1
+    "and they had emerods": 1,
+    "and with the emerods": 1,
+    "emerods": 2,
+    "of their emerods": 1,
+    "of your emerods": 1,
+    "them with emerods": 1,
+    "with the emerods": 1
   },
   "H2915": {
     "unto you where is the daubing": 1
@@ -28156,7 +28278,7 @@ export const all_socu = {
     "whereby he may be made unclean": 2,
     "wherein ye have been defiled": 1,
     "wherewith they had polluted": 1,
-    "with them that ye should be defiled": 1,
+    "with them that ye should be defiled": 2,
     "ye defiled": 1,
     "ye pollute": 1,
     "ye shall defile": 1,
@@ -28260,8 +28382,7 @@ export const all_socu = {
     "you from all your uncleannesses": 1
   },
   "H2933": {
-    "and reputed vile": 1,
-    "neither shall ye make yourselves unclean": 1
+    "and reputed vile": 1
   },
   "H2934": {
     "and behold it was hid": 1,
@@ -28636,7 +28757,7 @@ export const all_socu = {
     "of josiah": 32
   },
   "H2978": {
-    "of the entrance": 1
+    "of the entrance": 2
   },
   "H2979": {
     "jeaterai": 1
@@ -29044,7 +29165,7 @@ export const all_socu = {
     "and hath with his hand": 1,
     "and her hands": 2,
     "and his hand": 9,
-    "and his hands": 5,
+    "and his hands": 6,
     "and if he": 1,
     "and if she be not able to bring": 1,
     "and in thine hand": 3,
@@ -29076,7 +29197,7 @@ export const all_socu = {
     "and their hands": 1,
     "and there were stays": 2,
     "and they had no power": 1,
-    "and they had the hands": 1,
+    "and they had the hands": 2,
     "and they shall be no more in your hand": 2,
     "and this is the hand": 1,
     "and thou shalt consecrate": 2,
@@ -29134,11 +29255,11 @@ export const all_socu = {
     "by me": 2,
     "by mine hand": 3,
     "by the force": 1,
-    "by the hand": 64,
+    "by the hand": 65,
     "by the hands": 3,
     "by the ministry": 1,
     "by the sword": 1,
-    "by the wayside": 1,
+    "by the wayside": 2,
     "by thee": 1,
     "by their hand": 2,
     "by their means": 3,
@@ -29226,8 +29347,8 @@ export const all_socu = {
     "his ability": 1,
     "his border": 1,
     "his dominion": 1,
-    "his hand": 100,
-    "his hands": 24,
+    "his hand": 101,
+    "his hands": 25,
     "his own hands": 1,
     "his service": 2,
     "his thumbs": 1,
@@ -29261,7 +29382,7 @@ export const all_socu = {
     "into our hand": 1,
     "into our hands": 3,
     "into the hand": 73,
-    "into the hands": 2,
+    "into the hands": 3,
     "into their hand": 5,
     "into their hands": 2,
     "into thine hand": 13,
@@ -29280,7 +29401,7 @@ export const all_socu = {
     "it and himself": 1,
     "it and his hand": 1,
     "it and his hands": 1,
-    "it and they shall consecrate themselves": 1,
+    "it and they shall consecrate themselves": 2,
     "it at her hand": 1,
     "it at the hand": 1,
     "it by the hand": 1,
@@ -29374,7 +29495,7 @@ export const all_socu = {
     "of their hands": 11,
     "of their own hands": 3,
     "of them and his hands": 1,
-    "of thine hand": 11,
+    "of thine hand": 12,
     "of thine hands": 5,
     "of thine own hands": 1,
     "of thy hand": 3,
@@ -29395,7 +29516,7 @@ export const all_socu = {
     "our hand": 1,
     "our hands": 1,
     "out of his hand": 10,
-    "out of his hands": 1,
+    "out of his hands": 2,
     "out of mine hand": 15,
     "out of my hand": 7,
     "out of the hand": 26,
@@ -29449,7 +29570,7 @@ export const all_socu = {
     "that were in their hands": 1,
     "that were near": 1,
     "the blood from their hands": 1,
-    "the hand": 14,
+    "the hand": 15,
     "the hands": 11,
     "the ledges": 1,
     "the power": 1,
@@ -29502,7 +29623,7 @@ export const all_socu = {
     "thereof our hands": 1,
     "they have hands": 1,
     "they not their hand": 1,
-    "thine hand": 44,
+    "thine hand": 45,
     "thine hands": 3,
     "this at your hand": 1,
     "this of your hand": 1,
@@ -29739,7 +29860,7 @@ export const all_socu = {
   },
   "H3035": {
     "iddo": 1,
-    "jadau": 1
+    "jadau": 2
   },
   "H3036": {
     "and jadon": 1
@@ -29752,7 +29873,7 @@ export const all_socu = {
     "and jeduthun": 4,
     "and of jeduthun": 1,
     "jeduthun": 4,
-    "of jeduthun": 13
+    "of jeduthun": 14
   },
   "H3039": {
     "his beloved": 1,
@@ -29915,7 +30036,7 @@ export const all_socu = {
     "declared": 1,
     "discerneth": 2,
     "do know": 1,
-    "do they that know": 1,
+    "do they that know": 2,
     "do ye know": 2,
     "dost thou know": 2,
     "doth know": 4,
@@ -29987,7 +30108,7 @@ export const all_socu = {
     "i have known": 1,
     "i have made known": 1,
     "i knew": 3,
-    "i know": 35,
+    "i know": 37,
     "i made myself known": 1,
     "i perceive": 1,
     "i perceived": 3,
@@ -30032,8 +30153,8 @@ export const all_socu = {
     "me and know": 2,
     "me and known": 1,
     "me shew": 1,
-    "me that i may know": 1,
-    "might know": 2,
+    "me that i may know": 2,
+    "might know": 3,
     "mine acquaintance": 1,
     "moreover thou knowest": 1,
     "myself and he wist": 1,
@@ -30068,7 +30189,7 @@ export const all_socu = {
     "of them and they have not known": 1,
     "of them and they shall know": 1,
     "of them to me that i may know": 1,
-    "of things and to know": 1,
+    "of things and to know": 2,
     "of us to know": 1,
     "of you and ye shall know": 1,
     "on to know": 2,
@@ -30158,6 +30279,7 @@ export const all_socu = {
     "them because they know": 2,
     "them but they shall know": 1,
     "them cause them to know": 1,
+    "them even i know": 2,
     "them that they may not be and let them know": 1,
     "them which knew": 1,
     "then be sure": 1,
@@ -30181,7 +30303,7 @@ export const all_socu = {
     "they shall not know": 1,
     "things that i knew": 1,
     "this i know": 1,
-    "this is known": 2,
+    "this is known": 4,
     "thou assuredly": 2,
     "thou hast declared": 1,
     "thou hast known": 2,
@@ -30197,7 +30319,7 @@ export const all_socu = {
     "thyself that thou be not known": 1,
     "to be known": 1,
     "to him that is not learned": 2,
-    "to know": 23,
+    "to know": 24,
     "to make known": 1,
     "to men of skill": 1,
     "to mine acquaintance": 1,
@@ -30218,7 +30340,7 @@ export const all_socu = {
     "unto him thou knowest": 2,
     "unto it that ye may know": 1,
     "unto me and if not i will know": 1,
-    "unto me and those that have known": 2,
+    "unto me and those that have known": 4,
     "unto me but i wist": 1,
     "unto me knowest": 1,
     "unto me then shall i know": 1,
@@ -30387,7 +30509,7 @@ export const all_socu = {
     "of the lord": 3,
     "the lord": 17,
     "upon the lord": 2,
-    "ye the lord": 22
+    "ye the lord": 23
   },
   "H3051": {
     "ascribe": 1,
@@ -30537,7 +30659,7 @@ export const all_socu = {
     "here in judah": 1,
     "him and hath made judah": 2,
     "i in judah": 1,
-    "in judah": 24,
+    "in judah": 25,
     "into judah": 3,
     "it in judah": 1,
     "it to judah": 2,
@@ -30601,13 +30723,13 @@ export const all_socu = {
     "all the jews": 4,
     "among the jews": 3,
     "and it came to pass that when the jews": 1,
-    "and that the jews": 1,
+    "and that the jews": 2,
     "and the jews": 2,
     "and to the jews": 2,
-    "but the jews": 1,
+    "but the jews": 2,
     "concerning all the jews": 1,
     "even all the jews": 1,
-    "for the jews": 2,
+    "for the jews": 4,
     "himself of them to wit of a jew": 1,
     "i jews": 1,
     "it that thou and the jews": 1,
@@ -30620,10 +30742,9 @@ export const all_socu = {
     "of him that is a jew": 1,
     "of judah": 1,
     "of the jews": 9,
-    "the jew": 8,
+    "the jew": 9,
     "the jews": 15,
-    "the jews’": 2,
-    "thee that all the jews": 1,
+    "the jews’": 3,
     "them concerning the jews": 1,
     "them that he was a jew": 1,
     "therefore the jews": 1,
@@ -30632,7 +30753,7 @@ export const all_socu = {
     "to the jews": 2,
     "unto all the jews": 2,
     "unto the jews": 2,
-    "upon the jews": 2,
+    "upon the jews": 3,
     "wherein the jews": 1,
     "ye also for the jews": 1
   },
@@ -30657,7 +30778,7 @@ export const all_socu = {
     "after that the lord": 4,
     "against me before the lord": 1,
     "against me the lord": 1,
-    "against the lord": 81,
+    "against the lord": 87,
     "against the lord’s": 6,
     "against thee unto the lord": 1,
     "against them and the lord": 1,
@@ -30671,6 +30792,7 @@ export const all_socu = {
     "also by us and the lord": 2,
     "also in the lord": 2,
     "also the lord": 8,
+    "also unto me o lord": 1,
     "among you for the lord": 2,
     "among you i the lord": 1,
     "and according unto all that the lord": 3,
@@ -30696,7 +30818,7 @@ export const all_socu = {
     "and so the lord": 1,
     "and that i am the lord": 1,
     "and that the lord": 7,
-    "and the lord": 604,
+    "and the lord": 631,
     "and the lord’s": 4,
     "and then the lord’s": 2,
     "and there they be as the lord": 1,
@@ -30708,28 +30830,29 @@ export const all_socu = {
     "and when the lord": 10,
     "and wherefore hath the lord": 1,
     "are against the lord": 1,
+    "are before the lord": 1,
     "are not against us but against the lord": 3,
     "are of the lord": 1,
     "are the lord’s": 3,
     "art not thou he o lord": 1,
-    "art thou o lord": 1,
-    "as the lord": 143,
+    "art thou o lord": 3,
+    "as the lord": 148,
     "as the lord’s": 1,
     "at the first because the lord": 2,
     "at the lord": 1,
     "at the lord’s": 2,
     "be given thee of the lord": 2,
     "be he of the lord": 1,
-    "be the lord": 31,
+    "be the lord": 34,
     "be thou lord": 2,
-    "be thou of the lord": 3,
+    "be thou of the lord": 4,
     "be with me the lord": 2,
     "be ye of the lord": 2,
     "because by him the lord": 1,
     "because of the lord": 3,
     "because of the lord’s": 1,
     "because that the lord": 1,
-    "because the lord": 33,
+    "because the lord": 34,
     "because the lord’s": 1,
     "because thou lord": 1,
     "before the lord": 5,
@@ -30752,21 +30875,26 @@ export const all_socu = {
     "but if the lord": 2,
     "but lo o lord": 1,
     "but lo the lord": 1,
+    "but now o lord": 1,
     "but now the lord": 7,
     "but o lord": 2,
-    "but the lord": 58,
+    "but the lord": 59,
     "but thou lord": 1,
-    "but thou o lord": 5,
+    "but thou o lord": 6,
     "but unto the lord": 1,
     "but what the lord": 2,
+    "but with us is the lord": 1,
     "by him for the lord": 1,
     "by the lord": 12,
     "by them i am the lord": 1,
     "cometh from the lord": 2,
+    "concerning which the lord": 1,
+    "concerning whom the lord": 1,
     "counsel of the lord": 3,
-    "did not the lord": 4,
+    "did not the lord": 5,
     "did the lord": 2,
     "even all that the lord": 2,
+    "even as the lord": 1,
     "even it and all that are therein to the lord": 1,
     "even the lord": 11,
     "even to the lord": 2,
@@ -30778,16 +30906,18 @@ export const all_socu = {
     "for behold the lord": 4,
     "for he is the lord’s": 2,
     "for himself the lord": 2,
-    "for i am the lord": 9,
-    "for i the lord": 6,
+    "for i am the lord": 11,
+    "for i the lord": 8,
+    "for in thee o lord": 1,
     "for it was his from the lord": 1,
     "for it was of the lord": 2,
     "for me i am the lord": 1,
     "for me the lord": 1,
     "for that the lord": 4,
-    "for the lord": 193,
+    "for the lord": 206,
     "for the lord’s": 1,
     "for the which the lord": 2,
+    "for thee lord": 1,
     "for them as the lord": 1,
     "for them hath the lord": 2,
     "for them the lord": 2,
@@ -30807,13 +30937,14 @@ export const all_socu = {
     "forasmuch as the lord": 1,
     "forasmuch as there is none like unto thee o lord": 1,
     "from me o lord": 3,
-    "from the lord": 54,
+    "from the lord": 57,
     "from thee which the lord": 2,
     "from them and the lord": 2,
     "from thence will the lord": 1,
     "furthermore as the lord": 2,
     "furthermore the lord": 3,
     "god": 2,
+    "hath been shewed from the lord": 1,
     "hath the lord": 10,
     "have not i the lord": 2,
     "he is the lord": 2,
@@ -30836,10 +30967,10 @@ export const all_socu = {
     "hitherto hath the lord": 1,
     "how long lord": 2,
     "how that i am the lord": 1,
-    "how that the lord": 6,
+    "how that the lord": 7,
     "how the lord": 1,
-    "howbeit the lord": 2,
-    "i am the lord": 50,
+    "howbeit the lord": 3,
+    "i am the lord": 52,
     "i am the lord’s": 2,
     "i even i am the lord": 1,
     "i pray thee here for the lord": 2,
@@ -30852,8 +30983,8 @@ export const all_socu = {
     "in as the lord": 1,
     "in by it because the lord": 2,
     "in provoking the lord": 1,
-    "in the lord": 61,
-    "in the lord’s": 13,
+    "in the lord": 63,
+    "in the lord’s": 14,
     "in thee for thou lord": 1,
     "in thee o lord": 3,
     "in them i am the lord": 1,
@@ -30866,13 +30997,14 @@ export const all_socu = {
     "is not the lord": 7,
     "is of the lord": 5,
     "is the lord": 13,
-    "is the lord’s": 12,
+    "is the lord’s": 13,
     "is unto thee o lord": 1,
     "is upon him i am the lord": 1,
     "is upon me because the lord": 1,
     "is with the lord": 1,
     "it and the lord": 1,
     "it as the lord": 4,
+    "it but the lord": 1,
     "it came to pass that the lord": 2,
     "it except the lord": 2,
     "it for the lord": 3,
@@ -30883,6 +31015,7 @@ export const all_socu = {
     "it is the lord": 2,
     "it is the lord’s": 3,
     "it may be that the lord": 5,
+    "it may be the lord": 2,
     "it that the lord": 2,
     "it the lord": 9,
     "it unto the lord": 5,
@@ -30890,24 +31023,25 @@ export const all_socu = {
     "it whereas the lord": 1,
     "itself for the lord": 1,
     "jehovah": 4,
+    "lest the lord": 1,
     "let the lord": 4,
     "let them be before the lord": 1,
     "like as the lord": 1,
     "likewise when the lord": 2,
-    "lord": 54,
+    "lord": 57,
     "lord’s": 2,
     "may be in the lord": 1,
     "me and the lord": 4,
     "me for the lord": 2,
     "me i am the lord": 1,
     "me not o lord": 1,
-    "me o lord": 23,
+    "me o lord": 27,
     "me that i am the lord": 3,
     "me the lord": 1,
     "me then the lord": 1,
     "me unto the lord": 3,
     "mine shall they be i am the lord": 1,
-    "moreover the lord": 10,
+    "moreover the lord": 12,
     "my cause o lord": 1,
     "nay but whom the lord": 1,
     "neither hath the lord": 2,
@@ -30936,7 +31070,7 @@ export const all_socu = {
     "notwithstanding the lord": 1,
     "now behold if the lord": 1,
     "now for the lord": 1,
-    "now o lord": 2,
+    "now o lord": 3,
     "now the lord": 9,
     "now then o lord": 1,
     "now therefore as the lord": 1,
@@ -30944,7 +31078,7 @@ export const all_socu = {
     "now therefore o lord": 5,
     "now therefore unto me by the lord": 1,
     "now unto the lord": 1,
-    "o lord": 198,
+    "o lord": 224,
     "of all that the lord": 2,
     "of behold the lord": 1,
     "of him as the lord": 2,
@@ -30954,8 +31088,8 @@ export const all_socu = {
     "of me seeing the lord": 1,
     "of such unto the lord": 2,
     "of that wherewith the lord": 1,
-    "of the lord": 2018,
-    "of the lord’s": 40,
+    "of the lord": 2132,
+    "of the lord’s": 46,
     "of the same the lord’s": 1,
     "of them and the lord": 1,
     "of them for the lord": 1,
@@ -30965,7 +31099,7 @@ export const all_socu = {
     "of which the lord’s": 3,
     "of you for the lord": 3,
     "offerings to the lord": 2,
-    "on the lord": 8,
+    "on the lord": 9,
     "only the lord": 3,
     "ourselves to the lord": 1,
     "over thee whom the lord": 1,
@@ -30992,15 +31126,15 @@ export const all_socu = {
     "so now the lord": 1,
     "so shall the lord": 4,
     "so that the lord": 3,
-    "so the lord": 17,
+    "so the lord": 21,
     "so unto the lord": 2,
     "so whomsoever the lord": 1,
     "so will the lord": 1,
     "surely the lord’s": 1,
-    "that i am the lord": 76,
+    "that i am the lord": 77,
     "that i the lord": 16,
     "that pertain unto the lord": 1,
-    "that the lord": 119,
+    "that the lord": 127,
     "that the lord’s": 4,
     "that then the lord": 2,
     "that there is none like unto the lord": 1,
@@ -31009,15 +31143,15 @@ export const all_socu = {
     "that thou lord": 5,
     "that were not right against the lord": 1,
     "that which is thine for the lord": 1,
-    "that which the lord": 2,
-    "the lord": 2086,
-    "the lord’s": 27,
+    "that which the lord": 5,
+    "the lord": 2219,
+    "the lord’s": 32,
     "the sword of the lord": 1,
     "the wicked the lord": 2,
     "thee and what hath the lord": 2,
     "thee as the lord": 3,
     "thee for now would the lord": 2,
-    "thee o lord": 12,
+    "thee o lord": 16,
     "thee that the lord": 1,
     "thee what the lord": 1,
     "them and the lord": 1,
@@ -31031,7 +31165,7 @@ export const all_socu = {
     "them i am the lord": 5,
     "them i the lord": 2,
     "them in the lord": 2,
-    "them o lord": 3,
+    "them o lord": 4,
     "them that the lord": 1,
     "them the lord": 4,
     "them therefore hath the lord": 2,
@@ -31042,11 +31176,13 @@ export const all_socu = {
     "themselves before the lord": 3,
     "themselves lest the lord": 2,
     "themselves to the lord": 2,
+    "themselves unto the lord": 1,
     "themselves unto them and provoked the lord": 2,
     "then hath not the lord": 1,
-    "then shall the lord": 1,
+    "then shall the lord": 2,
     "then the lord": 20,
     "then will the lord": 2,
+    "there before the lord": 1,
     "there for the lord": 2,
     "there the lord": 1,
     "there unto the lord": 3,
@@ -31054,12 +31190,13 @@ export const all_socu = {
     "therefore as the lord": 1,
     "therefore hath the lord": 5,
     "therefore it shall be when the lord": 2,
-    "therefore now lord": 1,
+    "therefore now lord": 2,
     "therefore now o lord": 1,
     "therefore that the lord": 2,
     "therefore the lord": 24,
-    "therefore unto the lord": 2,
+    "therefore unto the lord": 1,
     "therefore when the lord": 1,
+    "therein for the lord": 2,
     "therein i am the lord": 1,
     "therein unto the lord": 1,
     "thereof and the lord": 1,
@@ -31072,8 +31209,10 @@ export const all_socu = {
     "thereon let the lord": 2,
     "thereon unto the lord": 3,
     "these are they whom the lord": 2,
+    "these things the lord": 1,
     "these unto the lord": 2,
     "they where is the lord": 1,
+    "thine o lord": 2,
     "thing which the lord": 3,
     "things belong unto the lord": 1,
     "things doth the lord": 1,
@@ -31084,6 +31223,7 @@ export const all_socu = {
     "thou art the lord": 1,
     "thou even thou art lord": 1,
     "thou in the lord": 1,
+    "thou o lord": 1,
     "thou that the lord": 2,
     "thou the lord": 2,
     "thou therefore o lord": 1,
@@ -31100,7 +31240,7 @@ export const all_socu = {
     "to him by the lord": 1,
     "to me o lord": 1,
     "to provoke the lord": 4,
-    "to the lord": 87,
+    "to the lord": 88,
     "to thee as the lord": 1,
     "to thee o lord": 1,
     "together unto the lord": 1,
@@ -31122,7 +31262,7 @@ export const all_socu = {
     "unto me the lord": 1,
     "unto me where is the lord": 1,
     "unto me wherewith the lord": 1,
-    "unto the lord": 573,
+    "unto the lord": 599,
     "unto the lord thy god according as the lord": 2,
     "unto thee because of the lord": 1,
     "unto thee because the lord": 3,
@@ -31147,7 +31287,7 @@ export const all_socu = {
     "upon him and the lord": 3,
     "upon it as the lord": 1,
     "upon me lord": 2,
-    "upon me o lord": 2,
+    "upon me o lord": 4,
     "upon the lord": 14,
     "upon thee i the lord": 1,
     "upon them as the lord": 1,
@@ -31157,16 +31297,19 @@ export const all_socu = {
     "upon you for the lord": 2,
     "upon you i am the lord": 1,
     "upon you which the lord": 3,
+    "us not the lord": 2,
     "us not thou o lord": 1,
     "us o lord": 5,
     "us the lord": 1,
+    "us this is the lord": 1,
     "wait upon the lord": 1,
     "was from the lord": 2,
     "was the lord": 1,
     "was with him and that the lord": 2,
+    "what doth the lord": 3,
     "what hath the lord": 4,
     "what have ye to do with the lord": 1,
-    "what the lord": 5,
+    "what the lord": 9,
     "whatsoever the lord": 1,
     "when the lord": 21,
     "where is the lord": 1,
@@ -31183,7 +31326,7 @@ export const all_socu = {
     "whether the lord": 1,
     "which pertain unto the lord": 1,
     "which should be the lord’s": 2,
-    "which the lord": 233,
+    "which the lord": 238,
     "which thou o lord": 3,
     "which was the lord’s": 2,
     "whither the lord": 8,
@@ -31191,16 +31334,18 @@ export const all_socu = {
     "who is like unto the lord": 1,
     "who is like unto thee o lord": 1,
     "who is on the lord’s": 1,
-    "who is the lord": 2,
+    "who is the lord": 3,
     "whom the lord": 27,
     "why hath the lord": 2,
     "will the lord": 5,
     "with me forasmuch as when the lord": 1,
     "with that which the lord": 1,
-    "with the lord": 11,
+    "with the lord": 13,
+    "with thee for the lord": 1,
     "with thee i the lord": 1,
     "with them for i am the lord": 1,
     "with whom the lord": 1,
+    "within her and the lord": 1,
     "ye him whom the lord": 1,
     "ye in the lord": 2,
     "ye make the lord’s": 1,
@@ -31231,13 +31376,17 @@ export const all_socu = {
   },
   "H3069": {
     "and unto god": 1,
-    "god": 261,
+    "are unto thee o god": 1,
+    "god": 320,
     "o god": 1,
     "the lord": 1,
     "thou for me o god": 1
   },
   "H307": {
     "at achmetha": 1
+  },
+  "H3071": {
+    "of it jehovah–nissi": 2
   },
   "H3075": {
     "and jehozabad": 2,
@@ -31306,7 +31455,7 @@ export const all_socu = {
     "also jonathan": 1,
     "and for jonathan": 1,
     "and jehonathan": 1,
-    "and jonathan": 43,
+    "and jonathan": 41,
     "and over jonathan": 1,
     "but jonathan": 1,
     "for jonathan": 1,
@@ -31338,7 +31487,7 @@ export const all_socu = {
     "jehoadah": 2
   },
   "H3086": {
-    "was jehoaddan": 2
+    "was jehoaddan": 3
   },
   "H3087": {
     "and jehozadak": 1,
@@ -31516,7 +31665,7 @@ export const all_socu = {
     "and abihud": 1
   },
   "H310": {
-    "after": 377,
+    "after": 380,
     "after him": 5,
     "after me": 1,
     "after that": 1,
@@ -31530,7 +31679,7 @@ export const all_socu = {
     "against them and they followed": 2,
     "all forasmuch": 1,
     "also after": 1,
-    "and after": 67,
+    "and after": 68,
     "and afterward": 29,
     "and afterwards": 4,
     "and all that followed": 1,
@@ -31542,7 +31691,7 @@ export const all_socu = {
     "and hereafter": 1,
     "and him that followeth": 1,
     "and how much more after": 1,
-    "and it came to pass after": 16,
+    "and it came to pass after": 17,
     "and it came to pass after this": 6,
     "and it came to pass afterward": 2,
     "and it shall come to pass after": 1,
@@ -31742,6 +31891,9 @@ export const all_socu = {
     "and with them was jozabad": 1,
     "jozabad": 3
   },
+  "H3108": {
+    "for jozachar": 1
+  },
   "H3109": {
     "and joha": 2
   },
@@ -31904,7 +32056,7 @@ export const all_socu = {
     "and when her days": 1,
     "and when the days": 2,
     "and when the time": 1,
-    "and when these days": 6,
+    "and when these days": 4,
     "and when thy days": 1,
     "and ye have this day": 1,
     "and ye were now": 1,
@@ -31972,9 +32124,9 @@ export const all_socu = {
     "certain days": 3,
     "continually": 7,
     "daily": 32,
-    "day": 473,
+    "day": 471,
     "day by day": 1,
-    "days": 371,
+    "days": 370,
     "days’": 15,
     "day’s": 2,
     "did i then": 1,
@@ -32186,7 +32338,7 @@ export const all_socu = {
     "now there was a day": 1,
     "of days": 12,
     "of every day": 6,
-    "of his days": 1,
+    "of his days": 2,
     "of in the days": 2,
     "of it for in the day": 1,
     "of my days": 3,
@@ -32568,6 +32720,7 @@ export const all_socu = {
     "o my dove": 1,
     "of a dove": 1,
     "of doves": 1,
+    "of dove’s dung": 1,
     "pigeon": 1,
     "pigeons": 9,
     "the dove": 2,
@@ -32689,7 +32842,7 @@ export const all_socu = {
     "and jokim": 1
   },
   "H3138": {
-    "both the former": 1,
+    "both the former": 2,
     "the first rain": 1
   },
   "H3139": {
@@ -32782,7 +32935,7 @@ export const all_socu = {
     "the better": 1
   },
   "H3149": {
-    "and jeziel": 1
+    "and jeziel": 2
   },
   "H315": {
     "and aharah": 1
@@ -32837,7 +32990,7 @@ export const all_socu = {
     "of aharhel": 1
   },
   "H3160": {
-    "jehubbah": 1
+    "jehubbah": 2
   },
   "H3161": {
     "be not thou united": 1,
@@ -32874,7 +33027,7 @@ export const all_socu = {
     "thereof together": 1,
     "they are all together": 1,
     "they are altogether": 2,
-    "together": 104,
+    "together": 105,
     "whilst that i withal": 1
   },
   "H3163": {
@@ -32916,7 +33069,7 @@ export const all_socu = {
   },
   "H3171": {
     "and jehiel": 9,
-    "jehiel": 1,
+    "jehiel": 2,
     "of jehiel": 3,
     "was jehiel": 1
   },
@@ -32938,10 +33091,13 @@ export const all_socu = {
   "H3174": {
     "and jehiah": 1
   },
+  "H3175": {
+    "that a man should both hope": 1
+  },
   "H3176": {
     "all ye that hope": 1,
     "and he stayed": 1,
-    "and he tarried": 2,
+    "and he tarried": 4,
     "and they waited": 1,
     "and waited": 1,
     "be upon us according as we hope": 1,
@@ -32953,6 +33109,7 @@ export const all_socu = {
     "him in those that hope": 1,
     "him upon them that hope": 1,
     "hope": 2,
+    "i am pained": 1,
     "i hope": 1,
     "i hoped": 1,
     "i may not tarry": 1,
@@ -33020,6 +33177,9 @@ export const all_socu = {
   "H3185": {
     "jahziel": 1
   },
+  "H3186": {
+    "but he tarried longer": 1
+  },
   "H3187": {
     "all these were reckoned by genealogies": 1,
     "among those that were reckoned by genealogy": 2,
@@ -33028,9 +33188,11 @@ export const all_socu = {
     "and their genealogy": 1,
     "and this is the genealogy": 1,
     "and to all that were reckoned by genealogies": 1,
+    "and to the genealogy": 1,
     "and were reckoned by their genealogies": 1,
     "and with him were reckoned by genealogy": 1,
     "beside their genealogy": 1,
+    "both to the genealogy": 1,
     "concerning genealogies": 1,
     "reckoned in all by their genealogies": 1,
     "that they might be reckoned by genealogy": 1,
@@ -33340,7 +33502,7 @@ export const all_socu = {
     "of the jachinites": 1
   },
   "H3201": {
-    "able": 2,
+    "able": 3,
     "against it but could": 1,
     "against thee but they shall not prevail": 2,
     "also can": 1,
@@ -33362,9 +33524,9 @@ export const all_socu = {
     "and we shall prevail": 1,
     "and what was i able": 1,
     "and when she could": 1,
-    "any ways": 1,
+    "any ways": 2,
     "as thou couldest": 1,
-    "at all": 1,
+    "at all": 2,
     "be able": 1,
     "but could": 1,
     "but he shall not prevail": 1,
@@ -33375,7 +33537,7 @@ export const all_socu = {
     "can": 6,
     "can i endure": 4,
     "cannot": 12,
-    "could": 16,
+    "could": 18,
     "for me peradventure i shall prevail": 1,
     "for thee thou art not able": 1,
     "for they could": 2,
@@ -33452,7 +33614,7 @@ export const all_socu = {
     "thou shalt not prevail": 1,
     "to overcome": 2,
     "to thyself for i cannot": 2,
-    "unto thee have i now any power": 1,
+    "unto thee have i now any power": 2,
     "unto them we cannot": 1,
     "upon me so that i am not able": 1,
     "upon thee thou shalt not be able": 1,
@@ -33479,16 +33641,16 @@ export const all_socu = {
     "he is able": 1,
     "seeing thou couldest": 1,
     "that can": 2,
-    "that thou canst": 2,
+    "that thou canst": 4,
     "they could": 1,
-    "thou canst": 2
+    "thou canst": 4
   },
   "H3203": {
-    "also was jecoliah": 1,
+    "also was jecoliah": 2,
     "was jecholiah": 1
   },
   "H3204": {
-    "jeconiah": 5,
+    "jeconiah": 4,
     "of jeconiah": 1,
     "that jeconiah": 1,
     "with jeconiah": 1
@@ -33511,7 +33673,7 @@ export const all_socu = {
     "and he also was born": 1,
     "and he begat": 5,
     "and he begetteth": 1,
-    "and he that begetteth": 1,
+    "and he that begetteth": 2,
     "and he which is born": 1,
     "and her that travaileth with child": 1,
     "and i was delivered of a child": 1,
@@ -33545,7 +33707,7 @@ export const all_socu = {
     "begat": 214,
     "beget": 1,
     "birthday": 1,
-    "born": 6,
+    "born": 8,
     "bring forth": 2,
     "bring forth their young": 1,
     "brought forth": 1,
@@ -33635,7 +33797,7 @@ export const all_socu = {
     "there were born": 1,
     "these were born": 1,
     "this man was born": 1,
-    "thou hast brought me forth": 1,
+    "thou hast brought me forth": 2,
     "thou it because thou wast then born": 1,
     "thou shalt beget": 1,
     "thou shalt bring forth": 1,
@@ -33739,7 +33901,7 @@ export const all_socu = {
     "this child": 2,
     "to me that the child": 2,
     "upon the child": 2,
-    "when his young ones": 1,
+    "when his young ones": 2,
     "while the child": 2,
     "with the child": 1,
     "with the young men": 2
@@ -33781,23 +33943,463 @@ export const all_socu = {
     "which was of the sons": 2
   },
   "H3212": {
-    "and go": 1,
-    "and then i will follow": 1,
-    "come": 1,
-    "depart": 1,
-    "departed": 1,
-    "get": 1,
+    "after that he brought": 1,
+    "afterward he brought": 1,
+    "again": 2,
+    "against him and went away": 1,
+    "against it come": 2,
+    "against me wilt thou go": 2,
+    "against them and he departed": 1,
+    "against them and they followed": 1,
+    "also go": 2,
+    "also now therefore come": 1,
+    "also shall go": 1,
+    "also went": 1,
+    "and art come": 1,
+    "and as for thee if thou wilt walk": 1,
+    "and as he went": 1,
+    "and as she was going": 1,
+    "and be gone": 2,
+    "and brought": 1,
+    "and came": 4,
+    "and carried": 1,
+    "and come": 5,
+    "and come away": 3,
+    "and depart": 1,
+    "and departed": 12,
+    "and departeth": 1,
+    "and flowed": 1,
+    "and followed": 6,
+    "and from thence go": 1,
+    "and from thence he went": 1,
+    "and gat": 2,
+    "and gat him home": 1,
+    "and gat them away": 1,
+    "and get thee": 1,
+    "and go": 24,
+    "and go away": 1,
+    "and go forward": 1,
+    "and go thy way": 1,
+    "and gone": 1,
+    "and hath gone": 1,
+    "and have gone": 1,
+    "and have walked": 1,
+    "and he came": 1,
+    "and he departed": 2,
+    "and he departeth": 1,
+    "and he is gone": 1,
+    "and he shall lead": 1,
+    "and he walked": 7,
+    "and he was gone": 1,
+    "and he went": 18,
+    "and he went on": 1,
+    "and i am gone": 1,
+    "and i have led": 1,
+    "and i went": 1,
+    "and i will bring": 1,
+    "and i will go": 4,
+    "and if thou wilt walk": 2,
+    "and if ye walk": 1,
+    "and in going": 1,
+    "and it shall be if thou go": 1,
+    "and it shall come to pass as soon as i am gone": 1,
+    "and it shall come to pass that when ye go": 2,
+    "and leadeth": 1,
+    "and led": 2,
+    "and let us be going": 2,
+    "and let us go": 8,
+    "and made you go": 1,
+    "and she departed": 1,
+    "and she went": 9,
+    "and that i also have walked": 1,
+    "and the king went": 1,
+    "and themselves they went": 1,
+    "and then i will follow": 2,
+    "and there went": 2,
+    "and these cities shall go": 1,
+    "and they are gone": 1,
+    "and they departed": 7,
+    "and they gat them away": 1,
+    "and they shall march": 1,
+    "and they shall walk": 1,
+    "and they walked": 1,
+    "and they went": 21,
+    "and thou hast followed": 1,
+    "and thou hast walked": 1,
+    "and though they go": 1,
+    "and to walk": 4,
+    "and vanisheth away": 1,
+    "and walk": 6,
+    "and walked": 8,
+    "and walketh": 1,
+    "and was gone": 1,
+    "and we will walk": 6,
+    "and went": 76,
+    "and went away": 7,
+    "and went his way": 3,
+    "and went on": 2,
+    "and went their way": 2,
+    "and went through": 1,
+    "and when he came": 2,
+    "and when he was departed": 1,
+    "and when he was gone": 1,
+    "and when they went": 1,
+    "and when they were departed": 1,
+    "and when thou walkest": 2,
+    "and whither wilt thou go": 1,
+    "and who will go": 1,
+    "and ye are gone away": 1,
+    "and ye shall not walk": 1,
+    "and ye walk": 1,
+    "are against her come": 1,
+    "as he went": 3,
+    "as they go": 2,
+    "away": 1,
+    "be gone": 1,
+    "before i go": 1,
+    "before i go hence": 1,
+    "but as for me i will walk": 1,
+    "but behold if we go": 1,
+    "but go": 1,
+    "but go thou thy way": 1,
+    "but hast walked": 1,
+    "but have walked": 1,
+    "but he led": 3,
+    "but he walked": 1,
+    "but i will depart": 2,
+    "but if thou wilt not go": 3,
+    "but they went": 1,
+    "but thou shalt go": 1,
+    "but thou shalt not enjoy them for they shall go": 1,
+    "but walked": 3,
+    "but we will go along": 1,
+    "but we will walk": 1,
+    "by which ye must go": 1,
+    "came": 2,
+    "carry": 2,
+    "come": 59,
+    "come now": 1,
+    "depart": 6,
+    "departed": 20,
+    "every one of them shall go": 1,
+    "follow": 3,
+    "followed": 2,
+    "for he walked": 1,
+    "for he walked in": 1,
+    "for he went": 2,
+    "for him to walk": 2,
+    "for thee to go": 2,
+    "for they shall march": 2,
+    "for they went": 1,
+    "for thou shalt go": 1,
+    "from going": 1,
+    "from me and have walked": 1,
+    "from thence am i and i went": 1,
+    "from thence and let them go": 2,
+    "from thence and went": 1,
+    "from us for they shall not depart": 2,
+    "get": 6,
     "get thee out": 1,
-    "go": 6,
-    "saying go": 1,
+    "get you hence": 2,
+    "go": 101,
+    "go thy way": 2,
+    "go to": 2,
+    "go to now": 1,
+    "go your way": 2,
+    "goeth": 1,
+    "gone": 1,
+    "had appointed went": 1,
+    "he leadeth": 2,
+    "he led": 1,
+    "he that goeth": 1,
+    "he that walketh": 1,
+    "he went": 1,
+    "her and bring": 1,
+    "her and go": 1,
+    "her and go thy way": 1,
+    "her and let us go": 1,
+    "her and she went": 1,
+    "her let him go": 1,
+    "him i am go": 1,
+    "him neither will he go": 1,
+    "him only and i will depart": 1,
+    "him went": 1,
+    "how can i go": 1,
+    "how much more then if we come": 1,
+    "i pray thee and go": 2,
+    "i pray thee go": 1,
+    "i pray thee let me go": 1,
+    "i shall go": 1,
+    "i should walk": 1,
+    "i walk": 1,
+    "i walked": 1,
+    "i will get": 2,
+    "i will go": 15,
+    "if thou wilt walk": 3,
+    "if ye walk": 1,
+    "in following": 2,
+    "in going": 1,
+    "in that they went": 1,
+    "in the which ye go": 1,
+    "in walking": 1,
+    "inasmuch as thou followedst": 1,
+    "is it not in that thou goest": 1,
+    "is with thee whithersoever thou goest": 1,
+    "it let him go": 1,
+    "it you come": 1,
+    "led": 1,
+    "let": 1,
+    "let him go": 1,
+    "let me go": 1,
+    "let me now go": 2,
+    "let them go": 2,
+    "let us go": 14,
+    "let us not all now go": 2,
+    "make thee go": 1,
+    "may ye go": 2,
+    "me and brought": 1,
+    "me and i will bring": 3,
+    "me that i should not walk": 1,
+    "me why go": 1,
+    "neither go": 1,
+    "neither shall they walk": 1,
+    "neither shall ye go": 1,
+    "neither shall ye walk": 1,
+    "neither walk": 1,
+    "nor go": 1,
+    "nor walk": 1,
+    "not as they went": 10,
+    "not but went": 1,
+    "not go": 3,
+    "not how to go": 1,
+    "not so go": 1,
+    "not when he led": 1,
+    "not when they went": 9,
+    "now go": 1,
+    "now let us go": 1,
+    "now therefore come": 1,
+    "now therefore come thou": 1,
+    "now therefore go": 1,
+    "o come": 1,
+    "of it let him also go": 1,
+    "of us go": 1,
+    "only ye shall not go": 1,
+    "or go": 2,
+    "ought ye not to walk": 1,
+    "prospered": 1,
+    "ran": 1,
+    "saying come": 2,
+    "saying go": 3,
+    "shall be weak": 2,
+    "shall bring": 1,
+    "shall carry": 1,
+    "shall flow": 4,
+    "shall go": 8,
+    "shall i go": 3,
+    "shall lead them forth": 1,
+    "shall pursue": 2,
+    "shall spread": 1,
+    "shall walk": 2,
+    "shall we go": 2,
+    "shalt thou go": 1,
+    "so he departed": 4,
+    "so he led": 1,
+    "so he went": 5,
+    "so i went": 1,
+    "so shall he go": 1,
+    "so she went": 2,
+    "so there went": 1,
+    "so they went": 4,
+    "spread abroad": 1,
+    "take": 1,
+    "than to go": 2,
+    "that he had and they brought": 1,
+    "that he should not go": 1,
+    "that i may go": 4,
+    "that i may go up": 1,
+    "that led": 3,
+    "that she shall go": 1,
+    "that they could not follow": 1,
+    "that they may go": 1,
+    "that they may walk": 1,
+    "that they might go": 2,
+    "that they should not go": 1,
+    "that they walk": 1,
+    "that thou mayest walk": 1,
+    "that thou must go": 1,
+    "that thou shouldest go": 1,
+    "that was with him come": 1,
+    "that we cannot go": 1,
+    "thee and as soon as he was departed": 1,
+    "thee and come": 1,
+    "thee and he went": 2,
+    "thee and let me go": 1,
+    "thee for thou hast gone": 1,
+    "thee for whither thou goest": 2,
+    "thee go thy way": 1,
+    "thee to walk": 1,
+    "thee to walk in": 1,
+    "thee when thou walkest": 1,
+    "them and brought": 1,
+    "them and they went": 1,
+    "them i will cause them to walk": 1,
+    "them of zobah and they went": 1,
+    "them went": 1,
+    "them whether they will walk": 1,
+    "them will i go": 1,
+    "then follow": 2,
+    "then i went": 1,
+    "then shalt thou walk": 1,
+    "then there went": 1,
+    "then they went along": 1,
+    "then went": 5,
+    "thence also and went": 2,
+    "there go": 1,
+    "therefore departed": 1,
+    "therefore now go": 2,
+    "thereof shall go": 2,
+    "thereon and go": 1,
+    "these and brought": 1,
+    "these went": 2,
+    "they come": 2,
+    "they departed": 1,
+    "they followed": 5,
+    "they go": 1,
+    "they grow": 1,
+    "they shall also walk": 1,
+    "they shall go": 2,
+    "they shall walk": 2,
+    "they went": 17,
+    "they were departed": 2,
+    "this then he brought": 1,
+    "thither go": 2,
+    "those carried": 1,
+    "thou art gone": 1,
+    "thou goest": 1,
+    "thou shalt go": 2,
+    "thou shalt not go": 2,
+    "thou therefore get": 1,
+    "though i walk": 1,
+    "thy walking": 1,
+    "to carry": 1,
+    "to depart": 8,
+    "to follow": 2,
+    "to get away": 2,
+    "to go": 39,
+    "to go away": 1,
+    "to go out": 1,
+    "to her go": 2,
+    "to him go": 1,
+    "to him which led": 1,
+    "to me to walk": 1,
+    "to run": 1,
+    "to walk": 21,
+    "unto her go": 2,
+    "unto her if thou wilt go": 3,
+    "unto her take": 1,
+    "unto her wilt thou go": 2,
+    "unto him away": 1,
+    "unto him come": 4,
     "unto him get": 1,
-    "unto him go back": 1
+    "unto him go": 11,
+    "unto him go back": 2,
+    "unto him i will not go": 2,
+    "unto him let me go": 3,
+    "unto him to walk": 1,
+    "unto him why should he go": 2,
+    "unto me come": 1,
+    "unto me go": 3,
+    "unto me let us go": 1,
+    "unto thee and they shall be thine they shall come": 1,
+    "unto thee this shall go": 4,
+    "unto thee this shall not go": 4,
+    "unto thee to go": 2,
+    "unto them depart": 2,
+    "unto them get": 2,
+    "unto them go": 5,
+    "unto them go your way": 1,
+    "unto them shall i go": 1,
+    "unto them shall we go": 1,
+    "unto us go": 1,
+    "unto you go": 1,
+    "upon us now therefore come": 1,
+    "us to go": 1,
+    "us we will go": 1,
+    "walk": 5,
+    "walk ye in it": 1,
+    "walked": 2,
+    "walketh": 1,
+    "walking": 1,
+    "was let down": 1,
+    "was to go": 7,
+    "was upon him also and he went": 2,
+    "waxed": 1,
+    "we went through": 1,
+    "we will go": 5,
+    "we will not walk": 2,
+    "went": 107,
+    "went away": 1,
+    "went his way": 1,
+    "went in": 2,
+    "went on": 1,
+    "went out": 1,
+    "went their way": 1,
+    "went up": 1,
+    "what have i to do with thee get": 1,
+    "when he went": 1,
+    "when i went": 1,
+    "when they shall go": 1,
+    "when they went": 8,
+    "when those went": 2,
+    "when thou art departed": 1,
+    "when thou goest": 4,
+    "when thou wentest": 1,
+    "wherefore goest": 1,
+    "wherein shall go": 1,
+    "wherein they must walk": 1,
+    "wherein they should go": 2,
+    "wherein they should walk": 2,
+    "wherein we may walk": 1,
+    "wherein ye go": 2,
+    "which followed": 1,
+    "which he may carry away": 2,
+    "which shall go": 2,
+    "whither goest": 1,
+    "whither shall i go": 1,
+    "whither thou goest": 1,
+    "whithersoever thou goest": 1,
+    "who am i that i should go": 1,
+    "who led": 1,
+    "whose art thou and whither goest": 1,
+    "why will ye go": 1,
+    "will go": 3,
+    "will not follow": 1,
+    "will walk": 2,
+    "will we go": 2,
+    "wilt thou go": 2,
+    "with her and they went": 1,
+    "with him went": 1,
+    "with me then i will not go": 3,
+    "with me whither do these bear": 1,
+    "with thee the same shall go": 4,
+    "with thee the same shall not go": 4,
+    "with us and now let us go": 1,
+    "with us let us go": 1,
+    "ye and depart": 1,
+    "ye and get": 1,
+    "ye and let us walk": 2,
+    "ye shall not go": 3,
+    "ye shall walk": 2,
+    "ye should go": 1,
+    "yea come": 3,
+    "yea though i walk": 1,
+    "you to walk": 1
   },
   "H3213": {
     "and howl": 4,
     "and shall howl": 1,
     "every one shall howl": 3,
-    "howl": 19,
+    "howl": 20,
     "over them make them to howl": 1,
     "shall be howlings": 1,
     "shall howl": 2,
@@ -34009,7 +34611,7 @@ export const all_socu = {
     "on my right hand": 1,
     "on the right": 2,
     "on the right hand": 8,
-    "on the right side": 5,
+    "on the right side": 6,
     "on the south": 1,
     "or if thou depart to the right hand": 1,
     "out of thy right": 1,
@@ -34086,9 +34688,11 @@ export const all_socu = {
     "from under from the right": 1,
     "his right": 1,
     "of his right": 30,
+    "of that on the right hand": 1,
     "of the right": 15,
     "of their right": 15,
     "on the right": 3,
+    "on thy right": 1,
     "right": 3,
     "the right": 1,
     "was in the right": 1,
@@ -34205,7 +34809,7 @@ export const all_socu = {
     "withhold": 1
   },
   "H3241": {
-    "and janum": 1
+    "and janum": 2
   },
   "H3242": {
     "of his young twigs": 1
@@ -34262,6 +34866,7 @@ export const all_socu = {
     "hast thou laid the foundation": 1,
     "hast thou ordained": 1,
     "hath founded": 2,
+    "have laid the foundation": 1,
     "he laid the foundation": 1,
     "he shall lay the foundation": 1,
     "laid": 1,
@@ -34284,7 +34889,8 @@ export const all_socu = {
     "wast thou when i laid the foundations": 1,
     "when the foundation": 1,
     "which he hath established": 1,
-    "while they took counsel": 1
+    "while they took counsel": 1,
+    "who laid": 1
   },
   "H3246": {
     "began": 1
@@ -34310,7 +34916,7 @@ export const all_socu = {
     "and they that depart": 1
   },
   "H325": {
-    "ahasuerus": 23,
+    "ahasuerus": 24,
     "ahasuerus’": 1,
     "of ahasuerus": 7,
     "this is ahasuerus": 2
@@ -34376,7 +34982,6 @@ export const all_socu = {
     "for i will no more": 1,
     "for thou shalt no more": 2,
     "further": 2,
-    "gathered together": 1,
     "gave": 1,
     "hath added": 1,
     "he may give him and not exceed": 2,
@@ -34411,7 +35016,7 @@ export const all_socu = {
     "neither will i be with you any more": 1,
     "no longer": 1,
     "no more": 9,
-    "no more again": 2,
+    "no more again": 4,
     "not again": 3,
     "not for we have added": 1,
     "prolongeth": 1,
@@ -34557,7 +35162,7 @@ export const all_socu = {
     "and haahashtari": 1
   },
   "H3260": {
-    "of iddo": 1
+    "of iddo": 2
   },
   "H3261": {
     "shall sweep away": 1
@@ -34569,7 +35174,7 @@ export const all_socu = {
     "and jeuz": 1
   },
   "H3265": {
-    "of jair": 1
+    "of jair": 2
   },
   "H3266": {
     "and jeush": 2,
@@ -34611,11 +35216,14 @@ export const all_socu = {
     "have consulted together": 1
   },
   "H3273": {
-    "and jehiel": 1,
-    "and jeiel": 6,
-    "jehiel": 1,
+    "and jehiel": 2,
+    "and jeiel": 7,
+    "jehiel": 2,
     "jeiel": 5,
-    "of jeiel": 2
+    "of jeiel": 3
+  },
+  "H3274": {
+    "jeush": 2
   },
   "H3275": {
     "and jachan": 1
@@ -34764,6 +35372,7 @@ export const all_socu = {
     "so shall it come to pass and as i have purposed": 1,
     "take counsel": 1,
     "that he hath taken": 2,
+    "that is purposed": 1,
     "that they gave": 1,
     "therefore and i will advertise": 1,
     "therefore i counsel": 1,
@@ -34897,8 +35506,7 @@ export const all_socu = {
     "jarah": 2
   },
   "H3295": {
-    "it in an honeycomb": 1,
-    "the forests": 1
+    "it in an honeycomb": 1
   },
   "H3296": {
     "of jaare–oregim": 2
@@ -34910,7 +35518,7 @@ export const all_socu = {
     "and jaresiah": 1
   },
   "H3299": {
-    "and jaasau": 1
+    "and jaasau": 2
   },
   "H33": {
     "of the abi–ezrites": 4,
@@ -35113,7 +35721,7 @@ export const all_socu = {
     "and for all that was laid out": 1,
     "and get away": 1,
     "and get you forth": 1,
-    "and go forth": 3,
+    "and go forth": 5,
     "and go out": 3,
     "and goest not forth": 1,
     "and goeth out": 4,
@@ -35231,7 +35839,7 @@ export const all_socu = {
     "both to go out": 1,
     "break out": 1,
     "bring": 1,
-    "bring forth": 9,
+    "bring forth": 10,
     "bring her forth": 1,
     "bring out": 2,
     "bring them out": 2,
@@ -35253,7 +35861,7 @@ export const all_socu = {
     "but i will bring you forth": 1,
     "but if thou wilt not go forth": 1,
     "but it is brought forth": 1,
-    "but shall go forth": 3,
+    "but shall go forth": 4,
     "but thou broughtest us out": 1,
     "but went not out": 1,
     "by him went out": 1,
@@ -35261,7 +35869,7 @@ export const all_socu = {
     "came": 3,
     "came forth": 16,
     "came forth out": 1,
-    "came i out": 1,
+    "came i out": 2,
     "came not forth": 1,
     "came out": 31,
     "came ye out": 1,
@@ -35307,7 +35915,7 @@ export const all_socu = {
     "get thee out": 4,
     "get you out": 2,
     "go forth": 29,
-    "go not forth": 2,
+    "go not forth": 3,
     "go out": 14,
     "go they forth": 1,
     "go thy way forth": 1,
@@ -35417,7 +36025,7 @@ export const all_socu = {
     "out of him came forth": 1,
     "out of it cometh": 1,
     "out of whom came": 1,
-    "over us thou wast he that leddest out": 1,
+    "over us thou wast he that leddest out": 2,
     "place shall one carry forth": 1,
     "place until he come out": 1,
     "proceed": 1,
@@ -35434,9 +36042,9 @@ export const all_socu = {
     "shall come forth": 6,
     "shall come out": 2,
     "shall go": 1,
-    "shall go forth": 17,
+    "shall go forth": 18,
     "shall go on": 1,
-    "shall go out": 10,
+    "shall go out": 11,
     "shall he carry forth": 1,
     "shall proceed": 3,
     "shall they come out": 1,
@@ -35474,7 +36082,7 @@ export const all_socu = {
     "that he went out": 3,
     "that i brought forth": 2,
     "that i brought them forth": 2,
-    "that i brought them out": 1,
+    "that i brought them out": 2,
     "that i may go out": 1,
     "that i will go out": 3,
     "that is with him come out": 1,
@@ -35542,7 +36150,7 @@ export const all_socu = {
     "these things that bringeth out": 1,
     "they go forth": 1,
     "they issued out": 1,
-    "they shall bring out": 1,
+    "they shall bring out": 2,
     "they shall come out": 1,
     "they went forth": 2,
     "thing go ye out": 2,
@@ -35754,7 +36362,7 @@ export const all_socu = {
     "he hath made": 1,
     "him shalt thou set": 1,
     "let me now leave": 1,
-    "me he hath made": 1,
+    "me he hath made": 2,
     "thereof and put": 1,
     "to set": 1,
     "unto thee and set": 1
@@ -35787,8 +36395,8 @@ export const all_socu = {
   },
   "H3326": {
     "bed": 1,
-    "chamber": 2,
-    "chambers": 4,
+    "chamber": 4,
+    "chambers": 8,
     "into my bed": 1,
     "my bed": 1,
     "thee upon my bed": 1,
@@ -35805,9 +36413,9 @@ export const all_socu = {
     "from isaac": 1,
     "her and isaac": 2,
     "him isaac": 1,
-    "isaac": 34,
+    "isaac": 32,
     "it upon isaac": 1,
-    "of isaac": 15,
+    "of isaac": 13,
     "son isaac": 1,
     "that isaac": 2,
     "that isaac’s": 1,
@@ -35826,7 +36434,7 @@ export const all_socu = {
     "and jezoar": 1
   },
   "H3329": {
-    "they that came forth": 1
+    "they that came forth": 2
   },
   "H333": {
     "ater": 1,
@@ -35853,7 +36461,7 @@ export const all_socu = {
     "and he poured": 2,
     "and he shall pour": 1,
     "and laid them out": 1,
-    "and pour": 4,
+    "and pour": 5,
     "and poured": 4,
     "and poured them out": 1,
     "and shalt pour out": 1,
@@ -35872,7 +36480,7 @@ export const all_socu = {
     "say they cleaveth fast": 1,
     "shall pour": 1,
     "so they poured out": 1,
-    "the vessels to her and she poured out": 1,
+    "the vessels to her and she poured out": 2,
     "thereon and he poured": 1,
     "they are firm": 1,
     "was overflown": 1,
@@ -35916,7 +36524,7 @@ export const all_socu = {
     "he that formed": 1,
     "himself that formed": 2,
     "i form": 1,
-    "i formed": 1,
+    "i formed": 2,
     "i have formed": 2,
     "is in the potter’s": 2,
     "is not like them for he is the former": 2,
@@ -35930,7 +36538,7 @@ export const all_socu = {
     "that formed": 2,
     "that i have formed": 2,
     "that is formed": 1,
-    "that the maker": 4,
+    "that the maker": 2,
     "thee and formed": 1,
     "them to the potter": 2,
     "these were the potters": 1,
@@ -35954,7 +36562,7 @@ export const all_socu = {
     "for the imagination": 1,
     "in the imagination": 1,
     "me not or shall the thing framed": 1,
-    "of his work": 1,
+    "of his work": 2,
     "our frame": 1,
     "their imagination": 1,
     "whose mind": 1
@@ -35972,19 +36580,22 @@ export const all_socu = {
   "H334": {
     "lefthanded": 2
   },
+  "H3340": {
+    "of the jezerites": 1
+  },
   "H3341": {
     "and desolate": 1,
     "and hath kindled": 1,
     "and i will kindle": 4,
     "and is burned up": 1,
-    "and set": 5,
+    "and set": 6,
     "and shall kindle": 1,
-    "are burned": 1,
+    "are burned": 2,
     "because they are burned up": 1,
     "behold i will kindle": 1,
     "but i will kindle": 1,
     "he hath kindled": 1,
-    "set": 3,
+    "set": 4,
     "shall be burned": 2,
     "shall be kindled": 1,
     "shall they be burned": 1,
@@ -36047,6 +36658,7 @@ export const all_socu = {
     "from whence": 1,
     "how": 1,
     "me i pray thee where": 1,
+    "nor for": 1,
     "not whether": 1,
     "of what": 1,
     "unto him where art thou": 1,
@@ -36177,6 +36789,7 @@ export const all_socu = {
     "him that is in reputation": 1,
     "how excellent": 1,
     "in brightness": 1,
+    "is of an excellent": 1,
     "is precious": 1,
     "precious": 1,
     "shall be as the fat": 1,
@@ -36262,7 +36875,7 @@ export const all_socu = {
     "did fear": 1,
     "do therefore fear": 1,
     "dread": 1,
-    "fear": 40,
+    "fear": 41,
     "feared": 14,
     "feareth": 1,
     "fearful": 1,
@@ -36442,6 +37055,7 @@ export const all_socu = {
     "fearfulness": 1,
     "from thy fear": 1,
     "in the fear": 5,
+    "is not this thy fear": 1,
     "my fear": 1,
     "of the fear": 1,
     "of thee and the fear": 1,
@@ -36706,7 +37320,7 @@ export const all_socu = {
     "unto him we are come down": 1,
     "unto them that go down": 1,
     "upon him and he went down": 1,
-    "upon thee and get thee down": 1,
+    "upon thee and get thee down": 2,
     "upon them and let them go down": 1,
     "upon them i will bring them down": 1,
     "was brought down": 2,
@@ -36762,7 +37376,7 @@ export const all_socu = {
     "even unto jordan": 1,
     "for jordan": 2,
     "from jordan": 4,
-    "him over jordan": 2,
+    "him over jordan": 3,
     "in jordan": 4,
     "jordan": 104,
     "me at jordan": 1,
@@ -36788,6 +37402,7 @@ export const all_socu = {
     "according to all that they inform": 1,
     "and a teacher": 1,
     "and doth teach": 1,
+    "and former rain": 1,
     "and he shot": 2,
     "and he will teach": 2,
     "and i will shoot": 1,
@@ -36797,6 +37412,7 @@ export const all_socu = {
     "and teach": 1,
     "and that ye may teach": 1,
     "and the archers": 6,
+    "and the shooters": 4,
     "and they shall teach": 2,
     "and will teach": 1,
     "and without a teaching": 1,
@@ -36825,7 +37441,7 @@ export const all_socu = {
     "shall teach": 2,
     "shewed": 1,
     "shoot": 3,
-    "shot": 4,
+    "shot": 8,
     "teach": 5,
     "that he may teach": 1,
     "that teacheth": 1,
@@ -36877,7 +37493,7 @@ export const all_socu = {
     "and at jerusalem": 2,
     "and concerning jerusalem": 1,
     "and for jerusalem’s": 1,
-    "and he was there when jerusalem": 3,
+    "and he was there when jerusalem": 2,
     "and in jerusalem": 14,
     "and jerusalem": 48,
     "and let jerusalem": 1,
@@ -36887,7 +37503,7 @@ export const all_socu = {
     "and to jerusalem": 2,
     "are they not jerusalem": 1,
     "as jerusalem": 1,
-    "at jerusalem": 42,
+    "at jerusalem": 41,
     "but in all this time was not i at jerusalem": 1,
     "but jerusalem": 1,
     "cause jerusalem": 1,
@@ -36928,7 +37544,7 @@ export const all_socu = {
     "stead in jerusalem": 1,
     "that are at jerusalem": 1,
     "that is in jerusalem": 1,
-    "that jerusalem": 3,
+    "that jerusalem": 2,
     "that we are in how jerusalem": 2,
     "that were at jerusalem": 2,
     "that were in jerusalem": 1,
@@ -37117,7 +37733,7 @@ export const all_socu = {
     "me to jericho": 2,
     "near jericho": 8,
     "now jericho": 1,
-    "of jericho": 23,
+    "of jericho": 21,
     "right against jericho": 1,
     "that were at jericho": 1,
     "them to jericho": 1,
@@ -37131,6 +37747,7 @@ export const all_socu = {
     "and jeremoth": 4,
     "and jerimoth": 6,
     "jerimoth": 1,
+    "of jerimoth": 1,
     "to jeremoth": 1
   },
   "H3407": {
@@ -37266,7 +37883,7 @@ export const all_socu = {
     "mine enemies": 9,
     "mine enemy": 1,
     "not against me o mine enemy": 1,
-    "not when thine enemy": 1,
+    "not when thine enemy": 2,
     "now let thine enemies": 1,
     "o thou enemy": 1,
     "of all his enemies": 1,
@@ -37301,7 +37918,7 @@ export const all_socu = {
     "themselves upon their enemies": 1,
     "then she that is mine enemy": 1,
     "thine enemies": 8,
-    "thine enemy": 4,
+    "thine enemy": 5,
     "thine enemy’s": 1,
     "this that the enemy": 1,
     "thou hast made all his enemies": 1,
@@ -37345,8 +37962,8 @@ export const all_socu = {
     "in the two sides": 2,
     "into the sides": 1,
     "on the side": 1,
-    "on the sides": 2,
-    "on the two sides": 1,
+    "on the sides": 3,
+    "on the two sides": 2,
     "parts": 2,
     "quarters": 1,
     "them from the coasts": 1,
@@ -37400,8 +38017,7 @@ export const all_socu = {
     "do us more harm": 1,
     "grieved": 1,
     "him it shall go ill": 1,
-    "shall be grievous": 1,
-    "so that it went ill": 1
+    "shall be grievous": 1
   },
   "H3416": {
     "and irpeel": 1
@@ -37550,7 +38166,7 @@ export const all_socu = {
     "them will i drive out": 1,
     "then ye shall drive out": 1,
     "there and have it in possession": 1,
-    "thereof and drove out": 2,
+    "thereof and drove out": 4,
     "they shall inherit": 2,
     "they shall possess": 2,
     "this shall not be thine heir": 2,
@@ -37635,6 +38251,7 @@ export const all_socu = {
     "if there": 2,
     "if there be": 2,
     "if there were": 1,
+    "if thou hast": 1,
     "if thou wilt": 2,
     "is": 4,
     "is there": 5,
@@ -37733,7 +38350,7 @@ export const all_socu = {
     "and he that sitteth": 2,
     "and how the inhabitants": 1,
     "and i dwell": 1,
-    "and i sat": 4,
+    "and i sat": 5,
     "and i should not fail": 2,
     "and i will cause them to dwell": 1,
     "and i will dwell": 1,
@@ -37755,7 +38372,7 @@ export const all_socu = {
     "and now o inhabitants": 1,
     "and of all that dwell": 2,
     "and placed": 4,
-    "and remained": 5,
+    "and remained": 6,
     "and sat": 17,
     "and sat down": 7,
     "and sat her down": 2,
@@ -37771,7 +38388,7 @@ export const all_socu = {
     "and she sat": 5,
     "and she shall continue": 1,
     "and she shall then continue": 1,
-    "and sit": 6,
+    "and sit": 7,
     "and sit down": 1,
     "and tarry": 1,
     "and that dwelt": 1,
@@ -37841,7 +38458,7 @@ export const all_socu = {
     "continued": 2,
     "doth inhabit": 2,
     "doth sit": 2,
-    "dwell": 40,
+    "dwell": 41,
     "dwell in": 1,
     "dwelled": 5,
     "dwelleth": 4,
@@ -37934,13 +38551,13 @@ export const all_socu = {
     "make": 2,
     "makest me dwell": 1,
     "me and he shall sit": 4,
-    "me and set": 1,
+    "me and set": 2,
     "men these dwelt": 1,
     "my downsitting": 1,
     "nevertheless the inhabitants": 5,
     "no more with the inhabitants": 1,
     "nor sitteth": 1,
-    "nor the inhabitants": 22,
+    "nor the inhabitants": 25,
     "not and ye dwell": 1,
     "not dwell": 2,
     "not inhabited": 1,
@@ -37948,10 +38565,10 @@ export const all_socu = {
     "now she dwelt": 2,
     "now there dwelt": 1,
     "now therefore i pray you tarry": 1,
-    "o inhabitant": 3,
+    "o inhabitant": 5,
     "o inhabitants": 2,
     "o thou inhabitant": 1,
-    "o thou that art situate": 1,
+    "o thou that art situate": 2,
     "o thou that dwellest": 1,
     "o thou that inhabitest": 1,
     "o ye inhabitants": 2,
@@ -37973,7 +38590,7 @@ export const all_socu = {
     "remain": 4,
     "remained": 5,
     "remainest": 1,
-    "sat": 29,
+    "sat": 30,
     "sat down": 1,
     "sat him down": 1,
     "sat on": 1,
@@ -38020,11 +38637,11 @@ export const all_socu = {
     "that are inhabited": 1,
     "that are not inhabited": 1,
     "that are now inhabited": 2,
-    "that dost inhabit": 2,
+    "that dost inhabit": 3,
     "that dwell": 14,
-    "that dwellest": 6,
+    "that dwellest": 7,
     "that dwelleth": 9,
-    "that dwelt": 27,
+    "that dwelt": 28,
     "that had married": 1,
     "that had taken": 2,
     "that he may dwell": 1,
@@ -38034,7 +38651,7 @@ export const all_socu = {
     "that inhabited": 3,
     "that it may remain": 1,
     "that none shall remain": 1,
-    "that sat": 3,
+    "that sat": 2,
     "that she sat": 1,
     "that sit": 5,
     "that sittest": 1,
@@ -38155,7 +38772,7 @@ export const all_socu = {
     "when ye dwelt": 1,
     "where he abode": 1,
     "where he dwelt": 1,
-    "where they sat": 3,
+    "where they sat": 4,
     "where we dwell": 1,
     "whereas i have not dwelt": 1,
     "wherein they dwelt": 1,
@@ -38164,11 +38781,11 @@ export const all_socu = {
     "whereon he sat": 2,
     "whereon he sitteth": 1,
     "whereon she sitteth": 1,
-    "which are not inhabited": 2,
+    "which are not inhabited": 4,
     "which dwell": 11,
     "which dwellest": 1,
     "which dwelleth": 2,
-    "which dwelt": 22,
+    "which dwelt": 24,
     "which no man inhabiteth": 1,
     "which remain": 1,
     "which sit": 1,
@@ -38206,6 +38823,9 @@ export const all_socu = {
   "H3428": {
     "to jeshebeab": 1
   },
+  "H3429": {
+    "in the seat": 2
+  },
   "H343": {
     "and destruction": 1,
     "and your destruction": 1,
@@ -38225,7 +38845,7 @@ export const all_socu = {
     "therefore shall his calamity": 1
   },
   "H3430": {
-    "and ishbi–benob": 1
+    "and ishbi–benob": 3
   },
   "H3431": {
     "and ishbah": 1
@@ -38249,7 +38869,7 @@ export const all_socu = {
     "to joshbekashah": 1
   },
   "H3437": {
-    "jashub": 2,
+    "jashub": 3,
     "of jashub": 1
   },
   "H3438": {
@@ -38435,7 +39055,6 @@ export const all_socu = {
     "where are now": 1
   },
   "H3460": {
-    "and ismaiah": 1,
     "ishmaiah": 1
   },
   "H3461": {
@@ -38454,13 +39073,15 @@ export const all_socu = {
     "it is an old": 1,
     "lest i sleep": 1,
     "nor sleep": 2,
-    "old store": 2,
+    "old store": 1,
     "why sleepest": 1
   },
   "H3463": {
     "as one out of sleep": 1,
     "he sleepeth": 1,
+    "i sleep": 1,
     "of them that sleep": 1,
+    "sleepeth": 1,
     "sleeping": 1,
     "slept": 1
   },
@@ -38471,7 +39092,7 @@ export const all_socu = {
     "and old": 1,
     "moreover the old": 1,
     "of the old": 3,
-    "the old": 1,
+    "the old": 2,
     "yet of old": 2
   },
   "H3466": {
@@ -38710,10 +39331,11 @@ export const all_socu = {
     "look straight": 1,
     "make straight": 1,
     "meet": 1,
+    "peradventure it will please": 1,
     "pleased": 3,
     "shall direct": 1,
-    "straight": 3,
-    "thee and make": 1,
+    "straight": 6,
+    "thee and make": 2,
     "took the straight": 1,
     "uprightly": 1,
     "was right": 1,
@@ -38880,14 +39502,14 @@ export const all_socu = {
     "is israel": 1,
     "is not with israel": 2,
     "is over israel": 1,
-    "israel": 275,
+    "israel": 274,
     "israel’s": 3,
     "laid upon israel": 1,
     "lest israel": 1,
     "let israel": 4,
     "like as it was to israel": 1,
     "may israel": 1,
-    "men of israel": 4,
+    "men of israel": 5,
     "moreover of israel": 1,
     "neither will i let israel": 2,
     "not against israel": 1,
@@ -38899,7 +39521,7 @@ export const all_socu = {
     "of all israel": 12,
     "of all things and israel": 1,
     "of him and of all israel": 1,
-    "of israel": 1952,
+    "of israel": 1950,
     "of israel’s": 6,
     "of me o israel": 1,
     "of the israelites": 4,
@@ -39240,7 +39862,7 @@ export const all_socu = {
     "excellent": 1,
     "hath left": 9,
     "more": 1,
-    "my cord": 1,
+    "my cord": 2,
     "nor to the rest": 1,
     "now the rest": 31,
     "of the remnant": 2,
@@ -39272,6 +39894,7 @@ export const all_socu = {
     "and jether": 2,
     "jether": 2,
     "of jether": 3,
+    "to jethro": 1,
     "unto jether": 1,
     "was jether": 1,
     "were jether": 1
@@ -39284,7 +39907,7 @@ export const all_socu = {
     "therefore the abundance": 1
   },
   "H3503": {
-    "and jethro": 6,
+    "and jethro": 5,
     "jethro": 1,
     "of jethro": 1,
     "then jethro": 1,
@@ -39340,7 +39963,8 @@ export const all_socu = {
   },
   "H3512": {
     "against him therefore he shall be grieved": 1,
-    "sad": 1
+    "sad": 1,
+    "the broken": 1
   },
   "H3513": {
     "abounding": 1,
@@ -39394,7 +40018,7 @@ export const all_socu = {
     "how glorious": 1,
     "i will also glorify": 1,
     "i will be glorified": 1,
-    "in it and i will be glorified": 1,
+    "in it and i will be glorified": 2,
     "is heavier": 1,
     "it because the hair was heavy": 1,
     "lest we be chargeable": 1,
@@ -39616,7 +40240,8 @@ export const all_socu = {
     "and of the ram": 1,
     "and rams": 2,
     "and rams’": 2,
-    "and the posts": 4,
+    "and the mighty": 1,
+    "and the posts": 7,
     "and the ram": 1,
     "and the rams": 1,
     "and to their posts": 2,
@@ -39641,8 +40266,8 @@ export const all_socu = {
     "of rams’": 3,
     "of the oaks": 1,
     "of the ram": 15,
-    "on that side and the posts": 1,
-    "on that side upon the posts": 1,
+    "on that side and the posts": 2,
+    "on that side upon the posts": 2,
     "or for a ram": 1,
     "ram": 34,
     "rams": 38,
@@ -39650,12 +40275,12 @@ export const all_socu = {
     "the mighty": 1,
     "the mighty men": 1,
     "the post": 1,
-    "the posts": 2,
+    "the posts": 3,
     "the ram": 27,
     "the rams": 3,
     "the whole ram": 2,
-    "thereof and the posts": 2,
-    "thereof the posts": 1,
+    "thereof and the posts": 4,
+    "thereof the posts": 2,
     "thereof were by the posts": 1,
     "they offered a ram": 1,
     "to a ram": 1,
@@ -39663,7 +40288,7 @@ export const all_socu = {
     "trees": 1,
     "unto a ram": 1,
     "unto thee the rams": 1,
-    "were upon the posts": 4
+    "were upon the posts": 8
   },
   "H3520": {
     "and the carriage": 1,
@@ -39784,7 +40409,7 @@ export const all_socu = {
     "with the lamb": 1
   },
   "H3533": {
-    "and brought them into subjection": 3,
+    "and brought them into subjection": 5,
     "and lo we bring into bondage": 2,
     "and subdue": 1,
     "and subdue it": 1,
@@ -39813,6 +40438,7 @@ export const all_socu = {
   },
   "H3537": {
     "and the barrel": 1,
+    "barrels": 1,
     "her pitcher": 4,
     "in a barrel": 1,
     "of thy pitcher": 2,
@@ -40037,7 +40663,7 @@ export const all_socu = {
     "that is priest": 1,
     "that the priest": 1,
     "that the priests": 1,
-    "the priest": 174,
+    "the priest": 173,
     "the priests": 74,
     "the priest’s": 4,
     "the same may be a priest": 3,
@@ -40214,7 +40840,7 @@ export const all_socu = {
     "and made it ready": 1,
     "and make ready": 1,
     "and more unto the perfect": 1,
-    "and prepare": 13,
+    "and prepare": 11,
     "and prepared": 2,
     "and set": 1,
     "and stablisheth": 1,
@@ -40357,7 +40983,7 @@ export const all_socu = {
     "yourselves and prepare": 1
   },
   "H356": {
-    "and elon": 2,
+    "and elon": 3,
     "him elon": 1,
     "of elon": 3
   },
@@ -40369,9 +40995,9 @@ export const all_socu = {
     "her cakes": 1
   },
   "H3562": {
-    "conaniah": 1,
-    "of cononiah": 1,
-    "over which cononiah": 1
+    "conaniah": 2,
+    "of cononiah": 2,
+    "over which cononiah": 2
   },
   "H3563": {
     "and cups": 1,
@@ -40381,6 +41007,7 @@ export const all_socu = {
     "her cup": 1,
     "i am like an owl": 1,
     "i the cup": 1,
+    "in the cup": 1,
     "my cup": 1,
     "neither shall men give them the cup": 1,
     "of a cup": 2,
@@ -40455,7 +41082,11 @@ export const all_socu = {
     "to aijalon": 1
   },
   "H3570": {
-    "of cushi": 1
+    "of cushi": 2
+  },
+  "H3571": {
+    "an ethiopian": 2,
+    "the ethiopian": 2
   },
   "H3572": {
     "of cushan": 1
@@ -40557,7 +41188,7 @@ export const all_socu = {
     "his strength": 1,
     "if i speak of strength": 1,
     "in his strength": 1,
-    "in power": 3,
+    "in power": 4,
     "in strength": 3,
     "in the strength": 1,
     "in thee my power": 1,
@@ -40577,7 +41208,7 @@ export const all_socu = {
     "might the strength": 1,
     "my might": 1,
     "my power": 1,
-    "my strength": 5,
+    "my strength": 6,
     "neither shall there be any strength": 1,
     "no strength": 6,
     "nor by power": 1,
@@ -40768,7 +41399,7 @@ export const all_socu = {
     "lavers": 6,
     "like an hearth": 1,
     "scaffold": 1,
-    "the laver": 6,
+    "the laver": 7,
     "the lavers": 1,
     "under the laver": 1
   },
@@ -40944,12 +41575,12 @@ export const all_socu = {
   },
   "H361": {
     "and likewise to the arches": 1,
-    "and the arches": 5,
-    "and their arches": 2,
-    "in it and in the arches": 3,
-    "therein and in the arches": 2,
-    "thereof and the arches": 7,
-    "to it and the arches": 1
+    "and the arches": 8,
+    "and their arches": 4,
+    "in it and in the arches": 6,
+    "therein and in the arches": 4,
+    "thereof and the arches": 14,
+    "to it and the arches": 2
   },
   "H3610": {
     "mingled": 3,
@@ -40994,6 +41625,9 @@ export const all_socu = {
   },
   "H3613": {
     "in caleb–ephratah": 2
+  },
+  "H3614": {
+    "and he was of the house of caleb": 1
   },
   "H3615": {
     "against them and that i may consume": 1,
@@ -41109,6 +41743,7 @@ export const all_socu = {
     "them to destroy them utterly": 1,
     "they made an end": 1,
     "they shall consume": 2,
+    "they spend": 1,
     "thou hast consumed": 1,
     "thou shalt not make clean riddance": 1,
     "thou shalt not wholly reap": 1,
@@ -41214,7 +41849,7 @@ export const all_socu = {
     "and chelubai": 1
   },
   "H3622": {
-    "chelluh": 1
+    "chelluh": 2
   },
   "H3623": {
     "of thine espousals": 1
@@ -41405,8 +42040,8 @@ export const all_socu = {
     "with weapons": 2
   },
   "H3628": {
-    "him into prison": 1,
-    "out of prison": 1
+    "him into prison": 2,
+    "out of prison": 2
   },
   "H3629": {
     "and reins": 1,
@@ -41463,7 +42098,7 @@ export const all_socu = {
   },
   "H3635": {
     "and finished": 1,
-    "and have set up": 2,
+    "and have set up": 4,
     "and set up": 1,
     "and to make up": 2,
     "set up": 1,
@@ -41546,7 +42181,8 @@ export const all_socu = {
   },
   "H3643": {
     "and chimham": 1,
-    "chimham": 2
+    "chimham": 2,
+    "of chimham": 2
   },
   "H3644": {
     "and they shall be like": 1,
@@ -41569,7 +42205,7 @@ export const all_socu = {
     "we have as it were": 1
   },
   "H3645": {
-    "and chemosh": 1,
+    "and chemosh": 2,
     "and for chemosh": 1,
     "chemosh": 1,
     "for chemosh": 1,
@@ -41655,6 +42291,7 @@ export const all_socu = {
     "of the base": 1,
     "thee unto thy place": 1,
     "there was a base": 1,
+    "they could not well": 1,
     "unto mine office": 1
   },
   "H3654": {
@@ -41662,6 +42299,7 @@ export const all_socu = {
     "and lice": 1,
     "became lice": 2,
     "lice": 2,
+    "manner": 1,
     "not so there were lice": 2,
     "that it may become lice": 1
   },
@@ -41782,7 +42420,8 @@ export const all_socu = {
     "he is a merchant": 1,
     "is against you o canaan": 1,
     "of canaan": 87,
-    "of traffick": 1
+    "of traffick": 1,
+    "whose traffickers": 1
   },
   "H3668": {
     "and chenaanah": 1,
@@ -41854,7 +42493,7 @@ export const all_socu = {
     "corners": 2,
     "forth their wings": 2,
     "from the uttermost part": 1,
-    "her wings": 2,
+    "her wings": 3,
     "his wings": 2,
     "in her wings": 1,
     "in his wings": 1,
@@ -41900,7 +42539,7 @@ export const all_socu = {
     "was under their wings": 2,
     "were their wings": 1,
     "wing": 19,
-    "wings": 14,
+    "wings": 15,
     "with their wings": 4,
     "with wings": 1,
     "yet shall ye be as the wings": 1
@@ -41918,7 +42557,7 @@ export const all_socu = {
     "were gathered together": 1
   },
   "H3674": {
-    "of their companions": 1
+    "of their companions": 2
   },
   "H3675": {
     "and his companions": 1,
@@ -41985,7 +42624,7 @@ export const all_socu = {
     "upon thy throne": 3
   },
   "H3679": {
-    "the chaldean": 1
+    "the chaldean": 2
   },
   "H368": {
     "and the emims": 1,
@@ -42014,7 +42653,7 @@ export const all_socu = {
     "behold they cover": 1,
     "closed": 1,
     "concealeth": 2,
-    "cover": 7,
+    "cover": 8,
     "covered": 13,
     "covereth": 4,
     "covering": 1,
@@ -42077,7 +42716,7 @@ export const all_socu = {
   },
   "H3682": {
     "behold he is to thee a covering": 1,
-    "for that is his covering": 1,
+    "for that is his covering": 2,
     "hath no covering": 1,
     "her raiment": 1,
     "of thy vesture": 1,
@@ -42153,8 +42792,8 @@ export const all_socu = {
   "H369": {
     "also is gone": 1,
     "and are innumerable": 1,
-    "and are not": 1,
-    "and fatherless": 1,
+    "and are not": 2,
+    "and fatherless": 2,
     "and it was infinite": 1,
     "and never": 1,
     "and there was not": 1,
@@ -42186,7 +42825,7 @@ export const all_socu = {
     "to folly": 1
   },
   "H3691": {
-    "chisleu": 1,
+    "chisleu": 2,
     "even in chisleu": 1
   },
   "H3692": {
@@ -42404,10 +43043,11 @@ export const all_socu = {
     "provoked him to anger": 1,
     "provoked they him to anger": 1,
     "so she provoked": 1,
+    "sorrow": 1,
     "that provoketh me to anger": 1,
     "that they may provoke me to anger": 1,
     "that they might provoke me to anger": 2,
-    "that ye might provoke me to anger": 1,
+    "that ye might provoke me to anger": 2,
     "thee for they have provoked thee to anger": 1,
     "them and provoke me not to anger": 1,
     "they have provoked me to anger": 2,
@@ -42448,7 +43088,7 @@ export const all_socu = {
     "all in the hands": 2,
     "an handful": 1,
     "and her hands": 1,
-    "and his hands": 2,
+    "and his hands": 3,
     "and his spoons": 1,
     "and in the hands": 2,
     "and it shall come to pass as soon as the soles": 1,
@@ -42506,7 +43146,7 @@ export const all_socu = {
     "of the hands": 1,
     "of the soles": 1,
     "of the spoons": 3,
-    "of thee by thy hand": 1,
+    "of thee by thy hand": 2,
     "of thine hands": 3,
     "our hands": 1,
     "out of the hand": 5,
@@ -42540,7 +43180,7 @@ export const all_socu = {
     "to mine hands": 1,
     "together": 2,
     "under the soles": 1,
-    "upon his hands": 2,
+    "upon his hands": 3,
     "upon his paws": 1,
     "upon the handles": 1,
     "us from the hand": 1,
@@ -42691,7 +43331,7 @@ export const all_socu = {
     "unto you to make an atonement": 1,
     "us and purge away": 1,
     "when i am pacified": 1,
-    "when thou hast made an atonement": 2,
+    "when thou hast made an atonement": 1,
     "whereby an atonement shall be made": 1,
     "which is for himself and shall make an atonement": 1,
     "will pacify": 1
@@ -42717,12 +43357,13 @@ export const all_socu = {
     "with pitch": 1
   },
   "H3725": {
+    "for atonement": 1,
     "of atonement": 4,
     "of atonements": 1,
     "of the atonement": 1
   },
   "H3726": {
-    "and chephar–haammonai": 2
+    "and chephar–haammonai": 3
   },
   "H3727": {
     "a mercy seat": 1,
@@ -42962,7 +43603,7 @@ export const all_socu = {
     "of a vineyard": 1,
     "of his own vineyard": 2,
     "of the vineyard": 1,
-    "of the vineyards": 6,
+    "of the vineyards": 5,
     "of thy vineyard": 4,
     "of vineyard": 1,
     "or into the vineyards": 1,
@@ -43012,8 +43653,8 @@ export const all_socu = {
     "and full ears of corn": 1,
     "and lo the fruitful place": 1,
     "and of his fruitful field": 1,
-    "and the fruitful field": 4,
-    "be a fruitful field": 2,
+    "and the fruitful field": 5,
+    "be a fruitful field": 3,
     "from the plentiful field": 1,
     "in the fruitful field": 1,
     "into a fruitful field": 2,
@@ -43024,8 +43665,8 @@ export const all_socu = {
   },
   "H376": {
     "a champion": 1,
-    "a man": 81,
-    "a man’s": 2,
+    "a man": 84,
+    "a man’s": 3,
     "a prophet": 1,
     "a stranger": 1,
     "according to every man’s": 2,
@@ -43050,7 +43691,7 @@ export const all_socu = {
     "among you man": 1,
     "an egyptian": 5,
     "an hebrew": 2,
-    "and a certain man": 2,
+    "and a certain man": 4,
     "and a man": 13,
     "and all men": 3,
     "and all the men": 11,
@@ -43065,7 +43706,7 @@ export const all_socu = {
     "and behold there were none": 1,
     "and caused every man": 2,
     "and each one": 1,
-    "and every man": 33,
+    "and every man": 34,
     "and every man’s": 2,
     "and every one": 33,
     "and fifty": 1,
@@ -43099,6 +43740,7 @@ export const all_socu = {
     "and no man": 10,
     "and none": 2,
     "and not a man": 1,
+    "and not man": 1,
     "and of him": 1,
     "and one": 5,
     "and shalt not be to them a reprover": 1,
@@ -43108,7 +43750,7 @@ export const all_socu = {
     "and the adulteress": 1,
     "and the great man": 1,
     "and the levite": 2,
-    "and the man": 60,
+    "and the man": 63,
     "and the men": 31,
     "and the mighty man": 1,
     "and there is no man": 1,
@@ -43118,6 +43760,7 @@ export const all_socu = {
     "and there was no man": 1,
     "and there was none of the men": 2,
     "and there was not a man": 1,
+    "and they and all the men": 1,
     "and thou man": 2,
     "and upon the men": 1,
     "and we will every one": 1,
@@ -43176,12 +43819,13 @@ export const all_socu = {
     "but the man": 9,
     "but the men": 2,
     "by another": 3,
+    "by the man": 1,
     "can a man": 1,
     "can any": 1,
     "can one": 1,
     "consent": 1,
-    "each": 8,
-    "each man": 2,
+    "each": 9,
+    "each man": 7,
     "either": 2,
     "elders": 1,
     "even a man": 1,
@@ -43189,12 +43833,12 @@ export const all_socu = {
     "even that man": 5,
     "even the man": 1,
     "every": 5,
-    "every man": 159,
+    "every man": 160,
     "every man’s": 5,
     "every one": 91,
     "footmen": 4,
     "for a man": 4,
-    "for all the men": 2,
+    "for all the men": 3,
     "for another man": 1,
     "for as when a man": 1,
     "for even the husband": 1,
@@ -43218,7 +43862,7 @@ export const all_socu = {
     "from the man": 1,
     "from thence every man": 2,
     "from you man": 1,
-    "further if the man": 2,
+    "further if the man": 1,
     "had war": 1,
     "had wars": 1,
     "hath any": 1,
@@ -43229,8 +43873,9 @@ export const all_socu = {
     "he any": 2,
     "he shall not have a man": 1,
     "her all that the man": 1,
-    "her from her husband": 2,
-    "her husband": 16,
+    "her from her husband": 1,
+    "her husband": 17,
+    "her to her husband": 1,
     "him a man": 1,
     "him but if a man": 3,
     "him every one": 1,
@@ -43238,9 +43883,10 @@ export const all_socu = {
     "his man": 2,
     "hundred": 2,
     "husband": 6,
+    "i": 1,
     "i am an husbandman": 1,
     "i any man": 1,
-    "if a man": 21,
+    "if a man": 22,
     "if any": 5,
     "if any man": 2,
     "if i be a man": 1,
@@ -43279,7 +43925,7 @@ export const all_socu = {
     "like a man": 2,
     "like a man’s": 1,
     "likewise all the men": 1,
-    "man": 174,
+    "man": 178,
     "man from the man": 1,
     "man’s": 9,
     "may hurt a man": 1,
@@ -43293,10 +43939,10 @@ export const all_socu = {
     "me now therefore a man": 1,
     "me the men": 1,
     "me thither and behold there was a man": 1,
-    "men": 166,
+    "men": 176,
     "more than any man": 1,
     "moreover the man": 1,
-    "my husband": 2,
+    "my husband": 3,
     "neither am i her husband": 1,
     "neither had any man": 1,
     "neither man": 1,
@@ -43308,7 +43954,7 @@ export const all_socu = {
     "no more every man": 2,
     "no more for every man’s": 1,
     "no stranger": 1,
-    "none": 1,
+    "none": 2,
     "none of them can": 1,
     "not a man": 7,
     "not any": 1,
@@ -43332,13 +43978,13 @@ export const all_socu = {
     "of a man": 8,
     "of a man’s": 2,
     "of a stranger": 1,
-    "of a tribe": 1,
+    "of a tribe": 2,
     "of all mankind": 1,
     "of all the men": 2,
     "of any": 1,
     "of any man": 1,
     "of any man’s": 1,
-    "of every": 6,
+    "of every": 7,
     "of every man": 1,
     "of every man’s": 1,
     "of every one": 4,
@@ -43361,7 +44007,7 @@ export const all_socu = {
     "of this man": 1,
     "on every man": 1,
     "on which if a man": 1,
-    "one": 52,
+    "one": 57,
     "one with another": 3,
     "or a man": 4,
     "or being his counsellor": 1,
@@ -43372,7 +44018,7 @@ export const all_socu = {
     "person": 6,
     "persons": 12,
     "save to every man": 3,
-    "saving that every one": 1,
+    "saving that every one": 2,
     "shall a man": 1,
     "shall be his whatsoever any man": 2,
     "shall be to thy husband": 1,
@@ -43419,9 +44065,9 @@ export const all_socu = {
     "the champion": 1,
     "the husband": 2,
     "the male": 4,
-    "the man": 63,
+    "the man": 65,
     "the man’s": 2,
-    "the men": 18,
+    "the men": 19,
     "the one": 1,
     "thee": 1,
     "thee a man": 5,
@@ -43445,7 +44091,7 @@ export const all_socu = {
     "there shall not a man": 2,
     "there shall not any": 2,
     "there shall not any man": 1,
-    "there was a certain": 2,
+    "there was a certain": 1,
     "there was a man": 2,
     "there was none": 2,
     "therefore and shew thyself a man": 1,
@@ -43455,7 +44101,7 @@ export const all_socu = {
     "they shall every man": 2,
     "thine husband": 3,
     "this and that man": 2,
-    "this fellow": 1,
+    "this fellow": 2,
     "this man": 10,
     "thou a man": 3,
     "thou art the man": 1,
@@ -43474,16 +44120,19 @@ export const all_socu = {
     "to another instead of her husband": 1,
     "to another instead of thy husband": 3,
     "to any": 2,
+    "to be an husbandman": 1,
     "to be there a man": 3,
+    "to each man": 1,
     "to every man": 4,
     "to every one": 11,
     "to have an husband": 2,
     "to him": 1,
-    "to him so the man": 1,
-    "to my husband": 1,
+    "to him so the man": 2,
+    "to my husband": 2,
+    "to one": 1,
     "to the end that every one": 1,
     "to the lender": 1,
-    "to the man": 21,
+    "to the man": 22,
     "to the men": 4,
     "to the steward": 1,
     "to thee who shall be a man": 1,
@@ -43495,7 +44144,7 @@ export const all_socu = {
     "unto an husband": 2,
     "unto any": 1,
     "unto every man": 1,
-    "unto her husband": 5,
+    "unto her husband": 6,
     "unto her the man": 1,
     "unto him and cause every man": 1,
     "unto him and to the men": 1,
@@ -43528,6 +44177,7 @@ export const all_socu = {
     "upon him": 1,
     "upon him every man": 2,
     "upon man": 1,
+    "upon the man": 1,
     "upon us for as the man": 1,
     "us a man": 1,
     "us hath any": 1,
@@ -43574,12 +44224,14 @@ export const all_socu = {
     "with every man": 2,
     "with her husband": 1,
     "with her then the man": 3,
+    "with men": 1,
     "with the man": 2,
     "with the men": 1,
     "with thee when the man": 1,
     "with this man": 1,
     "with thy husband": 1,
     "woman and a man": 2,
+    "ye every": 2,
     "ye every man": 11,
     "ye every one": 10,
     "ye men": 1,
@@ -43834,7 +44486,7 @@ export const all_socu = {
     "until they had destroyed": 1,
     "upon it and will cut off": 1,
     "upon thee and cut off": 1,
-    "us and how shall we make": 2,
+    "us and how shall we make": 3,
     "us and thee and let us make": 1,
     "want": 2,
     "was cut down": 1,
@@ -43859,12 +44511,12 @@ export const all_socu = {
     "beams": 3
   },
   "H3774": {
-    "and the cherethites": 2,
+    "and the cherethites": 3,
     "him and all the cherethites": 1,
     "of the cherethites": 2,
     "the cherethims": 1,
     "was over both the cherethites": 1,
-    "was over the cherethites": 1
+    "was over the cherethites": 2
   },
   "H3775": {
     "a lamb": 1,
@@ -43899,8 +44551,8 @@ export const all_socu = {
     "now the chaldeans": 1,
     "now the chaldees": 1,
     "of chaldea": 3,
-    "of the chaldeans": 30,
-    "of the chaldees": 9,
+    "of the chaldeans": 31,
+    "of the chaldees": 10,
     "of the chaldees’": 1,
     "shall be on the chaldeans": 1,
     "the chaldeans": 7,
@@ -43913,10 +44565,10 @@ export const all_socu = {
   },
   "H3779": {
     "chaldeans": 2,
-    "of the chaldeans": 1,
-    "or chaldean": 2,
-    "the chaldeans": 4,
-    "to the chaldeans": 1
+    "of the chaldeans": 2,
+    "or chaldean": 3,
+    "the chaldeans": 7,
+    "to the chaldeans": 2
   },
   "H378": {
     "and ish–bosheth": 2,
@@ -43974,12 +44626,12 @@ export const all_socu = {
     "they shall be cast down": 1,
     "they shall fall": 1,
     "they shall stumble": 2,
-    "they stumble": 2,
+    "they stumble": 4,
     "they stumbled": 1,
     "thou shalt not stumble": 1,
     "to fall": 4,
     "to stumble": 1,
-    "unless they cause some to fall": 2,
+    "unless they cause some to fall": 4,
     "we stumble": 1,
     "when he stumbleth": 1,
     "wherein they shall not stumble": 1,
@@ -44008,7 +44660,7 @@ export const all_socu = {
   "H3787": {
     "seem right": 1,
     "shall prosper": 1,
-    "to direct": 1
+    "to direct": 2
   },
   "H3788": {
     "and every right": 1,
@@ -44053,7 +44705,7 @@ export const all_socu = {
     "behold they are written": 12,
     "but did as it is written": 1,
     "covenant and write": 1,
-    "day thereof and it was written": 3,
+    "day thereof and it was written": 2,
     "even every one that is written": 1,
     "for thou writest": 1,
     "had written": 2,
@@ -44061,7 +44713,7 @@ export const all_socu = {
     "he wrote": 1,
     "her and write": 1,
     "him are they not written": 1,
-    "i have written": 2,
+    "i have written": 3,
     "in her then let him write": 1,
     "in him behold they are written": 1,
     "is written": 1,
@@ -44131,8 +44783,8 @@ export const all_socu = {
     "wrote": 2
   },
   "H3791": {
-    "according to the writing": 3,
-    "according to their writing": 1,
+    "according to the writing": 4,
+    "according to their writing": 2,
     "and the writing": 1,
     "for the writing": 1,
     "in the scripture": 1,
@@ -44154,8 +44806,8 @@ export const all_socu = {
   },
   "H3794": {
     "kittim": 2,
-    "of chittim": 5,
-    "to chittim": 1
+    "of chittim": 6,
+    "to chittim": 2
   },
   "H3795": {
     "beaten": 2,
@@ -44184,7 +44836,7 @@ export const all_socu = {
   "H380": {
     "as the apple": 1,
     "him as the apple": 1,
-    "in obscure": 2,
+    "in obscure": 4,
     "in the black": 1,
     "me as the apple": 1
   },
@@ -44463,6 +45115,9 @@ export const all_socu = {
   "H3813": {
     "covered": 1
   },
+  "H3814": {
+    "softly": 1
+  },
   "H3815": {
     "of lael": 1
   },
@@ -44629,9 +45284,9 @@ export const all_socu = {
     "not thy mind": 1,
     "not your heart": 1,
     "now as they were making their hearts": 1,
-    "of heart": 15,
+    "of heart": 16,
     "of his heart": 10,
-    "of his own heart": 1,
+    "of his own heart": 2,
     "of mine heart": 1,
     "of mine own mind": 1,
     "of my heart": 5,
@@ -44898,7 +45553,6 @@ export const all_socu = {
     "thine heart": 1
   },
   "H3826": {
-    "and their hearts": 1,
     "how much more then the hearts": 1,
     "in their hearts": 1,
     "is thine heart": 1,
@@ -44928,12 +45582,12 @@ export const all_socu = {
   "H383": {
     "and there is": 2,
     "and they have": 1,
-    "art": 1,
+    "art": 2,
     "can": 1,
     "is": 3,
     "it be": 1,
     "that i have": 1,
-    "that we will": 1,
+    "that we will": 2,
     "there are": 1,
     "there is": 4,
     "thou shalt have": 1,
@@ -45136,7 +45790,7 @@ export const all_socu = {
     "and put": 6,
     "and put on": 5,
     "and put them upon": 1,
-    "and shall put": 2,
+    "and shall put": 4,
     "and shall put on": 1,
     "and she put": 1,
     "and so put them on": 2,
@@ -45327,9 +45981,9 @@ export const all_socu = {
     "oh": 2,
     "oh that": 1,
     "or would god": 2,
-    "that if": 1,
-    "though": 1,
-    "unto him if": 2,
+    "that if": 2,
+    "though": 2,
+    "unto him if": 1,
     "unto them would god": 2,
     "us would to god": 1,
     "will peradventure": 1,
@@ -45348,7 +46002,7 @@ export const all_socu = {
   },
   "H3866": {
     "and the lydians": 1,
-    "ludim": 2
+    "ludim": 3
   },
   "H3867": {
     "also is joined": 1,
@@ -45421,7 +46075,7 @@ export const all_socu = {
     "with boards": 2
   },
   "H3872": {
-    "of luhith": 2
+    "of luhith": 3
   },
   "H3873": {
     "hallohesh": 1,
@@ -45460,8 +46114,9 @@ export const all_socu = {
     "but levi": 1,
     "levi": 3,
     "might be with levi": 1,
-    "of levi": 51,
-    "to levi": 2
+    "of levi": 56,
+    "to levi": 2,
+    "wherefore levi": 1
   },
   "H3879": {
     "and levites": 2,
@@ -45599,7 +46254,7 @@ export const all_socu = {
     "lodge": 5,
     "lodged": 3,
     "may endure": 1,
-    "murmured": 6,
+    "murmured": 7,
     "nay but we will abide": 2,
     "not tarry that night": 1,
     "remain": 2,
@@ -45612,7 +46267,7 @@ export const all_socu = {
     "shall ye lodge": 1,
     "tarry": 1,
     "that were with him and tarried all night": 1,
-    "that ye murmur": 4,
+    "that ye murmur": 8,
     "thee or abide": 1,
     "there will not tarry": 1,
     "they lodged": 1,
@@ -45620,7 +46275,7 @@ export const all_socu = {
     "to lodge all night": 1,
     "to lodge in": 1,
     "to lodging": 2,
-    "to murmur": 2,
+    "to murmur": 4,
     "to tarry for a night": 1,
     "unto me he shall lie": 1,
     "unto them lodge": 1,
@@ -45662,8 +46317,11 @@ export const all_socu = {
   },
   "H3888": {
     "after he hath kneaded": 1,
-    "and kneaded": 2,
+    "and kneaded": 3,
     "knead": 2
+  },
+  "H3889": {
+    "of laish": 1
   },
   "H389": {
     "also": 1,
@@ -45831,7 +46489,7 @@ export const all_socu = {
     "and bread": 6,
     "and my bread": 1,
     "and of the bread": 1,
-    "and the bread": 4,
+    "and the bread": 5,
     "and the shewbread": 1,
     "and there is bread": 1,
     "and there was no bread": 2,
@@ -45840,7 +46498,7 @@ export const all_socu = {
     "as much bread": 1,
     "because it is his food": 1,
     "both for the shewbread": 1,
-    "bread": 91,
+    "bread": 92,
     "bread for there was no bread": 3,
     "by bread": 1,
     "food": 5,
@@ -45877,7 +46535,7 @@ export const all_socu = {
     "me meat": 1,
     "me my bread": 1,
     "me with food": 1,
-    "meat": 6,
+    "meat": 7,
     "my bread": 3,
     "my meat": 1,
     "neither bread": 1,
@@ -46062,7 +46720,7 @@ export const all_socu = {
     "at midnight": 5,
     "at night": 1,
     "because in the night": 4,
-    "by night": 39,
+    "by night": 40,
     "even to night": 2,
     "every night": 1,
     "fled by night": 1,
@@ -46075,7 +46733,7 @@ export const all_socu = {
     "in hither to night": 1,
     "in me in the night season": 1,
     "in that night": 2,
-    "in the night": 17,
+    "in the night": 18,
     "is thine the night": 1,
     "it by night": 1,
     "it is a night": 2,
@@ -46284,7 +46942,7 @@ export const all_socu = {
     "thee thou shalt not learn": 1,
     "them teach": 1,
     "then will i teach": 1,
-    "therefore hast thou also taught": 1,
+    "therefore hast thou also taught": 2,
     "they have taught": 1,
     "thou hast taught": 1,
     "though i taught": 2,
@@ -46359,6 +47017,7 @@ export const all_socu = {
   "H3933": {
     "a scorn": 2,
     "and derision": 1,
+    "and had in derision": 1,
     "scorning": 1,
     "shall be their derision": 1,
     "with the scorning": 1
@@ -46418,6 +47077,9 @@ export const all_socu = {
   },
   "H3941": {
     "of lapidoth": 1
+  },
+  "H3942": {
+    "before": 1
   },
   "H3943": {
     "and turned": 1,
@@ -46594,7 +47256,7 @@ export const all_socu = {
     "i will take": 2,
     "if he take": 1,
     "if thou wilt receive": 1,
-    "if thou wilt take": 1,
+    "if thou wilt take": 2,
     "in not receiving": 2,
     "in thee have they taken": 2,
     "infolding": 1,
@@ -46652,7 +47314,7 @@ export const all_socu = {
     "shall not take": 2,
     "shall receive": 1,
     "shall take": 26,
-    "shall they take away": 3,
+    "shall they take away": 4,
     "shalt thou take": 7,
     "she received": 1,
     "she shall take": 1,
@@ -46670,7 +47332,7 @@ export const all_socu = {
     "that hath not received": 1,
     "that he took": 3,
     "that is on them nor take": 1,
-    "that take": 1,
+    "that take": 2,
     "that they bring": 5,
     "that they had taken": 1,
     "that thou hast taken": 2,
@@ -46937,7 +47599,7 @@ export const all_socu = {
   },
   "H3957": {
     "and between the chambers": 1,
-    "and from under these chambers": 1,
+    "and from under these chambers": 2,
     "and in the chambers": 1,
     "and lo there were chambers": 2,
     "and of all the chambers": 1,
@@ -46973,7 +47635,7 @@ export const all_socu = {
   },
   "H3960": {
     "accuse": 1,
-    "slandereth": 2
+    "slandereth": 4
   },
   "H3961": {
     "and language": 1,
@@ -47095,7 +47757,7 @@ export const all_socu = {
     "me upon a very": 1,
     "mightily": 2,
     "not away neither shall he greatly": 1,
-    "not for he was sore": 3,
+    "not for he was sore": 2,
     "not very": 1,
     "of you take ye good": 1,
     "quickly": 1,
@@ -47191,14 +47853,14 @@ export const all_socu = {
     "for the hundred": 1,
     "for two hundred": 2,
     "him in an hundred": 1,
-    "hundred": 377,
+    "hundred": 380,
     "hundredth": 2,
     "in all an hundred": 1,
     "in an hundred": 1,
     "of an hundred": 9,
     "of hundreds": 11,
     "of the hundred": 4,
-    "of the hundreds": 1,
+    "of the hundreds": 2,
     "of the two hundred": 1,
     "of them an hundred": 1,
     "of them for an hundred": 2,
@@ -47206,8 +47868,8 @@ export const all_socu = {
     "of us eleven hundred": 1,
     "out of two hundred": 1,
     "over an hundred": 1,
-    "over hundreds": 7,
-    "over the hundreds": 2,
+    "over hundreds": 9,
+    "over the hundreds": 3,
     "shall be an hundred": 2,
     "sixscore": 1,
     "than an hundred": 1,
@@ -47222,7 +47884,7 @@ export const all_socu = {
     "to me for an hundred": 1,
     "to the hundred": 1,
     "to the two hundred": 1,
-    "two hundred": 61,
+    "two hundred": 63,
     "unto him that is an hundred": 1,
     "unto them i am an hundred": 1,
     "was an hundred": 10,
@@ -47266,7 +47928,7 @@ export const all_socu = {
     "but whatsoever hath a blemish": 1,
     "he be that hath a blemish": 1,
     "he hath a blemish": 2,
-    "in whom was no blemish": 2,
+    "in whom was no blemish": 4,
     "is in them and blemishes": 1,
     "man getteth himself a blot": 1,
     "that hath a blemish": 2,
@@ -47338,7 +48000,7 @@ export const all_socu = {
   },
   "H3978": {
     "and fruit": 1,
-    "and meat": 1,
+    "and meat": 2,
     "and the meat": 2,
     "and their meat": 1,
     "and thy meat": 1,
@@ -47384,7 +48046,7 @@ export const all_socu = {
     "and did eat": 15,
     "and did eat up": 4,
     "and did not eat": 1,
-    "and eat": 33,
+    "and eat": 34,
     "and eaten": 1,
     "and eateth": 2,
     "and fed": 1,
@@ -47400,7 +48062,7 @@ export const all_socu = {
     "and i did eat": 3,
     "and i will cause them to eat": 2,
     "and i will feed": 1,
-    "and if it be eaten": 1,
+    "and if it be eaten": 2,
     "and in thee they eat": 1,
     "and it came to pass as they were eating": 3,
     "and it came to pass when they had eaten up": 1,
@@ -47438,10 +48100,10 @@ export const all_socu = {
     "any more but they did eat": 2,
     "as a devouring": 1,
     "as they eat": 4,
-    "at all": 5,
+    "at all": 7,
     "at meat": 1,
     "be consumed": 1,
-    "be eaten": 5,
+    "be eaten": 6,
     "before him and he did eat": 1,
     "behold i will feed": 2,
     "but shalt not eat": 2,
@@ -47485,7 +48147,7 @@ export const all_socu = {
     "had not eaten": 1,
     "hast thou eaten": 2,
     "hath consumed": 1,
-    "hath devoured": 9,
+    "hath devoured": 10,
     "hath eaten": 1,
     "hath eaten me up": 1,
     "hath not eaten": 2,
@@ -47519,7 +48181,7 @@ export const all_socu = {
     "if i have eaten": 1,
     "in eating": 2,
     "in him for he had eaten": 1,
-    "in it to eat": 3,
+    "in it to eat": 1,
     "in plenty": 2,
     "in that they eat": 1,
     "in thee and it shall devour": 1,
@@ -47602,7 +48264,7 @@ export const all_socu = {
     "that consumeth": 1,
     "that devoureth": 1,
     "that eat": 2,
-    "that eateth": 12,
+    "that eateth": 13,
     "that eateth up": 1,
     "that hath not eaten": 1,
     "that he may eat": 4,
@@ -47670,7 +48332,7 @@ export const all_socu = {
     "thing shall not be eaten": 2,
     "thither he did eat": 1,
     "thou and why eatest": 1,
-    "thou didst eat": 1,
+    "thou didst eat": 2,
     "thou feedest": 1,
     "thou mayest eat": 3,
     "thou mayest freely": 2,
@@ -47691,7 +48353,7 @@ export const all_socu = {
     "until he eat": 1,
     "unto me and eat": 1,
     "unto me neither shall ye eat": 1,
-    "unto thee ye shall eat": 4,
+    "unto thee ye shall eat": 5,
     "unto them out of the eater": 1,
     "unto them that they should not eat": 2,
     "unto them to be devoured": 1,
@@ -47711,6 +48373,7 @@ export const all_socu = {
     "we may eat": 1,
     "we will eat": 1,
     "were eating": 2,
+    "were higher": 1,
     "what shall we eat": 1,
     "when they eat": 1,
     "when thou hast eaten": 1,
@@ -47840,7 +48503,7 @@ export const all_socu = {
     "because ye despise": 1,
     "but had despised": 1,
     "but rejected": 1,
-    "but thou hast utterly": 1,
+    "but thou hast utterly": 2,
     "despise": 1,
     "despised": 1,
     "despiseth": 1,
@@ -47868,7 +48531,7 @@ export const all_socu = {
     "moreover he refused": 1,
     "refused": 1,
     "refuseth": 1,
-    "rejected": 5,
+    "rejected": 6,
     "reprobate": 2,
     "seeing i have rejected": 1,
     "shall cast away": 1,
@@ -47934,7 +48597,6 @@ export const all_socu = {
   },
   "H3996": {
     "and from the west": 1,
-    "and thy coming in": 1,
     "as men enter": 1,
     "at the coming": 1,
     "at the entering in": 1,
@@ -47955,6 +48617,9 @@ export const all_socu = {
     "us we pray thee the entrance": 1,
     "was the entry": 1,
     "westward": 1
+  },
+  "H3997": {
+    "at the entry": 1
   },
   "H3998": {
     "and of perplexity": 1,
@@ -48136,7 +48801,7 @@ export const all_socu = {
     "mibzar": 2
   },
   "H4015": {
-    "and all his fugitives": 1
+    "and all his fugitives": 2
   },
   "H4016": {
     "him by the secrets": 1
@@ -48197,6 +48862,7 @@ export const all_socu = {
     "at migdol": 1,
     "between migdol": 1,
     "from the tower": 2,
+    "he is the tower": 1,
     "in migdol": 1,
     "migdol": 1
   },
@@ -48293,7 +48959,6 @@ export const all_socu = {
     "the fear": 1
   },
   "H4035": {
-    "me from all my fears": 1,
     "their fears": 1,
     "yet in the barn": 1
   },
@@ -48392,12 +49057,13 @@ export const all_socu = {
     "by the plague": 1,
     "in the plague": 2,
     "not that have no rain there shall be the plague": 1,
-    "of the plague": 2,
+    "of the plague": 1,
     "plague": 2,
     "slaughter": 2,
     "so the plague": 1,
     "that the plague": 2,
     "that they should be plagued": 1,
+    "the plague": 1,
     "there is a slaughter": 1,
     "with a stroke": 1
   },
@@ -48651,7 +49317,7 @@ export const all_socu = {
     "who hath contentions": 1
   },
   "H4067": {
-    "of great stature": 1
+    "of great stature": 2
   },
   "H4068": {
     "of madon": 2
@@ -48700,12 +49366,17 @@ export const all_socu = {
     "to the medes": 1
   },
   "H4077": {
-    "the median": 2
+    "the median": 1
   },
   "H4079": {
+    "and a contentious": 1,
     "and the contentions": 1,
+    "and their contentions": 1,
     "causeth contentions": 1,
-    "than with a brawling": 1
+    "so is a contentious": 1,
+    "than with a brawling": 2,
+    "than with a contentious": 1,
+    "who hath contentions": 1
   },
   "H408": {
     "let me never": 2,
@@ -48804,11 +49475,14 @@ export const all_socu = {
     "not": 1
   },
   "H4090": {
-    "discord": 1,
+    "discord": 2,
     "strifes": 1
   },
   "H4091": {
     "and medan": 2
+  },
+  "H4092": {
+    "and the midianites": 1
   },
   "H4093": {
     "and knowledge": 3,
@@ -48901,7 +49575,6 @@ export const all_socu = {
     "of my god": 1,
     "of the god": 1,
     "of the mighty": 2,
-    "of the mighty one": 1,
     "praises of god": 1,
     "surely god": 1,
     "that i am god": 1,
@@ -49122,7 +49795,7 @@ export const all_socu = {
     "not any dowry": 1
   },
   "H412": {
-    "these": 1
+    "these": 2
   },
   "H4120": {
     "and pass quickly": 1,
@@ -49203,6 +49876,7 @@ export const all_socu = {
     "women of the moabites": 1
   },
   "H4126": {
+    "and thy coming in": 2,
     "thereof and the comings": 1
   },
   "H4127": {
@@ -49224,7 +49898,11 @@ export const all_socu = {
     "they are fainthearted": 1,
     "upon it and dissolvest": 1
   },
+  "H4128": {
+    "and measured": 1
+  },
   "H4129": {
+    "had a kinsman": 1,
     "thy kinswoman": 1
   },
   "H413": {
@@ -49234,7 +49912,7 @@ export const all_socu = {
     "against": 5,
     "also hath": 2,
     "among them": 1,
-    "and as for": 3,
+    "and as for": 2,
     "because": 3,
     "beside": 1,
     "both": 2,
@@ -49276,7 +49954,7 @@ export const all_socu = {
     "be moved": 2,
     "be removed": 5,
     "exceedingly": 2,
-    "fall": 2,
+    "fall": 4,
     "for they cast": 1,
     "he shall not be moved": 1,
     "i shall not be moved": 3,
@@ -49579,7 +50257,7 @@ export const all_socu = {
   },
   "H4158": {
     "and mephaath": 2,
-    "and upon mephaath": 1,
+    "and upon mephaath": 2,
     "with her suburbs and mephaath": 1
   },
   "H4159": {
@@ -49669,7 +50347,7 @@ export const all_socu = {
     "they are corrupt": 1
   },
   "H4168": {
-    "as an hearth": 2,
+    "as an hearth": 1,
     "burnings": 1
   },
   "H4169": {
@@ -49794,7 +50472,8 @@ export const all_socu = {
   },
   "H4184": {
     "but they handle": 1,
-    "i pray thee that i may feel": 1
+    "i pray thee that i may feel": 1,
+    "me that i may feel": 1
   },
   "H4185": {
     "and i will remove": 1,
@@ -49809,7 +50488,7 @@ export const all_socu = {
     "neither shall cease": 1,
     "shall depart": 2,
     "shall he not remove": 1,
-    "shall not depart": 6,
+    "shall not depart": 8,
     "shall remove": 1
   },
   "H4186": {
@@ -49887,7 +50566,7 @@ export const all_socu = {
     "and dieth": 3,
     "and he be to be put to death": 1,
     "and he die": 10,
-    "and he died": 20,
+    "and he died": 19,
     "and he is like to die": 1,
     "and he killed": 1,
     "and he slew": 1,
@@ -49934,7 +50613,7 @@ export const all_socu = {
     "as they that be dead": 1,
     "at no dead": 2,
     "be dead": 3,
-    "be put to death": 66,
+    "be put to death": 67,
     "be slain": 1,
     "because he had slain": 1,
     "because he slew": 2,
@@ -49984,7 +50663,7 @@ export const all_socu = {
     "he shall not be put to death": 3,
     "he shall not die": 5,
     "he shall surely": 17,
-    "he slew": 4,
+    "he slew": 5,
     "he to put to death": 1,
     "her dead": 1,
     "her kill": 2,
@@ -50087,13 +50766,13 @@ export const all_socu = {
     "put to death": 14,
     "rib that he died": 1,
     "seeing he was dead": 1,
-    "shall be put to death": 13,
+    "shall be put to death": 14,
     "shall be surely": 11,
-    "shall die": 33,
+    "shall die": 34,
     "shall he die": 2,
     "shall he slay": 1,
     "shall he that is worthy of death": 3,
-    "shall not be put to death": 7,
+    "shall not be put to death": 8,
     "shall not die": 5,
     "shall slay": 8,
     "shall surely": 23,
@@ -50293,6 +50972,7 @@ export const all_socu = {
     "in the death": 2,
     "in their death": 1,
     "is the death": 1,
+    "let death": 1,
     "me to death": 1,
     "my death": 3,
     "o death": 2,
@@ -50307,7 +50987,7 @@ export const all_socu = {
     "such as are for death": 2,
     "than death": 1,
     "the common death": 1,
-    "the death": 14,
+    "the death": 16,
     "the deaths": 1,
     "the sleep of death": 1,
     "thee death": 1,
@@ -50373,7 +51053,7 @@ export const all_socu = {
     "him from mine altar": 1,
     "him on the altar": 2,
     "his altar": 3,
-    "his altars": 4,
+    "his altars": 5,
     "it and it shall be an altar": 3,
     "it on the altar": 8,
     "it to you upon the altar": 1,
@@ -50396,7 +51076,7 @@ export const all_socu = {
     "that were there upon the altars": 1,
     "that your altars": 1,
     "the altar": 63,
-    "the altars": 11,
+    "the altars": 12,
     "their altars": 7,
     "them on the altar": 2,
     "them upon the altar": 8,
@@ -50414,7 +51094,7 @@ export const all_socu = {
     "upon mine altar": 3,
     "upon that altar": 1,
     "upon the altar": 62,
-    "upon their altars": 1,
+    "upon their altars": 2,
     "upon thine altar": 2,
     "us an altar": 2,
     "which is upon the altar": 2,
@@ -50570,7 +51250,7 @@ export const all_socu = {
   },
   "H4219": {
     "and his basons": 1,
-    "and the basons": 8,
+    "and the basons": 7,
     "and the bowls": 4,
     "basons": 3,
     "bowl": 13,
@@ -50830,7 +51510,7 @@ export const all_socu = {
     "of the mahlites": 2
   },
   "H4251": {
-    "diseases": 1
+    "diseases": 2
   },
   "H4252": {
     "knives": 1
@@ -50871,7 +51551,7 @@ export const all_socu = {
     "of the companies": 1,
     "of the courses": 2,
     "the courses": 4,
-    "them into courses": 3,
+    "them into courses": 1,
     "these are the divisions": 1,
     "were divisions": 1
   },
@@ -50912,7 +51592,7 @@ export const all_socu = {
     "thee o thou god": 1,
     "their own god": 3,
     "thy god": 1,
-    "thy gods": 2,
+    "thy gods": 4,
     "unto the god": 2,
     "unto them the gods": 1,
     "your god": 3
@@ -50929,6 +51609,7 @@ export const all_socu = {
     "pleasant things": 1,
     "that whatsoever is pleasant": 1,
     "the desire": 2,
+    "their pleasant things": 1,
     "them the pleasant": 1,
     "upon all her pleasant things": 1,
     "yea he is altogether lovely": 1
@@ -51177,6 +51858,9 @@ export const all_socu = {
     "unto them these same": 1,
     "who are those": 1,
     "with another": 2
+  },
+  "H4280": {
+    "it a draught house": 1
   },
   "H4281": {
     "and his mattock": 1,
@@ -51580,7 +52264,7 @@ export const all_socu = {
     "from the god": 1,
     "from thy god": 1,
     "from under their god": 1,
-    "god": 465,
+    "god": 466,
     "gods": 100,
     "hath god": 4,
     "have the gods": 2,
@@ -51660,7 +52344,7 @@ export const all_socu = {
     "o our god": 2,
     "o thou my god": 1,
     "of all that god": 1,
-    "of god": 398,
+    "of god": 397,
     "of gods": 10,
     "of her god": 1,
     "of her gods": 1,
@@ -51712,7 +52396,7 @@ export const all_socu = {
     "that your god": 2,
     "the god": 162,
     "the goddess": 4,
-    "the gods": 13,
+    "the gods": 14,
     "the judge": 1,
     "thee a god": 1,
     "thee for god": 1,
@@ -51876,7 +52560,7 @@ export const all_socu = {
     "for them a plant": 1,
     "his plants": 1,
     "of her plantation": 1,
-    "of my planting": 1,
+    "of my planting": 2,
     "the planting": 1
   },
   "H4303": {
@@ -52112,7 +52796,6 @@ export const all_socu = {
     "even to the waters": 1,
     "even unto the water": 1,
     "for a water": 1,
-    "for the dunghill": 1,
     "for the water": 1,
     "for the waters": 9,
     "for this is as the waters": 2,
@@ -52160,7 +52843,7 @@ export const all_socu = {
     "neither is there any water": 2,
     "no water": 8,
     "of all that are in the waters": 3,
-    "of the water": 18,
+    "of the water": 17,
     "of the waters": 13,
     "of thy water": 2,
     "of water": 51,
@@ -52184,6 +52867,7 @@ export const all_socu = {
     "the waters": 76,
     "thee at the waters": 1,
     "thee waters": 1,
+    "their own piss": 2,
     "their water": 1,
     "their waters": 1,
     "them that the waters": 2,
@@ -52205,7 +52889,7 @@ export const all_socu = {
     "until the waters": 1,
     "until water": 1,
     "unto the place over against the water": 1,
-    "unto the water": 6,
+    "unto the water": 5,
     "unto the waters": 1,
     "upon the water": 2,
     "upon the waters": 3,
@@ -52224,7 +52908,7 @@ export const all_socu = {
     "whose waters": 4,
     "with him against them by the waters": 1,
     "with the water": 2,
-    "with water": 14,
+    "with water": 15,
     "with waters": 2,
     "ye to the waters": 1,
     "you water": 1
@@ -52242,8 +52926,11 @@ export const all_socu = {
     "shall be according to their kinds": 1,
     "was in itself after his kind": 2
   },
+  "H4328": {
+    "the foundations": 1
+  },
   "H4329": {
-    "and the covert": 2
+    "and the covert": 4
   },
   "H433": {
     "a god": 1,
@@ -52344,6 +53031,9 @@ export const all_socu = {
     "things that are right": 1,
     "uprightly": 3,
     "with equity": 1
+  },
+  "H434": {
+    "and a thing of nought": 1
   },
   "H4340": {
     "and all my cords": 1,
@@ -52671,6 +53361,9 @@ export const all_socu = {
     "of his acquaintance": 1,
     "of your acquaintance": 1
   },
+  "H4379": {
+    "and saltpits": 1
+  },
   "H438": {
     "from allon": 1,
     "of allon": 1
@@ -52778,7 +53471,7 @@ export const all_socu = {
     "canst thou fill": 1,
     "consecrate yourselves": 1,
     "consecrated": 1,
-    "fill": 4,
+    "fill": 5,
     "filled": 12,
     "filleth": 1,
     "for he filled": 1,
@@ -52886,7 +53579,8 @@ export const all_socu = {
     "be filled": 1,
     "even a full": 1,
     "for as much": 1,
-    "full": 12,
+    "full": 13,
+    "fully": 1,
     "is full": 2,
     "is not full": 1,
     "it for the full": 1,
@@ -52900,6 +53594,7 @@ export const all_socu = {
     "shekels full": 11,
     "that which is full": 1,
     "therefore i am full": 1,
+    "they are full": 1,
     "was full": 2,
     "were full": 2,
     "which was full": 1
@@ -53150,7 +53845,7 @@ export const all_socu = {
   "H4404": {
     "in the brickkiln": 1,
     "the brickkiln": 1,
-    "through the brickkiln": 1
+    "through the brickkiln": 2
   },
   "H4405": {
     "and lettest such words": 1,
@@ -53215,7 +53910,7 @@ export const all_socu = {
   "H4409": {
     "malluch": 5,
     "of malluch": 1,
-    "of melicu": 1
+    "of melicu": 2
   },
   "H441": {
     "also and the dukes": 4,
@@ -53300,7 +53995,7 @@ export const all_socu = {
     "it with salt": 1,
     "neither shalt thou suffer the salt": 3,
     "of it shall be at the salt": 1,
-    "of salt": 7,
+    "of salt": 8,
     "of the salt": 3,
     "salt": 5,
     "the salt": 1,
@@ -53560,13 +54255,13 @@ export const all_socu = {
     "of his reign": 12,
     "on me that i should reign": 1,
     "over whom i have made thee king": 1,
-    "reign": 11,
+    "reign": 12,
     "reigned": 108,
     "reigneth": 9,
     "shall reign": 13,
     "shalt thou reign": 1,
     "that he began to reign": 1,
-    "that he might not reign": 1,
+    "that he might not reign": 2,
     "that he reigned": 3,
     "that reigned": 5,
     "that reigneth": 1,
@@ -53580,7 +54275,7 @@ export const all_socu = {
     "therein and reigned": 1,
     "therein for us and set": 1,
     "they have set up kings": 1,
-    "thou and reign": 3,
+    "thou and reign": 4,
     "to him shalt thou indeed": 2,
     "to make him king": 4,
     "to reign": 15,
@@ -53599,7 +54294,7 @@ export const all_socu = {
   "H4428": {
     "a king": 14,
     "according to all that king": 3,
-    "according to the king’s": 3,
+    "according to the king’s": 2,
     "after the king’s": 1,
     "against him as a king": 1,
     "against him by the king": 2,
@@ -53690,7 +54385,7 @@ export const all_socu = {
     "any king": 4,
     "any more unto the king": 2,
     "are the kings": 1,
-    "as a king": 5,
+    "as a king": 4,
     "as had not been on any king": 1,
     "as king": 3,
     "as the king": 6,
@@ -53709,7 +54404,7 @@ export const all_socu = {
     "behold the king’s": 3,
     "behold thy king": 1,
     "being then king": 3,
-    "beside the king’s": 1,
+    "beside the king’s": 2,
     "beside those whom the king": 2,
     "between the king": 2,
     "both ye and your king": 1,
@@ -53858,8 +54553,8 @@ export const all_socu = {
     "of meat from the king": 2,
     "of our king": 1,
     "of the king": 163,
-    "of the kings": 78,
-    "of the king’s": 79,
+    "of the kings": 79,
+    "of the king’s": 80,
     "of the same when the king’s": 1,
     "of thee and kings": 1,
     "of their king": 1,
@@ -53988,7 +54683,7 @@ export const all_socu = {
     "unto kings": 1,
     "unto me nay but a king": 3,
     "unto our king": 1,
-    "unto the king": 145,
+    "unto the king": 143,
     "unto the kings": 3,
     "unto the king’s": 14,
     "unto thee o king": 1,
@@ -54007,7 +54702,7 @@ export const all_socu = {
     "was king": 9,
     "was over the king’s": 2,
     "was the king": 1,
-    "was the king’s": 6,
+    "was the king’s": 4,
     "was there no king": 3,
     "was unto the king": 1,
     "was with the king’s": 1,
@@ -54193,7 +54888,7 @@ export const all_socu = {
   "H4438": {
     "a royal": 2,
     "all against the realm": 1,
-    "and his kingdom": 2,
+    "and his kingdom": 3,
     "and in all their kingdoms": 1,
     "and in my kingdom": 1,
     "and in the reign": 2,
@@ -54364,7 +55059,7 @@ export const all_socu = {
     "the measures": 1
   },
   "H4462": {
-    "and memucan": 2,
+    "and memucan": 3,
     "of memucan": 1
   },
   "H4463": {
@@ -54502,6 +55197,7 @@ export const all_socu = {
     "and thy dominion": 1,
     "dominion": 1,
     "his dominion": 2,
+    "nor in all his dominion": 1,
     "of his dominion": 4,
     "thy government": 1,
     "to rule": 6
@@ -54527,6 +55223,7 @@ export const all_socu = {
   },
   "H4479": {
     "and who": 1,
+    "and whoso": 2,
     "it to whomsoever": 3,
     "it whomsoever": 1,
     "what": 1,
@@ -54570,19 +55267,19 @@ export const all_socu = {
     "and before": 2,
     "and for": 2,
     "and i": 3,
-    "and part": 6,
-    "and partly": 3,
+    "and part": 15,
+    "and partly": 6,
     "and since": 1,
     "because": 2,
     "before": 6,
-    "but": 2,
+    "but": 5,
     "for": 1,
     "from": 35,
     "from him": 2,
     "from me": 2,
     "him": 2,
     "i": 5,
-    "in it of": 2,
+    "in it of": 5,
     "is commanded by": 1,
     "it according": 1,
     "it out of": 1,
@@ -54593,8 +55290,8 @@ export const all_socu = {
     "of thee": 5,
     "of whom": 2,
     "out of": 17,
-    "part": 3,
-    "partly": 3,
+    "part": 9,
+    "partly": 6,
     "than": 2,
     "thee from": 3,
     "therefore": 1,
@@ -54607,7 +55304,7 @@ export const all_socu = {
     "us from": 2,
     "us out of": 2,
     "was more": 2,
-    "were part": 3,
+    "were part": 6,
     "when": 1,
     "which art of": 2,
     "which is of": 1,
@@ -54942,7 +55639,7 @@ export const all_socu = {
     "thing will he withhold": 1,
     "which hath kept me back": 1,
     "with them refrain": 1,
-    "withhold": 2
+    "withhold": 3
   },
   "H4514": {
     "of the lock": 1,
@@ -55080,7 +55777,7 @@ export const all_socu = {
     "out of their holes": 1,
     "the border": 2,
     "the borders": 2,
-    "thereof and on the borders": 1,
+    "thereof and on the borders": 2,
     "thereof and the borders": 1,
     "thereunto a border": 2,
     "to the border": 2,
@@ -55549,7 +56246,7 @@ export const all_socu = {
     "and to strengthen": 1,
     "be thou my strong": 1,
     "even the strength": 1,
-    "even to his fortress": 1,
+    "even to his fortress": 2,
     "for me for thou art my strength": 1,
     "for thou hast been a strength": 2,
     "for your strength": 1,
@@ -55612,7 +56309,7 @@ export const all_socu = {
   },
   "H4586": {
     "and the mehunims": 1,
-    "of mehunim": 1,
+    "of mehunim": 2,
     "of meunim": 1
   },
   "H4587": {
@@ -55637,6 +56334,7 @@ export const all_socu = {
     "and he that gathered little": 1,
     "and make you few in number": 1,
     "and suffereth": 1,
+    "because they are few": 1,
     "borrow not a few": 1,
     "for i will diminish": 1,
     "he that gathered least": 1,
@@ -55829,7 +56527,7 @@ export const all_socu = {
     "and the maachathites": 1,
     "nor the maachathites": 1,
     "of a maachathite": 2,
-    "of the maachathite": 3,
+    "of the maachathite": 1,
     "the maachathite": 1
   },
   "H4603": {
@@ -55850,7 +56548,7 @@ export const all_socu = {
     "have trespassed": 1,
     "if ye transgress": 1,
     "in his trespass": 1,
-    "is this that ye have committed": 2,
+    "is this that ye have committed": 1,
     "me in that they have committed": 1,
     "that they have trespassed": 1,
     "to transgress": 1,
@@ -55861,6 +56559,7 @@ export const all_socu = {
     "we have trespassed": 1,
     "whereby they have trespassed": 1,
     "which he committed": 1,
+    "which they trespassed": 1,
     "which trespassed": 1,
     "who transgressed": 1,
     "with him there for his trespass": 1
@@ -55883,7 +56582,8 @@ export const all_socu = {
     "this trespass": 1,
     "to do a trespass": 1,
     "trespass": 2,
-    "with their trespass": 2
+    "what trespass": 1,
+    "with their trespass": 1
   },
   "H4605": {
     "above": 23,
@@ -55945,28 +56645,28 @@ export const all_socu = {
     "him in the chiefest": 1,
     "the going up": 2,
     "the hill": 1,
-    "thereof and the going up": 1,
-    "thereof on this side and on that side and the going up": 2,
+    "thereof and the going up": 2,
+    "thereof on this side and on that side and the going up": 4,
     "upon the stairs": 1
   },
   "H4609": {
     "and he brought me by the steps": 1,
     "and his stairs": 1,
     "and unto the stairs": 1,
-    "by": 2,
+    "by": 3,
     "by steps": 1,
     "by the stairs": 1,
     "by which degrees": 5,
-    "degrees": 20,
+    "degrees": 21,
     "dial": 5,
     "he to go up": 1,
-    "his stories": 1,
-    "in the dial": 2,
+    "his stories": 2,
+    "in the dial": 3,
     "of high degree": 1,
     "of the degrees": 5,
     "of the stairs": 1,
     "steps": 9,
-    "the stairs": 1,
+    "the stairs": 2,
     "the things that come": 1
   },
   "H461": {
@@ -55991,7 +56691,7 @@ export const all_socu = {
     "and your doings": 5,
     "are these his doings": 1,
     "by his doings": 1,
-    "doings": 1,
+    "doings": 2,
     "in his doings": 1,
     "in their doings": 1,
     "me their doings": 1,
@@ -56001,7 +56701,7 @@ export const all_socu = {
     "of their doings": 5,
     "of their endeavours": 1,
     "of thy doings": 1,
-    "of your doings": 7,
+    "of your doings": 8,
     "the works": 2,
     "their doings": 1,
     "them their doings": 1,
@@ -56051,7 +56751,7 @@ export const all_socu = {
   },
   "H4618": {
     "acre": 1,
-    "their furrows": 2
+    "their furrows": 4
   },
   "H4619": {
     "were maaz": 1
@@ -56126,7 +56826,7 @@ export const all_socu = {
     "into the cave": 1,
     "into the holes": 1,
     "me the cave": 1,
-    "of the cave": 7,
+    "of the cave": 8,
     "out of the cave": 1,
     "shall be for dens": 1,
     "thee and the cave": 1,
@@ -56153,6 +56853,7 @@ export const all_socu = {
     "into the army": 1,
     "of the armies": 1,
     "of the army": 1,
+    "out of the armies": 1,
     "out of the army": 5,
     "rank": 1,
     "rows": 1,
@@ -56752,7 +57453,7 @@ export const all_socu = {
     "unto him if now i have found": 2,
     "unto him we have found": 1,
     "unto him why have i found": 1,
-    "unto thee was he found": 1,
+    "unto thee was he found": 2,
     "unto those that find": 1,
     "upon me i found": 2,
     "was found": 2,
@@ -56910,7 +57611,9 @@ export const all_socu = {
   "H4685": {
     "against her and her munition": 1,
     "bulwarks": 1,
+    "him into holds": 1,
     "is snares": 1,
+    "net": 1,
     "the net": 1
   },
   "H4686": {
@@ -56967,9 +57670,9 @@ export const all_socu = {
     "from thy commandments": 2,
     "from thy precepts": 1,
     "his commandment": 1,
-    "his commandments": 19,
+    "his commandments": 21,
     "in his commandments": 2,
-    "my commandments": 17,
+    "my commandments": 18,
     "myself in thy commandments": 1,
     "not from the commandment": 1,
     "not my commandments": 1,
@@ -57228,14 +57931,14 @@ export const all_socu = {
     "against him and against all egypt": 2,
     "against the egyptians": 2,
     "all the egyptians": 1,
-    "and all the egyptians": 1,
+    "and all the egyptians": 2,
     "and egypt": 2,
     "and from egypt": 1,
     "and in egypt": 1,
     "and mizraim": 4,
     "and of egypt": 1,
     "and the egyptian": 4,
-    "and the egyptians": 10,
+    "and the egyptians": 13,
     "and to the egyptians": 1,
     "and unto all egypt": 1,
     "and upon egypt": 1,
@@ -57252,12 +57955,13 @@ export const all_socu = {
     "for egypt": 1,
     "for her even for egypt": 1,
     "for the egyptians": 2,
+    "for them against the egyptians": 2,
     "for you in egypt": 2,
     "from egypt": 13,
     "him in egypt": 2,
     "him into egypt": 1,
     "him to egypt": 2,
-    "in egypt": 40,
+    "in egypt": 42,
     "in of egypt": 1,
     "into egypt": 52,
     "me not i pray thee in egypt": 1,
@@ -57267,26 +57971,29 @@ export const all_socu = {
     "of all egypt": 1,
     "of egypt": 425,
     "of the egyptian": 1,
-    "of the egyptians": 9,
+    "of the egyptians": 19,
     "of thee o egypt": 1,
     "on egypt": 4,
     "out of egypt": 64,
     "over egypt": 1,
     "shall egypt": 1,
+    "so that the egyptians": 2,
     "that egypt": 1,
-    "the egyptians": 15,
+    "the egyptians": 23,
     "thee in egypt": 1,
     "thee into egypt": 1,
     "thereof and they have caused egypt": 1,
     "things of egypt": 1,
     "to egypt": 16,
+    "to the egyptians": 1,
     "to thee from egypt": 1,
     "to you in egypt": 1,
     "unto all the egyptians": 1,
     "unto egypt": 1,
-    "unto the egyptians": 1,
+    "unto the egyptians": 2,
     "unto thee into egypt": 2,
-    "upon egypt": 7,
+    "upon egypt": 8,
+    "upon the egyptians": 3,
     "us up out of egypt": 1,
     "was in egypt": 1,
     "when they were in egypt": 1,
@@ -57821,7 +58528,7 @@ export const all_socu = {
     "for thee with bitterness": 2,
     "for they were bitter": 1,
     "from this bitter": 1,
-    "i had great bitterness": 2,
+    "i had great bitterness": 1,
     "in bitterness": 1,
     "in the bitterness": 4,
     "into her and become bitter": 3,
@@ -57858,7 +58565,7 @@ export const all_socu = {
   },
   "H4756": {
     "and a lord": 1,
-    "my lord": 2,
+    "my lord": 4,
     "the lord": 1
   },
   "H4757": {
@@ -57981,12 +58688,12 @@ export const all_socu = {
     "unto mareshah": 1
   },
   "H4763": {
-    "at his bolster": 1,
+    "at his bolster": 2,
     "at his head": 1,
     "for his pillows": 1,
     "hair for his bolster": 2,
-    "that is at his bolster": 1,
-    "that was at his bolster": 1,
+    "that is at his bolster": 2,
+    "that was at his bolster": 2,
     "them for his pillows": 1
   },
   "H4764": {
@@ -57999,7 +58706,7 @@ export const all_socu = {
   },
   "H4766": {
     "of a great": 1,
-    "of the increase": 1
+    "of the increase": 2
   },
   "H4767": {
     "much": 1
@@ -58050,7 +58757,7 @@ export const all_socu = {
   },
   "H4772": {
     "and his feet": 1,
-    "at his feet": 2,
+    "at his feet": 3,
     "his feet": 2
   },
   "H4773": {
@@ -58185,6 +58892,9 @@ export const all_socu = {
   "H4786": {
     "which were a grief": 1
   },
+  "H4787": {
+    "bitterness": 1
+  },
   "H4788": {
     "and my misery": 1,
     "and of her miseries": 1,
@@ -58249,7 +58959,7 @@ export const all_socu = {
     "and their course": 1,
     "is like the running": 2,
     "the running": 2,
-    "to his course": 1
+    "to his course": 2
   },
   "H4795": {
     "of their purifications": 1
@@ -58377,7 +59087,7 @@ export const all_socu = {
   },
   "H4813": {
     "and behold miriam": 2,
-    "and miriam": 12,
+    "and miriam": 10,
     "and unto miriam": 1,
     "miriam": 1,
     "not till miriam": 2,
@@ -58578,6 +59288,7 @@ export const all_socu = {
     "of bright": 1
   },
   "H4839": {
+    "and broth": 1,
     "the broth": 2
   },
   "H484": {
@@ -58593,7 +59304,7 @@ export const all_socu = {
     "like a pot of ointment": 1
   },
   "H4842": {
-    "by the apothecaries’": 2,
+    "by the apothecaries’": 1,
     "compound": 1,
     "the ointment": 1
   },
@@ -58605,6 +59316,7 @@ export const all_socu = {
     "for him as one that is in bitterness": 2,
     "for it grieveth": 1,
     "have sorely grieved him": 1,
+    "i had great bitterness": 1,
     "is vexed": 1,
     "provoke": 1,
     "shall be bitter": 1,
@@ -58697,7 +59409,8 @@ export const all_socu = {
     "massa": 1
   },
   "H4855": {
-    "this usury": 1
+    "this usury": 1,
+    "usury": 1
   },
   "H4856": {
     "nor respect": 1
@@ -58853,7 +59566,7 @@ export const all_socu = {
     "to moses": 5,
     "unto him and moses": 2,
     "unto me though moses": 1,
-    "unto moses": 203,
+    "unto moses": 202,
     "unto them wherefore do ye moses": 1,
     "us for as for this moses": 3,
     "was i when moses": 1,
@@ -58882,7 +59595,7 @@ export const all_socu = {
     "and meshobab": 1
   },
   "H4878": {
-    "and their backslidings": 1,
+    "and their backslidings": 2,
     "backsliding": 1,
     "for the turning away": 1,
     "sake for our backslidings": 1,
@@ -59035,7 +59748,7 @@ export const all_socu = {
   },
   "H4898": {
     "meshezabeel": 1,
-    "of meshezabeel": 5
+    "of meshezabeel": 2
   },
   "H4899": {
     "against him seeing he is the anointed": 2,
@@ -59064,7 +59777,7 @@ export const all_socu = {
     "me abishag": 1
   },
   "H490": {
-    "a widow": 8,
+    "a widow": 9,
     "a widow’s": 1,
     "and for the widow": 3,
     "and his widows": 1,
@@ -59089,7 +59802,7 @@ export const all_socu = {
     "of the widow": 3,
     "of the widows": 1,
     "of their children and be widows": 1,
-    "or a widow": 2,
+    "or a widow": 3,
     "shall be widows": 1,
     "that widows": 1,
     "the widow": 2,
@@ -59320,7 +60033,7 @@ export const all_socu = {
     "that shall rule": 1,
     "the ruler’s": 1,
     "them ruled": 1,
-    "they that rule": 1,
+    "they that rule": 2,
     "thou madest him to have dominion": 1,
     "thou rulest": 1,
     "to be ruler": 1,
@@ -59357,6 +60070,7 @@ export const all_socu = {
     "a proverb": 2,
     "and a proverb": 2,
     "and i became a proverb": 1,
+    "are like": 1,
     "his parable": 9,
     "i will make this proverb": 1,
     "in a parable": 1,
@@ -59453,7 +60167,8 @@ export const all_socu = {
   },
   "H4928": {
     "at thy bidding": 1,
-    "him over his guard": 2
+    "him over his guard": 2,
+    "shall obey": 1
   },
   "H4929": {
     "a watch": 2,
@@ -59554,7 +60269,7 @@ export const all_socu = {
   },
   "H4933": {
     "and a spoil": 1,
-    "for a spoil": 1,
+    "for a spoil": 2,
     "shall become a booty": 1,
     "thee and thou shalt be for booties": 1,
     "thee shall be a spoil": 1
@@ -59629,7 +60344,7 @@ export const all_socu = {
     "as the families": 1,
     "behold against this family": 1,
     "being of the families": 1,
-    "by their families": 20,
+    "by their families": 21,
     "come the family": 2,
     "every": 4,
     "every family": 5,
@@ -59665,7 +60380,7 @@ export const all_socu = {
     "out of the families": 2,
     "shall all the families": 1,
     "the families": 4,
-    "the family": 214,
+    "the family": 215,
     "thee and in thee shall all families": 1,
     "thee not and upon the families": 1,
     "them after their families": 1,
@@ -59758,7 +60473,7 @@ export const all_socu = {
     "crimes": 1,
     "custom": 1,
     "due": 1,
-    "for all his judgments": 2,
+    "for all his judgments": 3,
     "for her judgment": 1,
     "for judgment": 7,
     "for me to the judgment": 1,
@@ -59784,7 +60499,7 @@ export const all_socu = {
     "is not worthy": 1,
     "is the judgment": 1,
     "is worthy": 1,
-    "it according to my judgments": 1,
+    "it according to my judgments": 2,
     "it according to the manner": 1,
     "it with judgment": 1,
     "judgment": 56,
@@ -59851,7 +60566,7 @@ export const all_socu = {
     "themselves after their manner": 1,
     "then judgment": 1,
     "therefore is judgment": 1,
-    "thereof and according to all the fashion": 1,
+    "thereof and according to all the fashion": 2,
     "this will be the manner": 1,
     "thou my cause": 1,
     "thou this to be right": 1,
@@ -60024,6 +60739,7 @@ export const all_socu = {
     "men": 5,
     "persons": 1,
     "the men": 2,
+    "there with": 1,
     "thy men": 1,
     "when they were but a few men": 1,
     "when ye were but few": 1,
@@ -60179,6 +60895,10 @@ export const all_socu = {
     "of mattaniah": 4,
     "to mattaniah": 1
   },
+  "H4984": {
+    "and thou art exalted": 1,
+    "exalted": 1
+  },
   "H4985": {
     "are sweet": 1,
     "be sweet": 1,
@@ -60203,7 +60923,7 @@ export const all_socu = {
   "H499": {
     "and eleazar": 21,
     "and to eleazar": 1,
-    "and unto eleazar": 3,
+    "and unto eleazar": 2,
     "and with him was eleazar": 1,
     "came eleazar": 1,
     "eleazar": 16,
@@ -60537,11 +61257,12 @@ export const all_socu = {
     "which thou hast prophesied": 1,
     "who can but prophesy": 1,
     "who prophesied": 3,
+    "who should prophesy": 1,
     "why hast thou prophesied": 1,
     "yet they prophesy": 2
   },
   "H5013": {
-    "prophesied": 3
+    "prophesied": 1
   },
   "H5014": {
     "for vain": 1,
@@ -60595,7 +61316,7 @@ export const all_socu = {
     "unto nebuchadrezzar": 1,
     "when nebuchadnezzar": 1,
     "which nebuchadnezzar": 2,
-    "which nebuchadrezzar": 1,
+    "which nebuchadrezzar": 3,
     "whom nebuchadnezzar": 4,
     "whom nebuchadrezzar": 2
   },
@@ -60691,7 +61412,7 @@ export const all_socu = {
     "they look": 1,
     "they looked": 1,
     "to look": 1,
-    "what is come upon us consider": 1,
+    "what is come upon us consider": 2,
     "when he beheld": 1,
     "when i have respect": 1,
     "wherefore lookest": 2,
@@ -60701,8 +61422,9 @@ export const all_socu = {
     "of nebat": 25
   },
   "H5029": {
-    "the prophet": 1,
-    "were the prophets": 1
+    "the prophet": 6,
+    "then the prophets": 4,
+    "were the prophets": 2
   },
   "H503": {
     "may bring forth thousands": 1
@@ -60711,7 +61433,7 @@ export const all_socu = {
     "a prophet": 5,
     "against me and the prophets": 1,
     "against the prophets": 2,
-    "all the prophets": 3,
+    "all the prophets": 4,
     "also among the prophets": 4,
     "also in the prophets": 1,
     "among the prophets": 2,
@@ -60789,7 +61511,7 @@ export const all_socu = {
     "that the prophets": 1,
     "that there hath been a prophet": 1,
     "the prophet": 89,
-    "the prophets": 29,
+    "the prophets": 30,
     "thee a prophet": 1,
     "thee to the prophets": 2,
     "them by the prophets": 1,
@@ -61217,7 +61939,7 @@ export const all_socu = {
     "to him he shall tell": 1,
     "to shew": 8,
     "to shew forth": 1,
-    "to tell": 4,
+    "to tell": 5,
     "to whom hast thou uttered": 1,
     "told": 25,
     "unto her behold i have not told": 3,
@@ -61297,7 +62019,7 @@ export const all_socu = {
     "and by your thousands": 1,
     "and he had a thousand": 4,
     "and of the thousand": 1,
-    "and one thousand": 4,
+    "and one thousand": 2,
     "and there were a thousand": 1,
     "and they are the thousands": 1,
     "and two thousand": 5,
@@ -61311,7 +62033,7 @@ export const all_socu = {
     "for thousands": 1,
     "from him a thousand": 5,
     "him out throughout all the thousands": 1,
-    "his thousands": 3,
+    "his thousands": 5,
     "make you a thousand": 1,
     "must have a thousand": 1,
     "of a thousand": 6,
@@ -61331,7 +62053,7 @@ export const all_socu = {
     "thee two thousand": 2,
     "there shall be a thousand": 1,
     "thereof and a thousand": 1,
-    "thousand": 573,
+    "thousand": 569,
     "thousands": 1,
     "to a thousand": 3,
     "to the thousand": 1,
@@ -61464,9 +62186,9 @@ export const all_socu = {
     "to the stringed instruments": 1
   },
   "H506": {
-    "him thousand": 2,
+    "him thousand": 3,
     "the thousand": 2,
-    "thousands": 2,
+    "thousands": 3,
     "to a thousand": 2
   },
   "H5060": {
@@ -61955,6 +62677,7 @@ export const all_socu = {
     "be not expelled": 2,
     "but shalt be drawn away": 1,
     "cast them out": 1,
+    "drave": 1,
     "driven quite": 1,
     "fetcheth a stroke": 1,
     "go astray": 1,
@@ -62154,9 +62877,12 @@ export const all_socu = {
     "of wailing": 1,
     "wailing": 1
   },
+  "H5093": {
+    "with a doleful": 1
+  },
   "H5094": {
     "and that light": 1,
-    "and the light": 1,
+    "and the light": 2,
     "light": 1
   },
   "H5095": {
@@ -62274,7 +63000,7 @@ export const all_socu = {
     "neither let the light": 1
   },
   "H5106": {
-    "and wherefore discourage ye": 2,
+    "and wherefore discourage ye": 4,
     "at her and disallowed": 1,
     "disallow": 2,
     "disallowed": 3,
@@ -62291,10 +63017,10 @@ export const all_socu = {
   },
   "H5108": {
     "and the fruit": 1,
-    "the fruit": 1
+    "the fruit": 2
   },
   "H5109": {
-    "nebai": 1
+    "nebai": 2
   },
   "H511": {
     "and elkanah": 6,
@@ -62311,7 +63037,7 @@ export const all_socu = {
     "and wag": 1,
     "bemoaning": 1,
     "by wandering": 1,
-    "flee": 1,
+    "flee": 2,
     "for some to take pity": 1,
     "get": 1,
     "him bemoan": 1,
@@ -62442,12 +63168,12 @@ export const all_socu = {
     "be moved": 1
   },
   "H5121": {
-    "behold they be at naioth": 1,
-    "from naioth": 1,
-    "in naioth": 1,
-    "is at naioth": 1,
-    "thither to naioth": 2,
-    "to naioth": 2
+    "behold they be at naioth": 2,
+    "from naioth": 2,
+    "in naioth": 2,
+    "is at naioth": 2,
+    "thither to naioth": 4,
+    "to naioth": 4
   },
   "H5122": {
     "a dunghill": 3
@@ -62464,7 +63190,7 @@ export const all_socu = {
     "and drowsiness": 1
   },
   "H5125": {
-    "shall be continued": 2
+    "shall be continued": 4
   },
   "H5126": {
     "non": 1,
@@ -62475,7 +63201,7 @@ export const all_socu = {
     "against them and flee": 1,
     "and are fled": 1,
     "and are fled away": 1,
-    "and fled": 20,
+    "and fled": 22,
     "and fled away": 1,
     "and flee": 3,
     "and fleeth": 1,
@@ -62505,7 +63231,7 @@ export const all_socu = {
     "from whence he fled": 1,
     "had fled": 1,
     "he shall flee": 1,
-    "he that fleeth": 2,
+    "he that fleeth": 3,
     "herself to flee": 1,
     "him and he fled": 1,
     "him but he shall flee": 1,
@@ -62576,7 +63302,7 @@ export const all_socu = {
     "hath shaken": 2,
     "if they be shaken": 1,
     "it they removed": 1,
-    "let them wander up and down": 2,
+    "let them wander up and down": 4,
     "like as corn is sifted": 2,
     "me which set": 1,
     "move": 1,
@@ -62591,7 +63317,7 @@ export const all_socu = {
     "to and fro": 2,
     "to be promoted": 3,
     "to wander": 1,
-    "up and down": 2,
+    "up and down": 4,
     "upon me they shaked": 1,
     "vagabonds": 2,
     "wandered": 1,
@@ -62890,6 +63616,7 @@ export const all_socu = {
     "giveth thee to inherit": 1,
     "giveth you to inherit": 1,
     "had": 1,
+    "had their inheritance": 1,
     "have i taken as an heritage": 1,
     "have inherited": 2,
     "in me shall possess": 1,
@@ -63081,7 +63808,7 @@ export const all_socu = {
     "shall his inheritance": 3,
     "shall the possession": 1,
     "so shall not the inheritance": 2,
-    "the inheritance": 18,
+    "the inheritance": 17,
     "thee and thou shalt be their inheritance": 1,
     "thee for an inheritance": 8,
     "thee the inheritance": 1,
@@ -63115,7 +63842,7 @@ export const all_socu = {
     "upon his inheritance": 2,
     "us an inheritance": 2,
     "us inheritance": 1,
-    "was the inheritance": 3,
+    "was the inheritance": 2,
     "was their inheritance": 3,
     "whereunto they are received so shall their inheritance": 4,
     "with an inheritance": 1,
@@ -63540,6 +64267,9 @@ export const all_socu = {
     "and nahath": 2,
     "nahath": 3
   },
+  "H5185": {
+    "are come down": 1
+  },
   "H5186": {
     "against you with an outstretched": 1,
     "all of you as a bowing": 1,
@@ -63561,6 +64291,7 @@ export const all_socu = {
     "and he turned": 1,
     "and he will stretch out": 1,
     "and his stretched out": 1,
+    "and i laid": 1,
     "and i will stretch": 1,
     "and i will stretch out": 2,
     "and incline": 1,
@@ -63609,7 +64340,7 @@ export const all_socu = {
     "for i will stretch out": 1,
     "for it for he had pitched": 1,
     "for they intended": 1,
-    "gone": 2,
+    "gone": 4,
     "had pitched": 2,
     "had turned": 2,
     "hath turned him aside": 1,
@@ -63629,7 +64360,7 @@ export const all_socu = {
     "i will also stretch out": 2,
     "i will incline": 1,
     "in it and he shall stretch out": 1,
-    "incline": 9,
+    "incline": 10,
     "inclined": 1,
     "is stretched out": 3,
     "is stretched out still": 4,
@@ -63680,7 +64411,7 @@ export const all_socu = {
     "to turn aside": 2,
     "to wrest": 2,
     "took him aside": 1,
-    "turn": 1,
+    "turn": 2,
     "turn aside": 1,
     "turned aside": 2,
     "turned away": 3,
@@ -63694,7 +64425,7 @@ export const all_socu = {
     "which alone spreadeth out": 1,
     "which stretcheth": 1,
     "who stretchest out": 1,
-    "with stretched forth": 1,
+    "with stretched forth": 2,
     "yet do i not decline": 1,
     "yet have i not declined": 1,
     "you and incline": 1,
@@ -63795,7 +64526,7 @@ export const all_socu = {
     "places and plant": 1,
     "planted": 1,
     "shall plant": 3,
-    "she planteth": 1,
+    "she planteth": 2,
     "that i may plant": 1,
     "that planted": 1,
     "that which is planted": 2,
@@ -63895,7 +64626,7 @@ export const all_socu = {
     "was one cubit": 4
   },
   "H5200": {
-    "a netophathite": 3,
+    "a netophathite": 1,
     "and the netophathites": 1,
     "of netophathi": 1,
     "of the netophathites": 1,
@@ -64000,7 +64731,7 @@ export const all_socu = {
     "unto nineveh": 3
   },
   "H5211": {
-    "he that fleeth": 2
+    "he that fleeth": 1
   },
   "H5212": {
     "nisan": 2
@@ -64109,7 +64840,7 @@ export const all_socu = {
     "and smite me": 1,
     "and smiteth": 1,
     "and smitten": 4,
-    "and smote": 57,
+    "and smote": 58,
     "and they have smitten": 1,
     "and they slew": 6,
     "and they smote": 16,
@@ -64200,7 +64931,7 @@ export const all_socu = {
     "shall smite": 5,
     "slew": 18,
     "smite": 25,
-    "smiting": 4,
+    "smiting": 5,
     "smitten": 3,
     "smote": 55,
     "so he smote": 1,
@@ -64224,7 +64955,7 @@ export const all_socu = {
     "thee thou shalt smite": 1,
     "thee to smite": 2,
     "them and smote": 2,
-    "them but they went forward": 3,
+    "them but they went forward": 4,
     "them shall i smite": 2,
     "them that every one that killeth": 1,
     "them that whosoever killeth": 1,
@@ -64406,12 +65137,13 @@ export const all_socu = {
     "thou shalt not respect": 1,
     "to have respect": 2,
     "took notice": 1,
-    "whom he shall acknowledge": 2,
+    "whom he shall acknowledge": 4,
     "why feignest thou thyself to be another": 1,
     "ye shall not respect": 1
   },
   "H5235": {
-    "and a strange": 1
+    "and a strange": 1,
+    "that he became a stranger": 1
   },
   "H5236": {
     "all the strange": 1,
@@ -64464,7 +65196,7 @@ export const all_socu = {
     "of a strange": 1,
     "of a strange woman": 1,
     "of a stranger": 3,
-    "of him for a strange woman": 2,
+    "of him for a strange woman": 3,
     "of him strangers": 1,
     "of me seeing i am a stranger": 1,
     "of strangers": 1,
@@ -64476,7 +65208,7 @@ export const all_socu = {
     "you and the stranger": 1
   },
   "H5238": {
-    "of his precious things": 2
+    "of his precious things": 3
   },
   "H5239": {
     "and when thou shalt make an end": 1
@@ -64486,6 +65218,9 @@ export const all_socu = {
     "nations": 5,
     "of the nations": 1,
     "the nations": 1
+  },
+  "H5240": {
+    "that was vile": 1
   },
   "H5241": {
     "nemuel": 1,
@@ -64679,6 +65414,9 @@ export const all_socu = {
     "to cover withal": 1,
     "with their drink offerings": 1
   },
+  "H5263": {
+    "and they shall be as when a standardbearer": 1
+  },
   "H5264": {
     "lifted up as an ensign": 1
   },
@@ -64767,8 +65505,7 @@ export const all_socu = {
     "to neah": 1
   },
   "H527": {
-    "of the multitude": 1,
-    "the multitude": 1
+    "of the multitude": 1
   },
   "H5270": {
     "and noah": 3,
@@ -64868,7 +65605,8 @@ export const all_socu = {
     "was naamah": 4
   },
   "H528": {
-    "than populous": 1
+    "than populous": 1,
+    "the multitude": 1
   },
   "H5280": {
     "of the naamites": 1
@@ -65066,6 +65804,9 @@ export const all_socu = {
     "young man": 1,
     "young men": 7
   },
+  "H5289": {
+    "the young one": 1
+  },
   "H529": {
     "a faithful": 1,
     "but a faithful": 2,
@@ -65079,22 +65820,22 @@ export const all_socu = {
     "than a child’s": 1
   },
   "H5291": {
-    "a damsel": 1,
+    "a damsel": 2,
     "a young": 1,
     "and her damsels": 1,
     "and her maidens": 1,
     "and let it come to pass that the damsel": 1,
     "and let the maiden": 1,
     "and the damsel": 3,
-    "and the damsel’s": 3,
+    "and the damsel’s": 4,
     "and the maid": 1,
     "and the maiden": 3,
-    "but unto the damsel": 2,
+    "but unto the damsel": 4,
     "by the maidens": 1,
-    "damsel": 4,
+    "damsel": 6,
     "damsels": 1,
     "every maiden": 1,
-    "for the damsel": 1,
+    "for the damsel": 2,
     "for the damsel’s": 1,
     "for thy maidens": 1,
     "her and her maids": 3,
@@ -65102,7 +65843,7 @@ export const all_socu = {
     "here fast by my maidens": 1,
     "him for thy maidens": 1,
     "i also and my maidens": 1,
-    "if a damsel": 1,
+    "if a damsel": 2,
     "in unto the same maid": 1,
     "let the damsel": 1,
     "maid": 1,
@@ -65110,16 +65851,16 @@ export const all_socu = {
     "maids": 1,
     "me the damsel": 1,
     "now when every maid’s": 2,
-    "of the damsel": 4,
-    "the damsel": 5,
+    "of the damsel": 6,
+    "the damsel": 7,
     "the damsel’s": 2,
     "the maid": 1,
-    "the tokens of the damsel’s": 2,
+    "the tokens of the damsel’s": 4,
     "thee of this young woman": 1,
-    "there is in the damsel": 2,
+    "there is in the damsel": 4,
     "to her maidens": 1,
     "unto the damsel": 2,
-    "unto the damsel’s": 1,
+    "unto the damsel’s": 2,
     "whose damsel": 1,
     "with his maidens": 1,
     "with whose maidens": 1,
@@ -65230,8 +65971,7 @@ export const all_socu = {
     "with his truth": 1
   },
   "H5300": {
-    "of nephishesim": 1,
-    "of nephusim": 1
+    "of nephishesim": 1
   },
   "H5301": {
     "a seething": 1,
@@ -65254,6 +65994,10 @@ export const all_socu = {
     "the giants": 2,
     "there were giants": 1,
     "which come of the giants": 2
+  },
+  "H5304": {
+    "of nephishesim": 1,
+    "of nephusim": 2
   },
   "H5305": {
     "and nephish": 1,
@@ -65482,7 +66226,7 @@ export const all_socu = {
   "H5308": {
     "down": 2,
     "falleth": 2,
-    "fell": 2,
+    "fell": 3,
     "fell down": 2,
     "shall fall down": 1,
     "there fell": 1,
@@ -65520,7 +66264,7 @@ export const all_socu = {
   },
   "H5312": {
     "and came forth": 1,
-    "came forth": 3,
+    "came forth": 4,
     "come forth": 2,
     "had taken": 1,
     "take": 2,
@@ -65549,7 +66293,7 @@ export const all_socu = {
     "against any person": 2,
     "against his own life": 1,
     "against his own soul": 1,
-    "against mine own life": 1,
+    "against mine own life": 2,
     "against my soul": 1,
     "against our souls": 1,
     "against that soul": 3,
@@ -65621,7 +66365,7 @@ export const all_socu = {
     "as much as thy soul": 1,
     "as the life": 2,
     "as thy soul": 3,
-    "at her pleasure": 1,
+    "at her pleasure": 2,
     "at his pleasure": 1,
     "at their pleasure": 1,
     "at thine own pleasure": 1,
@@ -65710,7 +66454,7 @@ export const all_socu = {
     "his life": 10,
     "his own": 1,
     "his own soul": 8,
-    "his soul": 25,
+    "his soul": 26,
     "i beseech thee my life": 1,
     "i pray thee let me live": 1,
     "i pray thee let my life": 2,
@@ -65982,7 +66726,7 @@ export const all_socu = {
     "not that thou stoodest": 1,
     "of the officers": 1,
     "of the pillar": 1,
-    "officers": 2,
+    "officers": 3,
     "set": 2,
     "set thee up": 1,
     "set up": 2,
@@ -66033,6 +66777,7 @@ export const all_socu = {
   "H5329": {
     "and the overseers": 1,
     "and were overseers": 1,
+    "by a perpetual": 1,
     "overseers": 1,
     "to excel": 1,
     "to oversee": 1,
@@ -66281,6 +67026,7 @@ export const all_socu = {
     "keepeth": 1,
     "keeping": 1,
     "may keep": 1,
+    "observe": 1,
     "of the watchmen": 2,
     "preserve": 7,
     "preserveth": 1,
@@ -66288,6 +67034,7 @@ export const all_socu = {
     "that the keeper": 1,
     "that the watchmen": 1,
     "that watchers": 1,
+    "the preserved": 1,
     "thee and i will preserve": 1,
     "this i had because i kept": 1,
     "thou shalt preserve": 2,
@@ -66314,7 +67061,6 @@ export const all_socu = {
     "appoint": 1,
     "blasphemed": 1,
     "curse": 1,
-    "i cursed": 1,
     "let them curse": 1,
     "name": 1,
     "neither curse": 1,
@@ -66369,7 +67115,7 @@ export const all_socu = {
     "how weak": 1,
     "is waxed feeble": 1,
     "languish": 1,
-    "languisheth": 5,
+    "languisheth": 10,
     "shall languish": 1,
     "therein shall languish": 1,
     "thereof languish": 1,
@@ -66600,8 +67346,8 @@ export const all_socu = {
   },
   "H5371": {
     "and nergal–sharezer": 3,
-    "even nergal–sharezer": 7,
-    "nergal–sharezer": 7
+    "even nergal–sharezer": 6,
+    "nergal–sharezer": 6
   },
   "H5372": {
     "and a whisperer": 1,
@@ -66620,7 +67366,7 @@ export const all_socu = {
     "able to bear": 1,
     "accept": 1,
     "after that they have borne": 1,
-    "all these had taken": 2,
+    "all these had taken": 4,
     "also accepted": 1,
     "also and bear": 2,
     "also will i lift up": 1,
@@ -66724,7 +67470,7 @@ export const all_socu = {
     "any more neither shalt thou bear": 1,
     "are before me and there are that raise up": 1,
     "are lifted up": 1,
-    "armourbearer": 1,
+    "armourbearer": 2,
     "bare": 5,
     "be borne": 2,
     "be laid": 1,
@@ -66829,7 +67575,7 @@ export const all_socu = {
     "let them take": 1,
     "let us lift up": 1,
     "lift thou up": 1,
-    "lift up": 26,
+    "lift up": 27,
     "lift ye up": 1,
     "lifted me up": 3,
     "lifted up": 19,
@@ -67048,6 +67794,7 @@ export const all_socu = {
     "deceived": 2,
     "hath deceived": 2,
     "of you deceive": 1,
+    "seize": 1,
     "therefore behold i even i will utterly": 1,
     "thou hast greatly": 2,
     "with thee have deceived": 1
@@ -67055,7 +67802,6 @@ export const all_socu = {
   "H5378": {
     "shall not exact": 1,
     "that was in debt": 1,
-    "unto them ye exact": 1,
     "with the giver of usury": 1
   },
   "H5379": {
@@ -67134,7 +67880,7 @@ export const all_socu = {
     "that lendeth": 1,
     "that ye exact": 1,
     "to whom thou dost lend": 1,
-    "unto them ye exact": 1,
+    "unto them ye exact": 2,
     "when thou dost lend": 1
   },
   "H5384": {
@@ -67145,7 +67891,7 @@ export const all_socu = {
     "your carriages": 1
   },
   "H5386": {
-    "thy debt": 1
+    "thy debt": 2
   },
   "H5387": {
     "a prince": 2,
@@ -67384,6 +68130,7 @@ export const all_socu = {
     "that there was no breath": 1,
     "the breath": 2,
     "the spirit": 1,
+    "they any to breathe": 1,
     "to breathe": 1,
     "was the breath": 1,
     "whose breath": 1
@@ -67560,7 +68307,7 @@ export const all_socu = {
     "moreover the nethinims": 1,
     "nethinims": 2,
     "of the nethinims": 1,
-    "the nethinims": 5,
+    "the nethinims": 7,
     "were over the nethinims": 2
   },
   "H5412": {
@@ -67624,7 +68371,7 @@ export const all_socu = {
     "and delivered": 7,
     "and delivered up": 1,
     "and fastened": 2,
-    "and gave": 48,
+    "and gave": 49,
     "and gavest": 7,
     "and give": 29,
     "and give out": 1,
@@ -67699,8 +68446,8 @@ export const all_socu = {
     "and laid": 3,
     "and laid up": 2,
     "and lay": 8,
-    "and let them deliver": 2,
-    "and let them give": 3,
+    "and let them deliver": 3,
+    "and let them give": 4,
     "and let us give": 1,
     "and lift up": 1,
     "and liftest up": 1,
@@ -67790,7 +68537,7 @@ export const all_socu = {
     "as he hath caused": 2,
     "as i gave": 2,
     "ascribe": 1,
-    "be delivered": 5,
+    "be delivered": 6,
     "be given": 11,
     "be he that giveth": 2,
     "be put": 1,
@@ -68005,7 +68752,7 @@ export const all_socu = {
     "i will deliver": 2,
     "i will even give": 1,
     "i will even set": 1,
-    "i will give": 15,
+    "i will give": 16,
     "i will lay": 1,
     "i will make": 2,
     "i will not give": 6,
@@ -68245,7 +68992,7 @@ export const all_socu = {
     "them and fasten": 1,
     "them and i will give": 1,
     "them and made": 1,
-    "them and thou hast set": 1,
+    "them and thou hast set": 2,
     "them and will set": 2,
     "them but i will grant": 1,
     "them have i given": 2,
@@ -68712,7 +69459,7 @@ export const all_socu = {
     "and while they are drunken": 1,
     "be not among winebibbers": 1,
     "for the drunkard": 1,
-    "sabeans": 1
+    "sabeans": 2
   },
   "H5434": {
     "and seba": 2,
@@ -68821,7 +69568,7 @@ export const all_socu = {
     "they go about": 1,
     "they had carried it about": 1,
     "they have brought about": 1,
-    "they have now compassed": 1,
+    "they have now compassed": 2,
     "they turned": 3,
     "thou shalt compass": 1,
     "to compass": 1,
@@ -68893,7 +69640,7 @@ export const all_socu = {
     "of building round about": 3,
     "of it round about": 2,
     "on every side": 17,
-    "round about": 218,
+    "round about": 220,
     "should be round about": 1,
     "that are about": 2,
     "that are about us": 1,
@@ -69009,7 +69756,7 @@ export const all_socu = {
   },
   "H5456": {
     "and falleth down": 1,
-    "he falleth down": 2,
+    "he falleth down": 3,
     "shall i fall down": 1,
     "they fall down": 1
   },
@@ -69239,7 +69986,7 @@ export const all_socu = {
     "thyself therefore and anoint": 1
   },
   "H5481": {
-    "and dulcimer": 3,
+    "and dulcimer": 5,
     "dulcimer": 1
   },
   "H5482": {
@@ -69255,7 +70002,7 @@ export const all_socu = {
     "and on horses": 2,
     "and on the horses": 1,
     "and some in horses": 1,
-    "and the crane": 1,
+    "and the crane": 2,
     "and the horse": 4,
     "and their horses": 2,
     "as an horse": 1,
@@ -69307,7 +70054,7 @@ export const all_socu = {
     "upon the horses": 1,
     "upon thine horses": 1,
     "with him and horses": 1,
-    "with his horses": 1,
+    "with his horses": 2,
     "with horses": 5,
     "with thine horses": 1,
     "ye horses": 1,
@@ -69320,7 +70067,7 @@ export const all_socu = {
     "of susi": 1
   },
   "H5486": {
-    "consume": 1,
+    "consume": 2,
     "of them perish": 1,
     "shall be consumed": 1,
     "shall have an end": 1,
@@ -69349,6 +70096,7 @@ export const all_socu = {
     "the red": 1
   },
   "H549": {
+    "are not abana": 1,
     "of amana": 1
   },
   "H5490": {
@@ -69453,6 +70201,7 @@ export const all_socu = {
     "for i will take away": 1,
     "for they will turn away": 1,
     "from him as i took": 5,
+    "from me": 1,
     "get you out": 1,
     "had put away": 1,
     "hath taken away": 4,
@@ -69619,7 +70368,7 @@ export const all_socu = {
     "you nor persuade": 1
   },
   "H5497": {
-    "and his clothes": 1
+    "and his clothes": 2
   },
   "H5498": {
     "and we will draw": 1,
@@ -69628,7 +70377,7 @@ export const all_socu = {
     "to tear": 1
   },
   "H5499": {
-    "cast clouts": 2
+    "cast clouts": 3
   },
   "H55": {
     "and they shall mount up": 1
@@ -69707,10 +70456,10 @@ export const all_socu = {
     "because ye are all become dross": 1,
     "dross": 1,
     "is become dross": 1,
-    "is to me become dross": 2,
+    "is to me become dross": 3,
     "like dross": 1,
     "the dross": 1,
-    "they are even the dross": 2,
+    "they are even the dross": 3,
     "thy dross": 1
   },
   "H551": {
@@ -69928,8 +70677,8 @@ export const all_socu = {
     "me they are sottish": 1,
     "neither be thou foolish": 1,
     "now this o foolish": 1,
-    "to every one that he is a fool": 2,
-    "yea also when he that is a fool": 2
+    "to every one that he is a fool": 3,
+    "yea also when he that is a fool": 3
   },
   "H5531": {
     "and folly": 2,
@@ -70043,7 +70792,7 @@ export const all_socu = {
     "pardon": 7,
     "shall be forgiven": 1,
     "shall forgive": 3,
-    "shall i pardon": 2,
+    "shall i pardon": 3,
     "that i may forgive": 1,
     "thou hast not pardoned": 1,
     "who forgiveth": 1
@@ -70410,7 +71159,7 @@ export const all_socu = {
     "also had said": 1,
     "also he bade": 1,
     "also he said": 1,
-    "also i said": 1,
+    "also i said": 2,
     "also said": 2,
     "also that said": 1,
     "also they reported": 1,
@@ -70434,7 +71183,7 @@ export const all_socu = {
     "and hath said": 4,
     "and he answered": 51,
     "and he commanded": 2,
-    "and he said": 473,
+    "and he said": 474,
     "and he saith": 3,
     "and he say": 1,
     "and he shall say": 2,
@@ -70443,7 +71192,7 @@ export const all_socu = {
     "and i answered": 2,
     "and i commanded": 1,
     "and i have said": 1,
-    "and i said": 32,
+    "and i said": 33,
     "and i say": 1,
     "and i spake": 2,
     "and i thought": 3,
@@ -70478,7 +71227,7 @@ export const all_socu = {
     "and one spake": 4,
     "and promisedst": 1,
     "and published": 2,
-    "and said": 634,
+    "and said": 637,
     "and saidst": 1,
     "and saith": 3,
     "and samuel said": 2,
@@ -70749,7 +71498,7 @@ export const all_socu = {
     "is it fit to say": 1,
     "is it not i that commanded": 2,
     "is there yet any with thee and he shall say": 3,
-    "it albeit i have not spoken": 1,
+    "it albeit i have not spoken": 2,
     "it and they said": 3,
     "it but the other said": 3,
     "it he said": 1,
@@ -70805,7 +71554,7 @@ export const all_socu = {
     "not unto you saying": 3,
     "nothing from him and he said": 1,
     "now command": 1,
-    "now it came to pass when they spake": 1,
+    "now it came to pass when they spake": 2,
     "now say": 3,
     "now therefore go to speak": 3,
     "now therefore so shalt thou say": 2,
@@ -70837,12 +71586,12 @@ export const all_socu = {
     "over them and they said": 1,
     "over us intendest": 3,
     "reasons saith": 2,
-    "said": 1431,
+    "said": 1433,
     "saith": 112,
     "sake as he promised": 1,
     "sake said": 1,
     "say": 122,
-    "saying": 934,
+    "saying": 930,
     "shall be called": 4,
     "shall be with you as ye have spoken": 1,
     "shall it be said": 1,
@@ -70860,7 +71609,7 @@ export const all_socu = {
     "so saying": 2,
     "so shall ye say": 3,
     "so that they shall not say": 1,
-    "spake": 117,
+    "spake": 115,
     "spake i": 3,
     "speak": 38,
     "spoken": 1,
@@ -71075,10 +71824,10 @@ export const all_socu = {
     "unto him say": 3,
     "unto him saying": 35,
     "unto him that saith": 2,
-    "unto him thus saith": 43,
+    "unto him thus saith": 45,
     "unto him to whom belongest thou and whence art thou and he said": 2,
     "unto him what said": 6,
-    "unto him wherewith and he said": 2,
+    "unto him wherewith and he said": 3,
     "unto him who art thou and he said": 2,
     "unto it and saith": 1,
     "unto it thus saith": 2,
@@ -71148,7 +71897,7 @@ export const all_socu = {
     "when they said": 3,
     "when thou shalt say": 1,
     "where it was said": 2,
-    "whereas ye say": 1,
+    "whereas ye say": 2,
     "wherefore he said": 3,
     "wherefore i also said": 1,
     "wherefore it is said": 1,
@@ -71248,7 +71997,7 @@ export const all_socu = {
     "behold the whirlwind": 2,
     "by a whirlwind": 2,
     "it with a stormy": 1,
-    "out of the whirlwind": 2,
+    "out of the whirlwind": 4,
     "stormy": 1,
     "tempest": 2,
     "the storm": 1,
@@ -71565,6 +72314,7 @@ export const all_socu = {
     "against the words": 1,
     "all the words": 2,
     "and the speeches": 1,
+    "answer": 1,
     "appointed": 1,
     "from the words": 2,
     "her words": 1,
@@ -71622,7 +72372,7 @@ export const all_socu = {
     "is the book": 1,
     "it and a book": 1,
     "it in a book": 2,
-    "letters": 9,
+    "letters": 10,
     "me a book": 2,
     "me i pray thee out of thy book": 1,
     "now as soon as this letter": 1,
@@ -71637,7 +72387,7 @@ export const all_socu = {
     "the evidence": 5,
     "the learning": 1,
     "the letter": 5,
-    "the letters": 4,
+    "the letters": 5,
     "these evidences": 3,
     "this book": 3,
     "this evidence": 3,
@@ -71662,7 +72412,7 @@ export const all_socu = {
   },
   "H5617": {
     "and from sepharvaim": 1,
-    "of sepharvaim": 5
+    "of sepharvaim": 6
   },
   "H5618": {
     "of sophereth": 2
@@ -71825,7 +72575,7 @@ export const all_socu = {
     "yea for the rebellious": 1
   },
   "H5638": {
-    "for lo the winter": 1
+    "for lo the winter": 2
   },
   "H5639": {
     "sethur": 1
@@ -71855,8 +72605,8 @@ export const all_socu = {
     "and be kept close": 1,
     "and because they are hid": 1,
     "and hide": 3,
-    "and hideth": 3,
-    "and i will surely": 1,
+    "and hideth": 5,
+    "and i will surely": 2,
     "and kept close": 1,
     "and they hid": 1,
     "and when he hideth": 1,
@@ -71866,7 +72616,7 @@ export const all_socu = {
     "have we hid": 1,
     "he hideth": 1,
     "hid": 4,
-    "hide": 15,
+    "hide": 16,
     "him i hid": 1,
     "himself against me then i would have hid": 1,
     "how long wilt thou hide": 1,
@@ -72171,7 +72921,7 @@ export const all_socu = {
     "his servants": 2,
     "servant": 1,
     "the servants": 1,
-    "thy servants": 2,
+    "thy servants": 3,
     "ye servants": 1
   },
   "H565": {
@@ -72269,7 +73019,7 @@ export const all_socu = {
     "as my servant": 1,
     "as servants": 2,
     "as the menservants": 1,
-    "as thy servant": 4,
+    "as thy servant": 3,
     "as with the servant": 1,
     "became his servant": 2,
     "became servants": 1,
@@ -72324,7 +73074,7 @@ export const all_socu = {
     "had a servant": 1,
     "hath thy servant": 1,
     "he and all his servants": 1,
-    "he and his servants": 2,
+    "he and his servants": 3,
     "he shall be my servant": 1,
     "here with you none of the servants": 1,
     "him for a servant": 1,
@@ -72356,7 +73106,7 @@ export const all_socu = {
     "it thee and yet thou hast not been as my servant": 1,
     "it to me but the servants": 1,
     "it to thy servant": 1,
-    "it unto thy servant": 1,
+    "it unto thy servant": 2,
     "let my servants": 2,
     "let thy servant": 4,
     "like as my servant": 1,
@@ -72394,7 +73144,7 @@ export const all_socu = {
     "of bondmen": 2,
     "of flies upon thee and upon thy servants": 1,
     "of her and his servants": 2,
-    "of his servant": 10,
+    "of his servant": 11,
     "of his servants": 23,
     "of my manservant": 1,
     "of my servant": 1,
@@ -72851,7 +73601,7 @@ export const all_socu = {
     "come thou over": 1,
     "cometh": 1,
     "coming on": 1,
-    "conducted": 6,
+    "conducted": 8,
     "current": 1,
     "else go through": 1,
     "escape": 1,
@@ -72902,6 +73652,7 @@ export const all_socu = {
     "i pray thee let me go over": 1,
     "i pray thee pass over": 1,
     "i went": 1,
+    "i will not transgress": 1,
     "i will pass": 1,
     "if thou passest on": 1,
     "in me for i had gone": 1,
@@ -72927,7 +73678,7 @@ export const all_socu = {
     "neither go": 1,
     "neither shall he be charged": 1,
     "none shall pass through": 1,
-    "nor alienate": 2,
+    "nor alienate": 4,
     "not let us pass": 1,
     "not pass over": 2,
     "not they shall perish": 1,
@@ -72971,7 +73722,7 @@ export const all_socu = {
     "shall not pass over": 1,
     "shall not transgress": 1,
     "shall pass": 3,
-    "shall pass through": 10,
+    "shall pass through": 12,
     "should no more go over": 1,
     "should not fail": 1,
     "should not pass": 1,
@@ -73065,7 +73816,7 @@ export const all_socu = {
     "until we be past": 2,
     "until we have passed": 3,
     "until we were come over": 1,
-    "until we were passed over": 1,
+    "until we were passed over": 2,
     "unto him go through": 1,
     "unto him let us pass": 1,
     "unto him thou shalt not pass": 1,
@@ -73089,7 +73840,7 @@ export const all_socu = {
     "went": 4,
     "went forth": 1,
     "went his way": 1,
-    "went on": 7,
+    "went on": 9,
     "went over": 8,
     "were delivered": 1,
     "were passed": 2,
@@ -73114,7 +73865,7 @@ export const all_socu = {
     "which ye passed by": 2,
     "whither thou passest": 1,
     "whither thou passest over": 1,
-    "whither ye go": 2,
+    "whither ye go": 3,
     "whither ye go over": 3,
     "who if he go through": 1,
     "who passing": 1,
@@ -73168,7 +73919,7 @@ export const all_socu = {
     "on all sides": 3,
     "on the one side": 2,
     "on the other side": 13,
-    "on this side": 17,
+    "on this side": 18,
     "over": 2,
     "over against": 1,
     "over all the region on this side": 3,
@@ -73178,7 +73929,7 @@ export const all_socu = {
     "that is on the other side": 1,
     "that was on this side": 1,
     "that were beyond": 3,
-    "that were on the other side": 5,
+    "that were on the other side": 6,
     "their sides": 1,
     "them beyond": 3,
     "thereof which is in the side": 1,
@@ -73311,7 +74062,7 @@ export const all_socu = {
     "and she doted": 1,
     "and with all on whom she doted": 1,
     "for she doted": 1,
-    "she doted": 2,
+    "she doted": 3,
     "thy lovers": 1,
     "upon whom she doted": 1
   },
@@ -73466,7 +74217,7 @@ export const all_socu = {
     "be between thee and me for": 1,
     "before": 1,
     "even unto": 1,
-    "for": 51,
+    "for": 50,
     "forasmuch as": 2,
     "from henceforth and for": 2,
     "from henceforth even for": 3,
@@ -73762,7 +74513,7 @@ export const all_socu = {
   "H5714": {
     "and of iddo": 1,
     "iddo": 3,
-    "of iddo": 6
+    "of iddo": 7
   },
   "H5715": {
     "a testimony": 1,
@@ -73791,7 +74542,7 @@ export const all_socu = {
     "of his ornament": 1,
     "on him his ornaments": 1,
     "on ornaments": 1,
-    "ornaments": 1,
+    "ornaments": 2,
     "thee also with ornaments": 1,
     "thee with ornaments": 1,
     "thee with them all as with an ornament": 1,
@@ -73799,12 +74550,12 @@ export const all_socu = {
     "thy mouth": 1,
     "thy ornaments": 1,
     "thyself with ornaments": 1,
-    "to excellent": 1,
+    "to excellent": 2,
     "whose mouth": 1
   },
   "H5717": {
     "and adiel": 1,
-    "of adiel": 4
+    "of adiel": 2
   },
   "H5718": {
     "and adaiah": 5,
@@ -74053,7 +74804,7 @@ export const all_socu = {
     "abroad any whither": 2,
     "how": 1,
     "is not and i whither": 1,
-    "no whither": 3,
+    "no whither": 4,
     "thence any whither": 2,
     "where": 1,
     "whither": 1,
@@ -74153,10 +74904,11 @@ export const all_socu = {
     "me to the ungodly": 1
   },
   "H5761": {
-    "and avim": 1
+    "and avim": 1,
+    "and the avims": 1
   },
   "H5762": {
-    "was avith": 2
+    "was avith": 3
   },
   "H5763": {
     "milch": 2,
@@ -74177,7 +74929,7 @@ export const all_socu = {
     "and all iniquity": 1,
     "and iniquity": 2,
     "and let not wickedness": 1,
-    "and there is no unrighteousness": 2,
+    "and there is no unrighteousness": 4,
     "and unjust": 1,
     "and wickedness": 1,
     "and without iniquity": 1,
@@ -74262,7 +75014,7 @@ export const all_socu = {
     "even from everlasting": 2,
     "even of old": 1,
     "even the ancient": 1,
-    "ever": 68,
+    "ever": 67,
     "everlasting": 7,
     "evermore": 8,
     "for a perpetual": 1,
@@ -74379,12 +75131,15 @@ export const all_socu = {
     "truly": 1,
     "we beseech thee": 1
   },
+  "H5770": {
+    "eyed": 1
+  },
   "H5771": {
     "after mine iniquity": 1,
     "against us or what is our iniquity": 1,
     "all iniquity": 1,
     "all mine iniquities": 1,
-    "all their iniquities": 1,
+    "all their iniquities": 2,
     "all thine iniquities": 1,
     "and also in the iniquities": 2,
     "and because of their iniquities": 1,
@@ -74479,7 +75234,7 @@ export const all_socu = {
     "the punishment of thine iniquity": 2,
     "their iniquities": 2,
     "their iniquity": 19,
-    "them from all their iniquity": 1,
+    "them from all their iniquity": 2,
     "themselves without my fault": 1,
     "then the iniquity": 1,
     "therefore shall the iniquity": 1,
@@ -74531,13 +75286,13 @@ export const all_socu = {
     "that flieth": 2,
     "that may fly": 1,
     "then flew": 1,
-    "they fly away": 4,
+    "they fly away": 8,
     "they shall fly": 1,
     "thou shalt shine forth": 1,
     "waxed faint": 1,
     "were faint": 1,
     "who are these that fly": 1,
-    "wilt thou set": 4
+    "wilt thou set": 8
   },
   "H5775": {
     "all fowls": 1,
@@ -74602,7 +75357,7 @@ export const all_socu = {
     "the lead": 1
   },
   "H5778": {
-    "of ephai": 1
+    "of ephai": 2
   },
   "H5779": {
     "of it take advice": 1,
@@ -74922,9 +75677,6 @@ export const all_socu = {
     "for the scapegoat": 2,
     "to be the scapegoat": 2
   },
-  "H58": {
-    "and unto the plain": 1
-  },
   "H580": {
     "to whom we": 1
   },
@@ -74957,7 +75709,7 @@ export const all_socu = {
     "and where will ye leave": 1,
     "and will not forsake": 1,
     "are forsaken": 1,
-    "be as a forsaken": 1,
+    "be as a forsaken": 2,
     "be forsaken": 1,
     "because he had forsaken": 1,
     "because that they have forsaken": 1,
@@ -74980,7 +75732,7 @@ export const all_socu = {
     "for if he should leave": 2,
     "for thou wilt not leave": 1,
     "forsake": 13,
-    "forsaken": 3,
+    "forsaken": 5,
     "forsook": 1,
     "forsookest": 1,
     "from him for they left": 1,
@@ -75050,6 +75802,7 @@ export const all_socu = {
     "they that forsake": 1,
     "this for we have forsaken": 1,
     "this unto thyself in that thou hast forsaken": 1,
+    "thou hast been forsaken": 1,
     "thou shalt leave": 2,
     "thou shalt not forsake": 1,
     "to help": 3,
@@ -75060,7 +75813,7 @@ export const all_socu = {
     "wherewith they have forsaken": 1,
     "which forsaketh": 1,
     "which leaveth": 1,
-    "which they left": 1,
+    "which they left": 2,
     "who hath not left destitute": 1,
     "who hath not left off": 1,
     "who have forsaken": 1,
@@ -75187,109 +75940,40 @@ export const all_socu = {
     "and aziza": 1
   },
   "H582": {
-    "all the men": 4,
-    "and all the men": 1,
     "and every man’s": 1,
-    "and he let the men": 1,
-    "and his men": 4,
-    "and men": 1,
-    "and my counsellors": 1,
-    "and none of the men": 1,
-    "and of him and of all the men": 1,
-    "and the archers": 1,
-    "and the men": 13,
-    "and the men’s": 1,
-    "and their men": 1,
-    "and there were certain men": 1,
-    "and when the men": 1,
-    "are the men": 1,
+    "as for man": 1,
     "as other men": 1,
-    "because all those men": 1,
-    "between men": 1,
     "but how should man": 1,
     "but it was thou a man": 1,
-    "but some": 1,
-    "but the men": 2,
-    "but they were men": 1,
-    "certain": 2,
-    "company of men": 1,
-    "even all the men": 1,
-    "even the men": 2,
-    "even those": 1,
-    "for all the men": 1,
     "for man": 1,
-    "for men": 1,
-    "for the men": 1,
-    "for these men": 2,
     "from among men": 1,
     "from men": 1,
-    "him over the men": 1,
-    "his men": 2,
     "how much less man": 1,
-    "how the men": 2,
     "how then can man": 1,
-    "if men": 1,
+    "i will make a man": 1,
     "in it with a man’s": 1,
     "in man": 1,
-    "in thee are men": 1,
-    "is the man": 1,
+    "is the man": 2,
     "it all my familiars": 1,
     "it man": 1,
-    "let all the men": 1,
-    "let men": 1,
-    "let not man": 1,
+    "let not man": 2,
     "man": 2,
     "man’s": 2,
-    "men": 42,
-    "nevertheless divers": 1,
-    "nevertheless the men": 1,
-    "nor the men": 1,
-    "not with the men": 1,
+    "men": 1,
+    "no man": 1,
     "of a man": 1,
-    "of man": 4,
-    "of men": 4,
-    "of the archers": 1,
-    "of the men": 10,
-    "of these men": 2,
-    "our men": 1,
-    "over the men": 2,
-    "persons": 2,
-    "shipmen": 1,
-    "so it came to pass when all the men": 1,
+    "of man": 5,
+    "of men": 1,
+    "or as one man": 1,
+    "shall mortal man": 1,
     "than man": 1,
-    "that certain": 1,
-    "that the men": 1,
-    "the bloodthirsty": 1,
-    "the men": 12,
-    "their husbands": 1,
-    "them and all the men": 1,
-    "them because the men": 1,
-    "them for the men": 2,
+    "that the man": 1,
     "themselves to be but men": 1,
-    "then were the men": 2,
-    "there and the men": 1,
-    "there are men": 1,
-    "therefore the men": 1,
-    "these men": 4,
-    "they and their men": 1,
-    "this for the men": 2,
     "thou as man": 1,
     "thou hast caused men": 1,
-    "thou men": 1,
-    "to husbands": 1,
     "to man": 1,
-    "to the men": 1,
-    "trade": 1,
-    "unto his men": 1,
     "unto man": 1,
-    "unto the men": 2,
-    "unto these men": 1,
-    "upon men": 1,
-    "what is man": 3,
-    "what men": 1,
-    "whom the men": 1,
-    "with certain": 2,
-    "with the men": 1
+    "what is man": 3
   },
   "H5820": {
     "and azmaveth": 3,
@@ -75354,7 +76038,7 @@ export const all_socu = {
     "succoured": 1,
     "taketh my part with them that help": 1,
     "that helped": 1,
-    "that thou succour": 2,
+    "that thou succour": 4,
     "thee yea i will help": 1,
     "they have no helper": 1,
     "they helped": 1,
@@ -75381,7 +76065,7 @@ export const all_socu = {
     "he is their help": 3,
     "help": 2,
     "him an help meet": 1,
-    "him to help": 1,
+    "him to help": 2,
     "in thy help": 1,
     "my help": 2,
     "of thy help": 1,
@@ -75601,7 +76285,7 @@ export const all_socu = {
     "was ataroth–addar": 2
   },
   "H5854": {
-    "the house of joab": 4
+    "the house of joab": 3
   },
   "H5855": {
     "and atroth shophan": 2
@@ -75624,6 +76308,7 @@ export const all_socu = {
     "of ai": 18,
     "of the city": 1,
     "than ai": 1,
+    "that were in ai": 1,
     "to ai": 8,
     "to aiath": 1,
     "toward ai": 1,
@@ -75642,7 +76327,8 @@ export const all_socu = {
   },
   "H5860": {
     "and he railed": 1,
-    "but didst fly": 1
+    "but didst fly": 1,
+    "flew": 1
   },
   "H5861": {
     "a ravenous bird": 1,
@@ -75678,12 +76364,12 @@ export const all_socu = {
     "against elam": 1,
     "and elam": 3,
     "and from elam": 1,
-    "and upon elam": 2,
+    "and upon elam": 3,
     "elam": 6,
     "for i will cause elam": 1,
     "in elam": 1,
     "o elam": 1,
-    "of elam": 13,
+    "of elam": 15,
     "there is elam": 1
   },
   "H5868": {
@@ -75693,7 +76379,6 @@ export const all_socu = {
     "all that seemed": 2,
     "also": 1,
     "also was displeased": 1,
-    "an open": 1,
     "and": 2,
     "and also in the sight": 2,
     "and as for me also mine eye": 1,
@@ -75706,7 +76391,7 @@ export const all_socu = {
     "and her eyes": 1,
     "and his eye": 1,
     "and his eyebrows": 1,
-    "and his eyes": 12,
+    "and his eyes": 14,
     "and i will look well": 4,
     "and in the eyes": 4,
     "and in the presence": 2,
@@ -75790,6 +76475,7 @@ export const all_socu = {
     "from my sight": 1,
     "from the eyes": 3,
     "from thine eyes": 2,
+    "furrows": 1,
     "hast thou eyes": 1,
     "her eye": 1,
     "her eyes": 3,
@@ -75803,7 +76489,7 @@ export const all_socu = {
     "himself in his own eyes": 1,
     "his colour": 2,
     "his eye": 2,
-    "his eyes": 34,
+    "his eyes": 37,
     "his eye’s": 3,
     "i pray you how mine eyes": 1,
     "i was eyes": 1,
@@ -75816,7 +76502,7 @@ export const all_socu = {
     "in his eyesight": 1,
     "in his own conceit": 4,
     "in his own eyes": 7,
-    "in his sight": 10,
+    "in his sight": 11,
     "in mine eyes": 7,
     "in mine own sight": 1,
     "in my sight": 17,
@@ -75854,7 +76540,7 @@ export const all_socu = {
     "it with thine eyes": 5,
     "let i beseech thee thine eyes": 1,
     "let it not displease": 1,
-    "let not your eye": 1,
+    "let not your eye": 2,
     "let their eyes": 1,
     "let thine eyes": 3,
     "like in colour": 2,
@@ -75874,7 +76560,7 @@ export const all_socu = {
     "moreover this is their resemblance": 1,
     "neither hath the eye": 1,
     "neither have our eyes": 1,
-    "neither is his eye": 1,
+    "neither is his eye": 2,
     "neither shall thine eyes": 1,
     "nevertheless mine eye": 1,
     "no eye": 2,
@@ -75903,6 +76589,7 @@ export const all_socu = {
     "of thine eyes": 5,
     "of thy sight": 1,
     "of your eyes": 1,
+    "on mine affliction": 1,
     "on the outward appearance": 1,
     "only with thine eyes": 1,
     "or have caused the eyes": 1,
@@ -75975,7 +76662,7 @@ export const all_socu = {
     "to thine eyes": 1,
     "to whom they think": 1,
     "unto": 1,
-    "unto him": 1,
+    "unto him": 2,
     "unto him in the presence": 1,
     "unto him in the sight": 1,
     "unto him neither shall thine eye": 1,
@@ -75996,7 +76683,7 @@ export const all_socu = {
     "was like unto the colour": 1,
     "well": 6,
     "wells": 1,
-    "what he thought": 1,
+    "what he thought": 2,
     "what seemeth": 3,
     "whatsoever seemeth": 1,
     "where it pleaseth": 1,
@@ -76053,7 +76740,7 @@ export const all_socu = {
     "which is en–gedi": 2
   },
   "H5873": {
-    "and en–gannim": 5,
+    "and en–gannim": 4,
     "en–gannim": 2
   },
   "H5874": {
@@ -76064,7 +76751,7 @@ export const all_socu = {
     "thereof en–hakkore": 2
   },
   "H5876": {
-    "and en–haddah": 3
+    "and en–haddah": 2
   },
   "H5877": {
     "and en–hazor": 2
@@ -76090,14 +76777,14 @@ export const all_socu = {
   "H5883": {
     "by en–rogel": 2,
     "en–rogel": 2,
-    "thereof were at en–rogel": 3,
+    "thereof were at en–rogel": 2,
     "to en–rogel": 2
   },
   "H5884": {
     "and at en–rimmon": 2
   },
   "H5885": {
-    "of en–shemesh": 3,
+    "of en–shemesh": 2,
     "to en–shemesh": 2
   },
   "H5887": {
@@ -76434,7 +77121,7 @@ export const all_socu = {
     "were by the city": 3,
     "were every one": 8,
     "were in all the cities": 1,
-    "were in the cities": 3,
+    "were in the cities": 1,
     "were in their cities": 2,
     "were there and that the cities": 1,
     "what cities": 1,
@@ -76468,7 +77155,7 @@ export const all_socu = {
     "ass colts": 3,
     "colt": 1,
     "foals": 1,
-    "his foal": 1,
+    "his foal": 2,
     "likewise and the young asses": 1,
     "of young asses": 1
   },
@@ -76555,7 +77242,7 @@ export const all_socu = {
     "of a ship": 1,
     "of ships": 1,
     "shipmen": 1,
-    "ships": 11,
+    "ships": 13,
     "so that the ship": 1,
     "that were in the ship": 1,
     "the ships": 7,
@@ -76631,6 +77318,7 @@ export const all_socu = {
     "and": 1,
     "and certain of them had the charge of": 1,
     "and from": 1,
+    "as": 1,
     "as much as in": 1,
     "because": 1,
     "beside": 3,
@@ -76668,7 +77356,7 @@ export const all_socu = {
     "with": 1
   },
   "H5922": {
-    "about": 4,
+    "about": 6,
     "above": 2,
     "against": 7,
     "also over": 1,
@@ -76683,14 +77371,15 @@ export const all_socu = {
     "in him": 3,
     "in me": 1,
     "into thy mind upon": 1,
+    "is in thee": 2,
     "more": 2,
     "not to do": 1,
     "of": 1,
-    "of thee": 1,
+    "of thee": 3,
     "on": 2,
-    "over": 10,
+    "over": 18,
     "that": 1,
-    "thee": 2,
+    "thee": 6,
     "thee in": 1,
     "therefore": 1,
     "thereon": 2,
@@ -76702,6 +77391,7 @@ export const all_socu = {
     "unto": 10,
     "unto him": 3,
     "unto me": 10,
+    "unto thee": 2,
     "unto them": 1,
     "unto us": 1,
     "upon": 18,
@@ -76740,6 +77430,7 @@ export const all_socu = {
     "of the stammerers": 1
   },
   "H5927": {
+    "about the dawning": 1,
     "against him came up": 2,
     "against thee increaseth": 1,
     "against them behold they come up": 1,
@@ -76813,7 +77504,7 @@ export const all_socu = {
     "and offer": 1,
     "and offer him": 1,
     "and offer up": 2,
-    "and offered": 18,
+    "and offered": 19,
     "and offered him up": 1,
     "and offered up": 1,
     "and put": 1,
@@ -76836,7 +77527,7 @@ export const all_socu = {
     "and they brought up": 4,
     "and they came up": 3,
     "and they fetched up": 1,
-    "and they offered": 4,
+    "and they offered": 5,
     "and they shall bring thee up": 1,
     "and they shall come up": 1,
     "and they went up": 13,
@@ -76871,7 +77562,7 @@ export const all_socu = {
     "be with him and let him go up": 2,
     "because he cheweth": 4,
     "because thou wentest up": 2,
-    "began to spring": 1,
+    "began to spring": 2,
     "behold he shall come up": 4,
     "behold i will bring": 1,
     "behold there ariseth": 2,
@@ -76893,7 +77584,7 @@ export const all_socu = {
     "by which he went up": 2,
     "came": 4,
     "came not up": 1,
-    "came up": 46,
+    "came up": 47,
     "climbed up": 1,
     "come": 4,
     "come up": 16,
@@ -77172,7 +77863,7 @@ export const all_socu = {
     "went not up": 1,
     "went up": 98,
     "were busied in offering": 1,
-    "were come up": 2,
+    "were come up": 3,
     "were gone away": 1,
     "were gone up": 1,
     "were made up": 1,
@@ -77305,6 +77996,7 @@ export const all_socu = {
     "it is a burnt offering": 1,
     "it is a burnt sacrifice": 2,
     "it is the burnt offering": 2,
+    "it on the burnt sacrifice": 1,
     "it was a burnt sacrifice": 1,
     "me burnt offerings": 1,
     "more than burnt offerings": 1,
@@ -77339,7 +78031,7 @@ export const all_socu = {
     "thy burnt sacrifice": 1,
     "to be a burnt sacrifice": 1,
     "to give burnt offerings": 2,
-    "to go up": 1,
+    "to go up": 2,
     "unto thee burnt sacrifices": 1,
     "upon it the burnt offering": 2,
     "upon the burnt offering": 1,
@@ -77358,12 +78050,12 @@ export const all_socu = {
     "of iniquity": 1
   },
   "H5933": {
-    "aliah": 1,
+    "aliah": 2,
     "alvah": 1
   },
   "H5934": {
     "of his youth": 2,
-    "of the sin of his youth": 1,
+    "of the sin of his youth": 2,
     "of thy youth": 1
   },
   "H5935": {
@@ -77376,7 +78068,7 @@ export const all_socu = {
   "H5937": {
     "and rejoice": 2,
     "be joyful": 2,
-    "because ye rejoiced": 1,
+    "because ye rejoiced": 2,
     "greatly rejoiceth": 1,
     "i will rejoice": 2,
     "nor rejoiced": 1,
@@ -77423,13 +78115,14 @@ export const all_socu = {
     "her the upper": 2
   },
   "H5943": {
-    "of the most high": 2,
-    "that the high": 1,
+    "of the most high": 4,
+    "that the high": 2,
     "that the most high": 6,
-    "the most high": 3
+    "the most high": 6
   },
   "H5944": {
     "and between the going up": 1,
+    "and his ascent": 1,
     "and his chambers": 1,
     "and to the going up": 1,
     "chamber": 1,
@@ -77540,6 +78233,7 @@ export const all_socu = {
     "and they mock": 1,
     "and thou shalt not glean": 1,
     "because thou hast mocked": 1,
+    "children": 1,
     "glean": 2,
     "her and abused": 1,
     "thee and do": 2,
@@ -77555,7 +78249,7 @@ export const all_socu = {
   "H5954": {
     "bring me in": 2,
     "brought in": 2,
-    "came": 3,
+    "came": 6,
     "have been brought": 1,
     "he went": 1,
     "of musick brought": 1,
@@ -77881,7 +78575,7 @@ export const all_socu = {
     "i am as thou art my people": 2,
     "i and my people": 1,
     "i and thy people": 3,
-    "i pray you all people": 1,
+    "i pray you all people": 2,
     "i unto the people": 1,
     "if my people": 1,
     "if the people": 2,
@@ -77952,7 +78646,7 @@ export const all_socu = {
     "of my people": 58,
     "of people": 7,
     "of the nations": 3,
-    "of the people": 200,
+    "of the people": 201,
     "of the people’s": 2,
     "of thee upon the nations": 1,
     "of their people": 1,
@@ -78012,7 +78706,7 @@ export const all_socu = {
     "that thy people": 1,
     "the cause of his people": 1,
     "the nations": 1,
-    "the people": 223,
+    "the people": 222,
     "the people’s": 2,
     "thee among all people": 1,
     "thee among the people": 1,
@@ -78370,7 +79064,7 @@ export const all_socu = {
     "in them to stand": 1,
     "into me and set": 1,
     "is shall stand": 1,
-    "it and set up": 4,
+    "it and set up": 5,
     "it might stand": 1,
     "it stood": 3,
     "it stood still": 1,
@@ -78401,7 +79095,7 @@ export const all_socu = {
     "shall present": 1,
     "shall remain": 2,
     "shall set": 1,
-    "shall stand": 9,
+    "shall stand": 11,
     "shall stand up": 5,
     "shall withstand": 1,
     "so i stood": 1,
@@ -78525,7 +79219,8 @@ export const all_socu = {
   },
   "H5977": {
     "in his place": 1,
-    "in their place": 2,
+    "in their place": 3,
+    "stood in their place": 1,
     "them in their place": 1
   },
   "H5978": {
@@ -78594,10 +79289,10 @@ export const all_socu = {
     "neither the pillar": 2,
     "nor the pillar": 2,
     "of pillars": 2,
-    "of the pillars": 27,
+    "of the pillars": 28,
     "of the two pillars": 3,
     "pillar": 19,
-    "pillars": 29,
+    "pillars": 30,
     "stories but had not pillars": 2,
     "the pillar": 4,
     "the pillars": 11,
@@ -78616,7 +79311,7 @@ export const all_socu = {
     "and among the ammonites": 1,
     "and the ammonites": 1,
     "concerning the ammonites": 2,
-    "of ammon": 105,
+    "of ammon": 103,
     "of the ammonites": 4,
     "that the ammonites": 2,
     "the ammonites": 1,
@@ -78629,10 +79324,10 @@ export const all_socu = {
     "an ammonite": 1,
     "and the ammonites": 3,
     "and with them other beside the ammonites": 1,
-    "of ammon": 1,
+    "of ammon": 2,
     "of the ammonites": 1,
     "that the ammonite": 1,
-    "the ammonite": 9,
+    "the ammonite": 7,
     "the ammonites": 1
   },
   "H5985": {
@@ -78655,7 +79350,7 @@ export const all_socu = {
   },
   "H5989": {
     "ammihud": 1,
-    "of ammihud": 8
+    "of ammihud": 9
   },
   "H599": {
     "angry": 2,
@@ -78827,7 +79522,7 @@ export const all_socu = {
     "shall be destroyed": 1,
     "shall destroy": 1,
     "shall not perish": 2,
-    "shall perish": 19,
+    "shall perish": 20,
     "shalt thou destroy": 1,
     "so shall ye perish": 2,
     "spendeth": 1,
@@ -78886,12 +79581,12 @@ export const all_socu = {
     "for mourning": 1,
     "into mourning": 3,
     "it as the mourning": 2,
-    "mourning": 4,
+    "mourning": 3,
     "no mourning": 1,
     "now mourning": 1,
     "of mourning": 3,
     "of thy mourning": 1,
-    "the mourning": 3,
+    "the mourning": 2,
     "thee mourning": 1,
     "their mourning": 1,
     "themselves for them in mourning": 1,
@@ -79398,14 +80093,18 @@ export const all_socu = {
     "and the meek": 2,
     "but the meek": 1,
     "for the meek": 1,
-    "meek": 2,
-    "of the humble": 1,
+    "meek": 4,
+    "not the humble": 1,
+    "of the humble": 2,
     "of the meek": 1,
     "of the poor": 1,
+    "on the poor": 1,
     "the humble": 2,
     "the meek": 6,
     "the poor": 3,
-    "unto the meek": 1
+    "unto the lowly": 1,
+    "unto the meek": 1,
+    "with the lowly": 1
   },
   "H6036": {
     "anub": 1
@@ -79478,14 +80177,14 @@ export const all_socu = {
     "o thou afflicted": 1,
     "of the afflicted": 4,
     "of the humble": 1,
-    "of the poor": 8,
+    "of the poor": 9,
     "of thee an afflicted": 1,
     "of thy poor": 1,
     "on the poor": 1,
     "that is poor": 2,
     "the afflicted": 2,
     "the cause of the poor": 1,
-    "the poor": 20,
+    "the poor": 21,
     "them for the poor": 1,
     "them unto the poor": 1,
     "this poor man": 1,
@@ -79500,7 +80199,7 @@ export const all_socu = {
     "with the lowly": 1
   },
   "H6042": {
-    "and unni": 3
+    "and unni": 4
   },
   "H6043": {
     "anaiah": 1,
@@ -79636,11 +80335,11 @@ export const all_socu = {
     "and a man’s": 2,
     "as a man": 2,
     "man": 3,
-    "man’s": 1,
+    "man’s": 2,
     "men": 5,
     "of a man’s": 1,
     "of man": 2,
-    "of men": 14,
+    "of men": 16,
     "or man": 3,
     "that whosoever": 1,
     "the men": 1,
@@ -79705,16 +80404,16 @@ export const all_socu = {
     "the antothite": 2
   },
   "H607": {
-    "and thou": 2,
+    "and thou": 3,
     "art thou": 2,
-    "as for thee": 2,
-    "but thou": 2,
+    "as for thee": 1,
+    "but thou": 4,
     "it is thou": 2,
-    "now thou": 2,
-    "o thou": 1,
-    "thee and thou": 1,
-    "thou": 8,
-    "whom thou": 1
+    "now thou": 4,
+    "o thou": 2,
+    "thee and thou": 2,
+    "thou": 5,
+    "whom thou": 2
   },
   "H6070": {
     "and antothijah": 1
@@ -79873,7 +80572,7 @@ export const all_socu = {
     "ephron": 1,
     "for me to ephron": 1,
     "of ephron": 5,
-    "thereof and ephrain": 1,
+    "thereof and ephrain": 2,
     "to ephron": 2,
     "unto ephron": 3
   },
@@ -79899,8 +80598,8 @@ export const all_socu = {
     "and if the tree": 2,
     "and in timber": 1,
     "and lay the wood": 1,
-    "and on the wood": 2,
-    "and the staff": 1,
+    "and on the wood": 3,
+    "and the staff": 2,
     "and the sticks": 1,
     "and the timber": 2,
     "and the tree": 5,
@@ -79936,7 +80635,7 @@ export const all_socu = {
     "from the trees": 1,
     "him a tree": 1,
     "him on a tree": 1,
-    "him on the wood": 3,
+    "him on the wood": 4,
     "in any tree": 1,
     "in the trees": 2,
     "is a tree": 2,
@@ -79991,7 +80690,7 @@ export const all_socu = {
     "the stock": 1,
     "the tree": 7,
     "the trees": 7,
-    "the wood": 10,
+    "the wood": 11,
     "thee on a tree": 1,
     "them with him even with the stick": 3,
     "them with the stalks": 1,
@@ -80072,7 +80771,8 @@ export const all_socu = {
   "H6090": {
     "from thy sorrow": 1,
     "him with sorrow": 1,
-    "if there be any wicked": 1
+    "if there be any wicked": 1,
+    "mine idol": 1
   },
   "H6091": {
     "and all the idols": 1,
@@ -80150,7 +80850,7 @@ export const all_socu = {
     "or being his counsellor": 1,
     "so was all the counsel": 2,
     "than the counsel": 3,
-    "that executeth my counsel": 1,
+    "that executeth my counsel": 2,
     "that his counsel": 1,
     "the counsel": 19,
     "their counsel": 2,
@@ -80201,7 +80901,7 @@ export const all_socu = {
     "save a pot": 1
   },
   "H6100": {
-    "and from ezion–gaber": 3,
+    "and from ezion–gaber": 2,
     "at ezion–gaber": 2,
     "at ezion–geber": 2,
     "from ezion–gaber": 2,
@@ -80352,7 +81052,7 @@ export const all_socu = {
     "toward azmon": 1
   },
   "H6112": {
-    "the eznite": 1
+    "the eznite": 2
   },
   "H6113": {
     "against you and he shut up": 1,
@@ -80505,7 +81205,7 @@ export const all_socu = {
     "to pluck up": 1
   },
   "H6132": {
-    "plucked up by the roots": 1
+    "plucked up by the roots": 2
   },
   "H6133": {
     "by thee or to the stock": 1
@@ -80588,7 +81288,7 @@ export const all_socu = {
     "from thee and is become thine enemy": 1
   },
   "H6146": {
-    "thereof to thine enemies": 1
+    "thereof to thine enemies": 2
   },
   "H6147": {
     "and er": 5,
@@ -80635,6 +81335,7 @@ export const all_socu = {
     "not his prisoners": 1,
     "of his prisoners": 1,
     "of the prisoner": 1,
+    "prisoners": 1,
     "there the prisoners": 1,
     "those which are bound": 1,
     "thy prisoners": 1,
@@ -80724,7 +81425,8 @@ export const all_socu = {
     "upon the willows": 1
   },
   "H6156": {
-    "for sweet": 1
+    "for sweet": 1,
+    "is sweet": 1
   },
   "H6157": {
     "divers sorts of flies": 2,
@@ -80773,7 +81475,7 @@ export const all_socu = {
     "him in the plains": 1,
     "in the champaign": 1,
     "in the desert": 4,
-    "in the plain": 2,
+    "in the plain": 3,
     "in the plains": 13,
     "into the desert": 1,
     "is like a wilderness": 1,
@@ -80801,7 +81503,7 @@ export const all_socu = {
     "pledge": 1
   },
   "H6163": {
-    "and against the arabians": 1,
+    "and against the arabians": 2,
     "and of the arabians": 1,
     "and the arabians": 2,
     "for them as the arabian": 1,
@@ -81088,8 +81790,8 @@ export const all_socu = {
   },
   "H6191": {
     "is prudent": 1,
-    "me that he dealeth very": 1,
-    "subtilly": 1,
+    "me that he dealeth very": 2,
+    "subtilly": 2,
     "they have taken crafty": 1,
     "will beware": 1
   },
@@ -81398,7 +82100,7 @@ export const all_socu = {
     "and made themselves": 1,
     "and maintain": 4,
     "and make": 14,
-    "and makest": 2,
+    "and makest": 3,
     "and maketh": 4,
     "and not observed": 1,
     "and now because ye have done": 1,
@@ -81448,7 +82150,7 @@ export const all_socu = {
     "and thou shalt do": 9,
     "and thou shalt keep": 1,
     "and thou shalt make": 62,
-    "and thou shalt not commit": 1,
+    "and thou shalt not commit": 2,
     "and thou shalt observe": 1,
     "and thou shalt offer": 3,
     "and thou shalt prepare": 2,
@@ -81562,7 +82264,7 @@ export const all_socu = {
     "concerning all things that are done": 1,
     "concerning things which ought not to be done": 4,
     "concerning things which should not be done": 4,
-    "deal": 7,
+    "deal": 8,
     "dealeth": 2,
     "deeds that i have done": 1,
     "did": 116,
@@ -81571,7 +82273,7 @@ export const all_socu = {
     "did not he that made": 2,
     "did so": 7,
     "did they bestow": 1,
-    "do": 72,
+    "do": 71,
     "do shew": 1,
     "do so": 3,
     "doer": 1,
@@ -81729,7 +82431,7 @@ export const all_socu = {
     "i make": 2,
     "i should have wrought": 1,
     "i will do": 11,
-    "i will even deal": 2,
+    "i will even deal": 3,
     "i will even do": 3,
     "i will execute": 1,
     "i will make": 2,
@@ -81832,7 +82534,7 @@ export const all_socu = {
     "like as i have done": 2,
     "like as were made": 2,
     "likewise he made": 2,
-    "made": 110,
+    "made": 111,
     "made all that he did": 1,
     "made with him he shall work": 1,
     "make": 30,
@@ -81872,7 +82574,7 @@ export const all_socu = {
     "neither shall ye make": 4,
     "neither shewed": 2,
     "nor doeth": 1,
-    "nor done": 1,
+    "nor done": 2,
     "nor executedst": 2,
     "nor make": 1,
     "nor trimmed": 2,
@@ -81936,7 +82638,7 @@ export const all_socu = {
     "place and made": 2,
     "prepare": 4,
     "prepared": 1,
-    "ready dressed": 1,
+    "ready dressed": 2,
     "sake thou didst": 1,
     "seeing she hath wrought": 1,
     "seeing thou doest": 1,
@@ -82223,6 +82925,7 @@ export const all_socu = {
     "they made": 11,
     "they practise": 1,
     "they shall also prepare": 2,
+    "they shall bear": 1,
     "they shall keep": 2,
     "they shew": 2,
     "they that make": 2,
@@ -82243,7 +82946,7 @@ export const all_socu = {
     "thou shalt both do": 2,
     "thou shalt do": 4,
     "thou shalt make": 14,
-    "thou shalt not do": 3,
+    "thou shalt not do": 4,
     "thou shalt not make": 2,
     "thou shalt observe": 1,
     "thou shalt offer": 6,
@@ -82257,7 +82960,7 @@ export const all_socu = {
     "thus he did": 1,
     "thus shall he do": 1,
     "thus shall it be done": 1,
-    "thus shall they prepare": 2,
+    "thus shall they prepare": 4,
     "thus shall ye do": 1,
     "thus shalt thou do": 3,
     "thus shalt thou make": 1,
@@ -82474,7 +83177,7 @@ export const all_socu = {
     "which they should do": 1,
     "which thing ought not to be done": 2,
     "which thou doest": 1,
-    "which thou hast done": 1,
+    "which thou hast done": 2,
     "which thou hast made": 2,
     "which thou hast shewed": 2,
     "which thou hast used": 2,
@@ -82509,7 +83212,7 @@ export const all_socu = {
     "why have ye done": 1,
     "will certainly": 2,
     "will deal": 1,
-    "will do": 10,
+    "will do": 12,
     "will henceforth offer": 1,
     "will i do": 1,
     "will maintain": 1,
@@ -82523,12 +83226,12 @@ export const all_socu = {
     "with me and he shall make": 2,
     "with thee and shew": 1,
     "with thee and will keep": 2,
-    "with thee as thou hast done": 2,
+    "with thee as thou hast done": 3,
     "with thee but will make": 1,
     "with whom i wrought": 3,
     "with whom she had wrought": 3,
     "with you and make": 1,
-    "with you as ye have dealt": 2,
+    "with you as ye have dealt": 3,
     "without committing": 1,
     "worketh": 2,
     "working": 1,
@@ -82689,7 +83392,7 @@ export const all_socu = {
     "gathered": 11,
     "gathered them together": 1,
     "gathered themselves together": 11,
-    "gathered together": 7,
+    "gathered together": 8,
     "gathereth": 1,
     "had gathered": 1,
     "hath taken away": 1,
@@ -82703,7 +83406,7 @@ export const all_socu = {
     "him not then thou shalt bring": 1,
     "i will gather": 1,
     "i will surely": 3,
-    "i will utterly": 2,
+    "i will utterly": 1,
     "in": 1,
     "is taken": 1,
     "is taken away": 3,
@@ -82873,6 +83576,7 @@ export const all_socu = {
     "have used oppression": 2,
     "he that oppresseth": 2,
     "if ye oppress": 1,
+    "is oppressed": 1,
     "me not to mine oppressors": 1,
     "o thou oppressed": 1,
     "of such as were oppressed": 1,
@@ -82934,7 +83638,7 @@ export const all_socu = {
     "corn and these ten": 1,
     "each ten": 1,
     "even seventeen": 1,
-    "even ten": 3,
+    "even ten": 4,
     "fifteen": 1,
     "for me and once in ten": 1,
     "for ten": 2,
@@ -83332,7 +84036,7 @@ export const all_socu = {
     "and her time": 1,
     "and in that time": 3,
     "and in the time": 3,
-    "and in those times": 1,
+    "and in those times": 2,
     "and it came to pass at that time": 3,
     "and it came to pass at the time": 2,
     "and it came to pass in an eveningtide": 1,
@@ -83369,7 +84073,7 @@ export const all_socu = {
     "even the time": 2,
     "even to that same time": 4,
     "even to the time": 3,
-    "for at that time": 1,
+    "for at that time": 2,
     "for at the time": 1,
     "for it came to pass when": 1,
     "for it is time": 1,
@@ -83519,8 +84223,9 @@ export const all_socu = {
   "H6264": {
     "and the things that shall come": 1,
     "ready": 1,
+    "should be ready": 1,
     "that they should be ready": 1,
-    "their treasures": 1,
+    "their treasures": 2,
     "who are ready": 1
   },
   "H6265": {
@@ -83667,7 +84372,7 @@ export const all_socu = {
   },
   "H6288": {
     "and his boughs": 1,
-    "and his branches": 1,
+    "and his branches": 2,
     "and under his branches": 1,
     "forth sprigs": 1,
     "shall be upon his branches": 1,
@@ -83886,7 +84591,7 @@ export const all_socu = {
     "against him that we may bind": 1,
     "against them when they shall bind": 1,
     "and bind": 1,
-    "and bound": 7,
+    "and bound": 8,
     "and bound him": 1,
     "and girdeth": 1,
     "and he made ready": 1,
@@ -83899,11 +84604,12 @@ export const all_socu = {
     "bind": 1,
     "binding": 1,
     "bound": 1,
+    "for out of prison": 1,
     "girded": 1,
     "harness": 1,
     "him being bound": 1,
     "in array": 1,
-    "in the prison": 1,
+    "in the prison": 2,
     "in thee are bound": 2,
     "is held": 1,
     "lieth and wherewith thou mightest be bound": 1,
@@ -83915,6 +84621,7 @@ export const all_socu = {
     "no but we will bind": 3,
     "not when he bindeth": 1,
     "or bound": 1,
+    "out of the prison": 1,
     "prepare": 1,
     "put him in bands": 1,
     "set": 1,
@@ -83988,7 +84695,7 @@ export const all_socu = {
     "behold i am according to thy wish": 1,
     "but according": 1,
     "but at the mouth": 2,
-    "but the mouth": 9,
+    "but the mouth": 10,
     "by the commandment": 2,
     "by the mouth": 6,
     "by thy mouth": 1,
@@ -84290,7 +84997,7 @@ export const all_socu = {
     "to scatter": 1,
     "unto thee should be scattered": 1,
     "was scattered": 2,
-    "was there scattered": 1,
+    "was there scattered": 2,
     "were scattered": 4,
     "were scattered abroad": 1,
     "when i shall scatter": 1,
@@ -84348,7 +85055,7 @@ export const all_socu = {
   },
   "H6335": {
     "and grow up": 1,
-    "because ye are grown fat": 1,
+    "because ye are grown fat": 2,
     "is scattered": 1,
     "shall spread": 1
   },
@@ -84465,7 +85172,7 @@ export const all_socu = {
     "without fear": 1
   },
   "H6344": {
-    "of his stones": 1
+    "of his stones": 2
   },
   "H6345": {
     "and that my fear": 1
@@ -84566,6 +85273,9 @@ export const all_socu = {
     "the topaz": 1,
     "topaz": 1
   },
+  "H6359": {
+    "were free": 1
+  },
   "H636": {
     "and timber": 1,
     "let timber": 1,
@@ -84579,11 +85289,12 @@ export const all_socu = {
     "with the hammer": 1
   },
   "H6361": {
-    "their hosen": 2
+    "their hosen": 4
   },
   "H6362": {
     "but he slipped away": 1,
-    "is as when one letteth out": 1
+    "is as when one letteth out": 1,
+    "were free": 1
   },
   "H6363": {
     "all that openeth": 5,
@@ -84696,6 +85407,9 @@ export const all_socu = {
     "the box": 1,
     "this box": 1
   },
+  "H6379": {
+    "and behold there ran out": 1
+  },
   "H638": {
     "also": 2,
     "and also": 1,
@@ -84775,7 +85489,7 @@ export const all_socu = {
     "wonders": 3
   },
   "H6383": {
-    "is too wonderful": 2,
+    "is too wonderful": 4,
     "seeing it is secret": 2
   },
   "H6384": {
@@ -85001,6 +85715,9 @@ export const all_socu = {
     "should serve": 1,
     "they serve": 1,
     "whom thou servest": 1
+  },
+  "H64": {
+    "of the vineyards": 2
   },
   "H640": {
     "and bound": 1,
@@ -85231,7 +85948,7 @@ export const all_socu = {
   },
   "H6428": {
     "and wallow": 2,
-    "roll": 2,
+    "roll": 4,
     "they shall wallow": 1
   },
   "H6429": {
@@ -85249,7 +85966,7 @@ export const all_socu = {
   },
   "H6430": {
     "again with the philistines": 1,
-    "against the philistines": 9,
+    "against the philistines": 10,
     "against this philistine": 1,
     "all that the philistines": 1,
     "all the philistines": 6,
@@ -85292,7 +86009,7 @@ export const all_socu = {
     "that the philistines": 2,
     "that were with the philistines": 1,
     "the philistine": 14,
-    "the philistines": 60,
+    "the philistines": 61,
     "then the philistines": 3,
     "therewith and when the philistines": 2,
     "these philistines": 2,
@@ -85306,7 +86023,7 @@ export const all_socu = {
     "upon the philistines": 3,
     "was against the philistines": 2,
     "when the philistines": 3,
-    "where the philistines": 2,
+    "where the philistines": 3,
     "which belonged to the philistines": 2,
     "which the philistines": 3,
     "with the philistines": 11,
@@ -85453,7 +86170,7 @@ export const all_socu = {
     "unto the corner": 2
   },
   "H6439": {
-    "and penuel": 2,
+    "and penuel": 3,
     "of penuel": 4,
     "peniel": 1,
     "penuel": 2,
@@ -85556,7 +86273,7 @@ export const all_socu = {
     "because": 63,
     "because of": 3,
     "because of thee": 2,
-    "before": 969,
+    "before": 970,
     "before him": 8,
     "before his face": 3,
     "before his presence": 2,
@@ -85584,7 +86301,7 @@ export const all_socu = {
     "by reason": 8,
     "cause thy face": 1,
     "come of thee": 1,
-    "countenance": 6,
+    "countenance": 7,
     "else till": 1,
     "endure": 1,
     "even before": 6,
@@ -86026,7 +86743,7 @@ export const all_socu = {
     "above rubies": 1,
     "is above rubies": 1,
     "of rubies": 1,
-    "than rubies": 3
+    "than rubies": 4
   },
   "H6444": {
     "and peninnah": 2,
@@ -86391,7 +87108,7 @@ export const all_socu = {
     "who delivereth": 1
   },
   "H6476": {
-    "and break forth": 1,
+    "and break forth": 2,
     "break forth": 2,
     "break forth into joy": 1,
     "from off them and they break": 1,
@@ -86517,6 +87234,7 @@ export const all_socu = {
     "he shall not be visited": 1,
     "he will visit": 2,
     "him and he made him overseer": 1,
+    "him to keep": 1,
     "i am deprived": 1,
     "i commit": 1,
     "i have set": 1,
@@ -86562,7 +87280,7 @@ export const all_socu = {
     "shalt thou number": 4,
     "so he numbered": 1,
     "so were all those that were numbered": 1,
-    "that had the oversight": 3,
+    "that had the oversight": 5,
     "that have the oversight": 2,
     "that he had made him overseer": 1,
     "that i shall visit": 2,
@@ -86651,6 +87369,7 @@ export const all_socu = {
     "and under the custody": 1,
     "cause them that have charge": 1,
     "having charge": 1,
+    "him in prison": 1,
     "his office": 1,
     "of their account": 1,
     "of their visitation": 8,
@@ -86665,7 +87384,7 @@ export const all_socu = {
   },
   "H6487": {
     "in that which was delivered": 1,
-    "or that which was delivered": 2,
+    "or that which was delivered": 1,
     "shall be for store": 1
   },
   "H6488": {
@@ -86699,7 +87418,7 @@ export const all_socu = {
     "he openeth": 1,
     "i pray thee open": 2,
     "not opening": 1,
-    "open": 6,
+    "open": 7,
     "opened": 6,
     "openeth": 1,
     "shall be opened": 2,
@@ -86923,6 +87642,9 @@ export const all_socu = {
   "H6511": {
     "and parah": 1
   },
+  "H6512": {
+    "to the moles": 1
+  },
   "H6513": {
     "thou with phurah": 1,
     "with phurah": 1
@@ -86943,7 +87665,7 @@ export const all_socu = {
     "or pot": 1
   },
   "H6518": {
-    "of his villages": 1
+    "of his villages": 2
   },
   "H6519": {
     "as towns without walls": 1,
@@ -86968,7 +87690,7 @@ export const all_socu = {
   "H6521": {
     "and of country": 1,
     "beside unwalled": 1,
-    "of the villages": 1
+    "of the villages": 2
   },
   "H6522": {
     "and perizzites": 1,
@@ -87194,7 +87916,7 @@ export const all_socu = {
     "the persian": 1
   },
   "H6543": {
-    "the persian": 1
+    "the persian": 2
   },
   "H6544": {
     "and refuse": 1,
@@ -87266,7 +87988,7 @@ export const all_socu = {
     "of flies from pharaoh": 1,
     "of me behold pharaoh’s": 1,
     "of me unto pharaoh": 1,
-    "of pharaoh": 56,
+    "of pharaoh": 55,
     "of pharaoh’s": 4,
     "only which became not pharaoh’s": 2,
     "part unto pharaoh": 1,
@@ -87284,7 +88006,7 @@ export const all_socu = {
     "thereof and pharaoh": 2,
     "this is pharaoh": 1,
     "thou unto pharaoh": 1,
-    "to pharaoh": 12,
+    "to pharaoh": 11,
     "to pharaoh’s": 1,
     "unto me how then shall pharaoh": 1,
     "unto pharaoh": 36,
@@ -87346,7 +88068,7 @@ export const all_socu = {
     "came and it is now increased": 1,
     "compelled": 1,
     "for thou shalt break forth": 1,
-    "had made": 4,
+    "had made": 2,
     "hath broken": 1,
     "hath broken forth": 1,
     "hath broken in": 1,
@@ -87371,12 +88093,12 @@ export const all_socu = {
     "thou hast scattered": 1,
     "to break down": 1,
     "unto thee and he pressed": 1,
-    "which were broken down": 1,
+    "which were broken down": 2,
     "why hast thou then broken down": 1,
     "woman had broken up": 1
   },
   "H6556": {
-    "a breach": 5,
+    "a breach": 3,
     "and that there was no breach": 1,
     "at the breaches": 1,
     "breach": 2,
@@ -87851,7 +88573,7 @@ export const all_socu = {
     "is the interpretation": 2,
     "me the interpretation": 2,
     "or the interpretation": 2,
-    "the interpretation": 14,
+    "the interpretation": 15,
     "thee and the interpretation": 2,
     "to him the interpretation": 1,
     "to me the interpretation": 2,
@@ -87977,6 +88699,7 @@ export const all_socu = {
   },
   "H6603": {
     "any manner of graving": 1,
+    "are graven": 1,
     "like the engravings": 3,
     "like to the engravings": 1,
     "the carved work": 1,
@@ -88021,7 +88744,7 @@ export const all_socu = {
     "but i opened": 1,
     "but thou shalt open": 2,
     "doth he open": 1,
-    "graven": 2,
+    "graven": 1,
     "hath opened": 2,
     "have drawn out": 1,
     "he looseth": 1,
@@ -88038,7 +88761,7 @@ export const all_socu = {
     "is drawn": 1,
     "it shall be opened": 4,
     "it shall not be opened": 1,
-    "loose": 1,
+    "loose": 2,
     "may be open": 3,
     "of them opened": 1,
     "one shall then open": 1,
@@ -88386,7 +89109,7 @@ export const all_socu = {
     "out of the flocks": 1,
     "out of thy flock": 1,
     "shall the flocks": 2,
-    "sheep": 37,
+    "sheep": 35,
     "sheepfolds": 1,
     "surely because my flock": 4,
     "that our sheep": 1,
@@ -88559,12 +89282,12 @@ export const all_socu = {
     "with our armies": 2,
     "with our hosts": 1,
     "with their armies": 1,
-    "ye him all his hosts": 1,
+    "ye him all his hosts": 2,
     "your armies": 1
   },
   "H6636": {
-    "and zeboim": 2,
-    "of zeboiim": 2,
+    "and zeboim": 3,
+    "of zeboiim": 4,
     "thee as zeboim": 1
   },
   "H6637": {
@@ -88572,6 +89295,9 @@ export const all_socu = {
   },
   "H6638": {
     "shall swell": 1,
+    "to swell": 1
+  },
+  "H6639": {
     "to swell": 1
   },
   "H664": {
@@ -88926,7 +89652,7 @@ export const all_socu = {
   "H6666": {
     "according to all thy righteousness": 1,
     "after righteousness": 3,
-    "all his righteousness": 2,
+    "all his righteousness": 3,
     "all his righteousnesses": 3,
     "and his righteousness": 3,
     "and in righteousness": 3,
@@ -88949,7 +89675,7 @@ export const all_socu = {
     "even the righteous acts": 2,
     "for my righteousness": 1,
     "for righteousness": 1,
-    "from his righteousness": 4,
+    "from his righteousness": 5,
     "from us neither doth justice": 1,
     "have i righteousness": 1,
     "him according to his righteousness": 2,
@@ -89028,12 +89754,12 @@ export const all_socu = {
   },
   "H667": {
     "her young": 1,
-    "her young ones": 1,
+    "her young ones": 2,
     "upon the young": 2,
     "whether they be young ones": 2
   },
   "H6670": {
-    "and bellow": 1,
+    "and bellow": 2,
     "and cry aloud": 1,
     "and shout": 1,
     "cry out": 1,
@@ -89079,7 +89805,8 @@ export const all_socu = {
   "H6675": {
     "and filthiness": 1,
     "from their filthiness": 1,
-    "the filth": 1
+    "the filth": 1,
+    "their own dung": 2
   },
   "H6676": {
     "his neck": 2,
@@ -89119,7 +89846,7 @@ export const all_socu = {
   "H6678": {
     "and out of zobah": 1,
     "of zoba": 2,
-    "of zobah": 11
+    "of zobah": 9
   },
   "H6679": {
     "and take": 1,
@@ -89170,6 +89897,7 @@ export const all_socu = {
     "and i charged": 2,
     "and i commanded": 3,
     "and i have commanded": 1,
+    "and i sent": 1,
     "and i will give charge": 1,
     "and it came to pass that when he had commanded": 1,
     "and it was done he commanded": 1,
@@ -89189,7 +89917,7 @@ export const all_socu = {
     "charge": 4,
     "charged": 7,
     "command": 14,
-    "commanded": 178,
+    "commanded": 179,
     "commanded he": 1,
     "commandeth": 4,
     "concerning thee and shall have appointed": 1,
@@ -89273,7 +90001,7 @@ export const all_socu = {
     "there behold i have commanded": 1,
     "therefore commanded": 1,
     "therefore i command": 2,
-    "therefore they commanded": 1,
+    "therefore they commanded": 2,
     "thing all that i commanded": 1,
     "thou hast commanded": 1,
     "thou hast given commandment": 1,
@@ -89365,7 +90093,7 @@ export const all_socu = {
     "are as an honeycomb": 1
   },
   "H6689": {
-    "of zuph": 3,
+    "of zuph": 4,
     "zophai": 1
   },
   "H669": {
@@ -89488,6 +90216,7 @@ export const all_socu = {
     "and rock": 1,
     "and the rock": 3,
     "and the rocks": 1,
+    "and their beauty": 1,
     "and who is a rock": 1,
     "as the stones": 1,
     "at the rock": 1,
@@ -89538,10 +90267,10 @@ export const all_socu = {
     "then zur": 1
   },
   "H6699": {
-    "in thereof and all the forms": 4,
-    "the whole form": 4,
-    "them the form": 4,
-    "thereof and all the forms": 4
+    "in thereof and all the forms": 5,
+    "the whole form": 5,
+    "them the form": 5,
+    "thereof and all the forms": 5
   },
   "H67": {
     "abel–mizraim": 2
@@ -89571,6 +90300,7 @@ export const all_socu = {
     "they were whiter": 1
   },
   "H6706": {
+    "and on the higher places": 1,
     "her like the top": 1,
     "it upon the top": 1,
     "thee like the top": 1,
@@ -89615,6 +90345,7 @@ export const all_socu = {
     "and white": 1
   },
   "H6714": {
+    "and jezoar": 1,
     "and zohar": 2,
     "of zohar": 2
   },
@@ -89674,7 +90405,7 @@ export const all_socu = {
   "H6720": {
     "for themselves any victual": 1,
     "him victuals": 1,
-    "me some venison": 1,
+    "me some venison": 2,
     "them meat": 1,
     "them provision": 2,
     "victual": 1,
@@ -89747,7 +90478,7 @@ export const all_socu = {
     "in zion": 23,
     "is in zion": 1,
     "o zion": 5,
-    "of zion": 45,
+    "of zion": 46,
     "out of zion": 5,
     "saying this is zion": 1,
     "shall say to zion": 1,
@@ -89886,7 +90617,7 @@ export const all_socu = {
     "zillah": 1
   },
   "H6742": {
-    "and lo a cake": 2
+    "and lo a cake": 4
   },
   "H6743": {
     "against thee shall prosper": 1,
@@ -90354,7 +91085,7 @@ export const all_socu = {
   "H6797": {
     "and a diadem": 1,
     "and the hoods": 1,
-    "diadem": 2,
+    "diadem": 4,
     "mitre": 4
   },
   "H6798": {
@@ -90418,7 +91149,7 @@ export const all_socu = {
     "or with any stone": 1,
     "out of the stone": 1,
     "slingstones": 1,
-    "stone": 32,
+    "stone": 31,
     "stones": 96,
     "that the stone": 2,
     "that they should be stones": 1,
@@ -90560,13 +91291,13 @@ export const all_socu = {
     "and the younger": 1,
     "and the youngest": 1,
     "but now they that are younger": 1,
-    "her little ones": 1,
+    "her little ones": 2,
     "i am small": 1,
     "i am young": 1,
     "surely the least": 2,
     "the least": 1,
     "the younger": 2,
-    "their little ones": 1,
+    "their little ones": 2,
     "there is little": 1,
     "thereof in his youngest": 1,
     "though thou be little": 1,
@@ -90589,7 +91320,7 @@ export const all_socu = {
     "zoan": 1
   },
   "H6815": {
-    "of zaanaim": 1,
+    "of zaanaim": 2,
     "to zaanannim": 1
   },
   "H6816": {
@@ -90684,7 +91415,7 @@ export const all_socu = {
   "H6822": {
     "a watchman": 2,
     "and espy": 1,
-    "and he is waited": 1,
+    "and he is waited": 2,
     "and the watchman": 8,
     "and the watchmen": 1,
     "and will watch": 1,
@@ -90693,7 +91424,7 @@ export const all_socu = {
     "beholding": 1,
     "but if the watchman": 2,
     "him for their watchman": 1,
-    "his watchmen": 1,
+    "his watchmen": 2,
     "me and the watchman": 1,
     "my prayer unto thee and will look up": 1,
     "of thy watchmen": 1,
@@ -90707,7 +91438,7 @@ export const all_socu = {
     "watcheth": 1,
     "watching": 1,
     "watchmen": 1,
-    "we have watched": 2,
+    "we have watched": 1,
     "which looketh": 1
   },
   "H6823": {
@@ -90818,7 +91549,7 @@ export const all_socu = {
     "of the zephonites": 1
   },
   "H6832": {
-    "dung": 2
+    "dung": 4
   },
   "H6833": {
     "all fowl": 1,
@@ -90855,6 +91586,9 @@ export const all_socu = {
     "neither shall the cruse": 1,
     "not neither did the cruse": 1
   },
+  "H6836": {
+    "in our watching": 1
+  },
   "H6837": {
     "ziphion": 1
   },
@@ -90885,6 +91619,9 @@ export const all_socu = {
     "and for a diadem": 1,
     "the morning": 2
   },
+  "H6844": {
+    "in the watchtower": 1
+  },
   "H6845": {
     "against thy hidden ones": 1,
     "and hid": 1,
@@ -90896,7 +91633,7 @@ export const all_socu = {
     "child she hid": 1,
     "for thou hast hid": 1,
     "have i hid": 1,
-    "he layeth up": 2,
+    "he layeth up": 4,
     "he shall hide": 1,
     "her hideth": 2,
     "hid": 1,
@@ -90910,7 +91647,7 @@ export const all_socu = {
     "let us lurk": 1,
     "men lay up": 1,
     "my secret": 1,
-    "they hide": 2,
+    "they hide": 4,
     "they lurk privily": 1,
     "thou shalt keep them secretly": 1,
     "thou wouldest hide": 1,
@@ -91316,10 +92053,10 @@ export const all_socu = {
     "is pure": 1,
     "is refined": 2,
     "is tried": 4,
-    "me try": 1,
+    "me try": 2,
     "melteth": 2,
     "of the founder": 1,
-    "of the goldsmiths": 3,
+    "of the goldsmiths": 1,
     "pure": 1,
     "purge away": 1,
     "the founder": 2,
@@ -91358,6 +92095,7 @@ export const all_socu = {
     "bind up": 1,
     "distressed": 1,
     "enemy": 2,
+    "for i am in distress": 1,
     "for i am in trouble": 2,
     "for they vex": 1,
     "hath bound her up": 1,
@@ -91468,7 +92206,7 @@ export const all_socu = {
   "H6901": {
     "and receive": 1,
     "and shall we not receive": 2,
-    "and took": 1,
+    "and took": 2,
     "choose": 1,
     "from him but he received": 1,
     "held": 1,
@@ -91505,6 +92243,9 @@ export const all_socu = {
   },
   "H6904": {
     "of war": 1
+  },
+  "H6905": {
+    "him before": 1
   },
   "H6906": {
     "and spoil": 2,
@@ -91645,7 +92386,7 @@ export const all_socu = {
     "for him and bury": 1,
     "for they shall bury": 1,
     "have buried": 2,
-    "he had buried": 4,
+    "he had buried": 5,
     "he shall be buried": 1,
     "him and buried": 2,
     "him and he was buried": 1,
@@ -91673,7 +92414,7 @@ export const all_socu = {
     "upon him and bury": 1,
     "was buried": 1,
     "were they that buried": 1,
-    "with him to bury": 1,
+    "with him to bury": 2,
     "with me bury": 1,
     "with you that i may bury": 1,
     "woman and bury": 1
@@ -91787,7 +92528,7 @@ export const all_socu = {
     "he is holy": 1,
     "he shall be holy": 4,
     "holy": 13,
-    "in his saints": 1,
+    "in his saints": 2,
     "in the holy": 5,
     "in the holy one": 2,
     "is holy": 7,
@@ -91939,8 +92680,8 @@ export const all_socu = {
     "your east": 1
   },
   "H6925": {
-    "and before": 3,
-    "before": 29,
+    "and before": 4,
+    "before": 33,
     "before me": 2,
     "from": 1,
     "him": 2,
@@ -92236,11 +92977,12 @@ export const all_socu = {
     "and of all that therein is in the sanctuary": 1,
     "and of the holy": 3,
     "and that he himself had dedicated": 1,
+    "and the consecrated things": 1,
     "and the dedicated": 1,
     "and the holy": 4,
-    "and the most": 3,
+    "and the most": 4,
     "and the sanctuary": 2,
-    "and the things which himself had dedicated": 2,
+    "and the things which himself had dedicated": 3,
     "and there shall be holiness": 1,
     "and upon thy holy": 3,
     "and ye shall be holy": 1,
@@ -92278,7 +93020,7 @@ export const all_socu = {
     "from his holy": 2,
     "from the sanctuary": 1,
     "from thy holy": 1,
-    "had dedicated": 5,
+    "had dedicated": 6,
     "hallowed": 1,
     "hallowed things": 1,
     "him from his holy": 1,
@@ -92286,7 +93028,7 @@ export const all_socu = {
     "his holy": 5,
     "holiness": 5,
     "holy": 81,
-    "holy things": 25,
+    "holy things": 26,
     "in all my holy": 2,
     "in all the things": 1,
     "in all their holy": 2,
@@ -92300,7 +93042,7 @@ export const all_socu = {
     "in the most": 5,
     "in the most holy": 3,
     "in the sanctuary": 6,
-    "in the things": 2,
+    "in the things": 3,
     "in thy holy": 1,
     "in unto the holy": 2,
     "into the holy": 4,
@@ -92488,6 +93230,7 @@ export const all_socu = {
     "and they assembled": 1,
     "and they gathered": 1,
     "and they gathered themselves together": 1,
+    "and they were gathered together": 1,
     "and thou shalt gather": 1,
     "assembled": 5,
     "assembled together": 2,
@@ -92599,9 +93342,10 @@ export const all_socu = {
   },
   "H6957": {
     "a line": 1,
+    "and a line": 1,
     "his rule": 1,
     "it unto them by line": 1,
-    "line": 16,
+    "line": 17,
     "that had the line": 1,
     "the line": 2,
     "their line": 1,
@@ -92674,7 +93418,7 @@ export const all_socu = {
     "yea let none that wait": 1
   },
   "H6961": {
-    "and a line": 2,
+    "and a line": 3,
     "line": 1
   },
   "H6962": {
@@ -93129,6 +93873,7 @@ export const all_socu = {
     "then i will establish": 1,
     "then rose up": 2,
     "then shall we raise": 1,
+    "then shalt thou arise": 1,
     "then she arose": 1,
     "then stood up": 2,
     "then there arose": 1,
@@ -93219,11 +93964,11 @@ export const all_socu = {
     "and setteth up": 2,
     "and that he appointeth": 1,
     "and they set": 1,
-    "and they stood": 3,
+    "and they stood": 4,
     "arose": 1,
     "establish": 1,
     "establisheth": 1,
-    "had set up": 8,
+    "had set up": 10,
     "hath set up": 1,
     "he set it up": 1,
     "made": 1,
@@ -93255,7 +94000,7 @@ export const all_socu = {
     "of stature": 1,
     "shall be the height": 1,
     "stature": 2,
-    "the height": 14,
+    "the height": 15,
     "the tall": 2,
     "themselves for their height": 1,
     "therefore his height": 1,
@@ -93348,7 +94093,7 @@ export const all_socu = {
   },
   "H6976": {
     "and coz": 1,
-    "of koz": 7,
+    "of koz": 4,
     "to hakkoz": 1
   },
   "H6977": {
@@ -93562,7 +94307,7 @@ export const all_socu = {
     "incense": 1,
     "it all and burn": 1,
     "it to him and to burn": 1,
-    "me and have burned incense": 4,
+    "me and have burned incense": 6,
     "me they have burned incense": 1,
     "moreover he burnt incense": 1,
     "offered": 1,
@@ -93765,10 +94510,10 @@ export const all_socu = {
     "even fourteen": 1,
     "for he had fourteen": 1,
     "for it four": 10,
-    "for me yea four": 1,
+    "for me yea four": 2,
     "for the four": 2,
     "for them four": 2,
-    "four": 87,
+    "four": 88,
     "fourteen": 7,
     "from the four": 5,
     "had four": 11,
@@ -93828,7 +94573,7 @@ export const all_socu = {
     "unto me these are the four": 1,
     "upon all four": 3,
     "upon four": 1,
-    "upon the four": 8,
+    "upon the four": 9,
     "upon the fourteenth": 1,
     "upon their four": 2,
     "was forty": 2,
@@ -93948,7 +94693,7 @@ export const all_socu = {
     "the four": 1
   },
   "H7030": {
-    "harp": 8
+    "harp": 16
   },
   "H7031": {
     "and he that is swift": 1,
@@ -94231,7 +94976,7 @@ export const all_socu = {
   "H7058": {
     "and flour": 1,
     "flour": 1,
-    "meal": 6,
+    "meal": 5,
     "no meal": 1,
     "of flour": 2,
     "of meal": 4
@@ -94298,7 +95043,8 @@ export const all_socu = {
     "they have moved me to jealousy": 2,
     "they provoked him to jealousy": 1,
     "unto him enviest": 1,
-    "upon him and he be jealous": 4
+    "upon him and he be jealous": 4,
+    "while he was zealous": 1
   },
   "H7066": {
     "thou mayest buy": 1
@@ -94320,10 +95066,10 @@ export const all_socu = {
     "envy": 1,
     "for in my jealousy": 1,
     "for jealousy": 1,
-    "for my sake": 3,
+    "for my sake": 2,
     "for the zeal": 1,
     "for their envy": 1,
-    "in my jealousy": 4,
+    "in my jealousy": 3,
     "is envied": 1,
     "it in my zeal": 1,
     "jealousy": 4,
@@ -94391,10 +95137,10 @@ export const all_socu = {
     "the possessor": 1,
     "therefore get": 2,
     "they it to buy": 1,
-    "thou buyest": 2,
+    "thou buyest": 3,
     "thou hast bought": 1,
     "thou hast purchased": 1,
-    "thou must buy": 2,
+    "thou must buy": 3,
     "thou shalt buy": 1,
     "to buy": 1,
     "to get": 1,
@@ -94479,7 +95225,7 @@ export const all_socu = {
     "made their nests": 1,
     "make her nest": 1,
     "make their nests": 1,
-    "that makest thy nest": 1,
+    "that makest thy nest": 2,
     "that maketh her nest": 1
   },
   "H7078": {
@@ -94503,7 +95249,7 @@ export const all_socu = {
     "and used": 1,
     "and your diviners": 1,
     "divination": 2,
-    "i pray thee divine": 2,
+    "i pray thee divine": 3,
     "nor divine": 1,
     "nor to your diviners": 1,
     "or that useth": 1,
@@ -94551,7 +95297,7 @@ export const all_socu = {
   },
   "H7087": {
     "and curdled": 1,
-    "nor dark": 2,
+    "nor dark": 4,
     "that are settled": 1,
     "were congealed": 1
   },
@@ -94706,9 +95452,9 @@ export const all_socu = {
   },
   "H7098": {
     "corners": 1,
-    "edges": 1,
+    "edges": 2,
     "end": 3,
-    "ends": 13,
+    "ends": 14,
     "from the ends": 1,
     "from the selvedge": 2,
     "from the uttermost part": 2,
@@ -94716,10 +95462,10 @@ export const all_socu = {
     "lo these are parts": 1,
     "of the ends": 1,
     "of the lowest": 2,
-    "on the end": 2,
+    "on the end": 3,
     "on the ends": 1,
     "on the one end": 3,
-    "on the other end": 2,
+    "on the other end": 3,
     "quarters": 1,
     "the ends": 2,
     "to the ends": 1,
@@ -94729,7 +95475,6 @@ export const all_socu = {
     "which are on the ends": 1
   },
   "H7099": {
-    "ends": 1,
     "of all the ends": 1,
     "unto all the ends": 1,
     "unto the ends": 1
@@ -94881,7 +95626,7 @@ export const all_socu = {
     "and reapeth": 1,
     "and they shall reap": 1,
     "and to reap": 1,
-    "and when ye reap": 3,
+    "and when ye reap": 4,
     "at all": 2,
     "be troubled": 1,
     "but shall reap": 1,
@@ -94903,7 +95648,7 @@ export const all_socu = {
     "the harvestman": 1,
     "the reaper": 1,
     "the reapers": 3,
-    "they reap": 2,
+    "they reap": 4,
     "thou shalt not reap": 1,
     "to the reapers": 1,
     "unto the reapers": 1,
@@ -94944,7 +95689,7 @@ export const all_socu = {
   },
   "H7119": {
     "as cold": 1,
-    "is of an excellent": 2,
+    "is of an excellent": 1,
     "or shall the cold": 1
   },
   "H712": {
@@ -94972,7 +95717,7 @@ export const all_socu = {
     "and didst not call": 1,
     "and gave": 1,
     "and hath called": 3,
-    "and he called": 33,
+    "and he called": 34,
     "and he cried": 5,
     "and he read": 4,
     "and i called": 1,
@@ -95171,6 +95916,7 @@ export const all_socu = {
     "that were called": 1,
     "that which hath been is named": 1,
     "the calling": 1,
+    "the renowned": 1,
     "thee and call": 1,
     "thee i have called": 1,
     "them and called": 1,
@@ -95211,7 +95957,7 @@ export const all_socu = {
     "thou calledst": 1,
     "thou hast called": 1,
     "thou shalt be called": 1,
-    "thou shalt call": 3,
+    "thou shalt call": 4,
     "thou shalt not call": 1,
     "thou shalt read": 1,
     "to call": 10,
@@ -95264,6 +96010,7 @@ export const all_socu = {
     "which he had and they cried": 1,
     "which is called": 10,
     "which they have read": 1,
+    "which were famous": 1,
     "which ye shall proclaim": 3,
     "who art thou that criest": 2,
     "who calleth": 1,
@@ -95272,7 +96019,7 @@ export const all_socu = {
     "why then call": 1,
     "will i cry": 1,
     "will proclaim": 1,
-    "wilt thou not from this time cry": 1,
+    "wilt thou not from this time cry": 2,
     "with him there and proclaimed": 1,
     "with me and i cried": 2,
     "with thee yea they have called": 1,
@@ -95731,6 +96478,7 @@ export const all_socu = {
     "and to him that is near": 1,
     "and ye that are near": 1,
     "at hand": 1,
+    "be nigh": 1,
     "be not nigh": 1,
     "because it is near": 1,
     "both nigh": 1,
@@ -95747,7 +96495,7 @@ export const all_socu = {
     "is short": 2,
     "it is near": 2,
     "it is not near": 1,
-    "moreover they that were nigh": 2,
+    "moreover they that were nigh": 1,
     "my kinsfolk": 1,
     "near": 1,
     "nearer": 1,
@@ -95777,7 +96525,7 @@ export const all_socu = {
     "bald": 1,
     "make thee bald": 1,
     "themselves nor make themselves bald": 1,
-    "they shall not make": 1,
+    "they shall not make": 2,
     "was made bald": 1
   },
   "H714": {
@@ -95881,14 +96629,14 @@ export const all_socu = {
     "was kirjath–arba": 4
   },
   "H7154": {
-    "kirjath–baal": 3,
-    "thereof were at kirjath–baal": 3
+    "kirjath–baal": 2,
+    "thereof were at kirjath–baal": 2
   },
   "H7155": {
     "unto kirjath–huzoth": 2
   },
   "H7156": {
-    "and kiriathaim": 1,
+    "and kiriathaim": 2,
     "and kirjathaim": 3,
     "and upon kiriathaim": 1,
     "kiriathaim": 1
@@ -95902,7 +96650,7 @@ export const all_socu = {
     "of kirjath–arim": 2,
     "of kirjath–jearim": 16,
     "that is to kirjath–jearim": 2,
-    "which is kirjath–jearim": 8
+    "which is kirjath–jearim": 6
   },
   "H7158": {
     "and kirjath–sannah": 2,
@@ -96395,7 +97143,7 @@ export const all_socu = {
     "all things have i seen": 1,
     "all this have i seen": 1,
     "alone saw": 2,
-    "also i saw": 1,
+    "also i saw": 2,
     "also saw": 1,
     "also shall see": 1,
     "among you that saw": 2,
@@ -96403,7 +97151,7 @@ export const all_socu = {
     "and appear": 1,
     "and as thou seest": 2,
     "and beheld": 5,
-    "and behold": 18,
+    "and behold": 20,
     "and consider": 3,
     "and considered": 1,
     "and considereth": 2,
@@ -96455,14 +97203,14 @@ export const all_socu = {
     "and of all that ye have seen": 1,
     "and of that which they had seen": 1,
     "and presented": 1,
-    "and saw": 32,
+    "and saw": 33,
     "and see": 47,
     "and see him": 1,
     "and seest": 4,
     "and seeth": 1,
     "and shall be shewed": 1,
     "and shall look": 1,
-    "and shall not see": 2,
+    "and shall not see": 3,
     "and shall see": 2,
     "and shall shew": 1,
     "and shalt see": 1,
@@ -96554,7 +97302,7 @@ export const all_socu = {
     "do behold": 1,
     "done nor seen": 2,
     "doth not he see": 1,
-    "enjoy": 1,
+    "enjoy": 2,
     "even as i have seen": 1,
     "even seeing": 1,
     "experience": 1,
@@ -96738,14 +97486,14 @@ export const all_socu = {
     "part of them and shalt not see": 3,
     "perceived": 4,
     "provide": 1,
-    "saw": 161,
+    "saw": 163,
     "saw her": 1,
     "saw her afar off": 1,
     "saw them": 1,
     "sawest thou": 1,
     "say they and thou seest": 1,
     "see": 51,
-    "seeing": 6,
+    "seeing": 8,
     "seen": 12,
     "seest": 5,
     "seeth": 14,
@@ -96829,7 +97577,6 @@ export const all_socu = {
     "there appeared": 2,
     "therefore and see": 1,
     "therefore enjoy": 1,
-    "therefore see": 1,
     "thereof and he saw": 2,
     "thereof neither had respect": 1,
     "thereof which was shewed": 1,
@@ -96851,7 +97598,7 @@ export const all_socu = {
     "thou seest": 2,
     "thou shalt not see": 5,
     "thou shalt see": 2,
-    "thou which hast shewed": 1,
+    "thou which hast shewed": 2,
     "thus he shewed": 1,
     "till he might see": 1,
     "till i might see": 1,
@@ -96916,7 +97663,7 @@ export const all_socu = {
     "when he seeth": 1,
     "when he shewed": 1,
     "when i consider": 1,
-    "when i saw": 3,
+    "when i saw": 4,
     "when she saw": 1,
     "when they saw": 2,
     "when they see": 3,
@@ -96983,6 +97730,9 @@ export const all_socu = {
   "H7201": {
     "and the glede": 1
   },
+  "H7202": {
+    "therefore see": 1
+  },
   "H7203": {
     "in vision": 1
   },
@@ -97015,6 +97765,9 @@ export const all_socu = {
     "unto the reubenites": 2,
     "with whom the reubenites": 1
   },
+  "H7207": {
+    "the beholding": 1
+  },
   "H7208": {
     "was reumah": 1
   },
@@ -97030,12 +97783,15 @@ export const all_socu = {
     "that it cannot be seen": 1,
     "that seeth me": 1,
     "thee as a gazingstock": 1,
-    "to look to": 2
+    "to look to": 1
   },
   "H7211": {
     "and reaiah": 1,
     "of reaiah": 2,
     "reaia": 1
+  },
+  "H7212": {
+    "the beholding": 1
   },
   "H7213": {
     "and it shall be lifted up": 1
@@ -97260,7 +98016,7 @@ export const all_socu = {
     "them upon the head": 3,
     "themselves in the top": 1,
     "there in the top": 1,
-    "there were chief": 1,
+    "there were chief": 2,
     "thereof and the head": 1,
     "these also are the chief": 1,
     "these are now the chief": 1,
@@ -97526,7 +98282,7 @@ export const all_socu = {
     "and he had much": 1,
     "and her great": 1,
     "and in thy great": 1,
-    "and increased": 2,
+    "and increased": 1,
     "and it came to pass a long": 1,
     "and it came to pass after many": 1,
     "and it came to pass in process": 1,
@@ -97605,7 +98361,7 @@ export const all_socu = {
     "from them that have many": 1,
     "great": 13,
     "great men": 1,
-    "greater": 6,
+    "greater": 5,
     "had not many": 1,
     "hath great": 1,
     "hath long": 1,
@@ -97675,7 +98431,7 @@ export const all_socu = {
     "out of many": 2,
     "over many": 4,
     "over this great": 1,
-    "princes": 4,
+    "princes": 2,
     "seeing i am a great": 1,
     "shall abound": 1,
     "shall be a great": 1,
@@ -97696,8 +98452,8 @@ export const all_socu = {
     "that was full": 2,
     "that were with the captain": 2,
     "that ye have much": 1,
-    "the captain": 17,
-    "the great": 5,
+    "the captain": 15,
+    "the great": 4,
     "the master": 1,
     "the multitude": 1,
     "the reproach of all the mighty": 1,
@@ -97789,7 +98545,7 @@ export const all_socu = {
     "and multitude": 1,
     "and plenty": 1,
     "and the greatness": 1,
-    "and the multitude": 1,
+    "and the multitude": 2,
     "and there is a multitude": 1,
     "and with the multitude": 1,
     "any by his great": 1,
@@ -97843,6 +98599,7 @@ export const all_socu = {
     "they in abundantly": 1,
     "through the greatness": 1,
     "through the multitude": 2,
+    "to him the great things": 1,
     "to the multitude": 1,
     "unto a multitude": 1,
     "unto himself according to the multitude": 1,
@@ -97850,7 +98607,7 @@ export const all_socu = {
     "were in abundance": 1,
     "which made all": 1,
     "with her much": 1,
-    "with the multitude": 2,
+    "with the multitude": 3,
     "with thee in abundance": 1,
     "you because ye were more": 1
   },
@@ -97876,7 +98633,7 @@ export const all_socu = {
     "among ten thousand": 1,
     "and ten thousand": 1,
     "and they are the ten thousands": 1,
-    "his ten thousands": 3,
+    "his ten thousands": 5,
     "of millions": 1,
     "of ten thousands": 1,
     "of you shall put ten thousand": 1,
@@ -97919,10 +98676,11 @@ export const all_socu = {
     "and made them exceeding": 1,
     "and many": 2,
     "and much": 3,
-    "and multiplied": 5,
+    "and multiplied": 6,
     "and multiplieth": 1,
     "and multiply": 17,
     "and take thee much": 1,
+    "and the greatness": 1,
     "and there is much": 1,
     "and they shall increase": 2,
     "and thou hast increased": 1,
@@ -97932,7 +98690,7 @@ export const all_socu = {
     "and will increase": 1,
     "and will multiply": 1,
     "and with him is plenteous": 1,
-    "any more": 1,
+    "any more": 2,
     "are in authority": 1,
     "are increased": 1,
     "are multiplied": 2,
@@ -97984,7 +98742,7 @@ export const all_socu = {
     "it for them i will increase": 1,
     "many": 13,
     "may be multiplied": 2,
-    "me throughly": 1,
+    "me throughly": 2,
     "men for they had many": 1,
     "more": 2,
     "more and more": 1,
@@ -98004,7 +98762,7 @@ export const all_socu = {
     "shall be multiplied": 2,
     "shall increase": 1,
     "shall not give more": 1,
-    "shalt thou use many": 1,
+    "shalt thou use many": 2,
     "she nourished": 1,
     "sing many": 1,
     "so much as": 1,
@@ -98095,8 +98853,8 @@ export const all_socu = {
     "were made up": 1
   },
   "H7240": {
-    "times ten thousand": 2,
-    "unto him and ten thousand": 2
+    "times ten thousand": 3,
+    "unto him and ten thousand": 3
   },
   "H7241": {
     "and as the showers": 1,
@@ -98134,10 +98892,10 @@ export const all_socu = {
     "with the fourth": 2
   },
   "H7244": {
-    "a fourth": 1,
-    "and the fourth": 1,
-    "of the fourth": 1,
-    "the fourth": 5
+    "a fourth": 2,
+    "and the fourth": 2,
+    "of the fourth": 2,
+    "the fourth": 7
   },
   "H7245": {
     "and rabbith": 1
@@ -98154,11 +98912,11 @@ export const all_socu = {
     "to riblah": 6
   },
   "H7248": {
-    "rab–mag": 6
+    "rab–mag": 4
   },
   "H7249": {
-    "and rabsaris": 3,
-    "rab–saris": 6
+    "and rabsaris": 2,
+    "rab–saris": 4
   },
   "H725": {
     "at arumah": 1
@@ -98262,12 +99020,12 @@ export const all_socu = {
     "and his lords": 2,
     "and his princes": 2,
     "and my lords": 1,
-    "and thy lords": 1,
+    "and thy lords": 2,
     "of his lords": 2
   },
   "H7262": {
     "and rabshakeh": 2,
-    "and rab–shakeh": 5,
+    "and rab–shakeh": 4,
     "but rabshakeh": 2,
     "but rab–shakeh": 2,
     "of rabshakeh": 4,
@@ -98424,7 +99182,7 @@ export const all_socu = {
     "of the feet": 1,
     "the feet": 2,
     "with his feet": 1,
-    "with the feet": 1
+    "with the feet": 2
   },
   "H7272": {
     "according as": 2,
@@ -98484,7 +99242,7 @@ export const all_socu = {
     "it with thy foot": 1,
     "let not the foot": 1,
     "me upon my feet": 2,
-    "my feet": 13,
+    "my feet": 14,
     "my foot": 3,
     "neither shall the foot": 1,
     "neither will i make the feet": 1,
@@ -98497,7 +99255,7 @@ export const all_socu = {
     "of foot": 2,
     "of her feet": 1,
     "of her foot": 2,
-    "of his feet": 3,
+    "of his feet": 4,
     "of his foot": 2,
     "of my feet": 4,
     "of the feet": 2,
@@ -98528,9 +99286,10 @@ export const all_socu = {
     "thee since my coming": 1,
     "their feet": 7,
     "their foot": 1,
+    "their own piss": 2,
     "thither the feet": 1,
     "thy feet": 2,
-    "thy foot": 9,
+    "thy foot": 10,
     "thy footstool": 1,
     "times": 4,
     "under feet": 1,
@@ -98548,7 +99307,7 @@ export const all_socu = {
     "was under his feet": 2,
     "where his haunt": 1,
     "whereon thy feet": 1,
-    "whose feet": 1,
+    "whose feet": 2,
     "wilt not thou deliver my feet": 1,
     "with his feet": 4,
     "with the feet": 1,
@@ -98595,7 +99354,7 @@ export const all_socu = {
   "H728": {
     "all these things did araunah": 2,
     "and araunah": 6,
-    "of araunah": 2,
+    "of araunah": 4,
     "toward him and araunah": 2,
     "unto araunah": 1
   },
@@ -98604,6 +99363,7 @@ export const all_socu = {
     "but i will suddenly": 1,
     "he divideth": 1,
     "is broken": 1,
+    "is but for a moment": 1,
     "rest": 1,
     "shalt thou find no ease": 1,
     "that divided": 1,
@@ -98871,8 +99631,8 @@ export const all_socu = {
     "like a cedar": 2,
     "me also cedar": 1,
     "me cedar trees": 1,
-    "of cedar": 11,
-    "of cedars": 1,
+    "of cedar": 12,
+    "of cedars": 3,
     "of sap the cedars": 1,
     "of the cedar": 1,
     "of the cedars": 1,
@@ -98915,7 +99675,7 @@ export const all_socu = {
     "shall be as a watered": 1
   },
   "H7303": {
-    "and rohgah": 1
+    "and rohgah": 2
   },
   "H7304": {
     "and large": 1,
@@ -99045,7 +99805,7 @@ export const all_socu = {
     "sides": 1,
     "so my spirit": 1,
     "so the spirit": 3,
-    "spirit": 37,
+    "spirit": 38,
     "spirits": 2,
     "tempest": 1,
     "that his spirit": 1,
@@ -99180,7 +99940,7 @@ export const all_socu = {
     "even he lifted up": 1,
     "every high": 1,
     "every one that did offer": 1,
-    "exalt": 5,
+    "exalt": 7,
     "exalteth": 2,
     "for promotion": 1,
     "forasmuch as i exalted": 1,
@@ -99198,7 +99958,7 @@ export const all_socu = {
     "i have exalted": 1,
     "i have lift up": 1,
     "i will be exalted": 4,
-    "i will exalt": 2,
+    "i will exalt": 3,
     "i will extol": 2,
     "is exalted": 2,
     "is high": 2,
@@ -99224,11 +99984,11 @@ export const all_socu = {
     "on high": 1,
     "one and setteth up": 1,
     "over thee he hath set up": 1,
-    "sacrifice was taken away": 2,
+    "sacrifice was taken away": 4,
     "set him up on high": 1,
-    "shall be exalted": 5,
+    "shall be exalted": 7,
     "shall be higher": 1,
-    "shall be lifted up": 3,
+    "shall be lifted up": 5,
     "shall be the promotion": 1,
     "shall take": 1,
     "shall they be exalted": 1,
@@ -99276,6 +100036,7 @@ export const all_socu = {
     "yea thou liftest me up": 1
   },
   "H7312": {
+    "an high": 1,
     "and the haughtiness": 3,
     "for height": 1,
     "of his high": 1
@@ -99333,7 +100094,6 @@ export const all_socu = {
     "men they cried": 1,
     "neither shall there be shouting": 1,
     "now why dost thou cry": 1,
-    "shall be destroyed": 1,
     "shall cry out": 1,
     "shall shout": 1,
     "shout": 5,
@@ -99366,7 +100126,7 @@ export const all_socu = {
     "and ye run": 1,
     "another": 3,
     "but howsoever said he let me run": 3,
-    "but i will make": 1,
+    "but i will make": 2,
     "for by thee i have run": 1,
     "for by thee i have run through": 1,
     "he runneth": 2,
@@ -99386,7 +100146,7 @@ export const all_socu = {
     "posts": 2,
     "ran": 12,
     "run": 6,
-    "run away": 2,
+    "run away": 4,
     "runneth": 2,
     "running": 6,
     "shall run": 3,
@@ -99569,7 +100329,7 @@ export const all_socu = {
     "he is in the way": 1,
     "him in the path": 1,
     "his way": 1,
-    "his ways": 1,
+    "his ways": 2,
     "in his paths": 2,
     "in the path": 1,
     "in the way": 3,
@@ -99762,7 +100522,7 @@ export const all_socu = {
     "yet there shall be a space": 1
   },
   "H7351": {
-    "and our rafters": 2
+    "and our rafters": 4
   },
   "H7352": {
     "far": 1
@@ -99862,7 +100622,7 @@ export const all_socu = {
     "but the tender mercies": 1,
     "for her bowels": 1,
     "for his bowels": 1,
-    "for his mercies": 1,
+    "for his mercies": 2,
     "from the womb": 1,
     "him mercy": 1,
     "his tender mercies": 1,
@@ -100102,11 +100862,11 @@ export const all_socu = {
     "me who will contend": 1,
     "plead": 11,
     "shall he that contendeth": 1,
-    "strive": 6,
+    "strive": 7,
     "strove": 1,
     "that hath pleaded": 1,
     "that pleadeth": 1,
-    "the adversaries": 1,
+    "the adversaries": 2,
     "then contended": 1,
     "then i contended": 1,
     "thou hast pleaded": 1,
@@ -100116,7 +100876,7 @@ export const all_socu = {
     "to strive": 1,
     "unto him that striveth": 1,
     "unto them why chide": 2,
-    "unto us to complain": 1,
+    "unto us to complain": 2,
     "when i plead": 1,
     "wherefore i will yet plead": 2,
     "wherefore will ye plead": 1,
@@ -100174,9 +100934,9 @@ export const all_socu = {
     "your cause": 1
   },
   "H738": {
-    "a lion": 10,
+    "a lion": 11,
     "among lions": 1,
-    "and as a lion": 1,
+    "and as a lion": 2,
     "and beneath the lions": 2,
     "and the lion": 5,
     "and the lion’s": 3,
@@ -100196,6 +100956,7 @@ export const all_socu = {
     "me from the lion’s": 1,
     "no lion": 1,
     "of a lion": 4,
+    "of lions": 1,
     "of the lion": 8,
     "of the lions": 3,
     "than a lion": 1,
@@ -100559,9 +101320,9 @@ export const all_socu = {
     "upon mules": 1
   },
   "H741": {
-    "and from the altar": 3,
-    "and the altar": 1,
-    "so the altar": 3
+    "and from the altar": 1,
+    "and the altar": 2,
+    "so the altar": 1
   },
   "H7410": {
     "and ram": 4,
@@ -100651,7 +101412,7 @@ export const all_socu = {
     "of rimmon": 13,
     "remmon": 1,
     "rimmon": 7,
-    "to remmon–methoar": 2,
+    "to remmon–methoar": 1,
     "to rimmon": 1
   },
   "H7418": {
@@ -100864,7 +101625,7 @@ export const all_socu = {
     "sang": 1,
     "shall greatly rejoice": 1,
     "shall rejoice": 1,
-    "shall shout aloud": 2,
+    "shall shout aloud": 1,
     "shall sing": 1,
     "shall sing aloud": 1,
     "shall they sing": 1,
@@ -100887,6 +101648,9 @@ export const all_socu = {
   },
   "H7443": {
     "gavest thou the goodly": 1
+  },
+  "H7444": {
+    "for joy": 1
   },
   "H7445": {
     "let no joyful voice": 1,
@@ -100989,7 +101753,7 @@ export const all_socu = {
     "concerning me but evil": 2,
     "concerning the evil": 1,
     "even for all the evil": 1,
-    "evil": 147,
+    "evil": 148,
     "evil things": 1,
     "evils": 5,
     "exceedingly": 1,
@@ -101140,7 +101904,7 @@ export const all_socu = {
     "that wicked": 1,
     "that your wickedness": 1,
     "the distress": 1,
-    "the evil": 28,
+    "the evil": 29,
     "the mischief": 1,
     "the wicked": 3,
     "the wicked ones": 1,
@@ -101197,7 +101961,7 @@ export const all_socu = {
     "unto me for their trouble": 1,
     "unto thee bad": 1,
     "unto thee evil": 1,
-    "unto thee than all the evil": 2,
+    "unto thee than all the evil": 1,
     "unto them what evil": 1,
     "upon the evil": 1,
     "upon them all this evil": 1,
@@ -101264,6 +102028,7 @@ export const all_socu = {
     "another’s": 2,
     "at another": 2,
     "at my neighbour’s": 1,
+    "but his neighbour": 1,
     "by his neighbour": 1,
     "companion": 1,
     "departeth from her husband": 1,
@@ -101271,7 +102036,7 @@ export const all_socu = {
     "even to his friends": 1,
     "for his friends": 1,
     "for thy friend": 1,
-    "friend": 1,
+    "friend": 2,
     "friends": 5,
     "from another": 1,
     "from his neighbour": 3,
@@ -101296,7 +102061,7 @@ export const all_socu = {
     "myself as though he had been my friend": 1,
     "nor any thing that is thy neighbour’s": 3,
     "nor of his friends": 1,
-    "not unto thy neighbour": 1,
+    "not unto thy neighbour": 2,
     "o friends": 1,
     "of a man’s friend": 1,
     "of her friend": 1,
@@ -101305,7 +102070,7 @@ export const all_socu = {
     "of thy friend": 2,
     "of thy neighbour": 3,
     "of thy neighbours": 1,
-    "or any thing that is thy neighbour’s": 5,
+    "or any thing that is thy neighbour’s": 3,
     "or thy friend": 1,
     "other": 1,
     "ought of his neighbour": 1,
@@ -101319,14 +102084,14 @@ export const all_socu = {
     "thee and thy companions": 1,
     "them unto thy neighbour": 1,
     "thereof when thy neighbour": 1,
-    "thine own friend": 1,
+    "thine own friend": 2,
     "thou and thy fellows": 1,
     "thou not with thy friend": 2,
     "thou thy fellow": 1,
     "thy brother": 1,
     "thy friend": 2,
     "thy neighbour": 2,
-    "thy neighbour’s": 18,
+    "thy neighbour’s": 14,
     "to another": 9,
     "to his fellow": 2,
     "to his friends": 1,
@@ -101388,14 +102153,16 @@ export const all_socu = {
     "and hungry": 1,
     "and there he maketh the hungry": 1,
     "and they that were hungry": 1,
+    "be hungry": 1,
     "but to the hungry": 1,
+    "from the hungry": 2,
     "hungry": 1,
     "is hungry": 1,
     "it shall even be as when an hungry": 1,
     "of the hungry": 1,
     "shall be hungerbitten": 1,
     "that we be hungry": 1,
-    "the hungry": 1,
+    "the hungry": 2,
     "to the hungry": 5
   },
   "H7458": {
@@ -101470,6 +102237,7 @@ export const all_socu = {
     "fear": 1,
     "fearfulness": 1,
     "trembling": 1,
+    "upon me and trembling": 1,
     "with trembling": 1
   },
   "H7462": {
@@ -101478,7 +102246,7 @@ export const all_socu = {
     "against the pastors": 2,
     "against the shepherds": 7,
     "all thy pastors": 2,
-    "and as he was at the shearing": 2,
+    "and as he was at the shearing": 1,
     "and behold he keepeth": 1,
     "and feed": 7,
     "and he shall feed": 1,
@@ -101488,6 +102256,7 @@ export const all_socu = {
     "and their own shepherds": 1,
     "and they are shepherds": 1,
     "and they fed": 2,
+    "and they shall waste": 1,
     "and who is that shepherd": 2,
     "are shepherds": 2,
     "as a shepherd": 2,
@@ -101597,6 +102366,7 @@ export const all_socu = {
   },
   "H7464": {
     "her companions": 1,
+    "i and my fellows": 1,
     "with her companions": 1
   },
   "H7465": {
@@ -101758,6 +102528,7 @@ export const all_socu = {
   },
   "H7489": {
     "a wicked doer": 1,
+    "also was displeased": 1,
     "and an evildoer": 1,
     "and did worse": 1,
     "and do you hurt": 1,
@@ -101765,6 +102536,7 @@ export const all_socu = {
     "and hath done wickedly": 1,
     "and her that i have afflicted": 1,
     "and i will do you no hurt": 1,
+    "and that will be worse": 1,
     "and to afflict": 1,
     "as they have behaved themselves ill": 1,
     "associate": 1,
@@ -101791,6 +102563,7 @@ export const all_socu = {
     "indeed": 2,
     "is utterly": 2,
     "it and it displease": 1,
+    "me now therefore if it displease thee": 1,
     "must shew himself friendly": 1,
     "my desire of the wicked": 1,
     "nay i pray you do not so wickedly": 1,
@@ -101898,7 +102671,7 @@ export const all_socu = {
     "be healed": 2,
     "be made whole again": 1,
     "behold i will heal": 1,
-    "but she is not healed": 2,
+    "but she is not healed": 3,
     "but to the physicians": 1,
     "for they have healed": 1,
     "he healeth": 1,
@@ -101917,7 +102690,7 @@ export const all_socu = {
     "not be healed": 1,
     "not that i healed": 1,
     "of them and shall heal": 2,
-    "shall be healed": 1,
+    "shall be healed": 2,
     "that healeth": 1,
     "the physicians": 2,
     "then ye shall be healed": 1,
@@ -101931,7 +102704,7 @@ export const all_socu = {
     "unto thee and i will heal": 1,
     "unto thee and thou hast healed": 1,
     "we are healed": 1,
-    "we would have healed": 2,
+    "we would have healed": 3,
     "were healed": 1,
     "when i would have healed": 1,
     "who can heal": 1,
@@ -102393,6 +103166,7 @@ export const all_socu = {
     "and spice": 1,
     "compoundeth": 1,
     "made": 1,
+    "of spices prepared": 1,
     "of the apothecary": 4
   },
   "H7544": {
@@ -102487,7 +103261,7 @@ export const all_socu = {
     "thee that which is noted": 1
   },
   "H756": {
-    "the archevites": 1
+    "the archevites": 2
   },
   "H7560": {
     "and sign": 1,
@@ -102500,7 +103274,7 @@ export const all_socu = {
   "H7561": {
     "and condemn": 2,
     "and have dealt wickedly": 1,
-    "and have done wickedly": 1,
+    "and have done wickedly": 2,
     "and have not wickedly departed": 2,
     "and he that condemneth": 1,
     "and such as do wickedly": 1,
@@ -102588,7 +103362,7 @@ export const all_socu = {
     "o wicked": 5,
     "of a wicked": 2,
     "of the ungodly": 3,
-    "of the wicked": 86,
+    "of the wicked": 87,
     "of these wicked": 1,
     "place of the wicked": 1,
     "shall be to the wicked": 1,
@@ -102689,7 +103463,7 @@ export const all_socu = {
     "well": 1
   },
   "H7572": {
-    "by the chains": 2
+    "by the chains": 4
   },
   "H7573": {
     "bind": 1
@@ -102704,6 +103478,7 @@ export const all_socu = {
     "in rithmah": 1
   },
   "H7576": {
+    "be loosed": 1,
     "were bound": 1
   },
   "H7577": {
@@ -102727,7 +103502,7 @@ export const all_socu = {
   "H758": {
     "against the syrians": 1,
     "and aram": 4,
-    "and out of syria–maachah": 2,
+    "and out of syria–maachah": 1,
     "and the syrians": 14,
     "and when the syrians": 7,
     "because syria": 1,
@@ -102768,7 +103543,7 @@ export const all_socu = {
     "roareth": 1,
     "shall roar": 3,
     "thereof like a roaring": 1,
-    "they shall roar": 3,
+    "they shall roar": 5,
     "when he shall roar": 2,
     "will roar": 1
   },
@@ -102997,6 +103772,7 @@ export const all_socu = {
     "enquire": 1,
     "enquired": 10,
     "for ask": 1,
+    "for enquire": 1,
     "for i will demand": 1,
     "for it was borrowed": 1,
     "for thyself nor hast asked": 5,
@@ -103041,7 +103817,7 @@ export const all_socu = {
     "thee that which thou hast not asked": 1,
     "then he asked": 1,
     "therefore also i have lent": 2,
-    "therefore shall he beg": 2,
+    "therefore shall he beg": 4,
     "therefore they enquired": 1,
     "they ask": 1,
     "they laid to my charge": 1,
@@ -103051,7 +103827,7 @@ export const all_socu = {
     "things have i required": 1,
     "thou hast asked": 1,
     "to ask": 2,
-    "to enquire": 4,
+    "to enquire": 6,
     "to require": 1,
     "to salute": 1,
     "unto her ask on": 2,
@@ -103391,7 +104167,7 @@ export const all_socu = {
     "and they carry them away": 2,
     "and they shall take them captives": 2,
     "and they took away": 1,
-    "and thou hast taken": 2,
+    "and thou hast taken": 1,
     "and took": 1,
     "as captives": 1,
     "captive": 2,
@@ -103472,15 +104248,15 @@ export const all_socu = {
   },
   "H7622": {
     "and i will cause the captivity": 2,
-    "and the captivity": 10,
+    "and the captivity": 16,
     "for i will cause their captivity": 2,
-    "of thy captives": 4,
-    "our captivity": 2,
-    "the captivity": 27,
-    "their captivity": 11,
-    "then will i bring again the captivity": 8,
-    "thy captivity": 3,
-    "your captivity": 3
+    "of thy captives": 7,
+    "our captivity": 4,
+    "the captivity": 41,
+    "their captivity": 19,
+    "then will i bring again the captivity": 14,
+    "thy captivity": 5,
+    "your captivity": 5
   },
   "H7623": {
     "and glory": 1,
@@ -103625,6 +104401,7 @@ export const all_socu = {
     "that was taken": 1,
     "the captives": 1,
     "the captivity": 1,
+    "them captive": 1,
     "thou hast led captivity": 1,
     "to captivity": 3,
     "to the captivity": 2
@@ -103659,7 +104436,7 @@ export const all_socu = {
     "and shachia": 1
   },
   "H7635": {
-    "and thy path": 1,
+    "and thy path": 2,
     "paths": 2
   },
   "H7636": {
@@ -103689,6 +104466,7 @@ export const all_socu = {
     "it but on the seventh": 1,
     "it in the seventh": 1,
     "now it came to pass in the seventh": 1,
+    "of the seven": 1,
     "of the seventh": 7,
     "of this seventh": 1,
     "on him the seventh": 1,
@@ -103713,7 +104491,7 @@ export const all_socu = {
     "network": 3,
     "networks": 3,
     "of checker": 1,
-    "the network": 1,
+    "the network": 2,
     "through a lattice": 1,
     "upon a snare": 1,
     "upon the network": 1,
@@ -103857,8 +104635,9 @@ export const all_socu = {
     "your fill": 1
   },
   "H7649": {
-    "and full": 3,
+    "and full": 4,
     "full": 1,
+    "i am full": 1,
     "satisfied": 2,
     "the full": 1,
     "they that were full": 1
@@ -103898,7 +104677,6 @@ export const all_socu = {
     "for i have sworn": 1,
     "for i swear": 1,
     "for they had sworn": 1,
-    "forasmuch as we have sworn": 1,
     "had sworn": 4,
     "hath sworn": 10,
     "have i sworn": 1,
@@ -103912,7 +104690,7 @@ export const all_socu = {
     "i swear": 1,
     "i will swear": 1,
     "made me swear": 2,
-    "me and sworn": 2,
+    "me and sworn": 1,
     "nor cause to swear": 1,
     "nor swear": 1,
     "nor sworn": 1,
@@ -103951,7 +104729,7 @@ export const all_socu = {
     "unto whom i sware": 1,
     "us as thou swarest": 1,
     "we have sworn": 1,
-    "when i had fed them to the full": 2,
+    "when i had fed them to the full": 1,
     "which he had sworn": 1,
     "which he sware": 10,
     "which i have sworn": 1,
@@ -103974,7 +104752,7 @@ export const all_socu = {
     "after seven": 1,
     "against him seven": 1,
     "against the seven": 1,
-    "all seven": 1,
+    "all seven": 2,
     "also was seven": 1,
     "and behold seven": 6,
     "and he had seven": 1,
@@ -104009,7 +104787,7 @@ export const all_socu = {
     "in seven": 2,
     "in the seven": 1,
     "in the seventeenth": 1,
-    "in the seventh": 6,
+    "in the seventh": 5,
     "into seven": 2,
     "it in the seven": 1,
     "it into seven": 1,
@@ -104034,7 +104812,7 @@ export const all_socu = {
     "on the seventeenth": 1,
     "on the seventh": 1,
     "other seven": 2,
-    "seven": 181,
+    "seven": 182,
     "seven times": 4,
     "seventeen": 4,
     "shall be seven": 6,
@@ -104091,6 +104869,7 @@ export const all_socu = {
   },
   "H7654": {
     "but ye have not enough": 1,
+    "enough": 1,
     "for that which satisfieth": 1,
     "sufficiently": 1,
     "till ye be full": 1,
@@ -104286,7 +105065,7 @@ export const all_socu = {
     "upon thee thou brakest": 1,
     "upon you and will break": 1,
     "was broken": 1,
-    "were broken": 2,
+    "were broken": 3,
     "when i have broken": 1,
     "when i shall break": 1,
     "when thou shalt be broken": 1,
@@ -104423,7 +105202,6 @@ export const all_socu = {
   "H7675": {
     "and cause the seat": 1,
     "in the same place": 1,
-    "in the seat": 1,
     "of the seat": 1
   },
   "H7676": {
@@ -104570,7 +105348,7 @@ export const all_socu = {
   "H7687": {
     "and segub": 1,
     "him segub": 1,
-    "son segub": 1
+    "son segub": 2
   },
   "H7688": {
     "he looketh": 1,
@@ -104724,7 +105502,7 @@ export const all_socu = {
     "of the spoiler": 1,
     "oppress": 1,
     "shall be spoiled": 1,
-    "shall destroy": 2,
+    "shall destroy": 4,
     "shall spoil": 1,
     "spoil": 1,
     "spoiled": 4,
@@ -104838,7 +105616,7 @@ export const all_socu = {
     "thee the field": 1,
     "their lands": 1,
     "them or that the wild": 1,
-    "themselves in the field": 1,
+    "themselves in the field": 2,
     "thereof let the fields": 1,
     "thereof out of the field": 1,
     "thereof wild": 3,
@@ -104900,6 +105678,7 @@ export const all_socu = {
     "of siddim": 3
   },
   "H7709": {
+    "and all the fields": 1,
     "and as corn blasted": 1,
     "and of the fields": 1,
     "and the fields": 1,
@@ -104989,9 +105768,9 @@ export const all_socu = {
     "earth": 3,
     "from the earth": 1,
     "in the earth": 2,
-    "inferior": 2,
+    "inferior": 3,
     "of the earth": 8,
-    "the earth": 8,
+    "the earth": 9,
     "thereof in the earth": 1,
     "upon earth": 2
   },
@@ -105006,6 +105785,7 @@ export const all_socu = {
   "H7722": {
     "and desolation": 1,
     "and in the desolation": 1,
+    "as desolation": 1,
     "desolate": 1,
     "from their destructions": 1,
     "himself into that very destruction": 2,
@@ -105020,16 +105800,17 @@ export const all_socu = {
   "H7723": {
     "a false": 1,
     "a vain": 1,
+    "and it shall be unto them as a false": 1,
     "but in vain": 2,
     "false": 2,
     "falsely": 1,
     "for thee false": 2,
     "for there shall be no more any vain": 1,
     "for vain": 2,
-    "for vanity": 2,
+    "for vanity": 3,
     "from me vanity": 1,
     "in vain": 15,
-    "in vanity": 2,
+    "in vanity": 3,
     "it is vain": 2,
     "lies": 1,
     "lying": 2,
@@ -105153,7 +105934,7 @@ export const all_socu = {
     "and shall not be restored": 1,
     "and shall not return": 1,
     "and shall return": 2,
-    "and shalt not turn away": 1,
+    "and shalt not turn away": 2,
     "and shalt return": 1,
     "and she returned": 2,
     "and she shall turn": 1,
@@ -105165,7 +105946,7 @@ export const all_socu = {
     "and they brought": 1,
     "and they do not return": 1,
     "and they return": 1,
-    "and they returned": 6,
+    "and they returned": 7,
     "and they shall come again": 1,
     "and they shall deliver": 1,
     "and they shall return": 1,
@@ -105179,12 +105960,12 @@ export const all_socu = {
     "and turned again": 1,
     "and turned back": 2,
     "and turneth": 2,
-    "and turneth away": 1,
+    "and turneth away": 2,
     "and turneth not away": 1,
     "and unto them that turn": 1,
     "and was come again": 1,
     "and we have brought it again": 1,
-    "and we shall be turned": 2,
+    "and we shall be turned": 3,
     "and went again": 1,
     "and went back": 1,
     "and when he had restored": 2,
@@ -105305,7 +106086,7 @@ export const all_socu = {
     "he shall even return": 2,
     "he shall not return": 4,
     "he shall return": 3,
-    "he shall reward": 2,
+    "he shall reward": 4,
     "he that answereth": 1,
     "he will bring me again": 2,
     "he will not turn": 1,
@@ -105319,7 +106100,7 @@ export const all_socu = {
     "him and they returned": 1,
     "him for he refresheth": 1,
     "him go no more home": 1,
-    "him that he will bring home": 2,
+    "him that he will bring home": 4,
     "him that turned": 1,
     "him to bring it again": 1,
     "himself and come ye again": 1,
@@ -105440,7 +106221,7 @@ export const all_socu = {
     "requite": 2,
     "rescue": 1,
     "restore": 6,
-    "return": 73,
+    "return": 76,
     "returned": 56,
     "returned out": 1,
     "returneth": 1,
@@ -105449,12 +106230,12 @@ export const all_socu = {
     "sake turn not away": 1,
     "sent back": 1,
     "shall be converted": 1,
-    "shall be rendered": 2,
+    "shall be rendered": 4,
     "shall be turned": 2,
     "shall be with you and bring you again": 1,
     "shall bring": 2,
     "shall bring again": 1,
-    "shall bring me again": 4,
+    "shall bring me again": 6,
     "shall come again": 4,
     "shall he give him again": 1,
     "shall he return": 3,
@@ -105463,7 +106244,7 @@ export const all_socu = {
     "shall i cause it to return": 1,
     "shall i return": 1,
     "shall no more": 1,
-    "shall not return": 4,
+    "shall not return": 5,
     "shall restore": 2,
     "shall return": 28,
     "shall return out": 1,
@@ -105501,7 +106282,7 @@ export const all_socu = {
     "that i may": 1,
     "that i may answer": 1,
     "that i was turned": 1,
-    "that i will bring again": 4,
+    "that i will bring again": 6,
     "that i will render": 2,
     "that is brought back": 1,
     "that is come again": 1,
@@ -105522,7 +106303,7 @@ export const all_socu = {
     "that was brought again": 2,
     "that was returned": 1,
     "that we might turn": 1,
-    "that we returned": 1,
+    "that we returned": 2,
     "that were returned": 1,
     "the restorer": 1,
     "thee again": 1,
@@ -105575,6 +106356,7 @@ export const all_socu = {
     "therewith and shalt turn back": 1,
     "they are turned back": 1,
     "they brought": 1,
+    "they have turned them away": 1,
     "they return": 2,
     "they returned": 1,
     "they shall cease": 1,
@@ -105614,7 +106396,7 @@ export const all_socu = {
     "to relieve": 2,
     "to render": 1,
     "to restore": 4,
-    "to return": 24,
+    "to return": 26,
     "to reverse": 1,
     "to the yoke turn": 2,
     "to them but he cometh not again": 1,
@@ -105625,7 +106407,7 @@ export const all_socu = {
     "to turn away": 3,
     "to us so it was me he restored": 1,
     "toward you in causing you to return": 1,
-    "turn": 26,
+    "turn": 27,
     "turn again": 14,
     "turn away": 2,
     "turn back": 1,
@@ -105639,7 +106421,7 @@ export const all_socu = {
     "turneth away": 1,
     "until i return": 1,
     "until thou come again": 1,
-    "unto her and to bring her again": 1,
+    "unto her and to bring her again": 2,
     "unto her return": 1,
     "unto her return again": 1,
     "unto her surely we will return": 1,
@@ -105673,7 +106455,7 @@ export const all_socu = {
     "when he returned": 1,
     "when i come again": 1,
     "when i have brought them again": 1,
-    "when i shall bring again": 3,
+    "when i shall bring again": 5,
     "when i turn back": 1,
     "when they returned": 1,
     "whence i shall not return": 2,
@@ -105715,7 +106497,7 @@ export const all_socu = {
     "ye that we may": 1,
     "ye turn": 3,
     "yea let them turn": 1,
-    "yea return again": 2,
+    "yea return again": 3,
     "yea they turned back": 1,
     "yet have ye not returned": 4,
     "yet he restored": 1,
@@ -105795,7 +106577,7 @@ export const all_socu = {
   },
   "H7739": {
     "shall be made": 1,
-    "was made": 1
+    "was made": 2
   },
   "H774": {
     "and arpad": 1,
@@ -105812,7 +106594,7 @@ export const all_socu = {
     "to meditate": 1
   },
   "H7743": {
-    "and is humbled": 1,
+    "and is humbled": 2,
     "inclineth": 1,
     "is bowed down": 1
   },
@@ -105820,7 +106602,7 @@ export const all_socu = {
     "and shuah": 2
   },
   "H7745": {
-    "a pit": 1,
+    "a pit": 2,
     "and of pits": 1,
     "ditch": 1,
     "pit": 1
@@ -105901,7 +106683,7 @@ export const all_socu = {
   },
   "H7758": {
     "away spoiled": 2,
-    "stripped": 2
+    "stripped": 4
   },
   "H7759": {
     "in the shulamite": 2,
@@ -106194,7 +106976,7 @@ export const all_socu = {
     "of the country": 17,
     "of the earth": 240,
     "of the field": 1,
-    "of the land": 281,
+    "of the land": 282,
     "of the lands": 8,
     "of the whole earth": 19,
     "of the world": 4,
@@ -106382,7 +107164,7 @@ export const all_socu = {
     "to in the land": 1,
     "to mine own country": 1,
     "to mine own land": 1,
-    "to the earth": 24,
+    "to the earth": 23,
     "to the ground": 37,
     "to the land": 20,
     "to the whole earth": 1,
@@ -106418,7 +107200,7 @@ export const all_socu = {
     "unto whom alone the earth": 1,
     "upon a land": 2,
     "upon all the earth": 1,
-    "upon earth": 8,
+    "upon earth": 9,
     "upon my land": 1,
     "upon that land": 3,
     "upon the earth": 63,
@@ -106482,6 +107264,7 @@ export const all_socu = {
     "your country": 1
   },
   "H7760": {
+    "after this shall he turn": 1,
     "all that he had put": 1,
     "also against it and set": 1,
     "also and they have put": 1,
@@ -106542,6 +107325,7 @@ export const all_socu = {
     "and shalt make": 2,
     "and shed": 1,
     "and that which was upon it and set": 2,
+    "and there was set": 1,
     "and they have rewarded": 1,
     "and they laid": 2,
     "and they put": 3,
@@ -106558,7 +107342,7 @@ export const all_socu = {
     "and thou shalt set up": 1,
     "and though thou set": 1,
     "and till he make": 1,
-    "and to tread them down": 1,
+    "and to tread them down": 2,
     "and took": 1,
     "and when they had set": 1,
     "and will make": 3,
@@ -107105,7 +107889,7 @@ export const all_socu = {
   "H7792": {
     "again and the walls": 1,
     "and the walls": 1,
-    "the walls": 1
+    "the walls": 2
   },
   "H7793": {
     "and shur": 1,
@@ -107318,7 +108102,7 @@ export const all_socu = {
     "and did obeisance": 4,
     "and did reverence": 2,
     "and did worship": 1,
-    "and have worshipped": 2,
+    "and have worshipped": 3,
     "and he bowed": 2,
     "and he fell down": 1,
     "and he shall worship": 1,
@@ -107326,7 +108110,7 @@ export const all_socu = {
     "and him shall ye worship": 1,
     "and i bow": 3,
     "and it came to pass as he was worshipping": 2,
-    "and made obeisance": 3,
+    "and made obeisance": 4,
     "and men shall worship": 1,
     "and reverenced": 2,
     "and shall worship": 1,
@@ -107340,7 +108124,7 @@ export const all_socu = {
     "and worshipped": 25,
     "and worshippeth": 1,
     "be in thee neither shalt thou worship": 1,
-    "bow down": 5,
+    "bow down": 7,
     "bowed": 3,
     "bowed down": 1,
     "for thou shalt worship": 1,
@@ -107476,7 +108260,7 @@ export const all_socu = {
     "shall be killed": 1,
     "shall kill": 1,
     "shall they kill": 2,
-    "shot out": 1,
+    "shot out": 2,
     "slaying": 1,
     "slew": 7,
     "so kill": 1,
@@ -107557,7 +108341,7 @@ export const all_socu = {
   "H783": {
     "and artaxerxes": 1,
     "artaxerxes": 3,
-    "artaxerxes’": 1,
+    "artaxerxes’": 2,
     "even unto artaxerxes": 1,
     "of artaxerxes": 9,
     "to artaxerxes": 1,
@@ -107568,7 +108352,7 @@ export const all_socu = {
     "the lion’s": 1
   },
   "H7831": {
-    "and shahazimah": 1
+    "and shahazimah": 2
   },
   "H7832": {
     "am not i in sport": 1,
@@ -107646,7 +108430,7 @@ export const all_socu = {
     "they will seek me early": 1
   },
   "H7837": {
-    "and caused the dayspring": 1,
+    "and caused the dayspring": 2,
     "and when the day": 1,
     "as the morning": 4,
     "early": 2,
@@ -107654,7 +108438,7 @@ export const all_socu = {
     "from whence it riseth": 1,
     "in a morning": 1,
     "it is because there is no light": 1,
-    "of the day": 5,
+    "of the day": 4,
     "of the morning": 4,
     "the morning": 2,
     "when the morning": 1
@@ -107723,7 +108507,7 @@ export const all_socu = {
     "of burning": 1,
     "of fire": 45,
     "of his fire": 1,
-    "of the fire": 18,
+    "of the fire": 19,
     "of them the fire": 1,
     "of your fire": 2,
     "on fire": 11,
@@ -107762,6 +108546,7 @@ export const all_socu = {
     "upon thee with fire": 1,
     "upon you in the fire": 1,
     "was not in the fire": 3,
+    "went a fiery": 1,
     "what time the fire": 1,
     "when the fire": 1,
     "whereof there is a hot": 1,
@@ -108009,7 +108794,7 @@ export const all_socu = {
     "there shall be an overflowing": 1,
     "they shall not overflow": 1,
     "thou washest away": 1,
-    "when the overflowing": 1,
+    "when the overflowing": 2,
     "yea i throughly washed away": 1
   },
   "H7858": {
@@ -108024,6 +108809,7 @@ export const all_socu = {
     "side": 1
   },
   "H786": {
+    "are there": 1,
     "can": 1
   },
   "H7860": {
@@ -108043,7 +108829,7 @@ export const all_socu = {
     "were officers": 1
   },
   "H7861": {
-    "was shitrai": 1
+    "was shitrai": 2
   },
   "H7862": {
     "presents": 2,
@@ -108051,6 +108837,9 @@ export const all_socu = {
   },
   "H7863": {
     "though his excellency": 1
+  },
+  "H7864": {
+    "and sheva": 1
   },
   "H7865": {
     "sion": 1
@@ -108101,12 +108890,14 @@ export const all_socu = {
     "or he is pursuing": 1
   },
   "H7874": {
-    "and plaister": 2,
-    "them with plaister": 2
+    "and plaister": 1,
+    "them with plaister": 1
   },
   "H7875": {
+    "and thou shalt plaister": 1,
     "into lime": 1,
-    "of lime": 1
+    "of lime": 1,
+    "them with plaister": 1
   },
   "H7876": {
     "thee thou art unmindful": 1
@@ -108141,7 +108932,7 @@ export const all_socu = {
     "in my complaint": 1,
     "in my prayer": 1,
     "is my complaint": 1,
-    "my complaint": 3,
+    "my complaint": 4,
     "my meditation": 1,
     "of my complaint": 1,
     "who hath babbling": 1
@@ -108179,7 +108970,7 @@ export const all_socu = {
     "with oars": 1
   },
   "H7886": {
-    "shiloh": 1
+    "shiloh": 2
   },
   "H7887": {
     "at shiloh": 3,
@@ -108240,7 +109031,7 @@ export const all_socu = {
     "should be for the singers": 1,
     "sing": 12,
     "singers": 1,
-    "singing": 1,
+    "singing": 2,
     "singing men": 4,
     "so is he that singeth": 1,
     "so the singers": 1,
@@ -108267,7 +109058,7 @@ export const all_socu = {
     "and with singing": 3,
     "and with songs": 1,
     "for song": 1,
-    "his song": 1,
+    "his song": 2,
     "in the songs": 1,
     "of musick": 7,
     "of song": 1,
@@ -108300,7 +109091,7 @@ export const all_socu = {
     "of shishak": 5,
     "shishak": 1,
     "so shishak": 1,
-    "that shishak": 1,
+    "that shishak": 2,
     "unto shishak": 1
   },
   "H7896": {
@@ -108316,7 +109107,7 @@ export const all_socu = {
     "and laid": 4,
     "and layeth up": 1,
     "and look": 1,
-    "and make": 2,
+    "and make": 4,
     "and set": 2,
     "and they made": 1,
     "be stayed": 1,
@@ -108355,12 +109146,13 @@ export const all_socu = {
     "that i might shew": 1,
     "that thou wouldest appoint": 1,
     "themselves in array": 2,
-    "then and let me alone": 2,
+    "then and let me alone": 4,
+    "then shalt thou lay up": 1,
     "therefore shalt thou make": 1,
     "they have set": 2,
     "thou hast laid": 1,
     "thou hast put": 1,
-    "thou hast set": 1,
+    "thou hast set": 2,
     "thou makest": 1,
     "thou settest": 1,
     "thou shalt make": 1,
@@ -108412,13 +109204,13 @@ export const all_socu = {
     "and he was laid down": 1,
     "and how they lay": 1,
     "and i lie": 1,
-    "and it shall be when he lieth down": 3,
+    "and it shall be when he lieth down": 4,
     "and laid": 8,
     "and laid her down": 2,
     "and laid him down": 1,
     "and lay": 11,
     "and lay down": 5,
-    "and lay thee down": 3,
+    "and lay thee down": 4,
     "and lie": 4,
     "and lodged": 1,
     "and shalt lie": 1,
@@ -108472,8 +109264,9 @@ export const all_socu = {
     "only that lay": 2,
     "or as he that lieth": 2,
     "or who can stay": 1,
+    "ravished": 2,
     "saying since thou art laid down": 1,
-    "shall lie": 3,
+    "shall lie": 4,
     "shall sleep": 1,
     "slept": 36,
     "take no rest": 1,
@@ -108489,6 +109282,7 @@ export const all_socu = {
     "they lie": 2,
     "they shall lie": 1,
     "they shall lie down": 2,
+    "thou hast not been lien": 1,
     "thou shalt lie": 1,
     "thou shalt not lie": 1,
     "thou shalt not sleep": 1,
@@ -108506,7 +109300,7 @@ export const all_socu = {
     "when i lie down": 1,
     "when thou liest": 1,
     "when thou liest down": 2,
-    "where he shall lie": 3,
+    "where he shall lie": 4,
     "wherein shall he sleep": 1,
     "whereon he lieth": 4,
     "whereon she lieth": 1,
@@ -108662,7 +109456,7 @@ export const all_socu = {
     "were found": 1
   },
   "H7913": {
-    "that forget": 1
+    "that forget": 2
   },
   "H7914": {
     "pictures": 1
@@ -108782,6 +109576,7 @@ export const all_socu = {
     "i be bereaved": 2,
     "i will bereave": 1,
     "me these seeing i have lost my children": 1,
+    "no more neither bereave": 1,
     "of my children i am bereaved": 2,
     "or barren": 1,
     "shall destroy": 1,
@@ -108952,7 +109747,7 @@ export const all_socu = {
     "may dwell": 1,
     "might dwell": 1,
     "neither shall it be dwelt": 2,
-    "o thou that dwellest": 3,
+    "o thou that dwellest": 5,
     "of him that dwelt": 1,
     "of them that dwelt": 1,
     "remain": 1,
@@ -109011,7 +109806,7 @@ export const all_socu = {
     "is a neighbour": 1,
     "let him and his neighbour": 1,
     "neighbours": 1,
-    "of all thy neighbours": 1,
+    "of all thy neighbours": 2,
     "of her neighbour": 1,
     "the inhabitants": 1,
     "thy neighbours": 1,
@@ -109023,7 +109818,7 @@ export const all_socu = {
   "H7935": {
     "and shecaniah": 1,
     "and shechaniah": 1,
-    "of shechaniah": 8,
+    "of shechaniah": 6,
     "shechaniah": 1,
     "to shecaniah": 1
   },
@@ -109139,7 +109934,6 @@ export const all_socu = {
     "him there for his error": 1
   },
   "H7945": {
-    "for whose cause": 1,
     "that for my sake": 1,
     "though": 1
   },
@@ -109177,6 +109971,7 @@ export const all_socu = {
     "as snow": 3,
     "as white as snow": 1,
     "in a snowy": 1,
+    "myself with": 1,
     "of snow": 2,
     "of the snow": 2,
     "snow": 2,
@@ -109229,10 +110024,11 @@ export const all_socu = {
     "and the ashdodites": 1,
     "and the ashdothites": 1,
     "and when they of ashdod": 1,
-    "of ashdod": 1,
+    "of ashdod": 2,
     "upon them of ashdod": 1
   },
   "H7960": {
+    "any thing amiss": 1,
     "error": 1,
     "fail": 1,
     "now that ye fail": 1
@@ -109307,7 +110103,7 @@ export const all_socu = {
     "i am for peace": 1,
     "i shall have peace": 1,
     "in a peaceable": 1,
-    "in peace": 36,
+    "in peace": 35,
     "in prosperity": 1,
     "in prosperity peace": 3,
     "in the prosperity": 1,
@@ -109392,11 +110188,11 @@ export const all_socu = {
     "about three": 3,
     "after three": 1,
     "against the third": 1,
-    "against three": 6,
+    "against three": 7,
     "also against his three": 1,
     "also in the third": 1,
     "among the three": 4,
-    "among three": 3,
+    "among three": 4,
     "and behold i had three": 1,
     "and for the forks": 1,
     "and he had three": 1,
@@ -109411,7 +110207,7 @@ export const all_socu = {
     "and there were three": 1,
     "and they three": 2,
     "and they were three": 1,
-    "and three": 101,
+    "and three": 102,
     "and threescore and thirteen": 2,
     "and was there three": 2,
     "and with him three": 1,
@@ -109529,11 +110325,10 @@ export const all_socu = {
   },
   "H7970": {
     "about thirty": 2,
-    "among the thirty": 5,
+    "among the thirty": 3,
     "and above the thirty": 2,
     "and he had thirty": 6,
     "and in the thirty": 1,
-    "and over the thirty": 2,
     "and there were thirty": 1,
     "and they had thirty": 3,
     "and thirtieth": 8,
@@ -109548,7 +110343,7 @@ export const all_socu = {
     "me thirty": 2,
     "now it came to pass in the thirtieth": 1,
     "of it thirty": 1,
-    "of the captains": 2,
+    "of the captains": 3,
     "of the thirty": 3,
     "of them about thirty": 1,
     "of them thirty": 2,
@@ -109561,7 +110356,7 @@ export const all_socu = {
     "the thirty": 2,
     "thereof thirty": 3,
     "these thirty": 1,
-    "thirty": 38,
+    "thirty": 39,
     "was one of the thirty": 1,
     "was thirty": 11,
     "were thirty": 5,
@@ -110019,7 +110814,7 @@ export const all_socu = {
     "and upon the table": 1,
     "and upon the tables": 1,
     "at my table": 4,
-    "at the table": 2,
+    "at the table": 1,
     "at thine own table": 1,
     "at thy table": 1,
     "for all tables": 1,
@@ -110126,11 +110921,13 @@ export const all_socu = {
     "and to the captains": 2,
     "and with instruments of musick": 1,
     "captains": 1,
+    "excellent things": 1,
     "great lords": 1,
-    "his captain": 1,
+    "his captain": 2,
     "in a measure": 1,
     "in great measure": 1,
     "of his captains": 1,
+    "of the captains": 1,
     "the lord": 1,
     "then a lord": 1
   },
@@ -110325,7 +111122,7 @@ export const all_socu = {
     "to the spoil": 1,
     "unto ourselves and the spoil": 1,
     "unto thee for a prey": 1,
-    "upon the spoil": 2,
+    "upon the spoil": 3,
     "upon them and they shall be a spoil": 1,
     "with spoil": 1
   },
@@ -110598,7 +111395,7 @@ export const all_socu = {
     "not them did solomon": 1,
     "now these are the things wherein solomon": 1,
     "now when solomon": 1,
-    "of solomon": 50,
+    "of solomon": 49,
     "of solomon’s": 7,
     "saying assuredly solomon": 1,
     "shall be solomon": 1,
@@ -110629,7 +111426,7 @@ export const all_socu = {
     "and salmon": 1
   },
   "H8013": {
-    "and shelomith": 1,
+    "and shelomith": 2,
     "of shelomoth": 2,
     "shelomith": 1,
     "shelomoth": 2,
@@ -110659,7 +111456,7 @@ export const all_socu = {
   "H8019": {
     "and shelomith": 2,
     "of shelomith": 2,
-    "shelomith": 1,
+    "shelomith": 2,
     "was shelomith": 1
   },
   "H802": {
@@ -110990,7 +111787,7 @@ export const all_socu = {
     "unto the third": 3
   },
   "H803": {
-    "her foundations": 1
+    "her foundations": 2
   },
   "H8030": {
     "and shilshah": 1
@@ -111157,7 +111954,6 @@ export const all_socu = {
     "of the same my name": 3,
     "of their names": 4,
     "of thy name": 4,
-    "of us in the name": 1,
     "of which the name": 3,
     "on my name": 1,
     "on the name": 7,
@@ -111471,7 +112267,7 @@ export const all_socu = {
     "astonishment": 1,
     "become a desolation": 1,
     "become an astonishment": 1,
-    "desolate": 6,
+    "desolate": 7,
     "desolation": 1,
     "how are they brought into desolation": 1,
     "is desolate": 1,
@@ -111567,7 +112363,7 @@ export const all_socu = {
   },
   "H8055": {
     "also rejoiced": 2,
-    "and be glad": 5,
+    "and be glad": 6,
     "and let him also rejoice": 2,
     "and let them not rejoice": 1,
     "and make them joyful": 1,
@@ -111575,17 +112371,17 @@ export const all_socu = {
     "and rejoiced": 5,
     "and shall cheer up": 1,
     "and they were glad": 1,
-    "and thou shalt rejoice": 4,
+    "and thou shalt rejoice": 5,
     "and to be merry": 1,
     "and to rejoice": 1,
     "and was glad": 1,
     "and ye shall rejoice": 3,
     "be glad": 5,
     "because i rejoice": 1,
-    "because ye were glad": 1,
-    "child shall have joy": 2,
+    "because ye were glad": 2,
+    "child shall have joy": 3,
     "for they shall rejoice": 1,
-    "glad": 2,
+    "glad": 5,
     "had made them joyful": 1,
     "had made them rejoice": 3,
     "had made them to rejoice": 1,
@@ -111600,7 +112396,7 @@ export const all_socu = {
     "in them but for a man to rejoice": 1,
     "is glad": 1,
     "it and are glad": 1,
-    "it and be glad": 1,
+    "it and be glad": 2,
     "it and didst rejoice": 1,
     "it and rejoice": 1,
     "make us glad": 1,
@@ -111610,7 +112406,7 @@ export const all_socu = {
     "may rejoice": 1,
     "neither shouldest thou have rejoiced": 1,
     "of them rejoice": 2,
-    "rejoice": 20,
+    "rejoice": 22,
     "rejoiced": 12,
     "rejoiceth": 4,
     "rejoicing": 1,
@@ -111618,12 +112414,13 @@ export const all_socu = {
     "shall have no joy": 1,
     "shall joy": 1,
     "shall not rejoice": 1,
-    "shall rejoice": 7,
+    "shall rejoice": 8,
     "should rejoice": 1,
     "that he rejoiced": 1,
     "that i may rejoice": 1,
     "that maketh glad": 1,
     "that were with him then they were glad": 1,
+    "thee he will be glad": 1,
     "thee will be glad": 1,
     "them and make them rejoice": 2,
     "then are they glad": 1,
@@ -111637,6 +112434,7 @@ export const all_socu = {
     "they rejoiced": 1,
     "this and be glad": 1,
     "to rejoice": 3,
+    "unto thee making him very": 2,
     "was glad": 2,
     "whereof shall make glad": 1,
     "which cheereth": 1
@@ -111652,7 +112450,7 @@ export const all_socu = {
     "from thence rejoicing": 1,
     "glad": 1,
     "joyful": 2,
-    "rejoiced": 1,
+    "rejoiced": 3,
     "that rejoice": 1,
     "therefore thou shalt surely rejoice": 1,
     "thou in merrily": 1,
@@ -111701,6 +112499,7 @@ export const all_socu = {
     "to joy": 2,
     "to your joy": 1,
     "us required of us mirth": 1,
+    "was exceeding": 1,
     "with gladness": 7,
     "with his joy": 1,
     "with joy": 8,
@@ -111716,9 +112515,9 @@ export const all_socu = {
     "are overthrown": 1,
     "shall release": 2,
     "shook": 1,
-    "so they threw her down": 2,
+    "so they threw her down": 3,
     "stumbled": 1,
-    "throw her down": 2,
+    "throw her down": 3,
     "year thou shalt let it rest": 1
   },
   "H8059": {
@@ -111901,14 +112700,14 @@ export const all_socu = {
     "ashima": 1
   },
   "H8070": {
-    "and shemiramoth": 4
+    "and shemiramoth": 5
   },
   "H8071": {
     "a garment": 2,
     "and garments": 1,
     "and raiment": 3,
     "garment": 1,
-    "his apparel": 1,
+    "his apparel": 2,
     "his clothes": 2,
     "his raiment": 1,
     "in a cloth": 1,
@@ -111922,7 +112721,7 @@ export const all_socu = {
     "the cloth": 1,
     "the raiment": 1,
     "their clothes": 3,
-    "thy raiment": 2,
+    "thy raiment": 3,
     "with his raiment": 1,
     "your garments": 1
   },
@@ -111930,6 +112729,9 @@ export const all_socu = {
     "and samlah": 2,
     "and when samlah": 1,
     "samlah": 1
+  },
+  "H8073": {
+    "of shalmai": 1
   },
   "H8074": {
     "amazed": 1,
@@ -111990,11 +112792,10 @@ export const all_socu = {
     "there astonished": 1,
     "thereby shall be astonished": 2,
     "therein shall be astonished": 2,
-    "they are laid desolate": 1,
+    "they are laid desolate": 2,
     "thou hast made desolate": 1,
     "unto desolation": 1,
     "upon the desolate": 2,
-    "was desolate": 1,
     "waste": 1,
     "were astonied": 1,
     "when it was desolate": 1,
@@ -112222,7 +113023,7 @@ export const all_socu = {
     "and it shall come to pass if ye diligently": 2,
     "and it shall come to pass if ye shall hearken": 2,
     "and let all that heard": 1,
-    "and let it be when thou hearest": 1,
+    "and let it be when thou hearest": 2,
     "and now i have heard": 1,
     "and now shall it be reported": 1,
     "and now therefore hear": 1,
@@ -112254,7 +113055,7 @@ export const all_socu = {
     "and when she heard": 1,
     "and when they heard": 1,
     "and when thou hearest": 6,
-    "and when ye hear": 1,
+    "and when ye hear": 2,
     "and will not hearken": 2,
     "and would not hear": 4,
     "and ye have not obeyed": 1,
@@ -112275,7 +113076,7 @@ export const all_socu = {
     "because they did not hearken": 1,
     "because they have not hearkened": 2,
     "because they obeyed": 3,
-    "because thou hast heard": 1,
+    "because thou hast heard": 2,
     "because thou hast hearkened": 1,
     "because thou hearkenedst": 1,
     "because thou wouldest not obey": 1,
@@ -112306,7 +113107,7 @@ export const all_socu = {
     "but they did not hear": 1,
     "but they hear": 1,
     "but they hearkened": 4,
-    "but they obeyed": 2,
+    "but they obeyed": 3,
     "but they would not hear": 1,
     "but whoso hearkeneth": 1,
     "but ye have not hearkened": 1,
@@ -112462,6 +113263,7 @@ export const all_socu = {
     "neither regardeth": 1,
     "neither were they obedient": 1,
     "neither will i cause men to hear": 1,
+    "nevertheless hear": 1,
     "none but obey": 2,
     "nor hear": 2,
     "nor hearkened": 1,
@@ -112539,7 +113341,7 @@ export const all_socu = {
     "that shall be heard": 1,
     "that they may hear": 2,
     "that they may not hearken": 1,
-    "that they might not hear": 3,
+    "that they might not hear": 4,
     "that they might not obey": 1,
     "that they should not hear": 1,
     "that thou hast heard": 1,
@@ -112549,7 +113351,7 @@ export const all_socu = {
     "that were with him heard": 3,
     "that which i have heard": 1,
     "that whosoever": 2,
-    "that whosoever heareth": 1,
+    "that whosoever heareth": 2,
     "that ye can hear": 1,
     "that ye have heard": 2,
     "the hearing": 1,
@@ -112652,7 +113454,7 @@ export const all_socu = {
     "were appointed to sound": 1,
     "were content": 1,
     "were heard": 2,
-    "when he heard": 2,
+    "when he heard": 3,
     "when he shall hear": 1,
     "when i heard": 2,
     "when they had heard": 1,
@@ -112769,7 +113571,7 @@ export const all_socu = {
   },
   "H8092": {
     "and shimma": 1,
-    "of shimea": 2,
+    "of shimea": 3,
     "shimea": 2
   },
   "H8093": {
@@ -112793,7 +113595,7 @@ export const all_socu = {
   },
   "H8096": {
     "and behold thou hast with thee shimei": 1,
-    "and shimei": 22,
+    "and shimei": 21,
     "and shimi": 1,
     "for shimei": 2,
     "moreover to shimei": 1,
@@ -113345,8 +114147,8 @@ export const all_socu = {
   },
   "H8128": {
     "teeth": 1,
-    "the teeth": 1,
-    "whose teeth": 1
+    "the teeth": 2,
+    "whose teeth": 2
   },
   "H8129": {
     "and shen": 1
@@ -113379,7 +114181,7 @@ export const all_socu = {
     "and they that hate": 3,
     "and they that hated": 1,
     "and they which hate": 1,
-    "but he that hateth": 3,
+    "but he that hateth": 4,
     "but i hate": 2,
     "did not ye hate": 1,
     "do hate": 1,
@@ -113423,7 +114225,7 @@ export const all_socu = {
     "over us and they hated": 1,
     "seeing thou hatest": 1,
     "shall even he that hateth": 1,
-    "that are hated": 1,
+    "that are hated": 2,
     "that hate": 4,
     "that hated": 2,
     "that he hateth": 1,
@@ -113462,7 +114264,7 @@ export const all_socu = {
     "yea i hated": 1
   },
   "H8131": {
-    "be to them that hate": 1
+    "be to them that hate": 2
   },
   "H8132": {
     "and changed": 1,
@@ -113474,13 +114276,13 @@ export const all_socu = {
     "and he changeth": 1,
     "be changed": 4,
     "changed": 3,
-    "diverse": 3,
+    "diverse": 2,
     "may be changed": 1,
     "shall alter": 1,
     "them and he shall be diverse": 1,
     "to alter": 1,
     "to change": 1,
-    "was changed": 3,
+    "was changed": 4,
     "was diverse": 1,
     "which shall be diverse": 1
   },
@@ -113490,6 +114292,7 @@ export const all_socu = {
   "H8135": {
     "and hatred": 2,
     "and their hatred": 1,
+    "hated": 1,
     "hatred": 4,
     "him of hatred": 1,
     "of hatred": 1,
@@ -113551,7 +114354,7 @@ export const all_socu = {
     "and in the eleventh": 2,
     "and in the thirty": 3,
     "and it came to pass after the year": 1,
-    "and it came to pass the same year": 2,
+    "and it came to pass the same year": 3,
     "and long": 1,
     "and my years": 1,
     "and reigned two years": 3,
@@ -113586,6 +114389,7 @@ export const all_socu = {
     "for these two years": 2,
     "forty": 4,
     "from the year": 1,
+    "have i to live": 1,
     "him from the year": 3,
     "him the same year": 2,
     "hundred": 47,
@@ -113660,10 +114464,10 @@ export const all_socu = {
     "when that year": 2,
     "which is the nineteenth": 2,
     "which is the year": 2,
-    "which was the eighteenth": 3,
+    "which was the eighteenth": 4,
     "which was the nineteenth": 2,
     "ye year": 2,
-    "year": 349,
+    "year": 352,
     "years": 628,
     "years old": 1,
     "years’": 2
@@ -113718,7 +114522,7 @@ export const all_socu = {
     "and so was it of the other": 1,
     "and the other": 6,
     "and the second": 5,
-    "another": 7,
+    "another": 5,
     "came unto me the second time": 2,
     "day of the second": 8,
     "either": 1,
@@ -113811,7 +114615,7 @@ export const all_socu = {
     "being twelve": 1,
     "between the two": 1,
     "between two": 1,
-    "both": 31,
+    "both": 30,
     "both of them": 3,
     "both twain": 2,
     "but these two": 1,
@@ -113825,7 +114629,7 @@ export const all_socu = {
     "even both": 1,
     "even they both": 1,
     "even twelve": 1,
-    "even two": 5,
+    "even two": 6,
     "even unto the two": 2,
     "even with two": 1,
     "for even both": 1,
@@ -114340,7 +115144,7 @@ export const all_socu = {
     "in the gates": 9,
     "in thy gates": 1,
     "in your gates": 1,
-    "into his gates": 2,
+    "into his gates": 3,
     "into the gate": 1,
     "into the gates": 2,
     "into thy gates": 1,
@@ -114454,7 +115258,7 @@ export const all_socu = {
     "there shall not one hair": 2
   },
   "H8186": {
-    "an horrible thing": 2,
+    "an horrible thing": 3,
     "and horrible thing": 1,
     "horrible thing": 1
   },
@@ -114503,12 +115307,13 @@ export const all_socu = {
     "is my delight": 2
   },
   "H8192": {
+    "stick out": 1,
     "upon the high": 1
   },
   "H8193": {
     "a language": 1,
     "and his lips": 1,
-    "and in his lips": 1,
+    "and in his lips": 2,
     "and my lips": 1,
     "and not thine own lips": 1,
     "and that thy lips": 1,
@@ -114597,7 +115402,7 @@ export const all_socu = {
     "which my lips": 1,
     "with a band": 1,
     "with her lips": 1,
-    "with his lips": 5,
+    "with his lips": 6,
     "with my lips": 1,
     "your lips": 1
   },
@@ -114687,7 +115492,7 @@ export const all_socu = {
     "and there he judged": 1,
     "and there will i plead": 1,
     "and they judged": 2,
-    "and they shall judge": 4,
+    "and they shall judge": 5,
     "and thy judges": 2,
     "and to the judges": 1,
     "and unto the judge": 1,
@@ -114723,7 +115528,7 @@ export const all_socu = {
     "how long will ye judge": 1,
     "i judged": 1,
     "i will judge": 4,
-    "in judgment": 2,
+    "in judgment": 3,
     "is judge": 1,
     "is our judge": 1,
     "is the judge": 1,
@@ -114887,7 +115692,7 @@ export const all_socu = {
     "even to them hast thou poured": 1,
     "for i will pour": 1,
     "gushed out": 1,
-    "have not shed": 1,
+    "have not shed": 2,
     "have poured out": 1,
     "have they shed": 1,
     "he hath poured out": 1,
@@ -114916,7 +115721,7 @@ export const all_socu = {
     "she poured": 1,
     "shed": 2,
     "sheddeth": 1,
-    "slipped": 1,
+    "slipped": 2,
     "that are upon it shall be poured out": 1,
     "that have shed": 1,
     "that he shed": 1,
@@ -115107,7 +115912,7 @@ export const all_socu = {
     "was shiphrah": 1
   },
   "H8237": {
-    "his royal pavilion": 1
+    "his royal pavilion": 2
   },
   "H8238": {
     "very early": 1
@@ -115187,6 +115992,7 @@ export const all_socu = {
     "of an almond tree": 1
   },
   "H8248": {
+    "and drowned": 1,
     "and gave": 1,
     "and gave him drink": 3,
     "and gave them drink": 1,
@@ -115288,7 +116094,7 @@ export const all_socu = {
     "that were at quiet": 1,
     "thou be quiet": 1,
     "to them that are at rest": 1,
-    "unto me i will take my rest": 1,
+    "unto me i will take my rest": 2,
     "was in quiet": 1,
     "was in quietness": 1,
     "was quiet": 4,
@@ -115302,7 +116108,7 @@ export const all_socu = {
   "H8254": {
     "and i will pay": 1,
     "and weigh": 1,
-    "and weighed": 4,
+    "and weighed": 5,
     "be weighed": 1,
     "her unto him he shall pay": 1,
     "i even weighed": 1,
@@ -115725,6 +116531,9 @@ export const all_socu = {
     "for as a prince hast thou power": 1,
     "he had power": 1
   },
+  "H8281": {
+    "with thy remnant": 1
+  },
   "H8282": {
     "and princess": 1,
     "and their queens": 1,
@@ -115790,6 +116599,9 @@ export const all_socu = {
   "H8292": {
     "hissing": 2,
     "the bleatings": 1
+  },
+  "H8293": {
+    "with thy remnant": 1
   },
   "H8294": {
     "and serah": 2,
@@ -115857,7 +116669,7 @@ export const all_socu = {
     "them none remaining": 1,
     "then he made him that remaineth": 1,
     "those of his that did remain": 1,
-    "those that remain": 1,
+    "those that remain": 2,
     "to him remaining": 1,
     "which were left": 1,
     "with him that is left": 1
@@ -115918,7 +116730,7 @@ export const all_socu = {
     "to ashkelon": 1
   },
   "H8310": {
-    "sarsechim": 4
+    "sarsechim": 2
   },
   "H8311": {
     "or any thing superfluous": 1,
@@ -116143,7 +116955,7 @@ export const all_socu = {
     "and call her blessed": 1,
     "and go": 2,
     "and guide": 1,
-    "and he shall be blessed": 1,
+    "and he shall be blessed": 2,
     "and now we call": 1,
     "and they that are led": 2,
     "for the leaders": 2,
@@ -116166,7 +116978,7 @@ export const all_socu = {
     "chains": 1
   },
   "H8332": {
-    "to banishment": 1
+    "to banishment": 2
   },
   "H8333": {
     "and chains": 1,
@@ -116197,7 +117009,7 @@ export const all_socu = {
     "ministered": 3,
     "ministers": 1,
     "my ministers": 1,
-    "of his ministers": 2,
+    "of his ministers": 3,
     "shall minister": 2,
     "that minister": 3,
     "that ministered": 5,
@@ -116246,7 +117058,7 @@ export const all_socu = {
     "of fine linen": 12,
     "of marble": 3,
     "thee about with fine linen": 1,
-    "was of fine linen": 2
+    "was of fine linen": 4
   },
   "H8337": {
     "about six": 1,
@@ -116255,7 +117067,7 @@ export const all_socu = {
     "and in the sixteenth": 1,
     "and it came to pass in the six": 1,
     "and reigned sixteen": 1,
-    "and six": 63,
+    "and six": 64,
     "and sixteen": 2,
     "and sixth": 1,
     "and the other six": 2,
@@ -116695,11 +117507,11 @@ export const all_socu = {
   "H8372": {
     "and between the little chambers": 2,
     "and every little chamber": 2,
-    "and the little chambers": 4,
+    "and the little chambers": 7,
     "chamber": 2,
     "of one little chamber": 1,
     "on that side and the little chambers": 2,
-    "the little chambers": 3,
+    "the little chambers": 4,
     "to the little chambers": 1
   },
   "H8373": {
@@ -116882,7 +117694,7 @@ export const all_socu = {
     "of the years of the fruits": 1,
     "of thine increase": 2,
     "of your revenues": 1,
-    "portion and the increase": 1,
+    "portion and the increase": 2,
     "revenues": 1,
     "shall all the increase": 1,
     "the fruit": 1,
@@ -116894,7 +117706,7 @@ export const all_socu = {
   },
   "H8394": {
     "according to their own understanding": 1,
-    "and by his understanding": 2,
+    "and by his understanding": 4,
     "and by understanding": 1,
     "and in understanding": 1,
     "and understanding": 7,
@@ -117065,7 +117877,7 @@ export const all_socu = {
     "and depths": 1,
     "and for the deep": 1,
     "and the depths": 1,
-    "deep": 5,
+    "deep": 6,
     "depths": 1,
     "from the depths": 1,
     "it with the deep": 1,
@@ -117076,7 +117888,7 @@ export const all_socu = {
     "the depths": 3,
     "them through the deep": 1,
     "them through the depths": 1,
-    "unto deep": 1,
+    "unto deep": 2,
     "when there were no depths": 1
   },
   "H8416": {
@@ -117106,7 +117918,7 @@ export const all_socu = {
     "neither my praise": 1,
     "of his praise": 2,
     "of my praise": 1,
-    "of praise": 3,
+    "of praise": 4,
     "praise": 3,
     "so is thy praise": 1,
     "the praise": 2,
@@ -117206,7 +118018,7 @@ export const all_socu = {
     "with thanksgiving": 3
   },
   "H8427": {
-    "and scrabbled": 1,
+    "and scrabbled": 2,
     "and set": 1
   },
   "H8428": {
@@ -117298,7 +118110,7 @@ export const all_socu = {
     "out": 1,
     "out of": 1,
     "out of the midst": 22,
-    "shall be in the midst": 10,
+    "shall be in the midst": 12,
     "that among": 1,
     "that are among": 1,
     "that are among you": 1,
@@ -117392,7 +118204,7 @@ export const all_socu = {
     "throughout their generations": 2
   },
   "H8436": {
-    "and tilon": 1
+    "and tilon": 2
   },
   "H8437": {
     "and they that wasted": 1
@@ -117455,7 +118267,7 @@ export const all_socu = {
     "any abominable thing": 1,
     "any of these abominations": 2,
     "are abomination": 4,
-    "are an abomination": 4,
+    "are an abomination": 5,
     "because of all their abominations": 1,
     "but it is abomination": 1,
     "by their abominations": 1,
@@ -117515,15 +118327,15 @@ export const all_socu = {
   "H8444": {
     "and the going forth": 1,
     "and the goings forth": 1,
-    "and the goings out": 10,
-    "and the outgoings": 7,
+    "and the goings out": 11,
+    "and the outgoings": 8,
     "and these are the goings out": 1,
     "belong the issues": 1,
     "for out of it are the issues": 1,
     "upon their borders": 1
   },
   "H8445": {
-    "of tikvath": 1
+    "of tikvath": 2
   },
   "H8446": {
     "and search out": 1,
@@ -117583,7 +118395,7 @@ export const all_socu = {
     "after the law": 2,
     "against my law": 1,
     "and a law": 1,
-    "and all the laws": 1,
+    "and all the laws": 2,
     "and grant me thy law": 1,
     "and his laws": 1,
     "and in his law": 2,
@@ -117615,7 +118427,7 @@ export const all_socu = {
     "in his laws": 1,
     "in my law": 4,
     "in the law": 19,
-    "in thy law": 2,
+    "in thy law": 3,
     "is in the law": 2,
     "is my law": 1,
     "is the law": 1,
@@ -117638,7 +118450,7 @@ export const all_socu = {
     "them according to the whole law": 1,
     "them and according to all the law": 1,
     "therefore the law": 1,
-    "thereof and all the laws": 1,
+    "thereof and all the laws": 2,
     "this is the law": 16,
     "this law": 3,
     "this shall be the law": 1,
@@ -117679,6 +118491,7 @@ export const all_socu = {
     "in me and is wisdom": 1,
     "in working": 1,
     "is mine and sound wisdom": 1,
+    "my substance": 1,
     "sound wisdom": 2,
     "the thing as it is": 1,
     "their enterprise": 1,
@@ -117697,20 +118510,20 @@ export const all_socu = {
     "her whoredoms": 4,
     "her with their whoredom": 1,
     "in thy whoredoms": 1,
-    "is this of thy whoredoms": 1,
+    "is this of thy whoredoms": 2,
     "she her whoredoms": 2,
     "than she and in her whoredoms": 1,
     "their whoredom": 2,
     "through thy whoredoms": 1,
     "thy fornication": 1,
     "thy fornications": 1,
-    "thy whoredoms": 2,
+    "thy whoredoms": 3,
     "whoredoms": 1
   },
   "H8458": {
     "and with good advice": 1,
     "but the counsels": 1,
-    "by his counsels": 1,
+    "by his counsels": 2,
     "for by wise counsel": 1,
     "unto wise counsels": 1,
     "where no counsel": 1
@@ -117735,7 +118548,7 @@ export const all_socu = {
     "at the beginning": 3,
     "at the first": 1,
     "at the first time": 2,
-    "days in the beginning": 1,
+    "days in the beginning": 2,
     "first": 3,
     "from the beginning": 1,
     "in the beginning": 3,
@@ -117811,7 +118624,7 @@ export const all_socu = {
   "H8471": {
     "and at tahpanhes": 1,
     "and in tahpanhes": 1,
-    "and tahapanes": 1,
+    "and tahapanes": 2,
     "at tehaphnehes": 1,
     "in tahpanhes": 2,
     "they even to tahpanhes": 1
@@ -117848,7 +118661,7 @@ export const all_socu = {
     "in of waters in": 1,
     "in the place": 1,
     "in the room": 1,
-    "in the same place": 1,
+    "in the same place": 2,
     "in the stead": 1,
     "instead": 1,
     "submitted themselves": 1,
@@ -118166,7 +118979,7 @@ export const all_socu = {
     "but he hanged": 1,
     "for he that is hanged": 1,
     "from off thee and shall hang": 1,
-    "had hanged": 1,
+    "had hanged": 2,
     "hang": 1,
     "hanged": 2,
     "he hanged": 1,
@@ -118203,7 +119016,7 @@ export const all_socu = {
   },
   "H8523": {
     "and shall be the third": 1,
-    "third": 1
+    "third": 2
   },
   "H8524": {
     "and eminent": 1
@@ -118230,7 +119043,6 @@ export const all_socu = {
     "are in scarlet": 1
   },
   "H853": {
-    "against thee but thou doest": 1,
     "also": 2,
     "and": 3,
     "and bare": 2,
@@ -118240,11 +119052,11 @@ export const all_socu = {
     "created": 2,
     "filled": 2,
     "he begat": 1,
-    "he upon": 1,
+    "he upon": 2,
     "is and they shall cast": 2,
     "knew": 2,
     "neither will i tempt": 1,
-    "or that which was delivered": 5,
+    "or that which was delivered": 4,
     "saw": 1,
     "that they stript": 3,
     "the holy one": 2,
@@ -118335,12 +119147,11 @@ export const all_socu = {
     "children of": 1,
     "from": 1,
     "in": 2,
-    "into": 1,
     "not for i am with": 1,
-    "of": 1,
+    "thee and by": 1,
     "them with": 1,
     "will be with": 1,
-    "with": 10
+    "with": 9
   },
   "H8540": {
     "and wonders": 2,
@@ -118527,6 +119338,7 @@ export const all_socu = {
     "among them till they be consumed": 1,
     "and it came to pass when they had done": 1,
     "and so they ended": 1,
+    "and to make an end": 1,
     "and will consume": 1,
     "are come to the full": 1,
     "are consumed": 1,
@@ -118542,6 +119354,7 @@ export const all_socu = {
     "finished": 1,
     "had done": 1,
     "is accomplished": 1,
+    "is consumed": 1,
     "is perfect": 1,
     "is spent": 2,
     "of it may be consumed": 1,
@@ -118635,7 +119448,7 @@ export const all_socu = {
   },
   "H8561": {
     "and palm trees": 13,
-    "and their palm trees": 1,
+    "and their palm trees": 2,
     "and upon the palm trees": 2,
     "so that a palm tree": 2,
     "them and it had palm trees": 1,
@@ -118647,6 +119460,7 @@ export const all_socu = {
   "H8562": {
     "and let their things for purification": 1,
     "and with other things for the purifying": 1,
+    "cleanseth": 1,
     "her her things for purification": 1
   },
   "H8563": {
@@ -118656,6 +119470,9 @@ export const all_socu = {
   },
   "H8564": {
     "thee high heaps": 1
+  },
+  "H8565": {
+    "and thou art as a whale": 1
   },
   "H8566": {
     "hath hired": 1,
@@ -118754,7 +119571,6 @@ export const all_socu = {
     "and it shall become a serpent": 1,
     "and the dragon": 1,
     "and they became serpents": 1,
-    "and thou art as a whale": 1,
     "dragon": 1,
     "for dragons": 2,
     "like a dragon": 1,
@@ -118827,7 +119643,7 @@ export const all_socu = {
     "err": 1,
     "erreth": 1,
     "for me yet i erred": 1,
-    "for ye dissembled": 1,
+    "for ye dissembled": 2,
     "go not astray": 1,
     "going astray": 1,
     "hath caused them to err": 1,
@@ -119250,7 +120066,7 @@ export const all_socu = {
     "and the galleries": 1,
     "for the galleries": 1,
     "gallery": 2,
-    "it and the galleries": 1,
+    "it and the galleries": 2,
     "was gallery": 2
   },
   "H8620": {
@@ -119270,6 +120086,9 @@ export const all_socu = {
     "and it came to pass at the end": 1,
     "end": 1,
     "was come": 1
+  },
+  "H8623": {
+    "with him that is mightier": 1
   },
   "H8624": {
     "and strong": 1,
@@ -119291,7 +120110,7 @@ export const all_socu = {
   "H8628": {
     "and blew": 5,
     "and blow": 3,
-    "and blowing": 4,
+    "and blowing": 5,
     "and cast": 1,
     "and fastened": 1,
     "and he blew": 3,
@@ -119308,7 +120127,7 @@ export const all_socu = {
     "be blown": 1,
     "be not thou one of them that strike": 1,
     "blew": 7,
-    "blow": 5,
+    "blow": 6,
     "blow up": 1,
     "had pitched": 2,
     "he blow": 1,
@@ -119321,7 +120140,7 @@ export const all_socu = {
     "shall blow": 3,
     "striketh": 1,
     "suretiship": 1,
-    "that blew": 4,
+    "that blew": 6,
     "that he blew": 1,
     "that is fastened": 1,
     "they have blown": 1,
@@ -119373,10 +120192,15 @@ export const all_socu = {
   },
   "H8636": {
     "and increase": 1,
-    "and unjust gain": 1,
+    "and unjust gain": 2,
     "any increase": 1,
     "increase": 1,
-    "nor increase": 1
+    "nor increase": 1,
+    "of him or increase": 1
+  },
+  "H8637": {
+    "also to go": 1,
+    "i taught": 1
   },
   "H8638": {
     "and interpreted": 1
@@ -119509,7 +120333,7 @@ export const all_socu = {
     "twelve": 1
   },
   "H8649": {
-    "and the deceit": 1,
+    "and the deceit": 2,
     "fast deceit": 1,
     "for their deceit": 1,
     "neither shall a deceitful": 1,
@@ -119637,7 +120461,7 @@ export const all_socu = {
     "but the salvation": 1,
     "deliverance": 5,
     "even thy salvation": 1,
-    "for me then thou shalt help": 2,
+    "for me then thou shalt help": 1,
     "for safety": 1,
     "for the salvation": 1,
     "for thy salvation": 1,
@@ -119756,7 +120580,7 @@ export const all_socu = {
     "in the entry": 1
   },
   "H873": {
-    "and the bad": 1
+    "and the bad": 2
   },
   "H874": {
     "and make it plain": 1,
@@ -119975,7 +120799,7 @@ export const all_socu = {
     "of treacherous men": 1,
     "seeing he hath dealt deceitfully": 1,
     "so have ye dealt treacherously": 2,
-    "that thou wouldest deal very": 1,
+    "that thou wouldest deal very": 2,
     "that ye deal not treacherously": 1,
     "the transgressors": 2,
     "them but transgressors": 1,
@@ -119985,7 +120809,7 @@ export const all_socu = {
     "thou upon them that deal treacherously": 1,
     "to deal treacherously": 4,
     "transgressors": 1,
-    "treacherously": 10,
+    "treacherously": 11,
     "unto me the treacherous dealer": 2,
     "unto me the treacherous dealers": 4,
     "us why do we deal treacherously": 1,
@@ -120060,7 +120884,7 @@ export const all_socu = {
     "of the wardrobe": 2,
     "of their clothing": 1,
     "of their garments": 1,
-    "on his clothes": 1,
+    "on his clothes": 2,
     "on the garments": 2,
     "or raiment": 1,
     "our clothes": 1,
@@ -120169,6 +120993,7 @@ export const all_socu = {
   "H907": {
     "but his lies": 1,
     "but it shall not be so his lies": 1,
+    "his parts": 1,
     "is upon the liars": 1,
     "of the liars": 1,
     "should thy lies": 1
@@ -120297,7 +121122,7 @@ export const all_socu = {
     "and make them afraid": 1,
     "and they shall be afraid": 1,
     "and they thrust him out": 1,
-    "and troubled": 1,
+    "and troubled": 2,
     "and vex": 1,
     "are affrighted": 1,
     "are vexed": 1,
@@ -120308,6 +121133,7 @@ export const all_socu = {
     "even a speedy": 1,
     "him for they were troubled": 1,
     "i am afraid": 1,
+    "may be gotten hastily": 1,
     "me to make haste": 1,
     "of it i was dismayed": 1,
     "shall be amazed": 1,
@@ -120528,16 +121354,16 @@ export const all_socu = {
     "and brought in": 4,
     "and brought it": 1,
     "and broughtest": 2,
-    "and broughtest in": 2,
+    "and broughtest in": 3,
     "and called": 2,
-    "and came": 98,
+    "and came": 99,
     "and came in": 4,
     "and carried": 5,
     "and carry": 4,
-    "and come": 29,
+    "and come": 30,
     "and come in": 2,
     "and come now": 1,
-    "and cometh": 3,
+    "and cometh": 4,
     "and departed": 1,
     "and enter": 3,
     "and entered": 13,
@@ -120565,10 +121391,10 @@ export const all_socu = {
     "and him that followeth": 1,
     "and how oft cometh": 1,
     "and i am come": 2,
-    "and i brought": 4,
+    "and i brought": 5,
     "and i came": 2,
     "and i shall bring": 1,
-    "and i will bring": 17,
+    "and i will bring": 18,
     "and i will come": 1,
     "and if he bring": 2,
     "and if he come": 1,
@@ -120620,12 +121446,12 @@ export const all_socu = {
     "and there came": 20,
     "and these went": 1,
     "and they brought": 17,
-    "and they came": 45,
+    "and they came": 47,
     "and they came in": 1,
     "and they came thither": 1,
     "and they came to pass": 1,
     "and they come": 1,
-    "and they entered": 5,
+    "and they entered": 6,
     "and they have brought": 1,
     "and they shall bring": 4,
     "and they shall come": 12,
@@ -120660,7 +121486,7 @@ export const all_socu = {
     "and went in": 6,
     "and were come": 1,
     "and when he came": 11,
-    "and when he cometh": 1,
+    "and when he cometh": 2,
     "and when he was come": 3,
     "and when he was come in": 2,
     "and when he went in": 4,
@@ -120690,7 +121516,7 @@ export const all_socu = {
     "and ye brought": 2,
     "and ye came": 1,
     "apply": 1,
-    "are come": 19,
+    "are come": 20,
     "are come to pass": 1,
     "are we brought in": 2,
     "are we come": 1,
@@ -120700,7 +121526,7 @@ export const all_socu = {
     "as men come": 1,
     "as men go": 1,
     "as one entereth": 1,
-    "as one goeth": 2,
+    "as one goeth": 3,
     "as she came in": 2,
     "as soon as ye be come": 2,
     "as thou comest": 3,
@@ -120725,7 +121551,7 @@ export const all_socu = {
     "behold he cometh": 1,
     "behold i am bringing": 1,
     "behold i even i will bring": 1,
-    "behold i will bring": 13,
+    "behold i will bring": 16,
     "behold is come": 1,
     "behold it cometh": 2,
     "behold it is come": 2,
@@ -120767,7 +121593,7 @@ export const all_socu = {
     "by coming": 2,
     "by entering": 2,
     "by which thou camest": 2,
-    "came": 296,
+    "came": 297,
     "came again": 1,
     "came in": 9,
     "camest": 1,
@@ -120901,7 +121727,7 @@ export const all_socu = {
     "him i have brought": 1,
     "him lest he will come": 1,
     "him or went": 1,
-    "him that cometh": 1,
+    "him that cometh": 2,
     "him that he may come": 1,
     "him that i might come": 1,
     "him to go in": 2,
@@ -120947,7 +121773,7 @@ export const all_socu = {
     "is coming": 1,
     "is down": 3,
     "is fallen": 1,
-    "is gone": 1,
+    "is gone": 2,
     "is it that ye are come": 2,
     "is not come": 1,
     "is sold": 1,
@@ -120989,7 +121815,7 @@ export const all_socu = {
     "me and have brought": 1,
     "me and they brought": 1,
     "me behold i come": 1,
-    "me i will not bring": 2,
+    "me i will not bring": 3,
     "me let them bring": 1,
     "me that thou mayest come in": 2,
     "me thyself for why shouldest thou bring": 2,
@@ -121124,7 +121950,7 @@ export const all_socu = {
     "soever shall come": 1,
     "surely i will not come": 1,
     "surely to pass": 2,
-    "take": 1,
+    "take": 2,
     "than thou art to bring": 1,
     "that are come": 4,
     "that are gone": 1,
@@ -121219,7 +122045,7 @@ export const all_socu = {
     "them and which may go in": 2,
     "them but went not in": 2,
     "them every one that entereth": 1,
-    "them from thence and will bring": 1,
+    "them from thence and will bring": 2,
     "them not for behold i will bring": 1,
     "them not to enter": 1,
     "them that come": 1,
@@ -121408,7 +122234,7 @@ export const all_socu = {
     "was besieged": 2,
     "was brought": 3,
     "was brought in": 1,
-    "was come": 29,
+    "was come": 30,
     "was down": 1,
     "was entered": 1,
     "was going down": 1,
@@ -121416,7 +122242,7 @@ export const all_socu = {
     "was laid": 1,
     "was not brought": 1,
     "was set": 1,
-    "was the entry": 1,
+    "was the entry": 2,
     "was upon me and brought": 1,
     "we be come": 1,
     "we came": 5,
@@ -121517,7 +122343,7 @@ export const all_socu = {
     "will bring": 2,
     "will come": 4,
     "will enter": 1,
-    "will i bring": 6,
+    "will i bring": 7,
     "will i go": 1,
     "will they come": 3,
     "with all that he had and came": 1,
@@ -121556,6 +122382,7 @@ export const all_socu = {
     "despise": 1,
     "despiseth": 1,
     "for he will despise": 1,
+    "for who hath despised": 1,
     "he that despiseth": 1,
     "it would utterly": 2,
     "men do not despise": 1,
@@ -121650,7 +122477,7 @@ export const all_socu = {
     "and in pits": 1,
     "and in the dungeon": 2,
     "and the pit": 2,
-    "as a fountain": 1,
+    "as a fountain": 2,
     "at the cistern": 1,
     "dungeon": 1,
     "from the well": 1,
@@ -121677,7 +122504,7 @@ export const all_socu = {
     "pit": 3,
     "that was in the dungeon": 1,
     "them at the pit": 1,
-    "to the pit": 8,
+    "to the pit": 9,
     "unto the pit": 2,
     "was not in the pit": 2,
     "well": 1,
@@ -121785,6 +122612,7 @@ export const all_socu = {
     "shall be a booty": 1,
     "should be a prey": 3,
     "the prey": 2,
+    "thee for a spoil": 1,
     "they are for a prey": 1,
     "to the spoil": 2,
     "which became a prey": 1
@@ -121943,7 +122771,7 @@ export const all_socu = {
     "your young men": 2
   },
   "H971": {
-    "the towers": 1
+    "the towers": 2
   },
   "H972": {
     "and his chosen": 1,
@@ -121993,6 +122821,7 @@ export const all_socu = {
   },
   "H977": {
     "against yourselves that ye have chosen": 1,
+    "all the chosen": 1,
     "and choose": 4,
     "and chose": 4,
     "and did choose": 1,
@@ -122007,12 +122836,14 @@ export const all_socu = {
     "and will yet choose": 1,
     "but chose": 1,
     "but i have chosen": 2,
+    "choice": 1,
     "choose": 3,
     "choose us out": 1,
     "chooseth": 2,
     "chose": 5,
     "chose out": 1,
-    "chosen": 7,
+    "chosen": 15,
+    "chosen men": 1,
     "did choose": 1,
     "doth choose": 1,
     "excellent": 1,
@@ -122020,11 +122851,12 @@ export const all_socu = {
     "for i have chosen": 2,
     "for now have i chosen": 1,
     "for this hast thou chosen": 1,
+    "from her and who is a chosen": 1,
     "had chosen": 1,
-    "hath chosen": 12,
+    "hath chosen": 13,
     "hath not chosen": 1,
-    "he chose": 2,
-    "he chose out": 1,
+    "he chose": 3,
+    "he chose out": 2,
     "he hath chosen": 1,
     "he shall choose": 1,
     "him and choose out": 1,
@@ -122044,7 +122876,7 @@ export const all_socu = {
     "might be there and have chosen": 2,
     "might be there neither chose": 2,
     "might be therein but i chose": 2,
-    "of all the choice": 2,
+    "of all the choice": 4,
     "of all which they chose": 1,
     "or whether thou choose": 1,
     "rather than choice": 1,
@@ -122072,7 +122904,7 @@ export const all_socu = {
     "which chose": 1,
     "which he shall choose": 4,
     "which he should choose": 1,
-    "which i have chosen": 4,
+    "which i have chosen": 5,
     "which thou hast chosen": 5,
     "which ye have chosen": 1,
     "which ye shall have chosen": 1,
@@ -122379,6 +123211,7 @@ export const all_socu = {
     "hast thou perceived": 1,
     "have ye not understood": 1,
     "he considereth": 1,
+    "he directeth": 1,
     "he instructed": 1,
     "i discerned": 1,
     "i get understanding": 1,
@@ -122427,7 +123260,7 @@ export const all_socu = {
     "that i may discern": 1,
     "that i understood": 1,
     "that may understand": 1,
-    "that taught": 2,
+    "that taught": 3,
     "the teacher": 1,
     "thee all this there is none so discreet": 1,
     "then shalt thou understand": 2,
@@ -122484,7 +123317,7 @@ export const all_socu = {
     "within": 1
   },
   "H997": {
-    "among": 1,
+    "among": 2,
     "of it between": 1
   },
   "H998": {

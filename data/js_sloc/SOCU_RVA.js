@@ -88,7 +88,7 @@ export const all_socu = {
     "ni tus abuelos": 3,
     "no tenía padre": 2,
     "nuestro padre": 1,
-    "padre": 274,
+    "padre": 275,
     "padres": 109,
     "para mi padre": 2,
     "para su padre": 2,
@@ -243,7 +243,7 @@ export const all_socu = {
     "de familias": 4,
     "de fortaleza": 1,
     "de gad según las casas": 2,
-    "de la casa": 459,
+    "de la casa": 458,
     "de la cárcel": 3,
     "de la delantera de la casa": 1,
     "de la familia": 5,
@@ -260,7 +260,7 @@ export const all_socu = {
     "de mí y de la casa": 1,
     "de que la casa": 1,
     "de su beneficencia hacia la casa": 1,
-    "de su casa": 42,
+    "de su casa": 38,
     "de su familia": 1,
     "de sus casas": 1,
     "de sus familias": 1,
@@ -295,12 +295,12 @@ export const all_socu = {
     "ello de la casa": 2,
     "ellos según las casas": 1,
     "en aquella casa": 2,
-    "en casa": 77,
+    "en casa": 76,
     "en casas": 2,
     "en cárceles": 1,
     "en edificios": 1,
     "en el palacio": 1,
-    "en el templo": 32,
+    "en el templo": 31,
     "en esta casa": 7,
     "en familia": 2,
     "en la casa": 174,
@@ -372,7 +372,7 @@ export const all_socu = {
     "hay en tu casa": 1,
     "junto á la casa": 1,
     "junto á mi casa": 1,
-    "la casa": 387,
+    "la casa": 386,
     "la casa de la cárcel": 4,
     "la cámara": 1,
     "la cárcel": 1,
@@ -492,7 +492,7 @@ export const all_socu = {
     "suyos para meter": 1,
     "también casas": 1,
     "también la casa": 2,
-    "también los de la casa": 2,
+    "también los de la casa": 1,
     "también á esta casa": 1,
     "templo": 1,
     "tendrá él de su casa": 1,
@@ -574,11 +574,11 @@ export const all_socu = {
     "yo en la casa": 1,
     "yo he limpiado la casa": 1,
     "á bien y bendice la casa": 2,
-    "á casa": 31,
+    "á casa": 30,
     "á ellos y á sus casas": 2,
     "á esta casa": 4,
     "á fuego tu casa": 1,
-    "á la casa": 132,
+    "á la casa": 131,
     "á la familia": 3,
     "á la manera que la casa": 1,
     "á las encrucijadas": 1,
@@ -586,11 +586,10 @@ export const all_socu = {
     "á mi casa": 1,
     "á reconocer la casa": 3,
     "á reverdecer en aquella casa": 2,
-    "á su casa": 57,
+    "á su casa": 54,
     "á su familia": 2,
     "á ti y á tu casa": 1,
     "á tu casa": 6,
-    "á una casa": 1,
     "él te quiere hacer casa": 1
   },
   "H1005": {
@@ -617,6 +616,9 @@ export const all_socu = {
     "á la sala": 1,
     "á su casa": 1,
     "él y su casa": 2
+  },
+  "H1006": {
+    "á bayith": 1
   },
   "H1007": {
     "de beth aven": 6,
@@ -650,7 +652,7 @@ export const all_socu = {
     "subieron á beth el": 2,
     "también en beth el": 4,
     "teniendo á bethel": 4,
-    "y beth el": 11,
+    "y beth el": 10,
     "y de beth el": 2,
     "y en beth el": 2,
     "y hacia el": 2,
@@ -669,28 +671,28 @@ export const all_socu = {
     "en tazones": 1
   },
   "H1010": {
-    "beth meon": 3,
+    "beth meon": 2,
     "meón": 3
   },
   "H1011": {
-    "y en beth birai": 3
+    "y en beth birai": 2
   },
   "H1012": {
     "beth bara": 4,
     "y tomadles las aguas hasta beth bara": 4
   },
   "H1013": {
-    "de beth gader": 3
+    "de beth gader": 2
   },
   "H1014": {
-    "beth gamul": 3
+    "beth gamul": 2
   },
   "H1015": {
     "beth diblathaim": 2
   },
   "H1016": {
     "beth dagón": 2,
-    "á beth dagón": 3
+    "á beth dagón": 2
   },
   "H1018": {
     "de beth esel": 2
@@ -702,20 +704,20 @@ export const all_socu = {
   "H1020": {
     "de beth jesimoth": 4,
     "desde beth jesimoth": 2,
-    "y beth jesimoth": 3
+    "y beth jesimoth": 2
   },
   "H1022": {
     "de beth lehem": 8
   },
   "H1024": {
     "beth marchâboth": 2,
-    "y en beth marchâboth": 3
+    "y en beth marchâboth": 2
   },
   "H1025": {
-    "á beth emec": 3
+    "á beth emec": 2
   },
   "H1026": {
-    "beth araba": 5,
+    "beth araba": 4,
     "á beth araba": 2
   },
   "H1027": {
@@ -748,9 +750,9 @@ export const all_socu = {
     "beth lebaoth": 2
   },
   "H1035": {
-    "beth lehem": 7,
+    "beth lehem": 6,
     "bethlehem": 2,
-    "de beth lehem": 39,
+    "de beth lehem": 38,
     "de la cisterna de beth lehem": 2,
     "en beth lehem": 6,
     "es beth lehem": 2,
@@ -767,7 +769,7 @@ export const all_socu = {
   },
   "H1039": {
     "y beth nimra": 2,
-    "y á beth nimra": 3
+    "y á beth nimra": 2
   },
   "H104": {
     "de la carta": 1,
@@ -778,9 +780,9 @@ export const all_socu = {
     "de beth azmaveth": 2
   },
   "H1043": {
-    "en beth anath": 6,
-    "y beth anath": 3,
-    "y los moradores de beth anath": 6
+    "en beth anath": 4,
+    "y beth anath": 2,
+    "y los moradores de beth anath": 4
   },
   "H1044": {
     "de esquileo": 2
@@ -792,7 +794,7 @@ export const all_socu = {
   "H1047": {
     "de beth peor": 4,
     "de bethpeor": 2,
-    "y beth peor": 3
+    "y beth peor": 2
   },
   "H1048": {
     "y beth passes": 2
@@ -822,10 +824,10 @@ export const all_socu = {
     "á beth san": 2
   },
   "H1053": {
-    "de beth semes": 19,
+    "de beth semes": 18,
     "dios á los de beth semes": 2,
-    "en beth semes": 13,
-    "y beth semes": 5,
+    "en beth semes": 12,
+    "y beth semes": 4,
     "y en beth semes": 2,
     "y los de beth semes": 2,
     "y á beth semes": 4,
@@ -930,7 +932,7 @@ export const all_socu = {
     "por primogénito": 2,
     "primogénito": 60,
     "primogénitos": 1,
-    "que es el primogénito": 2,
+    "que es el primogénito": 1,
     "su primogénito": 11,
     "tu primogénito": 2,
     "y el primogénito": 3,
@@ -991,7 +993,7 @@ export const all_socu = {
   },
   "H1066": {
     "bochîm": 1,
-    "á bochîm": 2
+    "á bochîm": 1
   },
   "H1067": {
     "de la mayor": 1,
@@ -1001,6 +1003,7 @@ export const all_socu = {
   },
   "H1069": {
     "como de primeriza": 1,
+    "dar el derecho de primogenitura": 1,
     "madurará": 1,
     "por la primogenitura": 1
   },
@@ -1174,7 +1177,7 @@ export const all_socu = {
     "á su pasto": 1
   },
   "H1099": {
-    "nada": 1
+    "nada": 2
   },
   "H11": {
     "de él y el infierno": 1,
@@ -1240,7 +1243,7 @@ export const all_socu = {
     "tragado": 1,
     "tragará": 1,
     "trague": 1,
-    "tragóme": 1,
+    "tragóme": 2,
     "y así me deshaces": 1,
     "y los tragare": 1,
     "y tragó": 2,
@@ -1291,6 +1294,9 @@ export const all_socu = {
     "y balaam": 9,
     "y á bilam": 1,
     "á balaam": 22
+  },
+  "H111": {
+    "adad": 1
   },
   "H1110": {
     "y despedazada": 1,
@@ -1354,7 +1360,7 @@ export const all_socu = {
     "eso los altos": 7,
     "esta junta al alto": 1,
     "estaban entonces en el alto": 1,
-    "las alturas": 3,
+    "las alturas": 4,
     "los altares": 2,
     "los altos": 17,
     "lugares altos": 1,
@@ -1381,12 +1387,15 @@ export const all_socu = {
   "H1118": {
     "bimhal": 1
   },
+  "H1119": {
+    "con aguas": 1
+  },
   "H112": {
     "á iddo": 4
   },
   "H1120": {
-    "y bamoth baal": 3,
-    "y beth baal": 3,
+    "y bamoth baal": 2,
+    "y beth baal": 2,
     "y de bamoth": 1,
     "á bamoth": 1,
     "á los altos de baal": 2
@@ -1419,7 +1428,7 @@ export const all_socu = {
     "azarías hijo": 2,
     "bajo la mano de los hijos": 1,
     "balac hijo": 1,
-    "benjamita": 4,
+    "benjamita": 3,
     "benno": 2,
     "bienaventurados serán sus hijos": 1,
     "bucci su hijo": 3,
@@ -1474,7 +1483,7 @@ export const all_socu = {
     "de la vacada": 1,
     "de las inmundicias de los hijos": 1,
     "de lo hijos": 1,
-    "de los ammonitas": 8,
+    "de los ammonitas": 7,
     "de los hijos": 706,
     "de los hombres": 1,
     "de los más valientes": 1,
@@ -1511,7 +1520,7 @@ export const all_socu = {
     "de éste era rehabía hijo": 5,
     "decir como los hijos": 4,
     "del cual fué hijo": 5,
-    "del hijo": 18,
+    "del hijo": 19,
     "del los hijos": 1,
     "del mismo modo en orden á los hijos": 1,
     "del que fué hijo": 3,
@@ -1530,9 +1539,9 @@ export const all_socu = {
     "echaron los hijos": 2,
     "el": 3,
     "el becerro": 2,
-    "el cual tenía cerrada la mano derecha y los hijos": 4,
+    "el cual tenía cerrada la mano derecha y los hijos": 3,
     "el de edad": 8,
-    "el hijo": 44,
+    "el hijo": 43,
     "el más pequeño hijo": 2,
     "el natural entre los hijos": 1,
     "el pueblo": 1,
@@ -1621,8 +1630,8 @@ export const all_socu = {
     "heredero uno nacido": 1,
     "hiciere y el hijo": 1,
     "hiciesen la partición de la herencia á los hijos": 1,
-    "hijo": 3112,
-    "hijos": 462,
+    "hijo": 3099,
+    "hijos": 463,
     "hijos de iniquidad": 2,
     "hizo llegar los hijos": 1,
     "hizo llegar luego los hijos": 1,
@@ -1668,7 +1677,7 @@ export const all_socu = {
     "luego joiada al hijo": 1,
     "luego los hijos": 2,
     "mas los": 3,
-    "mas los hijos": 20,
+    "mas los hijos": 21,
     "mas á los hijos": 1,
     "me mudo y así vosotros hijos": 1,
     "mereciere ser azotado": 1,
@@ -1784,9 +1793,9 @@ export const all_socu = {
     "son mis hijos": 1,
     "son sus hijos": 1,
     "soy hijo": 3,
-    "su hijo": 351,
+    "su hijo": 352,
     "sus becerros": 1,
-    "sus hijos": 89,
+    "sus hijos": 90,
     "sí y los hijos": 1,
     "también hijo": 1,
     "también los hijos": 7,
@@ -1809,7 +1818,7 @@ export const all_socu = {
     "tuyo y de tus hijos": 1,
     "tú hijo": 5,
     "un becerro": 1,
-    "un hijo": 50,
+    "un hijo": 49,
     "un novillo": 2,
     "una noche": 2,
     "valientes": 2,
@@ -1849,7 +1858,7 @@ export const all_socu = {
     "y fueron los términos de los hijos": 2,
     "y habían combatido los hijos": 1,
     "y harás llegar sus hijos": 1,
-    "y herimos á él y á sus hijos": 1,
+    "y herimos á él y á sus hijos": 2,
     "y hon hijo": 6,
     "y jaazías hijo": 2,
     "y los": 1,
@@ -1909,7 +1918,7 @@ export const all_socu = {
     "á mi hijo": 14,
     "á nosotros y á nuestros hijos": 1,
     "á su hijo": 16,
-    "á sus hijos": 33,
+    "á sus hijos": 34,
     "á thibni hijo": 2,
     "á ti tus hijos": 1,
     "á ti y á tus hijos": 5,
@@ -1946,7 +1955,7 @@ export const all_socu = {
     "fuese edificada": 1,
     "para edificar": 2,
     "se edifica": 2,
-    "y edifican": 2,
+    "y edifican": 1,
     "y reedificamos": 3,
     "yo edifiqué": 1
   },
@@ -2085,6 +2094,7 @@ export const all_socu = {
     "que él comenzó á edificar": 1,
     "reedificadas": 1,
     "reedificó": 7,
+    "reparó": 1,
     "restauró": 1,
     "ruinas y edificarélo": 1,
     "salomón le había edificado": 2,
@@ -2148,7 +2158,7 @@ export const all_socu = {
     "y yo le edificaré": 1,
     "y él reedificó": 1,
     "yo edifiqué": 2,
-    "yo he edificado": 4,
+    "yo he edificado": 5,
     "yo te edificaré": 1,
     "á edificar": 6,
     "á los maestros": 1,
@@ -2176,7 +2186,8 @@ export const all_socu = {
     "de sus señores": 2,
     "de tu señor": 14,
     "de vuestro señor": 6,
-    "del señor": 3,
+    "del señor": 4,
+    "del señoreador": 1,
     "donde mi señor": 3,
     "el señor": 6,
     "encubriremos á nuestro señor": 3,
@@ -2212,7 +2223,7 @@ export const all_socu = {
     "señor": 98,
     "señores": 1,
     "siendo también mi señor": 1,
-    "su señor": 11,
+    "su señor": 12,
     "sus señores": 3,
     "tal su señor": 1,
     "tienen señor": 2,
@@ -2241,7 +2252,7 @@ export const all_socu = {
     "ó que mi señor": 3
   },
   "H1130": {
-    "ben adad": 23,
+    "ben adad": 22,
     "de ben adad": 6,
     "de ben hadad": 2,
     "de benhadad": 2,
@@ -2273,7 +2284,7 @@ export const all_socu = {
   "H1137": {
     "bani": 6,
     "de bani": 7,
-    "y bani": 3
+    "y bani": 4
   },
   "H1138": {
     "buni": 1,
@@ -2309,7 +2320,7 @@ export const all_socu = {
   "H1144": {
     "así envolvieron á los de benjamín": 1,
     "benjamín": 23,
-    "de benjamín": 100,
+    "de benjamín": 99,
     "de los de benjamín": 1,
     "en benjamín": 1,
     "entonces los de benjamín": 1,
@@ -2392,19 +2403,18 @@ export const all_socu = {
     "apelará por": 1,
     "desde": 1,
     "echó sus cerraduras sobre mí": 1,
-    "grandemente": 1,
     "la puerta tras ti": 2,
     "le": 1,
     "mí y por": 3,
     "orando él por": 1,
-    "por": 63,
+    "por": 64,
     "por mí": 1,
     "por sí": 3,
     "que": 3,
     "sí y por": 6,
     "te será echada desde": 1,
     "ti y por": 3,
-    "tras": 4,
+    "tras": 5,
     "tú por": 1,
     "y al que fió á": 1,
     "y aun": 1,
@@ -2456,7 +2466,7 @@ export const all_socu = {
   },
   "H1165": {
     "bestias": 1,
-    "su bestia": 1,
+    "su bestia": 2,
     "sus bestias": 1,
     "vuestras bestias": 1,
     "y sus bestias": 1,
@@ -2466,6 +2476,7 @@ export const all_socu = {
     "beulah": 2,
     "con marido": 1,
     "de la casada": 1,
+    "entrarás á ella y tu serás su marido": 1,
     "marido": 1,
     "moraron": 1,
     "se casa": 2,
@@ -2707,7 +2718,6 @@ export const all_socu = {
     "encendido": 2,
     "encendidos": 1,
     "encienden": 1,
-    "es ignorante": 1,
     "está encendido": 1,
     "habrá sido asolada": 1,
     "habéis devorado": 1,
@@ -2917,6 +2927,9 @@ export const all_socu = {
   "H1207": {
     "y de los lugares húmedos": 1
   },
+  "H1208": {
+    "el fuerte": 1
+  },
   "H1209": {
     "besai": 1,
     "de besai": 2
@@ -2925,7 +2938,7 @@ export const all_socu = {
     "adam": 3,
     "como los hombres": 1,
     "cual adam": 1,
-    "de adam": 3,
+    "de adam": 4,
     "vivió adam": 1,
     "y al hombre": 1
   },
@@ -3314,7 +3327,7 @@ export const all_socu = {
     "y la mañana": 6,
     "y levantándose de mañana": 1,
     "y mañana": 3,
-    "y por la mañana": 6,
+    "y por la mañana": 5,
     "y ya que amanecía": 1,
     "y á la mañana": 9,
     "ya desde esta mañana": 1,
@@ -3644,7 +3657,7 @@ export const all_socu = {
     "y de beeroth": 1
   },
   "H1269": {
-    "de birzabith": 1
+    "de birzabith": 2
   },
   "H127": {
     "animal que vaya arrastrando por la tierra": 1,
@@ -3801,7 +3814,7 @@ export const all_socu = {
     "las barras": 8,
     "los cerrojos": 2,
     "que la barra": 1,
-    "sus barras": 3,
+    "sus barras": 4,
     "sus cerrojos": 2,
     "sus fugitivos": 1,
     "también las barras": 1,
@@ -4088,7 +4101,7 @@ export const all_socu = {
   "H1290": {
     "batimiento de rodillas": 1,
     "hasta las rodillas": 1,
-    "las rodillas": 6,
+    "las rodillas": 7,
     "mis rodillas": 3,
     "rodilla": 1,
     "rodillas": 5,
@@ -4152,7 +4165,7 @@ export const all_socu = {
     "híceme estanques": 1
   },
   "H1296": {
-    "berechîas": 2,
+    "berechîas": 1,
     "de berachîas": 1,
     "de berechîas": 5,
     "y berachîas": 1,
@@ -4278,6 +4291,9 @@ export const all_socu = {
   },
   "H1312": {
     "bislam": 1
+  },
+  "H1313": {
+    "y mis aromas": 1
   },
   "H1314": {
     "aromas": 2,
@@ -4483,7 +4499,7 @@ export const all_socu = {
     "cuyos vástagos": 1,
     "da voces de júbilo hija": 2,
     "de agua y las hijas": 1,
-    "de la hija": 27,
+    "de la hija": 28,
     "de las hijas": 26,
     "de los buhos": 1,
     "de mi hija": 2,
@@ -4505,7 +4521,7 @@ export const all_socu = {
     "fué abía hija": 1,
     "fué hija": 1,
     "fué neusta hija": 1,
-    "hija": 171,
+    "hija": 170,
     "hijas": 79,
     "hijas del buho": 1,
     "iban las doncellas": 2,
@@ -4679,7 +4695,6 @@ export const all_socu = {
     "mitad": 2
   },
   "H1335": {
-    "de bether": 1,
     "las partes": 1,
     "partes": 1,
     "partió": 1,
@@ -4913,7 +4928,7 @@ export const all_socu = {
     "y vuestros cuerpos": 2
   },
   "H1355": {
-    "sus espaldas": 1
+    "sus espaldas": 2
   },
   "H1356": {
     "con artesonados": 1,
@@ -4970,7 +4985,7 @@ export const all_socu = {
     "que vino algo que el señor": 1,
     "respondió señor": 1,
     "será á jehová": 2,
-    "señor": 57,
+    "señor": 56,
     "señoreador": 1,
     "soy el señor": 4,
     "soy jehová": 1,
@@ -5224,8 +5239,8 @@ export const all_socu = {
     "tus fuertes": 1,
     "valeroso": 1,
     "valerosos": 2,
-    "valiente": 6,
-    "valientes": 15,
+    "valiente": 5,
+    "valientes": 16,
     "varón esforzado": 1,
     "vigoroso": 4,
     "y como valiente": 1,
@@ -5248,7 +5263,7 @@ export const all_socu = {
     "cuando nace en su fuerza": 1,
     "de fuerza": 1,
     "de su fortaleza": 1,
-    "de sus fortalezas": 1,
+    "de sus fortalezas": 2,
     "de tu fortaleza": 1,
     "de valentía": 1,
     "en fortaleza": 1,
@@ -5462,7 +5477,7 @@ export const all_socu = {
   },
   "H1393": {
     "de los gabaonitas": 1,
-    "gabaonita": 2,
+    "gabaonita": 1,
     "los gabaonitas": 2,
     "y los gabaonitas": 1,
     "á los gabaonitas": 4
@@ -5613,7 +5628,7 @@ export const all_socu = {
     "los terrados": 1,
     "piso alto": 1,
     "por el terrado": 2,
-    "que estaba en el terrado": 1,
+    "que estaba en el terrado": 2,
     "sobre los terrados": 1,
     "su techado": 1,
     "su terrado": 1,
@@ -5626,10 +5641,12 @@ export const all_socu = {
   "H1407": {
     "de culantro": 2
   },
-  "H1409": {
-    "gad": 1,
-    "la ventura": 1,
+  "H1408": {
     "para la fortuna": 1
+  },
+  "H1409": {
+    "gad": 2,
+    "la ventura": 2
   },
   "H141": {
     "y adoniram": 2
@@ -5700,9 +5717,6 @@ export const all_socu = {
     "y tropas": 12,
     "á esa gente": 2
   },
-  "H1417": {
-    "sus canales": 1
-  },
   "H1419": {
     "acá una grande": 1,
     "al sumo": 1,
@@ -5751,6 +5765,7 @@ export const all_socu = {
     "del gran": 7,
     "del grande": 1,
     "desde el mayor": 5,
+    "el de grande": 1,
     "el gran": 17,
     "el grande": 3,
     "el mayor": 7,
@@ -5868,6 +5883,7 @@ export const all_socu = {
     "y había una gran": 1,
     "y has traído grandes": 1,
     "y he aquí un gran": 1,
+    "y la gran": 1,
     "y la mortandad era grande": 1,
     "y las grandes": 2,
     "y mayor": 2,
@@ -5896,7 +5912,7 @@ export const all_socu = {
     "la magnificencia": 1,
     "mi grandeza": 1,
     "por vosotros oh israel grandes": 1,
-    "tu grandeza": 1,
+    "tu grandeza": 2,
     "tus grandezas": 2,
     "y de su valor y la declaración de la grandeza": 1,
     "y su grandeza": 1,
@@ -5935,6 +5951,9 @@ export const all_socu = {
   },
   "H1427": {
     "gaddiel": 1
+  },
+  "H1428": {
+    "riberas": 1
   },
   "H1429": {
     "cabritas": 1
@@ -5987,7 +6006,7 @@ export const all_socu = {
     "mi": 2,
     "no aumentaste": 1,
     "pequeño el cual creció": 1,
-    "poderoso": 3,
+    "poderoso": 2,
     "pues crió": 1,
     "pues y sea engrandecido": 1,
     "que crecido": 1,
@@ -6000,7 +6019,7 @@ export const all_socu = {
     "que sea magnificada": 1,
     "se alzó": 1,
     "se engrandecerá": 2,
-    "se engrandeció": 6,
+    "se engrandeció": 5,
     "se engrandezca": 1,
     "se ensoberbecerá": 1,
     "se ha engrandecido": 1,
@@ -6177,7 +6196,6 @@ export const all_socu = {
     "á una majada": 1
   },
   "H1449": {
-    "y cercados": 1,
     "y gedera": 1
   },
   "H145": {
@@ -6189,7 +6207,7 @@ export const all_socu = {
     "y gederoh": 1
   },
   "H1451": {
-    "gederita": 3
+    "gederita": 1
   },
   "H1452": {
     "gederathita": 1
@@ -6285,7 +6303,7 @@ export const all_socu = {
     "de entre las gentes": 1,
     "de estas gentes": 2,
     "de gente": 5,
-    "de gentes": 16,
+    "de gentes": 17,
     "de la gente": 1,
     "de las gentes": 72,
     "de las naciones": 5,
@@ -6310,7 +6328,7 @@ export const all_socu = {
     "en desierto entre las gentes": 1,
     "en gente": 1,
     "en gentes": 1,
-    "en las gentes": 5,
+    "en las gentes": 6,
     "en las naciones": 3,
     "en los pueblos": 1,
     "en sus naciones": 6,
@@ -6329,8 +6347,8 @@ export const all_socu = {
     "están entre las gentes": 1,
     "fuertes gentes": 3,
     "fué habitada": 1,
-    "gente": 53,
-    "gentes": 46,
+    "gente": 54,
+    "gentes": 48,
     "han destruído las gentes": 1,
     "han en él las gentes": 1,
     "he de ser entre las gentes": 1,
@@ -6339,15 +6357,15 @@ export const all_socu = {
     "la gentes": 1,
     "la nación": 2,
     "la tal gente": 2,
-    "las gentes": 139,
+    "las gentes": 140,
     "las islas de las gentes": 1,
     "las naciones": 9,
-    "los hijos á tus gentes": 3,
+    "los hijos á tus gentes": 5,
     "los que quedaren de las gentes": 1,
     "mandaréle contra una gente": 1,
     "mas cada nación": 4,
     "mas la gente": 1,
-    "matarás": 1,
+    "matarás": 2,
     "naciones": 9,
     "nación": 8,
     "ni en nación": 1,
@@ -6437,7 +6455,6 @@ export const all_socu = {
     "los de la cautividad": 1,
     "los trasportados": 5,
     "los venidos de la cautividad": 1,
-    "peregrina": 1,
     "vosotros en cautiverio": 1,
     "y llevó en cautiverio": 1,
     "y pártete": 1,
@@ -6447,7 +6464,7 @@ export const all_socu = {
   },
   "H1474": {
     "y á golán": 1,
-    "á gaulón": 1,
+    "á gaulón": 2,
     "á golan": 1
   },
   "H1476": {
@@ -6582,7 +6599,7 @@ export const all_socu = {
     "á la suerte": 1
   },
   "H1487": {
-    "y de costras": 1
+    "y de costras": 2
   },
   "H1488": {
     "de la lana": 1,
@@ -6650,8 +6667,9 @@ export const all_socu = {
     "quitan": 2,
     "quitarías": 1,
     "roban": 1,
+    "robes": 1,
     "robos": 1,
-    "robó": 3,
+    "robó": 2,
     "será arrebatado": 1,
     "violentamente": 1,
     "y arrebató": 2,
@@ -6745,7 +6763,7 @@ export const all_socu = {
     "y la sentencia": 1
   },
   "H1511": {
-    "y en los gerzeos": 1
+    "y en los gerzeos": 2
   },
   "H1512": {
     "el pecho": 1,
@@ -6849,7 +6867,7 @@ export const all_socu = {
     "se alegre": 1,
     "se gocen": 1,
     "se gozaron": 1,
-    "se gozará": 4,
+    "se gozará": 5,
     "se gozarán": 2,
     "se regocijará": 1,
     "y alegraos": 1,
@@ -7319,7 +7337,7 @@ export const all_socu = {
     "amaste": 4,
     "ames": 2,
     "amigo": 2,
-    "amo": 8,
+    "amo": 9,
     "amáis": 1,
     "amé": 1,
     "améis": 2,
@@ -7403,7 +7421,7 @@ export const all_socu = {
     "y amé": 3,
     "y amó": 3,
     "y amóla": 2,
-    "y amólo": 1,
+    "y amólo": 2,
     "y el que ama": 2,
     "y el que la ama": 1,
     "y helos amado": 1,
@@ -7419,7 +7437,7 @@ export const all_socu = {
     "yo lo amé": 1,
     "yo os he amado": 3,
     "á los que le aman": 1,
-    "á los que me aman": 4,
+    "á los que me aman": 5,
     "á los que te aman": 2,
     "á mis amadores": 1,
     "á quien amas": 1,
@@ -7439,7 +7457,7 @@ export const all_socu = {
     "así": 11,
     "así aun": 1,
     "así también": 1,
-    "aun": 39,
+    "aun": 40,
     "aun mientras": 3,
     "aunque": 1,
     "aún": 4,
@@ -7449,7 +7467,7 @@ export const all_socu = {
     "cierto": 1,
     "codicia y aun": 1,
     "coja también": 1,
-    "como": 14,
+    "como": 15,
     "con": 1,
     "contra ti aun": 3,
     "cosas ha": 1,
@@ -7525,7 +7543,7 @@ export const all_socu = {
     "rebelóse": 1,
     "se servirán también": 1,
     "sino que también": 2,
-    "son fingidos aun": 2,
+    "son fingidos aun": 3,
     "su carrera aun": 1,
     "sí": 5,
     "también": 277,
@@ -7537,7 +7555,7 @@ export const all_socu = {
     "tenían también": 1,
     "ti sí": 1,
     "tiene luego": 1,
-    "y": 46,
+    "y": 47,
     "y además": 3,
     "y asimismo": 1,
     "y aun": 38,
@@ -7561,7 +7579,7 @@ export const all_socu = {
     "y quitemos también": 1,
     "y será también": 2,
     "y si tomareis también": 1,
-    "y también": 83,
+    "y también": 84,
     "y también esto": 1,
     "y tampoco": 2,
     "y ya": 1,
@@ -7766,6 +7784,7 @@ export const all_socu = {
     "del ladrón": 1,
     "el ladrón": 4,
     "el tal ladrón": 1,
+    "entre ladrones": 1,
     "ladrones": 2,
     "ladrón": 1,
     "y fuere hurtado": 1,
@@ -7907,18 +7926,18 @@ export const all_socu = {
     "á tu reprensión": 1
   },
   "H1607": {
-    "fueron movidos": 2,
+    "fueron movidos": 3,
     "fué conmovida": 2,
     "se levantarán": 1,
     "se mueven": 2,
     "y se estremecieron": 2,
     "y temblarán": 1,
-    "y tembló": 2,
+    "y tembló": 3,
     "y á media noche se alborotarán": 1
   },
   "H1608": {
     "de gaas": 3,
-    "gaas": 3
+    "gaas": 1
   },
   "H1609": {
     "el duque cora el duque gatam": 1,
@@ -8077,14 +8096,14 @@ export const all_socu = {
   "H1624": {
     "con ellos": 1,
     "contiendas": 1,
-    "de aquél se airarán": 2,
+    "de aquél se airarán": 3,
     "levanta contiendas": 1,
     "os metáis": 1,
     "provocaste": 1,
     "se moverá": 1,
     "te empeñes": 1,
     "te entrometes": 1,
-    "y llegará con ira": 2
+    "y llegará con ira": 3
   },
   "H1625": {
     "de los que rumian": 2,
@@ -8103,6 +8122,7 @@ export const all_socu = {
     "modularán en sus gargantas": 1,
     "su garganta": 1,
     "tu cuello": 1,
+    "y tu garganta": 1,
     "á voz en cuello": 1
   },
   "H1629": {
@@ -8122,7 +8142,7 @@ export const all_socu = {
     "ni hachas": 1
   },
   "H1632": {
-    "el de grande": 2
+    "el de grande": 1
   },
   "H1633": {
     "dejan": 1,
@@ -8320,7 +8340,7 @@ export const all_socu = {
   },
   "H1655": {
     "se enseñoreó de sus cuerpos": 1,
-    "sus cuerpos": 1,
+    "sus cuerpos": 2,
     "y su cuerpo": 3
   },
   "H1656": {
@@ -8367,7 +8387,7 @@ export const all_socu = {
     "que fué de gath hepher": 2
   },
   "H1663": {
-    "getheo": 9,
+    "getheo": 8,
     "getheos": 1,
     "los getheos": 1
   },
@@ -8419,9 +8439,9 @@ export const all_socu = {
   },
   "H1673": {
     "del cual era doeg": 1,
-    "doeg": 4,
+    "doeg": 7,
     "entonces doeg": 1,
-    "á doeg": 2
+    "á doeg": 4
   },
   "H1674": {
     "con temor": 1,
@@ -8512,7 +8532,7 @@ export const all_socu = {
     "sobre las cabañas": 1,
     "sola cubierta": 1,
     "son tus tiendas": 1,
-    "su tienda": 7,
+    "su tienda": 8,
     "sus tiendas": 3,
     "tabernáculo": 19,
     "también al tabernáculo": 1,
@@ -8522,7 +8542,7 @@ export const all_socu = {
     "tiéndelos como una tienda": 1,
     "tu morada": 1,
     "una tienda": 3,
-    "uno á sus estancias": 1,
+    "uno á sus estancias": 2,
     "volveos á vuestras tiendas": 1,
     "y el tabernáculo": 8,
     "y en la tienda": 10,
@@ -8537,7 +8557,7 @@ export const all_socu = {
     "á la tienda": 11,
     "á su estancia": 2,
     "á su tienda": 2,
-    "á sus estancias": 7,
+    "á sus estancias": 8,
     "á sus tiendas": 4,
     "á tu morada": 1,
     "á vuestras tiendas": 2,
@@ -8572,6 +8592,9 @@ export const all_socu = {
   },
   "H1685": {
     "sacrificios": 1
+  },
+  "H1686": {
+    "de un cabo de estiércol": 1
   },
   "H1687": {
     "del oratorio": 1,
@@ -8792,7 +8815,7 @@ export const all_socu = {
     "hablaba": 9,
     "hablaban": 2,
     "hablad": 6,
-    "hablado": 6,
+    "hablado": 5,
     "hablamos": 1,
     "hablan": 8,
     "hablando": 7,
@@ -8801,7 +8824,7 @@ export const all_socu = {
     "hablare": 6,
     "hablaremos": 1,
     "hablaren": 1,
-    "hablares": 4,
+    "hablares": 5,
     "hablarle": 1,
     "hablaron": 11,
     "hablarte": 1,
@@ -8888,7 +8911,7 @@ export const all_socu = {
     "os ha dicho": 1,
     "os hacen desvanecer hablan": 1,
     "palabra": 11,
-    "palabras": 12,
+    "palabras": 13,
     "para decir": 1,
     "para decirlo": 1,
     "para hablar": 8,
@@ -8930,7 +8953,7 @@ export const all_socu = {
     "que habléis": 2,
     "que habló": 2,
     "que habían de hablar": 1,
-    "que has hablado": 2,
+    "que has hablado": 3,
     "que hubiere hablado": 2,
     "que la palabra": 1,
     "que me hablaba": 2,
@@ -9098,7 +9121,7 @@ export const all_socu = {
     "conforme á esto": 6,
     "conforme á la palabra": 31,
     "conforme á tu dicho": 1,
-    "conforme á tu palabra": 4,
+    "conforme á tu palabra": 5,
     "consejo": 2,
     "contaron": 1,
     "contámosle las palabras": 1,
@@ -9136,7 +9159,7 @@ export const all_socu = {
     "de sus razones": 1,
     "de todos los hechos": 2,
     "de tus cosas": 2,
-    "de tus palabras": 3,
+    "de tus palabras": 4,
     "de vuestras palabras": 3,
     "decirles has pues esta palabra": 1,
     "del cual habló": 1,
@@ -9154,7 +9177,7 @@ export const all_socu = {
     "dijeron": 2,
     "diles": 1,
     "díjoles": 1,
-    "el denuncia sus palabras": 1,
+    "el denuncia sus palabras": 2,
     "el discurso": 1,
     "el hablar": 1,
     "el libro": 4,
@@ -9183,7 +9206,7 @@ export const all_socu = {
     "en su palabra": 1,
     "en sus palabras": 2,
     "en ti cosa": 1,
-    "en tu palabra": 4,
+    "en tu palabra": 5,
     "en él alguna cosa": 1,
     "entiende pues la palabra": 2,
     "entonces habló": 1,
@@ -9205,7 +9228,7 @@ export const all_socu = {
     "esta palabra": 21,
     "esta razón": 1,
     "esta tal cosa": 1,
-    "estas cosas": 14,
+    "estas cosas": 15,
     "estas palabras": 45,
     "este dicho": 1,
     "este hecho": 1,
@@ -9237,7 +9260,7 @@ export const all_socu = {
     "hable": 1,
     "hablé": 4,
     "habló": 9,
-    "hablóle": 3,
+    "hablóle": 4,
     "había dicho": 5,
     "hacer otra cosa": 1,
     "hagamos esto": 1,
@@ -9258,7 +9281,7 @@ export const all_socu = {
     "la tarea": 1,
     "las cosas": 7,
     "las crónicas": 10,
-    "las palabras": 123,
+    "las palabras": 124,
     "las razones": 1,
     "le dijo": 1,
     "lo": 10,
@@ -9325,7 +9348,7 @@ export const all_socu = {
     "por esto": 2,
     "por la palabra": 3,
     "por las palabras": 4,
-    "por mandato": 3,
+    "por mandato": 4,
     "por mí esto": 1,
     "por palabra": 9,
     "por respuesta": 2,
@@ -9350,7 +9373,7 @@ export const all_socu = {
     "que son palabras": 1,
     "quien fuere mi palabra": 2,
     "quiere esto": 1,
-    "qué": 1,
+    "qué": 2,
     "ración": 1,
     "razones": 1,
     "responda": 2,
@@ -9360,7 +9383,7 @@ export const all_socu = {
     "se hará conforme á tu palabra": 1,
     "se mofan": 1,
     "según el pacto": 1,
-    "según que había dicho": 1,
+    "según que había dicho": 2,
     "según tu palabra": 1,
     "sobre el negocio": 1,
     "sobre esto": 2,
@@ -9370,7 +9393,7 @@ export const all_socu = {
     "son las palabras": 6,
     "su consejo": 2,
     "su dios y las palabras": 1,
-    "su palabra": 20,
+    "su palabra": 22,
     "su porción": 1,
     "suavizan sus palabras": 1,
     "suerte de palabras": 1,
@@ -9386,7 +9409,7 @@ export const all_socu = {
     "toda palabra": 1,
     "todas las palabras": 1,
     "todo": 5,
-    "tu palabra": 9,
+    "tu palabra": 11,
     "tus cosas": 2,
     "tus palabras": 9,
     "tus órdenes": 1,
@@ -9394,9 +9417,9 @@ export const all_socu = {
     "tú estas palabras": 2,
     "tú hablarás": 1,
     "un negocio": 2,
-    "una cosa": 3,
+    "una cosa": 2,
     "una palabra": 5,
-    "verifíquese tu palabra": 2,
+    "verifíquese tu palabra": 3,
     "vez palabra": 2,
     "vosotros de eso": 1,
     "vosotros palabras": 1,
@@ -9470,7 +9493,7 @@ export const all_socu = {
     "á mí palabra": 3,
     "á palabras": 1,
     "á su dios y las palabras": 3,
-    "á su palabra": 4,
+    "á su palabra": 6,
     "á sus palabras": 1,
     "á ti toca el negocio": 1,
     "á tus palabras": 2,
@@ -9669,6 +9692,9 @@ export const all_socu = {
     "y el oro": 3,
     "y oro": 1
   },
+  "H1723": {
+    "dieveos": 1
+  },
   "H1724": {
     "atónito": 1
   },
@@ -9751,9 +9777,9 @@ export const all_socu = {
     "cuando david": 6,
     "cuanto david": 1,
     "dada á david": 1,
-    "david": 440,
+    "david": 437,
     "de con david": 2,
-    "de david": 315,
+    "de david": 310,
     "de en pos de david": 1,
     "de la estirpe de david": 1,
     "de la parte": 2,
@@ -9780,7 +9806,7 @@ export const all_socu = {
     "estaba david": 1,
     "estaba y como david": 4,
     "esto á david": 2,
-    "está david": 4,
+    "está david": 3,
     "fueron": 1,
     "guardaba á david": 2,
     "guardó á david": 5,
@@ -9849,7 +9875,7 @@ export const all_socu = {
     "y luego que david": 3,
     "y á david": 4,
     "y él mismo presentó á david": 2,
-    "á david": 230,
+    "á david": 228,
     "á la guerra que david": 2,
     "á poner á david": 1,
     "á quienes david": 1,
@@ -9863,7 +9889,7 @@ export const all_socu = {
     "su tía": 1
   },
   "H1734": {
-    "de dodo": 5
+    "de dodo": 6
   },
   "H1735": {
     "de dodava": 1
@@ -9893,7 +9919,7 @@ export const all_socu = {
   },
   "H1740": {
     "lavarán": 1,
-    "y echóme": 1,
+    "y echóme": 2,
     "y limpiar": 1,
     "y limpiare": 1
   },
@@ -9936,7 +9962,7 @@ export const all_socu = {
     "se derritieron como cera": 1
   },
   "H175": {
-    "aarón": 62,
+    "aarón": 61,
     "asimismo á aarón": 1,
     "así y aarón": 1,
     "conforme á su ordenanza bajo el mando de aarón": 1,
@@ -9986,12 +10012,12 @@ export const all_socu = {
   },
   "H1753": {
     "del cual moraban": 1,
-    "habitan": 1,
-    "hacían morada": 1,
-    "lo que habitan": 1,
-    "los moradores": 2,
-    "moran": 1,
-    "y en los habitantes": 2
+    "habitan": 2,
+    "hacían morada": 2,
+    "lo que habitan": 2,
+    "los moradores": 4,
+    "moran": 2,
+    "y en los habitantes": 4
   },
   "H1754": {
     "como á bola": 1
@@ -10029,7 +10055,7 @@ export const all_socu = {
     "oh generación": 1,
     "para generación": 6,
     "para la generación": 1,
-    "para perpetuas generaciones": 2,
+    "para perpetuas generaciones": 3,
     "para que al menos el linaje": 1,
     "para vuestros descendientes": 2,
     "pasados": 1,
@@ -10200,7 +10226,7 @@ export const all_socu = {
     "prestos para que": 4,
     "pues": 5,
     "pues pudiste": 2,
-    "que": 290,
+    "que": 289,
     "que nos": 1,
     "que si": 1,
     "santos está en ti y que": 1,
@@ -10217,6 +10243,7 @@ export const all_socu = {
     "y como": 2,
     "y cuanto á lo que": 4,
     "y de": 7,
+    "y el que": 1,
     "y el señorío y la majestad": 1,
     "y había procurado que": 3,
     "y lo que": 4,
@@ -10278,7 +10305,7 @@ export const all_socu = {
     "tú gobernarás": 1
   },
   "H1778": {
-    "y gobernadores": 1
+    "y gobernadores": 2
   },
   "H1779": {
     "causa": 2,
@@ -10290,7 +10317,7 @@ export const all_socu = {
     "haz juicio": 1,
     "juicio": 1,
     "la causa": 6,
-    "que hay un juicio": 1,
+    "que hay un juicio": 2,
     "tu causa": 1,
     "y causa": 2,
     "y el derecho": 1,
@@ -10342,8 +10369,8 @@ export const all_socu = {
     "y la trilla": 1
   },
   "H1787": {
-    "de disón": 4,
-    "disón": 4,
+    "de disón": 2,
+    "disón": 2,
     "el duque disán": 1,
     "fueron disón": 1,
     "y disán": 2
@@ -10401,7 +10428,7 @@ export const all_socu = {
     "y salvará á los contritos": 1
   },
   "H1794": {
-    "encógese": 1,
+    "encógese": 2,
     "que has abatido": 1,
     "quebrantaste": 1,
     "y humillado": 1,
@@ -10654,7 +10681,7 @@ export const all_socu = {
     "sucia en tus sangres": 3,
     "sus sangres": 1,
     "toda la sangre": 4,
-    "tu sangre": 3,
+    "tu sangre": 4,
     "tus sangres": 2,
     "y con sangre": 1,
     "y con su sangre": 1,
@@ -10684,7 +10711,6 @@ export const all_socu = {
     "él sangre": 1
   },
   "H1819": {
-    "a mujer hermosa": 1,
     "con idea": 1,
     "de la manera que lo he pensado": 1,
     "eres semejante": 1,
@@ -10809,14 +10835,14 @@ export const all_socu = {
     "dimna": 1
   },
   "H183": {
-    "codicies": 2,
+    "codicies": 3,
     "codicioso": 1,
     "de los que desean": 1,
     "desea": 3,
     "deseare": 2,
     "desearás": 1,
-    "desees": 1,
-    "deseó": 4,
+    "desees": 2,
+    "deseó": 5,
     "había en medio tuvo": 1,
     "la he deseado": 1,
     "te he deseado": 1,
@@ -10862,7 +10888,6 @@ export const all_socu = {
     "á damasco": 5
   },
   "H1835": {
-    "asimismo dan": 1,
     "dan": 23,
     "de dan": 51,
     "desde dan": 7,
@@ -10912,11 +10937,11 @@ export const all_socu = {
     "os señalaréis": 1
   },
   "H1840": {
-    "daniel": 25,
+    "daniel": 24,
     "ellos otro como daniel": 1,
     "empero daniel": 1,
     "mas daniel": 1,
-    "que daniel": 1,
+    "que daniel": 2,
     "y daniel": 1,
     "á daniel": 4
   },
@@ -11042,6 +11067,7 @@ export const all_socu = {
     "y á dicla": 1
   },
   "H1854": {
+    "fué reducido": 1,
     "lo quebrantará": 2,
     "se trilla": 2,
     "y los molerás": 1,
@@ -11187,8 +11213,8 @@ export const all_socu = {
     "al camino": 15,
     "alguno de sus caminos": 1,
     "andando en sus caminos": 1,
-    "camino": 106,
-    "caminos": 35,
+    "camino": 107,
+    "caminos": 36,
     "cierto vuestros caminos": 3,
     "conforme á la costumbre": 1,
     "conforme á sus caminos": 6,
@@ -11206,7 +11232,7 @@ export const all_socu = {
     "de su camino": 4,
     "de su mal": 1,
     "de su rumbo": 1,
-    "de sus caminos": 4,
+    "de sus caminos": 5,
     "de tu camino": 1,
     "de tus caminos": 3,
     "de viaje": 1,
@@ -11263,7 +11289,7 @@ export const all_socu = {
     "las calzadas": 1,
     "las cuales miraban hacia": 2,
     "levanta y el camino": 1,
-    "los caminos": 12,
+    "los caminos": 13,
     "los que guardaren mis caminos": 1,
     "marcha": 1,
     "marchó hacia": 4,
@@ -11271,7 +11297,7 @@ export const all_socu = {
     "mas el pervertido en sus caminos": 1,
     "mas el que menospreciare sus caminos": 1,
     "mas la senda": 2,
-    "mi camino": 5,
+    "mi camino": 6,
     "mira hacia": 2,
     "miraba hacia": 2,
     "mis caminos": 11,
@@ -11288,9 +11314,9 @@ export const all_socu = {
     "por": 35,
     "por camino": 5,
     "por donde": 1,
-    "por el camino": 88,
+    "por el camino": 87,
     "por la vía": 3,
-    "por los caminos": 2,
+    "por los caminos": 3,
     "por mis caminos": 2,
     "por su camino": 4,
     "por tu camino": 2,
@@ -11306,7 +11332,7 @@ export const all_socu = {
     "se fué su camino": 1,
     "se le opuso en el camino": 1,
     "según hizo por la vía": 1,
-    "según su camino": 2,
+    "según su camino": 3,
     "según sus caminos": 3,
     "según tus caminos": 2,
     "según vuestros caminos": 1,
@@ -11323,7 +11349,7 @@ export const all_socu = {
     "su camino": 29,
     "su proceder": 1,
     "su viaje": 1,
-    "sus caminos": 17,
+    "sus caminos": 18,
     "sus carreras": 2,
     "sus negocios": 1,
     "tal es el rastro": 1,
@@ -11415,7 +11441,7 @@ export const all_socu = {
     "cuida": 1,
     "cuide": 1,
     "de buscar": 1,
-    "de los que le buscan": 1,
+    "de los que le buscan": 2,
     "de que buscarían": 1,
     "demandaré": 7,
     "en buscar": 3,
@@ -11678,7 +11704,7 @@ export const all_socu = {
     "y abel": 2
   },
   "H1895": {
-    "y defiéndante los contempladores": 1
+    "y defiéndante los contempladores": 2
   },
   "H1896": {
     "de hegai": 5,
@@ -11757,9 +11783,9 @@ export const all_socu = {
     "á mí y mis gobernadores": 1
   },
   "H1908": {
-    "adad": 12,
+    "adad": 11,
     "con el de adad": 1,
-    "era entonces adad": 2,
+    "era entonces adad": 1,
     "á adad": 1
   },
   "H1909": {
@@ -11785,6 +11811,7 @@ export const all_socu = {
     "los necios": 1,
     "mas los necios": 1,
     "necio": 2,
+    "son necios": 1,
     "y como el loco": 1,
     "y el necio": 1
   },
@@ -11963,7 +11990,7 @@ export const all_socu = {
     "cubre": 2,
     "cuya": 1,
     "cuyas": 1,
-    "cuyo": 3,
+    "cuyo": 4,
     "cuyos": 1,
     "de aquel": 3,
     "de aquella": 1,
@@ -12023,7 +12050,7 @@ export const all_socu = {
     "en el": 1,
     "en el cual": 1,
     "en el mismo": 5,
-    "en ella": 16,
+    "en ella": 17,
     "en ello pues": 1,
     "en ese": 1,
     "en la": 5,
@@ -12048,7 +12075,7 @@ export const all_socu = {
     "era éste": 2,
     "eres": 2,
     "eres el mismo": 1,
-    "es": 22,
+    "es": 24,
     "es aquel": 1,
     "es aquél cuyos": 1,
     "es así": 1,
@@ -12109,7 +12136,7 @@ export const all_socu = {
     "hasta": 1,
     "hay otro semejante á él": 2,
     "hay que me": 1,
-    "hubiere y también sus": 1,
+    "hubiere y también sus": 2,
     "inmunda": 2,
     "juzgando él": 1,
     "la": 30,
@@ -12141,7 +12168,7 @@ export const all_socu = {
     "luego": 1,
     "luego ella": 1,
     "lugar y él": 2,
-    "mano": 1,
+    "mano": 2,
     "mano y le": 1,
     "mas ella": 1,
     "mas este": 1,
@@ -12259,7 +12286,7 @@ export const all_socu = {
     "soy el": 1,
     "su": 243,
     "su aspecto bien que": 2,
-    "sus": 95,
+    "sus": 96,
     "sus heces ha estado él": 1,
     "suya": 2,
     "suyo": 3,
@@ -12312,7 +12339,7 @@ export const all_socu = {
     "y el nombre de su": 1,
     "y el que lo": 1,
     "y el uno": 1,
-    "y ella": 19,
+    "y ella": 20,
     "y en aquel": 1,
     "y en el mismo": 1,
     "y en los tales": 1,
@@ -12355,7 +12382,7 @@ export const all_socu = {
     "y si la": 1,
     "y si le": 1,
     "y si él": 1,
-    "y su": 50,
+    "y su": 51,
     "y sus": 41,
     "y también era": 2,
     "y también éste": 1,
@@ -12401,7 +12428,7 @@ export const all_socu = {
     "á él": 21,
     "á él él": 2,
     "á éste": 1,
-    "él": 281,
+    "él": 283,
     "él de su": 1,
     "él es": 2,
     "él le": 1,
@@ -12529,7 +12556,8 @@ export const all_socu = {
     "los quebrantos": 1,
     "mas la iniquidad": 1,
     "mas los pecadores en su pecado": 1,
-    "son pravedades": 1
+    "son pravedades": 1,
+    "y mi tormento": 1
   },
   "H1943": {
     "quebrantamiento": 4,
@@ -12603,7 +12631,7 @@ export const all_socu = {
     "hosama": 1
   },
   "H1954": {
-    "con oseas": 3,
+    "con oseas": 2,
     "de oseas": 3,
     "halló que oseas": 1,
     "hoseas": 1,
@@ -12612,7 +12640,7 @@ export const all_socu = {
     "y josué": 1,
     "y oseas": 2,
     "y á oseas": 1,
-    "á oseas": 3
+    "á oseas": 2
   },
   "H1955": {
     "de ellos osaías": 1,
@@ -12839,9 +12867,9 @@ export const all_socu = {
     "fuese": 6,
     "fuese hecha": 2,
     "fuimos": 1,
-    "fuiste": 9,
+    "fuiste": 10,
     "fuisteis": 5,
-    "fué": 167,
+    "fué": 166,
     "fué hecho": 1,
     "fuéramos": 1,
     "fuéronles": 1,
@@ -12858,7 +12886,7 @@ export const all_socu = {
     "ha estado": 4,
     "ha habido": 2,
     "ha quedado": 2,
-    "ha sido": 8,
+    "ha sido": 9,
     "ha sido hecha": 1,
     "ha sucedido": 2,
     "ha venido": 1,
@@ -12895,7 +12923,7 @@ export const all_socu = {
     "hase tornado": 1,
     "hasta venir á ser": 1,
     "hay": 4,
-    "haya": 22,
+    "haya": 23,
     "haya estado": 1,
     "haya habido": 1,
     "he estado": 1,
@@ -12981,7 +13009,7 @@ export const all_socu = {
     "me ha sido": 2,
     "me hubiera sido": 1,
     "me sea": 1,
-    "me seas": 3,
+    "me seas": 4,
     "me será": 6,
     "me serán": 5,
     "me seréis": 2,
@@ -13015,7 +13043,7 @@ export const all_socu = {
     "nosotros éramos": 1,
     "oh si fuere aquella": 1,
     "ordenado": 1,
-    "os será": 19,
+    "os será": 20,
     "os serán": 2,
     "os vendrá": 1,
     "oíase": 1,
@@ -13126,7 +13154,7 @@ export const all_socu = {
     "quedará": 1,
     "quede": 1,
     "quedó": 2,
-    "quien tenga": 1,
+    "quien tenga": 2,
     "qué es": 2,
     "reinó": 2,
     "sagrados": 2,
@@ -13175,7 +13203,7 @@ export const all_socu = {
     "servirá": 3,
     "servirán": 1,
     "servía": 2,
-    "será": 277,
+    "será": 278,
     "será contigo": 1,
     "será empero si": 1,
     "será este": 1,
@@ -13186,7 +13214,7 @@ export const all_socu = {
     "serán como": 1,
     "serán cosas": 2,
     "serás": 30,
-    "serás sobre": 3,
+    "serás sobre": 4,
     "seré": 20,
     "seréis": 13,
     "seréis vosotros": 1,
@@ -13204,7 +13232,7 @@ export const all_socu = {
     "sin tacha será": 2,
     "sino que habrá": 1,
     "sino que será": 1,
-    "sobre": 3,
+    "sobre": 4,
     "sobre ti vendrás á ser": 1,
     "somos": 3,
     "son": 9,
@@ -13231,8 +13259,8 @@ export const all_socu = {
     "te hubieren": 1,
     "te portarás": 1,
     "te sea": 1,
-    "te servirá": 1,
-    "te será": 8,
+    "te servirá": 2,
+    "te será": 9,
     "te serán": 4,
     "tendrá": 9,
     "tendrán": 9,
@@ -13241,7 +13269,7 @@ export const all_socu = {
     "tendré": 3,
     "tendréis": 24,
     "tener": 3,
-    "tenga": 2,
+    "tenga": 3,
     "tengamos": 1,
     "tenía": 19,
     "tenían": 2,
@@ -13347,7 +13375,7 @@ export const all_socu = {
     "y fueron": 29,
     "y fuiste": 1,
     "y fuisteis": 1,
-    "y fué": 143,
+    "y fué": 144,
     "y fué hecho": 4,
     "y fué puesta": 1,
     "y fuéle": 1,
@@ -13453,7 +13481,7 @@ export const all_socu = {
     "y vendrán á ser": 1,
     "y venida": 3,
     "y venido": 1,
-    "y viene": 1,
+    "y viene": 2,
     "y vine á serles": 1,
     "y vino": 1,
     "y vino á ser": 2,
@@ -13624,15 +13652,15 @@ export const all_socu = {
   },
   "H1980": {
     "acudirán": 1,
-    "adelantando": 2,
+    "adelantando": 1,
     "ahio iba": 1,
     "amargamente por el que va": 1,
-    "anda": 11,
+    "anda": 10,
     "andaba": 3,
     "andad": 1,
     "andado": 1,
     "andan": 6,
-    "andando": 21,
+    "andando": 19,
     "andar": 2,
     "andará": 2,
     "andaré": 3,
@@ -13644,7 +13672,7 @@ export const all_socu = {
     "anduvimos": 1,
     "anduviste": 1,
     "anduvisteis": 1,
-    "anduvo": 7,
+    "anduvo": 6,
     "andábamos": 1,
     "antes se fueron": 1,
     "avanzará": 1,
@@ -13652,32 +13680,32 @@ export const all_socu = {
     "caminan": 1,
     "caminando": 1,
     "caminare": 2,
-    "caminaron": 3,
+    "caminaron": 2,
     "caminaré": 1,
     "camináis": 1,
     "caminó": 2,
-    "cesaron los caminos y los que andaban": 2,
-    "como anduvo": 2,
+    "cesaron los caminos y los que andaban": 1,
+    "como anduvo": 1,
     "como caminante": 2,
     "como el que va": 1,
-    "como voy": 3,
+    "como voy": 2,
     "corrieron": 1,
-    "creciendo": 2,
+    "creciendo": 1,
     "cualquiera que ande": 2,
-    "cuando andan": 3,
+    "cuando andan": 1,
     "cuando anduvieres": 1,
     "cuanto anduve": 1,
     "de allí caminando": 1,
-    "de ellos y la gente reunida iba": 5,
+    "de ellos y la gente reunida iba": 6,
     "de la manera que anduvo": 1,
     "de las cuales anduvieron": 1,
     "de lo justo para que vaya": 1,
-    "de mí como anduvo": 4,
-    "de mí has andado": 2,
+    "de mí como anduvo": 2,
+    "de mí has andado": 1,
     "de que he andado": 1,
     "de quienes anduvieron": 1,
     "de venir": 1,
-    "de él andando": 3,
+    "de él andando": 2,
     "decreciendo": 1,
     "del que camina": 1,
     "desapareció": 1,
@@ -13687,9 +13715,9 @@ export const all_socu = {
     "e irán": 1,
     "el cual anda": 1,
     "el cual va": 1,
-    "el que anda": 4,
-    "el que camina": 4,
-    "ella siguiéndola": 3,
+    "el que anda": 5,
+    "el que camina": 3,
+    "ella siguiéndola": 1,
     "ellos irán": 1,
     "ellos se iban": 1,
     "en ellos anduvieron": 1,
@@ -13699,11 +13727,11 @@ export const all_socu = {
     "es el que va": 3,
     "estoy para entrar": 1,
     "fueres": 1,
-    "fueron": 16,
+    "fueron": 14,
     "fuese": 1,
     "fuiste": 2,
     "fuisteis": 1,
-    "fué": 18,
+    "fué": 15,
     "guiaré": 1,
     "ha de ir": 1,
     "ha ido": 1,
@@ -13711,8 +13739,8 @@ export const all_socu = {
     "habéis andado": 3,
     "había estado": 1,
     "había ido": 5,
-    "habían ido": 3,
-    "habías ido": 2,
+    "habían ido": 2,
+    "habías ido": 1,
     "hacemos": 1,
     "hacen andar": 1,
     "han andado": 1,
@@ -13721,20 +13749,20 @@ export const all_socu = {
     "has venido": 1,
     "hase ido": 1,
     "haya ido": 1,
-    "hayamos de ir": 2,
+    "hayamos de ir": 1,
     "he andado": 6,
-    "he aquí en apartándote": 2,
+    "he aquí en apartándote": 1,
     "hemos andado": 1,
     "hemos recorrido": 1,
-    "iba": 27,
+    "iba": 26,
     "iba esforzándose": 1,
-    "iban": 10,
+    "iban": 11,
     "ibas": 2,
-    "id": 5,
-    "ir": 2,
+    "id": 3,
+    "ir": 1,
     "iremos": 1,
-    "irá": 6,
-    "iré": 8,
+    "irá": 4,
+    "iré": 4,
     "la certidumbre y yo iré": 1,
     "llevada": 1,
     "lo que anda": 4,
@@ -13757,25 +13785,25 @@ export const all_socu = {
     "pasen": 1,
     "paseábase": 1,
     "podrá ir": 1,
-    "por el camino": 3,
+    "por el camino": 1,
     "por ir": 2,
     "porque fueron": 1,
     "procederé": 1,
     "que anda": 5,
     "que andaba": 2,
     "que andaban": 2,
-    "que andan": 5,
+    "que andan": 4,
     "que ande": 2,
     "que anduviere": 1,
     "que camina": 2,
     "que corren": 1,
     "que fuereis": 1,
     "que fueron con peligro": 1,
-    "que habían ido": 6,
+    "que habían ido": 5,
     "que habían venido": 1,
     "que he andado": 1,
     "que ir": 1,
-    "que la seguían": 2,
+    "que la seguían": 1,
     "que pasa": 1,
     "que se entra": 1,
     "que se pasa": 1,
@@ -13790,16 +13818,15 @@ export const all_socu = {
     "que yendo": 2,
     "que él y él se va": 1,
     "quien los acompañe": 1,
-    "recorred": 9,
+    "recorred": 5,
     "resplandores y andamos": 1,
     "salen": 1,
     "se aparta": 1,
     "se fueron": 5,
-    "se fué": 8,
+    "se fué": 4,
     "se ha ido": 1,
     "se había tornado": 2,
-    "se habían ido": 1,
-    "se han ido": 4,
+    "se han ido": 2,
     "se hubiese ido": 1,
     "se iba": 2,
     "se pasea": 1,
@@ -13808,11 +13835,11 @@ export const all_socu = {
     "se vaya": 1,
     "se volvió": 1,
     "según que él anduvo": 1,
-    "siempre": 5,
+    "siempre": 6,
     "siendo así que ando": 1,
     "siguen": 1,
     "siguieron": 1,
-    "sin duda": 3,
+    "sin duda": 1,
     "sino que anduviereis": 1,
     "son honrados por ir": 1,
     "sus lechos todos los que andan": 1,
@@ -13823,17 +13850,17 @@ export const all_socu = {
     "tú vas": 1,
     "tú yo te daré": 1,
     "va": 8,
-    "van": 8,
-    "vas": 5,
+    "van": 5,
+    "vas": 3,
     "vase": 1,
     "vayas": 1,
     "ve": 15,
     "venir": 1,
     "viene": 1,
-    "vinieron": 3,
+    "vinieron": 2,
     "vinieron aún en memoria mas los que partieron": 1,
     "vino": 1,
-    "voy": 5,
+    "voy": 4,
     "y anda": 1,
     "y andaban": 2,
     "y andad": 1,
@@ -13858,15 +13885,14 @@ export const all_socu = {
     "y pasará": 1,
     "y paseándose": 1,
     "y recorran": 1,
-    "y recorrieron": 5,
+    "y recorrieron": 3,
     "y restituirás": 1,
     "y se fueron": 1,
-    "y se fué": 1,
     "y síguelas": 2,
     "y te irás": 1,
     "y va": 1,
     "y ve": 2,
-    "y vendrán": 11,
+    "y vendrán": 5,
     "y vendrás": 1,
     "y vinieron": 1,
     "y volviéronse": 1,
@@ -13881,16 +13907,16 @@ export const all_socu = {
     "yo procederé": 1,
     "á los que caminan": 1,
     "á los que por ella andan": 1,
-    "á recorrer": 6,
-    "á seguir": 3,
+    "á recorrer": 4,
+    "á seguir": 2,
     "á ti para que vengas": 1,
-    "é iba": 3,
+    "é iba": 2,
     "é iban": 1,
     "é irá": 2,
-    "é irán": 2,
+    "é irán": 1,
     "é irás": 1,
     "é iréis": 1,
-    "él anduvo": 2,
+    "él anduvo": 1,
     "éntrase": 1
   },
   "H1981": {
@@ -14043,122 +14069,95 @@ export const all_socu = {
     "en ham": 1
   },
   "H1992": {
-    "a los cuales": 1,
     "a éstas": 1,
     "acerca de los cuales": 1,
-    "al castigo de sus": 3,
-    "alguno de ellos": 2,
+    "al castigo de sus": 1,
     "andando por él": 1,
     "anden ellos": 1,
-    "antes los": 1,
     "aquellas": 1,
     "aquellos": 2,
     "así": 1,
     "así ellos": 1,
-    "aún ellos": 2,
+    "aún ellos": 1,
     "bien que ellos": 1,
-    "canción y he sido hecho su": 1,
     "ciertamente ellos": 2,
     "como aquello": 1,
     "como ellos": 1,
     "como sus": 2,
     "con ellas": 2,
-    "con ellos": 9,
+    "con ellos": 4,
     "con ellos acorneará": 2,
     "con su": 1,
-    "con sus": 9,
-    "conforme á su": 4,
-    "conforme á sus": 2,
-    "contra ellos": 2,
+    "con sus": 8,
+    "conforme á sus": 1,
+    "contra ellos": 1,
     "cosas": 4,
-    "cuando de ellos": 1,
     "cuanto ellos": 2,
     "cuyas": 2,
-    "dales": 9,
-    "de aquellos": 1,
-    "de ellas": 4,
-    "de ellos": 96,
-    "de ellos con él": 1,
+    "de ellas": 1,
+    "de ellos": 28,
     "de ellos estas": 1,
-    "de esto sus": 1,
     "de esto sé": 1,
     "de familia de sus": 1,
     "de junto á ellos": 1,
     "de la tierra": 2,
     "de las": 2,
     "de las cuales": 1,
-    "de los": 3,
-    "de los cuales": 1,
+    "de los": 2,
     "de los que los": 1,
     "de mí porque ellos": 1,
-    "de por sí": 1,
-    "de su": 22,
-    "de sus": 33,
-    "delante de ellos": 4,
+    "de su": 15,
+    "de sus": 17,
+    "delante de ellos": 3,
     "delante de sus": 1,
-    "deseo y yo les": 1,
-    "el deseo de sus": 1,
     "ella su": 1,
-    "ellas": 8,
-    "ellos": 149,
+    "ellas": 6,
+    "ellos": 134,
     "ellos fielmente": 1,
     "en aquellos": 4,
-    "en ellas": 1,
-    "en ellos": 5,
+    "en ellos": 4,
     "en estas": 1,
-    "en su": 7,
-    "en sus": 3,
+    "en su": 2,
+    "en sus": 1,
     "en ti ellos": 2,
     "en ti sus": 4,
     "entre aquellos": 1,
-    "entre ellos": 2,
-    "entre sus": 1,
-    "entre sí": 2,
+    "entre ellos": 1,
     "eran ellos": 1,
     "eran porteros por sus": 1,
     "es pueblo": 1,
     "es y ellos": 1,
     "es éste": 1,
     "estas": 1,
-    "estos": 9,
+    "estos": 10,
     "estos son los que": 1,
     "está": 2,
     "están en la tierra": 1,
     "fornicaciones": 1,
     "ganados y su": 1,
     "habiendo ellos": 1,
-    "hablarán tienen": 2,
-    "habrá quien de ellos": 1,
     "habían ellos": 1,
-    "hallólos": 1,
     "han sido estos": 1,
-    "haremos más mal que á ellos": 1,
     "hay en ellos": 1,
-    "hazles": 1,
-    "hubo quien se lo": 1,
     "la vía de ellos": 1,
     "las": 3,
-    "las cuales": 1,
     "le pertenecen ellos": 2,
-    "les": 9,
+    "les": 3,
     "librarán ellos": 1,
     "librarán su": 2,
     "lo": 1,
     "lo cual los": 1,
     "lo que éstos": 1,
-    "los": 25,
+    "los": 17,
     "los cuales": 8,
-    "los de la transmigración y por sus": 1,
     "los que": 1,
     "los que los": 1,
-    "los razonamientos": 1,
     "los traigan": 1,
     "madera semejante": 1,
     "mas ellas": 1,
     "mas ellos": 13,
     "miran á sus": 1,
-    "mismos": 4,
-    "multiplicarélos": 1,
+    "mismos": 3,
     "míos": 2,
     "míos á los": 1,
     "ni en sus": 1,
@@ -14166,128 +14165,90 @@ export const all_socu = {
     "ni sus": 3,
     "no está": 1,
     "no podían ellos": 1,
-    "para ellos": 5,
-    "para ellos así": 1,
+    "para ellos": 2,
     "para que": 1,
-    "para sí": 6,
+    "para sí": 2,
     "para sí mas ellos": 1,
-    "pasando de ellos": 1,
     "pero ellos": 1,
-    "por ellos": 2,
     "por eso los": 1,
-    "por su": 4,
-    "por sus": 6,
-    "porque ellos": 2,
+    "por su": 3,
+    "por sus": 5,
+    "porque ellos": 1,
     "porque los mismos": 1,
     "porque éstos": 1,
-    "probaría para que así echaran de ver ellos": 3,
+    "probaría para que así echaran de ver ellos": 2,
     "provocaránme ellos": 1,
-    "pues los": 1,
-    "pues su": 1,
     "que": 1,
     "que delante de ellos": 1,
     "que ellos": 3,
     "que por ellas": 1,
-    "que se": 2,
     "que sirven éstos": 2,
-    "que su": 2,
-    "que tú les": 1,
+    "que su": 1,
     "que vaciando ellos": 2,
     "queman ellos": 1,
-    "quitarélos": 1,
     "qué los": 1,
     "se": 1,
     "se alborota": 1,
-    "se contaminó": 1,
     "se desviaron de mí ellos": 1,
     "según su": 2,
     "semejantes": 1,
-    "será su": 2,
+    "será su": 1,
     "serán": 1,
-    "sobre ellos": 6,
+    "sobre ellos": 2,
     "sobre sus": 1,
-    "sois": 2,
-    "son de las": 1,
     "son su": 1,
-    "son sus": 1,
-    "su": 43,
-    "sus": 54,
+    "su": 20,
+    "sus": 35,
     "sus espaldas": 1,
     "también los": 1,
     "tanto como son": 2,
-    "tienen": 7,
-    "tomare de él": 1,
-    "tuvieron su heredad": 1,
-    "una de ellas": 1,
-    "uno de los suyos": 1,
     "unos": 1,
     "vestiduras": 1,
     "vivieren": 1,
     "vuestra y ellos": 1,
-    "y arranquéles": 1,
     "y así los": 1,
     "y como estaban": 2,
-    "y con sus": 1,
-    "y conforme á la malicia de sus": 3,
-    "y conforme á sus": 1,
-    "y contamináronla": 1,
     "y cuando los": 1,
     "y cuando ya se": 1,
-    "y de ellos": 1,
     "y de su": 3,
     "y de éstos": 1,
-    "y después que los": 1,
-    "y el cuidado de sus": 1,
     "y ellas": 1,
-    "y ellos": 45,
-    "y en sus": 1,
+    "y ellos": 43,
     "y engrandecílos y ellos": 1,
-    "y entreguélos": 1,
     "y estando ellos": 1,
     "y estos": 1,
-    "y haré que perezca de entre ellos": 1,
-    "y juramentélos": 1,
     "y la figura de sus": 1,
     "y las mismas son": 2,
     "y les": 3,
-    "y llevólos": 1,
-    "y los": 6,
+    "y los": 2,
     "y los mismos": 1,
-    "y líbralos": 1,
     "y no más bien obran ellos": 1,
-    "y otros de ellos": 1,
-    "y para sus": 1,
     "y por sus": 1,
-    "y por sí": 1,
     "y que los": 1,
     "y se": 1,
-    "y su": 5,
-    "y sus": 34,
-    "y tomará de ellos": 1,
+    "y su": 3,
+    "y sus": 26,
     "y vanidad y engaño de su": 1,
-    "y vine á serles": 1,
     "y á ellos": 2,
-    "y á sus": 3,
-    "y él les": 2,
+    "y á sus": 1,
     "yo les haga": 1,
-    "yo los": 3,
+    "yo los": 1,
     "yo á ellos": 2,
-    "á causa de ellos": 3,
+    "á causa de ellos": 1,
     "á cuatro pies tendréis por inmundo": 1,
-    "á ellas": 5,
-    "á ellos": 12,
+    "á ellas": 4,
+    "á ellos": 4,
     "á los cuales": 2,
     "á los que las": 1,
     "á mí y los": 1,
     "á quienes": 1,
-    "á su": 7,
-    "á sus": 7,
+    "á su": 4,
+    "á sus": 2,
     "á ti y ellos": 1,
     "á vosotros con sus": 1,
     "é inteligencia": 1,
-    "él": 1,
     "éstas": 1,
-    "éstos": 5,
+    "éstos": 4,
     "éstos su": 2
   },
   "H1993": {
@@ -14347,7 +14308,7 @@ export const all_socu = {
     "el mucho": 1,
     "haberos multiplicado": 1,
     "la conmoción": 1,
-    "la multitud": 13,
+    "la multitud": 15,
     "muchas": 1,
     "muchedumbre": 1,
     "muchos pueblos": 2,
@@ -14358,7 +14319,7 @@ export const all_socu = {
     "que las riquezas": 1,
     "quedará de ellos": 1,
     "se da muchedumbre": 1,
-    "su multitud": 13,
+    "su multitud": 14,
     "su pueblo": 2,
     "sus pueblos": 1,
     "tu pueblo": 2,
@@ -14419,11 +14380,11 @@ export const all_socu = {
   },
   "H2000": {
     "de ti y consternaré": 1,
-    "desmenuzóme": 1,
+    "desmenuzóme": 2,
     "ni lo comprimirá": 1,
     "para consumirlos": 1,
     "sobre ellos para destruirlos": 1,
-    "y consumiólos": 1,
+    "y consumiólos": 2,
     "y desbaratólos": 1,
     "y los destruyó": 1,
     "y perturbó": 1
@@ -14444,9 +14405,9 @@ export const all_socu = {
     "á amán": 5
   },
   "H2002": {
-    "fué puesto un collar": 1,
-    "y collar": 1,
-    "y tendrá collar": 1
+    "fué puesto un collar": 2,
+    "y collar": 2,
+    "y tendrá collar": 2
   },
   "H2003": {
     "de fundiciones": 1
@@ -14458,7 +14419,7 @@ export const all_socu = {
     "aquí": 1,
     "ciertamente": 2,
     "ha pues": 1,
-    "he aquí": 97,
+    "he aquí": 99,
     "heme aquí": 3,
     "mira": 1,
     "mía he aquí": 4,
@@ -14845,6 +14806,9 @@ export const all_socu = {
   "H2024": {
     "y á ara": 1
   },
+  "H2025": {
+    "y el altar": 1
+  },
   "H2026": {
     "acerca de ti con la idea de matarte": 1,
     "animosamente y mataron": 1,
@@ -14960,6 +14924,7 @@ export const all_socu = {
     "de la matanza": 5
   },
   "H2029": {
+    "concebimos": 1,
     "concebir": 1,
     "concebisteis": 1,
     "concebí": 1,
@@ -14972,13 +14937,12 @@ export const all_socu = {
     "después de haber concebido": 1,
     "ella concibió": 1,
     "embarazada": 1,
+    "es concebido": 1,
     "había concebido": 2,
     "la cual concibió": 7,
     "la que los engendró": 1,
     "mas concebirás": 1,
-    "que tú concebirás": 1,
     "también engendró": 1,
-    "tú te harás embarazada": 1,
     "y concibieron": 1,
     "y concibió": 13,
     "y entró á ella la cual concibió": 1,
@@ -15525,11 +15489,11 @@ export const all_socu = {
   },
   "H208": {
     "de onam": 2,
-    "y oman": 2,
+    "y oman": 1,
     "y onán": 1
   },
   "H2080": {
-    "fué zebuda": 1
+    "fué zebuda": 2
   },
   "H2081": {
     "jadau": 1
@@ -15839,7 +15803,7 @@ export const all_socu = {
     "se apercibió": 2,
     "sea apercibido": 2,
     "y amonestarlos": 1,
-    "y amonestádole": 1,
+    "y amonestádole": 2,
     "y enseña": 1,
     "y los apercibirás": 1
   },
@@ -15941,7 +15905,7 @@ export const all_socu = {
     "temblarán": 1
   },
   "H2112": {
-    "temblaban": 1
+    "temblaban": 2
   },
   "H2113": {
     "á turbación": 1
@@ -16155,7 +16119,7 @@ export const all_socu = {
     "acordaos": 7,
     "acordarse": 1,
     "acordaráse": 2,
-    "acordaréme": 4,
+    "acordaréme": 5,
     "acordábame": 2,
     "acordándonos": 1,
     "acordéme": 3,
@@ -16193,7 +16157,7 @@ export const all_socu = {
     "hagáis mención": 1,
     "haré memoria": 2,
     "haré perpetua la memoria": 1,
-    "haré yo memoria": 2,
+    "haré yo memoria": 3,
     "hase acordado": 1,
     "haya más memoria": 2,
     "heme acordado": 1,
@@ -16224,6 +16188,7 @@ export const all_socu = {
     "que tengo en la memoria": 1,
     "recapacita": 1,
     "recordad": 1,
+    "recuerdes": 1,
     "se acordaba": 1,
     "se acordare": 1,
     "se acordaron": 5,
@@ -16238,10 +16203,10 @@ export const all_socu = {
     "serán mentados": 1,
     "serían en memoria": 1,
     "te acordarás": 1,
-    "te acordaste": 3,
+    "te acordaste": 4,
     "te acuerdas": 1,
     "te acuerdes": 3,
-    "te has acordado": 2,
+    "te has acordado": 3,
     "tendremos memoria": 1,
     "tendrálo": 2,
     "tendré memoria": 1,
@@ -16345,14 +16310,14 @@ export const all_socu = {
   },
   "H2147": {
     "asimismo zichri": 1,
-    "de zichri": 7,
+    "de zichri": 5,
     "de éste zichri": 1,
     "y zithri": 1,
     "zichri": 4
   },
   "H2148": {
     "de zacarías": 3,
-    "de zachârías": 8,
+    "de zachârías": 6,
     "después de él zachârías": 1,
     "envistió á zachârías": 1,
     "orden á zachârías": 1,
@@ -16375,6 +16340,7 @@ export const all_socu = {
     "alumbrarán": 1,
     "de sí hace resplandecer": 1,
     "en aumento": 1,
+    "fueron aclarados": 1,
     "haga resplandecer": 2,
     "han sido aclarados": 1,
     "hará relucir": 1,
@@ -16391,6 +16357,7 @@ export const all_socu = {
     "resplandece": 2,
     "resplandecía": 1,
     "resplandezca": 2,
+    "venida la mañana": 1,
     "y haz resplandecer": 2,
     "y los suyos y amanecióles": 1,
     "y para iluminarlo": 1,
@@ -16460,8 +16427,7 @@ export const all_socu = {
   },
   "H2158": {
     "con cánticos": 1,
-    "cánticos": 1,
-    "de la canción": 1
+    "cánticos": 1
   },
   "H216": {
     "a la luz": 1,
@@ -16473,12 +16439,14 @@ export const all_socu = {
     "con la luz": 1,
     "con resplandor": 1,
     "de aquí á mañana": 1,
+    "de la lluvia": 1,
     "de la luz": 5,
     "de luz": 3,
     "de muelas y luz": 1,
     "del sol y la luz": 4,
     "descubriré para luz": 1,
     "el alba": 1,
+    "en la alegría": 1,
     "en la luz": 1,
     "en luz": 3,
     "en su estancia á la luz": 1,
@@ -16547,7 +16515,7 @@ export const all_socu = {
     "señalados": 1
   },
   "H2164": {
-    "será de vosotros ciertamente preparáis": 1
+    "será de vosotros ciertamente preparáis": 2
   },
   "H2165": {
     "en orden á ellos y conforme á su tiempo": 1,
@@ -16670,8 +16638,8 @@ export const all_socu = {
     "como fornicó": 2,
     "como á una ramera": 1,
     "contigo porque fornicaste": 1,
-    "cumplirán": 1,
-    "de la ramera": 2,
+    "cumplirán": 2,
+    "de la ramera": 1,
     "de mala": 1,
     "de ramera": 3,
     "de rameras": 4,
@@ -16734,10 +16702,10 @@ export const all_socu = {
     "zanoah": 1
   },
   "H2183": {
-    "con sus fornicaciones": 1,
+    "con sus fornicaciones": 2,
     "de fornicaciones": 3,
     "de fornicación": 1,
-    "de las fornicaciones": 2,
+    "de las fornicaciones": 3,
     "de tus fornicaciones": 1,
     "fornicaciones": 1,
     "fornicaria": 2,
@@ -16777,8 +16745,10 @@ export const all_socu = {
     "en el sudor": 1
   },
   "H2189": {
+    "en remoción": 1,
+    "por escarnio": 1,
     "sacudido": 1,
-    "á turbación": 1
+    "á turbación": 2
   },
   "H219": {
     "de hortalizas": 1,
@@ -16830,7 +16800,7 @@ export const all_socu = {
     "en el furor": 1,
     "furor": 1,
     "he puesto mi ira": 1,
-    "la ira": 1,
+    "la ira": 2,
     "por la soberbia": 1,
     "saña": 1,
     "ti mi ira": 1,
@@ -16853,7 +16823,7 @@ export const all_socu = {
   },
   "H2199": {
     "a mí clamará": 1,
-    "aullad y clamad": 1,
+    "aullad y clamad": 2,
     "clama": 3,
     "clamaba": 1,
     "clamando": 1,
@@ -16961,7 +16931,7 @@ export const all_socu = {
     "con los viejos": 1,
     "contra el viejo": 1,
     "de los ancianos": 17,
-    "de los viejos": 6,
+    "de los viejos": 7,
     "de sus ancianos": 1,
     "del anciano": 1,
     "el anciano": 1,
@@ -16980,7 +16950,6 @@ export const all_socu = {
     "ni viejo": 2,
     "profeta": 1,
     "pues y los ancianos": 1,
-    "siendo viejo": 1,
     "son ancianos": 2,
     "suyo el más viejo": 1,
     "vejez anciano": 1,
@@ -17321,7 +17290,7 @@ export const all_socu = {
     "de su simiente": 6,
     "de tu simiente": 11,
     "de él vosotros simiente": 2,
-    "del linaje": 2,
+    "del linaje": 1,
     "del semen": 1,
     "descendencia": 1,
     "en el bien y su simiente": 1,
@@ -17344,7 +17313,6 @@ export const all_socu = {
     "les daría á ellos y á su simiente": 1,
     "linaje": 5,
     "mas la simiente": 1,
-    "mi simiente": 2,
     "mí y ti y tu simiente": 2,
     "mí y vosotros y tu simiente": 1,
     "ni sementera": 1,
@@ -17384,7 +17352,7 @@ export const all_socu = {
     "y en tu simiente": 1,
     "y era como simiente": 1,
     "y haré tu simiente": 2,
-    "y la simiente": 8,
+    "y la simiente": 6,
     "y sembraréis": 1,
     "y sobre su simiente": 2,
     "y su simiente": 5,
@@ -17790,7 +17758,7 @@ export const all_socu = {
     "de gozo sobre tus compañeros": 1,
     "ligados": 1,
     "los compañeros": 1,
-    "sus compañeros": 6,
+    "sus compañeros": 11,
     "y compañeros": 1,
     "á su compañero": 1
   },
@@ -18091,7 +18059,7 @@ export const all_socu = {
     "le dejarás": 1,
     "no": 1,
     "no escucharen": 1,
-    "poca cosa cesa": 1,
+    "poca cosa cesa": 2,
     "pon coto á tu prudencia": 1,
     "se detuvieron": 1,
     "si dejare": 1,
@@ -18329,7 +18297,6 @@ export const all_socu = {
     "con espinas": 1,
     "el cardillo": 2,
     "el cardo": 4,
-    "en fosos": 1,
     "espinas": 1,
     "espino": 1,
     "esta respuesta el cardillo": 2,
@@ -18378,12 +18345,11 @@ export const all_socu = {
     "de él temerán": 1,
     "de él y en él espera": 1,
     "del señor tiembla": 1,
-    "dolor": 3,
+    "dolor": 4,
     "duélete": 1,
     "el grande cría": 1,
     "el parto gime": 1,
     "era yo engendrada": 1,
-    "es esperar": 1,
     "estuve de parto": 1,
     "estuvo de parto": 3,
     "fuí engendrada": 1,
@@ -18409,10 +18375,11 @@ export const all_socu = {
     "temed": 2,
     "temieron": 1,
     "temor": 1,
-    "tendrá gran": 2,
+    "tendrá gran": 3,
     "tendrán dolor": 1,
     "tu criador": 1,
     "tuvimos dolores": 1,
+    "tuvo dolor": 1,
     "y afligiráse": 1,
     "y caerá": 1,
     "y espera": 1,
@@ -18520,8 +18487,7 @@ export const all_socu = {
     "es mas en apartándose": 1,
     "pereció": 1,
     "se fueron": 1,
-    "se ha acabado": 1,
-    "y el errante": 1
+    "se ha acabado": 1
   },
   "H2350": {
     "de los huphamitas": 1
@@ -18607,7 +18573,6 @@ export const all_socu = {
     "cuencas": 1,
     "el agujero": 1,
     "en las cavernas": 1,
-    "la cueva": 1,
     "las cavernas": 1,
     "sus cavernas": 1
   },
@@ -18632,12 +18597,12 @@ export const all_socu = {
     "hurai": 1
   },
   "H2361": {
-    "de hiram": 1,
+    "de hiram": 2,
     "entonces hiram": 1,
-    "hiram": 3,
+    "hiram": 4,
     "porque hiram": 1,
     "que fué de hiram": 1,
-    "también hiram": 1,
+    "también hiram": 2,
     "y huram": 1,
     "á hiram": 1
   },
@@ -18851,8 +18816,7 @@ export const all_socu = {
     "y escucha": 3,
     "y escuchad": 1,
     "y oid": 1,
-    "á mí escucha": 1,
-    "é hizo escuchar": 1
+    "á mí escucha": 1
   },
   "H2380": {
     "maravillosos": 1,
@@ -19154,11 +19118,11 @@ export const all_socu = {
     "ti y ezechîas": 2,
     "y ezechîas": 8,
     "y á ezechîas": 1,
-    "á ezechîas": 17,
+    "á ezechîas": 16,
     "á ti y ezechîas": 2
   },
   "H2397": {
-    "anzuelos": 1,
+    "anzuelos": 2,
     "cadenas": 1,
     "con cadenas": 1,
     "con grillos": 1,
@@ -19215,7 +19179,7 @@ export const all_socu = {
     "he pecado": 11,
     "hemos contra ti cometido": 2,
     "hemos pecado": 6,
-    "hizo pecar": 7,
+    "hizo pecar": 8,
     "hubiere pecado": 1,
     "lo hemos hecho y hemos pecado": 1,
     "lo volviere entonces yo seré culpable": 1,
@@ -19230,7 +19194,7 @@ export const all_socu = {
     "ofrecisteis sahumerios y pecasteis": 1,
     "os purificaréis": 1,
     "pagaba el daño": 1,
-    "para hacer pecar": 1,
+    "para hacer pecar": 2,
     "para limpiar": 1,
     "para no pecar": 1,
     "para pecar": 4,
@@ -19309,7 +19273,7 @@ export const all_socu = {
     "por el delito": 1,
     "sobre él pecado": 1,
     "su iniquidad": 1,
-    "su pecado": 5,
+    "su pecado": 6,
     "vuestros pecados": 1,
     "y en pecado": 1,
     "á pecado": 1
@@ -19415,7 +19379,7 @@ export const all_socu = {
     "son pecado": 1,
     "su expiación": 4,
     "su pecado": 27,
-    "sus pecados": 12,
+    "sus pecados": 14,
     "tendré de mi pecado": 1,
     "tu expiación": 1,
     "tu pecado": 2,
@@ -19424,11 +19388,11 @@ export const all_socu = {
     "vaca de la expiación": 1,
     "vuestro pecado": 3,
     "vuestros pecados": 5,
-    "y concluir el pecado": 1,
+    "y concluir el pecado": 2,
     "y del pecado": 2,
     "y el pecado": 6,
     "y el sacrificio por el pecado": 1,
-    "y en su pecado": 4,
+    "y en su pecado": 6,
     "y en sus pecados": 1,
     "y la expiación": 4,
     "y los pecados": 2,
@@ -19478,7 +19442,7 @@ export const all_socu = {
     "hattus": 4
   },
   "H2408": {
-    "tus pecados": 1
+    "tus pecados": 2
   },
   "H241": {
     "además el oído": 1,
@@ -19683,7 +19647,7 @@ export const all_socu = {
     "tu vida": 3,
     "tuya y por vida": 2,
     "vena de vida": 1,
-    "vida": 15,
+    "vida": 16,
     "viva": 23,
     "vivas": 5,
     "vive": 63,
@@ -19693,7 +19657,6 @@ export const all_socu = {
     "viviente": 23,
     "vivientes": 4,
     "viviera": 1,
-    "viviere": 1,
     "viviereis": 2,
     "vivieren": 1,
     "vivo": 37,
@@ -19702,7 +19665,7 @@ export const all_socu = {
     "y cuando los animales": 2,
     "y de bestias": 1,
     "y el que vive": 1,
-    "y había absalom en su vida": 1,
+    "y había absalom en su vida": 2,
     "y jurarás diciendo vive": 1,
     "y la vida": 1,
     "y las bestias": 2,
@@ -19712,7 +19675,7 @@ export const all_socu = {
     "y mi vida": 1,
     "y para sustento": 1,
     "y si dijeren vive": 1,
-    "y su vida": 3,
+    "y su vida": 4,
     "y vida": 3,
     "y vive": 16,
     "y á la bestia": 1,
@@ -19810,7 +19773,7 @@ export const all_socu = {
     "otorgará vida": 1,
     "para guardar en vida": 1,
     "para hacer vivir": 2,
-    "para mantener": 3,
+    "para mantener": 2,
     "para que hayan vida": 1,
     "para que tengan vida": 1,
     "para que vivamos": 1,
@@ -19859,7 +19822,7 @@ export const all_socu = {
     "vivifícame": 8,
     "vivir": 1,
     "viviremos": 2,
-    "vivirá": 40,
+    "vivirá": 42,
     "vivirán": 5,
     "vivirás": 8,
     "vivió": 3,
@@ -19887,7 +19850,7 @@ export const all_socu = {
     "y vivió": 33,
     "y viváis": 1,
     "y él da vida": 1,
-    "á darme vida": 1,
+    "á darme vida": 2,
     "á fin de que viva": 1,
     "á fin que vivamos": 1,
     "á sus entrañas y revivió": 1,
@@ -19920,19 +19883,15 @@ export const all_socu = {
     "baluarte": 1,
     "de aqueste ejército": 1,
     "de su ejército": 1,
-    "de él la fuerza": 1,
-    "ejército": 4,
+    "ejército": 2,
     "el antemuro": 1,
-    "el ejército": 3,
+    "el ejército": 2,
     "las fuerzas": 1,
-    "para su ejército": 1,
-    "su ejército": 3,
-    "sus frutos": 1,
+    "muchos desdichados": 1,
     "un ejército": 1,
     "y antemuro": 1,
     "y del ejército": 1,
-    "y fuertes": 1,
-    "y á su ejército": 1
+    "y fuertes": 1
   },
   "H2427": {
     "con dolor": 1,
@@ -19972,7 +19931,6 @@ export const all_socu = {
     "el ejército": 7,
     "ellos el ejército": 1,
     "en ejército": 1,
-    "en la barbacana": 1,
     "en ordenanza": 1,
     "en riquezas": 1,
     "en tu ejército": 1,
@@ -20092,7 +20050,7 @@ export const all_socu = {
     "la ira en el seno": 1,
     "regazo": 1,
     "seno": 1,
-    "su seno": 5,
+    "su seno": 6,
     "tu seno": 3,
     "y en su seno": 1,
     "yo en mi seno": 1,
@@ -20106,13 +20064,16 @@ export const all_socu = {
   "H2438": {
     "de hiram": 1,
     "dió pues hiram": 1,
-    "e hiram": 2,
+    "e hiram": 3,
     "hiram": 11,
     "para las cuales hiram": 2,
     "y como hiram": 1,
     "y había hiram": 1,
     "y los de hiram": 1,
     "á hiram": 8
+  },
+  "H2439": {
+    "presto": 1
   },
   "H244": {
     "de los oznitas": 2,
@@ -20184,7 +20145,7 @@ export const all_socu = {
     "por hacerme más sabio": 1,
     "por más hábil": 1,
     "que hace sabio": 1,
-    "sabio": 3,
+    "sabio": 4,
     "seamos sabios": 1,
     "será sabio": 1,
     "sé sabio": 1,
@@ -20540,7 +20501,7 @@ export const all_socu = {
     "ventanas": 3,
     "y había ventanas": 3,
     "y las ventanas": 6,
-    "y sus ventanas": 2,
+    "y sus ventanas": 3,
     "y tenía sus ventanas": 4,
     "yo por la ventana": 1,
     "á la ventana": 3,
@@ -20728,7 +20689,7 @@ export const all_socu = {
     "y habéis de profanarme": 1,
     "y han comenzado": 1,
     "y harán común uso": 1,
-    "y la contaminarán": 1,
+    "y la contaminarán": 2,
     "y profanado": 1,
     "y profanaron": 2,
     "y tañedores": 1,
@@ -20736,7 +20697,6 @@ export const all_socu = {
     "y violarán": 2,
     "y yo era profanado": 2,
     "yo he comenzado": 2,
-    "á los cuales hirió": 1,
     "él tú lo profanarás": 1
   },
   "H2491": {
@@ -20925,7 +20885,7 @@ export const all_socu = {
     "de sus riñones": 1,
     "lomos": 2,
     "los lomos": 1,
-    "sus lomos": 2,
+    "sus lomos": 3,
     "tus lomos": 3
   },
   "H2505": {
@@ -21208,7 +21168,7 @@ export const all_socu = {
     "y resbaladeros": 1
   },
   "H252": {
-    "á ti y á tus hermanos": 1
+    "á ti y á tus hermanos": 2
   },
   "H2520": {
     "fué helchât": 1
@@ -21340,7 +21300,7 @@ export const all_socu = {
     "están en mí cuyo veneno": 1,
     "furor": 2,
     "hay en mí enojo": 1,
-    "ira": 8,
+    "ira": 9,
     "iracundo": 1,
     "la ira": 6,
     "mi furor": 1,
@@ -21391,8 +21351,8 @@ export const all_socu = {
     "hamuel": 1
   },
   "H2537": {
-    "fué amutal": 2,
-    "hamutal": 1
+    "fué amutal": 3,
+    "hamutal": 2
   },
   "H2538": {
     "de hamul": 1,
@@ -21772,7 +21732,7 @@ export const all_socu = {
     "tenía cinco": 2,
     "tenía quince": 2,
     "todo el apartado de veinticinco": 2,
-    "veinticinco": 7,
+    "veinticinco": 8,
     "y asimismo quinientos": 1,
     "y cinco": 101,
     "y de cinco": 4,
@@ -21847,7 +21807,6 @@ export const all_socu = {
   },
   "H2573": {
     "el odre": 1,
-    "lo": 1,
     "odre": 1,
     "y un odre": 1
   },
@@ -21860,7 +21819,7 @@ export const all_socu = {
     "en emath": 1,
     "en hamath": 3,
     "entrar en hamath": 2,
-    "hamath": 5,
+    "hamath": 4,
     "y de amath": 1,
     "y de hamath": 1,
     "y á hamath": 1,
@@ -22022,7 +21981,7 @@ export const all_socu = {
     "cada": 8,
     "cada un": 1,
     "cada una": 4,
-    "cada uno": 5,
+    "cada uno": 6,
     "como cualquiera": 4,
     "como el de un": 1,
     "como en un": 1,
@@ -22090,7 +22049,7 @@ export const all_socu = {
     "en algunas": 1,
     "en alguno": 1,
     "en algún": 4,
-    "en cualquier": 2,
+    "en cualquier": 3,
     "en el borde": 1,
     "en el primer": 2,
     "en el primero": 4,
@@ -22099,7 +22058,7 @@ export const all_socu = {
     "en forma de almendras en el un": 2,
     "en la una": 4,
     "en un": 22,
-    "en una": 14,
+    "en una": 15,
     "encuentro un": 1,
     "enfrente de las otras": 3,
     "entonces de una": 2,
@@ -22124,7 +22083,7 @@ export const all_socu = {
     "juntos": 1,
     "la misma": 1,
     "la una": 19,
-    "la una con la otra": 2,
+    "la una con la otra": 4,
     "la vigésimaprima": 2,
     "lado y un": 2,
     "lados de la una": 1,
@@ -22278,7 +22237,7 @@ export const all_socu = {
     "de un árbol en rama y tenía su lanza": 1,
     "dónde está la lanza": 1,
     "en la trinchera y su lanza": 1,
-    "la lanza": 14,
+    "la lanza": 15,
     "lanza": 5,
     "las lanzas": 1,
     "luego con la lanza": 1,
@@ -22318,8 +22277,8 @@ export const all_socu = {
   },
   "H26": {
     "abigail": 2,
-    "de abigail": 2,
-    "entonces abigail": 1,
+    "de abigail": 3,
+    "entonces abigail": 2,
     "luego abigail": 1,
     "y abigail": 5,
     "y como abigail": 1,
@@ -22384,7 +22343,7 @@ export const all_socu = {
     "suplicaré": 1,
     "ten misericordia": 18,
     "ten piedad": 1,
-    "tendrá compasión": 1,
+    "tendrá compasión": 2,
     "tendrá piedad": 1,
     "tendré misericordia": 2,
     "tened piedad de nosotros en lugar de ellos": 1,
@@ -22491,11 +22450,11 @@ export const all_socu = {
     "de favores": 1,
     "de la misericordia": 2,
     "de las misericordias": 3,
-    "de mi misericordia": 2,
+    "de mi misericordia": 3,
     "de misericordia": 1,
     "de su misericordia": 1,
-    "de sus miseraciones": 1,
-    "de sus misericordias": 1,
+    "de sus miseraciones": 2,
+    "de sus misericordias": 2,
     "de tu misericordia": 2,
     "de tus conmiseraciones y de tus misericordias": 1,
     "de tus misericordias": 1,
@@ -22554,7 +22513,7 @@ export const all_socu = {
     "vosotros misericordia": 1,
     "y benevolencia": 1,
     "y con clemencia": 2,
-    "y de mucha misericordia": 1,
+    "y de mucha misericordia": 2,
     "y de sus misericordias": 1,
     "y en la misericordia": 1,
     "y hace misericordia": 1,
@@ -22616,7 +22575,7 @@ export const all_socu = {
   "H2623": {
     "al pío": 1,
     "de los santos": 1,
-    "de sus santos": 4,
+    "de sus santos": 6,
     "de tus santos": 2,
     "el misericordioso": 2,
     "impía": 1,
@@ -22774,7 +22733,7 @@ export const all_socu = {
   },
   "H2648": {
     "apresuramiento": 1,
-    "con la premura": 1,
+    "con la premura": 2,
     "diéronse priesa": 1,
     "inmutarse": 1,
     "os azoréis": 1,
@@ -22995,7 +22954,7 @@ export const all_socu = {
     "libertad": 1
   },
   "H2669": {
-    "apartada": 1,
+    "apartada": 2,
     "separada": 1
   },
   "H267": {
@@ -23031,7 +22990,7 @@ export const all_socu = {
     "saeta": 3,
     "saetas": 3,
     "sus flechas": 1,
-    "sus saetas": 5,
+    "sus saetas": 6,
     "tus saetas": 4,
     "y armaron por su saeta": 1,
     "y saeta": 3,
@@ -23097,7 +23056,7 @@ export const all_socu = {
     "á hasor": 2
   },
   "H2675": {
-    "y asor hadatta": 1
+    "y asor hadatta": 2
   },
   "H2677": {
     "aun la mitad": 2,
@@ -23116,7 +23075,7 @@ export const all_socu = {
     "en medio": 1,
     "herencia á la media": 2,
     "la media": 1,
-    "la mitad": 21,
+    "la mitad": 20,
     "la otra mitad": 2,
     "lo á la media": 1,
     "mas á la otra media": 2,
@@ -23130,7 +23089,6 @@ export const all_socu = {
     "también á la media": 2,
     "tribu": 1,
     "y de la media": 3,
-    "y de la mitad": 1,
     "y de medio": 1,
     "y la media": 8,
     "y la mitad": 12,
@@ -23233,10 +23191,10 @@ export const all_socu = {
     "eres mi hermana": 2,
     "es": 1,
     "es mi hermana": 4,
-    "fueron hermanas": 1,
+    "fueron hermanas": 2,
     "fué hermana": 3,
     "hermana": 34,
-    "hermanas": 10,
+    "hermanas": 12,
     "la hermana": 1,
     "la rebelde su hermana": 2,
     "la una": 1,
@@ -23245,11 +23203,11 @@ export const all_socu = {
     "mi hermana thamar": 1,
     "o por su hermana": 1,
     "su hermana": 10,
-    "sus hermanas": 1,
+    "sus hermanas": 2,
     "tu hermana": 2,
     "una hermana": 2,
     "y hermana": 2,
-    "y hermanas": 1,
+    "y hermanas": 2,
     "y la hermana": 2,
     "y mi hermana": 1,
     "y su hermana": 3,
@@ -23262,14 +23220,14 @@ export const all_socu = {
     "ó hermana": 1
   },
   "H2690": {
-    "pues las trompetas": 1,
-    "que tocaban": 1,
-    "sonaban las trompetas": 1,
-    "tañían": 1,
-    "tocaban": 1,
-    "tocaron": 1,
-    "trompetas": 1,
-    "y los trompetas": 1
+    "pues las trompetas": 2,
+    "que tocaban": 2,
+    "sonaban las trompetas": 2,
+    "tañían": 2,
+    "tocaban": 2,
+    "tocaron": 2,
+    "trompetas": 2,
+    "y los trompetas": 2
   },
   "H2691": {
     "al atrio": 4,
@@ -23283,7 +23241,7 @@ export const all_socu = {
     "de las aldeas": 2,
     "de los atrios": 1,
     "del atrio": 68,
-    "del patio": 2,
+    "del patio": 3,
     "el atrio": 14,
     "el medio del atrio": 1,
     "el patio": 1,
@@ -23332,7 +23290,7 @@ export const all_socu = {
     "y asar gadda": 2
   },
   "H2695": {
-    "hesrai": 1,
+    "hesrai": 2,
     "hesro": 1
   },
   "H2696": {
@@ -23488,7 +23446,7 @@ export const all_socu = {
     "tenían ración": 2,
     "tu provisión ordinaria": 1,
     "tus estatutos": 11,
-    "términos": 1,
+    "términos": 2,
     "vuestra tarea": 1,
     "y costumbre": 1,
     "y de sus estatutos": 1,
@@ -24121,7 +24079,7 @@ export const all_socu = {
     "á causa de la ardiente": 1
   },
   "H2741": {
-    "haruphita": 1
+    "haruphita": 2
   },
   "H2742": {
     "antes que el oro": 1,
@@ -24349,7 +24307,7 @@ export const all_socu = {
     "de heres": 1
   },
   "H2777": {
-    "oriental": 1
+    "oriental": 2
   },
   "H2778": {
     "afrenta": 2,
@@ -24532,8 +24490,7 @@ export const all_socu = {
     "de ella callando": 1,
     "de los que piensan": 1,
     "del todo": 2,
-    "desentiendas": 2,
-    "el carpintero": 1,
+    "desentiendas": 1,
     "el que ara": 2,
     "en orden á": 1,
     "en que el que ara": 1,
@@ -24566,7 +24523,8 @@ export const all_socu = {
   },
   "H2791": {
     "de los artífices": 1,
-    "secretamente": 1
+    "secretamente": 1,
+    "y el artífice": 1
   },
   "H2792": {
     "heres": 1
@@ -24821,6 +24779,7 @@ export const all_socu = {
     "de callar": 1,
     "he callado": 1,
     "he yo disimulado": 1,
+    "no sea yo dejándome": 1,
     "os estáis": 1,
     "pues hacían callar": 1,
     "te estarás quieto": 1,
@@ -25067,7 +25026,7 @@ export const all_socu = {
   },
   "H2851": {
     "con su terror": 1,
-    "mi terror": 1,
+    "mi terror": 2,
     "miedo": 1,
     "porque fueron terror": 1,
     "su espanto": 1
@@ -25248,7 +25207,7 @@ export const all_socu = {
   "H2874": {
     "al degolladero": 2,
     "al matadero": 2,
-    "degollar": 1,
+    "degollar": 2,
     "matanza": 1,
     "mató": 1,
     "para degollar": 1,
@@ -25256,7 +25215,6 @@ export const all_socu = {
     "y entregarálas al matadero": 1
   },
   "H2875": {
-    "al degolladero": 1,
     "á teba": 1
   },
   "H2876": {
@@ -25315,7 +25273,7 @@ export const all_socu = {
   "H2885": {
     "anillos": 41,
     "con el anillo": 3,
-    "con sus anillos": 2,
+    "con sus anillos": 3,
     "de sus anillos": 2,
     "en los anillos": 1,
     "gozne": 2,
@@ -25325,7 +25283,7 @@ export const all_socu = {
     "su anillo": 3,
     "sus anillos": 1,
     "y signado con el anillo": 1,
-    "á los anillos": 4
+    "á los anillos": 5
   },
   "H2886": {
     "de tabrimón": 1
@@ -25346,7 +25304,7 @@ export const all_socu = {
     "está limpio": 2,
     "fino": 8,
     "fueron limpios": 1,
-    "la limpieza": 1,
+    "la limpieza": 2,
     "la mesa": 1,
     "limpia": 10,
     "limpiado": 1,
@@ -25379,7 +25337,6 @@ export const all_socu = {
     "y á ahiman": 1
   },
   "H2890": {
-    "la limpieza": 1,
     "muy limpio": 1
   },
   "H2891": {
@@ -25470,7 +25427,7 @@ export const all_socu = {
     "y la observancia de la expiación": 1
   },
   "H2895": {
-    "bien": 3,
+    "bien": 2,
     "mejor": 1,
     "parecía bien": 1,
     "place": 6,
@@ -25493,7 +25450,7 @@ export const all_socu = {
     "arachîta es mejor": 2,
     "así son las buenas": 1,
     "aun respecto de lo bueno": 1,
-    "bien": 59,
+    "bien": 60,
     "buen": 5,
     "buena": 14,
     "buenas": 9,
@@ -25638,7 +25595,7 @@ export const all_socu = {
     "que era hermoso": 1,
     "que es bueno": 1,
     "que le agrada": 2,
-    "que yéndose alegrando": 1,
+    "que yéndose alegrando": 2,
     "se ha demudado": 1,
     "sea buena": 1,
     "sea bueno": 1,
@@ -25700,7 +25657,7 @@ export const all_socu = {
     "y á los buenos": 1,
     "y él apareciere bien": 1,
     "yo el bien": 1,
-    "yo lo bueno": 1,
+    "yo lo bueno": 2,
     "á bien": 1,
     "á donde mejor": 2,
     "á lo mejor": 1,
@@ -25997,7 +25954,7 @@ export const all_socu = {
     "será": 2,
     "será inmunda": 10,
     "será inmundo": 26,
-    "seáis inmundos": 1,
+    "seáis inmundos": 2,
     "soy inmunda": 1,
     "sí misma para contaminarse": 1,
     "te contaminaste": 1,
@@ -26084,7 +26041,6 @@ export const all_socu = {
     "á inmundicia": 1
   },
   "H2933": {
-    "os contaminéis": 1,
     "somos viles": 1
   },
   "H2934": {
@@ -26429,7 +26385,7 @@ export const all_socu = {
     "á josías": 2
   },
   "H2978": {
-    "de la entrada": 1
+    "de la entrada": 2
   },
   "H2979": {
     "jeothrai": 1
@@ -26781,11 +26737,12 @@ export const all_socu = {
     "algo por mano": 1,
     "algo á tu mano": 1,
     "alzando sus manos": 1,
-    "ambas manos": 2,
+    "ambas manos": 3,
     "antes está su mano": 2,
     "aquél en cuyo poder": 1,
     "aquí en tu mano": 1,
     "así de sus manos": 2,
+    "así hace": 1,
     "así que mi mano": 1,
     "bajo de mi mano": 1,
     "bajo la mano": 3,
@@ -26809,7 +26766,7 @@ export const all_socu = {
     "conozcan la mano": 1,
     "contra él mas la mano": 2,
     "corroboró la mano": 1,
-    "cuando tuvieres poder": 1,
+    "cuando tuvieres poder": 2,
     "cuanto con mano": 2,
     "cuidado": 3,
     "cuya mano": 2,
@@ -26831,7 +26788,7 @@ export const all_socu = {
     "de mis manos": 15,
     "de su mano": 29,
     "de su poder": 1,
-    "de sus manos": 34,
+    "de sus manos": 35,
     "de todos": 1,
     "de tu mano": 18,
     "de tus manos": 14,
@@ -26932,7 +26889,7 @@ export const all_socu = {
     "los sobacos": 1,
     "los términos": 1,
     "mano": 110,
-    "manos": 52,
+    "manos": 53,
     "mas con tu mano": 1,
     "mas la mano": 3,
     "mas las manos": 2,
@@ -26964,7 +26921,7 @@ export const all_socu = {
     "por elías": 1,
     "por la mano": 11,
     "por las manos": 2,
-    "por mano": 63,
+    "por mano": 64,
     "por medio": 6,
     "por mi mano": 3,
     "por mi propia mano": 1,
@@ -27000,7 +26957,7 @@ export const all_socu = {
     "su poder": 1,
     "su término": 1,
     "sus ejes": 1,
-    "sus manos": 52,
+    "sus manos": 53,
     "también en tu mano": 1,
     "te suplico de su mano": 1,
     "tendrá angustia las manos": 1,
@@ -27010,7 +26967,7 @@ export const all_socu = {
     "tenía en su mano": 1,
     "tenía las manos": 1,
     "tenían en su mano": 1,
-    "tenían manos": 1,
+    "tenían manos": 2,
     "tiene está en tu mano": 2,
     "tiene manos": 1,
     "tienen en su mano": 1,
@@ -27046,11 +27003,11 @@ export const all_socu = {
     "y de la una parte y de la otra tenía apoyos": 2,
     "y de las garras": 3,
     "y de las manos": 8,
-    "y de los que tenían": 1,
+    "y de los que tenían": 2,
     "y de mano": 12,
     "y de tu mano": 1,
     "y el limpio de manos": 1,
-    "y ellos henchirán sus manos": 1,
+    "y ellos henchirán sus manos": 2,
     "y en la mano": 6,
     "y en las manos": 1,
     "y en mano": 41,
@@ -27231,10 +27188,10 @@ export const all_socu = {
   },
   "H3038": {
     "de iduthum": 1,
-    "de jeduthún": 11,
+    "de jeduthún": 12,
     "jeduthún": 4,
-    "principal para jeduthún": 1,
-    "principal á jeduthún": 2,
+    "principal para jeduthún": 2,
+    "principal á jeduthún": 3,
     "y de jeduthún": 2,
     "y los de jeduthún": 1,
     "y á jeduthún": 3
@@ -27446,7 +27403,7 @@ export const all_socu = {
     "lo sabrás": 1,
     "lo sabía": 2,
     "lo sentí": 1,
-    "lo sepa": 1,
+    "lo sepa": 2,
     "lo supe": 1,
     "lo supiste": 2,
     "lo supo": 2,
@@ -27456,7 +27413,7 @@ export const all_socu = {
     "los que conocen": 1,
     "los que conocéis": 1,
     "los que contaban": 1,
-    "los que le conocen": 1,
+    "los que le conocen": 2,
     "los que le conocían": 1,
     "los que sabéis": 1,
     "los que sabían": 3,
@@ -27537,7 +27494,7 @@ export const all_socu = {
     "piensa": 1,
     "podíamos": 2,
     "por cierto": 4,
-    "por saber": 3,
+    "por saber": 4,
     "por tanto sabe que": 1,
     "potencia": 1,
     "pues conoces": 1,
@@ -27644,7 +27601,7 @@ export const all_socu = {
     "y conoce": 4,
     "y conoced": 1,
     "y conocemos": 1,
-    "y conocen": 1,
+    "y conocen": 2,
     "y conoceremos": 2,
     "y conocerme": 1,
     "y conocerá": 1,
@@ -27683,7 +27640,7 @@ export const all_socu = {
     "y notificásteles": 1,
     "y os haremos saber": 1,
     "y os haré saber": 1,
-    "y por conocer": 1,
+    "y por conocer": 2,
     "y que fuí conocido": 1,
     "y que sabían": 2,
     "y reconociólos": 1,
@@ -27710,7 +27667,7 @@ export const all_socu = {
     "y á ellos hará conocer": 1,
     "y á saber": 3,
     "y él conoce": 1,
-    "yo conozco": 5,
+    "yo conozco": 6,
     "yo entendiera": 4,
     "yo entiendo": 1,
     "yo he conocido que": 1,
@@ -27719,7 +27676,7 @@ export const all_socu = {
     "yo sabría": 1,
     "yo sabía": 1,
     "yo sepa": 1,
-    "yo sé": 7,
+    "yo sé": 8,
     "yo te he mandado y yo señalé": 2,
     "á conocer": 4,
     "á los que te conocen": 1,
@@ -27923,7 +27880,7 @@ export const all_socu = {
     "cuanto él había desnudado á judá": 2,
     "de bajo la mano de judá": 1,
     "de debajo de la mano de judá": 1,
-    "de judá": 592,
+    "de judá": 593,
     "de las familias de judá": 1,
     "ellos y jehudas": 1,
     "en judá": 28,
@@ -27978,20 +27935,20 @@ export const all_socu = {
   "H3064": {
     "al judío": 1,
     "con el judío": 1,
-    "contra los judíos": 2,
+    "contra los judíos": 3,
     "de entre los judíos": 1,
-    "de los judíos": 10,
+    "de los judíos": 11,
     "de un judío": 1,
     "del reino han muerto los judíos": 1,
     "entre los judíos": 2,
     "estos judíos": 1,
-    "judío": 8,
+    "judío": 9,
     "judíos": 6,
     "los judíos": 35,
-    "mas los judíos": 1,
-    "por razón de los judíos": 1,
+    "mas los judíos": 2,
+    "por razón de los judíos": 2,
     "tenían los judíos": 1,
-    "y los judíos": 3,
+    "y los judíos": 4,
     "y también á los judíos": 1,
     "á causa de los judíos": 1,
     "á los judíos": 10
@@ -28013,6 +27970,7 @@ export const all_socu = {
     "acuérdate oh jehová": 1,
     "además jehová": 2,
     "ajeno que jehová": 1,
+    "al cual jehová": 3,
     "al dicho de jehová": 7,
     "al modo que jehová": 1,
     "al que jehová": 1,
@@ -28032,7 +27990,7 @@ export const all_socu = {
     "así jehová": 3,
     "atribuid á jehová": 2,
     "aunque jehová": 2,
-    "aún jehová": 3,
+    "aún jehová": 4,
     "bendígate jehová": 1,
     "bien jehová": 2,
     "buscaron á jehová": 1,
@@ -28041,12 +27999,12 @@ export const all_socu = {
     "celebrad á jehová": 1,
     "cerca de jehová": 3,
     "clamaron los justos y jehová": 1,
-    "como jehová": 104,
-    "como lo había jehová": 4,
+    "como jehová": 108,
+    "como lo había jehová": 6,
     "como tú jehová": 1,
     "complácese jehová": 1,
     "con ellos como jehová": 1,
-    "con jehová": 5,
+    "con jehová": 6,
     "con motivo de lo que jehová": 1,
     "con todo eso jehová": 3,
     "con vosotros jehová": 1,
@@ -28056,9 +28014,10 @@ export const all_socu = {
     "contigo como jehová": 2,
     "contra ellos que jehová": 2,
     "contra ellos y jehová": 1,
-    "contra jehová": 63,
+    "contra jehová": 64,
     "contra mí mis rebeliones á jehová": 1,
     "contra quien jehová": 2,
+    "cosas jehová": 1,
     "cuando jehová": 7,
     "cuanto jehová": 2,
     "cuanto tú oh jehová": 1,
@@ -28070,14 +28029,14 @@ export const all_socu = {
     "de como jehová": 1,
     "de con jehová": 1,
     "de culpa para con jehová": 3,
-    "de dios": 4,
+    "de dios": 5,
     "de ella así jehová": 1,
     "de ellos está jehová": 2,
     "de ellos jehová": 1,
     "de ellos oh jehová": 1,
     "de ellos que jehová": 2,
     "de esto jehová": 1,
-    "de jehová": 2407,
+    "de jehová": 2556,
     "de la manera que jehová": 2,
     "de mí jehová": 3,
     "de mí oh jehová": 2,
@@ -28085,7 +28044,7 @@ export const all_socu = {
     "de que jehová": 2,
     "de sus posesiones conforme á la palabra de jehová": 1,
     "de ti como jehová": 3,
-    "de ti oh jehová": 2,
+    "de ti oh jehová": 3,
     "de tu ira jehová": 1,
     "decirle has jehová": 1,
     "dejado ha jehová": 2,
@@ -28095,6 +28054,7 @@ export const all_socu = {
     "del siglo es jehová": 1,
     "delante de jehová": 1,
     "des oh jehová": 1,
+    "descendió de jehová": 1,
     "desde que jehová": 1,
     "despertado ha jehová": 2,
     "dice jehová": 4,
@@ -28117,13 +28077,13 @@ export const all_socu = {
     "ellos siendo jehová": 1,
     "ellos y dióles jehová": 1,
     "ellos á jehová": 2,
-    "empero jehová": 6,
+    "empero jehová": 7,
     "empero oh jehová": 1,
     "empero á jehová": 1,
     "empero á vosotros jehová": 1,
     "en días jehová": 1,
     "en el servicio de jehová": 2,
-    "en jehová": 53,
+    "en jehová": 54,
     "en lugar de jehová": 1,
     "en ofrenda á jehová": 1,
     "en que jehová": 2,
@@ -28137,17 +28097,20 @@ export const all_socu = {
     "eres oh jehová": 1,
     "es abominado de jehová": 1,
     "es alabar á jehová": 1,
-    "es de jehová": 14,
+    "es de hacer oh jehová": 1,
+    "es de jehová": 15,
     "es esperar en jehová": 1,
     "es esto de jehová": 1,
-    "es jehová": 34,
-    "es á jehová": 8,
+    "es jehová": 42,
+    "es lo que jehová": 1,
+    "es á jehová": 9,
     "espantosa de jehová": 1,
     "espera en jehová": 1,
     "esperó á jehová": 1,
     "está jehová": 11,
     "está pues jehová": 2,
     "excitó jehová": 2,
+    "fué jehová": 1,
     "fué por mano de jehová": 2,
     "fué pues jehová": 1,
     "glorificarte he oh jehová": 1,
@@ -28168,6 +28131,7 @@ export const all_socu = {
     "hame pagado jehová": 1,
     "hará jehová": 2,
     "has tú oh jehová": 1,
+    "hasta que jehová": 1,
     "hay como jehová": 1,
     "hay fuera de jehová": 1,
     "hay para dios": 1,
@@ -28175,6 +28139,7 @@ export const all_socu = {
     "he aquí jehová": 1,
     "he asimismo en jehová": 2,
     "he que jehová": 1,
+    "he á tus testimonios oh jehová": 1,
     "hemos contra jehová": 2,
     "hemos rogado á la faz de jehová": 1,
     "herirte ha jehová": 1,
@@ -28184,17 +28149,17 @@ export const all_socu = {
     "imputa jehová": 1,
     "intimó jehová": 2,
     "ir jehová": 2,
-    "jehová": 3075,
-    "jehová nissi": 1,
+    "jehová": 3232,
     "jehová salom": 2,
     "la como jehová": 2,
     "la justicia de jehová": 1,
     "la ordenanza de jehová": 1,
     "la parte de jehová": 1,
+    "las cuales jehová": 1,
     "las justicias de jehová": 2,
     "las sendas de jehová": 1,
     "las valentías de jehová": 1,
-    "le induciré y jehová": 2,
+    "le induciré y jehová": 1,
     "les había jehová": 1,
     "limpié y jehová": 1,
     "lo entendiere me matará jehová": 2,
@@ -28208,15 +28173,16 @@ export const all_socu = {
     "luego jehová": 1,
     "luego que jehová": 1,
     "mandó jehová": 1,
+    "manera oh jehová": 1,
     "manera á jehová": 3,
     "mas de jehová": 4,
-    "mas jehová": 59,
+    "mas jehová": 60,
     "mas oh jehová": 1,
     "mas su negociación y su ganancia será consagrada á jehová": 2,
     "mas á jehová": 1,
     "me son jehová": 1,
     "mi parte es jehová": 1,
-    "más jehová": 7,
+    "más jehová": 8,
     "mí dijo jehová": 1,
     "mí oh jehová": 1,
     "mí que jehová": 1,
@@ -28230,7 +28196,7 @@ export const all_socu = {
     "ofrenda á jehová": 3,
     "oh alma mía á jehová": 1,
     "oh dios": 1,
-    "oh jehová": 216,
+    "oh jehová": 252,
     "oigate jehová": 1,
     "ordenación de jehová": 2,
     "oyeme jehová": 1,
@@ -28238,7 +28204,7 @@ export const all_socu = {
     "para con jehová": 1,
     "para cumplir jehová": 1,
     "para jehová": 17,
-    "para que jehová": 2,
+    "para que jehová": 3,
     "para sí jehová": 2,
     "pecaréis contra jehová": 1,
     "perdona oh jehová": 2,
@@ -28249,13 +28215,13 @@ export const all_socu = {
     "por cuanto jehová": 5,
     "por el que jehová": 2,
     "por eso jehová": 4,
-    "por jehová": 28,
+    "por jehová": 29,
     "por lo cual jehová": 2,
     "por mandado de jehová": 3,
     "por tanto jehová": 10,
-    "por él á jehová": 1,
+    "por él á jehová": 2,
     "porque había jehová": 2,
-    "porque jehová": 20,
+    "porque jehová": 21,
     "porque tú jehová": 1,
     "preguntaron á la boca de jehová": 1,
     "presentado á jehová": 1,
@@ -28264,7 +28230,7 @@ export const all_socu = {
     "publicó jehová": 1,
     "pues cuando jehová": 1,
     "pues de jehová": 2,
-    "pues jehová": 14,
+    "pues jehová": 16,
     "pues oh jehová": 4,
     "pues que jehová": 4,
     "pues á jehová": 2,
@@ -28272,6 +28238,7 @@ export const all_socu = {
     "que aquella noche jehová": 1,
     "que cuando quiso jehová": 1,
     "que decían jehová": 1,
+    "que herirá jehová": 1,
     "que jehová": 50,
     "que si jehová": 2,
     "que sirviesen á jehová": 2,
@@ -28295,6 +28262,7 @@ export const all_socu = {
     "según que jehová": 1,
     "servir á jehová": 1,
     "será de jehová": 3,
+    "será durable jehová": 3,
     "será jehová": 4,
     "será jehová shamma": 1,
     "señor": 1,
@@ -28308,9 +28276,10 @@ export const all_socu = {
     "somos jehová": 1,
     "son de jehová": 2,
     "son nada mas jehová": 1,
+    "son tuyas tuyo oh jehová": 2,
     "son á jehová": 4,
     "soy de jehová": 2,
-    "soy jehová": 102,
+    "soy jehová": 103,
     "también jehová": 5,
     "tanto jehová": 2,
     "te aires oh jehová": 1,
@@ -28324,8 +28293,9 @@ export const all_socu = {
     "ti jehová": 4,
     "ti oh jehová": 3,
     "ti por causa de jehová": 1,
-    "tiene jehová": 2,
+    "tiene jehová": 5,
     "tras jehová": 2,
+    "tuya es oh jehová": 2,
     "tú jehová": 1,
     "venía de jehová": 1,
     "vez jehová": 2,
@@ -28351,7 +28321,7 @@ export const all_socu = {
     "y hacerte ha jehová": 2,
     "y hagas las guerras de jehová": 1,
     "y he aquí oh jehová": 1,
-    "y jehová": 330,
+    "y jehová": 338,
     "y la saña de jehová": 1,
     "y luego que entró á ella jehová": 1,
     "y mi": 1,
@@ -28361,6 +28331,7 @@ export const all_socu = {
     "y sea jehová": 2,
     "y será que como jehová": 2,
     "y serás prosperado que jehová": 1,
+    "y señor de ira jehová": 3,
     "y solo jehová": 1,
     "y te hará jehová": 2,
     "y volverte ha jehová": 1,
@@ -28371,11 +28342,12 @@ export const all_socu = {
     "yo á jehová": 6,
     "á causa de jehová": 1,
     "á fin de que se diga jehová": 1,
-    "á jehová": 980,
+    "á jehová": 1029,
     "á la faz de jehová": 2,
     "á la manera que jehová": 2,
     "á las cuales jehová": 1,
     "á los cuales jehová": 2,
+    "á los suyos jehová": 3,
     "á quien jehová": 1,
     "á solo jehová": 1,
     "á sí como lo está jehová": 1,
@@ -28387,17 +28359,20 @@ export const all_socu = {
     "óyeme jehová": 1
   },
   "H3069": {
-    "de dios": 3,
     "de jehová": 2,
     "dios": 4,
-    "jehová": 251,
+    "jehová": 310,
     "matanza será á jehová": 2,
     "pues jehová": 1,
     "soy jehová": 3,
+    "ti oh jehová": 1,
     "á jehová": 1
   },
   "H307": {
     "en achmetta": 1
+  },
+  "H3071": {
+    "jehová nissi": 2
   },
   "H3075": {
     "jozabad": 2,
@@ -28467,7 +28442,7 @@ export const all_socu = {
     "pues jonathán": 1,
     "se enardeció contra jonathán": 1,
     "y de jonathán": 2,
-    "y jonathán": 27,
+    "y jonathán": 25,
     "y tornó jonathán": 1,
     "y á jonathán": 1,
     "á jonathán": 7
@@ -28658,7 +28633,7 @@ export const all_socu = {
     "de él y detrás": 2,
     "del muerto vaya tras": 1,
     "del postigo": 1,
-    "después": 202,
+    "después": 205,
     "después que": 1,
     "detrás": 8,
     "el tiempo de un mes y después": 1,
@@ -28720,7 +28695,7 @@ export const all_socu = {
     "sus tiendas á espaldas": 1,
     "también tras": 1,
     "tardío después": 1,
-    "tras": 102,
+    "tras": 103,
     "tu posteridad": 1,
     "tú tras": 1,
     "unos tras": 1,
@@ -28813,7 +28788,6 @@ export const all_socu = {
     "josabad": 1,
     "jozabad": 7,
     "jozabed": 1,
-    "pues josachâr": 1,
     "y josabad": 1,
     "y jozabad": 1
   },
@@ -28966,7 +28940,7 @@ export const all_socu = {
     "de mí por días": 1,
     "de por vida": 1,
     "de su nazareato por tanto el día": 2,
-    "de sus días": 1,
+    "de sus días": 2,
     "de sí el día": 2,
     "de ti hoy": 1,
     "de ti que en el día": 1,
@@ -28993,8 +28967,8 @@ export const all_socu = {
     "dos": 2,
     "dos días": 5,
     "durare por un día": 2,
-    "día": 371,
-    "días": 454,
+    "día": 369,
+    "días": 453,
     "edad": 1,
     "el día": 253,
     "el día de hoy": 2,
@@ -29063,7 +29037,7 @@ export const all_socu = {
     "escríbete el nombre de este día": 3,
     "estaba puesto desde el día": 1,
     "este día": 23,
-    "estos días": 9,
+    "estos días": 7,
     "estuviéramos hoy": 3,
     "está el día": 14,
     "está hoy": 2,
@@ -29417,6 +29391,7 @@ export const all_socu = {
     "como paloma": 2,
     "como palomas": 4,
     "de la paloma": 1,
+    "de palomas": 1,
     "el": 1,
     "la paloma": 4,
     "mía": 1,
@@ -29587,7 +29562,7 @@ export const all_socu = {
     "y cuanto más": 1
   },
   "H3149": {
-    "y jeziel": 1
+    "y jeziel": 2
   },
   "H315": {
     "ara": 1
@@ -29660,7 +29635,7 @@ export const all_socu = {
     "es á todos": 1,
     "fueron todos á una": 1,
     "igualmente": 2,
-    "juntamente": 34,
+    "juntamente": 35,
     "juntas": 2,
     "junto": 1,
     "juntos": 17,
@@ -29745,6 +29720,9 @@ export const all_socu = {
   "H3174": {
     "y jehías": 1
   },
+  "H3175": {
+    "es esperar": 1
+  },
   "H3176": {
     "aguardan": 1,
     "como esperamos": 1,
@@ -29764,6 +29742,7 @@ export const all_socu = {
     "he esperado": 3,
     "lo cual esperaré": 1,
     "los que esperan": 1,
+    "me duelen": 1,
     "me has hecho esperar": 1,
     "mía y te conturbas en mí espera": 1,
     "pondrán su esperanza": 1,
@@ -29773,7 +29752,7 @@ export const all_socu = {
     "y esperaban": 1,
     "y esperábanme": 1,
     "y esperó": 1,
-    "y él esperó": 1,
+    "y él esperó": 2,
     "yo he esperado": 1,
     "yo pues he esperado": 1,
     "é inmolar víctimas pacíficas espera": 1
@@ -29824,8 +29803,7 @@ export const all_socu = {
     "él en la línea": 1
   },
   "H3188": {
-    "de la genealogía": 1,
-    "también á los que eran contados": 1
+    "de la genealogía": 1
   },
   "H3189": {
     "de jahat": 1,
@@ -30071,7 +30049,7 @@ export const all_socu = {
     "lo puedo": 1,
     "lo vencerás": 1,
     "los hombres y has vencido": 1,
-    "los pudieron": 1,
+    "los pudieron": 2,
     "me lo supiereis": 1,
     "me puedo": 1,
     "os podrá": 3,
@@ -30096,7 +30074,7 @@ export const all_socu = {
     "pudiendo": 1,
     "pudiere": 2,
     "pudieres": 2,
-    "pudieron": 18,
+    "pudieron": 19,
     "pudieron acabar": 1,
     "pudiese salvar": 2,
     "pudiesen": 1,
@@ -30124,16 +30102,16 @@ export const all_socu = {
     "y he vencido": 1,
     "y prevaleció": 1,
     "y también prevalece": 1,
-    "á ti mas podré": 2,
+    "á ti mas podré": 4,
     "él pudiere": 2
   },
   "H3202": {
-    "ahora pudieres": 2,
+    "ahora pudieres": 4,
     "lo pueden": 1,
     "podían": 1,
     "pueda": 1,
     "puede": 1,
-    "puedes declarar": 2,
+    "puedes declarar": 4,
     "que pueda": 1,
     "revelar": 1,
     "te ha podido": 1,
@@ -30143,7 +30121,7 @@ export const all_socu = {
   "H3204": {
     "de jechônías": 1,
     "jechônías": 3,
-    "á jechônías": 4
+    "á jechônías": 3
   },
   "H3205": {
     "al cual había engendrado": 1,
@@ -30237,7 +30215,7 @@ export const all_socu = {
     "me engendró": 1,
     "me habían engendrado": 1,
     "me habías engendrado": 1,
-    "me has engendrado": 2,
+    "me has engendrado": 3,
     "me parió": 3,
     "mías y parieron": 1,
     "nace": 1,
@@ -30287,7 +30265,7 @@ export const all_socu = {
     "vez y parió": 7,
     "y achîtob engendró": 4,
     "y aun engendró": 1,
-    "y el que engendró": 1,
+    "y el que engendró": 2,
     "y ella le hubiere parido": 1,
     "y ella le parió": 2,
     "y engendrad": 2,
@@ -30304,7 +30282,7 @@ export const all_socu = {
     "y les nacieron": 1,
     "y los nacidos": 1,
     "y maonathi el cual engendró": 2,
-    "y nacieron": 5,
+    "y nacieron": 6,
     "y naciéronle": 3,
     "y paren": 4,
     "y pariere": 1,
@@ -30362,7 +30340,7 @@ export const all_socu = {
     "son los niños": 2,
     "sus crías": 1,
     "sus hijos": 1,
-    "sus pollos": 1,
+    "sus pollos": 2,
     "tenía hijos": 2,
     "un niño": 1,
     "y colocó en ella al niño": 1,
@@ -30418,15 +30396,420 @@ export const all_socu = {
     "y el nacido": 1
   },
   "H3212": {
-    "apártate": 1,
+    "adónde me iré": 1,
+    "al que pastoreó": 1,
+    "anda": 15,
+    "andaban": 17,
+    "andad": 16,
+    "andando": 6,
+    "andar": 1,
+    "andaremos": 2,
+    "andará": 1,
+    "andarán": 4,
+    "andarás": 3,
+    "andaré": 2,
+    "andaréis": 5,
+    "ande": 3,
+    "anden": 2,
+    "andes": 3,
+    "anduviere": 1,
+    "anduviereis": 2,
+    "anduvieren": 1,
+    "anduvieres": 4,
+    "anduvieron": 2,
+    "anduvieseis": 1,
+    "anduvimos": 1,
+    "anduvo": 1,
+    "andéis": 3,
+    "antes anduvieron": 1,
+    "antes anduvo": 2,
+    "antes caminaron": 1,
+    "antes has andado": 1,
+    "antes que vaya": 1,
+    "antes se fueron": 2,
+    "apartase": 1,
+    "apartábanse": 1,
+    "apártate": 2,
+    "así que viniendo": 1,
+    "así se fué": 6,
+    "así vinieron": 1,
+    "caminaba": 7,
+    "caminando": 1,
+    "caminaron": 2,
+    "caminarán": 2,
+    "como ayer y antes de ayer vayan": 1,
+    "con cadenas lleváronlo": 1,
+    "con ejército vendrán": 2,
+    "con todo andaremos": 2,
+    "contra mí irás": 2,
+    "correrán": 2,
+    "corriendo": 1,
+    "corrían": 1,
+    "cosa andar": 2,
+    "cruzaron": 1,
+    "cuando andaban": 28,
+    "cuando andabas": 1,
+    "cuando anduvieres": 1,
+    "cuando ellos andaban": 2,
+    "cuando fueres": 1,
+    "cuando iba": 1,
+    "cuando los llevó": 1,
+    "de andar": 1,
+    "de caminar": 1,
+    "de ella vaya": 1,
+    "de ellos anduvisteis": 1,
+    "de la cual yo caminaba": 1,
+    "de mí andado": 1,
+    "de nosotros irá": 1,
+    "de que andarían": 1,
+    "de que irían": 1,
+    "de sus aldeas irán": 1,
+    "de él iban": 5,
+    "debes andar": 1,
+    "después me llevó": 1,
+    "después que te hayas apartado": 1,
+    "después vino": 1,
+    "después yendo": 1,
+    "diciendo ve": 1,
+    "diciendo venid": 2,
     "diciéndole ve": 1,
+    "dios que andes": 1,
+    "donde quiera que tú fueres": 2,
+    "e iba": 2,
+    "ea pues vamos": 3,
+    "el cual fué": 1,
+    "el cual iba": 1,
+    "el hace andar": 1,
+    "el lleva": 1,
+    "el que los condujo": 1,
+    "el que los guió": 1,
+    "el rey de ellos fué": 1,
+    "ellos tengo de ir": 1,
+    "empero andaré": 1,
+    "empero cuando fueron": 1,
+    "emprendieres": 1,
+    "en andar": 1,
+    "en ellos y fuése": 1,
+    "en poneros en marcha": 1,
+    "en tanto que él venía": 1,
+    "entonces ella fué": 1,
+    "entonces fué": 2,
+    "entonces fuí": 1,
+    "entonces se fué": 1,
+    "entonces ven": 1,
+    "entonces él fué": 1,
+    "entraron": 1,
+    "era que anduviesen": 4,
+    "era que anduviesen andaban": 3,
+    "es ir": 2,
+    "extenderse": 1,
+    "fluirán": 2,
+    "frasco de vino y fuése": 1,
+    "fueren": 2,
+    "fueres": 5,
+    "fueron": 16,
+    "fueseis": 1,
+    "fuiste": 1,
+    "fué": 29,
+    "fuéremos": 1,
+    "fuéronles": 1,
+    "fuéronse": 2,
+    "fuése": 6,
+    "fuí": 1,
+    "ha de ir": 2,
+    "ha encontrado iremos": 1,
+    "habré andado": 1,
+    "habéis de ir": 2,
+    "había ido": 1,
+    "habían ido": 1,
+    "has venido": 1,
+    "haya de volver": 1,
+    "he aquí yo me voy": 1,
+    "hemos de ir": 4,
+    "iba": 7,
+    "iban": 1,
+    "id": 25,
+    "ido": 2,
+    "idos": 6,
+    "ir": 8,
+    "iremos": 8,
+    "irme": 1,
+    "irá": 11,
+    "irán": 6,
+    "irás": 4,
+    "iré": 26,
+    "iréis": 2,
+    "iréme": 1,
+    "las veredas derechas por andar": 1,
+    "llegó": 2,
+    "lleva": 1,
+    "llevad": 2,
+    "llevan": 1,
+    "llevará": 1,
+    "llevarán": 1,
+    "llevóme": 2,
+    "lo llevó": 1,
+    "los cuales fueron": 2,
+    "los cuales habían de ir": 1,
+    "los llevará": 1,
+    "luego id": 1,
+    "luego paseóse": 1,
+    "marchaos": 2,
+    "mi rostro irá": 1,
+    "mí y se fueron": 1,
+    "mía y vente": 1,
+    "mío e iban": 1,
+    "no yendo": 1,
+    "nos irá": 1,
+    "nosotros iremos": 1,
+    "os iréis": 4,
+    "os partiereis": 2,
+    "para andar": 2,
+    "para ir": 8,
+    "para irse": 5,
+    "para irte": 1,
+    "para llevar": 2,
+    "para que ellos vayan": 1,
+    "para que fuéramos": 1,
+    "para que me vaya": 1,
     "para que vengas": 1,
-    "pártete": 1,
+    "para que viniesen": 1,
+    "para que yo vaya": 1,
+    "para venir": 1,
+    "partieron": 1,
+    "partió": 2,
+    "partióse": 5,
+    "pasares": 1,
+    "pasea": 1,
+    "por donde habían de ir": 1,
+    "por dónde ir": 1,
+    "por ir": 2,
+    "por tanto ven": 1,
+    "porque dónde iría": 1,
+    "porque no fuesen": 1,
+    "progresaron": 1,
+    "pues anduvo": 1,
+    "pues caminaron": 1,
+    "pues se fué": 2,
+    "pues ve": 1,
+    "pues ven": 1,
+    "pues venid": 1,
+    "pues y vete": 1,
+    "pártete": 2,
+    "que andas": 1,
+    "que anden": 1,
+    "que andes": 1,
+    "que fueres": 1,
+    "que fuesen": 1,
+    "que fué": 1,
+    "que hubiere ido": 1,
+    "que iba": 2,
+    "que irás": 2,
+    "que le siguieron": 1,
+    "que me dejes ir": 2,
+    "que mudes": 1,
+    "que no anduviésemos": 1,
+    "que no caminase": 1,
+    "que no siguiese": 1,
+    "que quieras venir": 2,
+    "que se fuesen": 1,
+    "que se fuése": 1,
+    "que te hizo caminar": 1,
+    "que vaya": 2,
+    "que vayan": 1,
+    "que venga": 3,
+    "que vengas": 1,
+    "que yo iba": 1,
+    "querrá": 1,
+    "quieres venir": 2,
+    "quién y quién son los que han de ir": 1,
     "retírate": 1,
-    "ve": 6,
-    "vete": 2,
-    "y luego te seguiré": 1,
-    "y ve": 1
+    "ruégote que vengas": 2,
+    "saldrá": 2,
+    "salgáis": 2,
+    "salió": 1,
+    "se aumentaba": 1,
+    "se fueron": 2,
+    "se fuesen": 1,
+    "se fué": 11,
+    "se irán": 3,
+    "se movían": 3,
+    "se partieron": 1,
+    "se partió": 1,
+    "se quedó": 1,
+    "se retirase": 1,
+    "se volvió": 2,
+    "seguidle": 2,
+    "seguidme": 3,
+    "si anda": 1,
+    "si anduvieres": 2,
+    "siguiendo": 1,
+    "siguió": 1,
+    "sino que me marcharé": 2,
+    "soy ve": 1,
+    "su camino": 1,
+    "sí iré": 2,
+    "sí para que andemos": 1,
+    "también de astucia pues fueron": 1,
+    "también el levita para irse": 2,
+    "te ha traído": 1,
+    "te volviste": 1,
+    "tengo yo contigo ve": 1,
+    "tenía consigo ven": 1,
+    "tenía y lleváronle": 1,
+    "ti ve": 2,
+    "ti vete": 1,
+    "torna": 1,
+    "tornan para correr": 1,
+    "tornando": 2,
+    "tuyos irán": 1,
+    "tú fueres": 3,
+    "va": 1,
+    "vais": 1,
+    "vamos": 19,
+    "vas": 3,
+    "vaya": 22,
+    "vayamos": 1,
+    "vayan": 6,
+    "vayas": 3,
+    "vayáis": 2,
+    "ve": 72,
+    "ven": 28,
+    "venid": 37,
+    "venir": 2,
+    "venía": 2,
+    "vete": 10,
+    "vienes": 1,
+    "vinieres": 1,
+    "vino": 6,
+    "volveos": 1,
+    "vuélvete á acostar y él se volvió": 1,
+    "vínose": 1,
+    "y anda": 1,
+    "y andad": 5,
+    "y andan": 2,
+    "y andando": 2,
+    "y andaremos": 2,
+    "y andarán": 1,
+    "y andaré": 2,
+    "y anden": 1,
+    "y andes": 1,
+    "y anduvieron": 6,
+    "y anduvo": 11,
+    "y andéis": 1,
+    "y así se fué": 2,
+    "y caminando": 1,
+    "y caminaremos": 2,
+    "y caminaron": 1,
+    "y caminemos": 2,
+    "y caminó": 1,
+    "y comenzaron á caminar": 1,
+    "y como se apartó": 1,
+    "y cuando andaban": 2,
+    "y cuando llegó": 1,
+    "y declinarán": 1,
+    "y dijo anda": 1,
+    "y divulgóse": 1,
+    "y déjame ir": 1,
+    "y el rey se fué": 1,
+    "y ella partió": 1,
+    "y ellas irán": 1,
+    "y ellos fueron": 1,
+    "y ellos se fueron": 1,
+    "y ellos se volvieron": 1,
+    "y fueron": 19,
+    "y fué": 30,
+    "y fuéronse": 12,
+    "y fuése": 35,
+    "y fuí": 2,
+    "y guiaré": 1,
+    "y guiólos": 3,
+    "y hará llevar": 1,
+    "y haré andar": 1,
+    "y harélos andar": 1,
+    "y humillarte": 1,
+    "y la llevaré": 1,
+    "y le hace andar": 1,
+    "y le mandaré fueron": 1,
+    "y llegaron": 1,
+    "y lleváronlo": 1,
+    "y llevólos": 2,
+    "y llevóme": 1,
+    "y los suyos fueron": 1,
+    "y los suyos para irse": 1,
+    "y luego te seguiré": 2,
+    "y no habían podido seguir": 1,
+    "y os he hecho andar": 1,
+    "y os vais": 1,
+    "y para andar": 1,
+    "y partieron": 1,
+    "y partirá": 1,
+    "y partiéronse": 2,
+    "y partió": 3,
+    "y partióse": 4,
+    "y perezco": 1,
+    "y retrocedió": 1,
+    "y salió": 1,
+    "y saliólo": 1,
+    "y se fueron": 6,
+    "y se fué": 10,
+    "y se había ido": 1,
+    "y se va": 1,
+    "y se vayan": 1,
+    "y se venían": 1,
+    "y se vuelvan": 1,
+    "y siguiendo": 1,
+    "y siguieron": 3,
+    "y siguió": 3,
+    "y siguióla": 1,
+    "y tornad": 1,
+    "y tú has andado": 1,
+    "y vamos": 3,
+    "y ve": 13,
+    "y ven": 5,
+    "y venid": 1,
+    "y vente": 1,
+    "y vete": 5,
+    "y vinieron": 1,
+    "y vino": 2,
+    "y volvieron y fuéronse": 1,
+    "y volvió": 1,
+    "y volvióse": 1,
+    "y voy": 1,
+    "y vámonos": 4,
+    "y váyase": 1,
+    "y yendo": 2,
+    "y yo iré": 4,
+    "y yo os he traído": 1,
+    "y yéndose": 5,
+    "y él fué": 3,
+    "y él levantándose vino": 1,
+    "y él se fué": 3,
+    "y él se había ido": 1,
+    "y él se partió": 1,
+    "yendo": 1,
+    "yo iré": 4,
+    "yo os guiaré": 3,
+    "á andar": 2,
+    "á caminar": 1,
+    "á cusi ve": 1,
+    "á ellos al pasar": 1,
+    "á fin de que anduviesen": 1,
+    "á ir": 1,
+    "á irte": 1,
+    "á los de soba después se fueron": 1,
+    "á los que iban": 2,
+    "á partir": 1,
+    "á ése solamente y me iré": 1,
+    "é hízoles ir": 1,
+    "é iba": 3,
+    "é id": 4,
+    "é ido": 2,
+    "é idos": 1,
+    "é iremos": 2,
+    "é iré": 3,
+    "él había protestado contra ellos y siguieron": 1,
+    "él é iré": 1
   },
   "H3213": {
     "aulla": 2,
@@ -30625,7 +31008,7 @@ export const all_socu = {
     "á diestra": 7,
     "á la derecha": 7,
     "á la diestra": 4,
-    "á la mano derecha": 8,
+    "á la mano derecha": 9,
     "á la parte derecha": 1,
     "á mi diestra": 1,
     "á mi mano derecha": 1,
@@ -30667,7 +31050,7 @@ export const all_socu = {
   "H3233": {
     "derecha": 33,
     "derechas": 9,
-    "derecho": 23,
+    "derecho": 24,
     "derechos": 6,
     "lado derecho": 1
   },
@@ -30725,7 +31108,7 @@ export const all_socu = {
     "éstas pondrán": 1
   },
   "H3241": {
-    "y janum": 1
+    "y janum": 2
   },
   "H3242": {
     "de sus renuevos": 1
@@ -30774,6 +31157,7 @@ export const all_socu = {
     "cuando yo fundaba": 1,
     "de cimiento": 2,
     "echaban los cimientos": 1,
+    "echarán el fundamento": 1,
     "el cimiento": 1,
     "estaba aún fundado": 1,
     "fundadas": 1,
@@ -30821,7 +31205,7 @@ export const all_socu = {
     "y los que de mí se apartan": 1
   },
   "H325": {
-    "assuero": 28,
+    "assuero": 29,
     "de assuero": 5
   },
   "H3250": {
@@ -30863,7 +31247,6 @@ export const all_socu = {
     "de él él volverá": 1,
     "echará más": 1,
     "echaré": 1,
-    "el fundó": 1,
     "entonces aumentaré": 1,
     "entonces añadirás": 1,
     "entonces tornó": 1,
@@ -31073,10 +31456,10 @@ export const all_socu = {
   },
   "H3273": {
     "de jeiel": 1,
-    "jehiel": 3,
+    "jehiel": 4,
     "jeiel": 3,
     "matithías": 1,
-    "y jehiel": 1,
+    "y jehiel": 2,
     "á jeiel": 1
   },
   "H3275": {
@@ -31212,6 +31595,7 @@ export const all_socu = {
     "me aconseja": 1,
     "pensará": 1,
     "por tanto y consultemos": 1,
+    "que está acordado": 1,
     "que le dieron": 2,
     "te diere consejo": 1,
     "te indicaré": 1,
@@ -31328,8 +31712,7 @@ export const all_socu = {
     "á jara": 2
   },
   "H3295": {
-    "en un panal": 1,
-    "las breñas": 1
+    "en un panal": 1
   },
   "H3296": {
     "de jaare oregim": 2
@@ -31338,7 +31721,7 @@ export const all_socu = {
     "jaarsías": 1
   },
   "H3299": {
-    "y jaasai": 1
+    "y jaasai": 2
   },
   "H33": {
     "abiezerita": 2,
@@ -31672,13 +32055,13 @@ export const all_socu = {
     "que la misma noche salió": 1,
     "que los había sacado": 1,
     "que los sacaría": 1,
-    "que los saqué": 3,
+    "que los saqué": 4,
     "que os saqué": 1,
     "que pasaban á él saliendo": 1,
     "que rindiere": 1,
     "que saca": 1,
     "que sacasen": 2,
-    "que saldrá": 4,
+    "que saldrá": 5,
     "que saldrán": 1,
     "que sale": 6,
     "que salen": 5,
@@ -31712,8 +32095,8 @@ export const all_socu = {
     "sacares": 1,
     "sacaron": 2,
     "sacará": 9,
-    "sacarán": 3,
-    "sacarás": 5,
+    "sacarán": 4,
+    "sacarás": 6,
     "sacaste": 7,
     "sacó": 14,
     "sacólos": 2,
@@ -31721,7 +32104,7 @@ export const all_socu = {
     "sacósela": 1,
     "sal": 9,
     "saldremos": 2,
-    "saldrá": 42,
+    "saldrá": 44,
     "saldrán": 12,
     "saldrás": 7,
     "saldráse": 1,
@@ -31734,7 +32117,7 @@ export const all_socu = {
     "salga": 16,
     "salgamos": 2,
     "salgan": 2,
-    "salgas": 3,
+    "salgas": 4,
     "salgo": 1,
     "salid": 19,
     "salida": 1,
@@ -31751,7 +32134,7 @@ export const all_socu = {
     "salisteis": 1,
     "salió": 67,
     "salióles": 1,
-    "salí": 5,
+    "salí": 6,
     "salía": 9,
     "salían": 8,
     "salías": 2,
@@ -31785,7 +32168,7 @@ export const all_socu = {
     "tornaré á salir": 1,
     "tu mano y sácame": 1,
     "tu salida": 2,
-    "tú sacabas": 1,
+    "tú sacabas": 2,
     "tú sacaste": 1,
     "veces y salieron": 1,
     "vino á mí y sacó": 1,
@@ -31860,7 +32243,7 @@ export const all_socu = {
     "y salen": 2,
     "y salgamos": 1,
     "y salgan": 1,
-    "y salid": 3,
+    "y salid": 4,
     "y salida": 1,
     "y salido": 3,
     "y saliendo": 16,
@@ -31950,7 +32333,7 @@ export const all_socu = {
   "H3322": {
     "el me ha puesto": 1,
     "guardar": 1,
-    "paróme": 1,
+    "paróme": 2,
     "y la haga tornar": 1,
     "y lo pusiere": 1,
     "y puso": 1,
@@ -31982,7 +32365,7 @@ export const all_socu = {
   },
   "H3326": {
     "de mi estrado": 1,
-    "el aposento": 1,
+    "el aposento": 2,
     "el lecho": 1,
     "mi cama": 1,
     "mi lecho": 1,
@@ -31991,7 +32374,7 @@ export const all_socu = {
   "H3327": {
     "abraham isaac": 1,
     "con isaac": 1,
-    "de isaac": 21,
+    "de isaac": 19,
     "e isaac": 4,
     "en isaac": 1,
     "entonces isaac": 4,
@@ -32006,7 +32389,7 @@ export const all_socu = {
     "y estas son las generaciones de isaac": 2,
     "y exhaló isaac": 1,
     "y á isaac": 2,
-    "á isaac": 28,
+    "á isaac": 26,
     "é isaac": 5
   },
   "H3328": {
@@ -32035,7 +32418,7 @@ export const all_socu = {
     "derramado": 1,
     "derramaré": 2,
     "derramóla": 1,
-    "echaba": 1,
+    "echaba": 2,
     "echará": 2,
     "echóse": 1,
     "era de fundición": 1,
@@ -32051,7 +32434,6 @@ export const all_socu = {
     "sólido": 1,
     "todo lo hizo fundir": 1,
     "y asentaron": 1,
-    "y derramadla": 1,
     "y derramarás": 1,
     "y derramó": 3,
     "y derrámala": 1,
@@ -32090,7 +32472,7 @@ export const all_socu = {
     "dispongo": 1,
     "el alfarero": 1,
     "el formó": 1,
-    "el hacedor": 2,
+    "el hacedor": 1,
     "el que forma": 1,
     "el que formó": 3,
     "el que me formó": 1,
@@ -32107,7 +32489,7 @@ export const all_socu = {
     "fué formado": 1,
     "había formado": 1,
     "helo pensado": 1,
-    "la hizo": 2,
+    "la hizo": 1,
     "los formadores": 1,
     "los formaste": 1,
     "mía los críe los formé": 1,
@@ -32116,7 +32498,7 @@ export const all_socu = {
     "que hiciste": 1,
     "que la formó": 1,
     "que la labró": 1,
-    "que te formase": 1,
+    "que te formase": 2,
     "tesorero": 2,
     "tuyo y el que te formó": 1,
     "y forma": 1,
@@ -32130,7 +32512,7 @@ export const all_socu = {
     "del alfarero": 1,
     "designio": 1,
     "el intento": 1,
-    "en su obra": 1,
+    "en su obra": 2,
     "imaginación": 1,
     "ingenio y lo que hace": 1
   },
@@ -32140,9 +32522,6 @@ export const all_socu = {
   },
   "H3338": {
     "y mis pensamientos": 1
-  },
-  "H3339": {
-    "de los jeseritas": 1
   },
   "H3341": {
     "asolada": 1,
@@ -32154,8 +32533,8 @@ export const all_socu = {
     "ha sido encendida": 1,
     "he aquí que yo enciendo": 1,
     "le prenderéis": 1,
-    "pegaron": 2,
-    "quemadas": 2,
+    "pegaron": 3,
+    "quemadas": 3,
     "quemados": 1,
     "se ha encendido": 1,
     "serán puestas": 1,
@@ -32165,7 +32544,7 @@ export const all_socu = {
     "y encendió": 1,
     "y haré encender": 2,
     "y la pondrán": 1,
-    "y pegadles": 2,
+    "y pegadles": 3,
     "y prendieron": 1,
     "á prenderle fuego": 1
   },
@@ -32330,6 +32709,7 @@ export const all_socu = {
     "como la grasa": 1,
     "de hiram": 1,
     "de precio": 3,
+    "de prudente": 1,
     "entre tus ilustres": 1,
     "estimada": 1,
     "hermosa": 1,
@@ -32422,7 +32802,6 @@ export const all_socu = {
     "para que tema": 1,
     "para que tengas temor": 1,
     "para temerme": 1,
-    "pero los flecheros": 2,
     "por el temor": 1,
     "porque le temía": 1,
     "pues temed": 1,
@@ -32438,7 +32817,7 @@ export const all_socu = {
     "temamos": 1,
     "teman": 1,
     "temas": 38,
-    "teme": 3,
+    "teme": 4,
     "temed": 2,
     "temen": 5,
     "temeremos": 1,
@@ -32563,6 +32942,7 @@ export const all_socu = {
     "en temor": 2,
     "en tu temor": 1,
     "es el temor": 2,
+    "es este tu temor": 1,
     "hay temor": 1,
     "he aquí que el temor": 1,
     "mi temor": 1,
@@ -32721,7 +33101,7 @@ export const all_socu = {
     "para ir": 2,
     "parecen blandas mas ellas entran hasta": 1,
     "parecen blandas y descienden hasta": 1,
-    "pasarás": 1,
+    "pasarás": 2,
     "por tanto ella ha descendido": 1,
     "porque yo tengo de descender": 1,
     "principales descendieron": 1,
@@ -32839,7 +33219,7 @@ export const all_socu = {
     "allá del jordán": 1,
     "cabo del jordán": 1,
     "de esta parte del jordán": 2,
-    "de la otra parte del jordán": 2,
+    "de la otra parte del jordán": 3,
     "del jordán": 91,
     "desde el fin del jordán": 2,
     "el jordán": 59,
@@ -32911,13 +33291,14 @@ export const all_socu = {
     "se enseñará": 1,
     "será saciado": 1,
     "suelen arrojar": 1,
+    "tardía y temprana": 1,
     "te enseñará": 1,
     "te enseñarán": 1,
     "te he encaminado": 1,
     "tira": 2,
     "tiraba": 2,
     "tirare": 2,
-    "tiraron": 2,
+    "tiraron": 6,
     "tiraré": 1,
     "tus enseñadores": 2,
     "y echa": 1,
@@ -32960,7 +33341,7 @@ export const all_socu = {
     "con jerusalem": 1,
     "contra jerusalem": 7,
     "crío á jerusalem": 1,
-    "cuando jerusalem": 4,
+    "cuando jerusalem": 3,
     "david": 1,
     "de este pueblo y de jerusalem": 1,
     "de hermosura oh jerusalem": 1,
@@ -32970,7 +33351,7 @@ export const all_socu = {
     "de ti oh jerusalem": 2,
     "desde jerusalem": 2,
     "en diciendo á jerusalem": 1,
-    "en jerusalem": 171,
+    "en jerusalem": 170,
     "en un carro á jerusalem": 1,
     "ensalzare á jerusalem": 1,
     "es jerusalem": 2,
@@ -32987,7 +33368,7 @@ export const all_socu = {
     "había habido cosa tal en jerusalem": 2,
     "hasta jerusalem": 2,
     "hice trasportar de jerusalem": 1,
-    "jerusalem": 86,
+    "jerusalem": 85,
     "la cual estaba en jerusalem": 1,
     "los llevó de jerusalem": 1,
     "los que en jerusalem": 2,
@@ -33172,7 +33553,7 @@ export const all_socu = {
   },
   "H3405": {
     "cerca de jericó": 1,
-    "de jericó": 43,
+    "de jericó": 41,
     "desde jericó": 1,
     "empero jericó": 1,
     "en jericó": 3,
@@ -33188,12 +33569,13 @@ export const all_socu = {
   "H3406": {
     "anathoth": 1,
     "de azriel": 1,
+    "hija de jerimoth": 1,
     "jeremoth": 1,
     "jerimoth": 4,
     "y jeremoth": 3,
     "y jerimoth": 2,
     "y mahazioth": 1,
-    "y ramoth": 1,
+    "y ramoth": 2,
     "á jerimoth": 1
   },
   "H3407": {
@@ -33314,7 +33696,7 @@ export const all_socu = {
     "te angustiará tu enemigo": 1,
     "te hubiere dado reposo de tus enemigos": 1,
     "ti al enemigo": 1,
-    "tu enemigo": 5,
+    "tu enemigo": 7,
     "tus adversarios": 1,
     "tus enemigos": 23,
     "tú enemiga mía": 1,
@@ -33348,7 +33730,7 @@ export const all_socu = {
     "y sus muslos": 1
   },
   "H3411": {
-    "cabo": 1,
+    "cabo": 2,
     "como peregrino en los lados": 1,
     "de las partes": 1,
     "de los cantones": 1,
@@ -33360,7 +33742,7 @@ export const all_socu = {
     "y para el lado": 1,
     "á las cuestas": 1,
     "á las laderas": 1,
-    "á los lados": 6,
+    "á los lados": 7,
     "ángulos": 1
   },
   "H3412": {
@@ -33523,7 +33905,7 @@ export const all_socu = {
     "tú así poseeremos": 4,
     "tú echarás": 1,
     "vosotros y poseeréis": 2,
-    "y echaron": 1,
+    "y echaron": 2,
     "y echaréis": 2,
     "y echó": 3,
     "y ellos les sucedieron": 1,
@@ -33631,6 +34013,7 @@ export const all_socu = {
     "tienen": 2,
     "tienes": 2,
     "tuviera": 2,
+    "tuvieres": 1,
     "tú": 1,
     "vosotros": 1,
     "y había": 4,
@@ -33697,7 +34080,7 @@ export const all_socu = {
     "del morador": 1,
     "delicada la que está sentada": 2,
     "desde la morada": 2,
-    "deshabitadas": 1,
+    "deshabitadas": 2,
     "después estuvisteis": 1,
     "donde habita": 2,
     "donde se estuvo": 1,
@@ -33787,7 +34170,7 @@ export const all_socu = {
     "habitaréis": 3,
     "habitas": 1,
     "habitasen": 1,
-    "habitaste": 1,
+    "habitaste": 2,
     "habiten": 2,
     "habito": 7,
     "habitáis": 4,
@@ -33816,8 +34199,8 @@ export const all_socu = {
     "la cual se sentó": 2,
     "la habitaban": 1,
     "la moradora": 5,
-    "la que habitas": 1,
-    "la que moras": 2,
+    "la que habitas": 2,
+    "la que moras": 3,
     "las habitarán": 1,
     "las habitaréis": 1,
     "lejos meteos": 2,
@@ -33877,7 +34260,7 @@ export const all_socu = {
     "más será habitada": 1,
     "mía eres y estuvo": 1,
     "mío morador": 1,
-    "ni á los habitantes": 4,
+    "ni á los habitantes": 5,
     "nos quedamos": 2,
     "nos sentábamos": 1,
     "nosotros las vuestras y habitaremos": 1,
@@ -33903,7 +34286,7 @@ export const all_socu = {
     "permanece": 1,
     "permanecerá": 1,
     "permanecerás": 2,
-    "permanecí": 3,
+    "permanecí": 4,
     "podía darles para que habitasen": 2,
     "pondré": 2,
     "por amor de mí para que yo more": 1,
@@ -33925,7 +34308,7 @@ export const all_socu = {
     "que estaban sentados": 1,
     "que estando": 1,
     "que está": 1,
-    "que está asentada": 1,
+    "que está asentada": 2,
     "que está sentado": 2,
     "que están": 2,
     "que estás": 1,
@@ -33947,7 +34330,7 @@ export const all_socu = {
     "que los moradores": 1,
     "que mora": 4,
     "que moraba": 1,
-    "que moraban": 5,
+    "que moraban": 7,
     "que moran": 2,
     "que morando": 2,
     "que morare": 1,
@@ -33976,7 +34359,7 @@ export const all_socu = {
     "quedáronse": 2,
     "quedó": 1,
     "quien se siente": 2,
-    "quiso habitar": 5,
+    "quiso habitar": 6,
     "quiso quedóse": 1,
     "quédate": 6,
     "se estaba": 2,
@@ -34021,7 +34404,7 @@ export const all_socu = {
     "sino que moró": 5,
     "siéntase": 1,
     "siéntate": 5,
-    "siéntate en seco moradora": 2,
+    "siéntate en seco moradora": 3,
     "sobre los moradores": 2,
     "sobre ti oh morador": 1,
     "son los moradores": 1,
@@ -34049,7 +34432,7 @@ export const all_socu = {
     "vosotros estuve": 1,
     "y asentaron": 4,
     "y asentarán": 1,
-    "y asenté": 3,
+    "y asenté": 4,
     "y asentó": 4,
     "y asentóse": 2,
     "y como se juntaron paráronse": 1,
@@ -34099,7 +34482,7 @@ export const all_socu = {
     "y los que en él habitan": 2,
     "y los ricos están sentados": 1,
     "y los suyos estaban": 1,
-    "y me ha puesto": 1,
+    "y me ha puesto": 2,
     "y mora": 2,
     "y moraba": 1,
     "y morad": 2,
@@ -34188,6 +34571,9 @@ export const all_socu = {
   "H3428": {
     "por isebeab": 1
   },
+  "H3429": {
+    "se sentaba en cátedra": 2
+  },
   "H343": {
     "de la destrucción": 1,
     "de mi calamidad": 1,
@@ -34213,7 +34599,7 @@ export const all_socu = {
     "y vuestra calamidad": 1
   },
   "H3430": {
-    "en esto isbi benob": 1
+    "en esto isbi benob": 3
   },
   "H3431": {
     "y á isba": 1
@@ -34238,7 +34624,7 @@ export const all_socu = {
   },
   "H3437": {
     "de jasub": 1,
-    "jabsub": 1,
+    "jabsub": 2,
     "jasub": 1
   },
   "H3438": {
@@ -34422,7 +34808,6 @@ export const all_socu = {
     "y qué": 2
   },
   "H3460": {
-    "e ismaías": 1,
     "ismaías": 1
   },
   "H3461": {
@@ -34430,18 +34815,16 @@ export const all_socu = {
   },
   "H3462": {
     "de los viejos": 1,
-    "de mucho tiempo": 2,
+    "de mucho tiempo": 1,
     "dormirá": 1,
     "dormiré": 1,
-    "dormía": 1,
     "dormían": 1,
-    "duerme": 1,
     "duermen": 1,
     "duermes": 1,
     "durmióse": 1,
     "es envejecida": 1,
     "le tomará sueño": 1,
-    "lo añejo": 2,
+    "lo añejo": 1,
     "porque no duerma": 1,
     "quedóse dormido": 1,
     "seguramente y dormirán": 1,
@@ -34464,7 +34847,7 @@ export const all_socu = {
   "H3465": {
     "añejas": 1,
     "añejo": 4,
-    "lo añejo": 1,
+    "lo añejo": 2,
     "vieja": 1
   },
   "H3467": {
@@ -34673,8 +35056,8 @@ export const all_socu = {
     "agradó": 2,
     "ajustado": 1,
     "bien": 1,
-    "de ti y enderezaré": 1,
-    "endereza": 1,
+    "de ti y enderezaré": 2,
+    "endereza": 2,
     "enderezad": 1,
     "enderezará": 2,
     "las cosas estimé rectos": 1,
@@ -34728,7 +35111,6 @@ export const all_socu = {
     "más cómodo": 1,
     "para los rectos": 1,
     "parece derecho": 1,
-    "parecerá bien": 1,
     "pesas": 1,
     "que es recto": 1,
     "que parece derecho": 1,
@@ -34772,7 +35154,7 @@ export const all_socu = {
     "cuando israel": 1,
     "da voces de júbilo oh israel": 1,
     "dado á israel": 1,
-    "de israel": 1921,
+    "de israel": 1920,
     "de la multitud de israel": 1,
     "de la una parte é israel": 1,
     "de los de israel": 5,
@@ -34900,7 +35282,7 @@ export const all_socu = {
     "yo israel": 1,
     "yo á israel": 2,
     "á derribar heridos de israel": 2,
-    "á israel": 160,
+    "á israel": 159,
     "á los de israel": 1,
     "á los hijos de israel": 6,
     "á los israelitas": 5,
@@ -35160,7 +35542,7 @@ export const all_socu = {
     "luego el resto": 1,
     "luego lo que quedó": 1,
     "mas el resto": 1,
-    "mi cuerda": 1,
+    "mi cuerda": 2,
     "mimbres": 2,
     "mucho": 1,
     "más": 1,
@@ -35206,8 +35588,8 @@ export const all_socu = {
   },
   "H3503": {
     "de jethro": 1,
-    "jethro": 7,
-    "y jethro": 4
+    "jethro": 6,
+    "y jethro": 3
   },
   "H3504": {
     "además el provecho": 1,
@@ -35255,6 +35637,7 @@ export const all_socu = {
   },
   "H3512": {
     "cuanto entristecisteis": 1,
+    "y quebrantado": 1,
     "y él se contristará": 1
   },
   "H3513": {
@@ -35487,7 +35870,7 @@ export const all_socu = {
     "al carnero": 8,
     "aquel carnero": 1,
     "cada poste": 6,
-    "cada uno de sus postes": 2,
+    "cada uno de sus postes": 4,
     "carnero": 33,
     "carneros": 38,
     "como carneros": 3,
@@ -35502,7 +35885,7 @@ export const all_socu = {
     "después hizo llegar el carnero": 2,
     "el carnero": 14,
     "el un carnero": 2,
-    "en sus postes": 1,
+    "en sus postes": 2,
     "es carnero": 2,
     "los carneros": 2,
     "los fuertes": 1,
@@ -35515,8 +35898,8 @@ export const all_socu = {
     "porque en el carnero": 4,
     "que el carnero": 1,
     "sin": 1,
-    "sus portales": 3,
-    "sus postes": 2,
+    "sus portales": 4,
+    "sus postes": 4,
     "un carnero": 6,
     "y carneros": 2,
     "y con cada carnero": 1,
@@ -35525,7 +35908,7 @@ export const all_socu = {
     "y el umbral": 1,
     "y ofrecieron como culpados un carnero": 1,
     "y por cada carnero": 1,
-    "y sus postes": 3,
+    "y sus postes": 6,
     "y un carnero": 11,
     "á los robustos": 1,
     "á más del carnero": 1,
@@ -35658,7 +36041,6 @@ export const all_socu = {
     "ardiendo dentro de los cántaros": 2,
     "con su cántaro": 1,
     "cántaro": 2,
-    "cántaros": 1,
     "de tu cántaro": 2,
     "en la tinaja": 1,
     "la tinaja": 1,
@@ -35698,7 +36080,7 @@ export const all_socu = {
     "aquí": 3,
     "asimismo": 1,
     "asimismo así": 1,
-    "así": 542,
+    "así": 541,
     "de esta manera": 2,
     "de la una parte": 2,
     "descárganos así": 2,
@@ -35807,7 +36189,7 @@ export const all_socu = {
     "de sus sacerdotes": 1,
     "del original de delante de los sacerdotes": 1,
     "del sacerdocio": 1,
-    "del sacerdote": 30,
+    "del sacerdote": 29,
     "delante de los sacerdotes": 2,
     "dió también el sacerdote": 1,
     "echasteis vosotros á los sacerdotes": 3,
@@ -36183,9 +36565,9 @@ export const all_socu = {
     "tortas": 1
   },
   "H3562": {
-    "asimismo chônanías": 1,
-    "bajo la mano de chônanías": 1,
-    "ello á chônanías": 1
+    "asimismo chônanías": 2,
+    "bajo la mano de chônanías": 2,
+    "ello á chônanías": 2
   },
   "H3563": {
     "como el buho": 1,
@@ -36197,6 +36579,7 @@ export const all_socu = {
     "del cáliz": 1,
     "el cáliz": 6,
     "el vaso": 3,
+    "en el vaso": 1,
     "la copa": 5,
     "la hez del cáliz": 2,
     "las heces del cáliz": 2,
@@ -36355,6 +36738,7 @@ export const all_socu = {
     "en fuerza": 1,
     "en la fortaleza": 1,
     "en mí poder": 1,
+    "en poder": 1,
     "en potencia": 1,
     "es mi fortaleza": 3,
     "es su fortaleza": 1,
@@ -36373,7 +36757,7 @@ export const all_socu = {
     "la grandeza y fuerza": 1,
     "las fuerzas": 4,
     "mi fortaleza": 1,
-    "mi fuerza": 3,
+    "mi fuerza": 4,
     "mi poder": 1,
     "mi vigor": 2,
     "mis fuerzas": 3,
@@ -36499,7 +36883,7 @@ export const all_socu = {
     "asimismo cuando": 3,
     "asimismo que": 1,
     "así": 1,
-    "así porque": 2,
+    "así porque": 3,
     "así que": 2,
     "aun": 2,
     "aunque": 34,
@@ -36531,7 +36915,7 @@ export const all_socu = {
     "contra él para que": 1,
     "copia porque": 1,
     "cosas que": 1,
-    "crío porque": 1,
+    "crío porque": 2,
     "cual": 2,
     "cuando": 229,
     "cuando naciere": 1,
@@ -36790,7 +37174,7 @@ export const all_socu = {
     "por tanto": 1,
     "por tanto pues": 2,
     "por él porque": 1,
-    "porque": 2394,
+    "porque": 2396,
     "porque no": 3,
     "porque pereció": 1,
     "porque sobre": 1,
@@ -36799,7 +37183,7 @@ export const all_socu = {
     "pues que": 13,
     "puesto": 1,
     "purificado": 3,
-    "que": 848,
+    "que": 850,
     "que aun cuando": 2,
     "que cuando": 7,
     "que en él está porque": 2,
@@ -36845,7 +37229,7 @@ export const all_socu = {
     "sin embargo": 5,
     "sin por qué y los que": 1,
     "sin que": 2,
-    "sino": 64,
+    "sino": 65,
     "sino para que": 2,
     "sino que": 13,
     "siriaco porque": 1,
@@ -37177,7 +37561,7 @@ export const all_socu = {
     "cosa de todas": 1,
     "cosas para declarar todo": 3,
     "cosas todos": 4,
-    "cosas y así todas": 1,
+    "cosas y así todas": 2,
     "cualquier": 19,
     "cualquiera": 71,
     "cuanto todo": 1,
@@ -37234,7 +37618,7 @@ export const all_socu = {
     "de toda": 122,
     "de todas": 110,
     "de todo": 214,
-    "de todos": 159,
+    "de todos": 160,
     "de todos los": 1,
     "de tus peregrinaciones toda": 1,
     "de vosotros todas": 1,
@@ -37315,9 +37699,9 @@ export const all_socu = {
     "en ti todo": 3,
     "en ti todos": 2,
     "en toda": 85,
-    "en todas": 80,
+    "en todas": 79,
     "en todas esas vasijas": 3,
-    "en todo": 87,
+    "en todo": 88,
     "en todos": 60,
     "en vuestra misma presencia por todos": 2,
     "en él conforme á todos": 1,
@@ -37463,7 +37847,7 @@ export const all_socu = {
     "más que á todos": 1,
     "mí como todas": 1,
     "mí con todo": 1,
-    "mí de todo": 1,
+    "mí de todo": 2,
     "mí son todos": 2,
     "mí toda": 2,
     "mí todo": 1,
@@ -37481,7 +37865,7 @@ export const all_socu = {
     "ni en todos": 1,
     "ni ninguna": 4,
     "ni ningún": 5,
-    "ni todos": 1,
+    "ni todos": 2,
     "ni á lugar alguno": 2,
     "ni á toda": 2,
     "ni á todas": 1,
@@ -37502,7 +37886,7 @@ export const all_socu = {
     "para ejecutar todas": 6,
     "para ellos todos": 1,
     "para mí nadie": 1,
-    "para ninguna": 3,
+    "para ninguna": 4,
     "para obrar en toda": 1,
     "para oirlos en todo": 1,
     "para que cualquiera": 1,
@@ -37557,7 +37941,7 @@ export const all_socu = {
     "pues con todo": 6,
     "pues de todo": 1,
     "pues toda": 4,
-    "pues todas": 2,
+    "pues todas": 3,
     "pues todo": 2,
     "pues todos": 8,
     "pues y ved": 2,
@@ -37575,7 +37959,7 @@ export const all_socu = {
     "que junten todas": 2,
     "que por toda": 1,
     "que se allegare á algún": 1,
-    "que todas": 6,
+    "que todas": 5,
     "que todo": 12,
     "que todos": 15,
     "que yo maté todos": 3,
@@ -37665,19 +38049,19 @@ export const all_socu = {
     "tienen prepucio y toda": 3,
     "tienen todos": 2,
     "tocare alguna cosa": 1,
-    "toda": 491,
+    "toda": 492,
     "toda carne": 1,
     "toda la sangre": 1,
     "toda su sangre": 1,
-    "todas": 441,
+    "todas": 443,
     "todas las": 1,
-    "todo": 834,
-    "todos": 912,
+    "todo": 835,
+    "todos": 917,
     "tu siervo": 2,
     "tus afligidores todos": 4,
     "tus altares en todas": 2,
     "tus piedades y á todos": 1,
-    "tus piernas á cuantos": 1,
+    "tus piernas á cuantos": 2,
     "tuyas todo": 2,
     "tuyo somos todos": 1,
     "tú cortarás á todo": 1,
@@ -37705,7 +38089,7 @@ export const all_socu = {
     "y como todo": 2,
     "y con toda": 25,
     "y con todas": 3,
-    "y con todo": 10,
+    "y con todo": 11,
     "y con todos": 4,
     "y con él toda": 2,
     "y con él todos": 3,
@@ -37799,8 +38183,8 @@ export const all_socu = {
     "y subirá toda": 2,
     "y también todos": 2,
     "y toda": 224,
-    "y todas": 163,
-    "y todo": 412,
+    "y todas": 162,
+    "y todo": 413,
     "y todos": 340,
     "y trájelo por toda": 1,
     "y ungídolo y santificádolo con todos": 2,
@@ -37842,9 +38226,9 @@ export const all_socu = {
     "á tiphsa y á todos": 2,
     "á toda": 55,
     "á todas": 36,
-    "á todo": 170,
+    "á todo": 171,
     "á todo israel": 2,
-    "á todos": 230,
+    "á todos": 229,
     "á vista de todo": 1,
     "á vosotros á todos": 2,
     "á él de todos": 2,
@@ -37954,10 +38338,10 @@ export const all_socu = {
     "chileab": 1
   },
   "H361": {
-    "con sus arcos": 1,
-    "de ellas estaban sus arcos": 2,
+    "con sus arcos": 2,
+    "de ellas estaban sus arcos": 4,
     "y los arcos": 1,
-    "y sus arcos": 14
+    "y sus arcos": 27
   },
   "H3610": {
     "con mezcla": 3,
@@ -37996,6 +38380,9 @@ export const all_socu = {
     "sino caleb": 1,
     "y caleb": 6,
     "á caleb": 4
+  },
+  "H3614": {
+    "y era del linaje de caleb": 1
   },
   "H3615": {
     "acabad": 1,
@@ -38207,7 +38594,7 @@ export const all_socu = {
     "y chêlubai": 1
   },
   "H3622": {
-    "chêluhi": 1
+    "chêluhi": 2
   },
   "H3623": {
     "de tu desposorio": 1
@@ -38347,7 +38734,7 @@ export const all_socu = {
     "é instrumentos": 1
   },
   "H3628": {
-    "de la cárcel": 1
+    "de la cárcel": 2
   },
   "H3629": {
     "con lo que cubre las entrañas y los riñones": 1,
@@ -38481,7 +38868,8 @@ export const all_socu = {
     "te desea en": 1
   },
   "H3643": {
-    "chimham": 3
+    "chimham": 3,
+    "en geruth chimham": 2
   },
   "H3644": {
     "como": 7,
@@ -38501,7 +38889,7 @@ export const all_socu = {
   "H3645": {
     "de chêmos": 3,
     "si chêmos": 1,
-    "y chêmos": 1,
+    "y chêmos": 2,
     "y á chêmos": 2,
     "á chêmos": 1
   },
@@ -38651,6 +39039,7 @@ export const all_socu = {
     "á tu puesto": 1
   },
   "H3654": {
+    "de vestir y de la misma manera": 1,
     "piojos": 7,
     "y había piojos": 2,
     "y piojos": 1
@@ -38751,6 +39140,7 @@ export const all_socu = {
   },
   "H3667": {
     "canaán": 7,
+    "cuyos mercaderes": 1,
     "de canaán": 80,
     "de mercaderes": 1,
     "es mercader": 1,
@@ -38822,7 +39212,7 @@ export const all_socu = {
     "al ala": 7,
     "ala": 24,
     "alada": 2,
-    "alas": 13,
+    "alas": 14,
     "así las alas": 1,
     "aún la orilla": 2,
     "cabos": 1,
@@ -38860,7 +39250,7 @@ export const all_socu = {
     "para cubrirte debajo de sus alas": 1,
     "para que ocupe los fines": 1,
     "seréis como las alas": 1,
-    "sus alas": 17,
+    "sus alas": 18,
     "volátil": 1,
     "y con el vuelo": 2,
     "y el ala": 6,
@@ -38885,7 +39275,7 @@ export const all_socu = {
     "á juntar": 1
   },
   "H3674": {
-    "sus compañeros": 1
+    "sus compañeros": 2
   },
   "H3675": {
     "sus compañeros": 2,
@@ -38948,7 +39338,7 @@ export const all_socu = {
     "é hizo poner una silla": 2
   },
   "H3679": {
-    "caldeo": 1
+    "caldeo": 2
   },
   "H368": {
     "emimeos": 1,
@@ -38966,7 +39356,7 @@ export const all_socu = {
     "cubren": 1,
     "cubridnos": 1,
     "cubrir": 1,
-    "cubrirá": 5,
+    "cubrirá": 6,
     "cubrirán": 3,
     "cubrirás": 2,
     "cubriré": 5,
@@ -39058,7 +39448,7 @@ export const all_socu = {
   },
   "H3682": {
     "cobertura": 1,
-    "cubierta": 1,
+    "cubierta": 2,
     "de tu manto": 1,
     "es por velo": 1,
     "ni su vestido": 1,
@@ -39221,7 +39611,7 @@ export const all_socu = {
     "ninguna": 7,
     "ninguno": 4,
     "ningún": 2,
-    "no": 305,
+    "no": 307,
     "no estaba": 1,
     "no está": 2,
     "no están": 1,
@@ -39268,7 +39658,7 @@ export const all_socu = {
     "seguramente y no": 2,
     "será": 1,
     "si no": 1,
-    "sin": 50,
+    "sin": 51,
     "sin exceptuar ninguno": 1,
     "sin que nadie": 1,
     "sin tener": 1,
@@ -39328,7 +39718,7 @@ export const all_socu = {
     "á la locura": 1
   },
   "H3691": {
-    "de chisleu": 1,
+    "de chisleu": 2,
     "que es chisleu": 1
   },
   "H3692": {
@@ -39496,7 +39886,7 @@ export const all_socu = {
     "para hacerme enojar": 1,
     "para provocar á ira": 2,
     "para provocarlo á ira": 1,
-    "para provocarme á ira": 2,
+    "para provocarme á ira": 3,
     "por provocarme á ira": 1,
     "provocando así á ira": 1,
     "provocando á ira": 1,
@@ -39547,7 +39937,7 @@ export const all_socu = {
     "asimismo mis manos": 1,
     "aun desde la planta": 1,
     "como la planta": 2,
-    "con la mano": 1,
+    "con la mano": 2,
     "con las manos": 1,
     "con las plantas": 1,
     "con mi mano": 1,
@@ -39591,7 +39981,7 @@ export const all_socu = {
     "la palma": 3,
     "la planta": 5,
     "la tiene á mano": 1,
-    "las manos": 17,
+    "las manos": 18,
     "las nubes": 1,
     "las palmas": 2,
     "las pisadas": 1,
@@ -39630,7 +40020,7 @@ export const all_socu = {
     "y las tenazas y los cucharones": 1,
     "y los cazos": 1,
     "y sus cucharas": 2,
-    "y sus manos": 2,
+    "y sus manos": 3,
     "á mano": 2,
     "él su mano": 1
   },
@@ -39717,10 +40107,10 @@ export const all_socu = {
     "de expiaciones para reconciliaros": 1,
     "de expiación": 1,
     "de expiar": 1,
-    "de la expiación": 2,
+    "de la expiación": 1,
     "de las expiaciones": 2,
     "de los cuales fué metida para hacer la expiación": 1,
-    "en habiendo hecho expiación": 2,
+    "en habiendo hecho expiación": 1,
     "es suyo y hará la reconciliación": 1,
     "expiación": 11,
     "expiar": 2,
@@ -39731,7 +40121,7 @@ export const all_socu = {
     "hará expiación": 11,
     "la evitará": 1,
     "la reconciliación": 5,
-    "las expiaciones": 2,
+    "las expiaciones": 1,
     "las perdonarás": 1,
     "le aplacaré": 1,
     "les será perdonada": 2,
@@ -39799,7 +40189,7 @@ export const all_socu = {
     "por el pecado": 1
   },
   "H3726": {
-    "y cephar hammonai": 2
+    "y cephar hammonai": 3
   },
   "H3727": {
     "asimismo la cubierta": 1,
@@ -40067,32 +40457,33 @@ export const all_socu = {
     "de los campos labrados": 1,
     "de su carmel": 1,
     "el carmelo": 1,
-    "en campo labrado": 2,
+    "en campo labrado": 3,
     "en carmelo": 2,
     "ofrecerás": 1,
     "tostado ni espiga": 1,
     "y de su campo fértil": 1,
-    "y el campo labrado": 2,
+    "y el campo labrado": 3,
     "y el carmelo": 2,
     "y en el campo labrado": 1,
     "y trigo": 1
   },
   "H376": {
+    "a cada uno": 1,
     "abrió": 2,
     "acaso alguno": 1,
     "al": 4,
-    "al hombre": 32,
+    "al hombre": 33,
     "al que venía": 2,
-    "al varón": 28,
+    "al varón": 29,
     "alguien": 3,
-    "alguno": 52,
+    "alguno": 53,
     "alégrase el hombre": 1,
     "amalecita": 1,
     "anda el hombre": 1,
     "anduvieren cada uno": 1,
     "antes que nadie": 1,
     "aquel": 2,
-    "aquel hombre": 13,
+    "aquel hombre": 16,
     "aquel varón": 17,
     "aquí á todos": 2,
     "asimismo el hombre": 2,
@@ -40102,10 +40493,10 @@ export const all_socu = {
     "así hombres": 1,
     "así los unos como los otros": 1,
     "así á hombres": 7,
-    "cada": 22,
+    "cada": 24,
     "cada cual": 26,
     "cada una": 2,
-    "cada uno": 180,
+    "cada uno": 188,
     "cada uno según": 1,
     "cada uno á su heredad": 1,
     "casa es varón": 2,
@@ -40183,10 +40574,10 @@ export const all_socu = {
     "de varón": 5,
     "dejaréis cada uno": 1,
     "del": 1,
-    "del hombre": 28,
+    "del hombre": 29,
     "del marido": 1,
     "del todo varón": 2,
-    "del varón": 14,
+    "del varón": 15,
     "desde el hombre": 1,
     "donde hubo un hombre": 1,
     "el": 2,
@@ -40214,7 +40605,7 @@ export const all_socu = {
     "en sus tierras cada cual": 1,
     "en ti alguno": 1,
     "enemigo": 1,
-    "entonces el hombre": 2,
+    "entonces el hombre": 3,
     "entonces el marido": 1,
     "entonces el varón": 4,
     "entonces los": 2,
@@ -40265,8 +40656,8 @@ export const all_socu = {
     "he varón": 1,
     "hemos de hallar otro hombre": 1,
     "hiciere traición á su marido": 1,
-    "hombre": 78,
-    "hombres": 166,
+    "hombre": 81,
+    "hombres": 170,
     "hubiere alguno": 1,
     "hubo hombre": 1,
     "hubo quien": 1,
@@ -40281,7 +40672,7 @@ export const all_socu = {
     "llegado pues aquel hombre": 1,
     "llevarás las nuevas": 1,
     "locura y el hombre": 1,
-    "los": 12,
+    "los": 13,
     "los extraños": 2,
     "los hijos": 2,
     "los hombres": 12,
@@ -40291,13 +40682,13 @@ export const all_socu = {
     "los unos": 6,
     "los unos con los otros": 1,
     "los unos de los otros": 1,
-    "los varones": 19,
+    "los varones": 20,
     "luego el varón": 1,
     "luego pues que los": 3,
     "luto y ninguno": 1,
     "macho": 4,
     "manera contra aquel hombre": 2,
-    "marido": 24,
+    "marido": 26,
     "mas cada una": 1,
     "mas cada uno": 1,
     "mas el": 1,
@@ -40323,7 +40714,8 @@ export const all_socu = {
     "ninguno haya": 1,
     "ningún": 1,
     "ningún hombre": 1,
-    "nosotros": 2,
+    "nos apartáremos el uno": 1,
+    "nosotros": 3,
     "oh hombres": 1,
     "oirán y se tornarán cada uno": 1,
     "opresora cada uno": 2,
@@ -40394,7 +40786,7 @@ export const all_socu = {
     "solo hombre": 12,
     "solo y nadie": 1,
     "soy varón": 2,
-    "su marido": 15,
+    "su marido": 16,
     "su suegro y su marido": 1,
     "sus tiendas cada uno": 2,
     "sólo el hombre": 3,
@@ -40415,17 +40807,17 @@ export const all_socu = {
     "tú eres digno de muerte": 1,
     "un": 1,
     "un hebreo": 2,
-    "un hombre": 37,
-    "un varón": 21,
+    "un hombre": 39,
+    "un varón": 20,
     "una persona": 1,
-    "uno": 19,
+    "uno": 20,
     "uno al varón": 1,
     "uno por uno": 1,
     "unos con otros": 1,
     "unos á otros": 2,
     "valiente y hombre": 1,
-    "varones": 19,
-    "varón": 121,
+    "varones": 24,
+    "varón": 126,
     "varón de deseos": 1,
     "viejo": 4,
     "vosotros un varón": 3,
@@ -40493,21 +40885,23 @@ export const all_socu = {
     "y á tu marido": 1,
     "y él": 3,
     "y él le": 1,
+    "yo no soy hombre": 1,
     "á alguno": 2,
     "á algún hombre": 1,
     "á aquel": 2,
     "á aquel hombre": 1,
-    "á aquel varón": 4,
+    "á aquel varón": 5,
     "á cada": 2,
-    "á cada uno": 20,
+    "á cada uno": 21,
     "á ellos varón": 1,
-    "á este hombre": 6,
-    "á hombre": 2,
+    "á este hombre": 7,
+    "á hombre": 3,
     "á la que varón": 1,
+    "á labrar": 1,
     "á los": 4,
     "á los otros": 3,
     "á los varones": 1,
-    "á mi marido": 1,
+    "á mi marido": 2,
     "á mí y cada uno": 3,
     "á nadie": 1,
     "á ninguno": 3,
@@ -40525,6 +40919,7 @@ export const all_socu = {
     "él cada uno": 2,
     "él el": 1,
     "él todos": 4,
+    "él un varón": 1,
     "éste es el varón": 1,
     "ó hembra y del hombre": 1,
     "ó sea hombre": 1,
@@ -40714,7 +41109,7 @@ export const all_socu = {
     "por tanto serán muertos": 1,
     "porque hicieron": 1,
     "pues hagamos": 1,
-    "pues podremos nosotros hacer": 2,
+    "pues podremos nosotros hacer": 3,
     "que fuese mascada": 1,
     "que haré matar": 1,
     "que hubo acabado": 1,
@@ -40801,7 +41196,7 @@ export const all_socu = {
     "de cheretim": 1,
     "era sobre los ceretheos": 1,
     "los ceretheos": 3,
-    "y los ceretheos": 1,
+    "y los ceretheos": 2,
     "y también á los ceretheos": 1
   },
   "H3775": {
@@ -40821,10 +41216,10 @@ export const all_socu = {
     "caldeos": 2,
     "con los caldeos": 1,
     "de caldea": 2,
-    "de caldeos": 4,
+    "de caldeos": 5,
     "de ellos á oídos de los caldeos": 1,
     "de entre los caldeos": 1,
-    "de los caldeos": 40,
+    "de los caldeos": 41,
     "ellos y clamor de caldeos": 1,
     "en los caldeos": 1,
     "estando aún los caldeos": 1,
@@ -40840,12 +41235,12 @@ export const all_socu = {
     "á los caldeos": 2
   },
   "H3779": {
-    "caldeo": 2,
-    "caldeos": 3,
-    "de los caldeos": 1,
-    "los caldeos": 2,
+    "caldeo": 3,
+    "caldeos": 5,
+    "de los caldeos": 2,
+    "los caldeos": 3,
     "varones caldeos": 1,
-    "á los caldeos": 1
+    "á los caldeos": 2
   },
   "H378": {
     "de is boseth": 16,
@@ -40876,7 +41271,7 @@ export const all_socu = {
     "flaquean": 2,
     "ha hecho caer": 1,
     "habéis hecho tropezar": 1,
-    "han hecho caer": 1,
+    "han hecho caer": 2,
     "has caído": 1,
     "las vacilantes": 1,
     "le será estorbo": 1,
@@ -40892,7 +41287,7 @@ export const all_socu = {
     "tropezamos": 1,
     "tropezaron": 2,
     "tropezará": 3,
-    "tropezarán": 6,
+    "tropezarán": 7,
     "tropezarás": 1,
     "tropezó": 1,
     "tropiezan": 1,
@@ -40948,7 +41343,7 @@ export const all_socu = {
     "cuando escribía": 1,
     "de escribir": 1,
     "de mí y estaba escrito": 2,
-    "del mismo y escribióse": 3,
+    "del mismo y escribióse": 2,
     "delineándola": 1,
     "en el libro": 1,
     "en la cual estaba escrito": 1,
@@ -40957,7 +41352,7 @@ export const all_socu = {
     "escribe": 3,
     "escribid": 1,
     "escribieron": 4,
-    "escribir": 3,
+    "escribir": 2,
     "escribirá": 2,
     "escribiste": 2,
     "escribió": 8,
@@ -40968,7 +41363,7 @@ export const all_socu = {
     "escritas": 5,
     "escrito": 10,
     "escritos": 1,
-    "escritura": 3,
+    "escritura": 2,
     "escríbase": 1,
     "escríbelos": 1,
     "escríbete": 1,
@@ -41089,12 +41484,12 @@ export const all_socu = {
     "y la escritura": 1
   },
   "H3794": {
-    "chittim": 1,
+    "chittim": 2,
     "chîthim": 1,
     "de chîttim": 3,
     "de cittim": 1,
     "kittim": 1,
-    "á chîttim": 1
+    "á chîttim": 2
   },
   "H3795": {
     "molido": 2
@@ -41117,7 +41512,7 @@ export const all_socu = {
     "como las niñas": 1,
     "como lo negro de la niñeta": 1,
     "en la oscuridad": 1,
-    "tenebrosa": 1
+    "tenebrosa": 2
   },
   "H3800": {
     "al oro": 1,
@@ -41266,7 +41661,7 @@ export const all_socu = {
     "aun tampoco": 1,
     "aunque": 1,
     "aunque esté mano sobre mano no": 1,
-    "aunque no": 4,
+    "aunque no": 5,
     "aunque tú no": 1,
     "aún": 1,
     "bien ni": 2,
@@ -41522,12 +41917,12 @@ export const all_socu = {
     "les había de hacer y no": 1,
     "llevado de celo entre ellos por lo cual yo no": 1,
     "lo": 5,
-    "lo ammi": 3,
+    "lo ammi": 2,
     "lo cual": 1,
     "lo cual no": 1,
     "lo que no": 7,
     "lo que á mí desagrada": 2,
-    "lo ruhama": 2,
+    "lo ruhama": 1,
     "los conciertos empero ella no": 2,
     "los cuales": 1,
     "los cuales les protestaron mas ellos no": 1,
@@ -41587,7 +41982,7 @@ export const all_socu = {
     "ninguna": 18,
     "ninguno": 12,
     "ningún": 7,
-    "no": 3405,
+    "no": 3401,
     "no está": 1,
     "no haber": 1,
     "no matándolos ni": 1,
@@ -41644,7 +42039,7 @@ export const all_socu = {
     "por ignorancia": 1,
     "por la cual no": 3,
     "por la multitud no": 2,
-    "por lo que no": 2,
+    "por lo que no": 3,
     "por los cuales no": 2,
     "por no": 2,
     "por nombre y no": 2,
@@ -41954,6 +42349,9 @@ export const all_socu = {
   "H3813": {
     "cubierto": 1
   },
+  "H3814": {
+    "calladamente": 1
+  },
   "H3815": {
     "de lael": 1
   },
@@ -42005,7 +42403,7 @@ export const all_socu = {
     "conoce el corazón": 1,
     "corazón": 105,
     "cuándo el corazón": 1,
-    "de corazón": 48,
+    "de corazón": 49,
     "de cordura": 3,
     "de ellos así como el corazón": 1,
     "de entendimiento": 8,
@@ -42013,7 +42411,7 @@ export const all_socu = {
     "de mi arbitrio": 1,
     "de mi corazón": 8,
     "de sabiduría": 1,
-    "de su corazón": 21,
+    "de su corazón": 22,
     "de ti penetrarán en el corazón": 1,
     "de tu corazón": 9,
     "del corazón": 9,
@@ -42248,8 +42646,7 @@ export const all_socu = {
     "corazón": 1,
     "en sus corazones": 1,
     "los corazones": 4,
-    "y los riñones": 1,
-    "y su corazón": 1
+    "y los riñones": 1
   },
   "H3828": {
     "aromático é incienso": 1,
@@ -42491,7 +42888,7 @@ export const all_socu = {
     "y se vestirá": 3,
     "y se vestirán": 1,
     "y te vestí": 2,
-    "y vestiránse": 1,
+    "y vestiránse": 2,
     "y vestirás": 1,
     "y vestirélo": 1,
     "y vistieron": 2,
@@ -42635,7 +43032,7 @@ export const all_socu = {
   },
   "H3866": {
     "y los de lut": 1,
-    "á ludim": 2
+    "á ludim": 3
   },
   "H3867": {
     "allegado": 1,
@@ -42695,7 +43092,7 @@ export const all_socu = {
     "y las tablas": 2
   },
   "H3872": {
-    "de luhith": 2
+    "de luhith": 3
   },
   "H3873": {
     "de lohes": 1,
@@ -42731,7 +43128,7 @@ export const all_socu = {
     "lotán": 2
   },
   "H3878": {
-    "de leví": 49,
+    "de leví": 50,
     "de leví contigo": 1,
     "leví": 4,
     "los levitas": 1,
@@ -42754,7 +43151,7 @@ export const all_socu = {
     "asimismo sus porciones á los levitas": 2,
     "cuando los levitas": 3,
     "dar á los levitas": 1,
-    "de leví": 7,
+    "de leví": 3,
     "de los aaronitas": 1,
     "de los levitas": 41,
     "de los levitas y los levitas": 1,
@@ -42771,7 +43168,6 @@ export const all_socu = {
     "las partes de los levitas": 2,
     "levita": 8,
     "levitas": 27,
-    "leví": 1,
     "lo cual será para los levitas": 1,
     "los levitas": 80,
     "mas los levitas": 6,
@@ -42842,8 +43238,8 @@ export const all_socu = {
     "murmuraba": 1,
     "murmuran": 1,
     "murmuren": 1,
-    "murmuréis": 1,
-    "murmuró": 3,
+    "murmuréis": 2,
+    "murmuró": 4,
     "mí se quejan": 2,
     "nos quedaremos esta noche": 2,
     "para pasar la noche": 2,
@@ -42852,7 +43248,7 @@ export const all_socu = {
     "para tener allí la noche": 1,
     "posaron": 1,
     "que reposa": 1,
-    "que vosotros murmuréis": 1,
+    "que vosotros murmuréis": 2,
     "quedar": 1,
     "quedes": 1,
     "reposa": 1,
@@ -42873,7 +43269,7 @@ export const all_socu = {
     "y quedáronse": 1,
     "y quejáronse": 1,
     "y reposando": 1,
-    "y vueltos habían hecho murmurar": 1
+    "y vueltos habían hecho murmurar": 2
   },
   "H3886": {
     "son cortadas": 1
@@ -42890,7 +43286,7 @@ export const all_socu = {
   },
   "H3888": {
     "después que esté hecha": 1,
-    "y amasó": 1
+    "y amasó": 2
   },
   "H389": {
     "a lo menos dos": 1,
@@ -42899,7 +43295,7 @@ export const all_socu = {
     "ciertamente": 31,
     "cierto": 1,
     "con todo": 3,
-    "con todo eso": 4,
+    "con todo eso": 5,
     "contra mí si": 1,
     "cuando": 1,
     "de cierto": 3,
@@ -43123,7 +43519,7 @@ export const all_socu = {
     "el sostén del pan": 2,
     "ellos pan": 1,
     "en pan": 1,
-    "en que suban los panes": 1,
+    "en que suban los panes": 2,
     "entre vosotros el arrimo del pan": 1,
     "es el pan": 1,
     "es mantenimiento": 1,
@@ -43142,7 +43538,7 @@ export const all_socu = {
     "nuestro pan": 1,
     "ofreceréis el pan": 1,
     "os hartaréis de pan": 1,
-    "pan": 78,
+    "pan": 80,
     "panes": 11,
     "para el pan": 2,
     "para los panes": 1,
@@ -43290,9 +43686,9 @@ export const all_socu = {
     "con la noche": 2,
     "de la noche": 10,
     "de mis canciones de noche": 1,
-    "de noche": 44,
+    "de noche": 45,
     "ellos de noche": 1,
-    "en la noche": 7,
+    "en la noche": 8,
     "en las noches": 2,
     "en noche": 1,
     "es la noche": 1,
@@ -43475,7 +43871,7 @@ export const all_socu = {
     "enseñarlos": 1,
     "enseñará": 2,
     "enseñaré": 1,
-    "enseñaste": 1,
+    "enseñaste": 2,
     "enseñásteme": 1,
     "enseñó": 1,
     "enséñame": 7,
@@ -43489,7 +43885,6 @@ export const all_socu = {
     "os enseñen": 1,
     "os enseño": 1,
     "para conmigo fué enseñado": 1,
-    "para enseñar": 1,
     "para que aprenda": 2,
     "para que enseñasen": 1,
     "que enseña mis": 1,
@@ -43574,6 +43969,7 @@ export const all_socu = {
     "del escarnio": 1,
     "el escarnio": 1,
     "escarnecidos": 1,
+    "las gentes y te escarnecerán": 1,
     "por escarnio": 1,
     "puestas á saco y en escarnio": 1,
     "éste será su escarnio": 1
@@ -43895,7 +44291,7 @@ export const all_socu = {
     "tomaron": 14,
     "tomará": 20,
     "tomarálo": 1,
-    "tomarán": 17,
+    "tomarán": 18,
     "tomarás": 24,
     "tomaré": 2,
     "tomaréis": 7,
@@ -43921,7 +44317,7 @@ export const all_socu = {
     "traigamos": 1,
     "traigan": 3,
     "tuviere tiempo": 1,
-    "tómala": 3,
+    "tómala": 4,
     "tómale": 1,
     "tómalo": 2,
     "tómame": 1,
@@ -44164,7 +44560,7 @@ export const all_socu = {
     "de ellas era semejante al de las cámaras": 1,
     "de la cámara": 2,
     "de la lonja son cámaras": 3,
-    "de las cámaras": 8,
+    "de las cámaras": 9,
     "en la cámara": 5,
     "en la sala": 1,
     "en las cámaras": 2,
@@ -44195,7 +44591,7 @@ export const all_socu = {
   },
   "H3960": {
     "acuses": 1,
-    "infama": 1
+    "infama": 2
   },
   "H3961": {
     "y lenguas": 6,
@@ -44307,7 +44703,7 @@ export const all_socu = {
     "tan": 2,
     "tanto": 1,
     "te han sido muy": 1,
-    "tenía gran": 3,
+    "tenía gran": 2,
     "tuvieron muy gran": 1,
     "tuvo gran": 2,
     "un muy": 1,
@@ -44352,7 +44748,7 @@ export const all_socu = {
     "aquél tenía nuevecientos": 1,
     "asimismo trescientos": 3,
     "atrás doscientos": 2,
-    "centuriones": 3,
+    "centuriones": 4,
     "cien": 25,
     "ciento": 68,
     "como cuatrocientos": 4,
@@ -44412,7 +44808,7 @@ export const all_socu = {
     "la cual tenía cien": 1,
     "la gente de setecientos": 1,
     "las ciento": 1,
-    "los centuriones": 3,
+    "los centuriones": 4,
     "los de cien": 1,
     "los doscientos": 1,
     "los trescientos": 1,
@@ -44438,7 +44834,7 @@ export const all_socu = {
     "seiscientas": 2,
     "seiscientos": 38,
     "será de cien": 1,
-    "setecientos": 24,
+    "setecientos": 26,
     "siendo de ciento": 2,
     "sino cuatrocientos": 1,
     "sobre ciento": 1,
@@ -44446,6 +44842,7 @@ export const all_socu = {
     "sobre trescientos": 1,
     "son ciento": 1,
     "sus compañías de á ciento": 1,
+    "sus mulos doscientos": 2,
     "tomó después los centuriones": 1,
     "trescientas": 3,
     "trescientos": 37,
@@ -44480,7 +44877,7 @@ export const all_socu = {
     "y trescientos": 4,
     "á aquellos trescientos": 1,
     "á ciento": 2,
-    "á los centuriones": 4,
+    "á los centuriones": 6,
     "á los doscientos": 1,
     "á quinientos": 1,
     "él ciento": 3,
@@ -44594,6 +44991,7 @@ export const all_socu = {
     "vuestra comida": 1,
     "y la comida": 1,
     "y las viandas": 1,
+    "y provisión": 1,
     "y será tu cuerpo muerto por comida": 1,
     "árbol de comer": 2
   },
@@ -44637,11 +45035,11 @@ export const all_socu = {
     "comiesen": 5,
     "comieses": 4,
     "comimos": 3,
-    "comiste": 1,
+    "comiste": 2,
     "comisteis": 1,
     "comiéndolo": 2,
     "comió": 23,
-    "comióme": 1,
+    "comióme": 2,
     "como si comiesen": 2,
     "comáis": 2,
     "coméis": 7,
@@ -44702,7 +45100,7 @@ export const all_socu = {
     "ella comerás": 1,
     "ella lo comerán": 3,
     "ellos á comer": 1,
-    "en ella para comer": 3,
+    "en ella para comer": 1,
     "en lo que comiere": 1,
     "entre ellos que comiere": 2,
     "entre los convidados": 1,
@@ -44817,12 +45215,13 @@ export const all_socu = {
     "que te esfuerces á no comer": 2,
     "que te sustentó": 1,
     "que tú comiste": 1,
+    "quitaban": 1,
     "qué comer": 2,
     "ramos ha consumido": 1,
     "se come": 5,
     "se comerá": 14,
     "se comerán": 3,
-    "se comiere": 6,
+    "se comiere": 10,
     "se comieron": 2,
     "se consumía": 1,
     "se ha comido": 2,
@@ -44938,7 +45337,7 @@ export const all_socu = {
     "á su casa á comer": 2,
     "é hízole comer": 1,
     "é hízome comer": 1,
-    "él comiere": 2,
+    "él comiere": 3,
     "él comieres": 2,
     "él la comida": 1,
     "él y comió": 1,
@@ -45035,7 +45434,7 @@ export const all_socu = {
     "ha desechado": 1,
     "habéis desechado": 1,
     "han desechado": 2,
-    "has desechado": 3,
+    "has desechado": 4,
     "hubiera tenido en poco": 1,
     "la espada desprecia": 1,
     "los desechará": 1,
@@ -45113,12 +45512,11 @@ export const all_socu = {
     "de la entrada": 1,
     "del occidente": 1,
     "donde se pone": 3,
-    "entrada": 2,
+    "entrada": 1,
     "estaba la entrada": 1,
     "hasta donde se pone": 1,
     "hasta la entrada": 1,
     "la entrada": 3,
-    "las entradas": 1,
     "metióme después por la entrada": 1,
     "por donde entran": 1,
     "se pone": 1,
@@ -45413,8 +45811,7 @@ export const all_socu = {
     "teme": 1
   },
   "H4035": {
-    "en el granero": 1,
-    "mis temores": 1
+    "en el granero": 1
   },
   "H4036": {
     "sino magor missabib": 2
@@ -45479,7 +45876,7 @@ export const all_socu = {
     "cuando la mortandad": 1,
     "de aquella mortandad": 1,
     "de golpe": 1,
-    "de la mortandad": 2,
+    "de la mortandad": 1,
     "de plaga": 1,
     "en aquella mortandad": 1,
     "ha sido derrotado": 1,
@@ -45491,6 +45888,7 @@ export const all_socu = {
     "mortandad": 1,
     "plaga": 1,
     "plagas": 1,
+    "y aconteció después de la mortandad": 1,
     "á fin de que la mortandad": 1
   },
   "H4047": {
@@ -45648,7 +46046,7 @@ export const all_socu = {
     "y mediré": 1,
     "y medíanlo": 1,
     "y midan": 1,
-    "y midió": 25,
+    "y midió": 24,
     "y midiólo": 1,
     "y midiólos": 2,
     "y midióse": 1
@@ -45704,7 +46102,7 @@ export const all_socu = {
     "y las contiendas": 1
   },
   "H4067": {
-    "de grande altura": 1
+    "de grande altura": 2
   },
   "H4068": {
     "de madón": 2
@@ -45760,11 +46158,12 @@ export const all_socu = {
     "á medos": 1
   },
   "H4077": {
-    "de media": 2
+    "de media": 1
   },
   "H4079": {
     "las contiendas": 1,
     "rencillosa": 1,
+    "y las contiendas": 1,
     "á los pleitos": 1
   },
   "H408": {
@@ -45813,12 +46212,12 @@ export const all_socu = {
     "mío y no": 1,
     "míos no": 1,
     "míos que no": 1,
-    "ni": 221,
+    "ni": 223,
     "ni haber": 3,
     "ni tampoco": 4,
     "ninguna": 1,
     "ninguno": 1,
-    "no": 518,
+    "no": 526,
     "no calles": 1,
     "no me": 2,
     "no te": 1,
@@ -45929,8 +46328,7 @@ export const all_socu = {
     "los midianitas": 1,
     "madianita": 2,
     "sobre los madianitas": 1,
-    "una madianita": 1,
-    "y los midianitas": 1
+    "una madianita": 1
   },
   "H4085": {
     "majaban en morteros": 1
@@ -45950,10 +46348,13 @@ export const all_socu = {
     "no": 4
   },
   "H4090": {
-    "rencillas": 2
+    "rencillas": 3
   },
   "H4091": {
     "y á medan": 1
+  },
+  "H4092": {
+    "y los midianitas": 1
   },
   "H4093": {
     "conocimiento": 1,
@@ -45997,13 +46398,11 @@ export const all_socu = {
     "de mi dios": 1,
     "de ti dios": 1,
     "del dios": 8,
-    "del fuerte": 1,
     "dios": 94,
     "el dios": 17,
     "el dios de israel": 1,
     "el poder": 1,
     "en busca suya": 1,
-    "en favor": 1,
     "en lugar de dios": 1,
     "en ti dios": 2,
     "en ti está dios": 1,
@@ -46027,7 +46426,6 @@ export const all_socu = {
     "mismo dios": 1,
     "mío dios": 2,
     "no": 1,
-    "no hagas": 1,
     "oh dios": 5,
     "por dios": 2,
     "pues haces frente á dios": 1,
@@ -46362,7 +46760,7 @@ export const all_socu = {
     "mío mucho dote": 1
   },
   "H412": {
-    "estos": 1
+    "estos": 2
   },
   "H4120": {
     "date priesa": 1,
@@ -46472,7 +46870,7 @@ export const all_socu = {
     "consigo al": 2,
     "consigo dentro": 2,
     "contigo": 2,
-    "contra": 149,
+    "contra": 150,
     "contra él": 1,
     "cosas entonces les": 1,
     "cuando me": 3,
@@ -46491,7 +46889,7 @@ export const all_socu = {
     "de ellos sobre": 1,
     "de esfuerzo juntábale consigo": 1,
     "de esto me": 1,
-    "de hacia": 4,
+    "de hacia": 3,
     "de ir": 2,
     "de los nuestros es del": 3,
     "de mí en": 1,
@@ -46534,7 +46932,7 @@ export const all_socu = {
     "ellos te": 3,
     "ellos y con": 3,
     "empero á": 1,
-    "en": 494,
+    "en": 495,
     "en batalla contra": 1,
     "en mí luego que me": 2,
     "entonces ella le": 1,
@@ -46613,8 +47011,8 @@ export const all_socu = {
     "la nave á": 1,
     "la que me": 1,
     "la recibirá en": 1,
-    "le": 119,
-    "les": 77,
+    "le": 118,
+    "les": 76,
     "levantó hacia": 3,
     "llégate al": 2,
     "lo": 5,
@@ -46624,14 +47022,15 @@ export const all_socu = {
     "los cuales le": 2,
     "los cuales te": 1,
     "los de": 2,
+    "los que les": 1,
     "los que á": 1,
     "luego": 1,
-    "luego al": 10,
+    "luego al": 9,
     "luego en": 3,
     "luego este término al": 1,
     "luego me": 1,
     "luego á": 10,
-    "mas al": 5,
+    "mas al": 4,
     "mas á": 4,
     "me": 103,
     "mientras me": 1,
@@ -46671,7 +47070,7 @@ export const all_socu = {
     "pediré á": 2,
     "poder": 1,
     "pon á": 1,
-    "por": 73,
+    "por": 74,
     "por amor de": 1,
     "por elías": 1,
     "por eso nos": 1,
@@ -46745,7 +47144,7 @@ export const all_socu = {
     "ti en": 2,
     "ti y contra": 2,
     "ti y te": 4,
-    "ti á": 2,
+    "ti á": 3,
     "tiró por": 2,
     "traédmelo": 2,
     "tu palabra hacia": 2,
@@ -46772,7 +47171,7 @@ export const all_socu = {
     "y asimismo por": 2,
     "y bien que os": 1,
     "y como ella se": 1,
-    "y con": 6,
+    "y con": 7,
     "y contra": 7,
     "y de": 7,
     "y de tus miseraciones para": 1,
@@ -46838,7 +47237,7 @@ export const all_socu = {
     "yo te": 19,
     "yo á": 2,
     "yéndose hacia": 1,
-    "á": 896,
+    "á": 898,
     "á causa": 2,
     "á donde quiera": 1,
     "á ellos y les": 2,
@@ -46869,7 +47268,7 @@ export const all_socu = {
   },
   "H4131": {
     "aunque se traspasen": 1,
-    "caerán": 1,
+    "caerán": 2,
     "conmovida": 2,
     "conmovido": 1,
     "en gran": 2,
@@ -47115,7 +47514,7 @@ export const all_socu = {
     "apretura": 1
   },
   "H4158": {
-    "mephaath": 1,
+    "mephaath": 2,
     "y mephaat": 1,
     "y mephaath": 1,
     "y á mephaath": 1
@@ -47192,7 +47591,7 @@ export const all_socu = {
   },
   "H4168": {
     "con las llamas": 1,
-    "cual tizón": 2
+    "cual tizón": 1
   },
   "H417": {
     "de granizo": 3
@@ -47365,7 +47764,7 @@ export const all_socu = {
     "de cierto": 26,
     "de ellos mató": 4,
     "de gineth y thibni murió": 1,
-    "de la muerte": 3,
+    "de la muerte": 1,
     "de los muertos": 2,
     "de matarle": 1,
     "de morir": 9,
@@ -47457,7 +47856,7 @@ export const all_socu = {
     "mataron": 3,
     "matarte": 1,
     "matará": 7,
-    "matarán": 4,
+    "matarán": 5,
     "mataré": 2,
     "mate": 1,
     "mates": 2,
@@ -47465,7 +47864,7 @@ export const all_socu = {
     "matáronlo": 2,
     "maté": 1,
     "matéis": 4,
-    "mató": 8,
+    "mató": 9,
     "matólo": 4,
     "me mate": 1,
     "me mató": 1,
@@ -47475,7 +47874,7 @@ export const all_socu = {
     "morimos": 2,
     "morir": 1,
     "moriremos": 19,
-    "morirá": 144,
+    "morirá": 146,
     "morirán": 30,
     "morirás": 35,
     "moriré": 5,
@@ -47588,7 +47987,7 @@ export const all_socu = {
     "y acabáronle": 1,
     "y así morirán": 1,
     "y así murió": 1,
-    "y cayó muerto": 2,
+    "y cayó muerto": 1,
     "y de resultas muriere": 1,
     "y el muerto": 1,
     "y el que de él fuere muerto": 2,
@@ -47689,6 +48088,7 @@ export const all_socu = {
     "oh muerte": 2,
     "para muerte": 1,
     "parece una muerte": 1,
+    "sean á muerte": 1,
     "serán entregados á muerte": 1,
     "son caminos de muerte": 1,
     "y es como la muerte": 1,
@@ -47721,7 +48121,7 @@ export const all_socu = {
     "cuyos altares": 1,
     "de ellos sobre el altar": 1,
     "de este altar": 4,
-    "de los altares": 4,
+    "de los altares": 5,
     "de sus altares": 2,
     "de tu altar": 2,
     "de vuestros altares": 1,
@@ -47754,7 +48154,7 @@ export const all_socu = {
     "sobre el altar": 15,
     "sobre mi altar": 1,
     "su altar": 2,
-    "sus altares": 6,
+    "sus altares": 7,
     "también altar": 2,
     "también altares": 1,
     "también el altar": 6,
@@ -47866,7 +48266,7 @@ export const all_socu = {
   },
   "H4210": {
     "principal": 1,
-    "principal salmo": 15,
+    "principal salmo": 14,
     "principal sobre sosannim eduth salmo": 1,
     "salmo": 40
   },
@@ -47941,7 +48341,7 @@ export const all_socu = {
     "y las jofainas": 1,
     "y los tazones": 1,
     "y sus tazones": 1,
-    "y tazones": 3
+    "y tazones": 2
   },
   "H422": {
     "había conjurado": 1,
@@ -48165,7 +48565,7 @@ export const all_socu = {
     "mahalítica": 1
   },
   "H4251": {
-    "enfermedades": 1
+    "enfermedades": 2
   },
   "H4252": {
     "cuchillos": 1
@@ -48236,7 +48636,7 @@ export const all_socu = {
     "que el dios": 3,
     "su dios": 3,
     "tu dios": 1,
-    "tus dioses": 1,
+    "tus dioses": 2,
     "un dios": 1,
     "y al dios": 2,
     "y el dios": 2,
@@ -48544,6 +48944,9 @@ export const all_socu = {
     "éstas": 2,
     "éstos": 14
   },
+  "H4280": {
+    "necesaria": 1
+  },
   "H4281": {
     "y cuando se hacían bocas en las rejas": 1
   },
@@ -48777,7 +49180,7 @@ export const all_socu = {
     "cuando á dios": 1,
     "cuyo dios": 1,
     "de ayer mas el dios": 1,
-    "de dios": 423,
+    "de dios": 422,
     "de dioses": 17,
     "de ela": 1,
     "de en medio los dioses": 1,
@@ -48806,9 +49209,9 @@ export const all_socu = {
     "dije dios": 1,
     "dijo el dios": 1,
     "dijo que me apresurase déjate de meterte con dios": 2,
-    "dios": 1042,
+    "dios": 1043,
     "diosa": 1,
-    "dioses": 48,
+    "dioses": 49,
     "dónde están sus dioses": 1,
     "e hizo dios": 2,
     "el dios": 166,
@@ -49129,6 +49532,7 @@ export const all_socu = {
     "para quién": 36,
     "por mano de quién": 2,
     "por mí mas ojalá": 1,
+    "por quién": 1,
     "por qué": 1,
     "pues de quién": 1,
     "que": 1,
@@ -49258,7 +49662,7 @@ export const all_socu = {
     "con las aguas": 1,
     "corriente como las aguas": 1,
     "cuanto el agua": 1,
-    "de agua": 29,
+    "de agua": 28,
     "de aguas": 39,
     "de ellos el agua": 1,
     "de las aguas": 47,
@@ -49308,7 +49712,7 @@ export const all_socu = {
     "hubo del mismo modo herido las aguas": 2,
     "inundaciones de aguas": 1,
     "la vena de aguas": 1,
-    "las aguas": 142,
+    "las aguas": 141,
     "las muchas": 2,
     "lo meterás en agua": 1,
     "los ríos de aguas": 1,
@@ -49340,6 +49744,7 @@ export const all_socu = {
     "son instables más que la superficie de las aguas": 1,
     "son las aguas": 3,
     "su agua": 3,
+    "su orina": 1,
     "sus aguas": 3,
     "también con agua": 1,
     "también fuentes de aguas": 1,
@@ -49371,7 +49776,7 @@ export const all_socu = {
     "á aguas muchas": 1,
     "á arroyos de aguas": 1,
     "á grandes aguas": 1,
-    "á las aguas": 14,
+    "á las aguas": 13,
     "ó en las aguas": 1,
     "ó para coger agua": 1
   },
@@ -49392,6 +49797,9 @@ export const all_socu = {
     "y el aregol según su especie": 4,
     "y el buitre según su especie": 1,
     "y el haghab según su especie": 4
+  },
+  "H4328": {
+    "los cimientos": 1
   },
   "H433": {
     "al dios": 2,
@@ -49771,6 +50179,9 @@ export const all_socu = {
     "de sus familiares": 1,
     "de vuestros familiares": 1
   },
+  "H4379": {
+    "y mina": 1
+  },
   "H438": {
     "de allón": 1,
     "y allón saananim": 1
@@ -49809,7 +50220,7 @@ export const all_socu = {
     "y la escritura": 2
   },
   "H4387": {
-    "michtam": 5,
+    "michtam": 4,
     "michtham": 1
   },
   "H4388": {
@@ -49872,7 +50283,6 @@ export const all_socu = {
     "han henchido": 1,
     "han llenado": 1,
     "he aquí que yo lleno": 1,
-    "henchid": 1,
     "henchido": 1,
     "henchir": 1,
     "henchirá": 1,
@@ -49885,12 +50295,12 @@ export const all_socu = {
     "hinches": 1,
     "hinchieron": 1,
     "hinchió": 8,
-    "llena": 9,
+    "llena": 8,
     "llenaron": 1,
     "llenará": 1,
-    "llenas": 3,
+    "llenas": 2,
     "lleno": 3,
-    "llenos": 2,
+    "llenos": 1,
     "llenó": 1,
     "llenólo": 1,
     "lo ejecutasteis": 1,
@@ -50190,7 +50600,7 @@ export const all_socu = {
   "H4404": {
     "en un horno de ladrillos": 1,
     "fortifica el horno": 1,
-    "é hízolos pasar por hornos de ladrillos": 1
+    "é hízolos pasar por hornos de ladrillos": 2
   },
   "H4405": {
     "atentamente mi palabra": 1,
@@ -50247,7 +50657,7 @@ export const all_socu = {
     "malvas": 1
   },
   "H4409": {
-    "de melichâ": 1,
+    "de melichâ": 2,
     "malluch": 5
   },
   "H441": {
@@ -50314,7 +50724,7 @@ export const all_socu = {
     "con sal": 3,
     "de la parte": 2,
     "de la sal": 3,
-    "de las salinas": 2,
+    "de las salinas": 3,
     "de sal": 5,
     "en ella sal": 1,
     "la sal": 4,
@@ -50573,7 +50983,7 @@ export const all_socu = {
     "que reinó": 1,
     "que vino": 1,
     "quería hacerle rey": 1,
-    "reina": 10,
+    "reina": 12,
     "reinaba": 1,
     "reinado": 5,
     "reinare": 1,
@@ -50611,7 +51021,7 @@ export const all_socu = {
     "además del rey": 2,
     "además el rey": 5,
     "al cual el rey": 1,
-    "al rey": 266,
+    "al rey": 265,
     "alegraráse el rey": 1,
     "alto sobre los reyes": 1,
     "antes bien con los reyes": 1,
@@ -50627,7 +51037,7 @@ export const all_socu = {
     "como de mano del rey": 2,
     "como el rey": 6,
     "como los reyes": 1,
-    "como un rey": 4,
+    "como un rey": 3,
     "con el rey": 3,
     "con los reyes": 1,
     "contra el rey": 9,
@@ -50661,7 +51071,7 @@ export const all_socu = {
     "decir de thiraca rey": 1,
     "del norte": 2,
     "del reino y el rey": 2,
-    "del rey": 697,
+    "del rey": 696,
     "delante del rey": 1,
     "después del rey": 3,
     "después el rey": 5,
@@ -50782,7 +51192,7 @@ export const all_socu = {
     "que los reyes": 1,
     "que suelen los reyes": 1,
     "quejarme más contra el rey": 2,
-    "real": 32,
+    "real": 33,
     "reales": 5,
     "regia": 1,
     "reina": 1,
@@ -50792,7 +51202,7 @@ export const all_socu = {
     "reine": 2,
     "reinó": 1,
     "resín rey": 1,
-    "rey": 1077,
+    "rey": 1075,
     "reyes": 81,
     "salomón": 4,
     "salud á los reyes": 1,
@@ -51044,6 +51454,7 @@ export const all_socu = {
     "y el reino": 1,
     "y en el reinado": 2,
     "y en mi reino": 1,
+    "y fué su reino": 1,
     "y su reino": 2,
     "á su compañera": 2
   },
@@ -51173,7 +51584,7 @@ export const all_socu = {
   },
   "H4462": {
     "de memucán": 1,
-    "memucán": 1,
+    "memucán": 2,
     "y memucán": 1
   },
   "H4463": {
@@ -51319,6 +51730,8 @@ export const all_socu = {
     "quién": 1,
     "sobre él al que": 1,
     "y con": 2,
+    "y cualquiera": 1,
+    "y el que": 1,
     "y qué": 1,
     "y á quien": 1,
     "á quien": 1
@@ -51366,7 +51779,7 @@ export const all_socu = {
     "cosa me": 2,
     "cosas te": 1,
     "cuando los volveré de": 1,
-    "de": 1211,
+    "de": 1220,
     "de chîriath jearim": 1,
     "de días que": 1,
     "de ella": 2,
@@ -51406,7 +51819,6 @@ export const all_socu = {
     "en contra": 1,
     "en cosas para": 1,
     "en una de": 1,
-    "en él algo de": 1,
     "entonces de": 1,
     "entonces te": 1,
     "entre": 1,
@@ -51465,7 +51877,7 @@ export const all_socu = {
     "les había de": 1,
     "lo de": 1,
     "lo han de": 1,
-    "los de": 1,
+    "los de": 3,
     "los de ti": 1,
     "los hijos de": 1,
     "los que": 1,
@@ -51536,7 +51948,6 @@ export const all_socu = {
     "que ha de": 1,
     "que los arranquemos de": 1,
     "que os produce fruto en el campo": 2,
-    "qué pensáis": 1,
     "raza de": 1,
     "salvo lo que os ha quedado del": 2,
     "se": 2,
@@ -51558,7 +51969,7 @@ export const all_socu = {
     "son que": 1,
     "su amor más": 1,
     "subió desde": 1,
-    "también de": 1,
+    "también de": 2,
     "te": 4,
     "te indicaren los del": 1,
     "te resta": 1,
@@ -51594,14 +52005,13 @@ export const all_socu = {
     "y como acopio del": 2,
     "y como que escondimos de": 1,
     "y darás de": 1,
-    "y de": 150,
+    "y de": 152,
     "y del": 21,
     "y desde": 4,
     "y después de": 1,
     "y el día siguiente": 1,
     "y el primero de": 1,
     "y en": 3,
-    "y en parte": 1,
     "y fabricóse en": 1,
     "y jehiel y de": 2,
     "y júntanos de": 1,
@@ -51641,7 +52051,7 @@ export const all_socu = {
   "H4481": {
     "al": 2,
     "antes": 1,
-    "cocido en parte": 3,
+    "cocido en parte": 6,
     "como de": 1,
     "cuando": 1,
     "daráslo de": 1,
@@ -51653,7 +52063,7 @@ export const all_socu = {
     "ellos": 2,
     "en": 1,
     "en medio de": 1,
-    "en parte": 6,
+    "en parte": 15,
     "era de": 1,
     "es de": 1,
     "es traspasado de": 2,
@@ -51674,7 +52084,7 @@ export const all_socu = {
     "uno de": 2,
     "y de": 5,
     "y desde": 1,
-    "y en parte": 8,
+    "y en parte": 17,
     "y por": 7,
     "y que de": 1,
     "y traspasaron de": 2,
@@ -51967,6 +52377,7 @@ export const all_socu = {
     "apartaron": 1,
     "aparté": 1,
     "dejes": 1,
+    "detengas": 1,
     "detuve": 1,
     "el que detuviere": 1,
     "ellos aparta": 1,
@@ -52088,7 +52499,7 @@ export const all_socu = {
     "desde sus encerramientos": 1,
     "en sus escondrijos": 1,
     "has también una moldura": 2,
-    "las cintas": 2,
+    "las cintas": 3,
     "las cuales": 2,
     "sus encierros": 1,
     "tenían unas cintas": 2,
@@ -52486,7 +52897,7 @@ export const all_socu = {
     "para fortaleza": 1,
     "para fortificarse con la fuerza": 1,
     "por su fortaleza": 1,
-    "su fortaleza": 1,
+    "su fortaleza": 2,
     "y fortalecerlo": 1,
     "y la fortaleza": 2,
     "y él es su fortaleza": 1,
@@ -52527,7 +52938,7 @@ export const all_socu = {
     "y su habitación": 1
   },
   "H4586": {
-    "de meunim": 2,
+    "de meunim": 3,
     "los ammonitas": 1
   },
   "H4588": {
@@ -52578,7 +52989,6 @@ export const all_socu = {
     "es lo poco": 3,
     "es poco": 4,
     "esto es poco": 1,
-    "han disminuído": 1,
     "mas yo casi": 1,
     "menos un poco": 1,
     "mucho": 1,
@@ -52693,7 +53103,7 @@ export const all_socu = {
     "á maachâ": 3
   },
   "H4602": {
-    "de maachâti": 6,
+    "de maachâti": 4,
     "i y machâti": 1,
     "y de maachâti": 1,
     "y maachâti": 1
@@ -52717,7 +53127,7 @@ export const all_socu = {
     "prevaricaron": 1,
     "prevaricará": 1,
     "prevaricasteis": 1,
-    "prevaricáis": 2,
+    "prevaricáis": 1,
     "prevaricó": 3,
     "se han rebelado": 1,
     "se rebelaron": 2
@@ -52734,13 +53144,14 @@ export const all_socu = {
     "esta traición": 1,
     "haciendo prevaricación": 1,
     "la prevaricación": 1,
-    "por su prevaricación": 2,
+    "por su prevaricación": 1,
     "por su rebelión": 3,
     "prevaricación": 1,
-    "prevaricaron": 2,
+    "prevaricaron": 1,
     "pérfidamente": 1,
     "sobre la prevaricación": 1,
     "su rebelión": 1,
+    "transgresión": 1,
     "y hubiere hecho traición": 1,
     "y rebeládose gravemente": 1,
     "y su prevaricación": 1,
@@ -52797,22 +53208,22 @@ export const all_socu = {
     "las gradas": 1,
     "por la cuesta": 1,
     "y le hirieron á la subida": 1,
-    "y sus gradas": 3
+    "y sus gradas": 6
   },
   "H4609": {
     "alto": 1,
     "alzaré": 1,
     "bienaventurado": 1,
     "de los grados": 5,
-    "en el reloj": 7,
+    "en el reloj": 8,
     "escalones": 2,
     "gradas": 4,
-    "grados": 20,
+    "grados": 21,
     "gradual": 15,
     "las gradas": 1,
     "peldaños": 2,
     "por gradas": 1,
-    "por los grados": 2,
+    "por los grados": 3,
     "que sube": 1,
     "subían por gradas": 1,
     "y las cosas que suben": 1,
@@ -52839,10 +53250,10 @@ export const all_socu = {
     "de sus manos": 1,
     "de sus obras": 7,
     "de tus obras": 1,
-    "de vuestras obras": 5,
+    "de vuestras obras": 6,
     "hechos": 2,
     "malvadas obras": 1,
-    "obras": 4,
+    "obras": 5,
     "por sus hechos": 1,
     "sus obras": 2,
     "vuestras obras": 2,
@@ -52968,7 +53379,7 @@ export const all_socu = {
     "en las cavernas": 1,
     "en una cueva": 2,
     "había una cueva": 2,
-    "la cueva": 10,
+    "la cueva": 11,
     "que hizo cuando estaba en la cueva": 1,
     "también la cueva": 1,
     "una cueva": 1,
@@ -53002,6 +53413,7 @@ export const all_socu = {
     "la batalla": 2,
     "para guerrear": 1,
     "que debían mantenerse en orden": 1,
+    "salió de los escuadrones": 1,
     "á los escuadrones": 1
   },
   "H4635": {
@@ -53392,7 +53804,7 @@ export const all_socu = {
     "lo hallé": 4,
     "lo hemos hallado": 1,
     "lo que se hallare": 1,
-    "lo tomaran": 1,
+    "lo tomaran": 2,
     "los hallaron": 2,
     "los hallará": 1,
     "los hallarás": 1,
@@ -53611,6 +54023,7 @@ export const all_socu = {
   },
   "H4685": {
     "baluartes": 1,
+    "en fortalezas": 1,
     "la red": 1,
     "y lazos": 1
   },
@@ -53627,7 +54040,6 @@ export const all_socu = {
     "me ha trastornado y traído en derredor su red": 1,
     "mía y castillo": 2,
     "mía y mi castillo": 1,
-    "red": 1,
     "y de la roca": 1,
     "y mi castillo": 1,
     "y mi fortaleza": 2
@@ -53660,10 +54072,10 @@ export const all_socu = {
     "los mandamientos": 20,
     "los preceptos": 1,
     "mandamiento": 4,
-    "mandamientos": 4,
+    "mandamientos": 5,
     "me dejes divagar de tus mandamientos": 1,
     "me hallaron mas tus mandamientos": 1,
-    "mis mandamientos": 21,
+    "mis mandamientos": 22,
     "mí tus mandamientos": 1,
     "mío el mandamiento": 1,
     "obedeciendo á los mandamientos": 1,
@@ -53678,7 +54090,7 @@ export const all_socu = {
     "según el derecho": 1,
     "son los mandamientos": 2,
     "su mandamiento": 1,
-    "sus mandamientos": 22,
+    "sus mandamientos": 23,
     "sus órdenes conforme al mandamiento": 1,
     "tus mandamientos": 15,
     "y el mandamiento": 1,
@@ -53885,24 +54297,26 @@ export const all_socu = {
     "á un egipcio": 7
   },
   "H4714": {
+    "al egipcio": 1,
     "al modo que en egipto": 1,
     "ciertamente egipto": 1,
     "con egipto": 1,
     "contra egipcios": 2,
+    "contra los egipcios": 1,
     "cuando hubieron salido de egipto": 1,
     "cuando salisteis de egipto": 1,
     "de egipto": 473,
     "de la plaga de egipto": 1,
     "de las cargas de egipto": 2,
-    "de los egipcios": 10,
+    "de los egipcios": 18,
     "de ti oh egipto": 1,
     "desde egipto": 1,
     "después que salieron de egipto": 1,
     "echándolos los egipcios": 2,
     "egipcios": 2,
-    "egipto": 47,
+    "egipto": 48,
     "el término de egipto": 1,
-    "en egipto": 76,
+    "en egipto": 78,
     "en orden á egipto": 2,
     "en todos los términos de egipto": 2,
     "entréis en egipto": 1,
@@ -53912,17 +54326,19 @@ export const all_socu = {
     "está á la frontera de egipto": 1,
     "están en egipto": 1,
     "fué en egipto": 1,
+    "gravemente entonces los egipcios": 2,
     "has de egipto": 1,
     "hermosa egipto": 1,
     "iba en egipto": 1,
     "la de egipto": 1,
     "la entrada de egipto": 1,
-    "los egipcios": 10,
+    "los egipcios": 14,
     "misraim": 1,
     "misram": 1,
     "mío egipto": 1,
     "para egipto": 1,
     "para entrarse en egipto": 1,
+    "por ellos contra los egipcios": 2,
     "sobre egipto": 2,
     "velozmente de egipto": 1,
     "venía á egipto": 1,
@@ -53933,7 +54349,7 @@ export const all_socu = {
     "y en egipto": 1,
     "y lienzos finos de egipto": 1,
     "y los de egipto": 3,
-    "y los egipcios": 7,
+    "y los egipcios": 9,
     "y metióse en egipto": 1,
     "y mizraim": 2,
     "y nocivos en egipto": 1,
@@ -53941,7 +54357,7 @@ export const all_socu = {
     "y á egipto": 1,
     "y á los egipcios": 1,
     "á egipto": 65,
-    "á los egipcios": 4,
+    "á los egipcios": 15,
     "á vuestra salida de egipto": 1,
     "él de egipto": 1
   },
@@ -54343,7 +54759,7 @@ export const all_socu = {
     "amargamente": 2,
     "amargas": 6,
     "amargo": 1,
-    "amargura": 2,
+    "amargura": 1,
     "con amargura": 4,
     "con la amargura": 1,
     "de mara": 2,
@@ -54354,7 +54770,7 @@ export const all_socu = {
     "en ella por amargas": 2,
     "eran amargas": 1,
     "es amargo": 1,
-    "la amargura": 2,
+    "la amargura": 1,
     "lo amargo": 3,
     "lo cual amargura": 1,
     "más amarga": 1,
@@ -54385,8 +54801,8 @@ export const all_socu = {
   },
   "H4756": {
     "el señor": 1,
-    "mi señor": 1,
-    "señor": 1,
+    "mi señor": 2,
+    "señor": 2,
     "y el señor": 1
   },
   "H4757": {
@@ -54496,10 +54912,10 @@ export const all_socu = {
   "H4763": {
     "cabecera": 1,
     "de cabecera": 1,
-    "estaba á su cabecera": 1,
-    "está á su cabecera": 1,
+    "estaba á su cabecera": 2,
+    "está á su cabecera": 2,
     "por cabecera": 2,
-    "á su cabecera": 2
+    "á su cabecera": 3
   },
   "H4764": {
     "en que merab": 1,
@@ -54511,7 +54927,7 @@ export const all_socu = {
     "tapices de": 1
   },
   "H4766": {
-    "lo dilatado": 1
+    "lo dilatado": 2
   },
   "H4767": {
     "de grande": 1
@@ -54550,7 +54966,7 @@ export const all_socu = {
     "los pies": 1,
     "pies": 1,
     "y sus pies": 1,
-    "á sus pies": 2
+    "á sus pies": 3
   },
   "H4773": {
     "en la honda": 1
@@ -54720,7 +55136,7 @@ export const all_socu = {
     "como el correr": 2,
     "la carrera": 1,
     "paréceme el correr": 2,
-    "á su carrera": 1
+    "á su carrera": 2
   },
   "H4795": {
     "de sus atavíos": 1
@@ -54842,7 +55258,7 @@ export const all_socu = {
     "así maría": 2,
     "maría": 4,
     "que maría": 2,
-    "y mariam": 3,
+    "y mariam": 1,
     "y maría": 2,
     "y á maría": 4,
     "á mariam": 1,
@@ -55033,7 +55449,7 @@ export const all_socu = {
   },
   "H4842": {
     "hacían los ungüentos": 1,
-    "por obra de perfumadores": 2,
+    "por obra de perfumadores": 1,
     "superior": 1
   },
   "H4843": {
@@ -55261,7 +55677,7 @@ export const all_socu = {
     "y moisés": 90,
     "y á moisés": 3,
     "ya moisés": 1,
-    "á moisés": 309,
+    "á moisés": 308,
     "á él y moisés": 2,
     "é hizo mal á moisés": 1
   },
@@ -55291,7 +55707,7 @@ export const all_socu = {
     "oh rebelde": 1,
     "rebeliones": 2,
     "su rebelión": 1,
-    "sus deslealtades": 1,
+    "sus deslealtades": 2,
     "á la rebelión": 1
   },
   "H4879": {
@@ -55429,7 +55845,7 @@ export const all_socu = {
     "y seda": 1
   },
   "H4898": {
-    "de mesezabeel": 4,
+    "de mesezabeel": 1,
     "mesezabeel": 1
   },
   "H4899": {
@@ -55474,10 +55890,10 @@ export const all_socu = {
     "de viudas": 1,
     "el término de la viuda": 1,
     "las viudas": 2,
-    "ni viuda": 2,
+    "ni viuda": 3,
     "sus viudas": 3,
     "tus viudas": 1,
-    "viuda": 11,
+    "viuda": 12,
     "viudas": 1,
     "y de la viuda": 1,
     "y en sus palacios": 1,
@@ -55487,7 +55903,7 @@ export const all_socu = {
     "y viudas": 2,
     "y á la viuda": 7,
     "á la viuda": 4,
-    "ó viuda": 2
+    "ó viuda": 3
   },
   "H4900": {
     "adelantó": 1,
@@ -55567,8 +55983,8 @@ export const all_socu = {
     "á su cama": 2
   },
   "H4905": {
-    "masquil": 11,
-    "principal masquil": 2
+    "masquil": 10,
+    "principal masquil": 1
   },
   "H4906": {
     "con creces los antojos": 1,
@@ -55790,6 +56206,7 @@ export const all_socu = {
   },
   "H4928": {
     "en su consejo": 1,
+    "les darán obediencia": 1,
     "su consejo": 1
   },
   "H4929": {
@@ -55893,6 +56310,7 @@ export const all_socu = {
     "y á sophonías segundo": 2
   },
   "H4933": {
+    "en presa": 1,
     "hollados": 1,
     "por tanto saqueada": 1,
     "y hollados": 1
@@ -55964,7 +56382,7 @@ export const all_socu = {
     "géneros": 1,
     "haciendo luego allegar la familia": 3,
     "hanoc del cual era la familia": 2,
-    "la familia": 189,
+    "la familia": 190,
     "la parentela": 1,
     "las familias": 14,
     "las gentes": 1,
@@ -55978,7 +56396,7 @@ export const all_socu = {
     "por las familias": 3,
     "por suertes por vuestras familias": 1,
     "por sus familias": 103,
-    "por sus linajes": 5,
+    "por sus linajes": 6,
     "por vuestras familias": 1,
     "que vinieron en sus familias": 1,
     "repartidas por sus linajes": 1,
@@ -56020,7 +56438,7 @@ export const all_socu = {
     "conforme á la costumbre": 3,
     "conforme á la ley": 1,
     "conforme á la ordenación": 1,
-    "conforme á mis derechos": 1,
+    "conforme á mis derechos": 2,
     "conforme á su costumbre": 1,
     "conforme á su ley": 1,
     "conforme á tu juicio": 1,
@@ -56084,7 +56502,7 @@ export const all_socu = {
     "mis juicios": 5,
     "mis leyes": 2,
     "mío el juicio": 1,
-    "necesario": 1,
+    "necesario": 2,
     "no debiendo ser condenado": 1,
     "ordenanza": 1,
     "ordenanzas": 4,
@@ -56120,7 +56538,7 @@ export const all_socu = {
     "sus cosas con juicio": 1,
     "sus juicios": 3,
     "sus leyes": 2,
-    "sus ordenanzas": 1,
+    "sus ordenanzas": 2,
     "torcido el juicio": 2,
     "tus juicios": 9,
     "tuyo es el derecho": 1,
@@ -56265,7 +56683,7 @@ export const all_socu = {
     "cuando erais pocos": 1,
     "de los hombres": 4,
     "esto siendo ellos pocos": 1,
-    "hombres": 5,
+    "hombres": 6,
     "los hombres": 1,
     "mis domésticos": 1,
     "oh vosotros los pocos": 1,
@@ -56408,6 +56826,9 @@ export const all_socu = {
     "y mattanías": 1,
     "á mathanías": 1
   },
+  "H4984": {
+    "y la altura": 1
+  },
   "H4985": {
     "comunicábamos": 1,
     "le serán dulces": 1,
@@ -56439,7 +56860,7 @@ export const all_socu = {
     "será eleazar": 1,
     "vinieron á eleazar": 1,
     "y eleazar": 11,
-    "y á eleazar": 7,
+    "y á eleazar": 6,
     "á eleazar": 8,
     "él eleazar": 1
   },
@@ -56756,6 +57177,7 @@ export const all_socu = {
     "has profetizado": 2,
     "lo arrebató y profetizó": 1,
     "los cuales profetizaron": 1,
+    "los cuales profetizasen": 1,
     "los que profetizan": 1,
     "mientras yo profetizaba": 2,
     "miqueas de morasti profetizó": 1,
@@ -56799,7 +57221,7 @@ export const all_socu = {
     "é iba profetizando": 1
   },
   "H5013": {
-    "y profetizaron": 3
+    "y profetizaron": 1
   },
   "H5014": {
     "con ellas hueco": 1,
@@ -56838,7 +57260,7 @@ export const all_socu = {
     "este nabucodonosor": 1,
     "hizo nabucodonosor": 1,
     "hizo pasar nabucodonosor": 1,
-    "nabucodonosor": 23,
+    "nabucodonosor": 25,
     "que nabucodonosor": 1,
     "también nabucodonosor": 1,
     "vosotros nabucodonosor": 1,
@@ -56915,7 +57337,7 @@ export const all_socu = {
     "ves": 2,
     "y considera": 1,
     "y haces que mire": 1,
-    "y mira": 3,
+    "y mira": 4,
     "y miraban": 1,
     "y mirad": 1,
     "y mirarán": 3,
@@ -56935,8 +57357,9 @@ export const all_socu = {
     "nabat": 1
   },
   "H5029": {
-    "los profetas": 1,
-    "profeta": 1
+    "los profetas": 2,
+    "profeta": 2,
+    "profetas": 4
   },
   "H503": {
     "que paran á millares": 1
@@ -56981,7 +57404,7 @@ export const all_socu = {
     "hananías": 1,
     "llegándose luego el profeta": 1,
     "los cuales profetizasen": 1,
-    "los profetas": 51,
+    "los profetas": 53,
     "mano del profeta": 1,
     "mas de los profetas": 2,
     "mío si el profeta": 1,
@@ -57486,7 +57909,7 @@ export const all_socu = {
     "yo le contaría": 1,
     "yo os declararé": 1,
     "yo te mostraré": 1,
-    "á dar": 1,
+    "á dar": 2,
     "á decir": 1,
     "á eliseo y declaróselo": 1,
     "á hacer saber": 1,
@@ -57595,13 +58018,13 @@ export const all_socu = {
     "hasta las mil": 1,
     "hasta mil": 1,
     "herí mil": 1,
-    "hombres": 4,
+    "hombres": 3,
     "los mil": 2,
     "los millares": 3,
     "los tribunos": 3,
     "luego otros mil": 2,
-    "mil": 579,
-    "miles": 2,
+    "mil": 575,
+    "miles": 3,
     "millar": 1,
     "millares": 1,
     "otros mil": 3,
@@ -57615,7 +58038,7 @@ export const all_socu = {
     "será por mil": 1,
     "serán mil": 1,
     "son veinte mil y más millares": 1,
-    "sus miles": 3,
+    "sus miles": 5,
     "tribunos": 7,
     "y de cada mil": 2,
     "y de los mil": 1,
@@ -57625,7 +58048,7 @@ export const all_socu = {
     "y los mil": 3,
     "y los millares": 1,
     "y mil": 15,
-    "y un mil": 6,
+    "y un mil": 4,
     "y un millar de millares": 3,
     "y á mí miles": 1,
     "á la multitud mil": 4,
@@ -57728,9 +58151,9 @@ export const all_socu = {
   },
   "H506": {
     "de los mil": 2,
-    "millares": 2,
+    "millares": 3,
     "á mil": 2,
-    "él millares": 2
+    "él millares": 3
   },
   "H5060": {
     "acercóse": 1,
@@ -58333,10 +58756,13 @@ export const all_socu = {
     "y lamentación": 1,
     "y lloro": 1
   },
+  "H5093": {
+    "y se endechará": 1
+  },
   "H5094": {
     "en él luz": 1,
     "luz": 1,
-    "y la luz": 1
+    "y la luz": 2
   },
   "H5095": {
     "llevástelo": 1,
@@ -58436,7 +58862,7 @@ export const all_socu = {
     "preocuparon": 1
   },
   "H5109": {
-    "nebai": 1
+    "nebai": 2
   },
   "H511": {
     "anna": 1,
@@ -58572,12 +58998,12 @@ export const all_socu = {
     "de el kosh": 1
   },
   "H5121": {
-    "allá á najoth": 2,
-    "de najoth": 1,
-    "en najoth": 1,
-    "está en najoth": 1,
-    "están en najoth": 1,
-    "á najoth": 2
+    "allá á najoth": 4,
+    "de najoth": 2,
+    "en najoth": 2,
+    "está en najoth": 2,
+    "están en najoth": 2,
+    "á najoth": 4
   },
   "H5122": {
     "muladar": 1,
@@ -58594,7 +59020,7 @@ export const all_socu = {
     "y el sueño": 1
   },
   "H5125": {
-    "perpetuaráse": 1
+    "perpetuaráse": 2
   },
   "H5126": {
     "de nun": 28,
@@ -58604,6 +59030,7 @@ export const all_socu = {
     "como se estaba y habían huído": 2,
     "contra sí y huyeron": 1,
     "de los que huyen": 1,
+    "el que huyere": 1,
     "había huído": 1,
     "hasal y huiréis": 3,
     "huid": 4,
@@ -58635,13 +59062,13 @@ export const all_socu = {
     "como se zarandea": 2,
     "e irán errantes": 1,
     "errante": 2,
-    "errantes": 1,
+    "errantes": 2,
     "ha movido": 1,
     "hazlos vagar": 1,
     "las sacuden": 1,
     "los labios menean": 1,
     "luego vanse": 1,
-    "lugar para ir": 1,
+    "lugar para ir": 2,
     "meneará": 1,
     "moverse": 1,
     "mueva": 1,
@@ -59032,7 +59459,7 @@ export const all_socu = {
     "esme mi heredad": 1,
     "fueron mujeres y la heredad": 1,
     "fué la herencia": 1,
-    "fué sacada la heredad": 3,
+    "fué sacada la heredad": 2,
     "heredad": 36,
     "heredades": 3,
     "herencia": 5,
@@ -59402,6 +59829,7 @@ export const all_socu = {
     "finalmente si": 1,
     "fueren": 2,
     "habrás hecho contra él y si": 1,
+    "he aquí": 1,
     "hice": 1,
     "hijo y": 1,
     "la bandera y fué que cuando": 1,
@@ -59441,7 +59869,7 @@ export const all_socu = {
     "que los": 1,
     "que no": 13,
     "que nunca": 1,
-    "que si": 11,
+    "que si": 12,
     "que ó": 3,
     "quebrada y si": 1,
     "quién": 1,
@@ -59450,7 +59878,7 @@ export const all_socu = {
     "rebuscos si": 2,
     "se verá si": 1,
     "será que si": 2,
-    "si": 391,
+    "si": 392,
     "si el sol hubiere sobre él salido": 2,
     "si es ó": 1,
     "si sois": 1,
@@ -59505,7 +59933,6 @@ export const all_socu = {
     "haz venir": 1,
     "quiebre": 1,
     "serán": 1,
-    "van": 1,
     "á mí y sobre mí ha caído": 2
   },
   "H5182": {
@@ -59542,12 +59969,13 @@ export const all_socu = {
     "baja": 1,
     "cuando declina": 1,
     "cuanto él extendió": 1,
-    "cuellierguidas": 1,
+    "cuellierguidas": 2,
     "de ellos se inclinó": 1,
     "de manera que en extendiendo": 1,
     "de su padre antes se ladearon": 2,
     "de tus tiendas sean extendidas": 1,
     "decline": 1,
+    "dejes se incline": 1,
     "desviado": 1,
     "e inclinó": 1,
     "en ella y extenderáse": 1,
@@ -59608,13 +60036,13 @@ export const all_socu = {
     "rindiólo": 1,
     "se acuestan": 1,
     "se apartaron": 1,
-    "se deslizaron": 1,
+    "se deslizaron": 2,
     "se había adherido": 4,
     "se han extendido": 1,
     "será tendida": 1,
     "si inclinares": 1,
     "sino llevóla": 1,
-    "te apartes": 1,
+    "te apartes": 2,
     "tendió": 1,
     "tendióselo": 1,
     "tiende": 1,
@@ -59634,6 +60062,7 @@ export const all_socu = {
     "y extiende": 2,
     "y fuése": 1,
     "y hase apartado": 2,
+    "y llegué": 1,
     "y los que hacen agravio": 1,
     "y pervirtiendo": 2,
     "y tendió": 3,
@@ -59739,7 +60168,7 @@ export const all_socu = {
     "y plantaréis": 2,
     "y plantástela": 1,
     "y planté": 2,
-    "y plantó": 3,
+    "y plantó": 4,
     "y yo te planté": 1,
     "yo lo plantaré": 1,
     "él plantó": 1
@@ -59826,7 +60255,7 @@ export const all_socu = {
   },
   "H5200": {
     "de los manahethitas": 1,
-    "de netophath": 4,
+    "de netophath": 2,
     "nethophathita": 6,
     "netofatita": 1,
     "netophatita": 1,
@@ -59915,7 +60344,7 @@ export const all_socu = {
     "á nínive": 5
   },
   "H5211": {
-    "el que huyere": 2
+    "el que huyere": 1
   },
   "H5212": {
     "de nisán": 2
@@ -60002,7 +60431,7 @@ export const all_socu = {
     "cuando hirieseis": 1,
     "cuanto hirió": 1,
     "de ellas y los metió": 1,
-    "de ellos siguieron": 3,
+    "de ellos siguieron": 4,
     "de herir": 1,
     "de la derrota": 2,
     "de la matanza": 1,
@@ -60223,7 +60652,7 @@ export const all_socu = {
     "á herirla": 1,
     "á los heridores": 1,
     "á él é hirió": 1,
-    "é hirieron": 13,
+    "é hirieron": 14,
     "é hiriéronla": 1,
     "é hiriéronlos": 1,
     "é hirió": 34,
@@ -60334,6 +60763,7 @@ export const all_socu = {
     "él hará notorias": 1
   },
   "H5235": {
+    "en que fué extrañado": 1,
     "y extrañamiento": 1
   },
   "H5236": {
@@ -60359,7 +60789,7 @@ export const all_socu = {
     "ajena": 2,
     "ajenos": 1,
     "al extranjero": 1,
-    "al que fía la extraña": 1,
+    "al que fía la extraña": 2,
     "de extranjeros": 1,
     "de la ajena": 1,
     "de la extraña": 2,
@@ -60384,7 +60814,7 @@ export const all_socu = {
     "á forasteros": 1
   },
   "H5238": {
-    "de su tesoro": 1,
+    "de su tesoro": 2,
     "en sus tesoros": 1
   },
   "H5239": {
@@ -60442,7 +60872,6 @@ export const all_socu = {
     "cuando levantará bandera": 1,
     "de vela": 1,
     "huiréis": 1,
-    "jehová nissi": 1,
     "la vela": 1,
     "mi bandera": 1,
     "pendón": 3,
@@ -60576,9 +61005,6 @@ export const all_socu = {
     "y sus libaciones": 15,
     "él libación": 2
   },
-  "H5264": {
-    "como abanderado en derrota": 1
-  },
   "H5265": {
     "aparte": 1,
     "arrancó": 1,
@@ -60671,7 +61097,6 @@ export const all_socu = {
   },
   "H527": {
     "de la multitud": 1,
-    "el pueblo de amón": 1,
     "y toda": 1
   },
   "H5270": {
@@ -60856,7 +61281,6 @@ export const all_socu = {
     "estaba conmigo y mis hijos": 1,
     "este niño": 1,
     "junto desde el más joven": 1,
-    "la pequeña": 1,
     "los criados": 5,
     "los jóvenes": 1,
     "los mancebos": 2,
@@ -60951,35 +61375,35 @@ export const all_socu = {
     "con sus doncellas": 3,
     "convenientes doncellas": 3,
     "de cada una de las mozas": 2,
-    "de la doncella": 2,
+    "de la doncella": 4,
     "de la joven": 2,
-    "de la moza": 13,
+    "de la moza": 17,
     "de tus criadas": 1,
     "doncellas": 1,
-    "en la moza": 1,
+    "en la moza": 2,
     "entonces la moza": 1,
     "es esta moza": 1,
     "es la moza": 1,
-    "halló una moza": 1,
+    "halló una moza": 2,
     "la misma moza": 1,
-    "la moza": 5,
+    "la moza": 7,
     "las doncellas": 1,
     "las mozas": 1,
     "mis mozas": 1,
-    "moza": 2,
+    "moza": 4,
     "mozas": 4,
     "para tus niñas": 1,
     "pues que la moza": 1,
     "sus criadas": 2,
     "sus doncellas": 1,
-    "tiene la moza": 2,
+    "tiene la moza": 4,
     "una moza": 2,
     "una muchacha": 2,
     "unas mozas": 1,
     "y era moza": 1,
     "y la moza": 7,
     "y sus mozas": 1,
-    "y á la moza": 2,
+    "y á la moza": 4,
     "á sus criadas": 1
   },
   "H5292": {
@@ -61080,8 +61504,7 @@ export const all_socu = {
     "ó tu verdad": 1
   },
   "H5300": {
-    "de nephisesim": 1,
-    "de nephusim": 1
+    "de nephisesim": 1
   },
   "H5301": {
     "llenóse de dolor": 1,
@@ -61331,7 +61754,7 @@ export const all_socu = {
   "H5308": {
     "cayeron": 1,
     "cayó": 1,
-    "cual habían caído": 1,
+    "cual habían caído": 2,
     "os postraréis": 1,
     "os postréis": 1,
     "que te fuere menester": 1,
@@ -61376,7 +61799,7 @@ export const all_socu = {
     "habían traído": 1,
     "sacó": 3,
     "salid": 2,
-    "salieron": 3,
+    "salieron": 4,
     "y publicóse": 1,
     "y salía": 1
   },
@@ -61422,7 +61845,7 @@ export const all_socu = {
     "con todo el alma": 3,
     "contra alguna persona": 2,
     "contra la persona": 1,
-    "contra mi vida": 1,
+    "contra mi vida": 2,
     "contra su alma": 1,
     "contra su vida": 1,
     "contra tu vida": 1,
@@ -61560,7 +61983,7 @@ export const all_socu = {
     "sobre el muerto": 1,
     "sobre muerto": 1,
     "su aliento": 1,
-    "su alma": 60,
+    "su alma": 61,
     "su contentamiento": 1,
     "su interior": 1,
     "su persona": 1,
@@ -61768,12 +62191,13 @@ export const all_socu = {
   },
   "H5329": {
     "al jefe de los cantores": 1,
-    "al músico": 54,
+    "al músico": 50,
     "al músico principal": 1,
     "hasta": 1,
     "para dar priesa": 1,
     "para que activasen": 1,
     "para que tuviesen cargo": 1,
+    "perpetua": 1,
     "que los gobernasen": 1,
     "y eran sobrestantes": 1
   },
@@ -61995,6 +62419,7 @@ export const all_socu = {
     "guárdame": 1,
     "he guardado": 2,
     "la guardo": 2,
+    "los asolamientos": 1,
     "los guardas": 1,
     "los ha guardado": 1,
     "los que guardan": 1,
@@ -62036,7 +62461,6 @@ export const all_socu = {
     "lo maldecirán": 1,
     "lo maldices": 2,
     "los cuales fueron declarados": 1,
-    "maldije": 1,
     "maldíganla": 1,
     "nombrados": 2,
     "nombrará": 1,
@@ -62081,7 +62505,9 @@ export const all_socu = {
     "enflaquecióse": 1,
     "fueron destruídos": 1,
     "fueron talados": 1,
+    "fué destruído": 2,
     "inconstante": 1,
+    "perdióse": 1,
     "se despoblaron": 1,
     "y desfallecerán": 1,
     "y extenuaráse": 1,
@@ -62202,9 +62628,6 @@ export const all_socu = {
     "venganza": 2,
     "él vengará": 1
   },
-  "H536": {
-    "fué destruída": 2
-  },
   "H5360": {
     "con venganza": 1,
     "cuando se vengaron": 1,
@@ -62275,7 +62698,7 @@ export const all_socu = {
     "á nergal": 1
   },
   "H5371": {
-    "nergal sarezer": 14
+    "nergal sarezer": 12
   },
   "H5372": {
     "del chismoso": 2
@@ -62354,7 +62777,7 @@ export const all_socu = {
     "entonces tomó": 1,
     "entonces él llevará": 1,
     "entonces él tomó": 1,
-    "escudero": 5,
+    "escudero": 6,
     "escuderos": 1,
     "estimuló": 1,
     "florecido": 1,
@@ -62369,7 +62792,7 @@ export const all_socu = {
     "había tomado": 1,
     "había traído": 2,
     "habían levantado": 1,
-    "habían tomado": 1,
+    "habían tomado": 2,
     "hace acepción": 1,
     "hacéis acepción": 1,
     "han de levantar": 1,
@@ -62616,7 +63039,6 @@ export const all_socu = {
     "y ganaba": 1,
     "y habiéndole él tomado": 1,
     "y halló": 2,
-    "y la altura": 1,
     "y las tomaron": 1,
     "y les tomaron": 1,
     "y levanta": 1,
@@ -62698,6 +63120,7 @@ export const all_socu = {
     "y levantólos": 1
   },
   "H5377": {
+    "condenados": 1,
     "en gran": 2,
     "engañe": 2,
     "engañéis": 1,
@@ -62780,7 +63203,7 @@ export const all_socu = {
     "que se contrajo": 4
   },
   "H5386": {
-    "acreedores": 1
+    "acreedores": 2
   },
   "H5387": {
     "al príncipe": 3,
@@ -62958,7 +63381,7 @@ export const all_socu = {
     "vida": 1
   },
   "H5397": {
-    "con vida": 1,
+    "con vida": 2,
     "del viento": 1,
     "el soplo": 1,
     "es el alma": 1,
@@ -63130,7 +63553,7 @@ export const all_socu = {
   },
   "H5411": {
     "de los nethineos": 1,
-    "los nethineos": 8,
+    "los nethineos": 9,
     "nethineos": 4,
     "y los nethineos": 5,
     "y nethineos": 3
@@ -63279,7 +63702,7 @@ export const all_socu = {
     "dársela": 1,
     "dé": 2,
     "dénseme": 1,
-    "dénsenos": 4,
+    "dénsenos": 5,
     "dése": 2,
     "dí": 22,
     "dístelo": 1,
@@ -63503,7 +63926,7 @@ export const all_socu = {
     "los cuales pondrás": 2,
     "los cuales pusieron": 1,
     "los daremos": 2,
-    "los daré": 2,
+    "los daré": 3,
     "los dejaron": 1,
     "los entregare": 2,
     "los entregará": 1,
@@ -63644,7 +64067,7 @@ export const all_socu = {
     "pusiera": 2,
     "pusiere": 2,
     "pusieron": 6,
-    "pusiste": 3,
+    "pusiste": 4,
     "pusiéronme": 2,
     "puso": 16,
     "pusístenos": 1,
@@ -63875,7 +64298,7 @@ export const all_socu = {
     "y dió": 27,
     "y dióla": 4,
     "y dióle": 9,
-    "y dióles": 11,
+    "y dióles": 12,
     "y diólo": 7,
     "y diólos": 3,
     "y dióme": 2,
@@ -64010,7 +64433,7 @@ export const all_socu = {
     "y púsolo": 5,
     "y púsolo todo en guarda": 1,
     "y púsolos": 7,
-    "y que lo entreguen": 2,
+    "y que lo entreguen": 3,
     "y que pusieron": 1,
     "y reduciré": 1,
     "y resina dieron": 1,
@@ -64282,7 +64705,7 @@ export const all_socu = {
     "el bebedor": 1,
     "embriaguémonos": 1,
     "los borrachos": 1,
-    "los sabeos": 1
+    "los sabeos": 2
   },
   "H5434": {
     "de sheba y de seba": 1,
@@ -64345,7 +64768,7 @@ export const all_socu = {
     "mudólos": 1,
     "mí se volvió": 1,
     "nos asentaremos": 1,
-    "nos han cercado": 1,
+    "nos han cercado": 2,
     "os irá rodeando": 1,
     "para rodear": 1,
     "para traspasarle": 1,
@@ -64444,7 +64867,7 @@ export const all_socu = {
     "ella en derredor": 1,
     "ellos por todo alrededor": 2,
     "en contorno": 3,
-    "en derredor": 56,
+    "en derredor": 57,
     "en derredor nuestro": 1,
     "en derredor tendrá": 1,
     "en los alrededores": 1,
@@ -64452,7 +64875,7 @@ export const all_socu = {
     "en todos los alrededores": 1,
     "en torno": 3,
     "en vuestros alrededores": 1,
-    "estaban alrededor": 8,
+    "estaban alrededor": 9,
     "estaban en contorno": 1,
     "estaban en derredor": 1,
     "estaban en sus alrededores": 1,
@@ -64594,7 +65017,7 @@ export const all_socu = {
   },
   "H5456": {
     "de ello humíllanse": 1,
-    "humíllase": 2
+    "humíllase": 3
   },
   "H5457": {
     "adoran": 1,
@@ -64797,7 +65220,7 @@ export const all_socu = {
     "y ungiéronlos": 1
   },
   "H5481": {
-    "de la zampoña": 3
+    "de la zampoña": 4
   },
   "H5482": {
     "hasta seveneh": 2
@@ -64819,7 +65242,7 @@ export const all_socu = {
     "con gente de á caballo": 1,
     "con las uñas de sus caballos": 1,
     "con los caballos": 1,
-    "con sus caballos": 2,
+    "con sus caballos": 3,
     "de caballos": 4,
     "de gente de á caballo": 1,
     "de los caballos": 6,
@@ -64860,7 +65283,7 @@ export const all_socu = {
     "y como mis caballos": 2,
     "y el caballo": 7,
     "y en caballos": 2,
-    "y la grulla": 1,
+    "y la grulla": 2,
     "y los caballos": 1,
     "y sacaban caballos": 2,
     "y serán sus caballos": 1,
@@ -64896,6 +65319,7 @@ export const all_socu = {
     "bermejo": 1
   },
   "H549": {
+    "abana": 1,
     "de amana": 1
   },
   "H5490": {
@@ -65072,6 +65496,7 @@ export const all_socu = {
     "y le ha de quitar": 1,
     "y le quitará": 4,
     "y llegándose": 2,
+    "y los que de mí se apartan": 1,
     "y nos hemos apartado": 1,
     "y os apartareis": 1,
     "y os aparteréis": 1,
@@ -65121,7 +65546,7 @@ export const all_socu = {
     "é incitó": 1
   },
   "H5497": {
-    "su manto": 1
+    "su manto": 2
   },
   "H5498": {
     "arrastraremos": 1,
@@ -65132,7 +65557,7 @@ export const all_socu = {
   },
   "H5499": {
     "esos trapos": 1,
-    "trapos": 1
+    "trapos": 2
   },
   "H55": {
     "y serán alzados": 1
@@ -65196,7 +65621,7 @@ export const all_socu = {
     "como escoria": 1,
     "como escorias": 1,
     "en escorias": 1,
-    "escorias": 3,
+    "escorias": 4,
     "hasta lo más puro tus escorias": 1,
     "las escorias": 1
   },
@@ -65392,11 +65817,11 @@ export const all_socu = {
     "y valientes": 1
   },
   "H5530": {
-    "el necio": 3,
+    "el necio": 4,
     "ignorantes": 1,
     "insensato": 1,
     "necio": 2,
-    "que es necio": 2
+    "que es necio": 3
   },
   "H5531": {
     "de la necedad": 1,
@@ -65495,7 +65920,7 @@ export const all_socu = {
     "perdonaré": 3,
     "perdonaste": 1,
     "perdone": 2,
-    "te he de perdonar": 2,
+    "te he de perdonar": 3,
     "y le será perdonado": 1,
     "y les será perdonado": 1,
     "y obtendrá perdón": 1,
@@ -65859,7 +66284,7 @@ export const all_socu = {
     "de los mancebos y díjole": 1,
     "de los que digan": 2,
     "de mentira dicen": 1,
-    "de mentira por cuanto decís": 1,
+    "de mentira por cuanto decís": 2,
     "de mí dice": 1,
     "de mí dijo": 1,
     "de mí dirán": 1,
@@ -65902,7 +66327,7 @@ export const all_socu = {
     "dicen dónde": 1,
     "dices": 18,
     "dicho": 11,
-    "diciendo": 1049,
+    "diciendo": 1047,
     "diciéndole": 7,
     "diciéndoles": 11,
     "diciéndome": 3,
@@ -65925,7 +66350,7 @@ export const all_socu = {
     "dijimos": 2,
     "dijiste": 14,
     "dijisteis": 9,
-    "dijo": 859,
+    "dijo": 857,
     "dijéronle": 8,
     "dijéronles": 3,
     "dile": 5,
@@ -65991,7 +66416,7 @@ export const all_socu = {
     "entonces diciendo": 4,
     "entonces dije": 6,
     "entonces dijeron": 5,
-    "entonces dijo": 87,
+    "entonces dijo": 88,
     "entonces dirá": 2,
     "entonces dirás": 2,
     "entonces diréis": 1,
@@ -66029,7 +66454,7 @@ export const all_socu = {
     "eunuco y díjole": 1,
     "flechas y dijo": 1,
     "fuera les dirás": 1,
-    "ha dicho": 581,
+    "ha dicho": 579,
     "ha hablado": 11,
     "habla": 13,
     "hablaba": 1,
@@ -66043,11 +66468,11 @@ export const all_socu = {
     "hablasteis": 3,
     "hable": 9,
     "hablé": 6,
-    "habló": 57,
+    "habló": 55,
     "hablóle": 6,
     "habéis además dicho": 3,
     "habéis de decir": 3,
-    "habéis dicho": 4,
+    "habéis dicho": 5,
     "habéis hablado": 4,
     "había": 3,
     "había asimismo dicho": 1,
@@ -66058,7 +66483,7 @@ export const all_socu = {
     "había yo dicho": 4,
     "habíamos dicho": 1,
     "habíamos hablado": 2,
-    "habían dicho": 2,
+    "habían dicho": 3,
     "habías dicho": 1,
     "hago ha dicho": 1,
     "han de decir": 2,
@@ -66092,7 +66517,7 @@ export const all_socu = {
     "las puertas diciendo": 2,
     "le dijeron": 4,
     "le dijesen": 1,
-    "le dijo": 58,
+    "le dijo": 57,
     "le dirá": 2,
     "le ha dicho": 3,
     "le había": 1,
@@ -66230,7 +66655,7 @@ export const all_socu = {
     "que el día siguiente dijo": 1,
     "que están sentados sobre sus heces los cuales dicen": 1,
     "que hables": 2,
-    "que hablándole": 1,
+    "que hablándole": 2,
     "que habló": 2,
     "que le diga": 1,
     "que le dijo": 2,
@@ -66247,7 +66672,7 @@ export const all_socu = {
     "refiero": 1,
     "responderé": 4,
     "respondiere": 1,
-    "respondieron": 21,
+    "respondieron": 22,
     "respondió": 208,
     "respondí": 3,
     "respondía": 3,
@@ -66312,7 +66737,7 @@ export const all_socu = {
     "valle y él les dijo": 2,
     "vez diciendo": 3,
     "vez dijo": 3,
-    "vez lo hicieron dijo": 3,
+    "vez lo hicieron dijo": 2,
     "viene ha dicho": 1,
     "volvió á decir": 5,
     "vosotros como decís": 1,
@@ -66351,17 +66776,17 @@ export const all_socu = {
     "y diga": 1,
     "y digan": 6,
     "y digas": 2,
-    "y dije": 65,
+    "y dije": 66,
     "y dijere": 4,
     "y dijeren": 2,
     "y dijeres": 1,
-    "y dijeron": 93,
+    "y dijeron": 94,
     "y dijese": 2,
     "y dijesen": 1,
     "y dijimos": 2,
     "y dijiste": 10,
     "y dijisteis": 10,
-    "y dijo": 705,
+    "y dijo": 703,
     "y dijéronle": 33,
     "y dijéronles": 5,
     "y dijéronse": 2,
@@ -66478,10 +66903,10 @@ export const all_socu = {
     "y á hablar": 2,
     "y él": 8,
     "y él decía": 3,
-    "y él dijo": 108,
+    "y él dijo": 110,
     "y él habló": 2,
     "y él le dijo": 22,
-    "y él le respondió": 5,
+    "y él le respondió": 6,
     "y él le volvió á decir": 5,
     "y él les dijo": 13,
     "y él les respondió": 2,
@@ -66552,8 +66977,8 @@ export const all_socu = {
     "con tu tempestad": 1,
     "de la tempestad": 1,
     "de tempestad": 1,
-    "desde la oscuridad": 1,
-    "desde un torbellino": 1,
+    "desde la oscuridad": 2,
+    "desde un torbellino": 2,
     "el torbellino": 1,
     "en un torbellino": 2,
     "hace parar la tempestad": 1,
@@ -66913,6 +67338,7 @@ export const all_socu = {
     "mas las expresiones": 1,
     "mis palabras": 3,
     "mis razones": 3,
+    "respondía": 1,
     "son los dichos": 1,
     "sus palabras": 3,
     "y dijo": 1,
@@ -66933,7 +67359,7 @@ export const all_socu = {
   "H5612": {
     "aquel libro": 2,
     "carta": 3,
-    "cartas": 3,
+    "cartas": 4,
     "como un libro": 1,
     "de la carta": 1,
     "de libro": 6,
@@ -66989,7 +67415,7 @@ export const all_socu = {
     "y los de sepharvaim": 1
   },
   "H5617": {
-    "de sepharvaim": 5,
+    "de sepharvaim": 6,
     "y de sepharvaim": 1
   },
   "H5618": {
@@ -67117,7 +67543,7 @@ export const all_socu = {
     "y rencillosa": 1
   },
   "H5638": {
-    "el invierno": 1
+    "el invierno": 2
   },
   "H5639": {
     "sethur": 1
@@ -67142,7 +67568,7 @@ export const all_socu = {
   },
   "H5641": {
     "antes esconderá": 1,
-    "ciertamente": 1,
+    "ciertamente": 2,
     "contra mí y yo escondí": 1,
     "cubrió": 1,
     "de los que me son ocultos": 1,
@@ -67157,7 +67583,7 @@ export const all_socu = {
     "es oculto": 1,
     "escondas": 4,
     "esconde": 2,
-    "esconderé": 3,
+    "esconderé": 4,
     "escondes": 4,
     "escondido": 3,
     "escondiste": 1,
@@ -67476,7 +67902,7 @@ export const all_socu = {
     "sus siervos": 1,
     "tus siervos": 1,
     "á sus siervos": 1,
-    "á tus siervos": 1
+    "á tus siervos": 2
   },
   "H565": {
     "acendrada es tu palabra": 1,
@@ -67519,7 +67945,7 @@ export const all_socu = {
     "como el siervo": 4,
     "como mi siervo": 4,
     "como siervos": 2,
-    "como tu siervo": 4,
+    "como tu siervo": 3,
     "con los siervos": 2,
     "con tus siervos": 2,
     "contra mi siervo": 1,
@@ -67528,7 +67954,7 @@ export const all_socu = {
     "contra ti y contra tus siervos": 1,
     "contra tu siervo": 2,
     "criado": 2,
-    "criados": 4,
+    "criados": 5,
     "cuando": 1,
     "cuando sus siervos": 1,
     "dada á tu siervo": 1,
@@ -67571,7 +67997,7 @@ export const all_socu = {
     "las cosas criadas porque todas ellas te sirven": 1,
     "le harás servir": 1,
     "le siervos": 1,
-    "lo que su siervo": 2,
+    "lo que su siervo": 3,
     "los criados": 2,
     "los siervos": 34,
     "los siros": 1,
@@ -67645,7 +68071,7 @@ export const all_socu = {
     "también sus siervos": 1,
     "también tu siervo": 1,
     "tendrá tu siervo": 1,
-    "tu siervo": 77,
+    "tu siervo": 78,
     "tus siervos": 41,
     "tú y los siervos": 1,
     "un siervo": 1,
@@ -67690,7 +68116,7 @@ export const all_socu = {
     "á sus siervos": 21,
     "á ti mi siervo": 1,
     "á ti y á tu siervo": 1,
-    "á tu siervo": 33,
+    "á tu siervo": 32,
     "á tus siervos": 12,
     "á un criado": 1,
     "él sus siervos": 2,
@@ -67928,7 +68354,7 @@ export const all_socu = {
     "empero pasóse": 1,
     "en ti quien haga pasar": 1,
     "entonces harás pasar": 2,
-    "entonces pasó": 4,
+    "entonces pasó": 5,
     "entonces se fué": 1,
     "está á aquel lado": 1,
     "está á la parte allá": 1,
@@ -67964,7 +68390,7 @@ export const all_socu = {
     "hombres armados á punto pasaron": 1,
     "hubiera pasado": 1,
     "hubiereis pasado": 2,
-    "hubieron pasado": 1,
+    "hubieron pasado": 2,
     "hubo también pasado": 2,
     "hízolo pasar": 1,
     "iban": 2,
@@ -68011,7 +68437,7 @@ export const all_socu = {
     "pasaos": 2,
     "pasar": 7,
     "pasara": 1,
-    "pasare": 5,
+    "pasare": 6,
     "pasaremos": 4,
     "pasares": 1,
     "pasaron": 24,
@@ -68027,7 +68453,7 @@ export const all_socu = {
     "pase": 4,
     "pasemos": 3,
     "pases": 4,
-    "pasáis": 6,
+    "pasáis": 7,
     "pasáronse": 2,
     "pasé": 4,
     "paséis": 1,
@@ -68089,6 +68515,7 @@ export const all_socu = {
     "se podía pasar": 2,
     "se quitaron": 1,
     "sea traspasado": 1,
+    "serviré": 1,
     "será pues cuando hubieres pasado": 1,
     "será quebrantada": 1,
     "serán pasados": 1,
@@ -68101,7 +68528,7 @@ export const all_socu = {
     "traspasando": 1,
     "traspasar": 2,
     "traspasaron": 3,
-    "traspasarán": 2,
+    "traspasarán": 3,
     "traspasaréis": 1,
     "traspasas": 1,
     "traspasó": 1,
@@ -68173,7 +68600,7 @@ export const all_socu = {
     "é indignóse": 1,
     "él estaba y pasaron": 2,
     "él pasante": 1,
-    "él pasó": 4
+    "él pasó": 5
   },
   "H5675": {
     "de la otra parte": 1,
@@ -68192,7 +68619,7 @@ export const all_socu = {
     "de esa parte": 1,
     "de esotra parte": 2,
     "de esta parte": 9,
-    "de estotra parte": 3,
+    "de estotra parte": 4,
     "de la otra parte": 17,
     "de la parte": 1,
     "de la una parte": 2,
@@ -68206,7 +68633,7 @@ export const all_socu = {
     "estaban de esta parte": 3,
     "estaban de la otra parte": 5,
     "estaban de la parte": 1,
-    "estuvieron de esotra parte": 1,
+    "estuvieron de esotra parte": 2,
     "está de la otra parte": 1,
     "está á la otra parte": 2,
     "están de ese lado": 1,
@@ -68454,7 +68881,6 @@ export const all_socu = {
     "el tiempo": 1,
     "eternidad": 1,
     "eterno": 1,
-    "hasta": 2,
     "la eternidad": 1,
     "para": 4,
     "para siempre": 19,
@@ -68547,7 +68973,7 @@ export const all_socu = {
     "fué junta hasta": 1,
     "habéis al": 1,
     "había aún": 1,
-    "hasta": 936,
+    "hasta": 937,
     "hasta abel sitim": 1,
     "hasta que se acabó": 2,
     "hasta raerlo conforme": 1,
@@ -68605,7 +69031,6 @@ export const all_socu = {
     "ti hasta": 2,
     "tiempo hasta": 1,
     "tributarios hasta": 1,
-    "tuya para": 1,
     "tuyo para": 2,
     "tú hasta": 1,
     "tú á": 1,
@@ -68632,7 +69057,7 @@ export const all_socu = {
     "y á": 1,
     "yo hasta": 2,
     "yo no subiré hasta": 2,
-    "á": 25,
+    "á": 26,
     "á ellos un mojón hasta": 1,
     "á la mesa hasta": 1,
     "á mí hasta": 2,
@@ -68823,7 +69248,7 @@ export const all_socu = {
     "y tus testimonios": 1
   },
   "H5714": {
-    "de iddo": 7,
+    "de iddo": 8,
     "iddo": 2,
     "y de iddo": 1
   },
@@ -68852,11 +69277,11 @@ export const all_socu = {
     "sus atavíos": 1,
     "tu boca": 1,
     "vuestras ropas": 1,
-    "á ser adornada": 1
+    "á ser adornada": 2
   },
   "H5717": {
     "adiel": 1,
-    "de adiel": 4
+    "de adiel": 2
   },
   "H5718": {
     "adaías": 1,
@@ -69085,7 +69510,7 @@ export const all_socu = {
     "y dónde": 1,
     "y en dónde": 1,
     "á dónde": 1,
-    "á ninguna parte": 3,
+    "á ninguna parte": 4,
     "á una parte ni á otra": 2
   },
   "H5750": {
@@ -69209,9 +69634,6 @@ export const all_socu = {
     "á más": 2,
     "á mí de aquí": 1
   },
-  "H5751": {
-    "aun": 1
-  },
   "H5752": {
     "de obed": 2,
     "obed": 1
@@ -69250,8 +69672,7 @@ export const all_socu = {
   },
   "H5757": {
     "los heveos": 1,
-    "y los heveos": 1,
-    "y á los heveos": 1
+    "y los heveos": 1
   },
   "H5758": {
     "y tus iniquidades": 1
@@ -69272,7 +69693,7 @@ export const all_socu = {
     "y avim": 1
   },
   "H5762": {
-    "fué avith": 2
+    "fué avith": 3
   },
   "H5763": {
     "las paridas": 1,
@@ -69295,7 +69716,7 @@ export const all_socu = {
     "falta mas el perverso": 1,
     "habéis de hablar iniquidad": 1,
     "hay iniquidad": 1,
-    "hay injusticia": 1,
+    "hay injusticia": 2,
     "inicuo": 1,
     "iniquidad": 18,
     "iniquidades": 1,
@@ -69331,7 +69752,6 @@ export const all_socu = {
     "niño": 1,
     "niños": 3,
     "para talar los niños": 1,
-    "son muchachos": 1,
     "sus niños": 3,
     "á sus niños": 1
   },
@@ -69406,7 +69826,7 @@ export const all_socu = {
     "será jamás": 1,
     "serán eternas": 1,
     "seré jamás": 1,
-    "siempre": 63,
+    "siempre": 62,
     "siglos": 2,
     "son eternos": 2,
     "son para siempre": 1,
@@ -69507,14 +69927,14 @@ export const all_socu = {
     "sobre el pecado": 1,
     "sobre ti tu pecado": 1,
     "su iniquidad": 12,
-    "su maldad": 14,
+    "su maldad": 15,
     "su pecado": 4,
     "sus iniquidades": 1,
     "sus propias iniquidades": 1,
     "también mi pecado": 1,
     "te ha castigado menos que tu iniquidad": 1,
     "ti la maldad": 2,
-    "todos sus pecados": 1,
+    "todos sus pecados": 2,
     "tu culpa": 1,
     "tu iniquidad": 4,
     "tu pecado": 2,
@@ -69544,7 +69964,7 @@ export const all_socu = {
     "cuando haré resplandecer": 1,
     "desfallecía": 1,
     "en su vuelo": 1,
-    "has de poner": 2,
+    "has de poner": 4,
     "mas volarán": 1,
     "para volar": 1,
     "que volaba": 1,
@@ -69561,7 +69981,7 @@ export const all_socu = {
     "vuele": 1,
     "y cansado": 1,
     "y volamos": 1,
-    "y volarán": 3,
+    "y volarán": 5,
     "y voló": 4
   },
   "H5775": {
@@ -69606,7 +70026,7 @@ export const all_socu = {
     "y plomo": 4
   },
   "H5778": {
-    "de ephi": 1
+    "de ephi": 2
   },
   "H5779": {
     "dad": 1
@@ -69750,7 +70170,6 @@ export const all_socu = {
   "H579": {
     "acontecerá": 1,
     "busca": 1,
-    "cuándo": 4,
     "lo puso": 1,
     "sobrevendrá": 1
   },
@@ -69883,9 +70302,6 @@ export const all_socu = {
     "por azazel": 3,
     "á azazel": 3
   },
-  "H58": {
-    "la vega": 1
-  },
   "H5800": {
     "abandonada": 1,
     "abandonan": 1,
@@ -69921,7 +70337,7 @@ export const all_socu = {
     "dejó": 8,
     "dejóme": 1,
     "desampara": 2,
-    "desamparada": 2,
+    "desamparada": 3,
     "desamparadas": 2,
     "desamparado": 1,
     "desamparará": 1,
@@ -69937,7 +70353,7 @@ export const all_socu = {
     "estará desamparada": 1,
     "faltará": 1,
     "fiarás": 1,
-    "fueron dejadas": 1,
+    "fueron dejadas": 2,
     "fueron desamparadas": 1,
     "ha rehusado": 1,
     "habéis dejado": 2,
@@ -70051,9 +70467,6 @@ export const all_socu = {
     "y gaza": 1,
     "á gaza": 5
   },
-  "H5805": {
-    "como los frutos que quedan": 1
-  },
   "H5806": {
     "azuba": 2,
     "fué azuba": 2
@@ -70138,87 +70551,25 @@ export const all_socu = {
     "y aziza": 1
   },
   "H582": {
-    "afrentados": 2,
     "al hombre": 2,
-    "algunos": 4,
-    "algunos hombres": 1,
-    "aquellos varones": 1,
-    "así hombres": 1,
-    "calumniadores": 1,
-    "capitán de gente": 1,
     "ciertamente tiempo limitado tiene el hombre": 1,
-    "con los suyos": 1,
     "cosa es el hombre": 1,
-    "de aquellos varones": 2,
+    "de algún hombre": 1,
     "de entre los hombres": 1,
-    "de estos varones": 1,
     "de hombre": 3,
-    "de hombres": 4,
-    "de la gente": 1,
-    "de los flecheros": 1,
-    "de los hombres": 3,
-    "de los varones": 3,
-    "del hombre": 7,
-    "el hombre": 7,
-    "ellos estaban": 1,
-    "eran hombres": 1,
+    "del hombre": 8,
+    "el hombre": 11,
     "es el hombre": 3,
-    "esto los de asdod": 1,
-    "estos hombres": 1,
-    "gente": 1,
+    "fino al varón": 1,
     "hay en el hombre": 1,
-    "he aquí nosotros pasaremos á los hombres": 1,
     "hombre": 2,
-    "hombres": 26,
-    "la gente": 1,
-    "la porque estos hombres": 2,
-    "los": 4,
-    "los flecheros": 1,
-    "los hijos": 1,
-    "los hombres": 18,
-    "los hombres que": 1,
-    "los varones": 6,
-    "luego los": 1,
-    "maridos": 2,
-    "marineros": 1,
-    "mas aquellos hombres": 2,
-    "mas los hijos": 1,
+    "hombres": 1,
+    "los hombres": 2,
     "mis amigos": 1,
-    "mí algunos": 1,
-    "mí hombres": 1,
     "mírala el hombre": 1,
-    "pues aquellos varones": 2,
-    "que hombres": 1,
     "que son no más que hombres": 1,
-    "sino que algunos": 1,
-    "sobre los hombres": 2,
-    "son los": 1,
-    "son mis deleites y mis": 1,
-    "ti el hombre": 1,
-    "todos los varones": 1,
-    "trampa para tomar hombres": 1,
-    "tus aliados": 2,
-    "tú hombres": 1,
-    "varones": 15,
-    "y aquellos hombres": 3,
-    "y estos hombres": 1,
-    "y hombres": 1,
-    "y los": 3,
-    "y los hombres": 3,
-    "y los suyos": 1,
-    "y los varones": 2,
-    "y robustos": 1,
-    "y sus hombres": 1,
-    "y á los soldados": 1,
-    "á aquellos": 2,
-    "á esos hombres": 2,
-    "á estos varones": 1,
-    "á los": 4,
-    "á los dos": 1,
-    "á los hombres": 5,
-    "á los varones": 1,
-    "á sus maridos": 1,
-    "él hombres": 2
+    "si será el hombre": 1,
+    "ti el hombre": 1
   },
   "H5820": {
     "asmaveth": 1,
@@ -70297,7 +70648,7 @@ export const all_socu = {
     "tendrá quien le ayude": 1,
     "tuviere quien le socorra": 1,
     "tú mi ayudador": 1,
-    "tú nos des ayuda": 1,
+    "tú nos des ayuda": 2,
     "y ayudando": 1,
     "y ayudarnos": 1,
     "y ayudólo": 1,
@@ -70315,7 +70666,7 @@ export const all_socu = {
   },
   "H5828": {
     "ayuda": 5,
-    "de él para su ayuda": 1,
+    "de él para su ayuda": 2,
     "el socorro": 1,
     "en mí está tu ayuda": 1,
     "envíete ayuda": 1,
@@ -70507,7 +70858,7 @@ export const all_socu = {
     "á la parte oriental desde ataroth addar": 2
   },
   "H5854": {
-    "los cuales son las coronas de la casa de joab": 4
+    "los cuales son las coronas de la casa de joab": 3
   },
   "H5856": {
     "en majanos de heredad": 1,
@@ -70571,9 +70922,9 @@ export const all_socu = {
   },
   "H5867": {
     "belam": 1,
-    "de elam": 11,
+    "de elam": 13,
     "de elá": 1,
-    "elam": 9,
+    "elam": 10,
     "en elam": 1,
     "johanam": 1,
     "la cautividad de elam": 1,
@@ -70642,7 +70993,7 @@ export const all_socu = {
     "delante de los ojos": 3,
     "delante de mis ojos": 8,
     "delante de mí": 1,
-    "delante de sus ojos": 14,
+    "delante de sus ojos": 15,
     "delante de tus ojos": 11,
     "delante de vuestros ojos": 5,
     "después mis ojos": 1,
@@ -70697,7 +71048,7 @@ export const all_socu = {
     "la haz": 2,
     "las delante de tus ojos": 1,
     "las fuentes": 1,
-    "le": 1,
+    "le": 2,
     "le agradare": 1,
     "le parece": 1,
     "le pareciere": 5,
@@ -70707,7 +71058,7 @@ export const all_socu = {
     "lo cual plugo en sus ojos": 1,
     "lo precioso": 1,
     "lo que está delante de sus ojos": 1,
-    "lo que le pluguiera": 1,
+    "lo que le pluguiera": 2,
     "lo que te pareciere": 1,
     "los ojos": 38,
     "los perdonará tu ojo": 1,
@@ -70731,7 +71082,7 @@ export const all_socu = {
     "no agradare": 1,
     "no te está bien": 4,
     "ojo": 20,
-    "ojos": 66,
+    "ojos": 68,
     "os": 1,
     "os parece": 1,
     "os pareciere": 3,
@@ -70747,7 +71098,7 @@ export const all_socu = {
     "parecía bien": 1,
     "parecían": 1,
     "perdonará tu ojo": 3,
-    "perdone vuestro ojo": 1,
+    "perdone vuestro ojo": 2,
     "plugo": 1,
     "por ojo": 3,
     "por tus ojos": 2,
@@ -70769,7 +71120,8 @@ export const all_socu = {
     "son los ojos": 1,
     "su color": 1,
     "su ojo": 3,
-    "sus ojos": 54,
+    "surcos": 1,
+    "sus ojos": 57,
     "tanto en sus propios ojos": 1,
     "te": 5,
     "te ha parecido": 2,
@@ -70804,7 +71156,7 @@ export const all_socu = {
     "y plugo en los ojos": 2,
     "y si pareciere": 1,
     "y sobre su ojo": 2,
-    "y sus ojos": 8,
+    "y sus ojos": 9,
     "y tu ojo": 1,
     "y tus ojos": 5,
     "y vuestros ojos": 1,
@@ -70821,6 +71173,7 @@ export const all_socu = {
     "á la vista": 4,
     "á los ojos": 22,
     "á manera": 2,
+    "á mi aflicción": 1,
     "á mis ojos": 3,
     "á mis propios ojos": 1,
     "á ojo": 2,
@@ -70874,8 +71227,8 @@ export const all_socu = {
     "nosotros": 57,
     "nuestra": 5,
     "nuestras": 6,
-    "nuestro": 16,
-    "nuestros": 14,
+    "nuestro": 18,
+    "nuestros": 15,
     "para que se nos": 1,
     "por lo cual nuestros": 1,
     "por nuestros": 1,
@@ -70904,7 +71257,7 @@ export const all_socu = {
     "y nuestro": 1,
     "y nuestros": 10,
     "y por nuestras": 2,
-    "y son muertos y nosotros": 1,
+    "y son muertos y nosotros": 2,
     "y á nuestra": 2,
     "á nosotros": 5,
     "á nosotros y á nuestros": 1,
@@ -70934,7 +71287,7 @@ export const all_socu = {
     "á él estarán pescadores y desde en gadi": 2
   },
   "H5873": {
-    "y en gannim": 3,
+    "y en gannim": 2,
     "y engannim": 2,
     "y á en gannim": 2
   },
@@ -70946,7 +71299,7 @@ export const all_socu = {
     "de aquel lugar en haccore": 2
   },
   "H5876": {
-    "y en hadda": 3
+    "y en hadda": 2
   },
   "H5877": {
     "y en hasor": 2
@@ -70970,13 +71323,13 @@ export const all_socu = {
   "H5883": {
     "de la fuente de rogel": 2,
     "junto á la fuente de rogel": 2,
-    "á la fuente de rogel": 5
+    "á la fuente de rogel": 4
   },
   "H5884": {
     "y en en rimmón": 2
   },
   "H5885": {
-    "de en semes": 3,
+    "de en semes": 2,
     "á ensemes": 2
   },
   "H5887": {
@@ -71323,7 +71676,7 @@ export const all_socu = {
     "en ciudades": 1,
     "en esta ciudad": 7,
     "en la ciudad": 78,
-    "en las ciudades": 33,
+    "en las ciudades": 31,
     "en las otras ciudades": 2,
     "en las villas": 1,
     "en mi ciudad": 1,
@@ -71485,7 +71838,7 @@ export const all_socu = {
     "borricos": 1,
     "como el pollino": 1,
     "de jumentos": 1,
-    "su pollino": 1,
+    "su pollino": 2,
     "un pollino": 1,
     "y tus asnos": 1
   },
@@ -71695,7 +72048,7 @@ export const all_socu = {
     "como una helada sobre": 2,
     "compañeras y lloró": 2,
     "común entre": 1,
-    "con": 94,
+    "con": 95,
     "con ellas sobre": 2,
     "con lo que estaba sobre": 1,
     "con motivo de": 3,
@@ -71709,7 +72062,7 @@ export const all_socu = {
     "conmigo por": 1,
     "consigo": 1,
     "contigo": 4,
-    "contra": 554,
+    "contra": 555,
     "contra mí cuando habitaren en": 1,
     "contra mí sobre": 1,
     "contra mí y": 1,
@@ -71721,7 +72074,7 @@ export const all_socu = {
     "cuanto": 2,
     "cuanto se habían rebelado contra": 1,
     "cuyos": 1,
-    "de": 412,
+    "de": 410,
     "de arriba": 4,
     "de cada uno de por": 1,
     "de caña cascada en": 4,
@@ -71753,7 +72106,7 @@ export const all_socu = {
     "de mí como quien rompe aguas y por": 1,
     "de pelo de cabras para una cubierta sobre": 1,
     "de rodillas": 1,
-    "de sobre": 70,
+    "de sobre": 71,
     "de su yugo": 1,
     "de sus cuerpos muertos sobre": 3,
     "de sí": 2,
@@ -71812,7 +72165,7 @@ export const all_socu = {
     "ellos y sobre": 9,
     "ellos á causa de": 1,
     "empero de": 1,
-    "en": 746,
+    "en": 747,
     "en boca de": 1,
     "en breña contra": 2,
     "en carchêmis junto": 1,
@@ -71927,7 +72280,7 @@ export const all_socu = {
     "hasta por": 1,
     "hasta que no quede ninguno mas á": 2,
     "hay en": 1,
-    "hay sobre": 6,
+    "hay sobre": 7,
     "he aquí yo contra": 3,
     "he tenido por": 1,
     "he á": 1,
@@ -72050,7 +72403,7 @@ export const all_socu = {
     "plantóla junto": 1,
     "pon asimismo tu delicia en": 1,
     "ponen en": 4,
-    "por": 527,
+    "por": 528,
     "por amor de": 1,
     "por capitán sobre": 2,
     "por causa": 2,
@@ -72067,7 +72420,6 @@ export const all_socu = {
     "porque tú los": 1,
     "portero al oriente tenía cargo de las limosnas de": 1,
     "prediquen de": 1,
-    "principal sobre": 1,
     "pudiere hallarse y daremos sobre": 2,
     "pues con": 1,
     "pues contigo": 1,
@@ -72077,7 +72429,7 @@ export const all_socu = {
     "pues sobre": 7,
     "puesta sobre": 2,
     "puesto por": 1,
-    "que": 3,
+    "que": 4,
     "que aquellos sobre": 1,
     "que cabalguen sobre": 1,
     "que cause tumores apostemados en": 3,
@@ -72151,6 +72503,7 @@ export const all_socu = {
     "se os ha hecho andar en": 1,
     "sea junto": 2,
     "sea sobre": 5,
+    "seguían": 1,
     "según": 28,
     "sentado sobre": 3,
     "servirte han y": 1,
@@ -72165,7 +72518,7 @@ export const all_socu = {
     "si le parecía": 1,
     "si os volviereis á": 1,
     "siempre": 1,
-    "sobre": 2300,
+    "sobre": 2299,
     "sobre el que los hirió": 2,
     "sobre ellos junto": 2,
     "sobre la haz": 1,
@@ -72196,7 +72549,6 @@ export const all_socu = {
     "te impuse": 1,
     "te pondrás contra": 1,
     "tendrán á causa de": 3,
-    "tendrás en": 1,
     "tengo": 1,
     "tengo por": 1,
     "teniendo de": 2,
@@ -72266,7 +72618,7 @@ export const all_socu = {
     "y como habían ellos tomado sobre": 3,
     "y con": 9,
     "y conmigo": 1,
-    "y contra": 63,
+    "y contra": 64,
     "y crié sobre": 1,
     "y cércala y edifica contra": 1,
     "y de": 59,
@@ -72284,7 +72636,7 @@ export const all_socu = {
     "y el yugo": 2,
     "y ellos estaban en": 1,
     "y ellos se echaron sobre": 1,
-    "y en": 97,
+    "y en": 96,
     "y en espacio de": 1,
     "y en ti se regocijarán los": 1,
     "y esparcióla sobre": 3,
@@ -72313,7 +72665,6 @@ export const all_socu = {
     "y los trompetas junto": 2,
     "y me": 1,
     "y morad en": 1,
-    "y más": 1,
     "y nos": 4,
     "y ocupando saúl": 1,
     "y os": 5,
@@ -72333,7 +72684,7 @@ export const all_socu = {
     "y según": 3,
     "y sentaron contra": 2,
     "y si estuviere sobre": 3,
-    "y sobre": 507,
+    "y sobre": 506,
     "y su giro hasta": 1,
     "y te": 1,
     "y tenderá su dosel sobre": 1,
@@ -72357,7 +72708,7 @@ export const all_socu = {
     "yo sobre": 1,
     "yo te": 2,
     "yugo": 5,
-    "á": 153,
+    "á": 154,
     "á absalom sobre": 1,
     "á cargo": 1,
     "á causa": 14,
@@ -72393,7 +72744,7 @@ export const all_socu = {
     "asimismo acerca": 1,
     "cerca": 1,
     "contra": 5,
-    "de": 12,
+    "de": 20,
     "de él y se le": 1,
     "delante": 1,
     "delante del": 1,
@@ -72405,8 +72756,8 @@ export const all_socu = {
     "que": 2,
     "quienes señorearon en": 1,
     "sea edificada en": 1,
-    "sobre": 23,
-    "tú sobre": 1,
+    "sobre": 27,
+    "tú sobre": 3,
     "y en": 2,
     "y puesta sobre": 1,
     "y él puso sobre": 1,
@@ -72713,7 +73064,7 @@ export const all_socu = {
     "subiendo": 5,
     "subiere": 4,
     "subieren": 4,
-    "subieron": 23,
+    "subieron": 25,
     "subiese": 3,
     "subir": 1,
     "subiremos": 4,
@@ -72767,7 +73118,7 @@ export const all_socu = {
     "y cuando subían": 1,
     "y de aquí sube": 2,
     "y de chîr": 1,
-    "y dejáronla cuando apuntaba": 1,
+    "y dejáronla cuando apuntaba": 2,
     "y después los haré subir": 1,
     "y después subió": 1,
     "y echaron": 1,
@@ -72803,7 +73154,7 @@ export const all_socu = {
     "y moisés": 1,
     "y ofreced": 1,
     "y ofrecerás sobre": 1,
-    "y ofrecieron": 7,
+    "y ofrecieron": 8,
     "y ofreció": 7,
     "y ofrecióle": 1,
     "y ofrecía holocaustos": 1,
@@ -72822,7 +73173,7 @@ export const all_socu = {
     "y sacrificaron": 2,
     "y sacrificó": 4,
     "y sacrificóle": 1,
-    "y sacrificólo": 2,
+    "y sacrificólo": 3,
     "y sacóse": 1,
     "y se vaya": 1,
     "y se volvía": 1,
@@ -72925,7 +73276,7 @@ export const all_socu = {
     "del holocausto": 41,
     "después el holocausto": 1,
     "el dar el holocausto": 2,
-    "el holocausto": 35,
+    "el holocausto": 34,
     "ellas el holocausto": 1,
     "en ellas la obra del holocausto": 1,
     "en holocausto": 25,
@@ -72976,7 +73327,7 @@ export const all_socu = {
     "y para holocaustos": 1,
     "y reduzca á ceniza tu holocausto": 1,
     "y su holocausto": 2,
-    "y sus gradas": 1,
+    "y sus gradas": 2,
     "y sus holocaustos": 1,
     "y tu holocausto": 1,
     "y á más de esto el holocausto": 1,
@@ -72991,13 +73342,13 @@ export const all_socu = {
     "ocasión": 3
   },
   "H5933": {
-    "el duque alia": 1,
+    "el duque alia": 2,
     "el duque alva": 1
   },
   "H5934": {
     "de su juventud": 1,
     "de su mocedad": 1,
-    "de sus mocedades": 1,
+    "de sus mocedades": 2,
     "de tu mocedad": 1
   },
   "H5935": {
@@ -73011,7 +73362,7 @@ export const all_socu = {
     "alegraréme": 1,
     "me alegraré": 1,
     "ni me engreí": 1,
-    "os gozasteis": 1,
+    "os gozasteis": 2,
     "para que se alegren": 1,
     "por lo que se gozó": 1,
     "regocíjese": 1,
@@ -73052,11 +73403,11 @@ export const all_socu = {
     "de arriba": 1
   },
   "H5943": {
-    "al altísimo": 1,
-    "del alto": 1,
-    "del altísimo": 1,
-    "el altísimo": 8,
-    "que el alto": 1
+    "al altísimo": 2,
+    "del alto": 2,
+    "del altísimo": 2,
+    "el altísimo": 10,
+    "que el alto": 2
   },
   "H5944": {
     "aquella cámara": 1,
@@ -73214,16 +73565,16 @@ export const all_socu = {
   "H5954": {
     "arioch llevó": 1,
     "de música fueron traídos": 1,
-    "entró": 3,
+    "entró": 4,
     "entróse": 1,
-    "fueron introducidos": 1,
+    "fueron introducidos": 2,
     "fueron traídos": 1,
     "fué": 2,
     "fué traído": 1,
     "llévame": 2,
     "para hacer venir": 1,
     "que hiciesen venir": 1,
-    "y vinieron": 1
+    "y vinieron": 2
   },
   "H5955": {
     "aun dejaran algún rebusco": 1,
@@ -73405,7 +73756,7 @@ export const all_socu = {
     "decir el pueblo": 2,
     "del común del pueblo": 1,
     "del número del pueblo": 1,
-    "del pueblo": 153,
+    "del pueblo": 154,
     "del resto de este pueblo": 1,
     "del vulgo": 1,
     "derramada en medio de tu pueblo": 2,
@@ -73414,7 +73765,7 @@ export const all_socu = {
     "donde el pueblo": 1,
     "el cual estando sobre el pueblo": 1,
     "el demás pueblo": 2,
-    "el pueblo": 462,
+    "el pueblo": 461,
     "el sujetará á los pueblos": 1,
     "el vulgo": 2,
     "el ánimo del pueblo": 1,
@@ -73539,7 +73890,7 @@ export const all_socu = {
     "primeramente al pueblo": 1,
     "príncipes del pueblo": 1,
     "pueblo": 238,
-    "pueblos": 45,
+    "pueblos": 46,
     "pues el pueblo": 4,
     "pues este pueblo": 1,
     "pues juntó el pueblo": 1,
@@ -73692,7 +74043,7 @@ export const all_socu = {
     "como": 5,
     "como fué con": 2,
     "como lo tenía en": 1,
-    "con": 465,
+    "con": 469,
     "con el mismo rey": 2,
     "con el que": 1,
     "con ella": 1,
@@ -73705,7 +74056,7 @@ export const all_socu = {
     "concertó con": 1,
     "conmigo": 30,
     "consigo": 11,
-    "contigo": 60,
+    "contigo": 61,
     "contra": 33,
     "contra israel": 1,
     "cual": 1,
@@ -73879,10 +74230,11 @@ export const all_socu = {
     "vosotros": 1,
     "y anda con": 2,
     "y animales engordados junto": 1,
-    "y con": 83,
+    "y con": 85,
     "y con ellos": 2,
     "y conmigo": 3,
     "y contará con": 2,
+    "y contigo": 1,
     "y contra": 1,
     "y de": 1,
     "y delante": 4,
@@ -74116,7 +74468,7 @@ export const all_socu = {
     "que venían": 1,
     "quedó": 2,
     "resistirá": 1,
-    "se colocaron": 2,
+    "se colocaron": 1,
     "se detuvo": 2,
     "se estuviere": 1,
     "se levantaron": 1,
@@ -74140,7 +74492,7 @@ export const all_socu = {
     "solo hombre asistían": 1,
     "su sitio": 1,
     "sucederán": 2,
-    "sus puestos": 2,
+    "sus puestos": 1,
     "te pares": 1,
     "tendrán": 1,
     "tus pies": 3,
@@ -74178,7 +74530,7 @@ export const all_socu = {
     "y las hizo ser": 1,
     "y le puso": 1,
     "y levantaron": 4,
-    "y levantó": 2,
+    "y levantó": 3,
     "y levántate": 3,
     "y los presentará": 1,
     "y os pondréis": 1,
@@ -74237,12 +74589,11 @@ export const all_socu = {
     "él y si él se levantare": 1
   },
   "H5976": {
-    "se paró junto": 1,
     "y los deslomaste": 1
   },
   "H5977": {
     "en pie": 1,
-    "su lugar": 2,
+    "su lugar": 3,
     "y pusiéronse": 1
   },
   "H5978": {
@@ -74277,7 +74628,7 @@ export const all_socu = {
   },
   "H5982": {
     "columna": 3,
-    "columnas": 32,
+    "columnas": 33,
     "como columnas": 1,
     "como las columnas": 2,
     "cuando la llama": 1,
@@ -74290,7 +74641,7 @@ export const all_socu = {
     "de la columna": 2,
     "de la una columna": 2,
     "de las columnas": 29,
-    "de sus columnas": 2,
+    "de sus columnas": 3,
     "desde la columna": 1,
     "en columna": 3,
     "en la columna": 3,
@@ -74318,7 +74669,7 @@ export const all_socu = {
     "ammonitas": 1,
     "ammón": 3,
     "de ammon": 1,
-    "de ammón": 106,
+    "de ammón": 103,
     "de los ammonitas": 5,
     "los ammonitas": 3,
     "y ammón": 1,
@@ -74327,8 +74678,8 @@ export const all_socu = {
   },
   "H5984": {
     "ammonita": 7,
-    "ammonitas": 2,
-    "de ammón": 3,
+    "ammonitas": 3,
+    "de ammón": 1,
     "de los ammonitas": 1,
     "los ammonitas": 2,
     "otros de los ammonitas": 1,
@@ -74572,7 +74923,7 @@ export const all_socu = {
     "y quitará": 1,
     "y se repudrirá perecerá": 1,
     "y si perezco": 2,
-    "y su cercano perecerán": 1,
+    "y su cercano perecerán": 2,
     "y te arrojé": 1,
     "y te destruiré": 1,
     "y tú destruirás": 1,
@@ -74585,12 +74936,12 @@ export const all_socu = {
     "de tu luto": 1,
     "del luto": 3,
     "duelo": 1,
-    "el llanto": 3,
+    "el llanto": 2,
     "el luto": 1,
     "en lloro": 2,
     "en luto": 3,
     "hazte luto": 1,
-    "llanto": 3,
+    "llanto": 2,
     "luto": 2,
     "mas": 1,
     "pan por luto": 1,
@@ -75099,7 +75450,7 @@ export const all_socu = {
     "respondieron": 4,
     "respondió": 8,
     "y adivinos": 1,
-    "y óyeme": 1
+    "y óyeme": 2
   },
   "H6034": {
     "ana": 2,
@@ -75116,7 +75467,7 @@ export const all_socu = {
     "los humildes": 1,
     "los mansos": 1,
     "los pobres": 2,
-    "manso": 1,
+    "manso": 2,
     "oiránlo los mansos": 1,
     "pero los mansos": 1,
     "por los mansos": 1,
@@ -75202,7 +75553,7 @@ export const all_socu = {
   },
   "H6042": {
     "unni": 2,
-    "y unni": 1
+    "y unni": 2
   },
   "H6043": {
     "anaías": 1,
@@ -75321,10 +75672,10 @@ export const all_socu = {
     "cualquiera": 1,
     "de hombre": 4,
     "de hombres": 1,
-    "de los hombres": 8,
+    "de los hombres": 10,
     "entre los hombres": 5,
     "hay hombre": 1,
-    "hombre": 3,
+    "hombre": 4,
     "humana": 1,
     "los hombres": 4,
     "á manera de hombre": 2,
@@ -75386,10 +75737,10 @@ export const all_socu = {
     "de anathoth": 2
   },
   "H607": {
-    "ello tú": 3,
-    "mas tú": 2,
+    "ello tú": 1,
+    "mas tú": 4,
     "tú": 11,
-    "y tú": 3
+    "y tú": 5
   },
   "H6071": {
     "del mosto": 1,
@@ -75516,7 +75867,7 @@ export const all_socu = {
     "como el árbol": 2,
     "como un palo": 1,
     "como árbol": 1,
-    "compuso luego la leña": 2,
+    "compuso luego la leña": 3,
     "con madera": 1,
     "con maderas": 1,
     "con sus enmaderamientos": 1,
@@ -75677,7 +76028,6 @@ export const all_socu = {
     "de sus ídolos": 1,
     "las imágenes": 1,
     "los ídolos": 1,
-    "mi ídolo": 1,
     "por todas partes para que fuese denunciado á sus ídolos": 1,
     "sus simulacros": 1,
     "sus ídolos": 3,
@@ -75700,8 +76050,7 @@ export const all_socu = {
     "y liga sus heridas": 1
   },
   "H6095": {
-    "cierra": 1,
-    "es el consejo": 1
+    "cierra": 1
   },
   "H6096": {
     "á raíz del espinazo": 1
@@ -75720,7 +76069,7 @@ export const all_socu = {
     "de ellos el consejo": 1,
     "de ellos y el consejo": 1,
     "de labios consejo": 1,
-    "de mi consejo": 1,
+    "de mi consejo": 2,
     "de su consejo": 1,
     "dejado el consejo": 1,
     "el consejo": 24,
@@ -75788,7 +76137,7 @@ export const all_socu = {
     "en esion geber": 4,
     "en ezion geber": 2,
     "en ezión geber": 2,
-    "y de esiongeber": 3,
+    "y de esiongeber": 2,
     "á esion geber": 2
   },
   "H6101": {
@@ -75909,7 +76258,7 @@ export const all_socu = {
     "á azmón": 1
   },
   "H6112": {
-    "el eznita": 1
+    "el eznita": 2
   },
   "H6113": {
     "al guardado": 1,
@@ -76055,7 +76404,7 @@ export const all_socu = {
     "y desjarretó": 2
   },
   "H6132": {
-    "él fueron arrancados": 1
+    "él fueron arrancados": 2
   },
   "H6133": {
     "á la raza": 1
@@ -76142,7 +76491,7 @@ export const all_socu = {
     "tu enemigo": 1
   },
   "H6146": {
-    "para los que mal": 1
+    "para los que mal": 2
   },
   "H6147": {
     "er": 9,
@@ -76172,7 +76521,6 @@ export const all_socu = {
   "H6149": {
     "deleita": 1,
     "me fué sabroso": 1,
-    "sabroso": 1,
     "serme ha suave": 1,
     "será suave": 1,
     "tomaste placer": 1,
@@ -76338,7 +76686,7 @@ export const all_socu = {
     "como arabe": 1,
     "con los arabes": 1,
     "el arabe": 3,
-    "los arabes": 2,
+    "los arabes": 3,
     "y de los arabes": 1,
     "y los arabes": 1
   },
@@ -76605,8 +76953,8 @@ export const all_socu = {
   },
   "H6191": {
     "astuta": 1,
-    "es en gran": 1,
-    "manera astuto": 1,
+    "es en gran": 2,
+    "manera astuto": 2,
     "se hará avisado": 1
   },
   "H6192": {
@@ -76787,7 +77135,7 @@ export const all_socu = {
     "así lo habíais de hacer": 1,
     "así lo hicieron": 4,
     "aumentado": 1,
-    "aun has pensado": 1,
+    "aun has pensado": 2,
     "aun prepararse": 1,
     "celebrar": 1,
     "celebrándolo": 1,
@@ -76807,7 +77155,7 @@ export const all_socu = {
     "como hice": 4,
     "como hiciste": 4,
     "como hizo": 12,
-    "como la habéis hecho": 2,
+    "como la habéis hecho": 3,
     "como lo hicieron": 1,
     "como me hizo": 2,
     "como tú hiciste": 2,
@@ -76974,7 +77322,7 @@ export const all_socu = {
     "guardan": 2,
     "guardes": 1,
     "guerreros": 1,
-    "guisadas": 1,
+    "guisadas": 2,
     "ha adquirido": 1,
     "ha cometido": 2,
     "ha de hacer": 3,
@@ -77030,10 +77378,10 @@ export const all_socu = {
     "hacéis": 8,
     "hacía": 19,
     "hacían": 6,
-    "haga": 21,
+    "haga": 22,
     "hagamos": 1,
     "hagan": 7,
-    "hagas": 9,
+    "hagas": 10,
     "hago": 3,
     "hagáis": 12,
     "han cumplido": 1,
@@ -77043,14 +77391,14 @@ export const all_socu = {
     "han pensando hacer": 2,
     "hanse hecho": 1,
     "haremos": 15,
-    "hará": 51,
+    "hará": 52,
     "harán": 8,
     "harás": 103,
     "harás tus negocios": 1,
     "haráse": 1,
     "haré": 57,
     "haré consumación": 8,
-    "haré yo contigo como tú hiciste": 2,
+    "haré yo contigo como tú hiciste": 3,
     "haréis": 42,
     "haría": 1,
     "haría yo": 1,
@@ -77065,7 +77413,7 @@ export const all_socu = {
     "hayamos de hacer": 1,
     "hayas de hacer": 1,
     "hayáis de hacer": 1,
-    "haz": 27,
+    "haz": 26,
     "haz conmigo como hiciste": 1,
     "hazles": 1,
     "hazlo": 4,
@@ -77077,7 +77425,7 @@ export const all_socu = {
     "he hecho": 17,
     "he puesto por obra": 1,
     "he trabajado": 3,
-    "hecho": 6,
+    "hecho": 7,
     "hemos de hacer": 2,
     "hemos hecho": 5,
     "hice": 21,
@@ -77089,7 +77437,7 @@ export const all_socu = {
     "hiciesen": 2,
     "hicieses": 1,
     "hicimos": 1,
-    "hiciste": 15,
+    "hiciste": 16,
     "hicisteis": 2,
     "hiciéremos": 2,
     "hiciéronle": 1,
@@ -77221,11 +77569,12 @@ export const all_socu = {
     "más me hicieron": 1,
     "mía yo haré": 1,
     "nada hicieron": 2,
-    "ni hiciste": 1,
+    "ni hiciste": 2,
     "no ejecutando": 1,
     "no ha hecho": 2,
     "no haciendo": 2,
     "no han hecho": 2,
+    "no hará": 1,
     "no haré": 1,
     "no hiciere": 2,
     "no quieren": 1,
@@ -77238,7 +77587,7 @@ export const all_socu = {
     "obrando": 1,
     "ofrecerse": 2,
     "ofrecerá": 6,
-    "ofrecerán": 1,
+    "ofrecerán": 2,
     "ofrecerás": 12,
     "ofreceréis": 5,
     "ofreció": 1,
@@ -77546,7 +77895,7 @@ export const all_socu = {
     "y hacerle": 1,
     "y hacerme": 1,
     "y haces": 1,
-    "y haciendo": 7,
+    "y haciendo": 8,
     "y hacía": 1,
     "y hacía juicio": 1,
     "y hacían": 1,
@@ -77738,7 +78087,6 @@ export const all_socu = {
     "de las violencias": 1,
     "de los oprimidos": 2,
     "de sus opresores": 2,
-    "ephraim es vejado": 1,
     "las violencias": 2,
     "opresiones": 1
   },
@@ -77777,7 +78125,7 @@ export const all_socu = {
     "de por junto": 1,
     "de vosotros y os congregará": 1,
     "dejaste": 1,
-    "destruiré": 6,
+    "destruiré": 5,
     "detén": 1,
     "empero se han juntado": 1,
     "encerró": 1,
@@ -78394,6 +78742,7 @@ export const all_socu = {
     "el mismo tiempo": 1,
     "el tiempo": 27,
     "en aquel tiempo": 32,
+    "en aquellos tiempos": 1,
     "en el tiempo": 22,
     "en ese tiempo": 1,
     "en este tiempo": 2,
@@ -78528,7 +78877,7 @@ export const all_socu = {
     "ti porque luego": 1,
     "tuyo": 1,
     "tú ahora": 2,
-    "y ahora": 38,
+    "y ahora": 40,
     "y con todo ahora": 1,
     "y cual ahora": 1,
     "y ya": 1,
@@ -78561,6 +78910,7 @@ export const all_socu = {
   },
   "H6264": {
     "apercibido": 1,
+    "estuviesen apercibidos": 1,
     "los que se aprestan": 1,
     "y lo que les está preparado": 1
   },
@@ -78982,7 +79332,7 @@ export const all_socu = {
     "y atóle": 2,
     "y echólo preso": 1,
     "y le aprisionó": 1,
-    "y le ataron": 1,
+    "y le ataron": 2,
     "y uncid": 1,
     "y uncido": 2,
     "y unció": 1,
@@ -79065,7 +79415,7 @@ export const all_socu = {
     "mandamiento": 3,
     "mandato": 4,
     "manera con mi boca": 1,
-    "mas la boca": 5,
+    "mas la boca": 6,
     "mas por la boca": 1,
     "mi boca": 25,
     "mí su boca": 3,
@@ -79281,7 +79631,7 @@ export const all_socu = {
     "te esparcí": 1,
     "ti se derramarán": 1,
     "y derraman": 1,
-    "y derramándose": 1,
+    "y derramándose": 2,
     "y desbaratólos": 2,
     "y despedazóme": 1,
     "y disípalos": 1,
@@ -79332,7 +79682,7 @@ export const all_socu = {
     "y á phoratha": 1
   },
   "H6335": {
-    "os henchisteis": 1
+    "os henchisteis": 2
   },
   "H6336": {
     "y los phuteos": 1
@@ -79523,9 +79873,6 @@ export const all_socu = {
     "topacio": 1,
     "un topacio": 2
   },
-  "H6358": {
-    "exentos": 1
-  },
   "H636": {
     "de madera": 3,
     "un madero": 1,
@@ -79537,7 +79884,7 @@ export const all_socu = {
     "y como martillo": 1
   },
   "H6361": {
-    "y sus calzas": 1
+    "y sus calzas": 2
   },
   "H6362": {
     "de mí estiran": 1,
@@ -79608,7 +79955,7 @@ export const all_socu = {
     "será aún": 1,
     "siempre": 4,
     "sí": 4,
-    "también": 28,
+    "también": 29,
     "también responderé": 2,
     "tampoco": 2,
     "tú también": 1,
@@ -79673,6 +80020,9 @@ export const all_socu = {
   "H6378": {
     "luego la alcuza": 1
   },
+  "H6379": {
+    "que salían": 1
+  },
   "H638": {
     "de él se halló en mí justicia y aun": 1,
     "y también": 3
@@ -79731,7 +80081,7 @@ export const all_socu = {
     "tu maravilla": 2
   },
   "H6383": {
-    "más maravillosa": 1,
+    "más maravillosa": 2,
     "que es oculto": 1
   },
   "H6385": {
@@ -79930,6 +80280,9 @@ export const all_socu = {
     "que sirviesen": 1,
     "sirves": 2,
     "y ministros": 1
+  },
+  "H64": {
+    "de las viñas": 2
   },
   "H640": {
     "del ephod": 2,
@@ -80151,7 +80504,7 @@ export const all_socu = {
     "y toma temblor": 1
   },
   "H6428": {
-    "revuélcate": 1,
+    "revuélcate": 2,
     "y revolcaos": 1,
     "y revuélcate": 1,
     "y se revolcarán": 1
@@ -80204,7 +80557,7 @@ export const all_socu = {
     "fueron pues los filisteos": 2,
     "fué contra los filisteos": 2,
     "hiere á los filisteos": 2,
-    "los filisteos": 88,
+    "los filisteos": 91,
     "los palestinos": 4,
     "los príncipes de los filisteos": 1,
     "los términos de los philisteos": 1,
@@ -80412,7 +80765,7 @@ export const all_socu = {
     "de penuel": 4,
     "peniel": 1,
     "que hubo á peniel": 1,
-    "y peniel": 1,
+    "y peniel": 2,
     "y penuel": 1,
     "á penuel": 3
   },
@@ -80516,8 +80869,8 @@ export const all_socu = {
     "de vosotros y delante": 2,
     "de vuestra presencia": 2,
     "de vuestro rostro": 1,
-    "del rostro": 2,
-    "delante": 967,
+    "del rostro": 3,
+    "delante": 968,
     "delante de mi rostro": 1,
     "delante de sí": 2,
     "delante de ti": 1,
@@ -80807,7 +81160,7 @@ export const all_socu = {
   "H6443": {
     "de piedras preciosas": 1,
     "largamente á la de piedras preciosas": 1,
-    "que las piedras preciosas": 2,
+    "que las piedras preciosas": 3,
     "que los rubíes": 1,
     "que piedras preciosas": 1
   },
@@ -81148,7 +81501,7 @@ export const all_socu = {
     "levantarán": 1,
     "paría levanta": 1,
     "prorrumpid": 1,
-    "y prorrumpid": 1
+    "y prorrumpid": 2
   },
   "H6478": {
     "había mondado": 1,
@@ -81210,10 +81563,11 @@ export const all_socu = {
     "de cierto os he visitado": 2,
     "de ellos y guardólo": 1,
     "de ellos y visitará": 1,
+    "de la calumnia ó el depósito": 1,
     "de los contados": 3,
     "de mi visitación": 2,
     "de mí y visítame": 1,
-    "el cargo": 1,
+    "el cargo": 2,
     "en guarda": 1,
     "en que te visitaré": 1,
     "en que yo los visitaré": 1,
@@ -81383,7 +81737,7 @@ export const all_socu = {
   },
   "H6487": {
     "en depósito": 1,
-    "encomendó": 2,
+    "encomendó": 1,
     "lo encomendado": 1
   },
   "H6489": {
@@ -81407,7 +81761,7 @@ export const all_socu = {
     "yo he codiciado tus mandamientos": 1
   },
   "H6491": {
-    "abre": 7,
+    "abre": 8,
     "abres": 1,
     "abriré": 1,
     "abrió": 4,
@@ -81645,7 +81999,7 @@ export const all_socu = {
     "en una olla": 1
   },
   "H6518": {
-    "de sus villas": 1
+    "de sus villas": 2
   },
   "H6519": {
     "de aldeas": 1,
@@ -81665,7 +82019,7 @@ export const all_socu = {
     "las aldeas": 1
   },
   "H6521": {
-    "aldeanos": 1,
+    "aldeanos": 2,
     "muro": 1,
     "sin muro": 2
   },
@@ -81869,7 +82223,7 @@ export const all_socu = {
     "el persa": 1
   },
   "H6543": {
-    "persa": 1
+    "persa": 2
   },
   "H6544": {
     "antes desechasteis": 1,
@@ -81896,7 +82250,7 @@ export const all_socu = {
     "con faraón": 1,
     "con él faraón": 1,
     "de con faraón": 7,
-    "de faraón": 140,
+    "de faraón": 139,
     "de mí á faraón": 1,
     "en faraón": 4,
     "entonces faraón": 14,
@@ -81923,7 +82277,7 @@ export const all_socu = {
     "y faraón": 6,
     "y luego que faraón": 1,
     "y á faraón": 2,
-    "á faraón": 66,
+    "á faraón": 65,
     "á potiphar eunuco de faraón": 1,
     "á ser llamados á faraón": 1
   },
@@ -81966,7 +82320,7 @@ export const all_socu = {
     "destruirá": 1,
     "disipaste": 1,
     "en él y el que aportillare": 1,
-    "estaban derribados": 1,
+    "estaban derribados": 2,
     "fué divulgado": 1,
     "ha crecido": 1,
     "habían destruído": 1,
@@ -82001,8 +82355,8 @@ export const all_socu = {
     "de portillos": 1,
     "de quebranto": 2,
     "el portillo": 1,
-    "haber herido": 2,
-    "había hecho rotura": 2,
+    "haber herido": 1,
+    "había hecho rotura": 1,
     "mella": 1,
     "por los portillos": 1,
     "portillo": 1,
@@ -82439,7 +82793,7 @@ export const all_socu = {
     "la interpretación": 2,
     "las dudas": 2,
     "ni su declaración": 2,
-    "su declaración": 5,
+    "su declaración": 6,
     "su interpretación": 4,
     "y su declaración": 9
   },
@@ -82548,6 +82902,7 @@ export const all_socu = {
     "como grabaduras": 1,
     "de diversas": 1,
     "de ellos como grabaduras": 1,
+    "de grabadura": 1,
     "ella grabadura": 1,
     "esculpir": 1,
     "escultura": 1,
@@ -82594,7 +82949,7 @@ export const all_socu = {
     "estaba abierta": 1,
     "está desenvainada": 1,
     "fueron abiertas": 1,
-    "grabadas": 2,
+    "grabadas": 1,
     "habrá quien le abra": 1,
     "harás grabar": 1,
     "he aquí yo abro": 1,
@@ -82865,7 +83220,7 @@ export const all_socu = {
     "mas estas ovejas": 1,
     "mis ovejas": 13,
     "míos son y las ovejas": 2,
-    "ovejas": 78,
+    "ovejas": 76,
     "para las ovejas": 1,
     "para ovejas": 1,
     "para sus ganados": 2,
@@ -83006,7 +83361,7 @@ export const all_socu = {
     "su ejército": 12,
     "su ornamento": 1,
     "su tiempo": 1,
-    "sus ejércitos": 2,
+    "sus ejércitos": 3,
     "sus escuadrones": 2,
     "todo su ejército": 1,
     "tus escuadrones": 1,
@@ -83023,13 +83378,12 @@ export const all_socu = {
   },
   "H6636": {
     "como á zeboim": 1,
-    "de zeboim": 1,
+    "de zeboim": 2,
     "oh ehpraim": 1,
-    "y de seboim": 1,
+    "y de seboim": 2,
     "y zeboim": 1
   },
   "H6638": {
-    "que se te hinche": 1,
     "se hinchará": 1,
     "y hagan hinchar": 1
   },
@@ -83340,7 +83694,7 @@ export const all_socu = {
     "de justicia": 8,
     "de la justicia": 4,
     "de sola tu justicia": 1,
-    "de su justicia": 4,
+    "de su justicia": 5,
     "de todas las justicias": 1,
     "de tu justicia": 1,
     "delante": 1,
@@ -83414,7 +83768,7 @@ export const all_socu = {
   "H667": {
     "con pollos": 2,
     "los pollos": 2,
-    "pollos": 1,
+    "pollos": 2,
     "sus pollos": 1
   },
   "H6670": {
@@ -83425,7 +83779,7 @@ export const all_socu = {
     "se alegró": 1,
     "y da voces": 1,
     "y dad voces de júbilo": 1,
-    "y relinchasteis": 1
+    "y relinchasteis": 2
   },
   "H6671": {
     "exprimen el aceite": 1
@@ -83457,6 +83811,7 @@ export const all_socu = {
     "viles": 2
   },
   "H6675": {
+    "su estiércol": 2,
     "su inmundicia": 1
   },
   "H6676": {
@@ -83489,7 +83844,7 @@ export const all_socu = {
     "y sobre la cerviz": 1
   },
   "H6678": {
-    "de soba": 13,
+    "de soba": 11,
     "y de soba": 1
   },
   "H6679": {
@@ -83666,10 +84021,10 @@ export const all_socu = {
     "y manda": 2,
     "y mandad": 1,
     "y mandadles": 1,
-    "y mandaron": 2,
+    "y mandaron": 3,
     "y mandará": 1,
     "y mandáronles": 1,
-    "y mandó": 18,
+    "y mandó": 19,
     "y mandóle": 3,
     "y mandóles": 5,
     "y mandónos": 1,
@@ -83751,7 +84106,7 @@ export const all_socu = {
     "panal": 1
   },
   "H6689": {
-    "de suph": 2,
+    "de suph": 3,
     "sophai": 1,
     "suph": 1
   },
@@ -83893,7 +84248,7 @@ export const all_socu = {
     "y zur": 1
   },
   "H6699": {
-    "su forma": 4
+    "su forma": 5
   },
   "H67": {
     "abelmizraim": 2
@@ -84010,7 +84365,7 @@ export const all_socu = {
     "preveníos de comida": 1,
     "provisión": 3,
     "víveres": 1,
-    "y cógeme caza": 1
+    "y cógeme caza": 2
   },
   "H6721": {
     "de sidón": 8,
@@ -84691,7 +85046,7 @@ export const all_socu = {
     "pesa": 2,
     "pesas": 3,
     "peña": 1,
-    "piedra": 29,
+    "piedra": 28,
     "piedras": 39,
     "por piedra": 2,
     "por piedras": 1,
@@ -84804,7 +85159,7 @@ export const all_socu = {
   "H6810": {
     "al menor": 1,
     "conforme á su menoría": 1,
-    "de sus pequeños": 1,
+    "de sus pequeños": 2,
     "el menor": 1,
     "estaba el joven": 1,
     "la menor": 3,
@@ -84815,7 +85170,7 @@ export const all_socu = {
     "pequeño": 1,
     "que era el menor": 1,
     "soy menor": 1,
-    "sus criados": 1,
+    "sus criados": 2,
     "y yo el menor": 1,
     "á la menor": 2
   },
@@ -84831,7 +85186,7 @@ export const all_socu = {
     "á zoán": 1
   },
   "H6815": {
-    "de zaananim": 1,
+    "de zaananim": 2,
     "y allón saananim": 1
   },
   "H6816": {
@@ -84911,7 +85266,7 @@ export const all_socu = {
   },
   "H6822": {
     "acecha": 1,
-    "aguardamos": 2,
+    "aguardamos": 1,
     "atalaya": 1,
     "atalayan": 1,
     "atalayando": 1,
@@ -84926,7 +85281,7 @@ export const all_socu = {
     "mirando": 1,
     "por atalaya": 3,
     "que mira": 1,
-    "sus atalayas": 1,
+    "sus atalayas": 2,
     "tras mí el atalaya dió": 1,
     "vió el atalaya": 2,
     "vosotros atalayas": 1,
@@ -85073,6 +85428,9 @@ export const all_socu = {
     "y la botija": 3,
     "y un vaso": 1
   },
+  "H6836": {
+    "esperanza": 1
+  },
   "H6837": {
     "ziphión": 1
   },
@@ -85097,11 +85455,11 @@ export const all_socu = {
   "H6845": {
     "acechemos": 1,
     "cosas tienes guardadas": 1,
-    "el provee": 1,
+    "el provee": 2,
     "el que pretende contenerla": 2,
     "es escondido": 1,
     "escondieses": 1,
-    "escóndense": 1,
+    "escóndense": 2,
     "está guardado": 2,
     "están acechando": 1,
     "guardan": 1,
@@ -85252,7 +85610,6 @@ export const all_socu = {
     "para engañarme en pro de mis enemigos": 1,
     "para sí entre sus enemigos": 1,
     "puestos en estrecho": 1,
-    "que estoy atribulada": 1,
     "será reducida": 1,
     "sobre sus adversarios": 1,
     "sus adversarios": 1,
@@ -85437,7 +85794,7 @@ export const all_socu = {
     "artífice": 1,
     "como se afina": 2,
     "como se funde": 2,
-    "de los plateros": 3,
+    "de los plateros": 1,
     "de talla el platero": 2,
     "del fundidor": 1,
     "el fundidor": 2,
@@ -85461,7 +85818,7 @@ export const all_socu = {
     "vaso al fundidor": 1,
     "y le funde": 2,
     "y purificados": 1,
-    "y sondéame examina": 1
+    "y sondéame examina": 2
   },
   "H6885": {
     "del platero": 1
@@ -85575,7 +85932,7 @@ export const all_socu = {
     "recibiremos": 2,
     "tomaron": 1,
     "y recibe": 1,
-    "y tomaron": 1
+    "y tomaron": 2
   },
   "H6902": {
     "después tomarán": 1,
@@ -85594,8 +85951,7 @@ export const all_socu = {
     "y porque": 1
   },
   "H6904": {
-    "contra ella arietes": 1,
-    "en presencia": 1
+    "contra ella arietes": 1
   },
   "H6906": {
     "de aquellos que los despojaren": 2,
@@ -85721,7 +86077,7 @@ export const all_socu = {
     "fué sepultado": 2,
     "habrá quien la sepulte": 1,
     "hubo quien los enterrase": 1,
-    "hubo sepultado": 1,
+    "hubo sepultado": 2,
     "lo sepultaron": 2,
     "los enterrará": 1,
     "los estará enterrando": 1,
@@ -85816,7 +86172,6 @@ export const all_socu = {
     "y sepultaron": 2,
     "y sepultáronlo": 2,
     "á la sepultura": 2,
-    "á sepultar": 1,
     "á tu sepulcro": 1
   },
   "H6914": {
@@ -85871,7 +86226,7 @@ export const all_socu = {
     "mío santo": 1,
     "oh santo": 1,
     "pues santos": 2,
-    "que en sus santos": 1,
+    "que en sus santos": 2,
     "santa": 2,
     "santo": 45,
     "santo así": 2,
@@ -86005,9 +86360,9 @@ export const all_socu = {
   },
   "H6925": {
     "conviene": 1,
-    "delante": 30,
-    "ellos y delante": 1,
-    "había subido de delante": 1,
+    "delante": 33,
+    "ellos y delante": 2,
+    "había subido de delante": 2,
     "habían sido antes": 1,
     "la presencia": 2,
     "mí": 1,
@@ -86220,7 +86575,6 @@ export const all_socu = {
     "y el lugar será santificado": 1,
     "y fuere santificado": 1,
     "y la santificarás": 1,
-    "y las ofrendas": 1,
     "y las que él había": 1,
     "y lo consagrarás": 1,
     "y lo santificará": 1,
@@ -86343,7 +86697,7 @@ export const all_socu = {
     "están consagrados": 1,
     "fueron santos": 1,
     "habrá santa": 3,
-    "había dedicado": 5,
+    "había dedicado": 6,
     "la guarda del santuario": 1,
     "la parte santísima": 2,
     "la santidad": 2,
@@ -86420,7 +86774,7 @@ export const all_socu = {
     "y las cosas consagradas": 1,
     "y las cosas santificadas": 3,
     "y las santas": 1,
-    "y lo que él dedicó": 2,
+    "y lo que él dedicó": 3,
     "y lo que él había consagrado": 1,
     "y lo santificado": 1,
     "y para las santificaciones": 1,
@@ -86496,7 +86850,7 @@ export const all_socu = {
     "se juntó": 1,
     "también se juntaron": 1,
     "y juntaron": 1,
-    "y juntáronse": 1,
+    "y juntáronse": 2,
     "y juntó": 1,
     "y juntóse": 2,
     "y reunióse": 1
@@ -86579,6 +86933,7 @@ export const all_socu = {
     "los coathitas": 1
   },
   "H6957": {
+    "adelante el cordel": 1,
     "con cordel": 1,
     "el cordel": 2,
     "ella cordel": 2,
@@ -86589,6 +86944,7 @@ export const all_socu = {
     "su hilo": 1,
     "tenía un cordel": 1,
     "tras renglón": 8,
+    "y la plomada": 1,
     "á cordel": 1
   },
   "H6959": {
@@ -86639,7 +86995,7 @@ export const all_socu = {
   },
   "H6961": {
     "adelante el cordel": 1,
-    "un cordón": 1
+    "un cordón": 2
   },
   "H6962": {
     "y se avergonzarán": 1
@@ -86890,7 +87246,7 @@ export const all_socu = {
     "levantarse": 2,
     "levantará": 4,
     "levantaránse": 1,
-    "levantarás": 1,
+    "levantarás": 2,
     "levantaráse": 1,
     "levantaré": 3,
     "levantaréis": 1,
@@ -87088,7 +87444,7 @@ export const all_socu = {
     "ellos se levantará": 2,
     "estaba en pie": 1,
     "ha levantado": 1,
-    "había levantado": 8,
+    "había levantado": 10,
     "has levantado": 1,
     "he levantado": 1,
     "la cual se puso": 2,
@@ -87104,7 +87460,7 @@ export const all_socu = {
     "son que se levantarán": 1,
     "tú levantaste": 1,
     "y constituye": 1,
-    "y estaban en pie": 3,
+    "y estaban en pie": 4,
     "y levantóse": 1,
     "y pone": 1,
     "y pusieron": 1,
@@ -87122,7 +87478,7 @@ export const all_socu = {
     "ella era de altura": 1,
     "en su altura": 1,
     "grande": 1,
-    "la altura": 9,
+    "la altura": 10,
     "por cuanto te encumbraste en altura": 1,
     "su altura": 5,
     "su estatura": 1,
@@ -87202,7 +87558,7 @@ export const all_socu = {
   },
   "H6976": {
     "cos": 1,
-    "de cos": 6,
+    "de cos": 3,
     "por cos": 1,
     "y cos": 1
   },
@@ -87405,7 +87761,7 @@ export const all_socu = {
     "ti perfumes": 1,
     "y encendió": 2,
     "y encienda": 1,
-    "y han sacrificado": 1,
+    "y han sacrificado": 2,
     "y hará que arda": 1,
     "y harálo arder": 3,
     "y le queméis perfume": 1,
@@ -87587,7 +87943,7 @@ export const all_socu = {
     "correspondían á los cuatro": 3,
     "cuanto al parecer de ellas las cuatro": 1,
     "cuarto": 2,
-    "cuatro": 83,
+    "cuatro": 82,
     "cuatrocientas": 3,
     "cuatrocientos": 18,
     "de adin cuatrocientos": 2,
@@ -87626,11 +87982,11 @@ export const all_socu = {
     "hizo también cuatro": 2,
     "junta era de cuarenta": 1,
     "juntos de cuarenta": 2,
-    "la cuarta": 1,
+    "la cuarta": 2,
     "la décimacuarta": 2,
     "la vigésimacuarta": 2,
     "las cuatro": 4,
-    "los cuatro": 8,
+    "los cuatro": 9,
     "no suya y servirá á los de allí y serán por ellos afligidos cuatrocientos": 1,
     "otros cuatro": 2,
     "para ellas cuatro": 2,
@@ -87760,7 +88116,7 @@ export const all_socu = {
     "y tenía cuatro": 2
   },
   "H7030": {
-    "del arpa": 4
+    "del arpa": 8
   },
   "H7031": {
     "bien": 1,
@@ -88091,7 +88447,7 @@ export const all_socu = {
     "de su celo": 1,
     "del celo": 2,
     "el celo": 5,
-    "en mi celo": 4,
+    "en mi celo": 3,
     "envidia": 1,
     "está tu celo": 1,
     "he aquí en mi celo": 1,
@@ -88152,7 +88508,7 @@ export const all_socu = {
     "que adquiriste": 1,
     "que ganó": 1,
     "que la tomes": 1,
-    "que tomares": 2,
+    "que tomares": 3,
     "que tú rescataste": 1,
     "rescatamos": 1,
     "se comprarán": 1,
@@ -88246,7 +88602,7 @@ export const all_socu = {
     "anidan": 1,
     "anidará": 1,
     "hacían nido": 1,
-    "hiciste tu nido": 1,
+    "hiciste tu nido": 2,
     "que hace nido": 1
   },
   "H7078": {
@@ -88276,7 +88632,7 @@ export const all_socu = {
     "y adivinándoles": 1,
     "y hechiceros": 1,
     "y los adivinos": 1,
-    "yo te ruego que me adivines": 2,
+    "yo te ruego que me adivines": 3,
     "á adivinaciones": 1,
     "á los agoreros": 1
   },
@@ -88317,7 +88673,7 @@ export const all_socu = {
   },
   "H7087": {
     "me cuajaste": 1,
-    "ni oscura": 1,
+    "ni oscura": 2,
     "se cuajaron": 1
   },
   "H7088": {
@@ -88458,8 +88814,8 @@ export const all_socu = {
   "H7098": {
     "al extremo": 3,
     "al otro extremo": 3,
-    "cabo": 2,
-    "cabos": 9,
+    "cabo": 3,
+    "cabos": 10,
     "de los fines": 1,
     "del pueblo bajo": 1,
     "del un cabo": 1,
@@ -88468,8 +88824,9 @@ export const all_socu = {
     "esquinas": 1,
     "extremidades": 3,
     "hasta los fines": 1,
-    "la otra parte": 2,
+    "la otra parte": 3,
     "la punta": 2,
+    "lados": 1,
     "los términos": 2,
     "puntas": 3,
     "puntos": 1,
@@ -88477,7 +88834,6 @@ export const all_socu = {
     "á los cabos": 1
   },
   "H7099": {
-    "cabos": 1,
     "los términos": 1
   },
   "H71": {
@@ -88662,7 +89018,7 @@ export const all_socu = {
     "segasteis": 1,
     "serán acortados": 1,
     "siega": 1,
-    "siegan": 1,
+    "siegan": 2,
     "y abatióse": 1,
     "y cuando segareis": 2,
     "y segarán": 1,
@@ -88689,7 +89045,7 @@ export const all_socu = {
     "mas al fin": 1
   },
   "H7119": {
-    "de prudente": 2,
+    "de prudente": 1,
     "fría": 1,
     "frías": 1
   },
@@ -88716,7 +89072,7 @@ export const all_socu = {
     "claman": 1,
     "clamares": 1,
     "clamará": 1,
-    "clamarás": 1,
+    "clamarás": 2,
     "clamaré": 5,
     "clamaste": 1,
     "clame": 1,
@@ -88784,6 +89140,7 @@ export const all_socu = {
     "entonces me invocaréis": 1,
     "entre los que invocaron": 2,
     "era invocado": 1,
+    "eran los nombrados": 1,
     "es invocado": 14,
     "es llamado": 2,
     "es pregonada": 1,
@@ -88791,6 +89148,7 @@ export const all_socu = {
     "estoy de llamar": 1,
     "están los muertos que sus convidados": 1,
     "fueron contados": 1,
+    "fueron los del consejo": 1,
     "fueron nombradas": 1,
     "fué invocado": 1,
     "fué llamado": 8,
@@ -89027,7 +89385,7 @@ export const all_socu = {
     "y llamáronle": 5,
     "y llamáronlos": 1,
     "y llamé": 1,
-    "y llamó": 76,
+    "y llamó": 77,
     "y llamóla": 2,
     "y llamóle": 5,
     "y llamólo": 4,
@@ -89493,14 +89851,14 @@ export const all_socu = {
   "H7138": {
     "al lejano y al cercano": 1,
     "alabaremos que cercano está": 1,
-    "cerca": 10,
+    "cerca": 11,
     "cercana": 4,
     "cercano": 16,
     "cercanos": 3,
     "de cerca": 2,
     "de los impíos es breve": 1,
     "en mis allegados": 1,
-    "eran vecinos": 2,
+    "eran vecinos": 1,
     "estaba cerca": 1,
     "está cerca": 2,
     "está cercana": 1,
@@ -89649,8 +90007,8 @@ export const all_socu = {
     "á la ciudad de arba": 2
   },
   "H7154": {
-    "chîriath baal": 3,
-    "á chîriath baal": 3
+    "chîriath baal": 2,
+    "á chîriath baal": 2
   },
   "H7155": {
     "á la ciudad de husoth": 2
@@ -89658,16 +90016,16 @@ export const all_socu = {
   "H7156": {
     "chîriathaim": 2,
     "y chîriataim": 1,
-    "y chîriathaim": 1,
+    "y chîriathaim": 2,
     "y á kiriathaim": 1,
     "á chîriath jearim": 1
   },
   "H7157": {
-    "chîriath jearim": 5,
+    "chîriath jearim": 4,
     "de chîriath jearim": 22,
     "en chîriath jearim": 4,
     "la cual es chîriath jearim": 2,
-    "que es chîriath jearim": 3,
+    "que es chîriath jearim": 2,
     "y chiriath jearim": 2,
     "y chîriath": 1,
     "á chîriath jearim": 2,
@@ -90170,7 +90528,7 @@ export const all_socu = {
     "han visto": 15,
     "hanse mostrado": 1,
     "has echado de ver": 1,
-    "has hecho ver": 2,
+    "has hecho ver": 3,
     "has visto": 10,
     "haya visto": 5,
     "he aquí": 9,
@@ -90335,10 +90693,10 @@ export const all_socu = {
     "que les había mostrado": 1,
     "que no vean": 1,
     "que te apareció": 1,
-    "que ve muchas": 1,
+    "que ve muchas": 2,
     "que ves": 2,
     "que veían": 2,
-    "que vi": 1,
+    "que vi": 2,
     "que vieres": 2,
     "que vieron": 1,
     "que vimos": 2,
@@ -90387,9 +90745,9 @@ export const all_socu = {
     "te vi": 1,
     "te viera": 1,
     "temieron": 1,
-    "tengamos qué contar y juntamente nos": 1,
+    "tengamos qué contar y juntamente nos": 2,
     "tengo de ver": 1,
-    "tengo yo visto": 1,
+    "tengo yo visto": 2,
     "ti los que te vieren": 1,
     "ti será vista": 1,
     "tornéme y vi": 1,
@@ -90416,7 +90774,7 @@ export const all_socu = {
     "veremos": 3,
     "vergüenza y verán": 1,
     "verse": 1,
-    "verá": 16,
+    "verá": 17,
     "verán": 22,
     "verás": 15,
     "veré": 7,
@@ -90474,7 +90832,6 @@ export const all_socu = {
     "y cuando veían": 1,
     "y cuando viereis": 1,
     "y cuando vió": 2,
-    "y de verme": 1,
     "y descubriendo": 1,
     "y descúbrase": 1,
     "y después que la habrás visto": 1,
@@ -90538,7 +90895,7 @@ export const all_socu = {
     "y vea": 2,
     "y veamos": 2,
     "y veas": 2,
-    "y ved": 20,
+    "y ved": 21,
     "y veremos": 1,
     "y verlo": 1,
     "y verá": 4,
@@ -90563,7 +90920,7 @@ export const all_socu = {
     "y viéndose": 1,
     "y viéronse": 1,
     "y viéronse cara á cara": 1,
-    "y vió": 45,
+    "y vió": 47,
     "y vióla": 2,
     "y viólo": 3,
     "y véanla": 1,
@@ -90653,7 +91010,7 @@ export const all_socu = {
     "al que me ve": 1,
     "como estiércol": 1,
     "de los que me ven": 1,
-    "parecer": 2
+    "parecer": 1
   },
   "H7211": {
     "de reaía": 1,
@@ -90780,7 +91137,7 @@ export const all_socu = {
     "fué el principal": 1,
     "fué principal": 1,
     "granos en la punta": 1,
-    "había príncipes": 1,
+    "había príncipes": 2,
     "hagamos un capitán": 1,
     "han las cabezas": 1,
     "han pasado mi cabeza": 1,
@@ -91057,7 +91414,7 @@ export const all_socu = {
     "aumentado": 1,
     "basta": 3,
     "básteos": 4,
-    "capitán": 19,
+    "capitán": 17,
     "como de grandes": 1,
     "compañías y muchos": 1,
     "con grandes": 2,
@@ -91068,7 +91425,7 @@ export const all_socu = {
     "contra mí muchos": 1,
     "copia": 2,
     "cosas": 1,
-    "creciendo": 2,
+    "creciendo": 1,
     "de aquí á muchos": 2,
     "de copiosas": 1,
     "de ellos muchas": 1,
@@ -91140,7 +91497,7 @@ export const all_socu = {
     "le basten": 1,
     "los mayordomos": 1,
     "los muchos": 1,
-    "los príncipes": 4,
+    "los príncipes": 2,
     "mayor": 2,
     "mayores": 2,
     "mientras muchos": 2,
@@ -91205,7 +91562,7 @@ export const all_socu = {
     "son muchas": 1,
     "son muchas más que": 1,
     "son muchos": 2,
-    "su término es mayor": 2,
+    "su término es mayor": 1,
     "sus miseraciones son muchas": 1,
     "sus ondas como muchas": 1,
     "sus ramos y á causa de las muchas": 1,
@@ -91256,7 +91613,7 @@ export const all_socu = {
     "y á muchos": 1,
     "á aguas muchas": 1,
     "á causa de las muchas": 1,
-    "á la gran": 2,
+    "á la gran": 1,
     "á los muchos": 1,
     "á muchas": 1,
     "á muchos": 11,
@@ -91389,7 +91746,7 @@ export const all_socu = {
     "diez miles": 1,
     "entre diez mil": 1,
     "mil": 1,
-    "sus diez": 2,
+    "sus diez": 4,
     "sus diez miles": 1,
     "y diez mil": 1,
     "y estos son los diez": 1,
@@ -91472,7 +91829,7 @@ export const all_socu = {
     "multipliquéis": 1,
     "multiplícanse": 1,
     "muy mucha": 1,
-    "más": 2,
+    "más": 3,
     "más se multiplicaban": 1,
     "mí y ti y multiplicarte": 1,
     "numerosas": 1,
@@ -91511,8 +91868,9 @@ export const all_socu = {
     "y amontones": 1,
     "y aumentas": 1,
     "y aumentaste": 1,
-    "y aumenté": 1,
+    "y aumenté": 2,
     "y crecieron": 1,
+    "y de la multiplicación": 1,
     "y el mucho": 2,
     "y ensancharas": 1,
     "y fueron aumentados": 1,
@@ -91540,7 +91898,7 @@ export const all_socu = {
     "y multiplícate": 1,
     "y multiplíquense": 1,
     "y muy mucha": 1,
-    "y más": 1,
+    "y más": 2,
     "y os multiplicaré": 1,
     "y para multiplicaros": 1,
     "y pasaron muchos": 1,
@@ -91591,8 +91949,8 @@ export const all_socu = {
     "y tu salud": 1
   },
   "H7240": {
-    "millones": 2,
-    "y millones": 2
+    "millones": 3,
+    "y millones": 3
   },
   "H7241": {
     "ablándasla con lluvias": 1,
@@ -91628,11 +91986,11 @@ export const all_socu = {
     "y la cuarta": 3
   },
   "H7244": {
-    "bestia será un cuarto": 2,
-    "cuarto": 1,
+    "bestia será un cuarto": 3,
+    "cuarto": 2,
     "de la cuarta": 1,
-    "del cuarto": 1,
-    "la cuarta": 3
+    "del cuarto": 2,
+    "la cuarta": 5
   },
   "H7245": {
     "y rabbit": 1
@@ -91646,13 +92004,13 @@ export const all_socu = {
     "á ribla": 6
   },
   "H7248": {
-    "rabmag": 3,
-    "y rabmag": 3
+    "rabmag": 2,
+    "y rabmag": 2
   },
   "H7249": {
-    "rabsaris": 3,
-    "y rabsaris": 3,
-    "y á rabsaris": 3
+    "rabsaris": 2,
+    "y rabsaris": 2,
+    "y á rabsaris": 2
   },
   "H725": {
     "en aruma": 1
@@ -91744,7 +92102,7 @@ export const all_socu = {
     "pues rabsaces": 2,
     "rabsaces": 12,
     "y rabsaces": 2,
-    "y á rabsaces": 3,
+    "y á rabsaces": 2,
     "á rabsaces": 4
   },
   "H7263": {
@@ -91852,7 +92210,6 @@ export const all_socu = {
   },
   "H7270": {
     "como á espías": 1,
-    "con todo eso guiaba en pies": 1,
     "espías": 5,
     "para que reconociesen": 1,
     "que habían reconocido": 1,
@@ -91868,7 +92225,7 @@ export const all_socu = {
     "con sus pies": 1,
     "de los pies": 2,
     "los pies": 1,
-    "pies": 2,
+    "pies": 3,
     "sus pies": 1
   },
   "H7272": {
@@ -91887,7 +92244,7 @@ export const all_socu = {
     "de pie": 5,
     "de pies": 2,
     "de su pie": 10,
-    "de sus pies": 16,
+    "de sus pies": 17,
     "de tu pie": 2,
     "de tus pies": 4,
     "de un pie": 1,
@@ -91899,7 +92256,7 @@ export const all_socu = {
     "desconcertado": 1,
     "el cual pondrá mis pies": 1,
     "el pie": 3,
-    "el que hace mis pies": 1,
+    "el que hace mis pies": 2,
     "en ella á cubrir sus pies": 1,
     "en los pies": 1,
     "en sus pies": 2,
@@ -91937,12 +92294,13 @@ export const all_socu = {
     "se puso á pie": 1,
     "sentadas holléis además con vuestros pies": 2,
     "sino que holléis con vuestros pies": 2,
+    "su orina": 1,
     "su pie": 2,
     "sus piernas": 1,
-    "sus pies": 22,
+    "sus pies": 23,
     "sus piés": 1,
     "tenía en sus pies": 1,
-    "tu pie": 10,
+    "tu pie": 11,
     "tus pies": 3,
     "veces": 4,
     "vuestros pies": 4,
@@ -92008,8 +92366,8 @@ export const all_socu = {
     "y murmurasteis": 1
   },
   "H728": {
-    "arauna": 5,
-    "de arauna": 1,
+    "arauna": 6,
+    "de arauna": 2,
     "entonces arauna": 2,
     "y arauna": 2,
     "y mirando arauna": 2,
@@ -92017,6 +92375,7 @@ export const all_socu = {
   },
   "H7280": {
     "asiento": 1,
+    "de mentira por un momento": 1,
     "descansarás": 1,
     "el rompe": 1,
     "hendida": 1,
@@ -92089,7 +92448,6 @@ export const all_socu = {
     "y los tocados": 1
   },
   "H729": {
-    "de cedro": 3,
     "y en madera de cedro": 1
   },
   "H7290": {
@@ -92374,7 +92732,7 @@ export const all_socu = {
     "en vosotros espíritu": 1,
     "era el espíritu": 3,
     "es viento": 1,
-    "espíritu": 62,
+    "espíritu": 63,
     "espíritus": 1,
     "estaba en el viento": 3,
     "estos vientos": 2,
@@ -92482,7 +92840,6 @@ export const all_socu = {
   },
   "H7311": {
     "alta": 2,
-    "altivez": 1,
     "altivos": 2,
     "alto": 4,
     "altos": 3,
@@ -92504,7 +92861,7 @@ export const all_socu = {
     "el cual alzó": 1,
     "el ensalzó": 1,
     "elevadas": 1,
-    "elevaráse": 1,
+    "elevaráse": 2,
     "ellas y cuando ellos se alzaban": 1,
     "en alta": 1,
     "enaltecido": 1,
@@ -92515,8 +92872,8 @@ export const all_socu = {
     "ensalzada": 1,
     "ensalzado": 4,
     "ensalzarte": 1,
-    "ensalzarás": 1,
-    "ensalzaré": 1,
+    "ensalzarás": 2,
+    "ensalzaré": 2,
     "ensálzate": 4,
     "entonces alzó": 2,
     "es ensalzado": 1,
@@ -92613,7 +92970,7 @@ export const all_socu = {
     "yo te levanté": 1,
     "á los que están elevados": 1,
     "á manera de eminencia": 1,
-    "él fué quitado": 1
+    "él fué quitado": 2
   },
   "H7312": {
     "de la altivez": 1,
@@ -92675,7 +93032,6 @@ export const all_socu = {
     "grita": 1,
     "gritad": 4,
     "gritará": 2,
-    "será quebrantado": 1,
     "tocaréis alarma": 1,
     "y tocaba alarma": 1
   },
@@ -92719,7 +93075,7 @@ export const all_socu = {
     "luego": 1,
     "mas corrió": 1,
     "muy presto corre": 1,
-    "muy pronto": 1,
+    "muy pronto": 2,
     "mío corren": 1,
     "para correr": 2,
     "para que corra": 1,
@@ -93055,7 +93411,7 @@ export const all_socu = {
     "á un largo": 1
   },
   "H7351": {
-    "los artesonados": 1
+    "los artesonados": 2
   },
   "H7352": {
     "apartaos": 1
@@ -93353,7 +93709,7 @@ export const all_socu = {
     "riñeren": 1,
     "riñeron": 2,
     "salgas á pleito": 1,
-    "sus adversarios": 1,
+    "sus adversarios": 2,
     "tengo de contender": 1,
     "tomare la demanda": 3,
     "tomaréis": 3,
@@ -93368,7 +93724,7 @@ export const all_socu = {
     "y regañó": 1,
     "y reprendí": 2,
     "y reñí": 1,
-    "á demandárnoslo": 1
+    "á demandárnoslo": 2
   },
   "H7379": {
     "aboga": 1,
@@ -93432,15 +93788,15 @@ export const all_socu = {
     "el bramido del león": 1,
     "el león": 11,
     "figuras de leones": 2,
-    "fué para mí como león": 1,
-    "leones": 7,
+    "fué para mí como león": 2,
+    "leones": 8,
     "león": 5,
     "los leones": 2,
     "parecen al león": 1,
     "que como león": 2,
     "que el león": 1,
     "que leones": 1,
-    "un león": 9,
+    "un león": 10,
     "y como león": 1,
     "y de leones": 1,
     "y el león": 5,
@@ -93771,8 +94127,8 @@ export const all_socu = {
     "y para las bestias de carga": 1
   },
   "H741": {
-    "del altar": 3,
-    "y el altar": 4
+    "del altar": 1,
+    "y el altar": 3
   },
   "H7410": {
     "de ram": 2,
@@ -93860,7 +94216,7 @@ export const all_socu = {
     "rimmón": 2,
     "y rimmón": 1,
     "á rimmono": 1,
-    "á rimmón": 2
+    "á rimmón": 1
   },
   "H7418": {
     "al mediodía": 2
@@ -94019,9 +94375,9 @@ export const all_socu = {
     "clama": 1,
     "da voces": 2,
     "daba alegría": 1,
-    "darán voces": 2,
+    "darán voces": 1,
     "darán voces de júbilo": 2,
-    "de júbilo": 2,
+    "de júbilo": 1,
     "está en ellos darán alabanzas": 1,
     "hagan regocijo": 1,
     "levantad": 1,
@@ -94185,8 +94541,8 @@ export const all_socu = {
     "la malicia": 5,
     "las malas": 4,
     "las malvadas": 1,
-    "lo malo": 64,
-    "los males": 3,
+    "lo malo": 66,
+    "los males": 2,
     "los malos": 3,
     "los que de mi mal": 1,
     "los que le devoran pecarán mal": 1,
@@ -94325,7 +94681,7 @@ export const all_socu = {
     "de su prójimo": 11,
     "de sus prójimos": 1,
     "de tu amigo": 2,
-    "de tu prójimo": 28,
+    "de tu prójimo": 24,
     "de tu vecino": 1,
     "del otro": 1,
     "demande á su vecino": 1,
@@ -94341,7 +94697,7 @@ export const all_socu = {
     "mas": 2,
     "mi prójimo": 1,
     "ni amigos": 1,
-    "ninguna cosa que sea de tu prójimo": 5,
+    "ninguna cosa que sea de tu prójimo": 3,
     "obligó á su prójimo": 2,
     "otro": 1,
     "por mano de su amigo": 1,
@@ -94370,6 +94726,7 @@ export const all_socu = {
     "y el compañero": 1,
     "y el otro": 1,
     "y mis compañeros": 2,
+    "y su adversario": 1,
     "y su compañero": 1,
     "y su prójimo": 1,
     "y á su amigo": 1,
@@ -94380,9 +94737,9 @@ export const all_socu = {
     "á su prójimo": 14,
     "á su vecino": 1,
     "á sus compañeros": 1,
-    "á tu amigo": 1,
+    "á tu amigo": 2,
     "á tu compañero": 1,
-    "á tu prójimo": 5
+    "á tu prójimo": 6
   },
   "H7454": {
     "mis pensamientos": 1,
@@ -94403,19 +94760,15 @@ export const all_socu = {
     "á causa de la maldad": 2
   },
   "H7456": {
-    "al hambriento": 1,
     "dejará hambrear": 1,
     "hambre": 1,
-    "los hambrientos": 1,
     "necesitaron y tuvieron hambre": 1,
     "tendremos hambre": 1,
     "tendrán hambre": 1,
     "tendréis hambre": 1,
     "teniendo hambre": 2,
-    "tuviere hambre": 1,
     "y cuando se sintió el hambre": 1,
     "y tendrá hambre": 1,
-    "y á los hambrientos": 1,
     "yo tuviese hambre": 1,
     "é hízote tener hambre": 1
   },
@@ -94477,7 +94830,8 @@ export const all_socu = {
     "con temblor": 1,
     "espanto": 1,
     "temblor": 2,
-    "y temblor": 1
+    "y temblor": 1,
+    "y un temblor": 1
   },
   "H7462": {
     "al pastor": 1,
@@ -94500,7 +94854,7 @@ export const all_socu = {
     "de allí el pastor": 1,
     "de apacentar": 4,
     "de aullido de pastores": 1,
-    "de esquileo": 2,
+    "de esquileo": 1,
     "de la manera que el pastor": 1,
     "de los pastores": 12,
     "de pastor": 1,
@@ -94589,7 +94943,8 @@ export const all_socu = {
     "ni al amigo": 1
   },
   "H7464": {
-    "de ella sus compañeras": 1
+    "de ella sus compañeras": 1,
+    "y mis compañeras": 1
   },
   "H7466": {
     "reu": 2,
@@ -94769,7 +95124,7 @@ export const all_socu = {
     "la amontada y á la que afligí": 1,
     "lo malo": 1,
     "los malignos": 2,
-    "mal": 3,
+    "mal": 4,
     "mal te haré": 1,
     "maligno": 1,
     "me hicisteis": 1,
@@ -94782,6 +95137,7 @@ export const all_socu = {
     "os haré mal": 1,
     "para mal": 1,
     "para que": 1,
+    "parece mal": 1,
     "pareció": 1,
     "peor": 2,
     "perseverareis": 2,
@@ -94796,7 +95152,6 @@ export const all_socu = {
     "te parezca": 1,
     "y afligir": 1,
     "y ciertamente": 2,
-    "y comerán": 1,
     "y desagradó": 2,
     "y dolióme": 1,
     "y habiendo jurado en daño": 1,
@@ -94877,7 +95232,7 @@ export const all_socu = {
     "el sana": 1,
     "está sanada": 1,
     "fuimos nosotros curados": 1,
-    "ha sanado": 2,
+    "ha sanado": 3,
     "he aquí yo te sano": 1,
     "los cuidaba": 1,
     "me sanará": 1,
@@ -94887,7 +95242,7 @@ export const all_socu = {
     "para ti y te sanaré": 1,
     "que la sanes": 1,
     "que le curen": 2,
-    "recibirán sanidad": 1,
+    "recibirán sanidad": 2,
     "sana": 2,
     "sanaré": 1,
     "sanó": 1,
@@ -95443,7 +95798,7 @@ export const all_socu = {
     "lo que está escrito": 1
   },
   "H756": {
-    "los erchûeos": 1
+    "los erchûeos": 2
   },
   "H7560": {
     "confirmaste": 1,
@@ -95467,7 +95822,7 @@ export const all_socu = {
     "hará injusticia": 1,
     "hará pecar á los violadores": 1,
     "hemos cometido impiedad": 1,
-    "hemos obrado impíamente": 1,
+    "hemos obrado impíamente": 2,
     "hicimos impiedad": 1,
     "impíamente": 2,
     "inquietará": 1,
@@ -95531,7 +95886,7 @@ export const all_socu = {
     "de malos": 1,
     "de mí á causa de los impíos": 1,
     "de su impiedad": 1,
-    "del impío": 24,
+    "del impío": 25,
     "del malo": 1,
     "desea el impío": 1,
     "diciendo yo al impío": 4,
@@ -95655,7 +96010,7 @@ export const all_socu = {
     "hace hervir": 1
   },
   "H7572": {
-    "con cadenas": 1
+    "con cadenas": 2
   },
   "H7573": {
     "unce": 1
@@ -95703,9 +96058,9 @@ export const all_socu = {
     "de aram": 4,
     "de bajo la mano de los siros": 1,
     "de los de siria": 1,
-    "de los ríos y de la siria": 2,
+    "de los ríos y de la siria": 1,
     "de los siros": 21,
-    "de siria": 48,
+    "de siria": 47,
     "de siros": 1,
     "el siro": 1,
     "en siria": 3,
@@ -95935,7 +96290,7 @@ export const all_socu = {
     "ni quien pregunte á pitón": 1,
     "nos preguntó": 2,
     "pedid": 2,
-    "pedirá": 1,
+    "pedirá": 2,
     "pediré": 1,
     "pediste": 23,
     "pedisteis": 1,
@@ -95947,7 +96302,7 @@ export const all_socu = {
     "pidieron": 2,
     "pidiese": 1,
     "pidió": 2,
-    "pregunta": 8,
+    "pregunta": 9,
     "preguntaban": 1,
     "preguntad": 1,
     "preguntadme": 1,
@@ -95997,9 +96352,9 @@ export const all_socu = {
     "y á él preguntará": 1,
     "y él preguntó": 1,
     "yo te preguntaré": 2,
-    "á consultar": 4,
+    "á consultar": 5,
     "á preguntar": 1,
-    "á saludarle": 3,
+    "á saludarle": 4,
     "á él preguntóle": 1,
     "él pidió": 2
   },
@@ -96305,7 +96660,7 @@ export const all_socu = {
     "y habíanse llevado cautivas": 1,
     "y lleva": 1,
     "y llevaron cautivas": 1,
-    "y tomares": 2,
+    "y tomares": 1,
     "y tomaron": 1,
     "y tomó": 1,
     "y trajeron": 1,
@@ -96357,21 +96712,21 @@ export const all_socu = {
     "y en el juramento": 1
   },
   "H7622": {
-    "cautividad": 1,
-    "de tus cautiverios": 4,
+    "cautividad": 2,
+    "de tus cautiverios": 7,
     "el cautiverio": 2,
-    "la aflicción": 1,
-    "la cautividad": 11,
-    "los cautivos": 4,
-    "para estorbar tu cautiverio": 1,
+    "la aflicción": 2,
+    "la cautividad": 13,
+    "los cautivos": 7,
+    "para estorbar tu cautiverio": 2,
     "su cautiverio": 1,
     "su cautividad": 2,
-    "sus cautivos": 5,
+    "sus cautivos": 9,
     "tus cautivos": 1,
-    "vuestra cautividad": 1,
+    "vuestra cautividad": 2,
     "vuestros cautivos": 1,
     "y la cautividad": 2,
-    "y los cautivos": 8,
+    "y los cautivos": 14,
     "á traer la cautividad": 1,
     "á traer los cautivos": 1
   },
@@ -96474,6 +96829,7 @@ export const all_socu = {
     "cautiva": 1,
     "cautiverio": 1,
     "cautivos": 5,
+    "de ellos cautivos": 1,
     "de la cautividad": 3,
     "de la transmigración": 1,
     "de su cautividad": 2,
@@ -96519,7 +96875,7 @@ export const all_socu = {
   },
   "H7635": {
     "en las sendas": 1,
-    "y tus sendas": 1
+    "y tus sendas": 2
   },
   "H7636": {
     "y las redecillas": 1
@@ -96702,7 +97058,7 @@ export const all_socu = {
     "hazme juramento": 1,
     "he de conjurarte": 1,
     "he jurado": 3,
-    "hemos jurado": 2,
+    "hemos jurado": 1,
     "hice": 1,
     "hubiere jurado": 1,
     "jura": 1,
@@ -96750,7 +97106,7 @@ export const all_socu = {
     "que juró": 2,
     "que les hemos hecho": 1,
     "que por él jura": 1,
-    "saciélos": 2,
+    "saciélos": 1,
     "se lo había jurado": 1,
     "se lo juró": 1,
     "te conjuraré": 1,
@@ -96765,7 +97121,7 @@ export const all_socu = {
     "y juramentó": 2,
     "y jurando": 3,
     "y jurare": 1,
-    "y juraron": 4,
+    "y juraron": 3,
     "y juró": 5,
     "y juróle": 1,
     "y juróles": 1,
@@ -96834,8 +97190,8 @@ export const all_socu = {
     "que fueron siete": 2,
     "que siete": 2,
     "setecientas": 2,
-    "setecientos": 23,
-    "siete": 164,
+    "setecientos": 24,
+    "siete": 163,
     "son siete": 8,
     "sus siete": 2,
     "séptimo": 3,
@@ -97312,7 +97668,7 @@ export const all_socu = {
     "y he errado": 1
   },
   "H7687": {
-    "y en segub": 1,
+    "y en segub": 2,
     "y segub": 1,
     "á segub": 1
   },
@@ -97462,7 +97818,7 @@ export const all_socu = {
     "fué destruído": 4,
     "fué quebrantado": 1,
     "hemos sido destruídos": 1,
-    "mas destruirá": 1,
+    "mas destruirá": 2,
     "me oprimen": 1,
     "muerto": 1,
     "para destrucción": 2,
@@ -97575,7 +97931,7 @@ export const all_socu = {
     "y de las tierras": 1,
     "y de los campos": 1,
     "y en el campo": 1,
-    "y escondídose en el campo": 1,
+    "y escondídose en el campo": 2,
     "y heredades": 1,
     "y la tierra": 2,
     "y los campos": 2,
@@ -97711,8 +98067,8 @@ export const all_socu = {
   "H772": {
     "de la tierra": 8,
     "en la tierra": 5,
-    "la tierra": 10,
-    "menor": 2,
+    "la tierra": 11,
+    "menor": 3,
     "y de la tierra": 1,
     "y en la tierra": 1,
     "y su vista hasta el cabo de toda la tierra": 1,
@@ -97740,13 +98096,14 @@ export const all_socu = {
   "H7723": {
     "de destrucción": 1,
     "de vanidad": 2,
-    "en la vanidad": 2,
+    "en la vanidad": 3,
     "en vano": 16,
     "falso": 2,
     "ilusorias": 2,
     "la vanidad": 2,
     "me hablaba mentira": 1,
     "mentira": 2,
+    "mentirosa": 1,
     "para ti vanidad": 2,
     "por demás": 3,
     "que vana": 1,
@@ -97813,7 +98170,7 @@ export const all_socu = {
     "de ellos precisamente los volverás": 2,
     "de ellos volvieron": 2,
     "de ellos y harélos volver": 2,
-    "de ellos y volvímonos": 1,
+    "de ellos y volvímonos": 2,
     "de ganados y pagaba": 1,
     "de nuevo": 1,
     "de siria restituyó": 1,
@@ -97843,7 +98200,7 @@ export const all_socu = {
     "el que da": 1,
     "el que responde": 1,
     "el que se desvía": 2,
-    "el volverá": 1,
+    "el volverá": 2,
     "ella volvió": 2,
     "ellos hace tornar": 1,
     "ellos se tornaban": 1,
@@ -97886,8 +98243,8 @@ export const all_socu = {
     "hanse vuelto": 1,
     "hará restituir": 1,
     "hará tornar": 1,
-    "haré tornar": 2,
-    "haré volver": 1,
+    "haré tornar": 3,
+    "haré volver": 2,
     "haré volver te haré volver": 2,
     "haré yo recaer": 1,
     "hayan vuelto": 1,
@@ -97908,13 +98265,14 @@ export const all_socu = {
     "la detendrá": 1,
     "la hará tornar": 1,
     "la volvieres": 2,
+    "las descarriaron": 1,
     "le devolverás": 2,
     "le había hecho volver": 2,
     "le pagaremos": 1,
     "le pagará": 1,
     "le pagaréis": 4,
     "le respondería": 1,
-    "le será dada": 1,
+    "le será dada": 2,
     "llegares": 2,
     "lo estorbará": 1,
     "lo hará volver": 1,
@@ -97934,7 +98292,8 @@ export const all_socu = {
     "me has de tornar": 1,
     "me tornaré": 1,
     "me volveré": 1,
-    "me volviere": 2,
+    "me volviere": 3,
+    "más se restaurarán": 1,
     "ni se convierta": 1,
     "ni viniese": 1,
     "no la llevará": 1,
@@ -97998,7 +98357,7 @@ export const all_socu = {
     "que ha vuelto": 1,
     "que habían vuelto": 1,
     "que hago tornar": 1,
-    "que haré tornar": 1,
+    "que haré tornar": 2,
     "que les devolváis": 1,
     "que me reduces": 1,
     "que respondamos": 1,
@@ -98095,7 +98454,7 @@ export const all_socu = {
     "sino que volviste": 1,
     "también volverá": 2,
     "también volvió": 1,
-    "te apartarás": 1,
+    "te apartarás": 2,
     "te convirtieres": 5,
     "te engañaron": 1,
     "te hará tornar": 1,
@@ -98108,7 +98467,7 @@ export const all_socu = {
     "tengo de volver": 1,
     "torna": 1,
     "torna atrás": 1,
-    "tornad": 3,
+    "tornad": 4,
     "tornaos": 4,
     "tornar": 2,
     "tornare": 1,
@@ -98127,7 +98486,7 @@ export const all_socu = {
     "tú volvieres": 4,
     "tú vuélvete": 2,
     "volvamos": 1,
-    "volved": 9,
+    "volved": 10,
     "volveos": 20,
     "volver": 3,
     "volveremos": 1,
@@ -98168,11 +98527,11 @@ export const all_socu = {
     "vuelves": 2,
     "vuélvase": 4,
     "vuélveme": 1,
-    "vuélvenos": 2,
+    "vuélvenos": 3,
     "vuélvete": 22,
     "y aparte": 1,
     "y apartándose": 1,
-    "y apartóse": 1,
+    "y apartóse": 2,
     "y así se había vuelto": 1,
     "y aun no se había él vuelto cuando le dijo vuélvete": 2,
     "y aun tornará": 2,
@@ -98266,7 +98625,7 @@ export const all_socu = {
     "y volveos": 4,
     "y volver": 1,
     "y volveremos": 1,
-    "y volverla": 1,
+    "y volverla": 2,
     "y volverá": 7,
     "y volverán": 4,
     "y volveráse": 4,
@@ -98379,7 +98738,7 @@ export const all_socu = {
     "yo he puesto": 1
   },
   "H7739": {
-    "fué puesto": 1
+    "fué puesto": 2
   },
   "H774": {
     "como arphad": 1,
@@ -98500,7 +98859,7 @@ export const all_socu = {
     "de ellos para hacer quietar la tierra": 1,
     "de ellos á tierra": 1,
     "de esta tierra": 3,
-    "de la tierra": 518,
+    "de la tierra": 520,
     "de las naciones": 1,
     "de las tierras": 12,
     "de los extremos de la tierra": 1,
@@ -98821,7 +99180,7 @@ export const all_socu = {
     "á ti hacia su tierra": 2,
     "á ti á la tierra": 1,
     "á ti á tierra": 1,
-    "á tierra": 48,
+    "á tierra": 47,
     "á traer desde la tierra": 1,
     "á tu tierra": 3,
     "á una tierra": 10,
@@ -99048,6 +99407,7 @@ export const all_socu = {
     "tornóme": 1,
     "tú has puesto": 1,
     "vez pondré": 1,
+    "volverá": 1,
     "volviereis": 4,
     "vuelve": 1,
     "y acomodóle": 2,
@@ -99109,7 +99469,7 @@ export const all_socu = {
     "y pusieron": 13,
     "y pusiéronla": 1,
     "y pusiéronlas": 2,
-    "y pusiéronle": 1,
+    "y pusiéronle": 2,
     "y puso": 33,
     "y pusístele": 1,
     "y púsola": 8,
@@ -99118,7 +99478,7 @@ export const all_socu = {
     "y púsolo": 5,
     "y púsolos": 2,
     "y púsome": 2,
-    "y que lo ponga": 1,
+    "y que lo ponga": 2,
     "y reducirélas": 1,
     "y redújola": 1,
     "y se elegirá": 1,
@@ -99399,7 +99759,7 @@ export const all_socu = {
   },
   "H7792": {
     "y los muros": 1,
-    "y mala y han erigido los muros": 1
+    "y mala y han erigido los muros": 2
   },
   "H7793": {
     "de shur": 1,
@@ -99610,7 +99970,7 @@ export const all_socu = {
     "se humillaba": 3,
     "se inclinaban": 1,
     "se inclinarán": 1,
-    "se inclinen": 2,
+    "se inclinen": 3,
     "se inclinó": 2,
     "se llegaba para inclinarse": 1,
     "si yo también me inclinare": 3,
@@ -99636,7 +99996,7 @@ export const all_socu = {
     "y lo adoró": 2,
     "y lo han adorado": 1,
     "y los adorareis": 2,
-    "y los adoraron": 2,
+    "y los adoraron": 3,
     "y os inclinaréis": 1,
     "y os inclinéis": 1,
     "y para adorar": 3,
@@ -99656,7 +100016,7 @@ export const all_socu = {
     "á inclinarnos": 1,
     "á los cuales adoraron": 2,
     "é hicieron acatamiento": 1,
-    "é hicieron reverencia": 1,
+    "é hicieron reverencia": 2,
     "é hizo reverencia": 5,
     "é inclinaban": 2,
     "é inclinados": 1,
@@ -99714,7 +100074,7 @@ export const all_socu = {
     "y las exprimía": 1
   },
   "H7819": {
-    "afilada": 1,
+    "afilada": 2,
     "asimismo mataron": 3,
     "de ella y la degollará": 1,
     "degollaban": 1,
@@ -99812,13 +100172,13 @@ export const all_socu = {
     "extenuación": 1
   },
   "H783": {
-    "artajerjes": 12,
+    "artajerjes": 13,
     "de artajerjes": 5,
     "rey artajerjes": 1,
     "y de artajerjes": 1
   },
   "H7831": {
-    "y sahasim": 1
+    "y sahasim": 2
   },
   "H7832": {
     "danzaban delante": 1,
@@ -99885,9 +100245,9 @@ export const all_socu = {
     "y si me buscares": 1
   },
   "H7837": {
-    "al alba": 2,
+    "al alba": 3,
     "como el alba": 3,
-    "cuando subía el alba": 2,
+    "cuando subía el alba": 1,
     "cuyo nacimiento": 1,
     "de la mañana": 2,
     "del alba": 3,
@@ -99929,7 +100289,7 @@ export const all_socu = {
     "de su fuego": 1,
     "de ti fuego": 1,
     "de vuestro fuego": 3,
-    "del fuego": 26,
+    "del fuego": 27,
     "del incendio": 1,
     "descender el fuego": 1,
     "donde habíais de asentar el campo con fuego": 1,
@@ -100193,6 +100553,7 @@ export const all_socu = {
   "H7857": {
     "arrollarán": 1,
     "del azote": 1,
+    "el turbión": 1,
     "habrían inundado": 1,
     "impetuosa": 1,
     "inundante": 1,
@@ -100253,7 +100614,7 @@ export const all_socu = {
     "á los oficiales": 1
   },
   "H7861": {
-    "sitrai": 1
+    "sitrai": 2
   },
   "H7862": {
     "dones": 1,
@@ -100307,11 +100668,12 @@ export const all_socu = {
     "ó tiene algún empeño": 1
   },
   "H7874": {
-    "las cuales revocarás con cal": 2,
-    "y las revocarás": 2
+    "las cuales revocarás con cal": 1,
+    "y las revocarás": 1
   },
   "H7875": {
     "como cal": 1,
+    "con cal": 1,
     "hasta tornarlos en cal": 1
   },
   "H7876": {
@@ -100331,7 +100693,6 @@ export const all_socu = {
     "maravillosos hablaré": 1,
     "meditaba": 1,
     "meditaré": 1,
-    "mis quejas": 1,
     "oraré": 1,
     "quejábame": 1,
     "reflexionaba": 1,
@@ -100408,7 +100769,7 @@ export const all_socu = {
     "cantad": 15,
     "cantadle": 3,
     "cantan": 1,
-    "cantando": 1,
+    "cantando": 2,
     "cantaremos": 2,
     "cantará": 1,
     "cantarán": 1,
@@ -100472,7 +100833,7 @@ export const all_socu = {
     "que la canción": 1,
     "que tú eres á ellos como cantor": 1,
     "salmo": 1,
-    "su canción": 1,
+    "su canción": 2,
     "también el cántico": 1,
     "tiro": 1,
     "vosotros tendréis canción": 1,
@@ -100494,7 +100855,7 @@ export const all_socu = {
     "de sisac": 3,
     "por causa de sisac": 2,
     "pues sisac": 1,
-    "sisac": 2,
+    "sisac": 3,
     "á sisac": 1
   },
   "H7896": {
@@ -100526,11 +100887,11 @@ export const all_socu = {
     "pongas": 2,
     "pongáis": 1,
     "ponía": 1,
-    "pues y déjame": 1,
+    "pues y déjame": 2,
     "puestos": 1,
     "pusieren": 1,
     "pusieses": 1,
-    "pusiste": 1,
+    "pusiste": 2,
     "puso": 7,
     "púsolo": 1,
     "que ponga": 1,
@@ -100544,6 +100905,7 @@ export const all_socu = {
     "y púse": 1,
     "y púsola": 1,
     "y púsoselas": 1,
+    "y tendrás": 1,
     "y tú pusiste": 1,
     "yo pondré": 1,
     "á quienes harás": 1
@@ -100588,6 +100950,7 @@ export const all_socu = {
     "de él tendidos": 2,
     "descansa": 1,
     "diciendo desde que tú pereciste": 1,
+    "dormirá": 1,
     "dormiré": 1,
     "duerme": 2,
     "duermen": 1,
@@ -100646,6 +101009,7 @@ export const all_socu = {
     "seréis sepultados": 1,
     "suyas así se tendió": 1,
     "también yacerá": 1,
+    "te hayas publicado": 1,
     "tuviera ayuntamiento": 1,
     "tú vas á dormir": 1,
     "y acostóse": 8,
@@ -100654,7 +101018,7 @@ export const all_socu = {
     "y antes que": 1,
     "y cavarás y dormirás": 1,
     "y como dormían": 1,
-    "y cuando él se acostare": 3,
+    "y cuando él se acostare": 4,
     "y después que reposó": 1,
     "y dormiréis": 1,
     "y duerma": 1,
@@ -100668,6 +101032,7 @@ export const all_socu = {
     "y echóse": 4,
     "y el que durmiere": 1,
     "y entrando á ella durmió": 1,
+    "y forzadas": 2,
     "y habiendo dormido": 1,
     "y harélos dormir": 1,
     "y mis pulsos no reposan": 1,
@@ -100677,7 +101042,7 @@ export const all_socu = {
     "y púsolo": 3,
     "y púsome": 2,
     "y se echare": 2,
-    "y te acostarás": 3,
+    "y te acostarás": 4,
     "y yace": 1,
     "y yacen": 1,
     "y yacerás": 1,
@@ -100691,7 +101056,7 @@ export const all_socu = {
     "á dormir": 2,
     "á los lados del buque y se había echado": 1,
     "él para acostarse": 1,
-    "él se acostará": 3,
+    "él se acostará": 4,
     "él serán sepultados": 1,
     "él á mí para dormir": 1,
     "ó como el que está": 2
@@ -100774,7 +101139,6 @@ export const all_socu = {
     "olvidó": 1,
     "os habéis olvidado": 1,
     "os olvidéis": 1,
-    "que olvidáis": 1,
     "se ha olvidado": 2,
     "se han olvidado": 1,
     "se olvidaron": 4,
@@ -101065,7 +101429,7 @@ export const all_socu = {
     "habitaré": 1,
     "habito": 6,
     "hacia los que habitaban": 1,
-    "la que moras": 1,
+    "la que moras": 2,
     "mora": 1,
     "moradores": 1,
     "morando": 1,
@@ -101138,7 +101502,7 @@ export const all_socu = {
     "los moradores": 1,
     "sus comarcas": 1,
     "vecino": 1,
-    "vecinos": 7,
+    "vecinos": 8,
     "y de mis vecinos": 1,
     "y de sus ciudades vecinas": 1,
     "y las vecinas": 1,
@@ -101148,7 +101512,7 @@ export const all_socu = {
     "á sus vecinos": 1
   },
   "H7935": {
-    "de sechânías": 5,
+    "de sechânías": 3,
     "por sechânía": 1
   },
   "H7936": {
@@ -101267,7 +101631,7 @@ export const all_socu = {
     "como la nieve": 4,
     "con nieve": 1,
     "de la nieve": 3,
-    "de nieve": 2,
+    "de nieve": 3,
     "la nieve": 3,
     "más que la nieve": 1,
     "y la nieve": 1,
@@ -101307,7 +101671,7 @@ export const all_socu = {
   },
   "H796": {
     "asdodios": 1,
-    "de asdod": 1,
+    "de asdod": 2,
     "día los de asdod": 1,
     "los de asdod": 1,
     "y los de asdod": 1
@@ -101361,7 +101725,7 @@ export const all_socu = {
     "ella paz": 1,
     "en completa": 2,
     "en la paz": 1,
-    "en paz": 36,
+    "en paz": 35,
     "en su paz": 3,
     "en ti paz": 1,
     "es pacífica": 1,
@@ -101460,7 +101824,7 @@ export const all_socu = {
     "de estas tres": 2,
     "de hacia el oriente tenía tres": 3,
     "de los trece": 2,
-    "de los tres": 5,
+    "de los tres": 6,
     "de mil millares y trescientos": 1,
     "de sus tres": 2,
     "de trece": 1,
@@ -101481,7 +101845,7 @@ export const all_socu = {
     "en trece": 1,
     "en tres": 10,
     "entonces los tres": 1,
-    "entre los tres": 3,
+    "entre los tres": 4,
     "era de los tres": 1,
     "era de trece": 1,
     "era de tres": 2,
@@ -101526,7 +101890,7 @@ export const all_socu = {
     "trece": 8,
     "tres": 160,
     "trescientas": 3,
-    "trescientos": 36,
+    "trescientos": 37,
     "una vez en cada tres": 1,
     "veintitrés": 8,
     "veía tres": 1,
@@ -101570,9 +101934,9 @@ export const all_socu = {
     "como treinta": 1,
     "de ellos treinta": 3,
     "de los treinta": 4,
-    "de treinta": 20,
+    "de treinta": 21,
     "ellos treinta": 1,
-    "entre los treinta": 4,
+    "entre los treinta": 2,
     "era de treinta": 2,
     "eran cámara sobre cámara treinta": 1,
     "fuere hembra la estimación será treinta": 1,
@@ -101582,10 +101946,9 @@ export const all_socu = {
     "los treinta": 6,
     "por treinta": 1,
     "que eran como unos treinta": 1,
-    "que los treinta": 2,
     "que á los treinta": 1,
     "será de treinta": 1,
-    "treinta": 88,
+    "treinta": 89,
     "uno á uno treinta": 2,
     "unos treinta": 1,
     "vivió treinta": 1,
@@ -102059,7 +102422,7 @@ export const all_socu = {
     "y la mesa": 4,
     "y las mesas": 1,
     "y mesa": 1,
-    "á la mesa": 4,
+    "á la mesa": 3,
     "á mi mesa": 2,
     "á tu mesa": 1
   },
@@ -102125,8 +102488,9 @@ export const all_socu = {
     "capitán": 1,
     "de capitanes": 1,
     "de los capitanes": 1,
+    "de los treinta": 1,
     "en gran abundancia": 1,
-    "luego jehú á bidkar su capitán": 1,
+    "luego jehú á bidkar su capitán": 2,
     "nobles": 1,
     "príncipes": 1,
     "y con tres": 1,
@@ -102299,7 +102663,7 @@ export const all_socu = {
     "á sus despojadores": 2
   },
   "H7998": {
-    "al despojo": 1,
+    "al despojo": 2,
     "bordada de ambos lados para los cuellos de los que han tomado los despojos": 4,
     "de despojo": 1,
     "de despojos": 1,
@@ -102551,7 +102915,7 @@ export const all_socu = {
     "así que salomón": 1,
     "contra salomón": 1,
     "de que salomón": 1,
-    "de salomón": 61,
+    "de salomón": 60,
     "diciendo salomón": 1,
     "díjose luego á salomón": 1,
     "en extremo á salomón": 1,
@@ -102599,7 +102963,7 @@ export const all_socu = {
   "H8013": {
     "de selemoth": 2,
     "selemoth": 2,
-    "selomith": 2
+    "selomith": 3
   },
   "H8014": {
     "de salmai": 1
@@ -102627,7 +102991,7 @@ export const all_socu = {
     "de selomith": 1,
     "de solomith": 1,
     "fué selomith": 1,
-    "selomith": 1,
+    "selomith": 2,
     "y selomith": 2
   },
   "H802": {
@@ -103119,7 +103483,7 @@ export const all_socu = {
     "podemos hacer mención del nombre": 1,
     "por amor de su nombre": 1,
     "por amor de tu nombre": 2,
-    "por el nombre": 2,
+    "por el nombre": 1,
     "por lo cual el nombre": 1,
     "por los nombres": 2,
     "por mi nombre": 3,
@@ -103417,7 +103781,7 @@ export const all_socu = {
     "cosa espantosa": 1,
     "de soledad": 1,
     "desiertas": 1,
-    "en asolamiento": 5,
+    "en asolamiento": 6,
     "en desolación": 1,
     "en escarnio": 1,
     "en soledad": 4,
@@ -103519,6 +103883,7 @@ export const all_socu = {
     "alégrate": 2,
     "alégrense": 4,
     "alégrese": 4,
+    "así mucho": 2,
     "con gozo": 1,
     "contentos": 1,
     "cuales se holgaron": 1,
@@ -103528,9 +103893,8 @@ export const all_socu = {
     "ellos hubiere gozado": 1,
     "en él nos alegramos": 1,
     "goce": 2,
-    "gozó": 1,
     "gózate": 1,
-    "hacía alegrías": 1,
+    "haciéndole alegrarse": 2,
     "has alegrado": 1,
     "les había dado gozo": 1,
     "lo alegra": 1,
@@ -103538,7 +103902,8 @@ export const all_socu = {
     "los había recreado": 3,
     "me alegraré": 1,
     "me alegré": 2,
-    "os alegrasteis": 1,
+    "mío y alegra": 1,
+    "os alegrasteis": 2,
     "para alegrar": 1,
     "para que me goce": 1,
     "parte y goce": 1,
@@ -103550,11 +103915,11 @@ export const all_socu = {
     "que se alegran": 1,
     "se alegra": 1,
     "se alegraron": 1,
-    "se alegrará": 3,
+    "se alegrará": 4,
     "se alegrarán": 3,
-    "se alegren": 3,
+    "se alegren": 4,
     "se alegró": 2,
-    "se gozará": 2,
+    "se gozará": 3,
     "se holgaron": 1,
     "se holgará": 3,
     "se me alegrará": 1,
@@ -103570,7 +103935,7 @@ export const all_socu = {
     "y alegraré": 1,
     "y alegráronse": 1,
     "y alegróse": 2,
-    "y alégrate": 2,
+    "y alégrate": 3,
     "y alégrense": 4,
     "y gocen": 1,
     "y gozaos": 1,
@@ -103585,11 +103950,11 @@ export const all_socu = {
     "y regocijó": 1,
     "y regocíjese": 1,
     "y se alegrará": 1,
-    "y se alegrarán": 3,
+    "y se alegrarán": 4,
     "y se alegre": 1,
     "y se gozarán": 1,
     "y se huelgan": 1,
-    "y te alegrarás": 3,
+    "y te alegrarás": 4,
     "y te gozaste": 1,
     "y te holgaste": 1,
     "yo me alegré": 1,
@@ -103604,7 +103969,6 @@ export const all_socu = {
     "los que eran alegres": 1,
     "que se alegran": 1,
     "se alegran": 1,
-    "y alegraráse": 1,
     "y alegrándose": 1,
     "y el que se alegra": 1,
     "y hacían": 1,
@@ -103659,9 +104023,9 @@ export const all_socu = {
     "yo la alegría": 1
   },
   "H8058": {
-    "abajo y ellos la echaron": 2,
+    "abajo y ellos la echaron": 3,
     "daban sacudidas": 1,
-    "echadla": 2,
+    "echadla": 3,
     "la dejarás vacante y soltarás": 1,
     "perdonará": 1,
     "se desmandaban": 1,
@@ -103800,7 +104164,7 @@ export const all_socu = {
   },
   "H8070": {
     "semiramoth": 3,
-    "y semiramoth": 1
+    "y semiramoth": 2
   },
   "H8071": {
     "aquél el vestido": 1,
@@ -103814,11 +104178,11 @@ export const all_socu = {
     "qué vestir": 1,
     "ropa": 1,
     "ropas": 1,
-    "sus ropas": 1,
+    "sus ropas": 2,
     "sus vestidos": 5,
     "también de su vestido": 1,
     "tu vestido": 1,
-    "tus vestidos": 1,
+    "tus vestidos": 2,
     "una ropa": 1,
     "vestidos": 1,
     "vuestros vestidos": 1,
@@ -103828,6 +104192,9 @@ export const all_socu = {
   "H8072": {
     "samla": 3,
     "también samla": 1
+  },
+  "H8073": {
+    "de samlai": 1
   },
   "H8074": {
     "asolada": 3,
@@ -103842,7 +104209,7 @@ export const all_socu = {
     "de su asolamiento": 1,
     "delicadamente asolados": 1,
     "desierta": 1,
-    "destruídos": 2,
+    "destruídos": 3,
     "el pueblo asolado": 2,
     "ella se espantará": 1,
     "ella se maravillará": 2,
@@ -103858,7 +104225,6 @@ export const all_socu = {
     "fuere asolada": 1,
     "fueron asolados": 1,
     "fué asolada": 1,
-    "fué desolada": 1,
     "han asolado": 1,
     "has tú asolado": 1,
     "las asoladas": 1,
@@ -104083,7 +104449,7 @@ export const all_socu = {
     "antes de oir": 1,
     "asimismo que oigas": 3,
     "así oye": 1,
-    "así que oyereis": 1,
+    "así que oyereis": 2,
     "atended": 1,
     "atendieron": 1,
     "atendió": 2,
@@ -104205,7 +104571,7 @@ export const all_socu = {
     "haré oir": 1,
     "has de escucharme": 1,
     "has obedecido": 1,
-    "has oído": 9,
+    "has oído": 10,
     "has querido oir": 1,
     "hase oído": 1,
     "hay quien enseñe": 2,
@@ -104326,7 +104692,7 @@ export const all_socu = {
     "os escuchará": 1,
     "os las haré notorias": 1,
     "oscura de entender": 1,
-    "oye": 64,
+    "oye": 65,
     "oye censuras": 1,
     "oye mi": 1,
     "oye mi oración": 1,
@@ -104339,7 +104705,7 @@ export const all_socu = {
     "oyereis": 13,
     "oyeren": 5,
     "oyeres": 11,
-    "oyeron": 34,
+    "oyeron": 35,
     "oyes": 1,
     "oyéndolo": 1,
     "oyéndome": 1,
@@ -104610,7 +104976,7 @@ export const all_socu = {
     "y de simi": 1,
     "y semei": 4,
     "y simei": 1,
-    "y simi": 8,
+    "y simi": 7,
     "á semei": 9,
     "á simi": 1
   },
@@ -105066,8 +105432,8 @@ export const all_socu = {
   },
   "H8128": {
     "la cual tenía unos dientes": 1,
-    "sus dientes": 1,
-    "tenía dientes": 1
+    "sus dientes": 2,
+    "tenía dientes": 2
   },
   "H8129": {
     "y sen": 1
@@ -105078,7 +105444,7 @@ export const all_socu = {
     "y de aschênaz": 1
   },
   "H8130": {
-    "aborrece": 8,
+    "aborrece": 9,
     "aborreced": 2,
     "aborrecedor": 1,
     "aborrecen": 2,
@@ -105135,7 +105501,7 @@ export const all_socu = {
     "los que os aborrecen": 1,
     "los que te aborrecen": 2,
     "malicioso será aborrecido": 1,
-    "mas el que aborrece": 3,
+    "mas el que aborrece": 4,
     "me aborrecen": 1,
     "me aborreces": 1,
     "me aborrecían": 1,
@@ -105176,7 +105542,7 @@ export const all_socu = {
     "á mí pues que me habéis aborrecido": 1
   },
   "H8131": {
-    "sea para tus enemigos": 1
+    "sea para tus enemigos": 2
   },
   "H8132": {
     "se ha demudado": 1,
@@ -105195,8 +105561,8 @@ export const all_socu = {
     "sea mudado": 1,
     "será más grande": 1,
     "sus colores": 1,
-    "tan diferente": 2,
-    "y demudóse": 1,
+    "tan diferente": 1,
+    "y demudóse": 2,
     "y era muy diferente": 1,
     "y él es el que muda": 1
   },
@@ -105258,7 +105624,7 @@ export const all_socu = {
     "acabarse el año": 1,
     "al cabo del séptimo año": 2,
     "aquel año": 1,
-    "año": 115,
+    "año": 116,
     "años": 622,
     "años en el año": 1,
     "cada": 2,
@@ -105280,6 +105646,7 @@ export const all_socu = {
     "de suyo y el año": 6,
     "de un año": 29,
     "del año": 13,
+    "del tiempo": 1,
     "del tiempo de años": 1,
     "desde el año": 7,
     "disminuirás": 2,
@@ -105290,7 +105657,7 @@ export const all_socu = {
     "el primer año": 1,
     "en año": 2,
     "en bien y sus años": 1,
-    "en el año": 95,
+    "en el año": 96,
     "en el primer año": 2,
     "en el segundo": 1,
     "en el tercer año": 1,
@@ -105304,7 +105671,7 @@ export const all_socu = {
     "está el año": 2,
     "ezechîas este año": 3,
     "fueron los años": 4,
-    "fué el año": 3,
+    "fué el año": 4,
     "los años": 13,
     "los meses del año": 1,
     "mas los años": 1,
@@ -105417,7 +105784,7 @@ export const all_socu = {
     "está en la segunda": 1,
     "ha segunda": 1,
     "habrá segundo": 1,
-    "la otra": 10,
+    "la otra": 8,
     "la segunda": 11,
     "lado": 1,
     "lados de la otra": 1,
@@ -105507,7 +105874,7 @@ export const all_socu = {
     "desamparada de sus dos": 2,
     "doce": 85,
     "donde había doce": 2,
-    "dos": 218,
+    "dos": 219,
     "duodécimo": 14,
     "el aceituno dos": 1,
     "el doble": 3,
@@ -105576,7 +105943,6 @@ export const all_socu = {
     "pues ellas dos": 1,
     "pues los dos": 1,
     "que ambas": 1,
-    "que ambos": 1,
     "que eran doce": 1,
     "que hubo dos": 1,
     "que las dos": 2,
@@ -105984,7 +106350,7 @@ export const all_socu = {
     "por la puerta": 13,
     "por las puertas": 8,
     "por porteros": 1,
-    "por sus puertas": 2,
+    "por sus puertas": 3,
     "por tus puertas": 1,
     "puerta": 5,
     "puertas": 19,
@@ -106141,7 +106507,7 @@ export const all_socu = {
     "el lenguaje": 1,
     "el término": 1,
     "en la orilla": 4,
-    "en los labios": 2,
+    "en los labios": 3,
     "en sus labios": 1,
     "en tus labios": 3,
     "era de la hechura del borde": 2,
@@ -106192,7 +106558,7 @@ export const all_socu = {
     "y con sus labios": 2,
     "y el borde": 2,
     "y el loco de labios": 1,
-    "y en sus labios": 1,
+    "y en sus labios": 2,
     "y mis labios": 1,
     "y tus labios": 4,
     "á la costa": 1,
@@ -106315,7 +106681,7 @@ export const all_socu = {
     "os juzgaré": 1,
     "os tengo de juzgar": 1,
     "oyen en juicio": 1,
-    "para juzgar": 5,
+    "para juzgar": 6,
     "por jueces": 1,
     "por juez": 1,
     "que es el juez": 2,
@@ -106455,7 +106821,7 @@ export const all_socu = {
     "fué derramada": 2,
     "ha derramado": 1,
     "habré derramado": 2,
-    "han derramado": 1,
+    "han derramado": 2,
     "has derramado": 2,
     "heme escurrido": 1,
     "la derramarás": 2,
@@ -106472,7 +106838,7 @@ export const all_socu = {
     "que derramaron": 1,
     "que derramaría": 1,
     "que fué derramada": 1,
-    "resbalaron": 1,
+    "resbalaron": 2,
     "se derramó": 1,
     "sea derramada sangre": 1,
     "será derramada": 3,
@@ -106819,7 +107185,7 @@ export const all_socu = {
     "quieto": 1,
     "reposado": 2,
     "reposarás": 1,
-    "reposaréme": 1,
+    "reposaréme": 2,
     "reposo": 1,
     "reposó": 1,
     "sosegarse": 1,
@@ -106853,7 +107219,7 @@ export const all_socu = {
     "siclos": 1,
     "y pesaron": 1,
     "y pesé": 1,
-    "y peséles": 1,
+    "y peséles": 2,
     "y pesó": 2,
     "y yo pesaré": 1,
     "él le pesará": 1
@@ -107280,7 +107646,7 @@ export const all_socu = {
     "de ellos quien quede vivo": 1,
     "ha hecho que el que quedó": 1,
     "lo que quedare": 1,
-    "los que le quedaren": 1,
+    "los que le quedaren": 2,
     "los que quedaban": 1,
     "muy cortos residuos": 1,
     "ni quedase vivo": 1,
@@ -107351,7 +107717,7 @@ export const all_socu = {
     "y á ascalón": 1
   },
   "H8310": {
-    "sarsechim": 4
+    "sarsechim": 2
   },
   "H8311": {
     "que tenga de más ó de menos": 1,
@@ -107572,7 +107938,7 @@ export const all_socu = {
     "os dirán bienaventurados": 1,
     "porque los gobernadores": 2,
     "restituid": 1,
-    "sea bienaventurado": 1,
+    "sea bienaventurado": 2,
     "vayas": 1,
     "y andad": 1,
     "y bienaventurados": 1,
@@ -107660,7 +108026,7 @@ export const all_socu = {
     "de lino": 21,
     "de mármol": 2,
     "eran de lino": 1,
-    "fué lino": 1,
+    "fué lino": 2,
     "lino fino": 1,
     "sus cortinas de lino": 1,
     "y de lino": 1,
@@ -107730,7 +108096,7 @@ export const all_socu = {
     "y los seiscientos": 2,
     "y otros doce": 2,
     "y reinó dieciséis años": 1,
-    "y seis": 44,
+    "y seis": 45,
     "y seiscientos": 10,
     "y simi seis": 1,
     "y tenía de altura seis": 1,
@@ -108013,7 +108379,7 @@ export const all_socu = {
     "hay": 1,
     "hay que": 3,
     "he aquí que": 3,
-    "he conforme á todo lo que": 2,
+    "he conforme á todo lo que": 3,
     "hecho que": 1,
     "hice que": 3,
     "hizo que": 1,
@@ -108139,7 +108505,7 @@ export const all_socu = {
     "pues es lo que": 2,
     "pues lo que": 1,
     "pues que": 11,
-    "que": 3767,
+    "que": 3768,
     "que compusiere": 2,
     "que contra": 1,
     "que cuando": 3,
@@ -108648,11 +109014,11 @@ export const all_socu = {
     "de las cámaras": 2,
     "la cámara": 1,
     "las cámaras": 3,
-    "sus cámaras": 1,
+    "sus cámaras": 2,
     "y cada cámara": 2,
     "y cada cámara tenía": 2,
-    "y eran sus cámaras": 1,
-    "y sus cámaras": 2,
+    "y eran sus cámaras": 2,
+    "y sus cámaras": 4,
     "á la cámara": 1
   },
   "H8373": {
@@ -108836,7 +109202,7 @@ export const all_socu = {
     "prudente": 1,
     "tiene sentido": 1,
     "y con prudencia": 1,
-    "y con su entendimiento": 1,
+    "y con su entendimiento": 2,
     "y con tu prudencia": 1,
     "y de inteligencia": 1,
     "y de su entendimiento": 1,
@@ -108981,10 +109347,10 @@ export const all_socu = {
     "el abismo": 5,
     "escudriñando el abismo": 1,
     "los abismos": 7,
-    "otro": 1,
+    "otro": 2,
     "por el abismo": 1,
     "por los abismos": 1,
-    "un abismo": 1,
+    "un abismo": 2,
     "y por el abismo": 1,
     "á los abismos": 1,
     "él el abismo": 1
@@ -108996,7 +109362,7 @@ export const all_socu = {
     "con alabanza": 1,
     "con clamor y con alabanza": 1,
     "crié para mí mis alabanzas": 1,
-    "de alabanza": 2,
+    "de alabanza": 3,
     "de alegría": 1,
     "de las alabanzas": 1,
     "de su alabanza": 2,
@@ -109126,7 +109492,7 @@ export const all_socu = {
     "y de alabanza": 2
   },
   "H8427": {
-    "y escribía": 1
+    "y escribía": 2
   },
   "H8428": {
     "y ponían límite": 1
@@ -109162,13 +109528,13 @@ export const all_socu = {
     "en el medio": 1,
     "en ellos en medio": 1,
     "en la mitad": 2,
-    "en medio": 136,
+    "en medio": 137,
     "en mitad": 3,
     "encerrados en medio": 1,
     "entre": 30,
     "es en medio": 1,
     "estaba en medio": 1,
-    "estará en medio": 1,
+    "estará en medio": 2,
     "estarán en medio": 1,
     "estuvieren en medio": 2,
     "está en medio": 9,
@@ -109255,7 +109621,7 @@ export const all_socu = {
     "sus descendencias": 1
   },
   "H8436": {
-    "y tilón": 1
+    "y tilón": 2
   },
   "H8438": {
     "como el carmesí": 1,
@@ -109288,7 +109654,7 @@ export const all_socu = {
     "de los tholaitas": 1
   },
   "H8441": {
-    "abomina": 1,
+    "abomina": 2,
     "abominable": 3,
     "abominaciones": 19,
     "abominación": 24,
@@ -109347,7 +109713,7 @@ export const all_socu = {
     "salir": 1,
     "son las salidas": 1,
     "términos": 1,
-    "y sale": 4,
+    "y sale": 5,
     "y sale este término": 1,
     "y serán las salidas": 1,
     "y serán sus remates": 1,
@@ -109483,6 +109849,7 @@ export const all_socu = {
     "de sólida sabiduría": 1,
     "la ley": 1,
     "la sabiduría": 1,
+    "mi sustancia": 1,
     "negocio": 1,
     "sabiduría": 1,
     "valor que la hacienda": 1,
@@ -109494,7 +109861,7 @@ export const all_socu = {
   },
   "H8457": {
     "en tus fornicaciones": 2,
-    "fornicaciones": 7,
+    "fornicaciones": 9,
     "fornicación": 3,
     "que ella y sus fornicaciones": 1,
     "sus fornicaciones": 5,
@@ -109503,7 +109870,7 @@ export const all_socu = {
   "H8458": {
     "con ingenio": 1,
     "consejo": 1,
-    "designios": 1,
+    "designios": 2,
     "mas los consejos": 1,
     "y con industria": 1
   },
@@ -109600,7 +109967,7 @@ export const all_socu = {
   "H8471": {
     "en taphnes": 2,
     "taphnes": 1,
-    "y de taphnes": 1,
+    "y de taphnes": 2,
     "y en taphnes": 2,
     "y en tehaphnes": 1
   },
@@ -109642,21 +110009,21 @@ export const all_socu = {
     "de debajo": 11,
     "de ellos de debajo": 1,
     "de su lugar": 1,
-    "de su parte": 1,
+    "de su parte": 2,
     "de tus brazos debajo": 2,
     "de él debajo": 1,
-    "debajo": 170,
+    "debajo": 171,
     "delante": 1,
     "donde": 1,
     "en": 1,
-    "en aquel mismo sitio": 1,
+    "en aquel mismo sitio": 2,
     "en el mismo lugar": 1,
-    "en lugar": 83,
+    "en lugar": 84,
     "en mi poder": 1,
     "en pago": 1,
     "en poca gente en lugar": 1,
     "en su asiento": 1,
-    "en su lugar": 60,
+    "en su lugar": 59,
     "en sus lugares": 2,
     "en vez": 9,
     "en vuestro lugar": 1,
@@ -109712,7 +110079,7 @@ export const all_socu = {
     "y acá abajo": 1,
     "y chimeneas hechas abajo": 1,
     "y ciñósele debajo": 1,
-    "y debajo": 25,
+    "y debajo": 26,
     "y en lugar": 16,
     "y en mi asiento": 1,
     "y en que había ocupado debajo": 1,
@@ -110039,7 +110406,7 @@ export const all_socu = {
   },
   "H8523": {
     "el tercero": 1,
-    "tercer": 1
+    "tercer": 2
   },
   "H8524": {
     "y sublime": 1
@@ -110068,92 +110435,78 @@ export const all_socu = {
   "H853": {
     "abonas tu": 2,
     "acá tu": 6,
-    "adquirida de": 1,
-    "adulteró contra él": 1,
     "asimismo tu": 1,
-    "con": 176,
+    "con": 161,
     "con tus": 2,
     "con vosotros": 2,
     "con él": 1,
     "concerté con vosotros": 1,
-    "conmigo": 1,
     "conoce empero tu": 1,
-    "contigo": 5,
-    "contra": 7,
+    "contigo": 4,
+    "contra": 5,
     "contra ti": 4,
     "cuando clamares líbrente tus": 1,
     "cuando recibirás á tus": 3,
     "cuando te": 1,
-    "de": 21,
-    "de ellos": 7,
+    "de": 13,
+    "de ellos": 2,
     "de ellos contra": 1,
-    "de entre": 6,
-    "de faraón": 3,
+    "de entre": 3,
+    "de faraón": 2,
     "de la cabeza de tu": 2,
     "de la muchedumbre de tu": 1,
     "de leví contigo": 2,
-    "de los": 5,
+    "de los": 3,
     "de mi": 2,
-    "de mí": 2,
-    "de parte": 7,
-    "de ti": 11,
+    "de parte": 1,
+    "de ti": 6,
     "de tu": 32,
     "de tus": 8,
     "de vosotros": 1,
-    "de él": 1,
-    "de él alguna": 3,
-    "de él con tus": 1,
-    "deshechó tus": 1,
+    "de él alguna": 2,
     "dió cargo de": 2,
     "el que te": 2,
-    "ellos": 2,
+    "ellos": 1,
     "ellos tus": 1,
-    "en": 2,
     "en ti": 5,
     "en tu": 4,
     "enormidad y tus": 2,
-    "entre": 3,
-    "envuelta en tu": 2,
+    "entre": 2,
+    "envuelta en tu": 1,
     "era con": 1,
     "es poco esto de tus": 2,
-    "es tu": 4,
+    "es tu": 3,
     "estaba con": 3,
     "estaba junto": 2,
-    "estaban con": 12,
-    "estas": 3,
+    "estaban con": 11,
+    "estas": 2,
     "está con": 2,
-    "está en él": 1,
-    "están con": 1,
     "forzó en ti": 2,
     "hablaba con": 2,
     "has llevado tu": 2,
-    "junto": 4,
+    "junto": 2,
     "la con": 2,
     "la cual te": 1,
     "la suciedad de tu": 1,
-    "luego me": 1,
-    "mas su secreto es con": 1,
+    "luego me": 2,
     "mas tú": 2,
     "me": 2,
     "mi": 2,
     "más bien que á tu": 1,
     "mía tu": 1,
     "para que guardes tu": 2,
-    "para ti": 1,
     "para tu": 1,
-    "parte": 1,
     "pasaren con": 2,
     "pongas tu": 1,
-    "por": 3,
+    "por": 2,
     "por el cual": 5,
-    "por mí con": 2,
+    "por mí con": 1,
     "por tus": 2,
     "pues es tu": 1,
-    "que": 1,
-    "que le": 2,
+    "que le": 1,
     "que tu": 1,
     "se hartó tu": 2,
-    "se le": 5,
+    "se le": 4,
     "según tus": 2,
     "sino á ti": 1,
     "sobre": 1,
@@ -110161,52 +110514,50 @@ export const all_socu = {
     "suciedad y tus": 3,
     "suertes con": 1,
     "sus": 1,
-    "te": 24,
-    "ti": 27,
+    "te": 23,
+    "ti": 26,
     "tienes": 1,
     "trasquila tu": 1,
-    "tu": 65,
-    "tus": 52,
+    "tu": 63,
+    "tus": 50,
     "tuya": 2,
     "tuyo": 4,
-    "tú": 15,
+    "tú": 14,
+    "venía con": 1,
     "visitará porque tú": 1,
     "volviéronse": 2,
     "vosotros y con": 1,
     "vuestros": 1,
     "y acordarte has de tus": 3,
-    "y con": 10,
+    "y con": 9,
     "y cuanto": 1,
     "y de con los": 2,
-    "y de ellos": 2,
+    "y de ellos": 1,
     "y descubriréles tu": 4,
-    "y ellos se partieron de él": 1,
     "y estaba allí": 1,
-    "y fuese de él": 1,
     "y las": 2,
     "y me": 3,
-    "y sentencióle": 3,
+    "y sentencióle": 2,
     "y te": 11,
     "y tu": 9,
-    "y tus": 9,
+    "y tus": 8,
     "y tú": 4,
     "y tú juntarás en tu": 5,
     "y á los que te": 2,
     "y á tu": 4,
     "y á tus": 1,
-    "yo": 2,
+    "yo": 1,
     "yo te": 1,
     "á ellos": 5,
     "á la fosa con": 1,
     "á los": 4,
     "á mí y á ti": 3,
-    "á otro que á mí": 1,
     "á ti": 6,
     "á ti con": 1,
     "á tu": 11,
     "á tus": 6,
     "él con": 5,
-    "ésta": 2
+    "ésta": 1
   },
   "H8531": {
     "fuese el tercer": 1,
@@ -110276,8 +110627,8 @@ export const all_socu = {
     "aquél en": 1,
     "bien que tú estarás conmigo": 1,
     "comió con": 1,
-    "con": 196,
-    "con ellos": 2,
+    "con": 192,
+    "con ellos": 1,
     "con mi": 2,
     "con nosotros": 1,
     "con su": 1,
@@ -110286,11 +110637,10 @@ export const all_socu = {
     "con él": 5,
     "concertara con": 2,
     "conmigo": 36,
-    "consigo": 8,
-    "contigo": 67,
+    "consigo": 7,
+    "contigo": 64,
     "contigo mi": 1,
     "contra": 6,
-    "contra ti": 2,
     "convengamos": 1,
     "de": 1,
     "de ellos": 2,
@@ -110298,8 +110648,7 @@ export const all_socu = {
     "de leví contigo": 1,
     "de mí": 1,
     "de parte": 1,
-    "de plata á tu": 2,
-    "de que": 1,
+    "de plata á tu": 1,
     "de tu": 2,
     "de vuestros": 2,
     "de zeboim y contra": 2,
@@ -110316,7 +110665,7 @@ export const all_socu = {
     "es con": 2,
     "es conmigo": 1,
     "es junto": 1,
-    "estaba con": 6,
+    "estaba con": 7,
     "estaban": 1,
     "estaban con": 3,
     "estaban de su": 1,
@@ -110326,13 +110675,13 @@ export const all_socu = {
     "estoy contigo": 1,
     "está cerca": 1,
     "está con": 8,
-    "está conmigo": 3,
+    "está conmigo": 2,
     "está contigo": 2,
     "está delante": 2,
     "está junto": 1,
-    "están con": 5,
+    "están con": 3,
     "están conmigo": 1,
-    "están contigo": 6,
+    "están contigo": 4,
     "fuere con": 2,
     "fuere conmigo": 1,
     "fueron contigo": 1,
@@ -110363,19 +110712,14 @@ export const all_socu = {
     "pasada con": 1,
     "pelear conmigo": 1,
     "peregrinare contigo": 1,
-    "por": 3,
-    "por mí mismo": 1,
-    "por tanto": 1,
+    "por": 2,
+    "por mí mismo": 2,
     "pues con ellos": 1,
-    "que con": 4,
-    "que concerté contigo": 1,
+    "que con": 5,
     "que contra": 1,
     "que peregrinare entre": 1,
     "que su salario viene con él": 1,
-    "que tu tiempo": 1,
-    "que tú": 1,
     "que yo": 1,
-    "quitarte han tu": 1,
     "quién": 2,
     "sabe conmigo": 1,
     "sales ni aun uno quede contigo": 1,
@@ -110385,19 +110729,18 @@ export const all_socu = {
     "será conmigo": 1,
     "serás con": 2,
     "seré contigo": 1,
-    "siéndoles tú": 1,
     "son con": 1,
     "soy con": 3,
-    "soy contigo": 6,
+    "soy contigo": 5,
     "también de sí": 1,
-    "te": 4,
+    "te": 3,
     "tenemos": 1,
     "tenía": 1,
     "tenía consigo": 4,
-    "ti": 5,
+    "ti": 2,
     "traía consigo": 1,
-    "tu": 5,
-    "tus": 3,
+    "tu": 2,
+    "tus": 1,
     "tú conmigo": 1,
     "viene conmigo": 1,
     "vosotros los que tenéis": 2,
@@ -110414,11 +110757,10 @@ export const all_socu = {
     "y los que tenéis": 2,
     "y moró": 1,
     "y nos": 1,
-    "y para con": 2,
+    "y para con": 1,
     "y si fortaleciere en lo alto su fuerza de mí": 1,
-    "y te": 3,
-    "y tu": 2,
-    "y tus": 2,
+    "y te": 2,
+    "y tu": 1,
     "y vuestro acuerdo con": 2,
     "y á tu": 1,
     "yo": 1,
@@ -110604,6 +110946,7 @@ export const all_socu = {
     "se consumirá": 1,
     "se consumió": 1,
     "se gastase": 1,
+    "se ha consumido": 1,
     "sean consumidos": 2,
     "ser consumidos": 1,
     "será consumido": 1,
@@ -110684,7 +111027,7 @@ export const all_socu = {
     "y de palmas": 3,
     "y las palmas": 2,
     "y palmas": 6,
-    "y sus palmas": 1
+    "y sus palmas": 2
   },
   "H8562": {
     "aromáticas y afeites": 1,
@@ -110803,8 +111146,7 @@ export const all_socu = {
     "para que se torne culebra": 1,
     "volvieron culebras": 1,
     "y al dragón": 1,
-    "y chacales": 1,
-    "y eres como la ballena": 1
+    "y chacales": 1
   },
   "H8578": {
     "segunda": 1
@@ -110965,7 +111307,7 @@ export const all_socu = {
     "como": 1,
     "como te": 1,
     "como tu": 2,
-    "como tú": 5,
+    "como tú": 6,
     "como vosotros": 1,
     "como vuestros": 1,
     "con tal que vosotros": 1,
@@ -110982,13 +111324,13 @@ export const all_socu = {
     "contigo": 8,
     "contra ti": 2,
     "contra vosotros": 3,
-    "conturbada y tú": 1,
+    "conturbada y tú": 2,
     "cuando tú": 2,
     "de delante de tu": 1,
     "de ellos": 1,
     "de entre vosotros": 1,
     "de fundición vosotros": 1,
-    "de los hijos de tus": 1,
+    "de los hijos de tus": 2,
     "de mí por tu": 1,
     "de nuestros": 1,
     "de pobreza tú": 1,
@@ -110998,10 +111340,10 @@ export const all_socu = {
     "de ti cuando": 1,
     "de ti cuando tú estabas": 1,
     "de ti mi": 1,
-    "de tu": 73,
+    "de tu": 74,
     "de tus": 22,
     "de tí": 1,
-    "de vosotros": 7,
+    "de vosotros": 8,
     "de vuestra": 5,
     "de vuestras": 4,
     "de vuestro": 10,
@@ -111013,7 +111355,7 @@ export const all_socu = {
     "después de ti": 1,
     "dios tú": 1,
     "ellos y que": 3,
-    "ellos y tú": 2,
+    "ellos y tú": 4,
     "empero por tus": 1,
     "empero tú": 2,
     "empero vosotros": 2,
@@ -111228,7 +111570,7 @@ export const all_socu = {
     "sois": 1,
     "sois vosotros": 2,
     "solo": 1,
-    "solo tú": 4,
+    "solo tú": 6,
     "somos tus": 1,
     "somos vuestras": 1,
     "soy tu": 1,
@@ -111238,7 +111580,7 @@ export const all_socu = {
     "también la tuya": 1,
     "también tú": 1,
     "también y tus": 1,
-    "te": 69,
+    "te": 71,
     "te hallas entre": 2,
     "te hartarás y tu": 1,
     "te has confirmado á tu": 1,
@@ -111249,16 +111591,16 @@ export const all_socu = {
     "tienes tú": 3,
     "tomaos": 1,
     "tomarás logro mas de tu": 1,
-    "tu": 183,
+    "tu": 185,
     "tu siervo": 1,
     "tu séquito": 1,
-    "tus": 38,
+    "tus": 39,
     "tus atavíos": 1,
     "tuviste tú": 1,
     "tuya": 2,
     "tuyo": 4,
     "tuyos": 1,
-    "tú": 405,
+    "tú": 408,
     "tú eres": 3,
     "tú eres nuestro": 1,
     "tú pues": 1,
@@ -111311,7 +111653,7 @@ export const all_socu = {
     "y tus": 31,
     "y tú": 102,
     "y tú allega á ti": 1,
-    "y tú destruída": 1,
+    "y tú destruída": 2,
     "y tú mismo": 1,
     "y tú procuras": 1,
     "y vendrás tú": 1,
@@ -111649,7 +111991,7 @@ export const all_socu = {
   },
   "H862": {
     "de las otras": 2,
-    "de él y las cámaras": 1,
+    "de él y las cámaras": 2,
     "estaban las cámaras las unas": 2,
     "las galerías": 1,
     "y las cámaras": 1
@@ -111669,6 +112011,9 @@ export const all_socu = {
   "H8622": {
     "a la vuelta": 1
   },
+  "H8623": {
+    "más fuerte": 1
+  },
   "H8624": {
     "fuerte": 1,
     "fuertes": 1,
@@ -111687,7 +112032,7 @@ export const all_socu = {
     "y fuí restituído": 1
   },
   "H8628": {
-    "andando y tocando": 2,
+    "andando y tocando": 3,
     "batid": 1,
     "batirán": 1,
     "de su dios y colgaron": 1,
@@ -111704,7 +112049,7 @@ export const all_socu = {
     "plantó": 2,
     "pondrán": 1,
     "que se tañerá": 1,
-    "que tocaban": 2,
+    "que tocaban": 3,
     "tocaban": 1,
     "tocad": 5,
     "tocar": 1,
@@ -111774,8 +112119,8 @@ export const all_socu = {
   },
   "H8636": {
     "aumento": 2,
-    "ni aumento": 1,
-    "y crecido interés": 1,
+    "ni aumento": 2,
+    "y crecido interés": 2,
     "y logro": 1
   },
   "H8639": {
@@ -112287,7 +112632,7 @@ export const all_socu = {
     "en comparación de la desleal": 1,
     "en el prevaricador": 1,
     "habría negado": 1,
-    "habías de desobedecer": 1,
+    "habías de desobedecer": 2,
     "han mentido": 1,
     "han prevaricado": 4,
     "haráse": 4,
@@ -112301,7 +112646,7 @@ export const all_socu = {
     "prevaricaron": 2,
     "prevaricasteis": 2,
     "prevaricó": 1,
-    "que desleal": 1,
+    "que desleal": 2,
     "quiebra la fe": 2,
     "qué menospreciaremos": 1,
     "resueltamente se rebelaron": 2,
@@ -112374,7 +112719,7 @@ export const all_socu = {
     "sus vestiduras": 4,
     "sus vestimentas": 2,
     "también los vestidos": 1,
-    "trabando de sus vestidos": 1,
+    "trabando de sus vestidos": 2,
     "tu ropa": 1,
     "tus vestidos": 7,
     "un paño": 2,
@@ -112428,7 +112773,6 @@ export const all_socu = {
     "además": 7,
     "además las varas": 1,
     "aquellas varas": 2,
-    "callaré sus miembros": 1,
     "comerá": 2,
     "como sus barras": 1,
     "de las barras": 2,
@@ -112761,7 +113105,7 @@ export const all_socu = {
     "así también traerá": 2,
     "así trajeron": 1,
     "así vendrá": 3,
-    "así venían": 2,
+    "así venían": 3,
     "caerán": 1,
     "cercada": 1,
     "cogió": 2,
@@ -112878,7 +113222,7 @@ export const all_socu = {
     "en la paz le vendrá": 1,
     "en llegando": 1,
     "en un carro y trajéronlo": 1,
-    "en venirme": 1,
+    "en venirme": 2,
     "en vuestra presencia entrad": 1,
     "en él para irse": 2,
     "engolfaron": 1,
@@ -113011,11 +113355,11 @@ export const all_socu = {
     "he aquí que vienen": 1,
     "he aquí que yo traigo": 4,
     "he aquí traeré": 1,
-    "he aquí traigo": 1,
+    "he aquí traigo": 2,
     "he aquí vengo": 1,
     "he aquí viene": 2,
     "he aquí vienen": 2,
-    "he aquí yo traigo": 6,
+    "he aquí yo traigo": 7,
     "he de traer": 1,
     "he entrado": 2,
     "he puesto": 2,
@@ -113158,7 +113502,7 @@ export const all_socu = {
     "os introduzco": 1,
     "os llevo": 2,
     "para aquél que le había venido": 3,
-    "para entrar": 10,
+    "para entrar": 11,
     "para entrarme": 1,
     "para ir": 2,
     "para irse": 2,
@@ -113309,7 +113653,7 @@ export const all_socu = {
     "se iba á poner": 1,
     "se irá": 1,
     "se juntaron vinieron": 1,
-    "se le puso": 1,
+    "se le puso": 2,
     "se llegará": 1,
     "se meterán": 1,
     "se metiere": 1,
@@ -113334,7 +113678,7 @@ export const all_socu = {
     "si vinieren": 2,
     "si yo trajere": 1,
     "sin duda": 2,
-    "sobrevenido": 1,
+    "sobrevenido": 2,
     "solían venir": 1,
     "someted": 1,
     "sometiere": 1,
@@ -113373,7 +113717,7 @@ export const all_socu = {
     "traerála": 1,
     "traerán": 5,
     "traerás": 2,
-    "traeré": 13,
+    "traeré": 15,
     "traeréis": 4,
     "traeríamos": 1,
     "traigan": 4,
@@ -113442,7 +113786,7 @@ export const all_socu = {
     "viniendo": 14,
     "viniera": 2,
     "vinieran": 1,
-    "viniere": 15,
+    "viniere": 16,
     "viniereis": 1,
     "vinieren": 1,
     "vinieres": 1,
@@ -113455,7 +113799,7 @@ export const all_socu = {
     "viniste": 5,
     "vinisteis": 1,
     "viniéronse": 5,
-    "vino": 138,
+    "vino": 141,
     "vino la cuenta": 1,
     "vino á rama y llegando": 1,
     "volved": 1,
@@ -113613,7 +113957,7 @@ export const all_socu = {
     "y os he de traer": 1,
     "y os he traído": 1,
     "y os introduciré": 1,
-    "y os introduje": 2,
+    "y os introduje": 3,
     "y os meteré": 1,
     "y os traeré": 3,
     "y para entrar": 1,
@@ -113636,12 +113980,12 @@ export const all_socu = {
     "y tornaron": 1,
     "y traed": 4,
     "y traedme": 1,
-    "y traerlos": 1,
+    "y traerlos": 2,
     "y traerá": 5,
     "y traerán": 3,
     "y traeránlos": 1,
     "y traerás": 1,
-    "y traeré": 7,
+    "y traeré": 8,
     "y traerélos": 2,
     "y trajeron": 10,
     "y trajisteis": 2,
@@ -113667,7 +114011,7 @@ export const all_socu = {
     "y tú las llevarás": 1,
     "y ve": 1,
     "y ven": 2,
-    "y vendrá": 17,
+    "y vendrá": 18,
     "y vendrán": 18,
     "y vendrás": 6,
     "y venga": 1,
@@ -113676,19 +114020,19 @@ export const all_socu = {
     "y venido": 1,
     "y venidos": 1,
     "y venía": 4,
-    "y venían": 3,
+    "y venían": 4,
     "y vete": 2,
     "y viene": 3,
     "y vine": 2,
     "y viniendo": 13,
-    "y viniere": 6,
+    "y viniere": 7,
     "y vinieren": 1,
-    "y vinieron": 71,
+    "y vinieron": 70,
     "y viniesen": 1,
     "y viniste": 1,
     "y viniéronle": 2,
     "y viniéronse": 3,
-    "y vino": 79,
+    "y vino": 80,
     "y vino á ser": 1,
     "y volviendo": 3,
     "y volvió": 6,
@@ -113711,7 +114055,7 @@ export const all_socu = {
     "yo luego viene": 2,
     "yo os traeré": 1,
     "yo traeré": 3,
-    "yo traigo": 4,
+    "yo traigo": 5,
     "yo vine": 1,
     "á absalom el cual vino": 2,
     "á cuestas y vínose": 1,
@@ -113822,7 +114166,7 @@ export const all_socu = {
     "al sepulcro": 9,
     "cisterna": 4,
     "cisternas": 2,
-    "como la fuente": 1,
+    "como la fuente": 2,
     "de la cisterna": 1,
     "de la fosa": 2,
     "de la huesa": 1,
@@ -113854,7 +114198,7 @@ export const all_socu = {
     "y la cisterna": 1,
     "á la cisterna": 2,
     "á la huesa": 1,
-    "á la sepultura": 3
+    "á la sepultura": 4
   },
   "H954": {
     "afrentoso": 1,
@@ -114071,10 +114415,8 @@ export const all_socu = {
     "al mancebo": 1,
     "como el mancebo": 1,
     "de los jóvenes": 1,
-    "de él entresacó": 1,
     "ellos mancebos": 1,
     "en la danza los mozos": 1,
-    "escogidos": 2,
     "hice": 1,
     "joven": 2,
     "los escogidos": 1,
@@ -114095,11 +114437,10 @@ export const all_socu = {
     "y vuestros buenos mancebos": 1,
     "y vuestros mancebos": 1,
     "y á sus mancebos": 1,
-    "á los mancebos": 1,
-    "él delante y á las espaldas escogió": 1
+    "á los mancebos": 1
   },
   "H971": {
-    "sus fortalezas": 1
+    "sus fortalezas": 2
   },
   "H972": {
     "con mi escogido": 1,
@@ -114164,6 +114505,7 @@ export const all_socu = {
     "escogeré": 2,
     "escogida": 2,
     "escogido": 2,
+    "escogidos": 8,
     "escogiendo": 1,
     "escogiera": 1,
     "escogiere": 15,
@@ -114189,13 +114531,15 @@ export const all_socu = {
     "he elegido": 7,
     "he escogido": 5,
     "hete escogido": 1,
+    "hombres escogidos": 2,
     "hubiere escogido": 5,
     "le ha escogido": 1,
-    "los escogidos": 1,
+    "los escogidos": 3,
     "me eligió": 2,
     "me he escogido": 1,
     "más agradable": 1,
-    "más aventajados": 1,
+    "más aventajados": 2,
+    "os ha escogido": 1,
     "os habréis elegido": 1,
     "os habéis elegido": 2,
     "pues has escogido": 1,
@@ -114206,6 +114550,7 @@ export const all_socu = {
     "que yo escogí": 2,
     "que yo he elegido": 1,
     "sino que escogió": 1,
+    "sobre ella y al que fuere escogido": 1,
     "te ha elegido": 1,
     "te ha escogido": 2,
     "tu elegiste": 1,
@@ -114229,7 +114574,7 @@ export const all_socu = {
     "y pues escogieron": 1,
     "y tú jeshurun á quien yo escogí": 1,
     "y yo le escogí": 1,
-    "yo elegí": 1,
+    "yo elegí": 2,
     "yo escogeré": 1,
     "yo escogiere": 1,
     "yo escogí": 2,
@@ -114509,6 +114854,7 @@ export const all_socu = {
     "me atiendes": 1,
     "miré atentamente": 1,
     "necios": 1,
+    "ordena": 1,
     "para conocer": 1,
     "para discernir": 1,
     "para entender": 1,
@@ -114520,7 +114866,7 @@ export const all_socu = {
     "prudente": 4,
     "pues entenderá": 1,
     "pues y pensará": 1,
-    "que enseñaban": 1,
+    "que enseñaban": 2,
     "que entienda": 1,
     "que hacían entender": 1,
     "que él me respondería y entendería": 1,
@@ -114550,7 +114896,7 @@ export const all_socu = {
   },
   "H996": {
     "al anochecer": 1,
-    "codos y": 2,
+    "codos y": 3,
     "de": 2,
     "de convenio entre": 2,
     "de dentro": 1,
@@ -114561,12 +114907,12 @@ export const all_socu = {
     "delante": 2,
     "el heridor y": 2,
     "ellos entre": 3,
-    "empero entre": 2,
+    "empero entre": 3,
     "entonces entre": 2,
     "entre": 311,
     "es mi amiga entre": 2,
     "espigas entre": 1,
-    "estaba entre": 4,
+    "estaba entre": 5,
     "estaban entre": 1,
     "está en": 1,
     "está entre": 6,
@@ -114581,7 +114927,7 @@ export const all_socu = {
     "medio": 2,
     "mí y": 6,
     "mí y entre": 8,
-    "mí y ti entre": 8,
+    "mí y ti entre": 4,
     "oiga entre": 1,
     "para mí y cada": 1,
     "pasó por entre": 1,
@@ -114590,12 +114936,11 @@ export const all_socu = {
     "por medio": 5,
     "que estaba entre": 1,
     "quedó entre": 2,
-    "sea entre": 4,
     "suerte entre": 2,
     "tendrá lugar entre": 1,
     "tenía entre": 1,
     "ti como la hubo entre": 4,
-    "vosotros y": 5,
+    "vosotros y": 6,
     "y": 29,
     "y asimismo entre": 5,
     "y dividido entre": 1,
@@ -114608,7 +114953,7 @@ export const all_socu = {
     "á la caída": 2
   },
   "H997": {
-    "entre": 2
+    "entre": 3
   },
   "H998": {
     "comprendas": 1,
