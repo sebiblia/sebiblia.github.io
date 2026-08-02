@@ -1,4 +1,8 @@
 
+.mode table --charlimit -1
+.mode list
+.headers off
+.separator "|" "\n"
 
 .system echo "IMPORTING FILES"
 

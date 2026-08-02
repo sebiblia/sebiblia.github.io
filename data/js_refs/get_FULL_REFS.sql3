@@ -1,4 +1,10 @@
 
+.mode table --charlimit -1
+.mode list
+.headers off
+.separator "|" "\n"
+
+
 CREATE TABLE IF NOT EXISTS refs (
 	v1 TEXT NOT NULL,
 	v2 TEXT NOT NULL

@@ -1,4 +1,9 @@
 
+.mode table --charlimit -1
+.mode list
+.headers off
+.separator "|" "\n"
+
 CREATE TABLE IF NOT EXISTS roots (
 	cid1 INT NOT NULL,
 	num INT NOT NULL,
