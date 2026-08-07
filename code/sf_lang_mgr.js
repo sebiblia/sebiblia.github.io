@@ -396,17 +396,17 @@ const num2abbr_es = {
 };
 
 const old_crit_txt_en = {
-	WLC: "W. Leningrad Codex (WLC)",
+	WLC: "W. Leningrad Codex OSHB v. (WLC)",
 	ALE: "Aleppo (ALE)",
 	TKH: "Tanakh (TKH)",
-	LXX: "Septuagint (LXX)",
+	LXX: "Septuagint Analitical v. (LXX)",
 };
 
 const old_crit_txt_es = {
-	WLC: "Codex Leningrado W. (WLC)",
+	WLC: "Codex Leningrado W. v. OSHB (WLC)",
 	ALE: "Aleppo (ALE)",
 	TKH: "Tanakh (TKH)",
-	LXX: "Septuaginta (LXX)",
+	LXX: "Septuaginta v. Analitica (LXX)",
 };
 
 const new_crit_txt_en = {
