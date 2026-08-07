@@ -2387,10 +2387,11 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	}
 	
 	let vtxt = "INVALID_BIBLE_TEXT";
+	const has_vstxt = (bibobj.vstxt != null);
 	if(bibobj.vtxt != null){
 		let is_orig = true;
 		vtxt = bibobj.vtxt;
-		if(is_stg_bib){ vtxt = bibobj.vstxt; }
+		if(is_stg_bib && has_vstxt){ vtxt = bibobj.vstxt; }
 		if(! is_LOC && ! is_LOCx){
 			await fill_cri_asc(bibobj);
 			vtxt = bibobj.cri_asc;
@@ -2398,7 +2399,7 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 		} else {
 			await fill_loc_asc(bibobj);
 			vtxt = bibobj.loc_asc;
-			if(is_stg_bib && ! is_LOCx){ vtxt = bibobj.vstxt; }
+			if(is_stg_bib && ! is_LOCx && has_vstxt){ vtxt = bibobj.vstxt; }
 		}
 		if(conv_fn != null){
 			vtxt = conv_fn(vtxt);
