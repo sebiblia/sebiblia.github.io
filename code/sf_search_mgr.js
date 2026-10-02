@@ -27,6 +27,7 @@ const DEBUG_CALC_NXT_PRESENT = false;
 const DEBUG_ADD_SCOD_OCUS = false;
 const DEBUG_PERSISTANCE = false;
 const DEBUG_FORMAT = false;
+const DEBUG_MOUSE = false;
 
 const WITH_AUX_BUTTON = false;
 
@@ -177,6 +178,7 @@ function set_selec(dv_ret, val_sel){
 
 function add_menu(dv_menus, dv_menu, ops_menu, update_fn){
 	dv_menu.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		const all_ops = Object.values(ops_menu);
 		if(dv_menu.get_options_fn != null){
 			dv_menu.get_options_fn(all_ops);
@@ -262,6 +264,7 @@ function init_menus(){
 	
 	const dv_home_tit = document.getElementById("id_home_tit");
 	dv_home_tit.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		go_home_sebib();
 	});		
 		
@@ -318,17 +321,20 @@ function init_menus(){
 	dv_del_expr.classList.add("delete_expr");
 	dv_del_expr.innerHTML = "X";
 	dv_del_expr.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		inp_box.value = "";
 	});		
 	dv_search.appendChild(dv_del_expr);
 	
 	const dv_search_butt = document.getElementById(id_search_butt);
 	dv_search_butt.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		await do_select();
 	});
 
 	const dv_repeat_butt = document.getElementById(id_repeat_butt);
 	dv_repeat_butt.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		const his = gvar.biblang.history;
 		const dv_expr = document.getElementById(id_expression);
 		const idx = his.length - 2;
@@ -342,11 +348,13 @@ function init_menus(){
 
 	const dv_back_butt = document.getElementById(id_back_butt);
 	dv_back_butt.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		back_history();
 	});
 
 	const dv_forward_butt = document.getElementById(id_forward_butt);
 	dv_forward_butt.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		forward_history();
 	});
 
@@ -483,6 +491,31 @@ function init_handlers(){
 	*/
 	
 	window.addEventListener('popstate', pop_history_handler);
+	window.addEventListener('mousedown', (ev1) => {
+		if((ev1.button === 0) && (gvar != null)){
+			gvar.skip_click = false;
+			gvar.during_click = true;
+			if(DEBUG_MOUSE){ console.log('LF_DOWN'); }
+		}
+		if((ev1.button === 2) && (gvar != null)){
+			gvar.skip_click = false;
+			if(DEBUG_MOUSE){ console.log('RG_DOWN'); }
+		}
+	});
+	window.addEventListener('mouseup', (ev1) => {
+		if((ev1.button === 0) && (gvar != null)){
+			gvar.during_click = false;
+			//console.log('CLIKUP');
+			if(DEBUG_MOUSE){ console.log('LF_UP'); }
+		}
+		if((ev1.button === 2) && (gvar != null) && (gvar.during_click)){
+			gvar.skip_click = true;
+			if(DEBUG_MOUSE){ console.log('SKIP_CLICK'); }
+		}
+	});
+	window.addEventListener('contextmenu', (ev1) => {
+		ev1.preventDefault();
+	});
 }
 
 async function forward_history(){
@@ -643,6 +676,7 @@ async function fill_sdefs(bl_obj){
 		dv_scodes.appendChild(dv_def);
 		
 		dv_def.addEventListener('click', function() {
+			if((gvar != null) && gvar.skip_click){ return; }
 			const dv_scod_acts = toggle_scod_actions(dv_def, scod);
 			toggle_scod_full_def(dv_scod_acts, scod);
 			scroll_to_top(dv_def);
@@ -745,6 +779,7 @@ function fill_search_info(bl_obj){
 		dv_prv_chp.innerHTML = gvar.all_msg.prev_chapter;
 		dv_chp_nav.appendChild(dv_prv_chp);
 		dv_prv_chp.addEventListener('click', () => {
+			if((gvar != null) && gvar.skip_click){ return; }
 			go_prev_chapter();
 		});
 		
@@ -753,6 +788,7 @@ function fill_search_info(bl_obj){
 		dv_prv_crono.innerHTML = gvar.all_msg.prev_crono;
 		dv_chp_nav.appendChild(dv_prv_crono);
 		dv_prv_crono.addEventListener('click', () => {
+			if((gvar != null) && gvar.skip_click){ return; }
 			go_prev_crono();
 		});
 		
@@ -773,6 +809,7 @@ function fill_search_info(bl_obj){
 		dv_go.innerHTML = gvar.all_msg.go_to_num_verse;
 		dv_chp_nav.appendChild(dv_go);
 		dv_go.addEventListener('click', () => {
+			if((gvar != null) && gvar.skip_click){ return; }
 			go_verse(dv_num_vrs.value);
 		});
 		
@@ -781,6 +818,7 @@ function fill_search_info(bl_obj){
 		dv_nxt_crono.innerHTML = gvar.all_msg.next_crono;
 		dv_chp_nav.appendChild(dv_nxt_crono);
 		dv_nxt_crono.addEventListener('click', () => {
+			if((gvar != null) && gvar.skip_click){ return; }
 			go_next_crono();
 		});
 		
@@ -789,6 +827,7 @@ function fill_search_info(bl_obj){
 		dv_nxt_chp.innerHTML = gvar.all_msg.next_chapter;
 		dv_chp_nav.appendChild(dv_nxt_chp);
 		dv_nxt_chp.addEventListener('click', () => {
+			if((gvar != null) && gvar.skip_click){ return; }
 			go_next_chapter();
 		});
 	}
@@ -988,6 +1027,7 @@ function check_top_button(dv_tgt, id_ope){
 }
 
 function toggle_pop_menu(){
+	if((gvar != null) && gvar.skip_click){ return; }
 	const dv_pop_sec = document.getElementById("id_pop_opt_sec");
 
 	let dv_pop_men = null;
@@ -1004,6 +1044,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.history;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_history_info();
 		scroll_to_top(document.getElementById(id_history));
 	});
@@ -1015,6 +1056,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.books;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_books_info();
 		scroll_to_top(document.getElementById(id_books));
 	});
@@ -1025,6 +1067,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.copy_link;
 	op.addEventListener('click', async () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		get_href();
 	});
 	start_click(op);
@@ -1036,6 +1079,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.examples;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_lang_examples(gvar.examples);
 		scroll_to_top(document.getElementById(id_examples));
 	});
@@ -1046,6 +1090,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.manual;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		open_manual();
 	});
 	dv_pop_men.appendChild(op);
@@ -1055,6 +1100,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.variables;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_variables_info();
 		scroll_to_top(document.getElementById(id_variables));
 	});
@@ -1066,6 +1112,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.debug;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_dbg_info();
 		scroll_to_top(document.getElementById(id_dbg_data));
 	});
@@ -1077,6 +1124,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.show_link;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_show_link();
 		scroll_to_top(document.getElementById(id_show_link));
 	});
@@ -1087,6 +1135,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.save_result;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		save_result();
 	});
 	start_click(op);
@@ -1097,6 +1146,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.save_history;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		save_history();
 	});
 	start_click(op);
@@ -1108,6 +1158,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.load_history;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_load_history();
 		const dv_ld = document.getElementById(id_load_history);
 		if(dv_ld != null){ dv_ld.scrollIntoView({ behavior: 'smooth', block: 'center'}); }
@@ -1119,6 +1170,7 @@ function toggle_pop_menu(){
 	op.classList.add(...pop_butt_cls);
 	op.innerHTML = gvar.all_msg.reset_history;
 	op.addEventListener('click', () => {
+		if((gvar != null) && gvar.skip_click){ return; }
 		init_history();
 	});
 	start_click(op);
@@ -1131,6 +1183,7 @@ function toggle_pop_menu(){
 		op.classList.add(...pop_butt_cls);
 		op.innerHTML = "EXAMPLES_TO_HISTORY";
 		op.addEventListener('click', () => {
+			if((gvar != null) && gvar.skip_click){ return; }
 			gvar.biblang.history = gvar.examples;
 			const dv_hist = document.getElementById(id_history);
 			if(dv_hist != null){
@@ -1167,18 +1220,24 @@ function toggle_button(dv_ope, id_butt){
 function toggle_history_info(toggle_op){
 	if(toggle_op == null){ toggle_op = "force"; }
 	const dv_expr = document.getElementById(id_expression);
+
 	let his_vals = gvar.biblang.history.map((itm) => get_his_item_htm(itm));
+	his_vals.reverse();
+	const lng_his = gvar.biblang.history.length;
+
 	let clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
-		dv_expr.value = gvar.biblang.history[idx_sel].expr;
-		const conf = gvar.biblang.history[idx_sel].conf;
+		const idx_his = lng_his - idx_sel - 1;
+		dv_expr.value = gvar.biblang.history[idx_his].expr;
+		const conf = gvar.biblang.history[idx_his].conf;
 		await do_select(conf);
 		//dv_ops.remove();
 	}
 	let right_clk_fn = async function(dv_ret, dv_ops, val_sel, idx_sel){
+		const idx_his = lng_his - idx_sel - 1;
 		const opt_id = get_opt_id(id_history, idx_sel);
 		const dv_opt = document.getElementById(opt_id);
 		
-		await toggle_history_opers(dv_ops, dv_opt, idx_sel); // id_his_opers
+		await toggle_history_opers(dv_ops, dv_opt, idx_his); // id_his_opers
 	}
 	if(his_vals.length == 0){
 		his_vals = ["NO DATA TO SHOW. Do a search first."];
@@ -1397,6 +1456,7 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 	const t5 = add_tok_tra(dv_ana, tok);
 	
 	t1.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		const dv_togg = toggle_asc_id_menu(t5, bibobj, tok);
 		if(dv_togg != null){
 			t1.classList.add("is_sel_scod");
@@ -1406,6 +1466,7 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 		}
 	});
 	t2.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		const dv_togg = toggle_asc_id_menu(t5, bibobj, tok);
 		if(dv_togg != null){
 			t2.classList.add("is_sel_scod");
@@ -1415,6 +1476,7 @@ function add_text_analysis_word(dv_ana, bibobj, tok, is_added){
 		}
 	});		
 	t3.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		const dv_togg = toggle_scod_menu(t5, bibobj, tok);
 		if(dv_togg != null){
 			turn_on_scod(bibobj, tok);
@@ -1860,6 +1922,7 @@ function add_ui_disp(dv_ver, bibobj, disp, htm, butt_classes){
 	dv_itm.classList.add(...butt_classes);
 	dv_itm.innerHTML = htm;
 	dv_itm.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		await select_disp(bibobj, disp);
 	});		
 	dv_ver.appendChild(dv_itm);
@@ -1888,6 +1951,7 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	dv_itm.classList.add("is_verse_cit");
 	dv_itm.innerHTML = vcit;
 	dv_itm.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		const dv_expr = document.getElementById(id_expression);
 		dv_expr.value = vcit;
 		await do_select();
@@ -1901,6 +1965,7 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	dv_itm.classList.add(...butt_classes);
 	dv_itm.innerHTML = gvar.add_abbr;
 	dv_itm.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		add_to_expr(vcit);
 	});		
 	dv_ver.appendChild(dv_itm);	
@@ -1909,6 +1974,7 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	dv_itm.classList.add(...butt_classes);
 	dv_itm.innerHTML = "refs";
 	dv_itm.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		toggle_refs_menu(dv_itm, bibobj);
 	});		
 	dv_ver.appendChild(dv_itm);
@@ -1917,6 +1983,7 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	dv_itm.classList.add(...butt_classes);
 	dv_itm.innerHTML = gvar.biblehub_abbr;
 	dv_itm.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		window.open(vhref, '_blank');
 	});		
 	dv_ver.appendChild(dv_itm);
@@ -1926,6 +1993,7 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	dv_pre.classList.add(...butt_classes);
 	dv_pre.innerHTML = "";
 	dv_pre.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		if(DEBUG_CALC_NXT_PRESENT){
 			bibobj.dbg_calc_nxt_pre = true;
 		}
@@ -1938,6 +2006,7 @@ function add_ui_bibobj(bibobj, dv_ver, bl_obj){
 	dv_txt.id = dv_ver.id + SUF_VERSE_TXT;
 	dv_ver.appendChild(dv_txt);	
 	dv_txt.addEventListener('click', async function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		await toggle_text_analysis(dv_txt, bibobj, bl_obj);
 		const dv_verses = document.getElementById("id_verses");
 		scroll_to_top(dv_txt, dv_verses);
@@ -2637,6 +2706,7 @@ function toggle_add_comment(pnt_idx_sel){
 	dv_add.appendChild(dv_save);
 
 	dv_save.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		save_comment(inp_box, pnt_idx_sel);
 		/*
 		if(inp_box.value != ""){
@@ -2683,6 +2753,7 @@ function toggle_load_history(){
 	dv_ld_his.appendChild(dv_load);
 	
 	dv_load.addEventListener('click', function() {
+		if((gvar != null) && gvar.skip_click){ return; }
 		if(to_load != ""){
 			console.log("RECUPERANDO=" + to_load.name);
 			const rdr = new FileReader();
@@ -2728,59 +2799,59 @@ function init_shortcuts(){
 		if((ev.ctrlKey || ev.metaKey) && all_dwn['a']){			
 			ev.preventDefault();
 			ev.stopPropagation();
-			if(all_dwn['h']){
-				toggle_history_info();
-				scroll_to_top(document.getElementById(id_history));
-			}
 			if(all_dwn['b']){
 				toggle_books_info();
 				scroll_to_top(document.getElementById(id_books));
-			}
-			if(all_dwn['l']){
-				const hrf = get_search_href();
-				if((hrf != null) && (gvar.save_link_href == null)){ gvar.save_link_href = hrf; }
-			}
-			if(all_dwn['e']){
-				toggle_lang_examples(gvar.examples);
-				scroll_to_top(document.getElementById(id_examples));
-			}
-			if(all_dwn['v']){
-				toggle_variables_info();
-				scroll_to_top(document.getElementById(id_variables));
-			}
-			if(all_dwn['d']){
-				toggle_dbg_info();
-				scroll_to_top(document.getElementById(id_dbg_data));
-			}
-			if(all_dwn['k']){
-				toggle_show_link();
-				scroll_to_top(document.getElementById(id_show_link));
-			}
-			if(all_dwn['u']){
-				save_result();
-			}
-			if(all_dwn['s']){
-				save_history();
-			}
-			if(all_dwn['r']){
-				toggle_load_history();
-				scroll_to_top(document.getElementById(id_load_history));
-			}
-			if(all_dwn['i']){
-				init_history();
-			}
-			if(all_dwn['f']){
-				const dv_expr = document.getElementById(id_expression);
-				dv_expr.focus();
 			}
 			if(all_dwn['c']){
 				const dv_expr = document.getElementById(id_expression);
 				dv_expr.value = "";
 				dv_expr.focus();
 			}
+			if(all_dwn['d']){
+				toggle_dbg_info();
+				scroll_to_top(document.getElementById(id_dbg_data));
+			}
+			if(all_dwn['e']){
+				toggle_lang_examples(gvar.examples);
+				scroll_to_top(document.getElementById(id_examples));
+			}
+			if(all_dwn['f']){
+				const dv_expr = document.getElementById(id_expression);
+				dv_expr.focus();
+			}
+			if(all_dwn['h']){
+				toggle_history_info();
+				scroll_to_top(document.getElementById(id_history));
+			}
+			if(all_dwn['i']){
+				init_history();
+			}
+			if(all_dwn['l']){
+				const hrf = get_search_href();
+				if((hrf != null) && (gvar.save_link_href == null)){ gvar.save_link_href = hrf; }
+			}
 			if(all_dwn['m']){
 				toggle_pop_menu();
 				//open_manual();
+			}
+			if(all_dwn['k']){
+				toggle_show_link();
+				scroll_to_top(document.getElementById(id_show_link));
+			}
+			if(all_dwn['r']){
+				toggle_load_history();
+				scroll_to_top(document.getElementById(id_load_history));
+			}
+			if(all_dwn['s']){
+				save_history();
+			}
+			if(all_dwn['u']){
+				save_result();
+			}
+			if(all_dwn['v']){
+				toggle_variables_info();
+				scroll_to_top(document.getElementById(id_variables));
 			}
 		}
 	});

@@ -1,6 +1,8 @@
 
 // CODE_FOR SELECT FROM ARRAY OF OPTIONS (for example several verses)
 
+import { gvar, } from './sf_search_mgr.js';
+
 const DEBUG_SEL_OPTIONS = false;
 const DEBUG_SCROLL = false;
 
@@ -62,6 +64,7 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 		const dv_opt = add_option(dv_options, opt_id, value, null, item_cls_arr);
 		//dv_opt.addEventListener('click', async function() {
 		dv_opt.addEventListener('click', function() {
+			if((gvar != null) && gvar.skip_click){ return; }
 			if(on_click_fn != null){
 				on_click_fn(dv_return, dv_options, value, opt_idx);
 				/*
@@ -78,6 +81,7 @@ toggle_select_option(dv_return, id_selec_men, all_options_arr, on_click_fn, menu
 		});
 		if(on_rclick_fn != null){
 			dv_opt.addEventListener('contextmenu', (ev1) => {
+				if((gvar != null) && gvar.during_click){ return; }
 				ev1.preventDefault();
 				//ev1.stopPropagation();
 				on_rclick_fn(dv_return, dv_options, value, opt_idx);
