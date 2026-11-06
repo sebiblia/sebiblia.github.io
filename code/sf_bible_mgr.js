@@ -1129,8 +1129,8 @@ export function dbg_log_all_loaded_files(){
 	const f1 = get_loaded_files_from(local_text_files, gvar.full_local_text);
 	const f2 = get_loaded_files_from(local_scods_files, gvar.full_scodes);
 	const f3 = get_loaded_files_from(local_bible_files, gvar.full_bible);
-	const f5 = get_loaded_files_from(local_sword_stg_files, gvar.full_sword_sdefs);
-	const all_f = [...new Set([...f1, ...f2, ...f3, ...f4, ...f5])];
+	const f4 = get_loaded_files_from(local_sword_stg_files, gvar.full_sword_sdefs);
+	const all_f = [...new Set([...f1, ...f2, ...f3, ...f4])];
 	const str_f = all_f.join(" , ");
 	add_dbg_log(str_f);
 	add_dbg_log("_______________________________");

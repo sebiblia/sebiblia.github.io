@@ -564,7 +564,7 @@ async function main_biblang_tokens(){
 //main_test_inc_dec();
 //main_test_verses();
 //main_test_parse_cit();
-main_biblang_tokens();
+//main_biblang_tokens();
 
-//main_biblang_command();
+main_biblang_command();
 
