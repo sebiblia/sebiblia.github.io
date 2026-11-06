@@ -1,7 +1,7 @@
 
 
 import { isArgumentsArray, ExpressionParser } from './sf_expression_parser.js'
-import { gvar, update_evaluating_bar, } from './sf_search_mgr.js';
+import { gvar, } from './sf_search_mgr.js';
 import { bib_chapter_sizes, } from './sf_bib_chapter_sizes.js';
 import { get_bible_verse, get_scode_verses, dbg_log_all_loaded_files, calc_vstxt, import_crono_bib, } from './sf_bible_mgr.js';
 import { distance, closest,  } from './sf_word_dist.js';
@@ -1844,18 +1844,6 @@ function calc_range_tot_verses(){
 	const rng = gvar.biblang.curr_range;
 	const ror_vrs = rng.reduce((tot, ii) => tot + book_sizes[ii], 0);
 	return ror_vrs;
-}
-
-function update_prog_bar(){
-	if((gvar.biblang.prog_bar.tot_ocu % NUM_OCU_UPDATE_BAR) == 0){
-		const tmn = performance.now();
-		if((tmn - gvar.biblang.prog_bar.start_time) > 1000){
-			gvar.biblang.prog_bar.start_time = tmn;
-			const val = gvar.biblang.prog_bar.num_verses_part / gvar.biblang.prog_bar.tot_verses_part;
-			update_evaluating_bar(gvar.biblang.prog_bar.part_name, val);
-			gvar.biblang.prog_bar.tot_updates++;
-		}
-	}
 }
 
 async function calc_scod_idx(arr_vrs, lscods){

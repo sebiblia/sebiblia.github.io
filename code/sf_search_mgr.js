@@ -2132,36 +2132,6 @@ function in_nodejs(){
 	return (typeof window === 'undefined');
 }
 
-export function update_evaluating_bar(name, val){
-	if(in_nodejs()){	// working from node
-		return;
-	}
-	const nam = document.getElementById(id_evaluating_name);
-	if(nam == null){ 
-		return;
-	}
-	nam.innerHTML = name;
-	const pbar = document.getElementById(id_evaluating_bar);
-	if(pbar == null){ 
-		return;
-	}
-	pbar.value = val;
-}
-
-function update_ev_bar(num_verse, tot_verses){
-	if((num_verse % 100) == 0){
-		const tmn = performance.now();
-		if((tmn - gvar.biblang.prog_bar.start_time) > 1000){
-			gvar.biblang.prog_bar.start_time = tmn;
-			const val = num_verse / tot_verses;
-			requestAnimationFrame(() => {
-				update_evaluating_bar(gvar.biblang.prog_bar.part_name, val);
-			});
-			gvar.biblang.prog_bar.tot_updates++;
-		}
-	}
-}
-
 function set_orig_txt(bibobj){
 	const txt_id = bibobj.id_dv_ver + SUF_VERSE_TXT;
 	const dv_txt = document.getElementById(txt_id);
