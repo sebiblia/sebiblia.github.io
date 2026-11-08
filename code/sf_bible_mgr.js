@@ -1144,12 +1144,20 @@ function img_renderized(img_elem){
 	});
 }
 
+function in_nodejs(){
+	return (typeof window === 'undefined');
+}
+
 async function download_file(file_nam) {
 	if(in_nodejs()){	// working from node
 		return;
 	}
-	// download_bar css class
-	const pbar = document.getElementById(id_ui_loading);
+
+	let pbar = null;
+	if(! gvar.as_local){
+		pbar = document.getElementById(id_ui_loading);
+	}
+
 	const resp = await fetch(file_nam);
 	const rdr = resp.body.getReader();
 	const full_len = resp.headers.get('content-length');
@@ -1161,7 +1169,9 @@ async function download_file(file_nam) {
 			break;
 		}
 		num_recv += value.length;
-		pbar.value = num_recv / full_len;
+		if(pbar != null){
+			pbar.value = num_recv / full_len;
+		}
 	}
 
 	//const texto = await resp.text();
@@ -1209,6 +1219,11 @@ async function start_loading(file_nam, fl_id, use_pbar){
 	if(in_nodejs()){	// working from node
 		return;
 	}
+	if(gvar.as_local){
+		await download_file(file_nam);
+		return;
+	}
+
 	let msg_in_cache = "";
 	const is_ok = await is_cached(file_nam);
 	if(is_ok){
@@ -1263,16 +1278,14 @@ function end_loading(){
 	if(in_nodejs()){	// working from node
 		return;
 	}
+	if(gvar.as_local){
+		return;
+	}
 	let dv_loading = document.getElementById(id_dv_loading);
 	if(dv_loading != null){
 		dv_loading.remove();
 	}
 	//await new Promise(resolve => setTImeout(resolve, 0));
-}
-
-
-function in_nodejs(){
-	return (typeof window === 'undefined');
 }
 
 export function calc_next_scode(scode){

@@ -626,7 +626,7 @@ export function verse_cod2obj(vrs_cod){
 }
 
 async function fill_sdefs(bl_obj){
-	if(in_nodejs()){
+	if(bl_obj.fill_only_data){
 		return;
 	}
 	
@@ -834,8 +834,15 @@ function fill_search_info(bl_obj){
 	
 }
 
+function in_nodejs(){
+	return (typeof window === 'undefined');
+}
+
 export async function fill_verses(bl_obj){
-	const is_node_call = in_nodejs();
+	if(bl_obj.fill_only_data == null){
+		bl_obj.fill_only_data = gvar.as_local;
+	}
+	const only_data = bl_obj.fill_only_data;
 	gvar.last_all_bibobj = [];
 	const all_bibobj = gvar.last_all_bibobj;
 	
@@ -849,7 +856,7 @@ export async function fill_verses(bl_obj){
 		otxt = "ASC";
 	}
 		
-	if(! is_node_call){
+	if(! only_data){
 		const dv_old_tes = document.getElementById("id_old_test");
 		dv_old_tes.innerHTML = oldt;
 		const dv_new_tes = document.getElementById("id_new_test");
@@ -891,7 +898,7 @@ export async function fill_verses(bl_obj){
 	}
 	
 	let dv_verses = null;
-	if(! is_node_call){
+	if(! only_data){
 		dv_verses = document.getElementById("id_verses");
 		dv_verses.innerHTML = "";
 
@@ -920,7 +927,7 @@ export async function fill_verses(bl_obj){
 		all_bibobj.push(bibobj);
 		
 		let dv_ver = null;
-		if(! is_node_call){
+		if(! only_data){
 			dv_ver = document.getElementById(bibobj.id_dv_ver);
 			if(dv_ver != null){
 				console.error("dv_ver != null");
@@ -955,7 +962,7 @@ export async function fill_verses(bl_obj){
 		}		
 	}
 	
-	if(! is_node_call){
+	if(! only_data){
 		dv_verses.all_bibobj = all_bibobj;
 
 		const dv_end_vrs = document.createElement("div");
@@ -970,7 +977,7 @@ export async function fill_verses(bl_obj){
 }
 
 async function open_txta_verse(bibobj, bl_obj){
-	if(in_nodejs()){
+	if(bl_obj.fill_only_data){
 		return;
 	}
 	if(bibobj == null){
@@ -1929,7 +1936,7 @@ function add_ui_disp(dv_ver, bibobj, disp, htm, butt_classes){
 }
 
 function add_ui_bibobj(bibobj, dv_ver, bl_obj){
-	if(in_nodejs()){
+	if(bl_obj.fill_only_data){
 		return;
 	}
 	if(dv_ver == null){
@@ -2128,10 +2135,6 @@ function end_biblang_command(){
 	}
 }
 
-function in_nodejs(){
-	return (typeof window === 'undefined');
-}
-
 function set_orig_txt(bibobj){
 	const txt_id = bibobj.id_dv_ver + SUF_VERSE_TXT;
 	const dv_txt = document.getElementById(txt_id);
@@ -2306,7 +2309,7 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	let dv_pre = null;
 	let nxt_pre = "";
 	
-	if(! in_nodejs()){
+	if(! bl_obj.fill_only_data){
 		dv_txt = document.getElementById(txt_id);
 		dv_pre = document.getElementById(pre_id);
 		nxt_pre = dv_pre.innerHTML;
@@ -2457,7 +2460,7 @@ async function calc_vtxt_next_presentation(bibobj, bl_obj){
 	}
 	bibobj.curr_htm = vtxt;
 
-	if(in_nodejs()){
+	if(bl_obj.fill_only_data){
 		return;
 	}
 	

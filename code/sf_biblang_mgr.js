@@ -316,12 +316,22 @@ function fill_reversed_object(orig, reverse){
 	}  
 }
 
-export function init_biblang(lng){
+function in_nodejs(){
+	return (typeof window === 'undefined');
+}
+
+export function init_biblang(lng, as_local){
 	if(gvar.biblang == null){ gvar.biblang = {}; }
 
 	gvar.biblang.default_LOC = "WEB";
 	if(lng == 'es'){
 		gvar.biblang.default_LOC = "SBLM";
+	}
+	if(gvar.as_local == null){
+		gvar.as_local = in_nodejs();
+	}
+	if(as_local){
+		gvar.as_local = true;
 	}
 	
 	fill_reversed_object(conf2mini, mini2conf);
@@ -1696,10 +1706,6 @@ export function decode_mini(emini){
 	return decoded;
 }
 
-function in_nodejs(){
-	return (typeof window === 'undefined');
-}
-
 function update_history(command){
 	const maxsz = get_his_max_sz();
 	if(gvar.biblang.history == null){ gvar.biblang.history = []; }
@@ -1716,7 +1722,7 @@ function update_history(command){
 	his.push({conf: curr_conf, expr: command});
 	
 	const lpos = his.length - 1;
-	if(! in_nodejs()){
+	if(! gvar.as_local){
 		if(gvar.biblang.his_first_pushed == null){
 			gvar.biblang.his_first_pushed = lpos;
 		}
